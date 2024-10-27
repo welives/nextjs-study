@@ -12,8 +12,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
     "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "drizzle-orm": "^0.35.3",
+    "foxact": "^0.2.40",
     "immer": "^10.1.1",
+    "match-sorter": "^7.0.0",
+    "nanoid": "^5.0.7",
     "next": "14.2.16",
     "next-auth": "5.0.0-beta.25",
     "next-intl": "^3.23.5",
@@ -27,8 +33,10 @@
     "zustand": "^5.0.0"
   },
   "devDependencies": {
+    "@faker-js/faker": "^9.1.0",
     "@types/inquirer": "^9.0.7",
     "@types/node": "^20",
+    "@types/pg": "^8.11.10",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/shelljs": "^0.8.15",
@@ -38,10 +46,12 @@
     "@unocss/reset": "^0.63.6",
     "dotenv": "^16.4.5",
     "dotenv-expand": "^11.0.6",
+    "drizzle-kit": "^0.26.2",
     "eslint": "^8",
     "eslint-config-next": "14.2.16",
     "esno": "^4.8.0",
     "inquirer": "^12.0.1",
+    "pg": "^8.13.1",
     "prettier": "^3.3.3",
     "rimraf": "^6.0.1",
     "shelljs": "^0.8.5",
