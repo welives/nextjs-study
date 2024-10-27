@@ -1,0 +1,11 @@
+node_modules
+dist
+out
+build
+.next/
+.git
+.github
+.vscode
+README.md
+\*.code-workspace
+\*.sh

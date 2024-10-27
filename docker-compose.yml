@@ -1,0 +1,36 @@
+version: '3.9'
+
+# Run this command to start
+# docker compose --env-file .env.local up --build -d
+services:
+  # 主数据库
+  main_db:
+    image: postgres:14-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: ${MAIN_POSTGRES_USER}
+      POSTGRES_PASSWORD: ${MAIN_POSTGRES_PASSWORD}
+      POSTGRES_DB: ${MAIN_POSTGRES_DB}
+      TZ: ${TIMEZONE}
+    volumes:
+    # - data:/var/lib/postgres/main-data
+      - '.volumes/main_db:/var/lib/postgresql/data'
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ports:
+      - 5432:5432
+  redis:
+    image: redis:5-alpine
+    restart: always
+    volumes:
+      - data:/var/lib/redis
+    ports:
+      - 6379:6379
+
+# 卷标定义
+volumes:
+  data:
+    driver: local
