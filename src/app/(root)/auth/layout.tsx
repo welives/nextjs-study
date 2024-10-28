@@ -3,9 +3,5 @@ export default function AuthLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  return (
-    <div className="h-dvh bg-background text-primary-foreground">
-      <main className="w-full overflow-hidden">{children}</main>
-    </div>
-  )
+  return <main className="w-full h-dvh overflow-hidden">{children}</main>
 }

@@ -1,5 +1,3 @@
-import { freeze } from 'immer'
+export const defaultLocale = 'zh' as const
 
-export const defaultLocale: string = 'zh'
-
-export const locales: string[] = freeze(['en', 'zh'])
+export const locales = ['en', 'zh'] as const

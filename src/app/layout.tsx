@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
 import { AuthProvider } from '@/components/auth-provider'
+import { AntdStyleRegistry } from '@/components/antd-style-registry'
 import { auth } from '@/lib/auth'
 
 import '@/styles/globals.css'
@@ -38,10 +39,12 @@ export default async function RootLayout({
     <html lang="en">
       <link rel="icon" type="image/svg+xml" href="favicon.svg" />
       <link rel="icon" type="image/png" href="favicon.png" />
-      <body className={`${inter.className} overflow-hidden`} suppressHydrationWarning>
+      <body className={inter.className} suppressHydrationWarning>
+        <NextTopLoader showSpinner={false} />
         <NuqsAdapter>
-          <NextTopLoader showSpinner={false} />
-          <AuthProvider session={session}>{children}</AuthProvider>
+          <AuthProvider session={session}>
+            <AntdStyleRegistry>{children}</AntdStyleRegistry>
+          </AuthProvider>
         </NuqsAdapter>
       </body>
     </html>

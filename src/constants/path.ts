@@ -7,7 +7,7 @@ export enum PATHS {
 
   /** ************* ADMIN ****************** */
   ADMIN_HOME = '/admin',
-  ADMIN_OVERVIEW = '/admin/overview',
+  ADMIN_WELCOME = '/admin/welcome',
 
   /** ************* AUTH ****************** */
   AUTH_SIGN_IN = '/auth/sign-in',
@@ -21,7 +21,7 @@ export const PATH_MAP = new Map([
 
   /** ************* ADMIN ****************** */
   [PATHS.ADMIN_HOME, '后台首页'],
-  [PATHS.ADMIN_OVERVIEW, '统计'],
+  [PATHS.ADMIN_WELCOME, '欢迎页'],
 
   /** ************* AUTH ****************** */
   [PATHS.AUTH_SIGN_IN, '后台登录'],
