@@ -8,7 +8,7 @@ import { quiz } from './quiz'
 export const category = pgTable('categories', {
   id: varchar('id').primaryKey().$defaultFn(createId),
   name: varchar('name', { length: 100 }).notNull(),
-  parentId: varchar('p_id').references((): AnyPgColumn => category.id),
+  pId: varchar('p_id').references((): AnyPgColumn => category.id),
   remark: text('remark'),
   createdAt: timestamp('created_at').notNull().defaultNow(),
   updatedAt: timestamp('updated_at')
@@ -19,7 +19,7 @@ export const category = pgTable('categories', {
 export const categoryRelations = relations(category, ({ one, many }) => ({
   quizzes: many(quiz),
   children: many(category),
-  parent: one(category, { fields: [category.parentId], references: [category.id] }),
+  parent: one(category, { fields: [category.pId], references: [category.id] }),
 }))
 
 export type InsertCategory = typeof category.$inferInsert
