@@ -1,6 +1,6 @@
 {
-  "id": "f9eb5da8-871b-4ffb-b83a-e799334ec9a1",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "79cfff07-8859-45d0-a052-0c55210c851a",
+  "prevId": "f9eb5da8-871b-4ffb-b83a-e799334ec9a1",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -58,7 +58,7 @@
           "columnsTo": [
             "id"
           ],
-          "onDelete": "no action",
+          "onDelete": "cascade",
           "onUpdate": "no action"
         }
       },
@@ -169,7 +169,7 @@
           "columnsTo": [
             "id"
           ],
-          "onDelete": "no action",
+          "onDelete": "cascade",
           "onUpdate": "no action"
         }
       },
@@ -231,7 +231,7 @@
           "columnsTo": [
             "id"
           ],
-          "onDelete": "no action",
+          "onDelete": "set null",
           "onUpdate": "no action"
         },
         "quizzes_cate_id_categories_id_fk": {
@@ -244,7 +244,7 @@
           "columnsTo": [
             "id"
           ],
-          "onDelete": "no action",
+          "onDelete": "set null",
           "onUpdate": "no action"
         }
       },

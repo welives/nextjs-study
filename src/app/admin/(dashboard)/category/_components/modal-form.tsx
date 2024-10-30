@@ -1,8 +1,10 @@
 'use client'
 
 import * as React from 'react'
-import { ModalForm, ProFormText, ProFormSelect } from '@ant-design/pro-components'
+import { ModalForm, ProFormText, ProFormSelect, ProFormTextArea } from '@ant-design/pro-components'
 import type { ProFormInstance, ActionType } from '@ant-design/pro-components'
+import { matchSorter } from 'match-sorter'
+import { getAll, createOne, updateOne } from '@/actions/category'
 
 type CategoryProps = {
   /**
@@ -20,14 +22,14 @@ type CategoryProps = {
   /**
    * 回显数据
    */
-  record?: App.API.CategoryListData
+  record?: Api.CategoryListData
 }
 
 const formFields = {
   pid: {
     label: '上级分类',
     placeholder: '输入关键字进行搜索',
-    rules: [{ message: '请选择上级分类' }],
+    rules: undefined,
   },
   name: {
     label: '分类名称',
@@ -53,12 +55,24 @@ export function CategoryModalForm(props: CategoryProps) {
       trigger={props.trigger}
       modalProps={{
         destroyOnClose: true,
-        // confirmLoading: loading,
+      }}
+      onFinish={async (values) => {
+        let res = void 0
+        if (values.id) {
+          res = await updateOne(values)
+        } else {
+          res = await createOne(values)
+        }
+        if (res) {
+          props.tableRef.current?.reload()
+          return true
+        }
+        return false
       }}
     >
       <ProFormText hidden={true} name="id" initialValue={props.record?.id} />
       <ProFormSelect
-        labelCol={{ span: 3 }}
+        labelCol={{ span: 4 }}
         width="md"
         name="pid"
         placeholder={formFields.pid.placeholder}
@@ -68,9 +82,20 @@ export function CategoryModalForm(props: CategoryProps) {
         allowClear
         showSearch
         debounceTime={1000}
+        request={async (values) => {
+          const res = await getAll()
+          const list = values.keyWords ? matchSorter(res, values.keyWords, { keys: ['name'] }) : res
+          const currentChildIds = props.record?.id ? list.find((e) => e.id === props.record.id).childIds : []
+          return list.map((e) => ({
+            label: e.name,
+            value: e.id,
+            // 自己和后代不能选
+            disabled: e.id === props.record?.id || currentChildIds.includes(e.id),
+          }))
+        }}
       />
       <ProFormText
-        labelCol={{ span: 3 }}
+        labelCol={{ span: 4 }}
         width="xl"
         name="name"
         placeholder={formFields.name.placeholder}
@@ -80,6 +105,20 @@ export function CategoryModalForm(props: CategoryProps) {
         fieldProps={{
           maxLength: 30,
           showCount: true,
+        }}
+      />
+      <ProFormTextArea
+        labelCol={{ span: 4 }}
+        width="xl"
+        name="remark"
+        placeholder={formFields.remark.placeholder}
+        label={formFields.remark.label}
+        rules={formFields.remark.rules}
+        initialValue={props.record?.remark}
+        fieldProps={{
+          maxLength: 200,
+          showCount: true,
+          autoSize: { minRows: 5 },
         }}
       />
     </ModalForm>

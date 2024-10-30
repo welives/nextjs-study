@@ -12,12 +12,13 @@ declare namespace Api {
 
   // 分类模块
   interface CategoryListData {
-    id: React.Key
+    id: string
     name: string
-    pid?: React.Key
+    pid?: string
     remark?: string
-    createdAt: Date
-    updatedAt: Date
+    createdAt?: Date
+    updatedAt?: Date
+    parent?: CategoryListData
   }
   interface CategoryListPageParams {
     page?: number

@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS "quizzes" (
 CREATE TABLE IF NOT EXISTS "users" (
 	"id" varchar PRIMARY KEY NOT NULL,
 	"username" varchar(30) NOT NULL,
-	"email" varchar(100),
+	"email" varchar(100) NOT NULL,
 	"password" varchar(200) NOT NULL,
 	"role" "role" DEFAULT 'user' NOT NULL,
 	"status" boolean DEFAULT true NOT NULL,

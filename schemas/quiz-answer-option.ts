@@ -10,7 +10,7 @@ export const quizAnswerOption = pgTable('quiz_answer_options', {
   title: text('title').notNull(),
   quizId: varchar('quiz_id')
     .notNull()
-    .references(() => quiz.id),
+    .references(() => quiz.id, { onDelete: 'cascade' }),
   isCorrect: boolean('is_correct').notNull().default(false),
   createdAt: timestamp('created_at').notNull().defaultNow(),
   updatedAt: timestamp('updated_at')

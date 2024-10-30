@@ -163,3 +163,31 @@ export function randomValue(
   while (i--) id += dict[Math.floor(Math.random() * len) | 0]
   return id
 }
+
+export function findChildren<T = any>(list: any[], pid: string[], pidName = 'pid', onlyId = true): T[] {
+  let res = list.filter(r => pid.includes(r[pidName]))
+  if (res.length < 1) return []
+  if (onlyId) {
+    res = res.map(e => e.id)
+    return res.concat(findChildren(list, res, pidName, onlyId))
+  } else {
+    return res.concat(findChildren(list, res.map(e => e.id), pidName, onlyId))
+  }
+}
+
+export function findMeAndChildren<T = any>(list: any[], me: string[], pidName = 'pid', onlyId = true): T[] {
+  let res = [], stack = list.filter(r => me.includes(r.id))
+  if (onlyId) {
+    stack = stack.map(e => e.id)
+  }
+  while (stack.length) {
+    res = res.concat(stack)
+    if (onlyId) {
+      stack = list.filter(r => stack.includes(r[pidName])).map(e => e.id)
+    } else {
+      const pds = stack.map(r => r.id)
+      stack = list.filter(r => pds.includes(r[pidName]))
+    }
+  }
+  return res
+}

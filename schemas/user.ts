@@ -16,7 +16,7 @@ export const roleEnums = pgEnum('role', [
 export const user = pgTable('users', {
   id: varchar('id').primaryKey().$defaultFn(createId),
   username: varchar('username', { length: 30 }).notNull().unique(),
-  email: varchar('email', { length: 100 }).unique(),
+  email: varchar('email', { length: 100 }).notNull().unique(),
   password: varchar('password', { length: 200 }).notNull(),
   role: roleEnums('role').notNull().default(UserRole.USER),
   status: boolean('status').notNull().default(true),

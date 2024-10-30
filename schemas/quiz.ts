@@ -12,10 +12,10 @@ export const quiz = pgTable('quizzes', {
   title: text('title').notNull(),
   courseId: varchar('course_id')
     .notNull()
-    .references(() => course.id),
+    .references(() => course.id, { onDelete: 'set null' }),
   cateId: varchar('cate_id')
     .notNull()
-    .references(() => category.id),
+    .references(() => category.id, { onDelete: 'set null' }),
   createdAt: timestamp('created_at').notNull().defaultNow(),
   updatedAt: timestamp('updated_at')
     .notNull()

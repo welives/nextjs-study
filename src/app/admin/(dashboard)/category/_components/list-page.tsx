@@ -6,6 +6,7 @@ import type { ProColumns, ActionType } from '@ant-design/pro-components'
 import { Space, Button, Typography, Popconfirm, message } from 'antd'
 import { SearchOutlined } from '@ant-design/icons'
 import http from '@/lib/http'
+import { deleteOne } from '@/actions/category'
 import { CategoryModalForm } from './modal-form'
 
 export function CategoryListPage() {
@@ -21,7 +22,7 @@ export function CategoryListPage() {
     },
     {
       title: '上级分类',
-      dataIndex: 'pid',
+      dataIndex: ['parent', 'name'],
       align: 'center',
       ellipsis: true,
       width: 250,
@@ -55,7 +56,16 @@ export function CategoryListPage() {
             trigger={<Typography.Link>编辑</Typography.Link>}
             record={record}
           />
-          <Popconfirm title="确定要删除吗?" onConfirm={() => null}>
+          <Popconfirm
+            title="确定要删除吗?"
+            onConfirm={async () => {
+              const res = await deleteOne(record.id)
+              if (res) {
+                message.success('删除成功')
+                tableRef.current?.reload()
+              }
+            }}
+          >
             <Typography.Link type="danger">删除</Typography.Link>
           </Popconfirm>
         </Space>
@@ -84,12 +94,12 @@ export function CategoryListPage() {
       }}
       debounceTime={500}
       columns={columns}
-      request={async (params) => {
-        const search = { ...params }
-        delete search.current
-        const res = await http.get<Api.CategoryListData[]>('/api/category', { ...search, page: params.current })
+      request={async (values) => {
+        const params = { ...values }
+        delete params.current
+        const res = await http.get<Api.CategoryListData[]>('/api/category', { ...params, page: values.current })
         return {
-          total: res.data.length,
+          total: res.data?.length,
           success: res.success,
           data: res.data,
         }
