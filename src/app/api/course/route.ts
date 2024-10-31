@@ -1,6 +1,6 @@
 import { NextResponse, NextRequest } from "next/server"
 import { z, ZodError } from 'zod'
-import { getList } from '@/db/category-service'
+import { getList } from '@/db/course-service'
 import { success, failure } from '@/lib/api'
 
 export async function GET(req: NextRequest) {

@@ -6,30 +6,30 @@ import type { ProColumns, ActionType } from '@ant-design/pro-components'
 import { Space, Button, Typography, Popconfirm, message } from 'antd'
 import { SearchOutlined } from '@ant-design/icons'
 import http from '@/lib/http'
-import { deleteOne } from '@/actions/category'
-import { CategoryModalForm } from './modal-form'
+import { deleteOne } from '@/actions/course'
+import { CourseModalForm } from './modal-form'
 
-export function CategoryListPage() {
+export function CourseListPage() {
   const tableRef = React.useRef<ActionType>()
 
-  const columns: ProColumns<Api.CategoryListData>[] = [
+  const columns: ProColumns<Api.CourseListData>[] = [
     {
-      title: '分类名',
-      dataIndex: 'name',
+      title: '课程名称',
+      dataIndex: 'title',
       align: 'center',
       ellipsis: true,
       width: 250,
     },
     {
-      title: '上级分类',
-      dataIndex: ['parent', 'name'],
+      title: '考试类型',
+      dataIndex: ['category', 'name'],
       align: 'center',
       ellipsis: true,
       width: 250,
     },
     {
-      title: '备注',
-      dataIndex: 'remark',
+      title: '课程描述',
+      dataIndex: 'description',
       align: 'center',
       ellipsis: true,
       hideInSearch: true,
@@ -51,9 +51,9 @@ export function CategoryListPage() {
       width: 120,
       render: (dom, record) => (
         <Space>
-          <CategoryModalForm
+          <CourseModalForm
             tableRef={tableRef}
-            title="编辑分类"
+            title="编辑课程"
             trigger={<Typography.Link>编辑</Typography.Link>}
             record={record}
           />
@@ -74,12 +74,12 @@ export function CategoryListPage() {
     },
   ]
   return (
-    <ProTable<Api.CategoryListData>
+    <ProTable<Api.CourseListData>
       rowKey="id"
       actionRef={tableRef}
       scroll={{ x: 1200 }}
       headerTitle={
-        <CategoryModalForm tableRef={tableRef} title="新增分类" trigger={<Button type="primary">新增分类</Button>} />
+        <CourseModalForm tableRef={tableRef} title="新增课程" trigger={<Button type="primary">新增课程</Button>} />
       }
       search={false}
       options={{
@@ -99,7 +99,7 @@ export function CategoryListPage() {
       request={async (values) => {
         const params = { ...values }
         delete params.current
-        const res = await http.get<Api.CategoryListData[]>('/api/category', { ...params, page: values.current })
+        const res = await http.get<Api.CourseListData[]>('/api/course', { ...params, page: values.current })
         return {
           total: res.data?.length,
           success: res.success,

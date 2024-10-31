@@ -6,7 +6,7 @@ export enum UserRole {
   USER = 'user',
 }
 
-export const roleEnums = pgEnum('role', [
+export const userRoleEnums = pgEnum('role', [
   UserRole.ADMIN,
   UserRole.USER,
 ])
@@ -18,7 +18,7 @@ export const user = pgTable('users', {
   username: varchar('username', { length: 30 }).notNull().unique(),
   email: varchar('email', { length: 100 }).notNull().unique(),
   password: varchar('password', { length: 200 }).notNull(),
-  role: roleEnums('role').notNull().default(UserRole.USER),
+  role: userRoleEnums('role').notNull().default(UserRole.USER),
   status: boolean('status').notNull().default(true),
   createdAt: timestamp('created_at').notNull().defaultNow(),
   updatedAt: timestamp('updated_at')

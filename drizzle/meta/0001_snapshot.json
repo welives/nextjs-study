@@ -1,6 +1,6 @@
 {
-  "id": "79cfff07-8859-45d0-a052-0c55210c851a",
-  "prevId": "f9eb5da8-871b-4ffb-b83a-e799334ec9a1",
+  "id": "2302b91c-48ae-42e4-b16a-ddfcc4688d25",
+  "prevId": "07a7fb98-0f27-4a43-a55b-5c2bdb09f817",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -88,6 +88,12 @@
           "primaryKey": false,
           "notNull": false
         },
+        "cate_id": {
+          "name": "cate_id",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
         "cover": {
           "name": "cover",
           "type": "text",
@@ -109,7 +115,21 @@
         }
       },
       "indexes": {},
-      "foreignKeys": {},
+      "foreignKeys": {
+        "courses_cate_id_categories_id_fk": {
+          "name": "courses_cate_id_categories_id_fk",
+          "tableFrom": "courses",
+          "tableTo": "categories",
+          "columnsFrom": [
+            "cate_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "set null",
+          "onUpdate": "no action"
+        }
+      },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "checkConstraints": {}
@@ -199,9 +219,10 @@
           "primaryKey": false,
           "notNull": true
         },
-        "cate_id": {
-          "name": "cate_id",
-          "type": "varchar",
+        "type": {
+          "name": "type",
+          "type": "type",
+          "typeSchema": "public",
           "primaryKey": false,
           "notNull": true
         },
@@ -227,19 +248,6 @@
           "tableTo": "courses",
           "columnsFrom": [
             "course_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "set null",
-          "onUpdate": "no action"
-        },
-        "quizzes_cate_id_categories_id_fk": {
-          "name": "quizzes_cate_id_categories_id_fk",
-          "tableFrom": "quizzes",
-          "tableTo": "categories",
-          "columnsFrom": [
-            "cate_id"
           ],
           "columnsTo": [
             "id"
@@ -332,6 +340,15 @@
     }
   },
   "enums": {
+    "public.type": {
+      "name": "type",
+      "schema": "public",
+      "values": [
+        "single",
+        "multiple",
+        "judgement"
+      ]
+    },
     "public.role": {
       "name": "role",
       "schema": "public",

@@ -1,5 +1,5 @@
 import { cache } from 'react'
-import { eq, and } from 'drizzle-orm'
+import { eq } from 'drizzle-orm'
 import { matchSorter } from 'match-sorter'
 import { category } from './schema'
 import db from './drizzle'
@@ -15,12 +15,6 @@ export interface IGetList {
  */
 export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: IGetList) => {
   let res = await db.query.category.findMany({
-    columns: {
-      id: true,
-      name: true,
-      pid: true,
-      remark: true,
-    },
     with: {
       parent: {
         columns: {
@@ -53,17 +47,17 @@ export interface ICreateOrUpdate {
  */
 export const createOne = cache(async ({ name, ...rest }: ICreateOrUpdate) => {
   // @ts-expect-error
-  const res = await db.insert(category).values({ name, pid: rest.pid, remark: rest.remark }).returning({ insertId: category.id })
+  const [entity] = await db.insert(category).values({ name, pid: rest.pid, remark: rest.remark }).returning({ insertId: category.id })
 
-  return !!res
+  return !!entity
 })
 
 /**
  * 更新分类
  */
 export const updateOne = cache(async ({ id, ...rest }: ICreateOrUpdate) => {
-  const res = await db.update(category).set(rest).where(eq(category.id, id))
-  return !!res
+  const [entity] = await db.update(category).set(rest).where(eq(category.id, id)).returning({ updateId: category.id })
+  return !!entity
 })
 
 /**
@@ -72,6 +66,6 @@ export const updateOne = cache(async ({ id, ...rest }: ICreateOrUpdate) => {
  * @returns
  */
 export const deleteOne = cache(async (id: string) => {
-  const res = await db.delete(category).where(eq(category.id, id)).returning({ deleteId: category.id })
-  return id === res[0].deleteId
+  const [entity] = await db.delete(category).where(eq(category.id, id)).returning({ deleteId: category.id })
+  return id === entity.deleteId
 })

@@ -1,5 +1,5 @@
 {
-  "id": "f9eb5da8-871b-4ffb-b83a-e799334ec9a1",
+  "id": "07a7fb98-0f27-4a43-a55b-5c2bdb09f817",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -58,7 +58,7 @@
           "columnsTo": [
             "id"
           ],
-          "onDelete": "no action",
+          "onDelete": "cascade",
           "onUpdate": "no action"
         }
       },
@@ -88,6 +88,12 @@
           "primaryKey": false,
           "notNull": false
         },
+        "cate_id": {
+          "name": "cate_id",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
         "cover": {
           "name": "cover",
           "type": "text",
@@ -109,7 +115,21 @@
         }
       },
       "indexes": {},
-      "foreignKeys": {},
+      "foreignKeys": {
+        "courses_cate_id_categories_id_fk": {
+          "name": "courses_cate_id_categories_id_fk",
+          "tableFrom": "courses",
+          "tableTo": "categories",
+          "columnsFrom": [
+            "cate_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "set null",
+          "onUpdate": "no action"
+        }
+      },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {},
       "checkConstraints": {}
@@ -169,7 +189,7 @@
           "columnsTo": [
             "id"
           ],
-          "onDelete": "no action",
+          "onDelete": "cascade",
           "onUpdate": "no action"
         }
       },
@@ -199,11 +219,13 @@
           "primaryKey": false,
           "notNull": true
         },
-        "cate_id": {
-          "name": "cate_id",
-          "type": "varchar",
+        "type": {
+          "name": "type",
+          "type": "type",
+          "typeSchema": "public",
           "primaryKey": false,
-          "notNull": true
+          "notNull": true,
+          "default": "'single'"
         },
         "created_at": {
           "name": "created_at",
@@ -231,20 +253,7 @@
           "columnsTo": [
             "id"
           ],
-          "onDelete": "no action",
-          "onUpdate": "no action"
-        },
-        "quizzes_cate_id_categories_id_fk": {
-          "name": "quizzes_cate_id_categories_id_fk",
-          "tableFrom": "quizzes",
-          "tableTo": "categories",
-          "columnsFrom": [
-            "cate_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "no action",
+          "onDelete": "set null",
           "onUpdate": "no action"
         }
       },
@@ -332,6 +341,15 @@
     }
   },
   "enums": {
+    "public.type": {
+      "name": "type",
+      "schema": "public",
+      "values": [
+        "single",
+        "multiple",
+        "judgement"
+      ]
+    },
     "public.role": {
       "name": "role",
       "schema": "public",

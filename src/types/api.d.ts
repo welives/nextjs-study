@@ -20,9 +20,40 @@ declare namespace Api {
     updatedAt?: Date
     parent?: CategoryListData
   }
-  interface CategoryListPageParams {
-    page?: number
-    pageSize?: number
-    keyword?: string
+
+  // 课程模块
+  interface CourseListData {
+    id: string
+    title: string
+    category: {
+      id: string
+      name: string
+    }
+    description?: string
+    cover?: string
+    createdAt?: Date
+    updatedAt?: Date
+  }
+
+  // 试题模块
+  interface QuizListData {
+    id: string
+    title: string
+    courseId: string
+    course: {
+      id: string
+      title: string
+    }
+    type: import('../db/schema').QuizType
+    quizAnswerOptions: QuizAnswerOption[]
+    createdAt?: Date
+    updatedAt?: Date
+  }
+  interface QuizAnswerOption {
+    id: string
+    title: string
+    isCorrect: boolean
+    createdAt?: Date
+    updatedAt?: Date
   }
 }

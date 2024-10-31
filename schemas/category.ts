@@ -1,7 +1,7 @@
 import { pgTable, text, timestamp, varchar, AnyPgColumn } from 'drizzle-orm/pg-core'
 import { relations } from 'drizzle-orm'
 import { createId } from '@paralleldrive/cuid2'
-import { quiz } from './quiz'
+import { course } from './course'
 
 /** 分类表 */
 
@@ -17,9 +17,9 @@ export const category = pgTable('categories', {
 })
 
 export const categoryRelations = relations(category, ({ one, many }) => ({
-  quizzes: many(quiz),
-  children: many(category, { relationName: 'categories' }),
-  parent: one(category, { fields: [category.pid], references: [category.id], relationName: 'categories' }),
+  courses: many(course),
+  children: many(category),
+  parent: one(category, { fields: [category.pid], references: [category.id] }),
 }))
 
 export type InsertCategory = typeof category.$inferInsert

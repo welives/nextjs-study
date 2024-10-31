@@ -1,9 +1,20 @@
-import { pgTable, text, timestamp, varchar } from 'drizzle-orm/pg-core'
+import { pgTable, text, timestamp, varchar, pgEnum } from 'drizzle-orm/pg-core'
 import { relations } from 'drizzle-orm'
 import { createId } from '@paralleldrive/cuid2'
-import { category } from './category'
 import { quizAnswerOption } from './quiz-answer-option'
 import { course } from './course'
+
+export enum QuizType {
+  SINGLE = 'single',
+  MULTIPLE = 'multiple',
+  JUDGEMENT = 'judgement'
+}
+
+export const quizTypeEnums = pgEnum('type', [
+  QuizType.SINGLE,
+  QuizType.MULTIPLE,
+  QuizType.JUDGEMENT,
+])
 
 /** 测试题干表 */
 
@@ -13,9 +24,7 @@ export const quiz = pgTable('quizzes', {
   courseId: varchar('course_id')
     .notNull()
     .references(() => course.id, { onDelete: 'set null' }),
-  cateId: varchar('cate_id')
-    .notNull()
-    .references(() => category.id, { onDelete: 'set null' }),
+  type: quizTypeEnums('type').notNull(),
   createdAt: timestamp('created_at').notNull().defaultNow(),
   updatedAt: timestamp('updated_at')
     .notNull()
@@ -24,7 +33,6 @@ export const quiz = pgTable('quizzes', {
 
 export const quizRelations = relations(quiz, ({ many, one }) => ({
   quizAnswerOptions: many(quizAnswerOption),
-  category: one(category, { fields: [quiz.cateId], references: [category.id] }),
   course: one(course, { fields: [quiz.courseId], references: [course.id] }),
 }))
 
