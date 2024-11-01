@@ -1,5 +1,5 @@
 import { NextResponse, NextRequest } from "next/server"
-import { getList } from '@/db/quiz-service'
+import { getList } from '@/models/quiz-service'
 import { success, failure } from '@/lib/api'
 import { formatZodErrorMsg } from '@/lib/utils'
 import { listPageSchema } from '@/dto'

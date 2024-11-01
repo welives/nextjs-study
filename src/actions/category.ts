@@ -2,8 +2,8 @@
 
 import { cache } from 'react'
 import { revalidatePath } from 'next/cache'
-import db from '@/db/drizzle'
-import * as CategoryService from '@/db/category-service'
+import db from '@/lib/drizzle'
+import * as CategoryService from '@/models/category-service'
 import { isAdmin, actionFailure, actionSuccess } from '@/lib/api'
 import { findChildren, formatZodErrorMsg } from '@/lib/utils'
 import { categoryIdSchema, createCategorySchema, updateCategorySchema, CreateCategoryData, UpdateCategoryData } from '../dto'

@@ -2,8 +2,8 @@
 
 import { cache } from 'react'
 import { revalidatePath } from 'next/cache'
-import db from '@/db/drizzle'
-import * as CourseService from '@/db/course-service'
+import db from '@/lib/drizzle'
+import * as CourseService from '@/models/course-service'
 import { isAdmin, actionFailure, actionSuccess } from '@/lib/api'
 import { formatZodErrorMsg } from '@/lib/utils'
 import { courseIdSchema, createCourseSchema, updateCourseSchema, CreateCourseData, UpdateCourseData } from '../dto'

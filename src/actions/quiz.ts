@@ -1,7 +1,7 @@
 'use server'
 
 import { revalidatePath } from 'next/cache'
-import * as QuizService from '@/db/quiz-service'
+import * as QuizService from '@/models/quiz-service'
 import { isAdmin, actionFailure, actionSuccess } from '@/lib/api'
 import { formatZodErrorMsg } from '@/lib/utils'
 import { quizIdSchema, createQuizSchema, updateQuizSchema, CreateQuizData, UpdateQuizData } from '../dto'

@@ -2,8 +2,8 @@ import { cache } from 'react'
 import { eq } from 'drizzle-orm'
 import { matchSorter } from 'match-sorter'
 
-import { category } from './schema'
-import db from './drizzle'
+import { category } from '../lib/schema'
+import db from '../lib/drizzle'
 import { ListPageData, CreateCategoryData, UpdateCategoryData } from '../dto'
 
 /**

@@ -50,7 +50,7 @@ declare namespace Api {
       id: string
       title: string
     }
-    type: import('../db/schema').QuizType
+    type: import('@/lib/schema').QuizType
     quizAnswerOptions: QuizAnswerOption[]
     createdAt?: Date
     updatedAt?: Date

@@ -2,8 +2,8 @@ import { cache } from 'react'
 import { eq } from 'drizzle-orm'
 import { matchSorter } from 'match-sorter'
 
-import { quiz, quizAnswerOption } from './schema'
-import db from './drizzle'
+import { quiz, quizAnswerOption } from '../lib/schema'
+import db from '../lib/drizzle'
 import { ListPageData, CreateQuizData, UpdateQuizData } from '../dto'
 
 /**

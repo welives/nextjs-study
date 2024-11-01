@@ -2,8 +2,8 @@ import { cache } from 'react'
 import { eq } from 'drizzle-orm'
 import { matchSorter } from 'match-sorter'
 
-import { course } from './schema'
-import db from './drizzle'
+import { course } from '../lib/schema'
+import db from '../lib/drizzle'
 import { ListPageData, CreateCourseData, UpdateCourseData } from '../dto'
 
 /**

@@ -1,6 +1,6 @@
 import { z } from 'zod'
 import { requiredMessage } from '@/constants'
-import { QuizType } from '../db/schema'
+import { QuizType } from '@/lib/schema'
 
 export const quizIdSchema = z.string({ message: '不是一个字符串' }).min(1, { message: requiredMessage('试题ID') })
 
