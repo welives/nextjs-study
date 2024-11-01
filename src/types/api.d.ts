@@ -10,6 +10,12 @@ declare namespace Api {
     [key: string]: any
   }
 
+  interface GetListPage {
+    page?: number | undefined
+    limit?: number | undefined
+    keyword?: string | null | undefined
+  }
+
   // 分类模块
   interface CategoryListData {
     id: string

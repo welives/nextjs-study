@@ -1,5 +1,6 @@
 import { type ClassValue, clsx } from 'clsx'
 import { twMerge } from 'tailwind-merge'
+import { ZodIssue } from 'zod'
 import { BASE_URL } from '../constants'
 import { isArray, isNumber, isPlainObject, isBlob } from './is'
 
@@ -11,6 +12,12 @@ export function cn(...inputs: ClassValue[]) {
 
 export function absoluteUrl(path: string) {
   return `${BASE_URL}${path}`
+}
+
+export function formatZodErrorMsg(issues: ZodIssue[]) {
+  return issues.map(e => {
+    return e.path[0] ? `${e.path[0]}:${e.message}` : e.message
+  }).join(';')
 }
 
 function findKey(obj: object, key: string) {
@@ -176,7 +183,7 @@ export function findChildren<T = any>(list: any[], pid: string[], pidName = 'pid
 }
 
 export function findMeAndChildren<T = any>(list: any[], me: string[], pidName = 'pid', onlyId = true): T[] {
-  let res = [], stack = list.filter(r => me.includes(r.id))
+  let res: any[] = [], stack = list.filter(r => me.includes(r.id))
   if (onlyId) {
     stack = stack.map(e => e.id)
   }

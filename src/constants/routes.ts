@@ -31,4 +31,4 @@ export const ROUTES = [
     name: '分类',
     icon: 'heart',
   },
-];
+]

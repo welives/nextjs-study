@@ -41,3 +41,22 @@ export function failure({ msg = 'failed', code = 'E0001', status = 400 }: IFailu
     message: msg,
   }, { status })
 }
+
+export function actionSuccess({ data = null, msg = 'ok', status = 200 }: ISuccess) {
+  return {
+    success: true,
+    code: 0,
+    message: msg,
+    data,
+    status
+  }
+}
+
+export function actionFailure({ msg = 'failed', code = 'E0001', status = 400 }) {
+  return {
+    success: false,
+    code,
+    message: msg,
+    status
+  }
+}

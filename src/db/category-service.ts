@@ -1,19 +1,15 @@
 import { cache } from 'react'
 import { eq } from 'drizzle-orm'
 import { matchSorter } from 'match-sorter'
+
 import { category } from './schema'
 import db from './drizzle'
-
-export interface IGetList {
-  page?: number
-  limit?: number
-  keyword?: string | null
-}
+import { ListPageData, CreateCategoryData, UpdateCategoryData } from '../dto'
 
 /**
  * 分页列表
  */
-export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: IGetList) => {
+export const getList = cache(async ({ keyword, page = 1, limit = 20 }: ListPageData) => {
   let res = await db.query.category.findMany({
     with: {
       parent: {
@@ -35,28 +31,25 @@ export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: 
   return categories
 })
 
-export interface ICreateOrUpdate {
-  id?: string
-  name: string
-  pid?: string | null
-  remark?: string | null
-}
-
 /**
  * 添加分类
  */
-export const createOne = cache(async ({ name, ...rest }: ICreateOrUpdate) => {
-  // @ts-expect-error
+export const createOne = cache(async ({ name, ...rest }: CreateCategoryData) => {
   const [entity] = await db.insert(category).values({ name, pid: rest.pid, remark: rest.remark }).returning({ insertId: category.id })
-
+  if (!entity) {
+    throw new Error('创建失败')
+  }
   return !!entity
 })
 
 /**
  * 更新分类
  */
-export const updateOne = cache(async ({ id, ...rest }: ICreateOrUpdate) => {
+export const updateOne = cache(async ({ id, ...rest }: UpdateCategoryData) => {
   const [entity] = await db.update(category).set(rest).where(eq(category.id, id)).returning({ updateId: category.id })
+  if (!entity) {
+    throw new Error('修改失败')
+  }
   return !!entity
 })
 
@@ -67,5 +60,8 @@ export const updateOne = cache(async ({ id, ...rest }: ICreateOrUpdate) => {
  */
 export const deleteOne = cache(async (id: string) => {
   const [entity] = await db.delete(category).where(eq(category.id, id)).returning({ deleteId: category.id })
+  if (!entity) {
+    throw new Error('删除失败')
+  }
   return id === entity.deleteId
 })

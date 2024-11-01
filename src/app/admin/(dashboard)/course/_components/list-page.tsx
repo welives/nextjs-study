@@ -61,10 +61,13 @@ export function CourseListPage() {
             title="确定要删除吗?"
             onConfirm={async () => {
               const res = await deleteOne(record.id)
-              if (res) {
-                message.success('删除成功')
-                tableRef.current?.reload()
+              if (!res.success) {
+                message.error(res.message)
+                return false
               }
+              message.success(res.message)
+              tableRef.current?.reload()
+              return true
             }}
           >
             <Typography.Link type="danger">删除</Typography.Link>
@@ -97,9 +100,11 @@ export function CourseListPage() {
       debounceTime={500}
       columns={columns}
       request={async (values) => {
-        const params = { ...values }
-        delete params.current
-        const res = await http.get<Api.CourseListData[]>('/api/course', { ...params, page: values.current })
+        const res = await http.get<Api.CourseListData[]>('/api/course', {
+          page: values.current,
+          limit: values.pageSize,
+          keyword: values.keyword,
+        })
         return {
           total: res.data?.length,
           success: res.success,

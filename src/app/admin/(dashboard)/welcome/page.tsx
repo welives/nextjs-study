@@ -1,3 +1,11 @@
+import { Spin } from 'antd'
+
 export default function Page() {
-  return <>welcome</>
+  return (
+    <>
+      <div className="absolute-center">
+        <Spin />
+      </div>
+    </>
+  )
 }

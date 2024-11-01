@@ -5,6 +5,7 @@ import { Row, Col, Card, Button, Form, Input, Select, Spin, Radio, Checkbox, Too
 import type { FormListFieldData, FormInstance, FormListOperation } from 'antd'
 import { ProCard, ProForm } from '@ant-design/pro-components'
 import { PlusOutlined, CloseCircleOutlined } from '@ant-design/icons'
+import { ErrorBoundary } from 'react-error-boundary'
 import { debounce } from 'radash'
 import { useMount } from 'react-use'
 import { matchSorter } from 'match-sorter'
@@ -94,80 +95,82 @@ export function CreateQuizPage() {
   }
 
   return (
-    <ProCard>
-      <ProForm
-        layout="horizontal"
-        form={form}
-        autoComplete="off"
-        onFinish={onSubmit}
-        submitter={{
-          resetButtonProps: {
-            onClick: () => {
-              setType(null)
-              form.resetFields()
+    <ErrorBoundary fallback={<h2>出错啦!</h2>}>
+      <ProCard>
+        <ProForm
+          layout="horizontal"
+          form={form}
+          autoComplete="off"
+          onFinish={onSubmit}
+          submitter={{
+            resetButtonProps: {
+              onClick: () => {
+                setType(void 0)
+                form.resetFields()
+              },
             },
-          },
-          render: (props, doms) => (
-            <Row>
-              <Col span={24} className="text-center">
-                <Space>{doms}</Space>
-              </Col>
-            </Row>
-          ),
-        }}
-      >
-        <Form.Item
-          labelCol={{ span: 4 }}
-          wrapperCol={{ span: isBelowXl ? 20 : 12 }}
-          name="type"
-          label={formFields.type.label}
-          rules={formFields.type.rules}
-        >
-          <Select
-            allowClear
-            placeholder={formFields.type.placeholder}
-            options={[
-              { label: '单选题', value: QuizType.SINGLE },
-              { label: '多选题', value: QuizType.MULTIPLE },
-              { label: '判断题', value: QuizType.JUDGEMENT },
-            ]}
-            onChange={(value: QuizType) => setType(value)}
-          />
-        </Form.Item>
-        <Form.Item
-          labelCol={{ span: 4 }}
-          wrapperCol={{ span: isBelowXl ? 20 : 12 }}
-          name="course_id"
-          label={formFields.course_id.label}
-          rules={formFields.course_id.rules}
-        >
-          <Select
-            showSearch
-            allowClear
-            filterOption={false}
-            placeholder={formFields.course_id.placeholder}
-            notFoundContent={fetching ? <Spin size="small" /> : null}
-            options={courseOptions}
-            onSearch={debounceCourseFetch}
-          ></Select>
-        </Form.Item>
-        <Form.Item
-          labelCol={{ span: 4 }}
-          wrapperCol={{ span: isBelowXl ? 20 : 12 }}
-          name="title"
-          label={formFields.title.label}
-          rules={formFields.title.rules}
-        >
-          <Input placeholder={formFields.title.placeholder}></Input>
-        </Form.Item>
-
-        <Form.List name="options">
-          {(fields, { add, remove }, { errors }) => {
-            return type && <DynamicFormContent type={type} add={add} remove={remove} form={form} fields={fields} />
+            render: (props, doms) => (
+              <Row>
+                <Col span={isBelowXl ? 24 : 18} className="text-center">
+                  <Space>{doms}</Space>
+                </Col>
+              </Row>
+            ),
           }}
-        </Form.List>
-      </ProForm>
-    </ProCard>
+        >
+          <Form.Item
+            labelCol={{ span: 4 }}
+            wrapperCol={{ span: isBelowXl ? 20 : 12 }}
+            name="type"
+            label={formFields.type.label}
+            rules={formFields.type.rules}
+          >
+            <Select
+              allowClear
+              placeholder={formFields.type.placeholder}
+              options={[
+                { label: '单选题', value: QuizType.SINGLE },
+                { label: '多选题', value: QuizType.MULTIPLE },
+                { label: '判断题', value: QuizType.JUDGEMENT },
+              ]}
+              onChange={(value: QuizType) => setType(value)}
+            />
+          </Form.Item>
+          <Form.Item
+            labelCol={{ span: 4 }}
+            wrapperCol={{ span: isBelowXl ? 20 : 12 }}
+            name="course_id"
+            label={formFields.course_id.label}
+            rules={formFields.course_id.rules}
+          >
+            <Select
+              showSearch
+              allowClear
+              filterOption={false}
+              placeholder={formFields.course_id.placeholder}
+              notFoundContent={fetching ? <Spin size="small" /> : null}
+              options={courseOptions}
+              onSearch={debounceCourseFetch}
+            ></Select>
+          </Form.Item>
+          <Form.Item
+            labelCol={{ span: 4 }}
+            wrapperCol={{ span: isBelowXl ? 20 : 12 }}
+            name="title"
+            label={formFields.title.label}
+            rules={formFields.title.rules}
+          >
+            <Input placeholder={formFields.title.placeholder}></Input>
+          </Form.Item>
+
+          <Form.List name="options">
+            {(fields, { add, remove }, { errors }) => {
+              return type && <DynamicFormContent type={type} add={add} remove={remove} form={form} fields={fields} />
+            }}
+          </Form.List>
+        </ProForm>
+      </ProCard>
+    </ErrorBoundary>
   )
 }
 
