@@ -16,7 +16,7 @@ export function absoluteUrl(path: string) {
 
 export function formatZodErrorMsg(issues: ZodIssue[]) {
   return issues.map(e => {
-    return e.path[0] ? `${e.path[0]}:${e.message}` : e.message
+    return e.path.length ? `${e.path.join('_')}:${e.message}` : e.message
   }).join(';')
 }
 

@@ -51,13 +51,13 @@ declare namespace Api {
       title: string
     }
     type: import('@/lib/schema').QuizType
-    quizAnswerOptions: QuizAnswerOption[]
+    answerOptions: QuizAnswerOption[]
     createdAt?: Date
     updatedAt?: Date
   }
   interface QuizAnswerOption {
     id: string
-    title: string
+    content: string
     isCorrect: boolean
     createdAt?: Date
     updatedAt?: Date

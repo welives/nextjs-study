@@ -10,20 +10,17 @@ const baseQuizSchema = z.object({
   type: z.nativeEnum(QuizType, { message: '不是一个合法的枚举值' }),
 })
 
-const answerOptionsShcema = z.object({
+const answerOptionsSchema = z.object({
   content: z.string({ message: '不是一个字符串' }).min(1, { message: requiredMessage('答案内容') }),
   is_correct: z.boolean({ message: '不是一个布尔值' })
 })
 
-export const createQuizSchema = baseQuizSchema.extend({ answer_options: z.array(answerOptionsShcema, { message: '不是一个合法的数组' }) })
+export const createQuizSchema = baseQuizSchema.extend({ options: answerOptionsSchema.array().min(1, { message: '候选答案不能为空' }) })
 
 export type CreateQuizData = z.infer<typeof createQuizSchema>
 
 export const updateQuizSchema = baseQuizSchema.extend({
   id: quizIdSchema,
-  answer_options: z.array(
-    answerOptionsShcema.extend({ id: z.string({ message: '不是一个字符串' }).min(1, { message: requiredMessage('答案ID') }) }),
-    { message: '不是一个合法的数组' }
-  )
+  options: answerOptionsSchema.extend({ id: z.string({ message: '不是一个字符串' }).min(1, { message: requiredMessage('答案ID') }) }).array().optional()
 })
 export type UpdateQuizData = z.infer<typeof updateQuizSchema>

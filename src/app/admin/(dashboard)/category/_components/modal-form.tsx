@@ -1,12 +1,14 @@
 'use client'
 
 import * as React from 'react'
-import { message } from 'antd'
 import { ModalForm, ProFormText, ProFormSelect, ProFormTextArea } from '@ant-design/pro-components'
 import type { ProFormInstance, ActionType } from '@ant-design/pro-components'
 import { ErrorBoundary } from 'react-error-boundary'
 import { matchSorter } from 'match-sorter'
+import { toast } from 'sonner'
+
 import { getAll, createOne, updateOne } from '@/actions/category'
+import { CreateCategoryData, UpdateCategoryData } from '@/dto'
 
 type CategoryProps = {
   /**
@@ -48,38 +50,41 @@ const formFields = {
 export function CategoryModalForm(props: CategoryProps) {
   const formRef = React.useRef<ProFormInstance>()
 
+  const onSubmit = async (values: CreateCategoryData & UpdateCategoryData) => {
+    const formData = new FormData()
+    for (const key in values) {
+      if (Object.prototype.hasOwnProperty.call(values, key)) {
+        formData.append(key, values[key])
+      }
+    }
+    let res
+    if (values.id) {
+      res = await updateOne(formData)
+    } else {
+      res = await createOne(formData)
+    }
+    if (!res.success) {
+      toast.error(res.message)
+      return false
+    }
+    toast.success(res.message)
+    props.tableRef.current?.reload()
+    return true
+  }
+
   return (
     <ErrorBoundary fallback={<h2>出错啦!</h2>}>
       <ModalForm
-        formRef={formRef}
+        autoComplete="off"
         width="50%"
         layout="horizontal"
+        formRef={formRef}
         title={props.title}
         trigger={props.trigger}
         modalProps={{
           destroyOnClose: true,
         }}
-        onFinish={async (values) => {
-          const formData = new FormData()
-          for (const key in values) {
-            if (Object.prototype.hasOwnProperty.call(values, key)) {
-              formData.append(key, values[key])
-            }
-          }
-          let res
-          if (values.id) {
-            res = await updateOne(formData)
-          } else {
-            res = await createOne(formData)
-          }
-          if (!res.success) {
-            message.error(res.message)
-            return false
-          }
-          message.success(res.message)
-          props.tableRef.current?.reload()
-          return true
-        }}
+        onFinish={onSubmit}
       >
         <ProFormText hidden={true} name="id" initialValue={props.record?.id} />
         <ProFormSelect

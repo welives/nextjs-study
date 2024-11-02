@@ -4,7 +4,7 @@ import * as React from 'react'
 import Link from 'next/link'
 import { ProTable } from '@ant-design/pro-components'
 import type { ProColumns, ActionType } from '@ant-design/pro-components'
-import { Space, Typography, Popconfirm, message } from 'antd'
+import { Button, Space, Typography, Popconfirm, message } from 'antd'
 import { SearchOutlined } from '@ant-design/icons'
 import http from '@/lib/http'
 import { deleteOne } from '@/actions/quiz'
@@ -69,12 +69,18 @@ export function QuizListPage() {
       rowKey="id"
       actionRef={tableRef}
       scroll={{ x: 1200 }}
+      headerTitle={
+        <Link href="/admin/quiz/new">
+          <Button type="primary">添加试题</Button>
+        </Link>
+      }
       search={false}
       options={{
         fullScreen: false,
         density: false,
         setting: false,
         search: {
+          autoComplete: 'off',
           addonBefore: <SearchOutlined />,
           style: { width: 400 },
           enterButton: '搜索',

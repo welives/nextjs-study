@@ -1,18 +1,24 @@
 'use client'
 
 import React, { useState, useMemo, useRef } from 'react'
+import { useRouter } from 'next/navigation'
 import { Row, Col, Card, Button, Form, Input, Select, Spin, Radio, Checkbox, Tooltip, Space } from 'antd'
 import type { FormListFieldData, FormInstance, FormListOperation } from 'antd'
-import { ProCard, ProForm } from '@ant-design/pro-components'
-import { PlusOutlined, CloseCircleOutlined } from '@ant-design/icons'
+import { ProCard, ProForm, ProFormText } from '@ant-design/pro-components'
+import { PlusOutlined, CloseCircleOutlined, ArrowLeftOutlined } from '@ant-design/icons'
 import { ErrorBoundary } from 'react-error-boundary'
+import { toast } from 'sonner'
 import { debounce } from 'radash'
 import { useMount } from 'react-use'
 import { matchSorter } from 'match-sorter'
-import { QuizType } from '@/lib/schema'
-import { getAll as getAllCourse } from '@/actions/course'
+import hash from 'hash-sum'
+
 import { useBreakpoints } from '@/hooks'
+import { QuizType } from '@/lib/schema'
 import { cn } from '@/lib/utils'
+import { getAll as getAllCourse } from '@/actions/course'
+import { createOne, updateOne } from '@/actions/quiz'
+import { CreateQuizData, UpdateQuizData } from '@/dto'
 
 interface CourseValueType {
   key?: string
@@ -45,6 +51,10 @@ const formFields = {
 
 type FormItemType = typeof Form.Item
 
+/**
+ * 把FormItem封装一层解决 `findDOMNode is deprecated` 警告
+ * @see https://ant-design.antgroup.com/components/tooltip-cn#%E4%B8%BA%E4%BD%95%E5%9C%A8%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F%E4%B8%AD%E6%9C%89%E6%97%B6%E5%80%99%E4%BC%9A%E5%87%BA%E7%8E%B0-finddomnode-is-deprecated-%E8%BF%99%E4%B8%AA%E8%AD%A6%E5%91%8A
+ */
 const FormListItemTrigger = React.forwardRef<
   HTMLDivElement,
   React.ComponentProps<FormItemType> & Omit<FormListFieldData, 'name'>
@@ -57,13 +67,25 @@ const FormListItemTrigger = React.forwardRef<
   )
 })
 
-export function CreateQuizPage() {
+interface QuizFormProps {
+  initialData: Api.QuizListData | null
+}
+
+/**
+ * 试题表单页
+ */
+export function QuizForm({ initialData }: QuizFormProps) {
   const { isBelowXl } = useBreakpoints('xl')
+  const router = useRouter()
   const [form] = Form.useForm()
   const [type, setType] = useState<QuizType>()
+  const [courseOptions, setCourseOptions] = useState<CourseValueType[]>([])
   const [fetching, setFetching] = useState(false)
   const fetchRef = useRef(0)
-  const [courseOptions, setCourseOptions] = useState<CourseValueType[]>([])
+  // 按照接口提交的格式构造数据并生成 hashkey
+  const answerOptionsHashKey = useRef(
+    hash(initialData?.answerOptions.map((e) => ({ id: e.id, content: e.content, is_correct: e.isCorrect })))
+  )
 
   // 封装远程搜索课程选项的防抖函数
   const debounceCourseFetch = useMemo(() => {
@@ -88,19 +110,59 @@ export function CreateQuizPage() {
   }, [])
 
   // 页面加载时执行一次初始搜索
-  useMount(debounceCourseFetch)
+  useMount(() => {
+    debounceCourseFetch()
+    setType(initialData?.type)
+  })
 
-  const onSubmit = (values: any) => {
-    console.log(values)
+  const onSubmit = async (values: CreateQuizData & UpdateQuizData) => {
+    if (values.options.every((e) => !e.is_correct)) {
+      toast.error('请选择至少一个正确答案')
+      return false
+    }
+    if (values.id) {
+      const newHashKey = hash(values.options)
+      // 如果答案部分没有改动的话就不传给后端
+      if (newHashKey === answerOptionsHashKey.current) {
+        values.options = []
+      }
+      const res = await updateOne(values)
+      if (!res.success) {
+        toast.error(res.message)
+        return false
+      }
+      toast.success(res.message)
+      router.back()
+    } else {
+      const res = await createOne(values)
+      if (!res.success) {
+        toast.error(res.message)
+        return false
+      }
+      toast.success(res.message)
+      setType(void 0)
+      form.resetFields()
+    }
+    return true
   }
 
   return (
     <ErrorBoundary fallback={<h2>出错啦!</h2>}>
-      <ProCard>
+      <ProCard
+        title={
+          <div className="flex gap-4 items-center">
+            <span className="flex gap-2 hover:cursor-pointer hover:text-blue" onClick={() => router.back()}>
+              <ArrowLeftOutlined />
+              返回
+            </span>
+            <h3 className="m-0">{initialData ? initialData.title : '添加试题'}</h3>
+          </div>
+        }
+      >
         <ProForm
+          autoComplete="off"
           layout="horizontal"
           form={form}
-          autoComplete="off"
           onFinish={onSubmit}
           submitter={{
             resetButtonProps: {
@@ -118,12 +180,14 @@ export function CreateQuizPage() {
             ),
           }}
         >
+          <ProFormText hidden={true} name="id" initialValue={initialData?.id} />
           <Form.Item
             labelCol={{ span: 4 }}
             wrapperCol={{ span: isBelowXl ? 20 : 12 }}
             name="type"
             label={formFields.type.label}
             rules={formFields.type.rules}
+            initialValue={initialData?.type}
           >
             <Select
               allowClear
@@ -142,6 +206,7 @@ export function CreateQuizPage() {
             name="course_id"
             label={formFields.course_id.label}
             rules={formFields.course_id.rules}
+            initialValue={initialData?.courseId}
           >
             <Select
               showSearch
@@ -159,13 +224,44 @@ export function CreateQuizPage() {
             name="title"
             label={formFields.title.label}
             rules={formFields.title.rules}
+            initialValue={initialData?.title}
           >
             <Input placeholder={formFields.title.placeholder}></Input>
           </Form.Item>
 
-          <Form.List name="options">
+          <Form.List
+            name="options"
+            //! 官方文档说应该始终在 Form.List 组件设置初始值进行回显, 其内部的子字段不应该设置初始值
+            initialValue={initialData?.answerOptions.map((e) => ({
+              id: e.id,
+              content: e.content,
+              is_correct: e.isCorrect,
+            }))}
+            rules={[
+              {
+                async validator(_, options) {
+                  if (!options || options.length < 1) {
+                    return Promise.reject(new Error('候选答案不能为空'))
+                  }
+                  return true
+                },
+              },
+            ]}
+          >
             {(fields, { add, remove }, { errors }) => {
-              return type && <DynamicFormContent type={type} add={add} remove={remove} form={form} fields={fields} />
+              return (
+                type && (
+                  <DynamicFormContent
+                    type={type}
+                    add={add}
+                    remove={remove}
+                    form={form}
+                    fields={fields}
+                    errors={errors}
+                    isNew={!initialData}
+                  />
+                )
+              )
             }}
           </Form.List>
         </ProForm>
@@ -180,9 +276,14 @@ interface DynamicFormContentProps {
   form: FormInstance
   add: FormListOperation['add']
   remove: FormListOperation['remove']
+  errors?: React.ReactNode[]
+  isNew?: boolean
 }
 
-function DynamicFormContent({ type, fields, form, add, remove }: DynamicFormContentProps) {
+/**
+ * 动态表单部分
+ */
+function DynamicFormContent({ type, fields, form, add, remove, errors, isNew = true }: DynamicFormContentProps) {
   const { isBelowXl } = useBreakpoints('xl')
   const AddAnswerButton = () => (
     <Row>
@@ -190,6 +291,7 @@ function DynamicFormContent({ type, fields, form, add, remove }: DynamicFormCont
         <Button type="dashed" onClick={() => add()} block icon={<PlusOutlined />}>
           添加候选答案
         </Button>
+        <Form.ErrorList errors={errors} className="text-red-5 mt-2" />
       </Col>
     </Row>
   )
@@ -208,24 +310,25 @@ function DynamicFormContent({ type, fields, form, add, remove }: DynamicFormCont
                     <FormListItemTrigger
                       {...restField}
                       key={key}
-                      name={[name, 'correct']}
+                      name={[name, 'is_correct']}
                       valuePropName="checked"
                       className="!mb-0"
+                      {...(isNew ? { initialValue: false } : null)}
                     >
-                      {type !== QuizType.MULTIPLE ? (
+                      {type === QuizType.MULTIPLE ? (
+                        <Checkbox />
+                      ) : (
                         <Radio
                           onChange={(e) => {
-                            const currentNamepath = ['options', name, 'correct']
+                            const currentNamepath = ['options', name, 'is_correct']
                             fields.map((field) => {
-                              const namepath = ['options', field.name, 'correct']
+                              const namepath = ['options', field.name, 'is_correct']
                               if (currentNamepath.join('_') !== namepath.join('_')) {
                                 form.setFieldValue(namepath, false)
                               }
                             })
                           }}
                         />
-                      ) : (
-                        <Checkbox />
                       )}
                     </FormListItemTrigger>
                   </Tooltip>
@@ -237,9 +340,10 @@ function DynamicFormContent({ type, fields, form, add, remove }: DynamicFormCont
                 </Tooltip>
               }
             >
+              <ProFormText hidden={true} name={[name, 'id']} />
               <Form.Item
                 {...restField}
-                name={[name, 'title']}
+                name={[name, 'content']}
                 rules={formFields.answer.rules}
                 label={formFields.answer.label}
                 className="!mb-0"

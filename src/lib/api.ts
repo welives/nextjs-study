@@ -13,13 +13,13 @@ export async function isAdmin() {
   return true
 }
 
-interface ISuccess {
-  data?: any
+interface ISuccess<T = any> {
+  data?: T
   msg?: string
   status?: number
 }
 
-export function success({ data = null, msg = 'ok', status = 200 }: ISuccess) {
+export function success<T = any>({ data = void 0, msg = 'ok', status = 200 }: ISuccess<T>) {
   return NextResponse.json({
     success: true,
     code: 0,
@@ -39,24 +39,24 @@ export function failure({ msg = 'failed', code = 'E0001', status = 400 }: IFailu
     success: false,
     code,
     message: msg,
+    data: void 0
   }, { status })
 }
 
-export function actionSuccess({ data = null, msg = 'ok', status = 200 }: ISuccess) {
+export function actionSuccess<T = any>({ data = void 0, msg = 'ok' }: ISuccess<T>) {
   return {
     success: true,
     code: 0,
     message: msg,
     data,
-    status
   }
 }
 
-export function actionFailure({ msg = 'failed', code = 'E0001', status = 400 }) {
+export function actionFailure({ msg = 'failed', code = 'E0001', }: IFailure) {
   return {
     success: false,
     code,
     message: msg,
-    status
+    data: void 0,
   }
 }

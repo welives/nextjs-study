@@ -21,7 +21,7 @@ CREATE TABLE IF NOT EXISTS "courses" (
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "quiz_answer_options" (
 	"id" varchar PRIMARY KEY NOT NULL,
-	"title" text NOT NULL,
+	"content" text NOT NULL,
 	"quiz_id" varchar NOT NULL,
 	"is_correct" boolean DEFAULT false NOT NULL,
 	"created_at" timestamp DEFAULT now() NOT NULL,
@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS "quizzes" (
 	"id" varchar PRIMARY KEY NOT NULL,
 	"title" text NOT NULL,
 	"course_id" varchar NOT NULL,
-	"type" "type" DEFAULT 'single' NOT NULL,
+	"type" "type" NOT NULL,
 	"created_at" timestamp DEFAULT now() NOT NULL,
 	"updated_at" timestamp NOT NULL
 );

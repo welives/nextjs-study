@@ -90,6 +90,7 @@ export function CategoryListPage() {
         density: false,
         setting: false,
         search: {
+          autoComplete: 'off',
           addonBefore: <SearchOutlined />,
           style: { width: 400 },
           enterButton: '搜索',

@@ -1,5 +1,5 @@
 {
-  "id": "07a7fb98-0f27-4a43-a55b-5c2bdb09f817",
+  "id": "67d02ef3-9a9f-4856-a4ea-9e7bd1b2b74f",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -144,8 +144,8 @@
           "primaryKey": true,
           "notNull": true
         },
-        "title": {
-          "name": "title",
+        "content": {
+          "name": "content",
           "type": "text",
           "primaryKey": false,
           "notNull": true
@@ -224,8 +224,7 @@
           "type": "type",
           "typeSchema": "public",
           "primaryKey": false,
-          "notNull": true,
-          "default": "'single'"
+          "notNull": true
         },
         "created_at": {
           "name": "created_at",

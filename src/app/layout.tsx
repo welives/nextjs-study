@@ -3,8 +3,8 @@ import NextTopLoader from 'nextjs-toploader'
 import { Inter } from 'next/font/google'
 import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
-import { AuthProvider } from '@/components/auth-provider'
-import { AntdStyleRegistry } from '@/components/antd-style-registry'
+import { AuthProvider, AntdStyleRegistry } from '@/components/layouts'
+import { Toaster } from '@/components/toaster'
 import { auth } from '@/lib/auth'
 
 import '@/styles/globals.css'
@@ -13,8 +13,8 @@ import '@/styles/uno-cli.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Next Antd Admin',
-  description: 'Next Antd Admin',
+  title: 'Next Admin',
+  description: 'Next Admin',
 }
 
 /**
@@ -42,6 +42,7 @@ export default async function RootLayout({
       <body className={inter.className} suppressHydrationWarning>
         <NextTopLoader showSpinner={false} />
         <NuqsAdapter>
+          <Toaster />
           <AuthProvider session={session}>
             <AntdStyleRegistry>{children}</AntdStyleRegistry>
           </AuthProvider>

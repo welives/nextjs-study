@@ -32,7 +32,7 @@ export const quiz = pgTable('quizzes', {
 })
 
 export const quizRelations = relations(quiz, ({ many, one }) => ({
-  quizAnswerOptions: many(quizAnswerOption),
+  answerOptions: many(quizAnswerOption),
   course: one(course, { fields: [quiz.courseId], references: [course.id] }),
 }))
 

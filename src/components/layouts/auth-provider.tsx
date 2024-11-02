@@ -1,5 +1,5 @@
 import { SessionProvider, SessionProviderProps } from 'next-auth/react'
-import { ThemeProvider } from './theme'
+import { ThemeProvider } from '../theme'
 
 export function AuthProvider({
   session,

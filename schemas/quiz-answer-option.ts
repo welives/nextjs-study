@@ -7,7 +7,7 @@ import { quiz } from './quiz'
 
 export const quizAnswerOption = pgTable('quiz_answer_options', {
   id: varchar('id').primaryKey().$defaultFn(createId),
-  title: text('title').notNull(),
+  content: text('content').notNull(),
   quizId: varchar('quiz_id')
     .notNull()
     .references(() => quiz.id, { onDelete: 'cascade' }),

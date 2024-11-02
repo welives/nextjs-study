@@ -1,4 +1,5 @@
 import { cache } from 'react'
+import { notFound } from 'next/navigation'
 import { eq } from 'drizzle-orm'
 import { matchSorter } from 'match-sorter'
 
@@ -18,10 +19,10 @@ export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: 
           title: true
         }
       },
-      quizAnswerOptions: {
+      answerOptions: {
         columns: {
           id: true,
-          title: true,
+          content: true,
           isCorrect: true
         }
       }
@@ -38,6 +39,38 @@ export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: 
 })
 
 /**
+ * 试题详情
+ */
+export const getOne = cache(async (id: string) => {
+  try {
+    const res = await db.query.quiz.findFirst({
+      where: eq(quiz.id, id),
+      with: {
+        answerOptions: {
+          columns: {
+            id: true,
+            content: true,
+            isCorrect: true
+          }
+        },
+        course: {
+          columns: {
+            id: true,
+            title: true
+          }
+        }
+      }
+    })
+    if (!res) {
+      notFound()
+    }
+    return res
+  } catch (error: any) {
+    throw new Error(error.message)
+  }
+})
+
+/**
  * 添加试题和答案选项
  */
 export const createOne = cache(async ({ title, type, course_id, ...rest }: CreateQuizData) => {
@@ -45,21 +78,19 @@ export const createOne = cache(async ({ title, type, course_id, ...rest }: Creat
     try {
       const [quizEntity] = await tx.insert(quiz).values({ title, type, courseId: course_id }).returning({ insertId: quiz.id })
       if (!quizEntity) {
-        throw new Error()
+        throw new Error('试题添加失败')
       }
 
-      const answerOptions = await Promise.all(rest.answer_options.map(async (el) => {
-        const [entity] = await tx.insert(quizAnswerOption).values({ title: el.content, isCorrect: el.is_correct, quizId: quizEntity.insertId }).returning({ insertId: quizAnswerOption.id })
+      const answerOptions = await Promise.all(rest.options.map(async (el) => {
+        const [entity] = await tx.insert(quizAnswerOption).values({ content: el.content, isCorrect: el.is_correct, quizId: quizEntity.insertId }).returning({ insertId: quizAnswerOption.id })
         return entity.insertId
       }))
       if (answerOptions.length === 0) {
-        throw new Error()
+        throw new Error('试题添加失败')
       }
-
-      return !!quizEntity && !!answerOptions
-    } catch (error) {
+    } catch (error: any) {
       tx.rollback()
-      throw new Error('试题添加失败')
+      throw new Error(error.message)
     }
   })
 })
@@ -72,22 +103,23 @@ export const updateOne = cache(async ({ id, title, type, course_id, ...rest }: U
     try {
       const [quizEntity] = await tx.update(quiz).set({ title, type, courseId: course_id }).where(eq(quiz.id, id)).returning({ updateId: quiz.id })
       if (!quizEntity) {
-        throw new Error()
+        notFound()
       }
 
-      const answerOptions = await Promise.all(
-        rest.answer_options.map(async (el) => {
-          const [entity] = await tx.update(quizAnswerOption).set({ title: el.content, isCorrect: el.is_correct }).where(eq(quizAnswerOption, el.id)).returning({ updateId: quizAnswerOption.id })
-          return entity.updateId
-        })
-      )
-      if (answerOptions.length === 0) {
-        throw new Error()
+      if (rest.options?.length) {
+        const answerOptions = await Promise.all(
+          rest.options.map(async (el) => {
+            const [entity] = await tx.update(quizAnswerOption).set({ content: el.content, isCorrect: el.is_correct }).where(eq(quizAnswerOption.id, el.id)).returning({ updateId: quizAnswerOption.id })
+            return entity.updateId
+          })
+        )
+        if (answerOptions.length === 0) {
+          throw new Error('试题修改失败')
+        }
       }
-
-      return !!quizEntity && !!answerOptions
-    } catch (error) {
-      throw new Error('试题修改失败')
+    } catch (error: any) {
+      tx.rollback()
+      throw new Error(error.message)
     }
   })
 })
@@ -100,7 +132,7 @@ export const updateOne = cache(async ({ id, title, type, course_id, ...rest }: U
 export const deleteOne = cache(async (id: string) => {
   const [entity] = await db.delete(quiz).where(eq(quiz.id, id)).returning({ deleteId: quiz.id })
   if (!entity) {
-    throw new Error('删除失败')
+    notFound()
   }
   return id === entity.deleteId
 })

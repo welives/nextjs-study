@@ -6,21 +6,23 @@ import { isAdmin, actionFailure, actionSuccess } from '@/lib/api'
 import { formatZodErrorMsg } from '@/lib/utils'
 import { quizIdSchema, createQuizSchema, updateQuizSchema, CreateQuizData, UpdateQuizData } from '../dto'
 
+export async function getOne(id: string) {
+  try {
+    const data = await QuizService.getOne(id)
+    return actionSuccess({ data })
+  } catch (error: any) {
+    return actionFailure({ msg: error.message })
+  }
+}
+
 /**
  * 添加试题
- * @param formData
+ * @param data
  * @returns
  */
-export async function createOne(formData: FormData) {
+export async function createOne(data: CreateQuizData) {
   try {
     if (!(await isAdmin())) throw new Error('Unauthorized')
-
-    const data: CreateQuizData = {
-      title: formData.get('title')!.toString(),
-      course_id: formData.get('course_id')!.toString(),
-      type: formData.get('type') as CreateQuizData['type'],
-      answer_options: formData.get('answer_options') as unknown as CreateQuizData['answer_options']
-    }
 
     const parsed = createQuizSchema.safeParse(data)
     if (!parsed.success) {
@@ -29,7 +31,8 @@ export async function createOne(formData: FormData) {
     }
 
     await QuizService.createOne(data)
-    revalidatePath('/admin/quiz/create')
+    revalidatePath('/admin/quiz')
+    revalidatePath('/admin/quiz/new')
     return actionSuccess({ msg: '创建成功' })
   } catch (error: any) {
     return actionFailure({ msg: error.message })
@@ -38,20 +41,12 @@ export async function createOne(formData: FormData) {
 
 /**
  * 修改试题
- * @param formData
+ * @param data
  * @returns
  */
-export async function updateOne(formData: FormData) {
+export async function updateOne(data: UpdateQuizData) {
   try {
     if (!(await isAdmin())) throw new Error('Unauthorized')
-
-    const data: UpdateQuizData = {
-      id: formData.get('id')!.toString(),
-      title: formData.get('title')!.toString(),
-      course_id: formData.get('course_id')!.toString(),
-      type: formData.get('type') as UpdateQuizData['type'],
-      answer_options: formData.get('answer_options') as unknown as UpdateQuizData['answer_options']
-    }
 
     const parsed = updateQuizSchema.safeParse(data)
     if (!parsed.success) {
@@ -74,7 +69,6 @@ export async function updateOne(formData: FormData) {
 export async function deleteOne(id: string) {
   try {
     if (!(await isAdmin())) throw new Error('Unauthorized')
-
 
     const parsed = quizIdSchema.safeParse(id)
     if (!parsed.success) {
