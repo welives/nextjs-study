@@ -5,13 +5,13 @@ export const ROUTES = [
     icon: 'smile',
   },
   {
-    path: '/admin/course',
-    name: '课程',
+    path: "/admin/quiz",
+    name: '试题',
     icon: 'heart',
   },
   {
-    path: "/admin/quiz",
-    name: '试题',
+    path: '/admin/course',
+    name: '课程',
     icon: 'heart',
   },
   {

@@ -25,6 +25,8 @@ export const quiz = pgTable('quizzes', {
     .notNull()
     .references(() => course.id, { onDelete: 'set null' }),
   type: quizTypeEnums('type').notNull(),
+  chapter: varchar('chapter', { length: 30 }),
+  remark: text("remark"),
   createdAt: timestamp('created_at').notNull().defaultNow(),
   updatedAt: timestamp('updated_at')
     .notNull()

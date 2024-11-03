@@ -34,8 +34,12 @@ export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: 
   // Pagination logic
   const offset = (page - 1) * limit
   const quizzes = res.slice(offset, offset + limit)
+  const count = res.length
 
-  return quizzes
+  return {
+    rows: quizzes,
+    count
+  }
 })
 
 /**
@@ -73,13 +77,11 @@ export const getOne = cache(async (id: string) => {
 /**
  * 添加试题和答案选项
  */
-export const createOne = cache(async ({ title, type, course_id, ...rest }: CreateQuizData) => {
+export const createOne = cache(async ({ title, type, course_id, chapter, remark, ...rest }: CreateQuizData) => {
   await db.transaction(async (tx) => {
     try {
-      const [quizEntity] = await tx.insert(quiz).values({ title, type, courseId: course_id }).returning({ insertId: quiz.id })
-      if (!quizEntity) {
-        throw new Error('试题添加失败')
-      }
+      const [quizEntity] = await tx.insert(quiz).values({ title, type, chapter, remark, courseId: course_id }).returning({ insertId: quiz.id })
+      if (!quizEntity) throw new Error('试题添加失败')
 
       const answerOptions = await Promise.all(rest.options.map(async (el) => {
         const [entity] = await tx.insert(quizAnswerOption).values({ content: el.content, isCorrect: el.is_correct, quizId: quizEntity.insertId }).returning({ insertId: quizAnswerOption.id })
@@ -98,10 +100,10 @@ export const createOne = cache(async ({ title, type, course_id, ...rest }: Creat
 /**
  * 更新试题和答案选项
  */
-export const updateOne = cache(async ({ id, title, type, course_id, ...rest }: UpdateQuizData) => {
+export const updateOne = cache(async ({ id, title, type, course_id, chapter, remark, ...rest }: UpdateQuizData) => {
   await db.transaction(async (tx) => {
     try {
-      const [quizEntity] = await tx.update(quiz).set({ title, type, courseId: course_id }).where(eq(quiz.id, id)).returning({ updateId: quiz.id })
+      const [quizEntity] = await tx.update(quiz).set({ title, type, chapter, remark, courseId: course_id }).where(eq(quiz.id, id)).returning({ updateId: quiz.id })
       if (!quizEntity) {
         notFound()
       }

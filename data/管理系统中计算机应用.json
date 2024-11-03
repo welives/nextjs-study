@@ -1,0 +1,3028 @@
+{
+  "subject": "管理系统中计算机应用",
+  "category": "自考",
+  "data": [
+    {
+      "id": 1,
+      "chapter": "第一章",
+      "title": "消费者之间相互采购产品或者服务的交易形式是电子商务类型的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "企业对消费者（B2C）" },
+        { "id": 2, "title": "消费者对消费者（C2C） ", "correct": true },
+        { "id": 3, "title": "消费者对企业（C2B）" },
+        { "id": 4, "title": "社交电子商务（SNS-EC）" }
+      ]
+    },
+    {
+      "id": 2,
+      "chapter": "第一章",
+      "title": "电子商务的主要类型中，不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "B2B" },
+        { "id": 2, "title": "C2C " },
+        { "id": 3, "title": "B2C" },
+        { "id": 4, "title": "D2F", "correct": true }
+      ]
+    },
+    {
+      "id": 3,
+      "chapter": "第一章",
+      "title": "销售者和采购者都是企业，从订购到结算开票的全部交易过程都用网络实现的电子商务类型是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "企业对消费者（B2C）" },
+        { "id": 2, "title": "消费者对消费者（C2C） " },
+        { "id": 3, "title": "消费者对企业（C2B）" },
+        { "id": 4, "title": "企业对企业（B2B）", "correct": true }
+      ]
+    },
+    {
+      "id": 4,
+      "chapter": "第一章",
+      "title": "无论历史长短或规模大小，无论从事何种行业，现代企业的运作都需要（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "及时准确地收集信息来把握市场需要，支持自身产品或服务的开发", "correct": true },
+        { "id": 2, "title": "采用计算机和通信技术支持组织的运作管理", "correct": true },
+        { "id": 3, "title": "建立现代化的信息系统" },
+        { "id": 4, "title": "使用管理新系统实现现代化的管理" },
+        { "id": 5, "title": "建立有效的业务流程和管理方式，提高管理效益", "correct": true }
+      ]
+    },
+    {
+      "id": 5,
+      "chapter": "第一章",
+      "title": "下列选项中，属于动态信息的是员工的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "性别" },
+        { "id": 2, "title": "出生日期 " },
+        { "id": 3, "title": "工作量", "correct": true },
+        { "id": 4, "title": "入职时间" }
+      ]
+    },
+    {
+      "id": 6,
+      "chapter": "第一章",
+      "title": "以下信息属于动态信息的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "员工的出生日期" },
+        { "id": 2, "title": "产品的结构 " },
+        { "id": 3, "title": "员工工龄和年龄", "correct": true },
+        { "id": 4, "title": "员工毕业院校" }
+      ]
+    },
+    {
+      "id": 7,
+      "chapter": "第一章",
+      "title": "外部具体信息属于（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "战略信息" },
+        { "id": 2, "title": "战术信息", "correct": true },
+        { "id": 3, "title": "业务信息" },
+        { "id": 4, "title": "原始信息" }
+      ]
+    },
+    {
+      "id": 8,
+      "chapter": "第一章",
+      "title": "以信息所依附的载体为依据，信息可分为（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "文献信息", "correct": true },
+        { "id": 2, "title": "口传信息", "correct": true },
+        { "id": 3, "title": "原始信息" },
+        { "id": 4, "title": "电子信息", "correct": true },
+        { "id": 5, "title": "生物信息", "correct": true }
+      ]
+    },
+    {
+      "id": 9,
+      "chapter": "第一章",
+      "title": "信息与用户或决策者所关注的问题有联系，不是形成无用的干扰是信息的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "正确性" },
+        { "id": 2, "title": "完整性" },
+        { "id": 3, "title": "相关性", "correct": true },
+        { "id": 4, "title": "可靠性" }
+      ]
+    },
+    {
+      "id": 10,
+      "chapter": "第一章",
+      "title": "基于计算机的信息系统（CBIS）可用来对信息管理的各个环节提供支持，包括（）等",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "数据采集", "correct": true },
+        { "id": 2, "title": "数据传输", "correct": true },
+        { "id": 3, "title": "数据加工", "correct": true },
+        { "id": 4, "title": "数据提供", "correct": true },
+        { "id": 5, "title": "数据存储", "correct": true }
+      ]
+    },
+    {
+      "id": 11,
+      "chapter": "第一章",
+      "title": "企业需要借助信息技术来应对经营压力包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "自经济全球化、强大的竞争对手、强势客户及企业实时运作的市场压力", "correct": true },
+        { "id": 2, "title": "来自生产成本的压力和劳动力成本的压力" },
+        { "id": 3, "title": "来自企业的社会责任、政府管制、法律和伦理约束的社会压力", "correct": true },
+        { "id": 4, "title": "来自国家税收和生产原料涨价的压力" },
+        { "id": 5, "title": "来自技术创新、知识管理、信息爆炸等新技术的压力", "correct": true }
+      ]
+    },
+    {
+      "id": 12,
+      "chapter": "第一章",
+      "title": "信息可以经过加工提炼，使其价值提升，可支持相应的管理决策过程是信息的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "经济性" },
+        { "id": 2, "title": "可访问性" },
+        { "id": 3, "title": "相关性" },
+        { "id": 4, "title": "可处理性", "correct": true }
+      ]
+    },
+    {
+      "id": 13,
+      "chapter": "第一章",
+      "title": "下列选项中，不属于管理信息特点的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据来源的广泛性" },
+        { "id": 2, "title": "信息价值的确定性", "correct": true },
+        { "id": 3, "title": "信息资源的共享性" },
+        { "id": 4, "title": "信息形式的多样性" }
+      ]
+    },
+    {
+      "id": 14,
+      "chapter": "第一章",
+      "title": "信息的可用性至少应当包括（）等方面",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "及时性", "correct": true },
+        { "id": 2, "title": "准确性", "correct": true },
+        { "id": 3, "title": "适用性", "correct": true },
+        { "id": 4, "title": "经济性", "correct": true },
+        { "id": 5, "title": "全面性" }
+      ]
+    },
+    {
+      "id": 15,
+      "chapter": "第一章",
+      "title": "世界上第一台用于管理的商用计算机是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DEC PDP-8" },
+        { "id": 2, "title": "IBM360" },
+        { "id": 3, "title": "ENIAC" },
+        { "id": 4, "title": "UNIVAC", "correct": true }
+      ]
+    },
+    {
+      "id": 16,
+      "chapter": "第一章",
+      "title": "信息的可用性至少应包括及时性、适用性、经济性和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "准确性", "correct": true },
+        { "id": 2, "title": "完整性" },
+        { "id": 3, "title": "安全性" },
+        { "id": 4, "title": "可靠性" }
+      ]
+    },
+    {
+      "id": 17,
+      "chapter": "第一章",
+      "title": "物联网以（）为基础的泛在网络，联网的对象从专门的计算设备拓展到了所有的常规物品",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "局域网" },
+        { "id": 2, "title": "城域网" },
+        { "id": 3, "title": "互联网", "correct": true },
+        { "id": 4, "title": "广域网" }
+      ]
+    },
+    {
+      "id": 18,
+      "chapter": "第一章",
+      "title": "20世纪80年代末到90年代初，计算机网络迅速发展，发达国家率先开始了国家信息基础设施的建设，因特网技术的进步为企业提升信息技术应用创造了新的条件。企业管理计算机应用进入了（）阶段",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "业务流程重组（BPR）系统" },
+        { "id": 2, "title": "战略性信息系统（SIS）", "correct": true },
+        { "id": 3, "title": "企业资源规划（ERP）系统" },
+        { "id": 4, "title": "管理信息系统（MIS）" }
+      ]
+    },
+    {
+      "id": 19,
+      "chapter": "第一章",
+      "title": "（）推动了企业计算机应用发展，使人们生活进入了更加精细和动态化的管理阶段",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "物联网", "correct": true },
+        { "id": 2, "title": "城域网" },
+        { "id": 3, "title": "互联网" },
+        { "id": 4, "title": "广域网" }
+      ]
+    },
+    {
+      "id": 20,
+      "chapter": "第一章",
+      "title": "最初的计算机应用主要支持（），提高其工作效率",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "两项的数据处理业务" },
+        { "id": 2, "title": "多项的数据处理业务" },
+        { "id": 3, "title": "单项的数据处理业务", "correct": true },
+        { "id": 4, "title": "略微复杂的数据处理业务" }
+      ]
+    },
+    {
+      "id": 21,
+      "chapter": "第一章",
+      "title": "企业的移动商务应用，最初集中在（）等方面",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "手机银行服务" },
+        { "id": 2, "title": "提供因特网无线接入服务", "correct": true },
+        { "id": 3, "title": "手机购物" },
+        { "id": 4, "title": "手机支付", "correct": true },
+        { "id": 5, "title": "掌上商城" }
+      ]
+    },
+    {
+      "id": 22,
+      "chapter": "第一章",
+      "title": "信息系统的使用环境包括（）等多个方面，它们都会间接影响信息系统的可用性",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "数据", "correct": true },
+        { "id": 2, "title": "软硬件", "correct": true },
+        { "id": 3, "title": "网络", "correct": true },
+        { "id": 4, "title": "用户使用习惯", "correct": true },
+        { "id": 5, "title": "不同地域" }
+      ]
+    },
+    {
+      "id": 23,
+      "chapter": "第一章",
+      "title": "企业计算机系统应用始终处于不断提高和改善的过程中，而用户在其中扮演着重要角色，主要表现在（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        {
+          "id": 1,
+          "title": "信息系统要融入到企业运营管理之中需要经历一定的过程，这是一个与用户需求逐步贴合、逐步改进的过程",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "title": "信息系统的建设不是单纯的技术开发项目，用户支持和参与是项目成功的基础，有些项目甚至是由用户主导或发起的",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "title": "系统开发中的人机交互设计、运营流程改善、资源服务、信息提供方式等，都需、要在用户参与下完成",
+          "correct": true
+        },
+        { "id": 4, "title": "信息系统适用性的高低取决于用户的使用体验" },
+        { "id": 5, "title": "高质量的信息系统都是信息技术专家和用户相互学习、沟通和配合的成果", "correct": true }
+      ]
+    },
+    {
+      "id": 24,
+      "chapter": "第一章",
+      "title": "系统开发中的人机交互设计、运营流程改善、资源服务、信息提供方式等，都需要在（）参与下完成",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "企业" },
+        { "id": 2, "title": "技术人员" },
+        { "id": 3, "title": "顾客" },
+        { "id": 4, "title": "用户", "correct": true }
+      ]
+    },
+    {
+      "id": 25,
+      "chapter": "第一章",
+      "title": "信息系统的使用环境包括：软硬件、网络、数据和用户使用习惯等多个方面，它们都会间接影响信息系统的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "实用性" },
+        { "id": 2, "title": "可用性", "correct": true },
+        { "id": 3, "title": "时效性" },
+        { "id": 4, "title": "适用性" }
+      ]
+    },
+    {
+      "id": 26,
+      "chapter": "第二章",
+      "title": "决策支持系统（DSS）信息服务的对象是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中层管理者" },
+        { "id": 2, "title": "高层管理者", "correct": true },
+        { "id": 3, "title": "低层管理者" },
+        { "id": 4, "title": "基层执行者" }
+      ]
+    },
+    {
+      "id": 27,
+      "chapter": "第二章",
+      "title": "下列选项中，属于企业运行操作层的业务是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据采集", "correct": true },
+        { "id": 2, "title": "市场分析" },
+        { "id": 3, "title": "汇总报表" },
+        { "id": 4, "title": "投资规划" }
+      ]
+    },
+    {
+      "id": 28,
+      "chapter": "第二章",
+      "title": "实现对货品入库、出库、库存进行全面管理，包括统计盘点、分类报表制作、图形分析等功能的信息系统是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "超市的收付款系统" },
+        { "id": 2, "title": "库存管理系统", "correct": true },
+        { "id": 3, "title": "客户管理系统" },
+        { "id": 4, "title": "银行绩效分析系统" }
+      ]
+    },
+    {
+      "id": 29,
+      "chapter": "第二章",
+      "title": "下列选项中，属于企业管理控制层的业务是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据采集" },
+        { "id": 2, "title": "汇总报表", "correct": true },
+        { "id": 3, "title": "市场分析" },
+        { "id": 4, "title": "投资规划" }
+      ]
+    },
+    {
+      "id": 30,
+      "chapter": "第二章",
+      "title": "操作层系统主要负责（）等，支持个人或团体用户的常规业务操作",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "基层数据采集", "correct": true },
+        { "id": 2, "title": "完成日常的计划" },
+        { "id": 3, "title": "管理监控" },
+        { "id": 4, "title": "日常业务处理", "correct": true },
+        { "id": 5, "title": "管理监测", "correct": true }
+      ]
+    },
+    {
+      "id": 31,
+      "chapter": "第二章",
+      "title": "（）实现了不同企业之间信息流的管理和集成，使不同组织间的产品和服务数据能够自动交换",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "行业间信息系统" },
+        { "id": 2, "title": "部门级信息系统" },
+        { "id": 3, "title": "企业级信息系统" },
+        { "id": 4, "title": "组织间信息系统", "correct": true }
+      ]
+    },
+    {
+      "id": 32,
+      "chapter": "第二章",
+      "title": "（）是由独立分布的机构、公司或个人形成的、临时或永久的集合体",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "网络企业" },
+        { "id": 2, "title": "实体企业" },
+        { "id": 3, "title": "虚拟企业", "correct": true },
+        { "id": 4, "title": "电子商务企业" }
+      ]
+    },
+    {
+      "id": 33,
+      "chapter": "第二章",
+      "title": "以下系统属于联机事务处理系统OLTP的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "医院的挂号系统" },
+        { "id": 2, "title": "超市的收付款系统" },
+        { "id": 3, "title": "信用卡服务的系统", "correct": true },
+        { "id": 4, "title": "商业银行的柜台储蓄业务处理系统" }
+      ]
+    },
+    {
+      "id": 34,
+      "chapter": "第二章",
+      "title": "（）是企业信息化应用的起点，通过操作领域的自动化，TPS将规范化的电子数据保存到数据库中，并为上层信息系统提供了必要的基础资源",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "制造资源计划系统" },
+        { "id": 2, "title": "企业信息化系统" },
+        { "id": 3, "title": "业务处理系统（TPS）", "correct": true },
+        { "id": 4, "title": "业务流程管理系统" }
+      ]
+    },
+    {
+      "id": 35,
+      "chapter": "第二章",
+      "title": "机场的航班查询系统，属于（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DSS" },
+        { "id": 2, "title": "GDSS" },
+        { "id": 3, "title": "ES" },
+        { "id": 4, "title": "OLTP", "correct": true }
+      ]
+    },
+    {
+      "id": 36,
+      "chapter": "第二章",
+      "title": "TPS的主要功能是（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "支持组织中层" },
+        { "id": 2, "title": "支持组织基层", "correct": true },
+        { "id": 3, "title": "支持前端业务机构的具体管理事务", "correct": true },
+        { "id": 4, "title": "支持组织高层" },
+        { "id": 5, "title": "支持后端业务机构的具体管理事务" }
+      ]
+    },
+    {
+      "id": 37,
+      "chapter": "第二章",
+      "title": "财务管理信息系统可分为财务和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "内审" },
+        { "id": 2, "title": "审计" },
+        { "id": 3, "title": "统计" },
+        { "id": 4, "title": "会计", "correct": true }
+      ]
+    },
+    {
+      "id": 38,
+      "chapter": "第二章",
+      "title": "管理信息系统（MIS）最核心的功能是高质量地生成（）所需的信息报表",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "财务部门" },
+        { "id": 2, "title": "职能部门", "correct": true },
+        { "id": 3, "title": "人力部门" },
+        { "id": 4, "title": "市场部门" }
+      ]
+    },
+    {
+      "id": 39,
+      "chapter": "第二章",
+      "title": "MIS的报表内容不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "周期性报表" },
+        { "id": 2, "title": "例外报表" },
+        { "id": 3, "title": "需求、推式报告" },
+        { "id": 4, "title": "计划报表", "correct": true }
+      ]
+    },
+    {
+      "id": 40,
+      "chapter": "第二章",
+      "title": "主管信息系统（Executive Information Systems, ElS）是为组织的（）定制的决策支持系统",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中高层管理者" },
+        { "id": 2, "title": "中层管理着" },
+        { "id": 3, "title": "最高层管理者", "correct": true },
+        { "id": 4, "title": "基层管理者" }
+      ]
+    },
+    {
+      "id": 41,
+      "chapter": "第二章",
+      "title": "决策支持系统的发展趋势包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "商业智能", "correct": true },
+        { "id": 2, "title": "智能管理系统" },
+        { "id": 3, "title": "主管信息系统", "correct": true },
+        { "id": 4, "title": "专家系统", "correct": true },
+        { "id": 5, "title": "群决策支持系统", "correct": true }
+      ]
+    },
+    {
+      "id": 42,
+      "chapter": "第二章",
+      "title": "专家系统（Expert System, ES）是一种模拟专家决策能力的计算机系统，其特点有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "具有定制能力" },
+        { "id": 2, "title": "具有分析能力" },
+        { "id": 3, "title": "具有咨询功能", "correct": true },
+        { "id": 4, "title": "具有学习功能", "correct": true },
+        { "id": 5, "title": "具有教育功能", "correct": true }
+      ]
+    },
+    {
+      "id": 43,
+      "chapter": "第二章",
+      "title": "旨在改善企业与客户关系的系统称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "EIS" },
+        { "id": 2, "title": "SCM" },
+        { "id": 3, "title": "CRM", "correct": true },
+        { "id": 4, "title": "ERP" }
+      ]
+    },
+    {
+      "id": 44,
+      "chapter": "第二章",
+      "title": "从企业整体层面管理内部资源的系统称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "EIS" },
+        { "id": 2, "title": "SCM" },
+        { "id": 3, "title": "CRM" },
+        { "id": 4, "title": "ERP", "correct": true }
+      ]
+    },
+    {
+      "id": 45,
+      "chapter": "第二章",
+      "title": "ERP软件具有（）的结构，可以有选择地购买某些功能模块",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "集成性" },
+        { "id": 2, "title": "模块化", "correct": true },
+        { "id": 3, "title": "完整化" },
+        { "id": 4, "title": "系统化" }
+      ]
+    },
+    {
+      "id": 46,
+      "chapter": "第二章",
+      "title": "CRM系统有不同类型，有的侧重改善运营管理，有的侧重客户分析，有的侧重沟通和自助支持。以下属于CRM主要构成的有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "营销和订单执行", "correct": true },
+        { "id": 2, "title": "客户服务与支持", "correct": true },
+        { "id": 3, "title": "客户留住及忠诚计划", "correct": true },
+        { "id": 4, "title": "销售", "correct": true },
+        { "id": 5, "title": "沟通和账户管理", "correct": true }
+      ]
+    },
+    {
+      "id": 47,
+      "chapter": "第二章",
+      "title": "ERP软件具有（）的结构，可以有选择地购买某些功能模块",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "信息技术", "correct": true },
+        { "id": 2, "title": "通信技术" },
+        { "id": 3, "title": "计算机技术" },
+        { "id": 4, "title": "软件技术" }
+      ]
+    },
+    {
+      "id": 48,
+      "chapter": "第三章",
+      "title": "构成通信网络平台的主要要素不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "通信网络设备" },
+        { "id": 2, "title": "高性能计算机", "correct": true },
+        { "id": 3, "title": "通信协议" },
+        { "id": 4, "title": "传输介质" }
+      ]
+    },
+    {
+      "id": 49,
+      "chapter": "第三章",
+      "title": "在通信网络平台上可以完成（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "信息存储" },
+        { "id": 2, "title": "信息传输", "correct": true },
+        { "id": 3, "title": "信息加工" },
+        { "id": 4, "title": "标准制定" }
+      ]
+    },
+    {
+      "id": 50,
+      "chapter": "第三章",
+      "title": "信息社会中构成了人类赖以生存与发展的三大资源不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "信息" },
+        { "id": 2, "title": "物质" },
+        { "id": 3, "title": "能源" },
+        { "id": 4, "title": "通信", "correct": true }
+      ]
+    },
+    {
+      "id": 51,
+      "chapter": "第三章",
+      "title": "目前，作为信息处理基础平台核心部分的（），其发展呈现出高性能化、网络化、大众化和智能化的特点",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "计算机系统", "correct": true },
+        { "id": 2, "title": "软件系统" },
+        { "id": 3, "title": "硬件系统" },
+        { "id": 4, "title": "通讯系统" }
+      ]
+    },
+    {
+      "id": 52,
+      "chapter": "第三章",
+      "title": "C/S模式的缺点说法错误的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "需要特定的软件支持" },
+        { "id": 2, "title": "很多工作可以在客户端处理后再提交给服务器，客户端响应速度不高", "correct": true },
+        { "id": 3, "title": "在安装、维护、升级的过程中费用十分高昂" },
+        { "id": 4, "title": "对于不同的操作系统需要开发不同版本的客户端和服务器软件" }
+      ]
+    },
+    {
+      "id": 53,
+      "chapter": "第三章",
+      "title": "关于分布式平台的缺点说法不正确的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "对病毒比较敏感" },
+        { "id": 2, "title": "有可能造成数据的不一致性" },
+        { "id": 3, "title": "需要设计专门的数据存取方案" },
+        { "id": 4, "title": "对于用户端的维护和管理的要求不高", "correct": true }
+      ]
+    },
+    {
+      "id": 54,
+      "chapter": "第三章",
+      "title": "关于分布式平台的优点说法不正确的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "系统设计灵活，用户使用方便" },
+        { "id": 2, "title": "局部发生的故障不会影响到全局" },
+        { "id": 3, "title": "需要占用服务器的资源", "correct": true },
+        { "id": 4, "title": "减少了数据传输的成本和风险" }
+      ]
+    },
+    {
+      "id": 55,
+      "chapter": "第三章",
+      "title": "视频采集数据在磁盘上存放时的文件格式多为AVI和MPG。其中MPG文件的存储量大约为AVI文件的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1/5～1/8" },
+        { "id": 2, "title": "1/5～1/10", "correct": true },
+        { "id": 3, "title": "1/6～1/10" },
+        { "id": 4, "title": "1/3～1/10" }
+      ]
+    },
+    {
+      "id": 56,
+      "chapter": "第三章",
+      "title": "完成各种算术逻辑运算的计算机硬件是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "存储器" },
+        { "id": 2, "title": "运算器", "correct": true },
+        { "id": 3, "title": "控制器" },
+        { "id": 4, "title": "输入/输出设备" }
+      ]
+    },
+    {
+      "id": 57,
+      "chapter": "第三章",
+      "title": "计算机必须具备的基本组成部件有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "记忆程序和数据的存储器", "correct": true },
+        { "id": 2, "title": "输入数据和程序的输入设备", "correct": true },
+        { "id": 3, "title": "完成数据加工处理的运算器", "correct": true },
+        { "id": 4, "title": "控制程序执行的控制器", "correct": true },
+        { "id": 5, "title": "输出处理结果的输出设备", "correct": true }
+      ]
+    },
+    {
+      "id": 58,
+      "chapter": "第三章",
+      "title": "一般的数字视频技术不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "视频转换", "correct": true },
+        { "id": 2, "title": "视频采集及回放" },
+        { "id": 3, "title": "视频编辑" },
+        { "id": 4, "title": "三维动画视频制作" }
+      ]
+    },
+    {
+      "id": 59,
+      "chapter": "第三章",
+      "title": "根据冯?诺伊曼体系结构构成的计算机，必须具有的功能有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "把需要的程序和数据送至计算机中", "correct": true },
+        { "id": 2, "title": "能够按照要求将处理结果输出给用户", "correct": true },
+        { "id": 3, "title": "必须具有长期记忆程序、数据、中间结果及最终运算结果的能力", "correct": true },
+        { "id": 4, "title": "能够完成各种算术、逻辑运算和数据传送等数据加工处理的能力", "correct": true },
+        { "id": 5, "title": "能够根据需要控制程序走向，并能根据指令控制机器的各部件协调操作", "correct": true }
+      ]
+    },
+    {
+      "id": 60,
+      "chapter": "第三章",
+      "title": "第四代计算机的基本器件是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中小规模集成电路、多层印刷电路" },
+        { "id": 2, "title": "晶体管、磁芯、印刷电路" },
+        { "id": 3, "title": "大规模集成电路、半导体存储器", "correct": true },
+        { "id": 4, "title": "电子管和继电器" }
+      ]
+    },
+    {
+      "id": 61,
+      "chapter": "第三章",
+      "title": "第二代计算机的软件特点是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "机器语言和汇编语言" },
+        { "id": 2, "title": "大规模、可扩展并行与分布处理" },
+        { "id": 3, "title": "多道程序和分时操作系统" },
+        { "id": 4, "title": "高级语言和编译、批处理监控系统", "correct": true }
+      ]
+    },
+    {
+      "id": 62,
+      "chapter": "第三章",
+      "title": "在数据通信方式中，无线对讲机属于（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "单向通信" },
+        { "id": 2, "title": "双向交替通信", "correct": true },
+        { "id": 3, "title": "单向交替通信" },
+        { "id": 4, "title": "双向同时通信" }
+      ]
+    },
+    {
+      "id": 63,
+      "chapter": "第三章",
+      "title": "在数据通信方式中，无线电广播属于（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "单向通信", "correct": true },
+        { "id": 2, "title": "双向交替通信" },
+        { "id": 3, "title": "单向交替通信" },
+        { "id": 4, "title": "双向同时通信" }
+      ]
+    },
+    {
+      "id": 64,
+      "chapter": "第三章",
+      "title": "在数据通信方式中，电话网、计算机网络属于（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "单向通信" },
+        { "id": 2, "title": "双向交替通信" },
+        { "id": 3, "title": "单向交替通信" },
+        { "id": 4, "title": "双向同时通信", "correct": true }
+      ]
+    },
+    {
+      "id": 65,
+      "chapter": "第三章",
+      "title": "（）非常适合于速率要求高的交互式通信，并已成为当前数据通信系统中最主要的交换方式",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "电路交换" },
+        { "id": 2, "title": "数据交换" },
+        { "id": 3, "title": "分组交换", "correct": true },
+        { "id": 4, "title": "报文交换" }
+      ]
+    },
+    {
+      "id": 66,
+      "chapter": "第三章",
+      "title": "关于报文交换的说法正确的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "传输延迟小" },
+        { "id": 2, "title": "不会发生用户冲突" },
+        { "id": 3, "title": "不需要事先建立物理电路", "correct": true },
+        { "id": 4, "title": "限制报文的大小" }
+      ]
+    },
+    {
+      "id": 67,
+      "chapter": "第三章",
+      "title": "下列不属于数字信号的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数字电话" },
+        { "id": 2, "title": "电话语音信号", "correct": true },
+        { "id": 3, "title": "数字电视" },
+        { "id": 4, "title": "计算机数据" }
+      ]
+    },
+    {
+      "id": 68,
+      "chapter": "第三章",
+      "title": "（）是指因变量完全随连续消息的变化而变化的信号",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数字信号" },
+        { "id": 2, "title": "光子信号" },
+        { "id": 3, "title": "模拟信号", "correct": true },
+        { "id": 4, "title": "电频信号" }
+      ]
+    },
+    {
+      "id": 69,
+      "chapter": "第三章",
+      "title": "数据交换技术不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "电路交换" },
+        { "id": 2, "title": "报文交换" },
+        { "id": 3, "title": "数据交换", "correct": true },
+        { "id": 4, "title": "分组交换" }
+      ]
+    },
+    {
+      "id": 70,
+      "chapter": "第三章",
+      "title": "网络协议关键要素不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "语境", "correct": true },
+        { "id": 2, "title": "语义" },
+        { "id": 3, "title": "语法" },
+        { "id": 4, "title": "定时" }
+      ]
+    },
+    {
+      "id": 71,
+      "chapter": "第三章",
+      "title": "将计算机网络分为局域网（LAN）、城域网（MAN）、广域网（WAN）和互联网的分类依据是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "拓扑结构" },
+        { "id": 2, "title": "网络覆盖范围", "correct": true },
+        { "id": 3, "title": "传输媒体" },
+        { "id": 4, "title": "交换方式" }
+      ]
+    },
+    {
+      "id": 72,
+      "chapter": "第三章",
+      "title": "在计算机网络中，每种资源（尤其是程序和数据）可以存放在多个地点，而用户可以通过多种途径来访问网内的某个资源，从而避免了单点失效对用户产生的影响是指计算机网络的（）特点",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "信息传递" },
+        { "id": 2, "title": "资源共享" },
+        { "id": 3, "title": "提高系统处理能力" },
+        { "id": 4, "title": "增加可靠性", "correct": true }
+      ]
+    },
+    {
+      "id": 73,
+      "chapter": "第三章",
+      "title": "Http协议处于TCP/IP协议体系的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "应用层", "correct": true },
+        { "id": 2, "title": "传输层" },
+        { "id": 3, "title": "网络层" },
+        { "id": 4, "title": "网络接口层" }
+      ]
+    },
+    {
+      "id": 74,
+      "chapter": "第三章",
+      "title": "网络层的主要功能是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "构筑操作界面" },
+        { "id": 2, "title": "提供路由", "correct": true },
+        { "id": 3, "title": "传输控制" },
+        { "id": 4, "title": "负责帧的收发" }
+      ]
+    },
+    {
+      "id": 75,
+      "chapter": "第三章",
+      "title": "IPv6中能够提供（）个IP地址",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "2^128-1", "correct": true },
+        { "id": 2, "title": "2^128+1" },
+        { "id": 3, "title": "2^64-1" },
+        { "id": 4, "title": "2^32-1" }
+      ]
+    },
+    {
+      "id": 76,
+      "chapter": "第三章",
+      "title": "与大多数网络软件一样，TCP/IP按分层思想来给网络建模，所包含的层次不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "应用层" },
+        { "id": 2, "title": "传输层" },
+        { "id": 3, "title": "会话层", "correct": true },
+        { "id": 4, "title": "网络层" }
+      ]
+    },
+    {
+      "id": 77,
+      "chapter": "第三章",
+      "title": "物联网在技术构架上的分层不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "感知层" },
+        { "id": 2, "title": "传输层", "correct": true },
+        { "id": 3, "title": "网络层" },
+        { "id": 4, "title": "应用层" }
+      ]
+    },
+    {
+      "id": 78,
+      "chapter": "第三章",
+      "title": "云计算作为一种新的互联网应用和服务模式，与传统的应用模式比有其自身特点，下列特点中不属于云计算特点的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "虚拟化技术" },
+        { "id": 2, "title": "安全性和可靠性" },
+        { "id": 3, "title": "数据传输速率快", "correct": true },
+        { "id": 4, "title": "灵活方便地获取服务" }
+      ]
+    },
+    {
+      "id": 79,
+      "chapter": "第三章",
+      "title": "目前，云计算的商业应用正在全球范围内迅速地发展，主要的云计算服务模式中不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "软件服务" },
+        { "id": 2, "title": "数据服务", "correct": true },
+        { "id": 3, "title": "平台服务" },
+        { "id": 4, "title": "基础设施服务" }
+      ]
+    },
+    {
+      "id": 80,
+      "chapter": "第三章",
+      "title": "数据库管理系统是指帮助用户建立、使用和管理数据库的软件系统，基本组成部分不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据描述语言" },
+        { "id": 2, "title": "数据翻译语言", "correct": true },
+        { "id": 3, "title": "数据操作语言" },
+        { "id": 4, "title": "其他管理和控制程序" }
+      ]
+    },
+    {
+      "id": 81,
+      "chapter": "第三章",
+      "title": "（）是直接面向用户的，用户能够看见并使用的局部数据的逻辑结构描述",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "子模式", "correct": true },
+        { "id": 2, "title": "模式" },
+        { "id": 3, "title": "物理模式" },
+        { "id": 4, "title": "内模式" }
+      ]
+    },
+    {
+      "id": 82,
+      "chapter": "第三章",
+      "title": "数据库管理系统的功能不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据定义功能" },
+        { "id": 2, "title": "数据处理功能", "correct": true },
+        { "id": 3, "title": "数据库的运行管理功能" },
+        { "id": 4, "title": "数据库的建立和维护功能" }
+      ]
+    },
+    {
+      "id": 83,
+      "chapter": "第三章",
+      "title": "（）不但在程序设计语言、软件工程、信息系统设计和计算机硬件设计方面产生了极大的影响，而且也为面临新挑战的数据库技术带来了机会和希望",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "面向过程的方法和技术" },
+        { "id": 2, "title": "面向程序的方法和技术" },
+        { "id": 3, "title": "面向用户的方法和技术" },
+        { "id": 4, "title": "面向对象的方法和技术", "correct": true }
+      ]
+    },
+    {
+      "id": 84,
+      "chapter": "第三章",
+      "title": "为了能够实现多媒体数据库的这些特点，必须建立合适的数据模型，而建立数据模型的途径不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "基于关系模型" },
+        { "id": 2, "title": "基于面向过程模型", "correct": true },
+        { "id": 3, "title": "基于超文本、超媒体模型" },
+        { "id": 4, "title": "开发全新的数据模型" }
+      ]
+    },
+    {
+      "id": 85,
+      "chapter": "第三章",
+      "title": "数据库技术与多学科技术有机结合的发展产生了一些列新的数据库形式，下列数据系统中不属于此类的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "分布式数据库系统" },
+        { "id": 2, "title": "并行数据库系统" },
+        { "id": 3, "title": "交互式数据库系统", "correct": true },
+        { "id": 4, "title": "多媒体数据库系统" }
+      ]
+    },
+    {
+      "id": 86,
+      "chapter": "第四章",
+      "title": "逻辑模型通常的概念组成不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据操作" },
+        { "id": 2, "title": "数据结构" },
+        { "id": 3, "title": "数据库的模型", "correct": true },
+        { "id": 4, "title": "数据完整性约束" }
+      ]
+    },
+    {
+      "id": 87,
+      "chapter": "第四章",
+      "title": "有汽车和零部件两个实体集，一辆汽车由多种零部件组成，且一种零部件可用于多种型号的汽车，则汽车和零部件之间的联系类型是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "多对多", "correct": true },
+        { "id": 2, "title": "一对一" },
+        { "id": 3, "title": "多对一" },
+        { "id": 4, "title": "一对多" }
+      ]
+    },
+    {
+      "id": 88,
+      "chapter": "第四章",
+      "title": "关系模型的实体完整性是指（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "主码是惟一的" },
+        { "id": 2, "title": "外码是惟一的" },
+        { "id": 3, "title": "主码不能是空值", "correct": true },
+        { "id": 4, "title": "外码不能是空值" }
+      ]
+    },
+    {
+      "id": 89,
+      "chapter": "第四章",
+      "title": "一张二维表对应（）关系",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "一个", "correct": true },
+        { "id": 2, "title": "二个" },
+        { "id": 3, "title": "多个" },
+        { "id": 4, "title": "四个" }
+      ]
+    },
+    {
+      "id": 90,
+      "chapter": "第四章",
+      "title": "可以唯一确定一个元组的属性或属性组称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "内码" },
+        { "id": 2, "title": "外码" },
+        { "id": 3, "title": "主码" },
+        { "id": 4, "title": "候选码", "correct": true }
+      ]
+    },
+    {
+      "id": 91,
+      "chapter": "第四章",
+      "title": "在关系R(R#，RN，S#)和S(S#，SN，SD)中，R的主码是R#，S的主码是S#，则S#在R中称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "外码", "correct": true },
+        { "id": 2, "title": "候选码" },
+        { "id": 3, "title": "主码" },
+        { "id": 4, "title": "超码" }
+      ]
+    },
+    {
+      "id": 92,
+      "chapter": "第四章",
+      "title": "关系的完整性具体说关系模型一般完整性约束条件不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "实体完整性" },
+        { "id": 2, "title": "参照完整性" },
+        { "id": 3, "title": "用户定义完整性" },
+        { "id": 4, "title": "结合完整性", "correct": true }
+      ]
+    },
+    {
+      "id": 93,
+      "chapter": "第四章",
+      "title": "将两个关系中相同的元组构成一个新关系的关系运算是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "并" },
+        { "id": 2, "title": "差" },
+        { "id": 3, "title": "交", "correct": true },
+        { "id": 4, "title": "投影" }
+      ]
+    },
+    {
+      "id": 94,
+      "chapter": "第四章",
+      "title": "专门的关系运算不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "选择（筛选）" },
+        { "id": 2, "title": "投影" },
+        { "id": 3, "title": "交互", "correct": true },
+        { "id": 4, "title": "连接" }
+      ]
+    },
+    {
+      "id": 95,
+      "chapter": "第四章",
+      "title": "数据规范化主要是解决关系模型的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "用户的数据操作权限" },
+        { "id": 2, "title": "物理结构优化" },
+        { "id": 3, "title": "应用程序界面美观" },
+        { "id": 4, "title": "逻辑结构优化", "correct": true }
+      ]
+    },
+    {
+      "id": 96,
+      "chapter": "第四章",
+      "title": "数据规范化理论认为，关系范式越高，数据库结构越好。一般只要把数据库关系规范到（）就可以满足需要了",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "二范式" },
+        { "id": 2, "title": "三范式", "correct": true },
+        { "id": 3, "title": "四范式" },
+        { "id": 4, "title": "五范式" }
+      ]
+    },
+    {
+      "id": 97,
+      "chapter": "第四章",
+      "title": "一范式的表格已经满足了关系的基本约束条件，可以描述为一个关系，但是这种关系存在的问题会比较多。归纳起来主要有三类，其中不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "插入异常" },
+        { "id": 2, "title": "删除、修改异常" },
+        { "id": 3, "title": "数据冗余大" },
+        { "id": 4, "title": "数据关系过于复杂", "correct": true }
+      ]
+    },
+    {
+      "id": 98,
+      "chapter": "第四章",
+      "title": "只要数据表能满足关系模型的5个基本约束条件，就可以堪称是一个（）二维表",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "条件" },
+        { "id": 2, "title": "功能" },
+        { "id": 3, "title": "关系", "correct": true },
+        { "id": 4, "title": "系统" }
+      ]
+    },
+    {
+      "id": 99,
+      "chapter": "第四章",
+      "title": "在SQL Server 2000 中可以直接用SQL语句定义数据库，在其语句命令格式中（）的内容为必选项",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "方括号[]" },
+        { "id": 2, "title": "竖线符号|左右" },
+        { "id": 3, "title": "省略符号…" },
+        { "id": 4, "title": "尖括号＜＞", "correct": true }
+      ]
+    },
+    {
+      "id": 100,
+      "chapter": "第四章",
+      "title": "数据库名是新定义数据库的文件名称，在服务器中必须是不可重复的物理文件名，最多由（）个字符组成",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "64" },
+        { "id": 2, "title": "128", "correct": true },
+        { "id": 3, "title": "256" },
+        { "id": 4, "title": "512" }
+      ]
+    },
+    {
+      "id": 101,
+      "chapter": "第四章",
+      "title": "数据库名是新定义数据库的文件名称，在服务器中必须是不可重复的物理文件名，最多由（）个字符组成",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "64" },
+        { "id": 2, "title": "128", "correct": true },
+        { "id": 3, "title": "256" },
+        { "id": 4, "title": "512" }
+      ]
+    },
+    {
+      "id": 102,
+      "chapter": "第四章",
+      "title": "数据库的管理具体包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "显示数据库信息", "correct": true },
+        { "id": 2, "title": "配置数据库", "correct": true },
+        { "id": 3, "title": "重新命名", "correct": true },
+        { "id": 4, "title": "删除数据库", "correct": true },
+        { "id": 5, "title": "添加数据表" }
+      ]
+    },
+    {
+      "id": 103,
+      "chapter": "第四章",
+      "title": "数值型（N）：是由数字（0~9）、小数点和正负号组成。最大长度为（）位（包括＋、—和小数点）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "8" },
+        { "id": 2, "title": "16" },
+        { "id": 3, "title": "20", "correct": true },
+        { "id": 4, "title": "32" }
+      ]
+    },
+    {
+      "id": 104,
+      "chapter": "第四章",
+      "title": "在SQL Server 2000语句命令中，指定该列为该表的唯一标识行列的选项是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DEFAULT" },
+        { "id": 2, "title": "IDENTITY" },
+        { "id": 3, "title": "ROWGUIDCOL", "correct": true },
+        { "id": 4, "title": "PRIMARY KEY" }
+      ]
+    },
+    {
+      "id": 105,
+      "chapter": "第四章",
+      "title": "DATETIME：日期和时间混合存放，范围是1753 年1月1日零时一9999 年12 月31日23时59分59秒。数据占（）个字节的空间",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "16" },
+        { "id": 2, "title": "2" },
+        { "id": 3, "title": "8", "correct": true },
+        { "id": 4, "title": "30" }
+      ]
+    },
+    {
+      "id": 106,
+      "chapter": "第四章",
+      "title": "在修改表结构时，比较SQL Server 2000 中的命令与Visual FoxPro 中的命令基本上都是一样的，只是在SQL Server 2000 中多了一条删除列的子命令（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DELETE" },
+        { "id": 2, "title": "DROP", "correct": true },
+        { "id": 3, "title": "UPDATE" },
+        { "id": 4, "title": "ORDER" }
+      ]
+    },
+    {
+      "id": 107,
+      "chapter": "第四章",
+      "title": "SQL Server 2000 中，在进行这些修改时应当注意的事项不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "添加操作和删除操作可以一次针对多个列" },
+        { "id": 2, "title": "修改操作每次只能针对一个列进行" },
+        { "id": 3, "title": "同时当某一列有约束条件时，必须先删除这些约束后才能修改" },
+        { "id": 4, "title": "同时当某一列有约束条件时，可以先删除这些约束后才能修改", "correct": true }
+      ]
+    },
+    {
+      "id": 108,
+      "chapter": "第四章",
+      "title": "SQL 语言中，修改表结构的命令是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ALTER", "correct": true },
+        { "id": 2, "title": "CREATE" },
+        { "id": 3, "title": "UPDATE" },
+        { "id": 4, "title": "INSERT" }
+      ]
+    },
+    {
+      "id": 109,
+      "chapter": "第四章",
+      "title": "在SQL Server 2000中利用系统存储过程可以查看数据表的信息，其语法格式是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SP HELP[[@OBJNAME= NAME]]" },
+        { "id": 2, "title": "SP_HELP[[@OBJNAME=] NAME]", "correct": true },
+        { "id": 3, "title": "SP_HELP[[OBJNAME=] NAME]" },
+        { "id": 4, "title": "SP_HELP[[@OBJNAME=]]" }
+      ]
+    },
+    {
+      "id": 110,
+      "chapter": "第四章",
+      "title": "下列关于视图的说法错误的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "视图是从一个或多个表或视图中导出的表" },
+        { "id": 2, "title": "视图是根据用户的要求定义的" },
+        { "id": 3, "title": "存在真正的数据集合的表", "correct": true },
+        { "id": 4, "title": "视图可以为用户集中自己需要的数据，简化用户对数据的查询处理" }
+      ]
+    },
+    {
+      "id": 111,
+      "chapter": "第四章",
+      "title": "视图的分类一般包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "简单视图" },
+        { "id": 2, "title": "单表视图", "correct": true },
+        { "id": 3, "title": "复合视图" },
+        { "id": 4, "title": "多表视图", "correct": true },
+        { "id": 5, "title": "逻辑视图" }
+      ]
+    },
+    {
+      "id": 112,
+      "chapter": "第四章",
+      "title": "下列关于视图作用的说法中，错误的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "屏蔽数据库的复杂性" },
+        { "id": 2, "title": "定义新的基本表", "correct": true },
+        { "id": 3, "title": "便于用户权限的控制" },
+        { "id": 4, "title": "简化用户的操作" }
+      ]
+    },
+    {
+      "id": 113,
+      "chapter": "第四章",
+      "title": "使用IN限定查询的范围，其作用与使用逻辑符号（）类似",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "BETWEEN" },
+        { "id": 2, "title": "AND", "correct": true },
+        { "id": 3, "title": "OR", "correct": true },
+        { "id": 4, "title": "NOT" },
+        { "id": 5, "title": "FULL" }
+      ]
+    },
+    {
+      "id": 114,
+      "chapter": "第四章",
+      "title": "关于模糊查询的说法错误的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "选项[NOT] 是求反操作" },
+        { "id": 2, "title": "语法格式：[NOT]＜条件＞", "correct": true },
+        { "id": 3, "title": "语法格式：[NOT] LIKE＜条件＞" },
+        { "id": 4, "title": "在＜条件＞中经常会使用通配字符" }
+      ]
+    },
+    {
+      "id": 115,
+      "chapter": "第四章",
+      "title": "使用BETWEEN限定查询范围，其作用与使用比较符号（）一样",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": ">" },
+        { "id": 2, "title": ">=", "correct": true },
+        { "id": 3, "title": "<" },
+        { "id": 4, "title": "<=", "correct": true },
+        { "id": 5, "title": "=" }
+      ]
+    },
+    {
+      "id": 116,
+      "chapter": "第四章",
+      "title": "连接查询中系统总是默认使用（），所以会省略[类型]选项",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "左连接" },
+        { "id": 2, "title": "完全连接" },
+        { "id": 3, "title": "内部连接", "correct": true },
+        { "id": 4, "title": "右连接" }
+      ]
+    },
+    {
+      "id": 117,
+      "chapter": "第四章",
+      "title": "连接查询中连接［类型］有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "内部连接", "correct": true },
+        { "id": 2, "title": "左连接", "correct": true },
+        { "id": 3, "title": "右连接", "correct": true },
+        { "id": 4, "title": "完全连接", "correct": true },
+        { "id": 5, "title": "部分连接" }
+      ]
+    },
+    {
+      "id": 118,
+      "chapter": "第四章",
+      "title": "关于联合查询的要求正确的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "两个表的列名及顺序可以不一样，并且列的类型也应当兼容" },
+        { "id": 2, "title": "两个表的列名及顺序都一样，列的类型可以不用兼容" },
+        { "id": 3, "title": "两个表的列名及顺序可以不一样，列的类型可以不用兼容" },
+        { "id": 4, "title": "两个表的列名及顺序都一样，并且列的类型也应当兼容", "correct": true }
+      ]
+    },
+    {
+      "id": 119,
+      "chapter": "第四章",
+      "title": "下列关于联合查询语法格式的说法正确的有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "选项[ALL]可以使输出结果保存全部行，忽略则自动删除重复行", "correct": true },
+        { "id": 2, "title": "结果集中的列名来自第一个查询语句", "correct": true },
+        { "id": 3, "title": "如果包含ORDER BY子句，将对最后的结果集排序", "correct": true },
+        { "id": 4, "title": "如果包含ORDER BY子句，将对最前的结果集排序" },
+        { "id": 5, "title": "所有查询中的列名和列顺序必须完全相同", "correct": true }
+      ]
+    },
+    {
+      "id": 120,
+      "chapter": "第四章",
+      "title": "联合查询就是将两个或多个（）语句的查询结果，通过UNION 子句合并为一个结果集",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "EXISTS" },
+        { "id": 2, "title": "SELECT", "correct": true },
+        { "id": 3, "title": "ANY" },
+        { "id": 4, "title": "ALL" }
+      ]
+    },
+    {
+      "id": 121,
+      "chapter": "第五章",
+      "title": "信息系统规划的意义包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "信息系统规划的作用" },
+        { "id": 2, "title": "企业信息系统规划的类别" },
+        { "id": 3, "title": "企业战略与信息系统" },
+        { "id": 4, "title": "保证信息系统开发的有效性", "correct": true },
+        { "id": 5, "title": "使企业对未来技术与业务的结合过程有所准备", "correct": true }
+      ]
+    },
+    {
+      "id": 122,
+      "chapter": "第五章",
+      "title": "借助规划流程，人们可用正确方法去制定规划，使规划内容符合组织的需要。信息系统规划的流程和其他规划类似，需要完成的基本阶段包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "战略规划", "correct": true },
+        { "id": 2, "title": "过程设计" },
+        { "id": 3, "title": "需求分析", "correct": true },
+        { "id": 4, "title": "资源分配", "correct": true },
+        { "id": 5, "title": "项目规划", "correct": true }
+      ]
+    },
+    {
+      "id": 123,
+      "chapter": "第五章",
+      "title": "在信息系统规划阶段，企业需要思考的问题很多。这些问题大致可归纳为（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "企业现在的信息需求有哪些" },
+        { "id": 2, "title": "企业需要哪些信息系统", "correct": true },
+        { "id": 3, "title": "如何获得这些系统", "correct": true },
+        { "id": 4, "title": "现有系统和管理环境的变化", "correct": true },
+        { "id": 5, "title": "系统应急计划", "correct": true }
+      ]
+    },
+    {
+      "id": 124,
+      "chapter": "第五章",
+      "title": "下列选项中，不属于信息系统规划的内容是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "企业需要哪些信息系统" },
+        { "id": 2, "title": "系统应急计划" },
+        { "id": 3, "title": "现有系统和管理环境的变化" },
+        { "id": 4, "title": "系统测试计划", "correct": true }
+      ]
+    },
+    {
+      "id": 125,
+      "chapter": "第五章",
+      "title": "企业系统规划法（BSP）的核心是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "定义企业目标" },
+        { "id": 2, "title": "定义企业过程", "correct": true },
+        { "id": 3, "title": "定义数据类" },
+        { "id": 4, "title": "定义信息系统总体结构" }
+      ]
+    },
+    {
+      "id": 126,
+      "chapter": "第五章",
+      "title": "可以对企业成功的重点因素进行辨识，确定组织的信息需求，了解信息系统在企业中的位置的信息系统战略性规划的方法是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "诺兰模型" },
+        { "id": 2, "title": "价值链模型" },
+        { "id": 3, "title": "企业系统规划法" },
+        { "id": 4, "title": "关键成功要素法", "correct": true }
+      ]
+    },
+    {
+      "id": 127,
+      "chapter": "第五章",
+      "title": "诺兰模型将信息系统的发展分为六个阶段，其中有一个转折点发生在（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "第二、三阶段之间" },
+        { "id": 2, "title": "第三、四阶段之间", "correct": true },
+        { "id": 3, "title": "第四、五阶段之间" },
+        { "id": 4, "title": "第五、六阶段之间" }
+      ]
+    },
+    {
+      "id": 128,
+      "chapter": "第五章",
+      "title": "以下关于价值链模型的作用说法不正确的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        {
+          "id": 1,
+          "title": "价值链分析可以用来识别出对组织有益的活动，就活动的价值达成共识，有效提升企业管理的总价值"
+        },
+        {
+          "id": 2,
+          "title": "借助价值链结构图可以找出重要的活动和过程，并找出支持主要活动的应用统，使信息技术支持对企业的价值实现有实际的贡献"
+        },
+        {
+          "id": 3,
+          "title": "借助价值链结构图可以找出重要的活动和过程，并找出支持主要活动的应用统，有效提升企业管理的总价值",
+          "correct": true
+        },
+        {
+          "id": 4,
+          "title": "价值链可以帮助人们脱离局部视野，使部门管理者能站在企业整体的角度，客观分析某项技术对组织价值创造的作用，就应用系统对企业的价值达成共识"
+        }
+      ]
+    },
+    {
+      "id": 129,
+      "chapter": "第五章",
+      "title": "可行性分析的主要内容有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "技术的可行性分析", "correct": true },
+        { "id": 2, "title": "经济可行性分析", "correct": true },
+        { "id": 3, "title": "管理可行性分析", "correct": true },
+        { "id": 4, "title": "法理可行性分析", "correct": true },
+        { "id": 5, "title": "条件可行性分析" }
+      ]
+    },
+    {
+      "id": 130,
+      "chapter": "第五章",
+      "title": "管理上的可行性主要考察的内容有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "信息系统项目实施的环境条件，如用户是否愿意接纳该系统", "correct": true },
+        { "id": 2, "title": "系统的核心设计是否与组织的管理基础相匹配", "correct": true },
+        { "id": 3, "title": "系统所需的各种数据是否有保障", "correct": true },
+        { "id": 4, "title": "业务基础是否牢固", "correct": true },
+        { "id": 5, "title": "企业对系统所引发的变革能否妥善处理等", "correct": true }
+      ]
+    },
+    {
+      "id": 131,
+      "chapter": "第五章",
+      "title": "可行性分析的基本过程包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "确定可选方案", "correct": true },
+        { "id": 2, "title": "可行性研究", "correct": true },
+        { "id": 3, "title": "撰写报告", "correct": true },
+        { "id": 4, "title": "制定基本计划" },
+        { "id": 5, "title": "可行性分析的结论", "correct": true }
+      ]
+    },
+    {
+      "id": 132,
+      "chapter": "第五章",
+      "title": "外包提供了软件规模化所带来的实惠，其优势有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "外包有利于企业关注核心业务", "correct": true },
+        { "id": 2, "title": "专业化的外包服务具有质量稳定、成本透明、技术更新及时等优点", "correct": true },
+        { "id": 3, "title": "包可以使信息技术实力不强的企业直接享受标准化、专业化的信息服务", "correct": true },
+        { "id": 4, "title": "软件服务市场的发展，会推动软件服务商主动地提升产品和服务质量", "correct": true },
+        {
+          "id": 5,
+          "title": "外包可以做到按需付费，有效降低了企业信息技术投资，非常有利于那些服务需求有波动的企业",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 133,
+      "chapter": "第五章",
+      "title": "下列关于终端用户开发(EUC)的描述中，错误的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "可及时满足终端用户灵活多样的需求" },
+        { "id": 2, "title": "提高了终端用户参与系统应用的积极性" },
+        { "id": 3, "title": "可以缓解开发部门的部分压力" },
+        { "id": 4, "title": "EUC的开发者是信息中心的专业人员", "correct": true }
+      ]
+    },
+    {
+      "id": 134,
+      "chapter": "第五章",
+      "title": "直接使用第三方提供的标准化信息服务是系统建设方式的选择中的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "合作开发" },
+        { "id": 2, "title": "购买" },
+        { "id": 3, "title": "自行开发" },
+        { "id": 4, "title": "外包", "correct": true }
+      ]
+    },
+    {
+      "id": 135,
+      "chapter": "第五章",
+      "title": "信息系统构件的三大要素不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "接口" },
+        { "id": 2, "title": "实现" },
+        { "id": 3, "title": "部署" },
+        { "id": 4, "title": "消息", "correct": true }
+      ]
+    },
+    {
+      "id": 136,
+      "chapter": "第五章",
+      "title": "快速应用开发方法的主要优点不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "可明显压缩低效率的重复环节" },
+        { "id": 2, "title": "可以更快地完成系统开发工作" },
+        { "id": 3, "title": "减少了系统开发的工作量", "correct": true },
+        { "id": 4, "title": "有利于用户和系统开发人员建立良好关系" }
+      ]
+    },
+    {
+      "id": 137,
+      "chapter": "第五章",
+      "title": "信息系统的主要构件不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "对象", "correct": true },
+        { "id": 2, "title": "接口" },
+        { "id": 3, "title": "实现" },
+        { "id": 4, "title": "部署" }
+      ]
+    },
+    {
+      "id": 138,
+      "chapter": "第五章",
+      "title": "基于构件的开发主要通过整合已有的构件来完成较大型的软件系统的开发，它的要点包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "大型软件系统中有相当的部分会重复出现，可通过构件组合起来，没必要重做", "correct": true },
+        {
+          "id": 2,
+          "title": "系统整合成为整个开发过程的核心，决定构件重用的关键在于它能否与其他构件整合",
+          "correct": true
+        },
+        { "id": 3, "title": "用结构化方法或面向对象的方法去开发，适用于任何的系统开发形式" },
+        {
+          "id": 4,
+          "title": "只有那些无法通过已有构件满足的需求，才会用结构化方法或面向对象的方法去开发",
+          "correct": true
+        },
+        {
+          "id": 5,
+          "title": "开发过程从需求分析开始，经过构件选取、构件调整、构件组装及更新过程搭建完成",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "chapter": "第六章",
+      "title": "下列选项中，不属于信息系统开发特点的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "产品有形", "correct": true },
+        { "id": 2, "title": "集体的创造性活动" },
+        { "id": 3, "title": "质量要求高" },
+        { "id": 4, "title": "复杂性髙" }
+      ]
+    },
+    {
+      "id": 140,
+      "chapter": "第六章",
+      "title": "系统开发的特点有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "复杂性高", "correct": true },
+        { "id": 2, "title": "集体的创造性活动", "correct": true },
+        { "id": 3, "title": "质量要求高", "correct": true },
+        { "id": 4, "title": "产品无形", "correct": true },
+        { "id": 5, "title": "技术更新快、开发经验不足", "correct": true }
+      ]
+    },
+    {
+      "id": 141,
+      "chapter": "第六章",
+      "title": "软件开发的流程是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "概要设计、详细设计、需求分析、编码" },
+        { "id": 2, "title": "需求分析、概要设计、详细设计、编码", "correct": true },
+        { "id": 3, "title": "编码、需求分析、概要设计、详细设计" },
+        { "id": 4, "title": "需求分析、编码、概要设计、详细设计" }
+      ]
+    },
+    {
+      "id": 142,
+      "chapter": "第六章",
+      "title": "系统开发的指导原则有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "系统开发的目的性", "correct": true },
+        { "id": 2, "title": "系统的环境适应性", "correct": true },
+        { "id": 3, "title": "系统开发的规范性" },
+        { "id": 4, "title": "用户参与", "correct": true },
+        { "id": 5, "title": "文档化管理", "correct": true }
+      ]
+    },
+    {
+      "id": 143,
+      "chapter": "第六章",
+      "title": "信息系统开发项目的第二个阶段是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "系统实施" },
+        { "id": 2, "title": "系统设计", "correct": true },
+        { "id": 3, "title": "系统分析" },
+        { "id": 4, "title": "系统维护" }
+      ]
+    },
+    {
+      "id": 144,
+      "chapter": "第六章",
+      "title": "系统调查的原则有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "自上而下地进行", "correct": true },
+        { "id": 2, "title": "事先制订计划", "correct": true },
+        { "id": 3, "title": "深入沟通交流", "correct": true },
+        { "id": 4, "title": "避免先入为主", "correct": true },
+        { "id": 5, "title": "保守用户的商业机密", "correct": true }
+      ]
+    },
+    {
+      "id": 145,
+      "chapter": "第六章",
+      "title": "需求分析阶段一种常用的图形化分析工具是（），用来描述组织的具体业务活动、业务分布和相应的信息处理环节",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "业务流程图", "correct": true },
+        { "id": 2, "title": "数据结构图" },
+        { "id": 3, "title": "组织结构图" },
+        { "id": 4, "title": "信息关联图" }
+      ]
+    },
+    {
+      "id": 146,
+      "chapter": "第六章",
+      "title": "系统调查是一个了解和认识企业与企业用户，与现实用户建立信任与合作关系的过程。调查的内容包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "企业的基本情况", "correct": true },
+        { "id": 2, "title": "系统需要支持的业务流程", "correct": true },
+        { "id": 3, "title": "系统需要支持的信息处理状况", "correct": true },
+        { "id": 4, "title": "系统资源情况", "correct": true },
+        { "id": 5, "title": "各类人员对新系统的态度", "correct": true }
+      ]
+    },
+    {
+      "id": 147,
+      "chapter": "第六章",
+      "title": "在数据流程图中，描述数据或信息传递路径的元素称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "外部实体" },
+        { "id": 2, "title": "处理功能" },
+        { "id": 3, "title": "数据流", "correct": true },
+        { "id": 4, "title": "数据存储" }
+      ]
+    },
+    {
+      "id": 148,
+      "chapter": "第六章",
+      "title": "数据流程图的绘制的工具有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "背景图", "correct": true },
+        { "id": 2, "title": "顶层数据流程图", "correct": true },
+        { "id": 3, "title": "低层次数据流程图", "correct": true },
+        { "id": 4, "title": "中层次数据流程图" },
+        { "id": 5, "title": "数据流程图的设计", "correct": true }
+      ]
+    },
+    {
+      "id": 149,
+      "chapter": "第六章",
+      "title": "数据流程图用四种简单的符号元素描述信息流程，其四基本部分不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "外部实体" },
+        { "id": 2, "title": "数据项", "correct": true },
+        { "id": 3, "title": "处理功能" },
+        { "id": 4, "title": "数据存储" }
+      ]
+    },
+    {
+      "id": 150,
+      "chapter": "第六章",
+      "title": "在系统分析阶段，描述数据来源、流动、加工处理和存储活动的图形化分析工具是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "业务流程图" },
+        { "id": 2, "title": "数据流程图", "correct": true },
+        { "id": 3, "title": "组织结构图" },
+        { "id": 4, "title": "信息关联图" }
+      ]
+    },
+    {
+      "id": 151,
+      "chapter": "第六章",
+      "title": "（）表示数据或信息载体的传递路径",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "外部实体" },
+        { "id": 2, "title": "数据项" },
+        { "id": 3, "title": "数据流", "correct": true },
+        { "id": 4, "title": "数据存储" }
+      ]
+    },
+    {
+      "id": 152,
+      "chapter": "第六章",
+      "title": "结构化语言是具有规范表达形式的自然语言。它将任何处理逻辑简单表达为（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "顺序", "correct": true },
+        { "id": 2, "title": "条件" },
+        { "id": 3, "title": "选择（判断）", "correct": true },
+        { "id": 4, "title": "执行" },
+        { "id": 5, "title": "循环", "correct": true }
+      ]
+    },
+    {
+      "id": 153,
+      "chapter": "第六章",
+      "title": "决策表的做成部分包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "影响处理过程的条件", "correct": true },
+        { "id": 2, "title": "条件发生的状态或取值", "correct": true },
+        { "id": 3, "title": "可能的处理策略", "correct": true },
+        { "id": 4, "title": "决策选择的规则", "correct": true },
+        { "id": 5, "title": "决策结果的产生过程" }
+      ]
+    },
+    {
+      "id": 154,
+      "chapter": "第六章",
+      "title": "用决策表可以检验决策策略的（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "准确性" },
+        { "id": 2, "title": "完备性", "correct": true },
+        { "id": 3, "title": "及时性" },
+        { "id": 4, "title": "有效性", "correct": true },
+        { "id": 5, "title": "严谨性" }
+      ]
+    },
+    {
+      "id": 155,
+      "chapter": "第六章",
+      "title": "在U/C矩阵中，每个数据类列必须有一个C，并至少有一个U；每个功能行必须有C或者U，这是哪种检验（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "有效性检验" },
+        { "id": 2, "title": "无冗余性检验" },
+        { "id": 3, "title": "完备性检验", "correct": true },
+        { "id": 4, "title": "一致性检验" }
+      ]
+    },
+    {
+      "id": 156,
+      "chapter": "第六章",
+      "title": "下列关于格栅图的描述中，错误的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "格栅图是进行数据/功能分析的工具" },
+        { "id": 2, "title": "U/C矩阵是一种特殊的格栅图" },
+        { "id": 3, "title": "表示处理功能与数据源的对应关系" },
+        { "id": 4, "title": "表示处理功能和企业部门之间的关系", "correct": true }
+      ]
+    },
+    {
+      "id": 157,
+      "chapter": "第六章",
+      "title": "在U/C矩阵中，每个数据类列仅能有一个C，这是哪种检验（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "有效性检验" },
+        { "id": 2, "title": "无冗余性检验" },
+        { "id": 3, "title": "完备性检验" },
+        { "id": 4, "title": "一致性检验", "correct": true }
+      ]
+    },
+    {
+      "id": 158,
+      "chapter": "第六章",
+      "title": "在 U/C 矩阵中，行列交叉点填写的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "系统中的功能" },
+        { "id": 2, "title": "系统中的数据类" },
+        { "id": 3, "title": "系统中的数据" },
+        { "id": 4, "title": "功能与数据类的关系", "correct": true }
+      ]
+    },
+    {
+      "id": 159,
+      "chapter": "第六章",
+      "title": "系统分析阶段最后一项任务是编写系统说明书，也叫系统功能需求报告。它主要包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "对原系统的阐述", "correct": true },
+        { "id": 2, "title": "新系统的目标与范围", "correct": true },
+        { "id": 3, "title": "新系统的建设方案", "correct": true },
+        { "id": 4, "title": "系统应用环境", "correct": true },
+        { "id": 5, "title": "系统开发计划", "correct": true }
+      ]
+    },
+    {
+      "id": 160,
+      "chapter": "第七章",
+      "title": "模块的设计也遵循结构化设计的思想，模块间的关系必须要阐明。模块间的结构形式不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "顺序结构" },
+        { "id": 2, "title": "选择结构" },
+        { "id": 3, "title": "跳转结构", "correct": true },
+        { "id": 4, "title": "循环结构" }
+      ]
+    },
+    {
+      "id": 161,
+      "chapter": "第七章",
+      "title": "结构化程序设计方法包含（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "顺序结构", "correct": true },
+        { "id": 2, "title": "选择结构", "correct": true },
+        { "id": 3, "title": "跳转结构" },
+        { "id": 4, "title": "循环结构", "correct": true },
+        { "id": 5, "title": "控制结构" }
+      ]
+    },
+    {
+      "id": 162,
+      "chapter": "第七章",
+      "title": "在控制结构图中，表示存储的图形符号是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "矩形" },
+        { "id": 2, "title": "平行四边形" },
+        { "id": 3, "title": "圆柱形", "correct": true },
+        { "id": 4, "title": "菱形" }
+      ]
+    },
+    {
+      "id": 163,
+      "chapter": "第七章",
+      "title": "下列选项中，不属于结构化设计基本结构的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "顺序结构" },
+        { "id": 2, "title": "选择结构" },
+        { "id": 3, "title": "循环结构" },
+        { "id": 4, "title": "平行结构", "correct": true }
+      ]
+    },
+    {
+      "id": 164,
+      "chapter": "第七章",
+      "title": "模块间调用，应按以下规则进行（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "每个模块有自身的任务，只有接受到上级模块的调用命令时才能执行", "correct": true },
+        { "id": 2, "title": "模块调用顺序为自下而上" },
+        { "id": 3, "title": "模块调用顺序为自上而下", "correct": true },
+        {
+          "id": 4,
+          "title": "模块之间的通信只限于其直接上下级模块，任何模块不能直接与其他上下级模块或同级模块发生通信联系",
+          "correct": true
+        },
+        {
+          "id": 5,
+          "title": "若有某模块要与非直接上下级的其他模块发生通信联系，必须通过其上级模块进行传递",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 165,
+      "chapter": "第七章",
+      "title": "结构化的分解设计虽然没有硬性的标准，但是合理的系统结构设计要满足一些重要的条件（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "系统项目容易开发", "correct": true },
+        { "id": 2, "title": "降低项目开发成本", "correct": true },
+        { "id": 3, "title": "系统有较高的可靠性", "correct": true },
+        { "id": 4, "title": "系统容易维护", "correct": true },
+        { "id": 5, "title": "系统具有较高的可读性" }
+      ]
+    },
+    {
+      "id": 166,
+      "chapter": "第七章",
+      "title": "下列选项中，模块凝聚程度最高的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "偶然凝聚" },
+        { "id": 2, "title": "时间凝聚" },
+        { "id": 3, "title": "功能凝聚", "correct": true },
+        { "id": 4, "title": "逻辑凝聚" }
+      ]
+    },
+    {
+      "id": 167,
+      "chapter": "第七章",
+      "title": "模块凝聚是衡量内部功能的内在联系是否紧密的指标，也是衡量模块质量好坏的重要指标。模块按凝聚程度从低到高顺序可分为以下五级（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "偶然凝聚、时间凝聚、数据凝聚、功能凝聚、逻辑凝聚" },
+        { "id": 2, "title": "偶然凝聚、数据凝聚、逻辑凝聚、时间凝聚、功能凝聚" },
+        { "id": 3, "title": "偶然凝聚、逻辑凝聚、时间凝聚、数据凝聚、功能凝聚", "correct": true },
+        { "id": 4, "title": "偶然凝聚、逻辑凝聚、数据凝聚、时间凝聚、功能凝聚" }
+      ]
+    },
+    {
+      "id": 168,
+      "chapter": "第七章",
+      "title": "下列选项中，不是模块耦合类型的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据耦合" },
+        { "id": 2, "title": "过程耦合", "correct": true },
+        { "id": 3, "title": "控制耦合" },
+        { "id": 4, "title": "非法耦合" }
+      ]
+    },
+    {
+      "id": 169,
+      "chapter": "第七章",
+      "title": "身份证号采用的编码方式是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "顺序码" },
+        { "id": 2, "title": "表意码" },
+        { "id": 3, "title": "重复码" },
+        { "id": 4, "title": "成组码", "correct": true }
+      ]
+    },
+    {
+      "id": 170,
+      "chapter": "第七章",
+      "title": "代码设计的原则包括：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "唯一性", "correct": true },
+        { "id": 2, "title": "简单性", "correct": true },
+        { "id": 3, "title": "可识别性", "correct": true },
+        { "id": 4, "title": "可扩充性", "correct": true },
+        { "id": 5, "title": "合理性、规范性", "correct": true }
+      ]
+    },
+    {
+      "id": 171,
+      "chapter": "第七章",
+      "title": "用编码“CSTNET”表示中国科技网，这种编码方式称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "顺序码" },
+        { "id": 2, "title": "表意码", "correct": true },
+        { "id": 3, "title": "重复码" },
+        { "id": 4, "title": "成组码" }
+      ]
+    },
+    {
+      "id": 172,
+      "chapter": "第七章",
+      "title": "代码的重要性表现在下面几个方面（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "可以唯一地标识一个分类对象（实体）", "correct": true },
+        { "id": 2, "title": "加快输入，减少出错，提高处理效率", "correct": true },
+        { "id": 3, "title": "便于存储和检索，节省存储空间", "correct": true },
+        { "id": 4, "title": "使数据表达标准化，简化处理程序", "correct": true },
+        { "id": 5, "title": "为全局数据一致性提供了基础", "correct": true }
+      ]
+    },
+    {
+      "id": 173,
+      "chapter": "第七章",
+      "title": "卡片分类方法往往会邀请用户参与选单的设计过程，并针对不同的场合采取灵活的工作方式。其基本步骤包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        {
+          "id": 1,
+          "title": "将需要分类的项目名称分别写在卡片上，每张卡片写一个名称，让参与者清楚地看到卡片的内容",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "title": "不要求参与者自行梳理各个分组，只有在必要时为分组做出新的命名，写在空白卡片上"
+        },
+        { "id": 3, "title": "请不同的参与者以自己认为合理的方式对所有的卡片进行分组和归类 ", "correct": true },
+        { "id": 4, "title": "要求参与者自行梳理各个分组，必要时为分组做出新的命名，写在空白卡片上", "correct": true },
+        { "id": 5, "title": "当所有参与者都完成分类过程后，根据最大共识的分类结果建立起选单结构", "correct": true }
+      ]
+    },
+    {
+      "id": 174,
+      "chapter": "第七章",
+      "title": "下列选项中，不属于数据库设计步骤的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "概念结构设计" },
+        { "id": 2, "title": "逻辑结构设计" },
+        { "id": 3, "title": "物理结构设计" },
+        { "id": 4, "title": "实体结构设计", "correct": true }
+      ]
+    },
+    {
+      "id": 175,
+      "chapter": "第七章",
+      "title": "各个局部（分）E-R图画好以后，应当将它们合并起来集成为完整（总）E-R图。在集成时应当注意不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "消除不必要的冗余实体、属性和联系" },
+        { "id": 2, "title": "解决各分E-R图之间的冲突" },
+        { "id": 3, "title": "根据情况修改或重构E-R图" },
+        { "id": 4, "title": "解决各分E-R图之间的所有功能", "correct": true }
+      ]
+    },
+    {
+      "id": 176,
+      "chapter": "第七章",
+      "title": "数据库设计的目标是建立一个合适的数据模型。这个数据模型要求不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "满足用户要求" },
+        { "id": 2, "title": "满足经济效益要求", "correct": true },
+        { "id": 3, "title": "具有较高的范式" },
+        { "id": 4, "title": "满足数据库管理系统要求" }
+      ]
+    },
+    {
+      "id": 177,
+      "chapter": "第七章",
+      "title": "数据库设计可划分为三个阶段，下列选项中不包括（　）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "概念结构设计" },
+        { "id": 2, "title": "系统详细设计", "correct": true },
+        { "id": 3, "title": "物理结构设计" },
+        { "id": 4, "title": "逻辑结构设计" }
+      ]
+    },
+    {
+      "id": 178,
+      "chapter": "第七章",
+      "title": "在系统设计说明书中，不包含（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "需求说明", "correct": true },
+        { "id": 2, "title": "数据库设计说明" },
+        { "id": 3, "title": "计算机和网络系统配置说明" },
+        { "id": 4, "title": "计算机处理过程说明" }
+      ]
+    },
+    {
+      "id": 179,
+      "chapter": "第七章",
+      "title": "编写系统设计说明书的要求为全面、清楚、准确、详细地阐明系统实施过程中具体的（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "方法", "correct": true },
+        { "id": 2, "title": "技术", "correct": true },
+        { "id": 3, "title": "手段 ", "correct": true },
+        { "id": 4, "title": "环境要求", "correct": true },
+        { "id": 5, "title": "系统实施方案" }
+      ]
+    },
+    {
+      "id": 180,
+      "chapter": "第七章",
+      "title": "新系统的物理模型和系统实施的依据是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "系统详细设计报告" },
+        { "id": 2, "title": "系统设计报告", "correct": true },
+        { "id": 3, "title": "数据字典" },
+        { "id": 4, "title": "数据流程图" }
+      ]
+    },
+    {
+      "id": 181,
+      "chapter": "第八章",
+      "title": "非技术因素的影响下，用户在系统实施的过程中往往会具备多重身份。具体包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "系统受益者" },
+        { "id": 2, "title": "系统使用者", "correct": true },
+        { "id": 3, "title": "系统检验者 ", "correct": true },
+        { "id": 4, "title": "应用效果承担者", "correct": true },
+        { "id": 5, "title": "系统效果的传播者", "correct": true }
+      ]
+    },
+    {
+      "id": 182,
+      "chapter": "第八章",
+      "title": "系统实施的目标，从用户角度，具体地说，系统实施要给用户提供一个（）的信息系统",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "完整", "correct": true },
+        { "id": 2, "title": "高效" },
+        { "id": 3, "title": "有用 ", "correct": true },
+        { "id": 4, "title": "易用", "correct": true },
+        { "id": 5, "title": "经济" }
+      ]
+    },
+    {
+      "id": 183,
+      "chapter": "第八章",
+      "title": "在常用的软件质量评价因素中，支持Web方式，轻松访问互联网和内外网，能与浏览器和其他网络软件协同工作是指评价因素中的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "适应性" },
+        { "id": 2, "title": "连通性", "correct": true },
+        { "id": 3, "title": "安全性" },
+        { "id": 4, "title": "硬件支持" }
+      ]
+    },
+    {
+      "id": 184,
+      "chapter": "第八章",
+      "title": "系统实施的准备工作包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "系统建设完毕" },
+        { "id": 2, "title": "制订实施计划", "correct": true },
+        { "id": 3, "title": "用户培训 ", "correct": true },
+        { "id": 4, "title": "基础数据准备", "correct": true },
+        { "id": 5, "title": "基本系统准备" }
+      ]
+    },
+    {
+      "id": 185,
+      "chapter": "第八章",
+      "title": "用户参与的主要任务中，关于选派用户代表的说法正确的有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "要能够胜任工作", "correct": true },
+        { "id": 2, "title": "要具备一定的计算机知识", "correct": true },
+        { "id": 3, "title": "要非常熟悉企业业务 ", "correct": true },
+        { "id": 4, "title": "要深入了解企业的需求", "correct": true },
+        { "id": 5, "title": "有良好的沟通能力和表述能力", "correct": true }
+      ]
+    },
+    {
+      "id": 186,
+      "chapter": "第八章",
+      "title": "在统实施的准备工作的用户培训中，应能够利用系统数据辅助决策和管理工作，了解数据来源和分布，能够查询相关数据，了解数据分析报告的含义是针对（）的要求",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "操作人员" },
+        { "id": 2, "title": "业务部门用户" },
+        { "id": 3, "title": "知识型用户" },
+        { "id": 4, "title": "管理人员", "correct": true }
+      ]
+    },
+    {
+      "id": 187,
+      "chapter": "第八章",
+      "title": "白盒测试又称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "结构测试", "correct": true },
+        { "id": 2, "title": "自动分析" },
+        { "id": 3, "title": "人工代码评审" },
+        { "id": 4, "title": "功能测试" }
+      ]
+    },
+    {
+      "id": 188,
+      "chapter": "第八章",
+      "title": "系统测试的内容包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "单元测试", "correct": true },
+        { "id": 2, "title": "可用性测试" },
+        { "id": 3, "title": "组装测试 ", "correct": true },
+        { "id": 4, "title": "确认测试", "correct": true },
+        { "id": 5, "title": "验收测试", "correct": true }
+      ]
+    },
+    {
+      "id": 189,
+      "chapter": "第八章",
+      "title": "在单元软件测试中的常见错误中，变量值超限，无效值参与了运算，中间值溢出，运算的优先顺序不正确的错误是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据引用错误" },
+        { "id": 2, "title": "输入输出错误" },
+        { "id": 3, "title": "数据声明错误" },
+        { "id": 4, "title": "运算错误", "correct": true }
+      ]
+    },
+    {
+      "id": 190,
+      "chapter": "第八章",
+      "title": "面对旧系统技术支持中断，业务数据转换困难我们应该采取的对策是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "缩短并行周期，妥善制订直接切换方案" },
+        { "id": 2, "title": "具体分析，改进流程弹性，探讨变通方式，解开死结" },
+        { "id": 3, "title": "详细制订切换预案，提前对技术服务人员和用户做培训" },
+        { "id": 4, "title": "设计专门的接口方案，尽可能转换基本数据", "correct": true }
+      ]
+    },
+    {
+      "id": 191,
+      "chapter": "第八章",
+      "title": "系统切换阶段的管理工作包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "制订切换规划，事前准备应急预案", "correct": true },
+        { "id": 2, "title": "严格审核数据，并监控数据移植过程", "correct": true },
+        { "id": 3, "title": "初始化环境的检查确认 ", "correct": true },
+        { "id": 4, "title": "切换时间考虑业务节奏，过程追踪与管理", "correct": true },
+        { "id": 5, "title": "积极促进切换的完成，保证后续跟进", "correct": true }
+      ]
+    },
+    {
+      "id": 192,
+      "chapter": "第八章",
+      "title": "系统切换上线前需要检查确认初始化环境，需要检查的环境包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "网络和软硬件等技术环境", "correct": true },
+        { "id": 2, "title": "组织的业务环境", "correct": true },
+        { "id": 3, "title": "用户环境 ", "correct": true },
+        { "id": 4, "title": "数据环境", "correct": true },
+        { "id": 5, "title": "应用环境" }
+      ]
+    },
+    {
+      "id": 193,
+      "chapter": "第九章",
+      "title": "企业的信息主管（CIO）的职责包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "以整个企业为目标，着眼企业信息系统、信息技术和信息资源的管理", "correct": true },
+        { "id": 2, "title": "以信息技术带动企业的业务创新和管理创新，提高企业的核心竞争力", "correct": true },
+        {
+          "id": 3,
+          "title": "准确、及时地收集企业内外部的有用信息，深入开发信息价值，为企业决策提供依据 ",
+          "correct": true
+        },
+        { "id": 4, "title": "参与企业的高层决策过程，负责企业信息化战略和相关规划的制定", "correct": true },
+        {
+          "id": 5,
+          "title": "从性能、成本、可控性、复杂性等多个角度，对企业信息系统项目的价值进行评估，不断改善企业信息技术应用的效益",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 194,
+      "chapter": "第九章",
+      "title": "在企业的信息中心中，通信与网络部的主要工作职责是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "维护和管理组织的共享数据库和数据仓库" },
+        { "id": 2, "title": "负责计算机硬件和系统软件的安装及维护" },
+        { "id": 3, "title": "与用户协调沟通，利用和开发对企业有用的数据、信息和知识资源" },
+        { "id": 4, "title": "负责网络设施的设计、安装、运行、安全和维护工作", "correct": true }
+      ]
+    },
+    {
+      "id": 195,
+      "chapter": "第九章",
+      "title": "系统的安全管理要对系统运行情况进行规范、详细和完备的记录。这些记录的内容应包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "工作的数量信息", "correct": true },
+        { "id": 2, "title": "工作的效率信息", "correct": true },
+        { "id": 3, "title": "系统信息服务的质量信息 ", "correct": true },
+        { "id": 4, "title": "系统的维护修改情况", "correct": true },
+        { "id": 5, "title": "系统的故障情况", "correct": true }
+      ]
+    },
+    {
+      "id": 196,
+      "chapter": "第九章",
+      "title": "承担程序的编制、调试和修改任务的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "系统分析师" },
+        { "id": 2, "title": "程序员", "correct": true },
+        { "id": 3, "title": "数据库管理员" },
+        { "id": 4, "title": "用户协调员" }
+      ]
+    },
+    {
+      "id": 197,
+      "chapter": "第九章",
+      "title": "研究企业对信息系统的需求、设计新系统的开发人员是（　）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "系统分析师", "correct": true },
+        { "id": 2, "title": "程序员" },
+        { "id": 3, "title": "数据库管理员" },
+        { "id": 4, "title": "用户协调员" }
+      ]
+    },
+    {
+      "id": 198,
+      "chapter": "第九章",
+      "title": "性能评价着重评价系统的技术性能，一般包括（）等",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "应用系统的技术特性指标", "correct": true },
+        { "id": 2, "title": "可用性指标", "correct": true },
+        { "id": 3, "title": "安全性指标 ", "correct": true },
+        { "id": 4, "title": "环境适应性指标", "correct": true },
+        { "id": 5, "title": "可扩展性指标", "correct": true }
+      ]
+    },
+    {
+      "id": 199,
+      "chapter": "第九章",
+      "title": "下列关于系统性能评价的可用性说法错误的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "系统要能够支持管理人员更有效地工作，满足管理工作连续性的要求" },
+        { "id": 2, "title": "系统的结构化程度要高，维护检测和修复才比较方便" },
+        { "id": 3, "title": "系统的结构化程度要低，维护检测和修复才比较方便", "correct": true },
+        { "id": 4, "title": "系统要能够稳定可靠地提供服务，有一定的灾害防范能力和灾后恢复工作的能力" }
+      ]
+    },
+    {
+      "id": 200,
+      "chapter": "第九章",
+      "title": "信息系统的评价时需要对系统分析设计阶段和实际运行阶段的指标作出对比，对系统的（）等进行全面的分析，对信息系统的质量作出客观的认定和评价",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "功能", "correct": true },
+        { "id": 2, "title": "性能", "correct": true },
+        { "id": 3, "title": "效果 ", "correct": true },
+        { "id": 4, "title": "效益", "correct": true },
+        { "id": 5, "title": "效率" }
+      ]
+    },
+    {
+      "id": 201,
+      "chapter": "第九章",
+      "title": "提高系统可靠性的常用的技术不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "设备冗余技术" },
+        { "id": 2, "title": "容错技术" },
+        { "id": 3, "title": "负荷分布技术" },
+        { "id": 4, "title": "结构化设计技术", "correct": true }
+      ]
+    },
+    {
+      "id": 202,
+      "chapter": "第九章",
+      "title": "当系统中出现了数据、文件损坏或丢失时，系统能够自动恢复到发生事故前的状态，使系统能够正常运行的技术，称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "设备冗余" },
+        { "id": 2, "title": "容错", "correct": true },
+        { "id": 3, "title": "负荷分布" },
+        { "id": 4, "title": "校验" }
+      ]
+    },
+    {
+      "id": 203,
+      "chapter": "第九章",
+      "title": "（）是衡量信息系统稳定运行水平和能力的基础性指标",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "安全性" },
+        { "id": 2, "title": "可靠性", "correct": true },
+        { "id": 3, "title": "可用性" },
+        { "id": 4, "title": "扩展性" }
+      ]
+    },
+    {
+      "id": 204,
+      "chapter": "第九章",
+      "title": "系统安全管理中，使用户访问和使用信息的权限限定在其“必不可少”的范围之内，称之为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "木桶原则" },
+        { "id": 2, "title": "最小特权原则", "correct": true },
+        { "id": 3, "title": "安全隔离原则" },
+        { "id": 4, "title": "信息隐蔽原则" }
+      ]
+    },
+    {
+      "id": 205,
+      "chapter": "第九章",
+      "title": "信息系统的安全保护等级划分标准包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "自主保护", "correct": true },
+        { "id": 2, "title": "系统审计", "correct": true },
+        { "id": 3, "title": "安全标记 ", "correct": true },
+        { "id": 4, "title": "结构化", "correct": true },
+        { "id": 5, "title": "访问验证", "correct": true }
+      ]
+    },
+    {
+      "id": 206,
+      "chapter": "第九章",
+      "title": "典型的非技术性安全措施包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "安全观念", "correct": true },
+        { "id": 2, "title": "组织的管理战略", "correct": true },
+        { "id": 3, "title": "管理制度与规范 ", "correct": true },
+        { "id": 4, "title": "部门与人员", "correct": true },
+        { "id": 5, "title": "组织文化", "correct": true }
+      ]
+    },
+    {
+      "id": 207,
+      "chapter": "第九章",
+      "title": "防止数据在存储和传输过程中被窃取、解读和利用，通常采用（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据加密", "correct": true },
+        { "id": 2, "title": "身份认证" },
+        { "id": 3, "title": "数字水印" },
+        { "id": 4, "title": "数据隐藏" }
+      ]
+    },
+    {
+      "id": 208,
+      "chapter": "第九章",
+      "title": "我国目前实行的“信息安全等级保护制度”分为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "3级" },
+        { "id": 2, "title": "4级" },
+        { "id": 3, "title": "5级", "correct": true },
+        { "id": 4, "title": "6级" }
+      ]
+    },
+    {
+      "id": 209,
+      "chapter": "第九章",
+      "title": "为了防范系统的漏洞被黑客利用，及时设计和安装补丁程序，这种维护属于（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "完善性维护" },
+        { "id": 2, "title": "适应性维护" },
+        { "id": 3, "title": "纠错性维护" },
+        { "id": 4, "title": "预防性维护", "correct": true }
+      ]
+    },
+    {
+      "id": 210,
+      "chapter": "第九章",
+      "title": "系统维护以整个信息系统为目标。根据维护对象不同，一般可细分为（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "应用软件维护", "correct": true },
+        { "id": 2, "title": "数据维护", "correct": true },
+        { "id": 3, "title": "硬件平台维护 ", "correct": true },
+        { "id": 4, "title": "代码维护", "correct": true },
+        { "id": 5, "title": "系统维护" }
+      ]
+    },
+    {
+      "id": 211,
+      "chapter": "第九章",
+      "title": "应用软件是信息系统开发的核心成果。根据系统维护的出发点不同，应用软件的维护可以分为（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "应用软件维护" },
+        { "id": 2, "title": "完善性维护", "correct": true },
+        { "id": 3, "title": "适应性维护 ", "correct": true },
+        { "id": 4, "title": "纠错性维护", "correct": true },
+        { "id": 5, "title": "预防性维护", "correct": true }
+      ]
+    },
+    {
+      "id": 212,
+      "chapter": "第九章",
+      "title": "系统维护的工作流程一般包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "要先制订维护工作计划，确认需要修改的项目，填写、提交维护及系统变更申请表" },
+        { "id": 2, "title": "申请表经审批人正式批准后，才能开始维护工作", "correct": true },
+        {
+          "id": 3,
+          "title": "对软件实施的任何修改都应该在单独的计算机上完成，避免影响业务系统的运行 ",
+          "correct": true
+        },
+        { "id": 4, "title": "随着系统被更新并投入使用，相应的文档也应同步更新，并完整保存归档", "correct": true },
+        {
+          "id": 5,
+          "title": "修改的结果要经过维护小组的严格测试，待验收通过后，才可用适当切换方式更新运行中的系统",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 213,
+      "chapter": "第九章",
+      "title": "根据用户需求，对软件系统进行改进、增加新功能的工作属于（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "完善性维护", "correct": true },
+        { "id": 2, "title": "适应性维护" },
+        { "id": 3, "title": "纠错性维护" },
+        { "id": 4, "title": "预防性维护" }
+      ]
+    },
+    {
+      "id": 214,
+      "chapter": "第九章",
+      "title": "信息系统审计的基本方法包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "过可靠手段记录审计对象的活动信息", "correct": true },
+        { "id": 2, "title": "发出隐患或危机告警，并上报相关信息", "correct": true },
+        { "id": 3, "title": "完整存储审计文档，以备今后使用 ", "correct": true },
+        { "id": 4, "title": "通过检测、跟踪、验证等方法，发现潜在的或实际的安全侵害", "correct": true },
+        { "id": 5, "title": "进行数据分析，将安全活动与具体用户相对应", "correct": true }
+      ]
+    },
+    {
+      "id": 215,
+      "chapter": "第九章",
+      "title": "信息系统审计的核心内容包括信息系统的（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "可用性", "correct": true },
+        { "id": 2, "title": "保密性", "correct": true },
+        { "id": 3, "title": "可靠性 " },
+        { "id": 4, "title": "完整性", "correct": true },
+        { "id": 5, "title": "有效性", "correct": true }
+      ]
+    },
+    {
+      "id": 216,
+      "chapter": "第九章",
+      "title": "信息系统的运行管理制度涉及很多方面，常见的运行管理制度不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "系统的人员权限制度", "correct": true },
+        { "id": 2, "title": "机房管理制度" },
+        { "id": 3, "title": "信息存储和文档管理制度" },
+        { "id": 4, "title": "系统运行及操作规范" }
+      ]
+    },
+    {
+      "id": 217,
+      "chapter": "第十章",
+      "title": "ERP软件的基本目标就是帮助企业通过高度集成化的规划达到平衡运作及管理。平衡包括（　）等",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "企业内部环境与企业外部环境的平衡", "correct": true },
+        { "id": 2, "title": "战略和战术的平衡", "correct": true },
+        { "id": 3, "title": "外部市场需求和企业能力的平衡 " },
+        { "id": 4, "title": "业务运行与资金供给的平衡", "correct": true },
+        { "id": 5, "title": "市场供求平衡" }
+      ]
+    },
+    {
+      "id": 218,
+      "chapter": "第十章",
+      "title": "企业资源规划简称（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ERP", "correct": true },
+        { "id": 2, "title": "MRP" },
+        { "id": 3, "title": "MRPⅡ" },
+        { "id": 4, "title": "BOM" }
+      ]
+    },
+    {
+      "id": 219,
+      "chapter": "第十章",
+      "title": "ERP 是Enterprise Resource Planning （企业资源计划）的简称，由美国加特纳公司于（）年首次提出",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1992" },
+        { "id": 2, "title": "1963" },
+        { "id": 3, "title": "1993", "correct": true },
+        { "id": 4, "title": "1986" }
+      ]
+    },
+    {
+      "id": 220,
+      "chapter": "第十章",
+      "title": "微软的Dynamics AIX 的实际界面中基础数据说明不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "物料清单" },
+        { "id": 2, "title": "工艺路线" },
+        { "id": 3, "title": "工序" },
+        { "id": 4, "title": "生产计划", "correct": true }
+      ]
+    },
+    {
+      "id": 221,
+      "chapter": "第十章",
+      "title": "在Dynamics AX 中，采购订单的类型不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "记账日志" },
+        { "id": 2, "title": "报价单" },
+        { "id": 3, "title": "预订和采购订单" },
+        { "id": 4, "title": "询价函", "correct": true }
+      ]
+    },
+    {
+      "id": 222,
+      "chapter": "第十章",
+      "title": "Dynamics AX的生产订单可产生相关的生产步骤，其中会产生有关当前产能的详细日程安排的步骤是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "工序级排产" },
+        { "id": 2, "title": "作业级排产", "correct": true },
+        { "id": 3, "title": "估计" },
+        { "id": 4, "title": "下达" }
+      ]
+    }
+  ]
+}

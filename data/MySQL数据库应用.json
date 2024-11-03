@@ -1,0 +1,1929 @@
+{
+  "subject": "MySQL数据库应用",
+  "category": "国家开放大学",
+  "data": [
+    {
+      "id": 1,
+      "chapter": "第一章",
+      "title": "下面列出的数据库管理技术发展的三个阶段中，没有专门的软件对数据进行管理的是（ ）。I．人工管理阶段 II．文件系统阶段 III．数据库阶段",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "I 和 II" },
+        { "id": 2, "title": "只有 II" },
+        { "id": 3, "title": "II 和 III" },
+        { "id": 4, "title": "只有 I", "correct": true }
+      ]
+    },
+    {
+      "id": 2,
+      "chapter": "第一章",
+      "title": "文件系统显露出的缺陷有(  )",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "数据冗余", "correct": true },
+        { "id": 2, "title": "数据可长期保存在磁盘上" },
+        { "id": 3, "title": "不相容文件格式", "correct": true },
+        { "id": 4, "title": "数据的分离与孤立", "correct": true }
+      ]
+    },
+    {
+      "id": 3,
+      "chapter": "第一章",
+      "title": "数据库管理系统的发展历经了如下那些模型阶段（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "层次模型", "correct": true },
+        { "id": 2, "title": "系统变量" },
+        { "id": 3, "title": "局部变量", "correct": true },
+        { "id": 4, "title": "全局变量", "correct": true }
+      ]
+    },
+    {
+      "id": 4,
+      "chapter": "第一章",
+      "title": "下列四项中，不属于数据库系统特点的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据共享" },
+        { "id": 2, "title": "数据完整性" },
+        { "id": 3, "title": "数据冗余度高", "correct": true },
+        { "id": 4, "title": "数据独立性高" }
+      ]
+    },
+    {
+      "id": 5,
+      "chapter": "第一章",
+      "title": "数据库系统是采用了数据库技术的计算机系统，它是一个集合体，包含数据库、计算机硬件、软件和（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "系统分析员" },
+        { "id": 2, "title": "程序员" },
+        { "id": 3, "title": "数据库管理员", "correct": true },
+        { "id": 4, "title": "操作员" }
+      ]
+    },
+    {
+      "id": 6,
+      "chapter": "第一章",
+      "title": "数据库与文件系统的根本区别在于（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "提高了系统效率" },
+        { "id": 2, "title": "方便了用户使用" },
+        { "id": 3, "title": "数据的结构化", "correct": true },
+        { "id": 4, "title": "节省了储存空间" }
+      ]
+    },
+    {
+      "id": 7,
+      "chapter": "第一章",
+      "title": "数据库系统和文件系统的区别是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据库系统复杂，文件系统简单" },
+        { "id": 2, "title": "文件系统不能解决数据冗余和数据独立性问题，而数据库系统能解决此问题", "correct": true },
+        { "id": 3, "title": "文件系统只能管理程序文件，而数据库系统能管理各种文件" },
+        { "id": 4, "title": "文件系统管理的数据量小，而数据库系统管理的数据量大" }
+      ]
+    },
+    {
+      "id": 8,
+      "chapter": "第一章",
+      "title": "数据库（DB），数据库系统（DBS）和数据库管理系统（DBMS）之间的关系是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DBS包括DB和DBMS", "correct": true },
+        { "id": 2, "title": "DBMS包括DB和DBS" },
+        { "id": 3, "title": "DB包括DBS和DBMS" },
+        { "id": 4, "title": "DBS就是DB，也就是DBMS" }
+      ]
+    },
+    {
+      "id": 9,
+      "chapter": "第一章",
+      "title": "下述（ ）不是DBA数据库管理员的职责",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "完整性约束说明" },
+        { "id": 2, "title": "定义数据库模式" },
+        { "id": 3, "title": "数据库安全" },
+        { "id": 4, "title": "数据库管理系统设计", "correct": true }
+      ]
+    },
+    {
+      "id": 10,
+      "chapter": "第一章",
+      "title": "下面系统中不属于关系数据库管理系统的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Oracle" },
+        { "id": 2, "title": "MySQL" },
+        { "id": 3, "title": "IMS", "correct": true },
+        { "id": 4, "title": "DB2" }
+      ]
+    },
+    {
+      "id": 11,
+      "chapter": "第一章",
+      "title": "（ ）由数据结构、关系操作集合和完整性约束三部分组成",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "关系模型" },
+        { "id": 2, "title": "关系" },
+        { "id": 3, "title": "关系模式", "correct": true },
+        { "id": 4, "title": "关系数据库" }
+      ]
+    },
+    {
+      "id": 12,
+      "chapter": "第一章",
+      "title": "数据模型的三要素是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据结构、数据操作和数据完整性", "correct": true },
+        { "id": 2, "title": "数据结构、数据库定义和数据库维护" },
+        { "id": 3, "title": "数据定义、数据操作和数据维护" },
+        { "id": 4, "title": "关系数据库、层次数据库和网状数据库" }
+      ]
+    },
+    {
+      "id": 13,
+      "chapter": "第一章",
+      "title": "关系数据模型的三个组成部分中，不包括（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "完整性约束" },
+        { "id": 2, "title": "数据维护", "correct": true },
+        { "id": 3, "title": "数据结构" },
+        { "id": 4, "title": "数据操作" }
+      ]
+    },
+    {
+      "id": 14,
+      "chapter": "第一章",
+      "title": "（ ）是目前数据库系统中最常用的一种数据模型",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "关系模型", "correct": true },
+        { "id": 2, "title": "层次模型" },
+        { "id": 3, "title": "网状模型" },
+        { "id": 4, "title": "面向对象模型" }
+      ]
+    },
+    {
+      "id": 15,
+      "chapter": "第一章",
+      "title": "以下哪项不属于数据模型（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "关系模型" },
+        { "id": 2, "title": "网状模型" },
+        { "id": 3, "title": "网络模型", "correct": true },
+        { "id": 4, "title": "层次模型" }
+      ]
+    },
+    {
+      "id": 16,
+      "chapter": "第一章",
+      "title": "在数据库系统中，有哪几种数据模型？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "实体联系模型" },
+        { "id": 2, "title": "关系模型", "correct": true },
+        { "id": 3, "title": "网状模型", "correct": true },
+        { "id": 4, "title": "层次模型", "correct": true }
+      ]
+    },
+    {
+      "id": 17,
+      "chapter": "第一章",
+      "title": "描述数据库全体数据的全局逻辑结构和特性的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "模式", "correct": true },
+        { "id": 2, "title": "内模式" },
+        { "id": 3, "title": "外模式" },
+        { "id": 4, "title": "用户模式" }
+      ]
+    },
+    {
+      "id": 18,
+      "chapter": "第一章",
+      "title": "用户或应用程序看到的那部分局部逻辑结构和特征的描述是（ ），它是模式的逻辑子集",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "模式" },
+        { "id": 2, "title": "物理模式" },
+        { "id": 3, "title": "子模式", "correct": true },
+        { "id": 4, "title": "内模式" }
+      ]
+    },
+    {
+      "id": 19,
+      "chapter": "第一章",
+      "title": "子模式是用来描述（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据库的总体逻辑结构" },
+        { "id": 2, "title": "数据库的局部逻辑结构", "correct": true },
+        { "id": 3, "title": "数据库的物理存储结构" },
+        { "id": 4, "title": "数据库的概念结构" }
+      ]
+    },
+    {
+      "id": 20,
+      "chapter": "第一章",
+      "title": "要保证数据库的逻辑数据独立性，需要修改的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "模式与外模式的映射", "correct": true },
+        { "id": 2, "title": "模式与内模式之间的映射" },
+        { "id": 3, "title": "模式" },
+        { "id": 4, "title": "三层模式" }
+      ]
+    },
+    {
+      "id": 21,
+      "chapter": "第一章",
+      "title": "要保证数据库的数据独立性，需要修改的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "模式与外模式" },
+        { "id": 2, "title": "模式与内模式" },
+        { "id": 3, "title": "三层之间的两种映射", "correct": true },
+        { "id": 4, "title": "三层模式" }
+      ]
+    },
+    {
+      "id": 22,
+      "chapter": "第一章",
+      "title": "实体-联系模型是一种（ ）工具",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "需求分析" },
+        { "id": 2, "title": "系统设计", "correct": true },
+        { "id": 3, "title": "系统测试" },
+        { "id": 4, "title": "编程实现" }
+      ]
+    },
+    {
+      "id": 23,
+      "chapter": "第一章",
+      "title": "数据库设计的概念设计阶段，表示概念结构的常用方法和描述工具是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "层次分析法和层次结构图" },
+        { "id": 2, "title": "数据流程分析法和数据流程图" },
+        { "id": 3, "title": "实体联系法和实体联系图", "correct": true },
+        { "id": 4, "title": "结构分析法和模块结构图" }
+      ]
+    },
+    {
+      "id": 24,
+      "chapter": "第一章",
+      "title": "在关系数据库设计中，设计关系模式是数据库设计中（ ）阶段的任务",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "逻辑设计阶段", "correct": true },
+        { "id": 2, "title": "概念设计阶段" },
+        { "id": 3, "title": "物理设计阶段" },
+        { "id": 4, "title": "需求分析阶段" }
+      ]
+    },
+    {
+      "id": 25,
+      "chapter": "第一章",
+      "title": "“为哪些关系，在哪些属性上，创建什么样的索引”这一设计内容应该属于（ ）设计阶段",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "概念设计" },
+        { "id": 2, "title": "逻辑设计" },
+        { "id": 3, "title": "物理设计", "correct": true },
+        { "id": 4, "title": "全局设计" }
+      ]
+    },
+    {
+      "id": 26,
+      "chapter": "第二章",
+      "title": "（ ）是目前数据库系统中最常用的一种数据模型",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "关系模型", "correct": true },
+        { "id": 2, "title": "层次模型" },
+        { "id": 3, "title": "网状模型" },
+        { "id": 4, "title": "面向对象模型" }
+      ]
+    },
+    {
+      "id": 27,
+      "chapter": "第二章",
+      "title": "关系模型中实现实体间 N：M 联系是通过增加一个（ ）实现",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "关系", "correct": true },
+        { "id": 2, "title": "属性" },
+        { "id": 3, "title": "关系或一个属性" },
+        { "id": 4, "title": "关系和一个属性" }
+      ]
+    },
+    {
+      "id": 28,
+      "chapter": "第二章",
+      "title": "现有如下关系：患者（患者编号，患者姓名，性别，出生日起，所在单位）， 医疗（患者编号，患者姓名，医生编号，医生姓名，诊断日期，诊断结果）其中，医疗关系中的外键是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "患者编号", "correct": true },
+        { "id": 2, "title": "患者姓名" },
+        { "id": 3, "title": "患者编号和患者姓名" },
+        { "id": 4, "title": "医生编号和患者编号" }
+      ]
+    },
+    {
+      "id": 29,
+      "chapter": "第二章",
+      "title": "现有一个关系：借阅（书号，书名，库存数，读者号，借期，还期），假如同一本书允许一个读者多次借阅，但不能同时对一种书借多本，则该关系模式的外键是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "书号" },
+        { "id": 2, "title": "读者号" },
+        { "id": 3, "title": "书号+读者号" },
+        { "id": 4, "title": "书号+读者号+借期", "correct": true }
+      ]
+    },
+    {
+      "id": 30,
+      "chapter": "第二章",
+      "title": "关系模型中有三类完整性约束：实体完整性、参照完整性和用户自定义完整性。定义外部关键字实现的是哪一类完整性（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "实体完整性" },
+        { "id": 2, "title": "用户自定义完整性" },
+        { "id": 3, "title": "实体完整性、参照完整性" },
+        { "id": 4, "title": "参照完整性", "correct": true }
+      ]
+    },
+    {
+      "id": 31,
+      "chapter": "第二章",
+      "title": "用二维表来表示实体及实体之间联系的数据模型称为（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "实体–联系模型" },
+        { "id": 2, "title": "层次模型" },
+        { "id": 3, "title": "关系模型", "correct": true },
+        { "id": 4, "title": "网状模型" }
+      ]
+    },
+    {
+      "id": 32,
+      "chapter": "第二章",
+      "title": "关系模型中，主键是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "可以由多个任意属性组成" },
+        { "id": 2, "title": "至多由一个属性组成" },
+        { "id": 3, "title": "可有多个或者一个其值能够唯一表示该关系模式中任何元组的属性组成", "correct": true },
+        { "id": 4, "title": "以上都不是" }
+      ]
+    },
+    {
+      "id": 33,
+      "chapter": "第二章",
+      "title": "数据库管理系统能实现对数据的查询、插入、删除等操作，这种功能是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据定义功能" },
+        { "id": 2, "title": "数据管理功能" },
+        { "id": 3, "title": "数据操纵功能", "correct": true },
+        { "id": 4, "title": "数据控制功能" }
+      ]
+    },
+    {
+      "id": 34,
+      "chapter": "第二章",
+      "title": "参照完整性要求有关联的两个或两个以上表之间数据的一致性。参照完整性可以通过建立（ ）来实现",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "主键约束和唯一约束" },
+        { "id": 2, "title": "主键约束和外键约束" },
+        { "id": 3, "title": "唯一约束和外键约束", "correct": true },
+        { "id": 4, "title": "以上都不是" }
+      ]
+    },
+    {
+      "id": 35,
+      "chapter": "第二章",
+      "title": "有一个关系：学生（学号，姓名，系别），规定学号的值域是8个数字组成的字符串，这一规则属于（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "实体完整性约束" },
+        { "id": 2, "title": "参照完整性约束" },
+        { "id": 3, "title": "用户自定义完整性约束", "correct": true },
+        { "id": 4, "title": "关键字完整性约束" }
+      ]
+    },
+    {
+      "id": 36,
+      "chapter": "第二章",
+      "title": "关系数据库管理系统应能实现的专门关系运算包括（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "排序、索引、统计" },
+        { "id": 2, "title": "选择、投影、连接", "correct": true },
+        { "id": 3, "title": "关联、更新、排序" },
+        { "id": 4, "title": "显示、打印、制表" }
+      ]
+    },
+    {
+      "id": 37,
+      "chapter": "第二章",
+      "title": "关系代数中的投影操作是指从关系中（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "抽出特定记录" },
+        { "id": 2, "title": "抽出特定字段", "correct": true },
+        { "id": 3, "title": "建立相应的影像" },
+        { "id": 4, "title": "建立相应的图形" }
+      ]
+    },
+    {
+      "id": 38,
+      "chapter": "第二章",
+      "title": "关系代数中的连接操作是由（ ）操作组合而成",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "选择和投影" },
+        { "id": 2, "title": "选择和笛卡尔积", "correct": true },
+        { "id": 3, "title": "投影、选择、笛卡尔积" },
+        { "id": 4, "title": "投影和笛卡尔积" }
+      ]
+    },
+    {
+      "id": 39,
+      "chapter": "第二章",
+      "title": "假设有关系R和S，关系代数表达式R－（R－S）表示的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "R∩S", "correct": true },
+        { "id": 2, "title": "R∪S" },
+        { "id": 3, "title": "R－S" },
+        { "id": 4, "title": "R×S" }
+      ]
+    },
+    {
+      "id": 40,
+      "chapter": "第二章",
+      "title": "专门的关系代数运算是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "σ π ∞ ÷", "correct": true },
+        { "id": 2, "title": "∪ － σ π" },
+        { "id": 3, "title": "∪ ∩ × σ" },
+        { "id": 4, "title": "∪ ∩ σ π" }
+      ]
+    },
+    {
+      "id": 41,
+      "chapter": "第二章",
+      "title": "假设有关系R和S，在下列的关系运算中，（ ）运算不要求：“R和S具有相同的元数，且它们的对应属性的数据类型也相同”",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "R∩S" },
+        { "id": 2, "title": "R∪S" },
+        { "id": 3, "title": "R－S" },
+        { "id": 4, "title": "R×S", "correct": true }
+      ]
+    },
+    {
+      "id": 42,
+      "chapter": "第二章",
+      "title": "有关系SC（S_ID，C_ID，AGE，SCORE），查找年龄大于22岁的学生的学号和分数，正确的关系代数表达式是（ ）。ⅰ. πS_ID，SCORE (σ age>22 (SC) )ⅱ. σ age>22 (πS_ID，SCORE (SC) )ⅲ. πS_ID，SCORE (σ age>22 (πS_ID，SCORE，AGE (SC) ) )",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ⅰ和 ⅱ" },
+        { "id": 2, "title": "只有ⅱ正确" },
+        { "id": 3, "title": "只有ⅰ正确" },
+        { "id": 4, "title": "ⅰ和ⅲ正确", "correct": true }
+      ]
+    },
+    {
+      "id": 43,
+      "chapter": "第二章",
+      "title": "关系代数运算是以（ ）为基础的运算",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "关系运算" },
+        { "id": 2, "title": "谓词演算" },
+        { "id": 3, "title": "集合运算", "correct": true },
+        { "id": 4, "title": "代数运算" }
+      ]
+    },
+    {
+      "id": 44,
+      "chapter": "第二章",
+      "title": "从一个关系中取出满足某个条件的所有记录形成一个新的关系的操作是（ ）操作",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "投影" },
+        { "id": 2, "title": "联接" },
+        { "id": 3, "title": "选择", "correct": true },
+        { "id": 4, "title": "复制" }
+      ]
+    },
+    {
+      "id": 45,
+      "chapter": "第二章",
+      "title": "SQL语言是（ ）的语言，容易学习",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "过程化" },
+        { "id": 2, "title": "非过程化", "correct": true },
+        { "id": 3, "title": "格式化" },
+        { "id": 4, "title": "导航式" }
+      ]
+    },
+    {
+      "id": 46,
+      "chapter": "第二章",
+      "title": "在下列描述中，正确的描述是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SQL是一种过程化语言" },
+        { "id": 2, "title": "SQL集合操作方式", "correct": true },
+        { "id": 3, "title": "SQL不能嵌入到高级语言程序中" },
+        { "id": 4, "title": "SQL是一种 DBMS" }
+      ]
+    },
+    {
+      "id": 47,
+      "chapter": "第二章",
+      "title": "下列的SQL语句中，（ ）不是数据定义语句",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "CREATE TABLE" },
+        { "id": 2, "title": "DROP VIEW" },
+        { "id": 3, "title": "CREATE VIEW" },
+        { "id": 4, "title": "GRANT", "correct": true }
+      ]
+    },
+    {
+      "id": 48,
+      "chapter": "第二章",
+      "title": "SQL是一种（ ）语言",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "高级算法" },
+        { "id": 2, "title": "人工智能" },
+        { "id": 3, "title": "关系数据库", "correct": true },
+        { "id": 4, "title": "函数型" }
+      ]
+    },
+    {
+      "id": 49,
+      "chapter": "第二章",
+      "title": "视图是一个“虚表”，视图的构造基于（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "基本表" },
+        { "id": 2, "title": "视图" },
+        { "id": 3, "title": "基本表或视图", "correct": true },
+        { "id": 4, "title": "数据字典" }
+      ]
+    },
+    {
+      "id": 50,
+      "chapter": "第二章",
+      "title": "在SQL语言中，视图是数据库体系结构中的（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "内模式" },
+        { "id": 2, "title": "模式" },
+        { "id": 3, "title": "外模式", "correct": true },
+        { "id": 4, "title": "物理模式" }
+      ]
+    },
+    {
+      "id": 51,
+      "chapter": "第二章",
+      "title": "SQL语言集数据查询、数据操纵、数据定义和数据控制功能于一体，其中，CREATE、DROP、ALTER语句是实现哪种功能（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据查询" },
+        { "id": 2, "title": "数据操纵" },
+        { "id": 3, "title": "数据定义", "correct": true },
+        { "id": 4, "title": "数据控制" }
+      ]
+    },
+    {
+      "id": 52,
+      "chapter": "第三章",
+      "title": "在数据库设计中，将E-R图转换成关系数据模型的过程属于",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "需求分析阶段" },
+        { "id": 2, "title": "逻辑设计阶段", "correct": true },
+        { "id": 3, "title": "概念设计阶段" },
+        { "id": 4, "title": "物理设计阶段" }
+      ]
+    },
+    {
+      "id": 53,
+      "chapter": "第三章",
+      "title": "下面关于数据库设计过程不正确的顺序描述是（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "逻辑设计、物理设计、概念设计", "correct": true },
+        { "id": 2, "title": "物理设计、逻辑设计、概念设计", "correct": true },
+        { "id": 3, "title": "概念设计、逻辑设计、物理设计" },
+        { "id": 4, "title": "概念设计、物理设计、逻辑设计", "correct": true }
+      ]
+    },
+    {
+      "id": 54,
+      "chapter": "第三章",
+      "title": "在关系数据库设计中，设计关系模式是数据库设计中（ ）阶段的任务",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "逻辑设计阶段", "correct": true },
+        { "id": 2, "title": "概念设计阶段" },
+        { "id": 3, "title": "物理设计阶段" },
+        { "id": 4, "title": "需求分析阶段" }
+      ]
+    },
+    {
+      "id": 55,
+      "chapter": "第三章",
+      "title": "E-R图是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "表示实体及其联系的概念模型", "correct": true },
+        { "id": 2, "title": "程序流程图" },
+        { "id": 3, "title": "数据流图" },
+        { "id": 4, "title": "数据模型图" }
+      ]
+    },
+    {
+      "id": 56,
+      "chapter": "第三章",
+      "title": "从ER图导出关系模型时，如果实体间的联系是M：N的，下列说法中正确的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "将N方关键字和联系的属性纳入M方的属性中" },
+        { "id": 2, "title": "将M方关键字和联系的属性纳入N方的属性中" },
+        { "id": 3, "title": "在M方属性和N方属性中均增加一个表示级别的属性" },
+        { "id": 4, "title": "增加一个关系表示联系，其中纳入M方和N方的关键字", "correct": true }
+      ]
+    },
+    {
+      "id": 57,
+      "chapter": "第三章",
+      "title": "数据库设计中，用E－R图来描述信息结构，这是数据库设计的（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "需求分析阶段" },
+        { "id": 2, "title": "逻辑设计阶段" },
+        { "id": 3, "title": "概念设计阶段", "correct": true },
+        { "id": 4, "title": "物理设计阶段" }
+      ]
+    },
+    {
+      "id": 58,
+      "chapter": "第三章",
+      "title": "在E－R模型向关系模型转换时，M：N的联系转换为关系模式时，其外键包括（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "M端实体的关键字" },
+        { "id": 2, "title": "N端实体的关键字" },
+        { "id": 3, "title": "M、N端实体的关键字", "correct": true },
+        { "id": 4, "title": "重新选取其他属性" }
+      ]
+    },
+    {
+      "id": 59,
+      "chapter": "第三章",
+      "title": "在ER模型中，如果有3个不同的实体集，3个M：N联系，根据ER模型转换为关系模型的规则，转换为关系的数目是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "4" },
+        { "id": 2, "title": "5" },
+        { "id": 3, "title": "6", "correct": true },
+        { "id": 4, "title": "7" }
+      ]
+    },
+    {
+      "id": 60,
+      "chapter": "第三章",
+      "title": "“汽车用品网上商城”中,关于购物车功能的描述，（ ）是错误的",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "购物车中的购物信息不可删除", "correct": true },
+        { "id": 2, "title": "购物车能自动跟踪并记录消费者网上购物所选择的商品" },
+        { "id": 3, "title": "购物车可以对数据库进行实时更新" },
+        { "id": 4, "title": "购物车可以累计购物总金额" }
+      ]
+    },
+    {
+      "id": 61,
+      "chapter": "第三章",
+      "title": "“汽车用品网上商城”中,购物车实体与（ ）实体有联系",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "用户类别" },
+        { "id": 2, "title": "用户", "correct": true },
+        { "id": 3, "title": "订单" },
+        { "id": 4, "title": "订单明细" }
+      ]
+    },
+    {
+      "id": 62,
+      "chapter": "第三章",
+      "title": "“为哪些关系，在哪些属性上，创建什么样的索引”这一设计内容应该属于（ ）设计阶段",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "概念设计" },
+        { "id": 2, "title": "逻辑设计" },
+        { "id": 3, "title": "物理设计", "correct": true },
+        { "id": 4, "title": "全局设计" }
+      ]
+    },
+    {
+      "id": 63,
+      "chapter": "第三章",
+      "title": "“汽车用品网上商城”数据库包括（ ）张表",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "6" },
+        { "id": 2, "title": "7" },
+        { "id": 3, "title": "8", "correct": true },
+        { "id": 4, "title": "9" }
+      ]
+    },
+    {
+      "id": 64,
+      "chapter": "第三章",
+      "title": "数据库设计的概念设计阶段，表示概念结构的常用方法和描述工具是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "层次分析法和层次结构图" },
+        { "id": 2, "title": "数据流程分析法和数据流程图" },
+        { "id": 3, "title": "实体联系法和实体联系图", "correct": true },
+        { "id": 4, "title": "结构分析法和模块结构图" }
+      ]
+    },
+    {
+      "id": 65,
+      "chapter": "第三章",
+      "title": "在网上购物流程中，位于“用户注册”与“选购产品”之间的步骤是( )",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "浏览产品", "correct": true },
+        { "id": 2, "title": "订购产品" },
+        { "id": 3, "title": "送货上门" },
+        { "id": 4, "title": "货到付款" }
+      ]
+    },
+    {
+      "id": 66,
+      "chapter": "第四章",
+      "title": "MySQL服务器的管理包括（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "启动", "correct": true },
+        { "id": 2, "title": "停止", "correct": true },
+        { "id": 3, "title": "连接", "correct": true },
+        { "id": 4, "title": "断开", "correct": true }
+      ]
+    },
+    {
+      "id": 67,
+      "chapter": "第四章",
+      "title": "MySQL安装包括哪些主要部件（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "MySQL服务器", "correct": true },
+        { "id": 2, "title": "MySQL客户端程序", "correct": true },
+        { "id": 3, "title": "PL/SQL" },
+        { "id": 4, "title": "MySQL图形化工具", "correct": true }
+      ]
+    },
+    {
+      "id": 68,
+      "chapter": "第四章",
+      "title": "MySQL图形化工具包括（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "MySQLcommand" },
+        { "id": 2, "title": "MySQL Front", "correct": true },
+        { "id": 3, "title": "MySQL Query Browser", "correct": true },
+        { "id": 4, "title": "MySQL Workbench", "correct": true }
+      ]
+    },
+    {
+      "id": 69,
+      "chapter": "第四章",
+      "title": "下列哪些是MYSQL的配置文件（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "my.ini", "correct": true },
+        { "id": 2, "title": "my-template.ini" },
+        { "id": 3, "title": "my-innodb-heavy-4G.ini" },
+        { "id": 4, "title": "php_mysqli.ini" }
+      ]
+    },
+    {
+      "id": 70,
+      "chapter": "第四章",
+      "title": "查看MySQL版本语句是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysql --version", "correct": true },
+        { "id": 2, "title": "mysql --VERSION" },
+        { "id": 3, "title": "mysql --help" },
+        { "id": 4, "title": "mysql --v" }
+      ]
+    },
+    {
+      "id": 71,
+      "chapter": "第四章",
+      "title": "连接MySQL服务器的指令是？（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysqladmin -u root password test" },
+        { "id": 2, "title": "mysql -u root password test" },
+        { "id": 3, "title": "mysql -u root -p test" },
+        { "id": 4, "title": "mysql -u root -password test", "correct": true }
+      ]
+    },
+    {
+      "id": 72,
+      "chapter": "第四章",
+      "title": "下列叙述正确的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "在Windows服务管理器中可停止MySQL服务" },
+        { "id": 2, "title": "在Windows服务管理器中可暂停MySQL服务" },
+        { "id": 3, "title": "在Windows服务管理器中可启动MySQL服务" },
+        { "id": 4, "title": "以上选项都正确", "correct": true }
+      ]
+    },
+    {
+      "id": 73,
+      "chapter": "第四章",
+      "title": "MySQL中，预设的、拥有最高权限超级用户的用户名为（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Test" },
+        { "id": 2, "title": "Administrator" },
+        { "id": 3, "title": "DA" },
+        { "id": 4, "title": "Root", "correct": true }
+      ]
+    },
+    {
+      "id": 74,
+      "chapter": "第四章",
+      "title": "MySQL属于（ ）数据库系统",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "层次模型" },
+        { "id": 2, "title": "网状模型" },
+        { "id": 3, "title": "关系模型", "correct": true },
+        { "id": 4, "title": "面向对象模型" }
+      ]
+    },
+    {
+      "id": 75,
+      "chapter": "第四章",
+      "title": "修改自己的mysql服务器密码的命令是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Mysql" },
+        { "id": 2, "title": "Grant" },
+        { "id": 3, "title": "Setpassword", "correct": true },
+        { "id": 4, "title": "Changepassword" }
+      ]
+    },
+    {
+      "id": 76,
+      "chapter": "第四章",
+      "title": "下面有关主键的叙述正确的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "不同的记录可以具有重复的主键值或空值" },
+        { "id": 2, "title": "一个表中的主键可以是一个或多个字段", "correct": true },
+        { "id": 3, "title": "在一个表中主键只可以是一个字段" },
+        { "id": 4, "title": "表中的主键的数据类型必须定义为自动编号或文本" }
+      ]
+    },
+    {
+      "id": 77,
+      "chapter": "第四章",
+      "title": "参照完整性规则：表的（ ）必须是另一个表主键的有效值，或者是空值",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "候选键" },
+        { "id": 2, "title": "外键", "correct": true },
+        { "id": 3, "title": "主键" },
+        { "id": 4, "title": "主属性" }
+      ]
+    },
+    {
+      "id": 78,
+      "chapter": "第四章",
+      "title": "以下哪种操作能够实现参照完整性（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "设置唯一键" },
+        { "id": 2, "title": "设置外键", "correct": true },
+        { "id": 3, "title": "减少数据冗余" },
+        { "id": 4, "title": "设置主键" }
+      ]
+    },
+    {
+      "id": 79,
+      "chapter": "第四章",
+      "title": "在一个关系中，如果有这样一个属性组存在，它的值能唯一的标识此关系中的一个元组，该属性组称为（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "主键", "correct": true },
+        { "id": 2, "title": "数据项" },
+        { "id": 3, "title": "主属性" },
+        { "id": 4, "title": "主属性值" }
+      ]
+    },
+    {
+      "id": 80,
+      "chapter": "第四章",
+      "title": "在MySQL中有5种约束，以下（ ）不属于该5种约束",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "主键约束" },
+        { "id": 2, "title": "外键约束" },
+        { "id": 3, "title": "唯一性约束" },
+        { "id": 4, "title": "关联约束", "correct": true }
+      ]
+    },
+    {
+      "id": 81,
+      "chapter": "第四章",
+      "title": "一张表的主键个数为（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "至多3个" },
+        { "id": 2, "title": "没有限制" },
+        { "id": 3, "title": "至多1个", "correct": true },
+        { "id": 4, "title": "至多2个" }
+      ]
+    },
+    {
+      "id": 82,
+      "chapter": "第四章",
+      "title": "参照完整性要求有关联的两个或两个以上表之间数据的一致性。参照完整性可以通过建立（ ）来实现",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "主键约束和唯一约束" },
+        { "id": 2, "title": "主键约束和外键约束" },
+        { "id": 3, "title": "唯一约束和外键约束", "correct": true },
+        { "id": 4, "title": "以上都不是" }
+      ]
+    },
+    {
+      "id": 83,
+      "chapter": "第四章",
+      "title": "根据数据完整性实施的方法，可以将其分为（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "主键约束", "correct": true },
+        { "id": 2, "title": "表完整性" },
+        { "id": 3, "title": "CHECK约束", "correct": true },
+        { "id": 4, "title": "引用完整性", "correct": true }
+      ]
+    },
+    {
+      "id": 84,
+      "chapter": "第四章",
+      "title": "下面正确的说法是（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "主键只能由单个的属性组成" },
+        { "id": 2, "title": "在一个关系中，主键字的值不能为空", "correct": true },
+        { "id": 3, "title": "一个关系中的所有值唯一的列均可以被指定为主键", "correct": true },
+        { "id": 4, "title": "主键是关系中能够用来惟一标识元组的属性", "correct": true }
+      ]
+    },
+    {
+      "id": 85,
+      "chapter": "第四章",
+      "title": "创建表时,不允许某列为空可以使用（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "NOTNULL", "correct": true },
+        { "id": 2, "title": "NONULL" },
+        { "id": 3, "title": "NOTBLANK" },
+        { "id": 4, "title": "NOBLANK" }
+      ]
+    },
+    {
+      "id": 86,
+      "chapter": "第四章",
+      "title": "修改列指令是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ALTER TABLE … MODIFY …", "correct": true },
+        { "id": 2, "title": "ALTER TABLE … MODIFY COLUMN…" },
+        { "id": 3, "title": "ALTER TABLE … UPDATE …" },
+        { "id": 4, "title": "ALTER TABLE … UPDATE COLUMN…" }
+      ]
+    },
+    {
+      "id": 87,
+      "chapter": "第四章",
+      "title": "在MySQL中，下列关于创建数据库表的描述不正确的是（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "在创建表时必须设定列的约束", "correct": true },
+        { "id": 2, "title": "在删除表的时候通过外键约束连接在一起的表会被一同删除", "correct": true },
+        { "id": 3, "title": "在创建表时必须设置列类型" },
+        {
+          "id": 4,
+          "title": "通过CREATE TABLE new_t SELECT * FROM old_t复制表的同时，表的约束能够一起被复制到新表中",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 88,
+      "chapter": "第五章",
+      "title": "关系代数中的π运算符对应SELECT语句中的以下哪个子句？（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SELECT", "correct": true },
+        { "id": 2, "title": "FROM" },
+        { "id": 3, "title": "WHERE" },
+        { "id": 4, "title": "GROUP BY" }
+      ]
+    },
+    {
+      "id": 89,
+      "chapter": "第五章",
+      "title": "关于SELECT语句以下哪一个描述是错误的（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SELECT语句用于查询一个表或多个表的数据" },
+        { "id": 2, "title": "SELECT语句属于数据操作语言（DML）" },
+        { "id": 3, "title": "SELECT语句的列必需是基于表的列的", "correct": true },
+        { "id": 4, "title": "SELECT语句表示数据库中一组特定的数据记录" }
+      ]
+    },
+    {
+      "id": 90,
+      "chapter": "第五章",
+      "title": "SELECT * FROM city limit 5,10描述正确的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "获取第6条到第10条记录" },
+        { "id": 2, "title": "获取第5条到第10条记录" },
+        { "id": 3, "title": "获取第6条到第15条记录", "correct": true },
+        { "id": 4, "title": "获取第5条到第15条记录" }
+      ]
+    },
+    {
+      "id": 91,
+      "chapter": "第五章",
+      "title": "不可以通过聚合函数的结果来过滤查询结果集的SQL子句是（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "WHERE子句", "correct": true },
+        { "id": 2, "title": "GROUP BY子句", "correct": true },
+        { "id": 3, "title": "HAVING 子句" },
+        { "id": 4, "title": "ORDER BY子句", "correct": true }
+      ]
+    },
+    {
+      "id": 92,
+      "chapter": "第五章",
+      "title": "下面那一项不是SELECT语句对数据的操作（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "更新", "correct": true },
+        { "id": 2, "title": "连接" },
+        { "id": 3, "title": "并" },
+        { "id": 4, "title": "级联", "correct": true }
+      ]
+    },
+    {
+      "id": 93,
+      "chapter": "第五章",
+      "title": "关于group by 以下语句正确的是（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "SELECT name FROM Store GROUP BY sales" },
+        { "id": 2, "title": "SELECT SUM(sales) FROM Store GROUP BY sales", "correct": true },
+        { "id": 3, "title": "SELECT name, price,SUM(sales) FROM Store GROUP BY name, price", "correct": true },
+        { "id": 4, "title": "SELECT name, SUM(sales) FROM Store GROUP BY name", "correct": true }
+      ]
+    },
+    {
+      "id": 94,
+      "chapter": "第五章",
+      "title": "关于select语句下列语法正确的是（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "select name from table person" },
+        { "id": 2, "title": "select name from person where age=12 or name='a'", "correct": true },
+        { "id": 3, "title": "select name from table person where age=12" },
+        { "id": 4, "title": "select name, age from person where age=12 and name=aa", "correct": true }
+      ]
+    },
+    {
+      "id": 95,
+      "chapter": "第五章",
+      "title": "在算术运算符、比较运算符、逻辑运算符，这三种符号中，它们的优先级排列不正确的是（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "算术/逻辑/比较", "correct": true },
+        { "id": 2, "title": "比较/逻辑/算术", "correct": true },
+        { "id": 3, "title": "比较/算术/逻辑", "correct": true },
+        { "id": 4, "title": "算术/比较/逻辑" }
+      ]
+    },
+    {
+      "id": 96,
+      "chapter": "第五章",
+      "title": "下列哪一个逻辑运算符的优先级排列不正确（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "AND/NOT/OR", "correct": true },
+        { "id": 2, "title": "NOT/AND/OR" },
+        { "id": 3, "title": "OR/NOT /AND", "correct": true },
+        { "id": 4, "title": "OR/AND/NOT", "correct": true }
+      ]
+    },
+    {
+      "id": 97,
+      "chapter": "第五章",
+      "title": "mySQL支持哪些逻辑运算符（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "&&" },
+        { "id": 2, "title": "||" },
+        { "id": 3, "title": "NOT", "correct": true },
+        { "id": 4, "title": "AND", "correct": true }
+      ]
+    },
+    {
+      "id": 98,
+      "chapter": "第五章",
+      "title": "返回字符串长度的函数是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "len()" },
+        { "id": 2, "title": "length()", "correct": true },
+        { "id": 3, "title": "left()" },
+        { "id": 4, "title": "long()+H12H98:H134" }
+      ]
+    },
+    {
+      "id": 99,
+      "chapter": "第五章",
+      "title": "查看系统中可用的字符集命令是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "show character set", "correct": true },
+        { "id": 2, "title": "show collation" },
+        { "id": 3, "title": "show character" },
+        { "id": 4, "title": "show set" }
+      ]
+    },
+    {
+      "id": 100,
+      "chapter": "第五章",
+      "title": "查看MySQL版本语句是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysql --version", "correct": true },
+        { "id": 2, "title": "mysql --VERSION" },
+        { "id": 3, "title": "mysql --help" },
+        { "id": 4, "title": "mysql --v" }
+      ]
+    },
+    {
+      "id": 101,
+      "chapter": "第五章",
+      "title": "返回当前日期的函数是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "curtime()" },
+        { "id": 2, "title": "adddate()" },
+        { "id": 3, "title": "curnow()" },
+        { "id": 4, "title": "curdate()", "correct": true }
+      ]
+    },
+    {
+      "id": 102,
+      "chapter": "第五章",
+      "title": "96的数据类型是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "整型", "correct": true },
+        { "id": 2, "title": "浮点型" },
+        { "id": 3, "title": "字符型" },
+        { "id": 4, "title": "日期时间型" }
+      ]
+    },
+    {
+      "id": 103,
+      "chapter": "第五章",
+      "title": "MySQL存储过程中分支语句有哪些（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "IF" },
+        { "id": 2, "title": "CASE" },
+        { "id": 3, "title": "SELECT", "correct": true },
+        { "id": 4, "title": "SWITCH", "correct": true }
+      ]
+    },
+    {
+      "id": 104,
+      "chapter": "第五章",
+      "title": "条件“BETWEEN 20 AND 30”表示年龄在20到30之间，且（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "包括20岁不包括30岁" },
+        { "id": 2, "title": "不包括20岁包括30岁" },
+        { "id": 3, "title": "不包括20岁和30岁" },
+        { "id": 4, "title": "包括20岁和30岁", "correct": true }
+      ]
+    },
+    {
+      "id": 105,
+      "chapter": "第五章",
+      "title": "哪个关键字在Select语句中表示所有列（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "*", "correct": true },
+        { "id": 2, "title": "ALL" },
+        { "id": 3, "title": "DESC" },
+        { "id": 4, "title": "DISTINCT" }
+      ]
+    },
+    {
+      "id": 106,
+      "chapter": "第五章",
+      "title": "SELECT COUNT(SAL) FROM EMP GROUP BY DEPTNO;意思是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "求每个部门中的工资" },
+        { "id": 2, "title": "求每个部门中工资的大小" },
+        { "id": 3, "title": "求每个部门中工资的总和" },
+        { "id": 4, "title": "求每个部门中工资的个数", "correct": true }
+      ]
+    },
+    {
+      "id": 107,
+      "chapter": "第五章",
+      "title": "在SELECT语句中，使用关键字（ ）可以把重复行屏蔽",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "TOP" },
+        { "id": 2, "title": "ALL" },
+        { "id": 3, "title": "UNION" },
+        { "id": 4, "title": "DISTINCT", "correct": true }
+      ]
+    },
+    {
+      "id": 108,
+      "chapter": "第五章",
+      "title": "从GROUP BY分组的结果集中再次用条件表达式进行筛选的子句是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "FROM" },
+        { "id": 2, "title": "ORDER BY" },
+        { "id": 3, "title": "并", "correct": true },
+        { "id": 4, "title": "级联" }
+      ]
+    },
+    {
+      "id": 109,
+      "chapter": "第五章",
+      "title": "下列（ ）不属于连接种类",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "左外连接" },
+        { "id": 2, "title": "内连接" },
+        { "id": 3, "title": "中间连接", "correct": true },
+        { "id": 4, "title": "交叉连接" }
+      ]
+    },
+    {
+      "id": 110,
+      "chapter": "第五章",
+      "title": "连接查询使用的关键字是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "UNION" },
+        { "id": 2, "title": "JOIN", "correct": true },
+        { "id": 3, "title": "ALL" },
+        { "id": 4, "title": "FULL" }
+      ]
+    },
+    {
+      "id": 111,
+      "chapter": "第五章",
+      "title": "下面关于连接的描述不正确的是（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "TOP" },
+        { "id": 2, "title": "ALL", "correct": true },
+        { "id": 3, "title": "UNION", "correct": true },
+        { "id": 4, "title": "DISTINCT", "correct": true }
+      ]
+    },
+    {
+      "id": 112,
+      "chapter": "第五章",
+      "title": "以下聚合函数求平均数的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "COUNT" },
+        { "id": 2, "title": "MAX" },
+        { "id": 3, "title": "AVG", "correct": true },
+        { "id": 4, "title": "SUM" }
+      ]
+    },
+    {
+      "id": 113,
+      "chapter": "第五章",
+      "title": "以下聚合函数求数据总和的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "MAX" },
+        { "id": 2, "title": "SUM", "correct": true },
+        { "id": 3, "title": "COUNT" },
+        { "id": 4, "title": "AVG" }
+      ]
+    },
+    {
+      "id": 114,
+      "chapter": "第五章",
+      "title": "GROUP_CONCAT（）函数作用是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "将每组的结果字符串连接起来", "correct": true },
+        { "id": 2, "title": "将每组的结果累加" },
+        { "id": 3, "title": "统计每组的记录数" },
+        { "id": 4, "title": "统计每组的平均值" }
+      ]
+    },
+    {
+      "id": 115,
+      "chapter": "第五章",
+      "title": "有订单表orders，包含用户信息userid,产品信息productid,以下（ ）语句能够返回至少被订购过两回的productid",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "select productid from orders where count(productid)>1" },
+        { "id": 2, "title": "select productid from orders where max(productid)>1" },
+        { "id": 3, "title": "select productid from orders where having count(productid)>1group by productid" },
+        {
+          "id": 4,
+          "title": "select productid from orders group by productid having count(productid)>1",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 116,
+      "chapter": "第五章",
+      "title": "下列聚合函数中不忽略空值 (NULL) 的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SUM(列名)" },
+        { "id": 2, "title": "MAX(列名)" },
+        { "id": 3, "title": "COUNT(*)", "correct": true },
+        { "id": 4, "title": "AVG(列名)" }
+      ]
+    },
+    {
+      "id": 117,
+      "chapter": "第五章",
+      "title": "子查询中可以使用运算符ANY,它表示的意思是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "满足所有的条件" },
+        { "id": 2, "title": "满足至少一个条件", "correct": true },
+        { "id": 3, "title": "一个都不用满足" },
+        { "id": 4, "title": "满足至少5个条件" }
+      ]
+    },
+    {
+      "id": 118,
+      "chapter": "第五章",
+      "title": "下面关于在子查询中使用运算符描述正确的是（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "IN用于查找字段值属于某一组值的行", "correct": true },
+        { "id": 2, "title": "Exists用于测试子查询是否返回行，如果返回其值就为真", "correct": true },
+        { "id": 3, "title": "ALL用于测试子查询结果集的所有行是否满足指定的条件", "correct": true },
+        { "id": 4, "title": "Any用于测试子查询结果集中的一行或多行不满足指定的条件" }
+      ]
+    },
+    {
+      "id": 119,
+      "chapter": "第五章",
+      "title": "可以使用在子查询前面的谓词有（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "MAX" },
+        { "id": 2, "title": "EXIST", "correct": true },
+        { "id": 3, "title": "IN", "correct": true },
+        { "id": 4, "title": "Group by" }
+      ]
+    },
+    {
+      "id": 120,
+      "chapter": "第五章",
+      "title": "已知表T1和T2的字段定义完全相同，T1,T2中各有5条不同的数据，其中T1有2条数据存在于表T2中，语句“select * from T1 union select * from T2”,返回的行数为（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "8行", "correct": true },
+        { "id": 2, "title": "10行" },
+        { "id": 3, "title": "3行" },
+        { "id": 4, "title": "12行" }
+      ]
+    },
+    {
+      "id": 121,
+      "chapter": "第五章",
+      "title": "下面关于集合查询描述正确的是（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "从一个表中获取的数据必须和其它表中的数据具有相同的列数", "correct": true },
+        { "id": 2, "title": "两个表中相对应的列必须具有相同的数据类型", "correct": true },
+        { "id": 3, "title": "UNION的结果集列名与第一个SELECT语句的结果集中的列名相同", "correct": true },
+        { "id": 4, "title": "UNION的结果集列名与第二个SELECT语句的结果集中的列名相同" }
+      ]
+    },
+    {
+      "id": 122,
+      "chapter": "第五章",
+      "title": "下面对 union 的描述正确的是（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "union 只能连接结果集完全一样的查询语句" },
+        { "id": 2, "title": "union 是将俩个查询结果进行并运算", "correct": true },
+        { "id": 3, "title": "union对是结果集再进行操作", "correct": true },
+        { "id": 4, "title": "任何查询语句都可以用 union 来连接" }
+      ]
+    },
+    {
+      "id": 123,
+      "chapter": "第六章",
+      "title": "下列关于INSERT语句使用正确的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "可以在INSERT语句的VALUES指定计算列的值" },
+        { "id": 2, "title": "可以使用INSERT语句插入一个空记录" },
+        { "id": 3, "title": "如果没有为列指定数据，则列值为空值" },
+        { "id": 4, "title": "如果列设置了默认值，则可以不为该列提供数据", "correct": true }
+      ]
+    },
+    {
+      "id": 124,
+      "chapter": "第六章",
+      "title": "关于insert语句下列语法正确的是（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "insert into 表名value(字段名1对应的值)" },
+        { "id": 2, "title": "insert into 表名 values(字段名1对应的值，字段名2对应值)", "correct": true },
+        { "id": 3, "title": "insert into 表名(字段名1) value (字段名1对应的值)" },
+        {
+          "id": 4,
+          "title": "insert into 表名(字段名1，字段名2) values(字段名1对应的值，字段名2对应值)",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 125,
+      "chapter": "第六章",
+      "title": "关于DELETE和TRUNCATE TABLE区别描述错误的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DELETE可以删除特定范围的数据" },
+        { "id": 2, "title": "两者执行效率一样", "correct": true },
+        { "id": 3, "title": "DELETE返回被删除的记录行数" },
+        { "id": 4, "title": "TRUNCATE TABLE返回值为0" }
+      ]
+    },
+    {
+      "id": 126,
+      "chapter": "第六章",
+      "title": "delete from employee语句的作用是( )",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "删除当前数据库中整个employee表，包括表结构" },
+        { "id": 2, "title": "删除当前数据库中employee表内的所有行", "correct": true },
+        { "id": 3, "title": "由于没有where子句，因此不删除任何数据" },
+        { "id": 4, "title": "删除当前数据库中employee表内的当前行" }
+      ]
+    },
+    {
+      "id": 127,
+      "chapter": "第六章",
+      "title": "以下删除记录正确的( )",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "delete from emp where name='dony';", "correct": true },
+        { "id": 2, "title": "Delete * from emp where name='dony';" },
+        { "id": 3, "title": "Drop from emp where name='dony';" },
+        { "id": 4, "title": "Drop * from emp where name='dony';" }
+      ]
+    },
+    {
+      "id": 128,
+      "chapter": "第六章",
+      "title": "关于TRUNCATE TABLE描述正确的是（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "TRUNCATE TABLE返回值为0", "correct": true },
+        { "id": 2, "title": "表中包含AUTO_INCREMENT列，使用TRUNCATE TABLE可以重置序列值", "correct": true },
+        { "id": 3, "title": "TRUNCATE TABLE本身不能回滚", "correct": true },
+        { "id": 4, "title": "TRUNCATE TABLE删除表，然后根据表结构重新构建表" }
+      ]
+    },
+    {
+      "id": 129,
+      "chapter": "第六章",
+      "title": "更新数据表中的记录用以下哪一项()",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DELETE" },
+        { "id": 2, "title": "ALTRE" },
+        { "id": 3, "title": "UPDATE", "correct": true },
+        { "id": 4, "title": "SELECT" }
+      ]
+    },
+    {
+      "id": 130,
+      "chapter": "第六章",
+      "title": "下列关于UPDATE语句错误的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "可以使用DEFAULT关键字将列设置为默认值" },
+        { "id": 2, "title": "可以使用NULL关键字将列设置为空值" },
+        { "id": 3, "title": "可以使用UPDATE语句同时修改多个记录" },
+        { "id": 4, "title": "若UPDATE语句中没有指定搜索条件，则默认只能修改第一条记录", "correct": true }
+      ]
+    },
+    {
+      "id": 131,
+      "chapter": "第七章",
+      "title": "视图是一个“虚表”，视图的构造基于（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "基本表" },
+        { "id": 2, "title": "视图" },
+        { "id": 3, "title": "基本表或视图", "correct": true },
+        { "id": 4, "title": "数据字典" }
+      ]
+    },
+    {
+      "id": 132,
+      "chapter": "第七章",
+      "title": "关于视图的描述正确的是（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "简化了用户操作", "correct": true },
+        { "id": 2, "title": "使用户以多种角度看待同一数据", "correct": true },
+        { "id": 3, "title": "提供了一定程度的物理独立性" },
+        { "id": 4, "title": "提供了一定程度的逻辑独立性", "correct": true }
+      ]
+    },
+    {
+      "id": 133,
+      "chapter": "第七章",
+      "title": "索引是对数据库表中（ ）字段的值进行排序",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "一个" },
+        { "id": 2, "title": "多个" },
+        { "id": 3, "title": "一个或多个", "correct": true },
+        { "id": 4, "title": "零个" }
+      ]
+    },
+    {
+      "id": 134,
+      "chapter": "第七章",
+      "title": "MySQL中唯一索引的关键字是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "fulltextindex" },
+        { "id": 2, "title": "onlyindex" },
+        { "id": 3, "title": "uniqueindex", "correct": true },
+        { "id": 4, "title": "index" }
+      ]
+    },
+    {
+      "id": 135,
+      "chapter": "第七章",
+      "title": "为数据表创建索引的目的是()",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "提高查询的检索性能", "correct": true },
+        { "id": 2, "title": "归类" },
+        { "id": 3, "title": "创建唯一索引" },
+        { "id": 4, "title": "创建主键" }
+      ]
+    },
+    {
+      "id": 136,
+      "chapter": "第七章",
+      "title": "SQL语言中，删除一个视图的命令是()",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "REMOVE" },
+        { "id": 2, "title": "CLEAR" },
+        { "id": 3, "title": "DELETE" },
+        { "id": 4, "title": "DROP", "correct": true }
+      ]
+    },
+    {
+      "id": 137,
+      "chapter": "第七章",
+      "title": "MySQL中可以创建如下索引（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "聚簇索引", "correct": true },
+        { "id": 2, "title": "普通索引", "correct": true },
+        { "id": 3, "title": "主键索引", "correct": true },
+        { "id": 4, "title": "全文索引", "correct": true }
+      ]
+    },
+    {
+      "id": 138,
+      "chapter": "第七章",
+      "title": "下面关于创建和管理索引不正确的描述是（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "创建索引是为了便于全表扫描", "correct": true },
+        { "id": 2, "title": "索引会加快DELETE、UPDATE和INSERT语句的执行速度", "correct": true },
+        { "id": 3, "title": "索引被用于快速找到想要的记录" },
+        { "id": 4, "title": "大量使用索引可以提高数据库的整体性能", "correct": true }
+      ]
+    },
+    {
+      "id": 139,
+      "chapter": "第八章",
+      "title": "存储过程是一组预先定义并()的过程化SQL语句",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "保存" },
+        { "id": 2, "title": "编写" },
+        { "id": 3, "title": "编译", "correct": true },
+        { "id": 4, "title": "解释" }
+      ]
+    },
+    {
+      "id": 140,
+      "chapter": "第八章",
+      "title": "MySQL存储函数的描述正确的是（ ）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "存储函数在服务器端运行", "correct": true },
+        { "id": 2, "title": "存储函数既可以有输入参数又可以有输出参数" },
+        { "id": 3, "title": "存储函数用CALL语句调用" },
+        { "id": 4, "title": "存储函数中必须包括RETURN语句", "correct": true }
+      ]
+    },
+    {
+      "id": 141,
+      "chapter": "第八章",
+      "title": "在MySQL中，不能在整个会话期间都有作用的是下列标识符可以作为局部变量使用的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "用户变量" },
+        { "id": 2, "title": "系统变量" },
+        { "id": 3, "title": "局部变量", "correct": true },
+        { "id": 4, "title": "全局变量" }
+      ]
+    },
+    {
+      "id": 142,
+      "chapter": "第八章",
+      "title": "MySQL变量包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "用户变量", "correct": true },
+        { "id": 2, "title": "系统变量", "correct": true },
+        { "id": 3, "title": "全局变量" },
+        { "id": 4, "title": "局部变量", "correct": true }
+      ]
+    },
+    {
+      "id": 143,
+      "chapter": "第九章",
+      "title": "MySQL安全性控制语句包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "出错处理语句" },
+        { "id": 2, "title": "创建用户语句", "correct": true },
+        { "id": 3, "title": "授权语句", "correct": true },
+        { "id": 4, "title": "收回权限语句", "correct": true }
+      ]
+    },
+    {
+      "id": 144,
+      "chapter": "第九章",
+      "title": "数据库备份的作用是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "保障安全性" },
+        { "id": 2, "title": "一致性控制" },
+        { "id": 3, "title": "故障后的恢复", "correct": true },
+        { "id": 4, "title": "数据的转存" }
+      ]
+    },
+    {
+      "id": 145,
+      "chapter": "第九章",
+      "title": "不属于MySQL日志的是（ ）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "错误日志" },
+        { "id": 2, "title": "服务器日志", "correct": true },
+        { "id": 3, "title": "查询日志" },
+        { "id": 4, "title": "二进制日志" }
+      ]
+    },
+    {
+      "id": 146,
+      "chapter": "第九章",
+      "title": "MySQL中,备份数据库的命令是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysqldump", "correct": true },
+        { "id": 2, "title": "mysql" },
+        { "id": 3, "title": "backup" },
+        { "id": 4, "title": "copy" }
+      ]
+    },
+    {
+      "id": 147,
+      "chapter": "第十章",
+      "title": "“汽车用品网上商城”中,关于购物车功能的描述，（ ）是错误的",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "购物车中的购物信息不可删除", "correct": true },
+        { "id": 2, "title": "购物车能自动跟踪并记录消费者网上购物所选择的商品" },
+        { "id": 3, "title": "购物车可以对数据库进行实时更新" },
+        { "id": 4, "title": "购物车可以累计购物总金额" }
+      ]
+    }
+  ]
+}

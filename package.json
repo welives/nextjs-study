@@ -9,6 +9,7 @@
     "unocss:dev": "unocss --watch",
     "unocss:build": "unocss",
     "drizzle:action": "esno scripts/drizzle-action.mts",
+    "seed": "esno scripts/seed.mts",
     "lint": "next lint"
   },
   "dependencies": {

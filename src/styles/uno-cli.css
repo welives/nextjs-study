@@ -8,6 +8,7 @@
 .relative{position:relative;}
 .float-right{float:right;}
 .m-0{margin:0;}
+.mx-a{margin-left:auto;margin-right:auto;}
 .my-2{margin-top:0.5rem;margin-bottom:0.5rem;}
 .\!mb-0{margin-bottom:0 !important;}
 .mb-16{margin-bottom:4rem;}
@@ -19,12 +20,17 @@
 [block=""]{display:block;}
 .hidden{display:none;}
 .size-7{width:1.75rem;height:1.75rem;}
+.h-15{height:3.75rem;}
+.h-full{height:100%;}
 .w-full{width:100%;}
+.w-screen-xl{width:1280px;}
 .flex{display:flex;}
 .flex-1{flex:1 1 0%;}
+.shrink-0{flex-shrink:0;}
 .flex-col{flex-direction:column;}
 .hover\:cursor-pointer:hover{cursor:pointer;}
 .items-center{align-items:center;}
+.justify-end{justify-content:flex-end;}
 .justify-center{justify-content:center;}
 .gap-2{gap:0.5rem;}
 .gap-4{gap:1rem;}
@@ -44,8 +50,12 @@
 .bg-gradient-to-b{--un-gradient-shape:to bottom in oklch;--un-gradient:var(--un-gradient-shape), var(--un-gradient-stops);background-image:linear-gradient(var(--un-gradient));}
 .bg-clip-text{-webkit-background-clip:text;background-clip:text;}
 .px-3{padding-left:0.75rem;padding-right:0.75rem;}
+.px-8{padding-left:2rem;padding-right:2rem;}
 .py-1{padding-top:0.25rem;padding-bottom:0.25rem;}
+.py-3{padding-top:0.75rem;padding-bottom:0.75rem;}
+.py-4{padding-top:1rem;padding-bottom:1rem;}
 .text-center{text-align:center;}
+.text-left{text-align:left;}
 .text-\[10rem\]{font-size:10rem;}
 .text-2xl{font-size:1.5rem;line-height:2rem;}
 .group.toast .group-\[\.toast\]\:text-muted-foreground,

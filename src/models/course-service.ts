@@ -26,8 +26,12 @@ export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: 
   // Pagination logic
   const offset = (page - 1) * limit
   const courses = res.slice(offset, offset + limit)
+  const count = res.length
 
-  return courses
+  return {
+    rows: courses,
+    count
+  }
 })
 
 /**

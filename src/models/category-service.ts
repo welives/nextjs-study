@@ -27,8 +27,12 @@ export const getList = cache(async ({ keyword, page = 1, limit = 20 }: ListPageD
   // Pagination logic
   const offset = (page - 1) * limit
   const categories = res.slice(offset, offset + limit)
+  const count = res.length
 
-  return categories
+  return {
+    rows: categories,
+    count
+  }
 })
 
 /**

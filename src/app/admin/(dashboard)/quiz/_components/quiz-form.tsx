@@ -42,6 +42,16 @@ const formFields = {
     placeholder: '请输入题目',
     rules: [{ required: true, message: '请输入题目' }],
   },
+  chapter: {
+    label: '章节',
+    placeholder: '请输入章节',
+    rules: void 0,
+  },
+  remark: {
+    label: '备注',
+    placeholder: '请输入备注',
+    rules: void 0,
+  },
   answer: {
     label: '内容',
     placeholder: '请输入内容',
@@ -227,6 +237,26 @@ export function QuizForm({ initialData }: QuizFormProps) {
             initialValue={initialData?.title}
           >
             <Input placeholder={formFields.title.placeholder}></Input>
+          </Form.Item>
+          <Form.Item
+            labelCol={{ span: 4 }}
+            wrapperCol={{ span: isBelowXl ? 20 : 12 }}
+            name="chapter"
+            label={formFields.chapter.label}
+            rules={formFields.chapter.rules}
+            initialValue={initialData?.chapter}
+          >
+            <Input placeholder={formFields.chapter.placeholder}></Input>
+          </Form.Item>
+          <Form.Item
+            labelCol={{ span: 4 }}
+            wrapperCol={{ span: isBelowXl ? 20 : 12 }}
+            name="remark"
+            label={formFields.remark.label}
+            rules={formFields.remark.rules}
+            initialValue={initialData?.remark}
+          >
+            <Input placeholder={formFields.remark.placeholder}></Input>
           </Form.Item>
 
           <Form.List

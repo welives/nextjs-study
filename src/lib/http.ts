@@ -29,23 +29,23 @@ export default new class Http {
     return request
   }
 
-  get<T>(url: string, params?: any) {
+  get<T = any>(url: string, params?: any) {
     return this.request<Api.ResponseStructure<T>>(url, { method: 'GET', params })
   }
 
-  post<T>(url: string, body?: any) {
+  post<T = any>(url: string, body?: any) {
     return this.request<Api.ResponseStructure<T>>(url, { method: 'POST', body })
   }
 
-  put<T>(url: string, body?: any) {
+  put<T = any>(url: string, body?: any) {
     return this.request<Api.ResponseStructure<T>>(url, { method: 'PUT', body })
   }
 
-  patch<T>(url: string, body?: any) {
+  patch<T = any>(url: string, body?: any) {
     return this.request<Api.ResponseStructure<T>>(url, { method: 'PATCH', body })
   }
 
-  delete<T>(url: string, body?: any) {
+  delete<T = any>(url: string, body?: any) {
     return this.request<Api.ResponseStructure<T>>(url, { method: 'DELETE', body })
   }
 }

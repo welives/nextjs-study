@@ -1,0 +1,4212 @@
+{
+  "subject": "网络系统管理与维护",
+  "category": "国家开放大学",
+  "data": [
+    {
+      "id": 1,
+      "chapter": "第一章",
+      "title": "网络管理包括五大功能：故障管理、配置管理、计费管理、（）和安全管理",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "性能管理", "correct": true },
+        { "id": 2, "title": "质量管理" },
+        { "id": 3, "title": "品质管理" },
+        { "id": 4, "title": "服务管理" }
+      ]
+    },
+    {
+      "id": 2,
+      "chapter": "第一章",
+      "title": "ISO的网络安全体系结构中定义了五类安全服务：鉴别服务、访问控制服务、（）、数据完整性服务、抗抵赖性服务",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据安全服务" },
+        { "id": 2, "title": "数据保密性服务", "correct": true },
+        { "id": 3, "title": "验证服务" },
+        { "id": 4, "title": "数据检测服务" }
+      ]
+    },
+    {
+      "id": 3,
+      "chapter": "第一章",
+      "title": "安全管理的主要功能包括：身份验证、密钥管理、（）、访问控制",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "检验控制" },
+        { "id": 2, "title": "质量控制" },
+        { "id": 3, "title": "安全控制", "correct": true },
+        { "id": 4, "title": "服务管理" }
+      ]
+    },
+    {
+      "id": 4,
+      "chapter": "第一章",
+      "title": "一般的网络管理系统分为管理站（Manager）和代理（Agent）两部分",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 5,
+      "chapter": "第一章",
+      "title": "管理信息库（MIB，Management Information Base）是一个存储网络管理信息的数据库，由被管理对象组成",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 6,
+      "chapter": "第一章",
+      "title": "故障管理（Fault Management）的主要任务是创建、检测和控制网络的配置状态",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 7,
+      "chapter": "第二章",
+      "title": "Windows操作系统内置的（）组帐户的成员就属于标准帐户",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Administrators" },
+        { "id": 2, "title": "Guests" },
+        { "id": 3, "title": "Users", "correct": true },
+        { "id": 4, "title": "Power Users" }
+      ]
+    },
+    {
+      "id": 8,
+      "chapter": "第二章",
+      "title": "网络系统管理人员应该针对不同（）对不同资源分配不同的访问权",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "路由器" },
+        { "id": 2, "title": "交换机" },
+        { "id": 3, "title": "用户", "correct": true },
+        { "id": 4, "title": "协议" }
+      ]
+    },
+    {
+      "id": 9,
+      "chapter": "第二章",
+      "title": "密码策略可以定义（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "密码必须符合复杂性要求", "correct": true },
+        { "id": 2, "title": "密码最长使用期限", "correct": true },
+        { "id": 3, "title": "密码最短使用期限", "correct": true },
+        { "id": 4, "title": "密码长度最小值", "correct": true }
+      ]
+    },
+    {
+      "id": 10,
+      "chapter": "第二章",
+      "title": "系统内置的Administrator用户帐户和Administrators组帐户的成员就属于管理员帐户",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 11,
+      "chapter": "第二章",
+      "title": "帐户锁定时间设置，用于指定已锁定的帐户在手动解锁之前保持锁定状态的时长",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 12,
+      "chapter": "第二章",
+      "title": "通过上网行为管理产品，网络系统管理员可以制定精细的带宽管理策略",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 13,
+      "chapter": "第三章",
+      "title": "ISO的网络安全体系结构中定义了五类安全服务，包括：认证服务、访问控制服务、数据完整性服务、抗抵赖性服务和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据保密性服务", "correct": true },
+        { "id": 2, "title": "统一性服务" },
+        { "id": 3, "title": "数据签名服务" },
+        { "id": 4, "title": "路由控制服务" }
+      ]
+    },
+    {
+      "id": 14,
+      "chapter": "第三章",
+      "title": "计算机病毒的特征为：隐蔽性、()、潜伏性、破坏性、针对性",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "传染性", "correct": true },
+        { "id": 2, "title": "不稳定性" },
+        { "id": 3, "title": "合法性" },
+        { "id": 4, "title": "交互性" }
+      ]
+    },
+    {
+      "id": 15,
+      "chapter": "第三章",
+      "title": "代理服务器通常设置在企业内部网络中客户端与（）之间",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "外部网络中路由器" },
+        { "id": 2, "title": "其他客户端" },
+        { "id": 3, "title": "企业内部网络中交换机" },
+        { "id": 4, "title": "外部网络中服务器", "correct": true }
+      ]
+    },
+    {
+      "id": 16,
+      "chapter": "第三章",
+      "title": "在计算机上安装防病毒软件是一项必不可少的安全措施。通过启动病毒实时监控系统并且及时升级病毒库，可以有效保护计算机的安全",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 17,
+      "chapter": "第三章",
+      "title": "防火墙可以分为硬件防火墙和逻辑防火墙两类",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 18,
+      "chapter": "第三章",
+      "title": "CHAP不会在网络上直接传输用户的密码，因此比PAP安全",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 19,
+      "chapter": "第四章",
+      "title": "（）通常适用于数据量大，对备份设备的性能和可靠性要求很高的场景",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "光盘" },
+        { "id": 2, "title": "磁带" },
+        { "id": 3, "title": "硬盘", "correct": true },
+        { "id": 4, "title": "U盘" }
+      ]
+    },
+    {
+      "id": 20,
+      "chapter": "第四章",
+      "title": "每年99.9％的服务可用性意味着数据和服务每年的计划外停机时间不得超过（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "0.1%", "correct": true },
+        { "id": 2, "title": "1%" },
+        { "id": 3, "title": "0.1小时" },
+        { "id": 4, "title": "1小时" }
+      ]
+    },
+    {
+      "id": 21,
+      "chapter": "第四章",
+      "title": "如果企业将RPO设置为3小时，则必须每3小时至少执行（）备份",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "六次" },
+        { "id": 2, "title": "一次", "correct": true },
+        { "id": 3, "title": "两次" },
+        { "id": 4, "title": "三次" }
+      ]
+    },
+    {
+      "id": 22,
+      "chapter": "第四章",
+      "title": "恢复时间目标（Recovery Time Object，RTO）是指故障后恢复数据和服务上线所需的时间量",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 23,
+      "chapter": "第四章",
+      "title": "容灾可认为是低级别的备份，容灾是备份的基础",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 24,
+      "chapter": "第四章",
+      "title": "常用的数据备份方式有完全备份、差异备份以及增量备份",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 25,
+      "chapter": "第五章",
+      "title": "网络测量的功能按照测量对象，可分为三大类：网络性能测量、业务性能测量、（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "网络流量测量", "correct": true },
+        { "id": 2, "title": "业务容量测量" },
+        { "id": 3, "title": "系统资源测量" },
+        { "id": 4, "title": "安全监视测量" }
+      ]
+    },
+    {
+      "id": 26,
+      "chapter": "第五章",
+      "title": "如果向网络发送数据包并不断提高发送速度直至网络饱和，就可以测量网络的最大负载能力，这种测量方式属于（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "混合测量" },
+        { "id": 2, "title": "主动测量", "correct": true },
+        { "id": 3, "title": "被动测量" },
+        { "id": 4, "title": "自动测量" }
+      ]
+    },
+    {
+      "id": 27,
+      "chapter": "第五章",
+      "title": "有效性、高速测量、准确性和（）是对网络测量技术的基本要求",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "隐私性" },
+        { "id": 2, "title": "真实性" },
+        { "id": 3, "title": "实时性", "correct": true },
+        { "id": 4, "title": "便携性" }
+      ]
+    },
+    {
+      "id": 28,
+      "chapter": "第五章",
+      "title": "根据测量点的位置，可以分为端系统测量和中间系统测量",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 29,
+      "chapter": "第五章",
+      "title": "单点测量又可分为集中式和分布式控制的测量",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 30,
+      "chapter": "第五章",
+      "title": "ipconfig是Windows操作系统中的一个系统命令，用于显示本机的TCP/IP网络配置值",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 31,
+      "chapter": "第六章",
+      "title": "大部分的网络是基于（）构建的，网络系统管理员在网络故障排除时，可以参考它的分层思想",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "IPX协议" },
+        { "id": 2, "title": "TCP/IP协议", "correct": true },
+        { "id": 3, "title": "AppleTalk协议" },
+        { "id": 4, "title": "IEEE协议" }
+      ]
+    },
+    {
+      "id": 32,
+      "chapter": "第六章",
+      "title": "数据链路层的故障主要表现在通信双方的（）封装协议是否一致",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "四层" },
+        { "id": 2, "title": "三层" },
+        { "id": 3, "title": "二层", "correct": true },
+        { "id": 4, "title": "一层" }
+      ]
+    },
+    {
+      "id": 33,
+      "chapter": "第六章",
+      "title": "电缆测试仪是针对OSI模型的第（）层设计的",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "四层" },
+        { "id": 2, "title": "三层" },
+        { "id": 3, "title": "二层" },
+        { "id": 4, "title": "一层", "correct": true }
+      ]
+    },
+    {
+      "id": 34,
+      "chapter": "第六章",
+      "title": "网卡硬件故障属于链路故障",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 35,
+      "chapter": "第六章",
+      "title": "数字电压表的工作方式是通过电缆定时发送脉冲，监听反射回来的信号",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 36,
+      "chapter": "第六章",
+      "title": "端口扫描工具是一种可以检测操作系统上的端口，并记录被扫描端口状态的应用程序",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 37,
+      "chapter": "第七章",
+      "title": "计费管理可以用来确定网络中每一种服务的价值，包括硬件类服务、软件类服务和（）服务",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "配置" },
+        { "id": 2, "title": "设备" },
+        { "id": 3, "title": "人工", "correct": true },
+        { "id": 4, "title": "协议" }
+      ]
+    },
+    {
+      "id": 38,
+      "chapter": "第七章",
+      "title": "当前许多计费系统采用三层体系结构，分别对应表示层、（）和数据层",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "物理层" },
+        { "id": 2, "title": "网络层" },
+        { "id": 3, "title": "应用层", "correct": true },
+        { "id": 4, "title": "操作层" }
+      ]
+    },
+    {
+      "id": 39,
+      "chapter": "第七章",
+      "title": "当前，在机场候机厅提供的免费无线Wi-Fi服务，属于基于使用（）的计费方式",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "时间", "correct": true },
+        { "id": 2, "title": "流量" },
+        { "id": 3, "title": "服务" },
+        { "id": 4, "title": "应用" }
+      ]
+    },
+    {
+      "id": 40,
+      "chapter": "第七章",
+      "title": "操作系统、应用程序的采购和运维费用属于软件类服务",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 41,
+      "chapter": "第七章",
+      "title": "计费管理的组件包括：计费数据的采集和存储；数据的分析和统计；与用户、管理员之间的人机交互界面",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 42,
+      "chapter": "第七章",
+      "title": "在计费系统的三层体系结构中，数据层通常作为用户输入和获取数据的接口，通常由Web浏览器（或计费软件控制台）和处理请求的模块组成",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 43,
+      "chapter": "第一章",
+      "title": "网络系统管理是指对网络的运行状态进行监测和控制，使其能够安全、可靠、高效、经济地为客户提供服务",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 44,
+      "chapter": "第一章",
+      "title": "通常可以将网络管理系统分为管理站（Manager）和服务器（Server）两部分",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 45,
+      "chapter": "第一章",
+      "title": "MIB定义了如何识别被管理对象，以及如何组织被管理对象的信息结构。MIB中的对象按层次进行分类和命名",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 46,
+      "chapter": "第一章",
+      "title": "网络管理包括五大功能：故障管理、配置管理、计费管理、性能管理和服务管理，简写为FCAPS",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 47,
+      "chapter": "第一章",
+      "title": "故障管理（FaultManagement）的主要任务是当网络运行出现异常（故障）时，能够迅速找到故障的位置和原因，对故障进行检测、诊断、隔离和纠正，以恢复网络的正常运行",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 48,
+      "chapter": "第一章",
+      "title": "配置管理主要负责创建、检测和控制网络的配置状态",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 49,
+      "chapter": "第一章",
+      "title": "计费管理为网络资源成本计算和收费提供依据，它记录网络资源的使用情况、提出计费报告、为网络资源的使用核算成本和提供收费依据",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 50,
+      "chapter": "第一章",
+      "title": "性能管理的主要内容是对网络系统资源的吞吐量、使用率、时延、拥塞等系统性能进行分析，实现网络性能的监控和优化",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 51,
+      "chapter": "第一章",
+      "title": "ISO的网络安全体系结构定义了六类安全机制",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 52,
+      "chapter": "第一章",
+      "title": "身份验证，属于配置管理的主要功能",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 53,
+      "chapter": "第一章",
+      "title": "SNMP的Trap报文用于代理主动向管理站通告重要事件",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 54,
+      "chapter": "第一章",
+      "title": "审核技术能够记录用户使用计算机网络系统进行各种活动的过程，记录系统产生的各类事件",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 55,
+      "chapter": "第一章",
+      "title": "SNMP的Trap报文由代理主动发给管理站，并且需要管理站的响应",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 56,
+      "chapter": "第一章",
+      "title": "管理信息库（ManagementInformationBase，MIB）是一个存储网络管理信息的数据库，由被管理对象组成",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 57,
+      "chapter": "第一章",
+      "title": "（）负责向被管理对象发出管理操作指令，并接收来自代理的通告信息",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "管理站", "correct": true },
+        { "id": 2, "title": "代理" },
+        { "id": 3, "title": "管理信息库" },
+        { "id": 4, "title": "SNMP" }
+      ]
+    },
+    {
+      "id": 58,
+      "chapter": "第一章",
+      "title": "（）是一个存储网络管理信息的数据库，由被管理对象组成",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "管理站" },
+        { "id": 2, "title": "代理" },
+        { "id": 3, "title": "管理信息库", "correct": true },
+        { "id": 4, "title": "SNMP" }
+      ]
+    },
+    {
+      "id": 59,
+      "chapter": "第一章",
+      "title": "类似于用户的增减、设备的维修或更新、新技术的应用等事件，属于（）范畴",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "故障管理" },
+        { "id": 2, "title": "计费管理" },
+        { "id": 3, "title": "配置管理", "correct": true },
+        { "id": 4, "title": "安全管理" }
+      ]
+    },
+    {
+      "id": 60,
+      "chapter": "第一章",
+      "title": "SNMP管理系统通常由SNMP管理站、SNMP代理和（）组成",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "管理者" },
+        { "id": 2, "title": "托管对象" },
+        { "id": 3, "title": "管理信息库（MIB）", "correct": true },
+        { "id": 4, "title": "网络数据库" }
+      ]
+    },
+    {
+      "id": 61,
+      "chapter": "第一章",
+      "title": "目前最常用的网络管理协议包括（）、（）和（），它们广泛地应用于网络管理解决方案中",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "CMIP", "correct": true },
+        { "id": 2, "title": "CMIS", "correct": true },
+        { "id": 3, "title": "ICMP" },
+        { "id": 4, "title": "SNMP", "correct": true },
+        { "id": 5, "title": "SSTP" }
+      ]
+    },
+    {
+      "id": 62,
+      "chapter": "第一章",
+      "title": "网络管理包括五大功能：故障管理、配置管理、计费管理、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "动态管理" },
+        { "id": 2, "title": "性能管理", "correct": true },
+        { "id": 3, "title": "服务管理" },
+        { "id": 4, "title": "安全管理", "correct": true },
+        { "id": 5, "title": "质量管理" }
+      ]
+    },
+    {
+      "id": 63,
+      "chapter": "第一章",
+      "title": "SNMP使用（）和（）端口",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "UDP161", "correct": true },
+        { "id": 2, "title": "TCP161" },
+        { "id": 3, "title": "UDP162", "correct": true },
+        { "id": 4, "title": "TCP162" },
+        { "id": 5, "title": "ICMP161" }
+      ]
+    },
+    {
+      "id": 64,
+      "chapter": "第一章",
+      "title": "在ISO的网络安全体系结构中定义了5类安全服务，包括：认证服务、访问控制服务、数据保密性服务、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "权限管理服务" },
+        { "id": 2, "title": "数据完整性服务", "correct": true },
+        { "id": 3, "title": "加密服务" },
+        { "id": 4, "title": "抗抵赖性服务", "correct": true },
+        { "id": 5, "title": "网络服务" }
+      ]
+    },
+    {
+      "id": 65,
+      "chapter": "第一章",
+      "title": "在ISO的网络安全体系结构中定义的安全服务有：（）、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "访问控制服务", "correct": true },
+        { "id": 2, "title": "交流信息服务" },
+        { "id": 3, "title": "数据机密性服务", "correct": true },
+        { "id": 4, "title": "数据完整性服务", "correct": true }
+      ]
+    },
+    {
+      "id": 66,
+      "chapter": "第二章",
+      "title": "当用户访问计算机系统、应用程序、网络资源时，无需进行身份凭据的验证",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 67,
+      "chapter": "第二章",
+      "title": "Windows操作系统内置的Guest用户帐户，主要针对临时使用计算机的用户，对操作系统拥有极为有限的访问权限和权利",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 68,
+      "chapter": "第二章",
+      "title": "Windows操作系统内置的Administrator用户帐户，可以执行本台计算机的所有管理工作，如创建/更改/删除用户帐户、设置用户帐户的权限和权利、更改计算机名称、设置安全策略、管理硬件设备、管理文件系统等",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 69,
+      "chapter": "第二章",
+      "title": "标准帐户通常分配给最终用户使用，适用于日常工作，对操作系统拥有一些基本的权限和权利",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 70,
+      "chapter": "第二章",
+      "title": "密码策略用来设置帐户密码的安全性要求，如用户名的使用期限、长度和复杂性",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 71,
+      "chapter": "第二章",
+      "title": "帐户锁定时间，用于指定已锁定的帐户在自动解锁之前保持锁定状态的时长",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 72,
+      "chapter": "第二章",
+      "title": "上网行为管理是指控制和管理用户对网络的使用，包括对网页访问过滤、网络应用控制、带宽流量管理、信息收发审计、用户行为分析、上网人员管理等",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 73,
+      "chapter": "第二章",
+      "title": "通过上网行为管理产品，网络系统管理员可以制定精细的带宽管理策略，对不同岗位的员工、不同网络应用划分带宽通道，并设定优先级，合理利用有限的带宽资源，确保网页下载文件的合法性",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 74,
+      "chapter": "第二章",
+      "title": "Windows操作系统内置了“本地安全策略”功能，可以针对本地主机配置安全策略，管理员使用secpol.cpl命令，来打开“本地安全策略”窗口",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 75,
+      "chapter": "第二章",
+      "title": "Windows操作系统内置了“本地安全策略”功能，可以针对本地主机配置安全策略",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 76,
+      "chapter": "第二章",
+      "title": "默认时，当父容器的组策略设置与子容器的组策略设置发生冲突时，父容器的组策略设置最终生效",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 77,
+      "chapter": "第二章",
+      "title": "Windows系统内置的（）用户帐户属于管理员帐户",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Administrator", "correct": true },
+        { "id": 2, "title": "PowerUser" },
+        { "id": 3, "title": "root" },
+        { "id": 4, "title": "su" }
+      ]
+    },
+    {
+      "id": 78,
+      "chapter": "第二章",
+      "title": "Windows操作系统内置的Users组帐户的成员属于（）帐户",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "管理员帐户" },
+        { "id": 2, "title": "标准账户", "correct": true },
+        { "id": 3, "title": "来宾帐户" },
+        { "id": 4, "title": "匿名帐户" }
+      ]
+    },
+    {
+      "id": 79,
+      "chapter": "第二章",
+      "title": "Windows操作系统中的密码必须符合复杂性要求，定义的帐户密码至少有（）个字符的长度",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "4" },
+        { "id": 2, "title": "5" },
+        { "id": 3, "title": "6", "correct": true },
+        { "id": 4, "title": "7" }
+      ]
+    },
+    {
+      "id": 80,
+      "chapter": "第二章",
+      "title": "在Windows操作系统中，（）能够满足的密码必须符合复杂性要求",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1234ASDF" },
+        { "id": 2, "title": "P@s0rd", "correct": true },
+        { "id": 3, "title": "1@qF" },
+        { "id": 4, "title": "11223344qqaassdd" }
+      ]
+    },
+    {
+      "id": 81,
+      "chapter": "第二章",
+      "title": "帐户锁定策略用来设置锁定用户帐户的方式，如（）、帐户锁定的持续时间以及解锁帐户的方法",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "帐户密码历史" },
+        { "id": 2, "title": "帐户禁用期限" },
+        { "id": 3, "title": "帐户激活次数" },
+        { "id": 4, "title": "帐户锁定阈值", "correct": true }
+      ]
+    },
+    {
+      "id": 82,
+      "chapter": "第二章",
+      "title": "在工作组环境中的Windows操作系统，可以使用（）管理器来配置本地计算机的安全策略",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "本地安全策略", "correct": true },
+        { "id": 2, "title": "安全策略" },
+        { "id": 3, "title": "系统安全策略" },
+        { "id": 4, "title": "本地策略" }
+      ]
+    },
+    {
+      "id": 83,
+      "chapter": "第二章",
+      "title": "上网行为管理的主要功能包含：（）、网络应用控制、带宽流量管理、信息收发审计、用户行为分析、上网人员管理",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "网络线缆使用审核" },
+        { "id": 2, "title": "网页访问过滤", "correct": true },
+        { "id": 3, "title": "操作系统登录管理" },
+        { "id": 4, "title": "应用程序卸载控制" }
+      ]
+    },
+    {
+      "id": 84,
+      "chapter": "第二章",
+      "title": "通过上网行为管理产品，网络系统管理员可以实时掌握已连接到网络的设备、用户及位置，为网络资源的合规使用提供支持。具体包括：上网身份管理、上网终端管理、（）和上网地点管理",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "搜索引擎管理" },
+        { "id": 2, "title": "文件下载管理" },
+        { "id": 3, "title": "上网带宽管理" },
+        { "id": 4, "title": "移动终端管理", "correct": true }
+      ]
+    },
+    {
+      "id": 85,
+      "chapter": "第二章",
+      "title": "通过上网行为管理产品，网络系统管理员可以制定全面的信息收发监控策略，有效控制关键信息的传播范围，避免可能引起的法律风险。具体包括：普通邮件管理、Web邮件管理、网页发帖管理、（）和其他外发管理",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "网页正文管理" },
+        { "id": 2, "title": "操作系统登录管理" },
+        { "id": 3, "title": "即时通信管理", "correct": true },
+        { "id": 4, "title": "上网应用阻断管理" }
+      ]
+    },
+    {
+      "id": 86,
+      "chapter": "第二章",
+      "title": "在基于Windows操作系统的计算机上，可以将帐户大体划分为哪三种类型",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "管理员帐户", "correct": true },
+        { "id": 2, "title": "标准账户", "correct": true },
+        { "id": 3, "title": "来宾帐户", "correct": true },
+        { "id": 4, "title": "匿名帐户" },
+        { "id": 5, "title": "测试帐户" }
+      ]
+    },
+    {
+      "id": 87,
+      "chapter": "第二章",
+      "title": "通过上网行为管理产品，网络系统管理员可以实时了解、统计、分析Internet使用状况，并根据分析结果对管理策略做出调整和优化。具体包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "上网行为实时监控", "correct": true },
+        { "id": 2, "title": "上网带宽控制" },
+        { "id": 3, "title": "上网行为日志查询", "correct": true },
+        { "id": 4, "title": "上网行为统计分析" },
+        { "id": 5, "title": "上网应用累计时长限额", "correct": true }
+      ]
+    },
+    {
+      "id": 88,
+      "chapter": "第三章",
+      "title": "通常可以把网络信息安全的问题划分为物理层、网络层、数据层和内容层4个层面",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 89,
+      "chapter": "第三章",
+      "title": "物理层安全是指对网络与信息系统的运行状态的保护，主要关注的是信息系统的安全",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 90,
+      "chapter": "第三章",
+      "title": "如果没有预先经过同意就擅自使用网络或计算机资源，则被看作非授权访问",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 91,
+      "chapter": "第三章",
+      "title": "拒绝服务攻击会不断对网络服务系统进行干扰，改变其正常的运行流程，执行无关应用程序，大量消耗硬件资源，使系统响应减慢，甚至瘫痪，影响正常用户的使用，甚至使合法用户被排斥而不能得到已经授权的服务",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 92,
+      "chapter": "第三章",
+      "title": "数据保密性服务可防止未授权的对数据的修改操作",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 93,
+      "chapter": "第三章",
+      "title": "抗抵赖性服务可防止发送方与接收方在执行各自操作后，否认各自所做的操作",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 94,
+      "chapter": "第三章",
+      "title": "常用的加密算法有对称加密算法和非对称加密算法",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 95,
+      "chapter": "第三章",
+      "title": "数字签名是保证数据完整性和抗抵赖性的一种重要手段",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 96,
+      "chapter": "第三章",
+      "title": "数据保密性服务与公证机制具有相关性",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 97,
+      "chapter": "第三章",
+      "title": "病毒是通过磁盘、网络等媒介传播扩散并能够“传染”其他程序的程序",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 98,
+      "chapter": "第三章",
+      "title": "计算机病毒是一种人为制造的程序，它不会自然产生，而是由精通编程的人精心编制的",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 99,
+      "chapter": "第三章",
+      "title": "“黑客”一词是由英语单词“Cracker”音译而来的，是指专门研究、搜寻计算机漏洞和网络漏洞的计算机爱好者",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 100,
+      "chapter": "第三章",
+      "title": "计算机病毒的整个生命周期一般由四个阶段组成，即：潜伏阶段、传播阶段、发作阶段和破坏阶段",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 101,
+      "chapter": "第三章",
+      "title": "基于计算机病毒的感染途径，可以将计算机病毒分为文件型计算机病毒、引导型计算机病毒和宏病毒",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 102,
+      "chapter": "第三章",
+      "title": "引导型计算机病毒会影响计算机系统中的可执行文件（.exe）和命令文件(.com)",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 103,
+      "chapter": "第三章",
+      "title": "宏病毒，是一种寄存于文档或模板的宏中的计算机病毒",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 104,
+      "chapter": "第三章",
+      "title": "在防火墙的处理方式中，Drop是指丢弃数据包，并且不通告数据源",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 105,
+      "chapter": "第三章",
+      "title": "在防火墙的处理方式中，Receive是指允许数据包通过",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 106,
+      "chapter": "第三章",
+      "title": "根据防火墙的功能，网络系统管理员可以基于数据包的源地址、目标地址，来阻止或允许进出企业内部网络的数据包",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 107,
+      "chapter": "第三章",
+      "title": "根据防火墙的功能，网络系统管理员不可以基于数据包的源端口、目标端口，来阻止或允许进出企业内部网络的数据包",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 108,
+      "chapter": "第三章",
+      "title": "软件防火墙（也称为基于主机的防火墙）一般是安装在计算机上的软件，执行与硬件防火墙相同或类似的功能",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 109,
+      "chapter": "第三章",
+      "title": "按照防火墙实现的技术不同，可以分为硬件防火墙和软件防火墙",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 110,
+      "chapter": "第三章",
+      "title": "包过滤防火墙，通常是在网络的入口对通过的数据包进行选择，只有满足条件的数据包才能通过（进入企业内部网络），否则被抛弃",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 111,
+      "chapter": "第三章",
+      "title": "应用层防火墙，也称为代理。它接受来自内部网络用户的通信，然后与外部网络服务器建立单独连接，而不允许内部网络与外部网络直接通信，它在应用层的通信中扮演着一个消息传递者的角色",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 112,
+      "chapter": "第三章",
+      "title": "状态检测防火墙，又称自动包过滤防火墙",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 113,
+      "chapter": "第三章",
+      "title": "从Windows7开始，Windows操作系统才内置了软件防火墙功能",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 114,
+      "chapter": "第三章",
+      "title": "防火墙不能防止被病毒感染过的程序和文件进出网络",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 115,
+      "chapter": "第三章",
+      "title": "可以在Windows操作系统内置的“高级安全Windows防火墙”窗口中配置防火墙的入站规则和出站规则",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 116,
+      "chapter": "第三章",
+      "title": "防火墙不能完全消除来自内部网络的威胁，但防火墙能够防止被病毒感染过的程序和文件进出网络",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 117,
+      "chapter": "第三章",
+      "title": "入侵检测就是对各种入侵行为的发现与报警，是一种通过观察通信行为，根据安全日志或审计数据来检测入侵的技术",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 118,
+      "chapter": "第三章",
+      "title": "特洛伊木马是把自己伪装成为善意应用程序（进程）的恶意软件程序",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 119,
+      "chapter": "第三章",
+      "title": "缓冲区是指应用程序或操作系统用来保存数据的临时区域",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 120,
+      "chapter": "第三章",
+      "title": "ping扫描，也称为TCP扫描，它可以确定网络中某些设备（如计算机、路由器）是否在线。ping扫描通常在攻击初期使用",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 121,
+      "chapter": "第三章",
+      "title": "CIDF体系结构中的事件产生器可以是来自网络的数据包，也可以是从系统日志等其他途径得到的信息",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 122,
+      "chapter": "第三章",
+      "title": "基于主机的入侵检测系统是针对整个网络的入侵检测系统，包括对网络中的所有主机、网络设备进行入侵行为的监测和响应",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 123,
+      "chapter": "第三章",
+      "title": "基于主机的入侵检测系统只关注主机上发生的入侵事件，而不会监测网络上的情况",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 124,
+      "chapter": "第三章",
+      "title": "加密技术的基本思想是伪装信息，使未授权者不能理解它的真实含义",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 125,
+      "chapter": "第三章",
+      "title": "伪装前的原始数据称为密文，伪装后的数据称为密钥，伪装的过程称为加密，加密在加密密钥的控制下进行",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 126,
+      "chapter": "第三章",
+      "title": "传统的加密系统是以密钥为基础的，这是一种对称加密方法，也就是说，用户使用同一个密钥加密和解密",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 127,
+      "chapter": "第三章",
+      "title": "经典的加密方法，主要使用了3种加密技术：替换加密、换位加密和一次性填充",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 128,
+      "chapter": "第三章",
+      "title": "DES（DataEncryptionStandard，数据加密标准）制定于1977年，它将明文分成64位的块，对每个块进行变换（替换和换位）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 129,
+      "chapter": "第三章",
+      "title": "RC4属于非对称加密算法",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 130,
+      "chapter": "第三章",
+      "title": "Rivest、Shamir和Adleman对Diffe-Hellman的公钥加密算法进行了改进，于1977年发明了RSA算法",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 131,
+      "chapter": "第三章",
+      "title": "DES算法比RSA算法至少慢100倍",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 132,
+      "chapter": "第三章",
+      "title": "数据完整性的检测方法是基于一种单向的数学函数（散列函数），这种函数相对来说易于计算，而且也容易作逆运算",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 133,
+      "chapter": "第三章",
+      "title": "散列值只被用于提供数据完整性",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 134,
+      "chapter": "第三章",
+      "title": "MD5和SHA属于数据完整性检测方法",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 135,
+      "chapter": "第三章",
+      "title": "PPP协议是一种传输层协议，被设计用于点对点连接中传递数据，使用用户名和密码进行验证，并协调两个设备使用的网络协议",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 136,
+      "chapter": "第三章",
+      "title": "发起PPP连接后，链路将经过4个会话建立阶段",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 137,
+      "chapter": "第三章",
+      "title": "CHAP不会在网络上直接传输用户的密码，因此比PAP更安全",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 138,
+      "chapter": "第三章",
+      "title": "认证（Authentication）是对用户的身份进行验证，判断其是否为合法用户。授权（Authorization）是对通过认证的用户，授权其可以使用哪些服务。计账（Accounting）是记录用户使用网络服务的资源情况，这些信息将作为计费的依据",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 139,
+      "chapter": "第三章",
+      "title": "认证服务器和票据授予服务器构成了密钥分发中心",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 140,
+      "chapter": "第三章",
+      "title": "代理服务器通常设置在企业内部网络中客户端与外部网络中服务器之间，它会暂存客户端发来的请求，并由自己发出这些请求",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 141,
+      "chapter": "第三章",
+      "title": "通常情况下，代理服务有利于保障网络终端的隐私或安全，防止源自内部的攻击",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 142,
+      "chapter": "第三章",
+      "title": "计算机病毒危害的“宿主”通常是指正常工作的计算机和网络",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 143,
+      "chapter": "第三章",
+      "title": "VPN服务器可以作为RADIUS体系中的网络接入服务器",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 144,
+      "chapter": "第三章",
+      "title": "如果KDC出现故障，那么客户端将无法请求票据并访问网络资源",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 145,
+      "chapter": "第三章",
+      "title": "目前，EAP主要应用在有线局域网方面",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 146,
+      "chapter": "第三章",
+      "title": "IPsec是一个建立在网络层之上的企业私有协议",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 147,
+      "chapter": "第三章",
+      "title": "IPsec有两种工作模式：传输模式和隧道模式",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 148,
+      "chapter": "第三章",
+      "title": "通常可以把网络信息安全的问题划分为物理层、网络层、数据层和（）4个层面",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "内容层", "correct": true },
+        { "id": 2, "title": "应用层" },
+        { "id": 3, "title": "数据层" },
+        { "id": 4, "title": "传输层" }
+      ]
+    },
+    {
+      "id": 149,
+      "chapter": "第三章",
+      "title": "（）安全是指对信息在数据处理、存储、传输、显示等使用过程中的保护，主要关注的是数据信息本身的安全，保障数据依据授权使用，而不被窃取、篡改、冒充、抵赖。其主要涉及数据的保密性、完整性、真实性、不可抵赖性等",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "内容层" },
+        { "id": 2, "title": "数据层", "correct": true },
+        { "id": 3, "title": "会话层" },
+        { "id": 4, "title": "传输层" }
+      ]
+    },
+    {
+      "id": 150,
+      "chapter": "第三章",
+      "title": "国际标准化组织于1989年发布了《信息处理系统-开放系统互联-基本参考模型第2部分：安全体系结构》来定义网络安全体系结构。在该体系结构中提出了以下（）类安全服务",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "六" },
+        { "id": 2, "title": "三" },
+        { "id": 3, "title": "五", "correct": true },
+        { "id": 4, "title": "七" }
+      ]
+    },
+    {
+      "id": 151,
+      "chapter": "第三章",
+      "title": "认证服务能够确保某个实体身份的可靠性，可分为两种类型。一种认证服务类型是认证实体本身的身份，确保其真实性，称为实体认证。另一种认证服务类型是证明某个信息是否来自某个特定的实体，这种认证称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据认证" },
+        { "id": 2, "title": "元数据认证" },
+        { "id": 3, "title": "信息认证" },
+        { "id": 4, "title": "数据源认证", "correct": true }
+      ]
+    },
+    {
+      "id": 152,
+      "chapter": "第三章",
+      "title": "为了支持《信息处理系统-开放系统互联-基本参考模型第2部分：安全体系结构》定义的安全服务，ISO的网络安全体系结构定义了（）类安全机制",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "八", "correct": true },
+        { "id": 2, "title": "七" },
+        { "id": 3, "title": "五" },
+        { "id": 4, "title": "三" }
+      ]
+    },
+    {
+      "id": 153,
+      "chapter": "第三章",
+      "title": "计算机病毒的整个生命周期一般由四个阶段组成，包括：潜伏阶段、传播阶段、（）和发作阶段",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "散发阶段" },
+        { "id": 2, "title": "隐藏阶段" },
+        { "id": 3, "title": "触发阶段", "correct": true },
+        { "id": 4, "title": "破坏阶段" }
+      ]
+    },
+    {
+      "id": 154,
+      "chapter": "第三章",
+      "title": "如果继续使用厂商不再支持的操作系统，就会存在非常严重的安全风险。以微软的Windows生命周期为例，客户端操作系统的生命周期一般为（）年",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "六" },
+        { "id": 2, "title": "十", "correct": true },
+        { "id": 3, "title": "五" },
+        { "id": 4, "title": "八" }
+      ]
+    },
+    {
+      "id": 155,
+      "chapter": "第三章",
+      "title": "防火墙的处理方式主要包括：Accept、Drop和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Allow" },
+        { "id": 2, "title": "Deny" },
+        { "id": 3, "title": "Reject", "correct": true },
+        { "id": 4, "title": "Receive" }
+      ]
+    },
+    {
+      "id": 156,
+      "chapter": "第三章",
+      "title": "边缘网络也称为（），位于内部防火墙与外部防火墙之间，受保护强度较低，一般用于放置面向Internet的服务设备，这些设备需要接受来自互联网的用户访问",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Internet" },
+        { "id": 2, "title": "External" },
+        { "id": 3, "title": "Internal" },
+        { "id": 4, "title": "DMZ", "correct": true }
+      ]
+    },
+    {
+      "id": 157,
+      "chapter": "第三章",
+      "title": "按照防火墙实现的技术不同，可以分为包过滤防火墙、（）防火墙、电路层防火墙、状态检测防火墙",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据层" },
+        { "id": 2, "title": "应用层", "correct": true },
+        { "id": 3, "title": "传出层" },
+        { "id": 4, "title": "无状态" }
+      ]
+    },
+    {
+      "id": 158,
+      "chapter": "第三章",
+      "title": "（）是把自己伪装成为善意应用程序（进程）的恶意软件程序",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "骇客" },
+        { "id": 2, "title": "黑客" },
+        { "id": 3, "title": "蠕虫" },
+        { "id": 4, "title": "特洛伊木马", "correct": true }
+      ]
+    },
+    {
+      "id": 159,
+      "chapter": "第三章",
+      "title": "入侵者试图通过将数据包的源IP伪装成为一个受信任计算机的IP地址，并借此访问企业内部网络中的资源。此种入侵手段被称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "IP欺骗", "correct": true },
+        { "id": 2, "title": "ARP欺骗" },
+        { "id": 3, "title": "泛洪攻击" },
+        { "id": 4, "title": "拒绝服务攻击" }
+      ]
+    },
+    {
+      "id": 160,
+      "chapter": "第三章",
+      "title": "入侵者可以拦截网络中正常的通信数据，并修改和控制通信双方的TCP会话，而通信的双方却毫不知情，入侵者就可以使用抓包软件查看双方的通信内容。此种入侵手段被称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "IP欺骗" },
+        { "id": 2, "title": "端口扫描" },
+        { "id": 3, "title": "中间人攻击", "correct": true },
+        { "id": 4, "title": "缓冲器溢出" }
+      ]
+    },
+    {
+      "id": 161,
+      "chapter": "第三章",
+      "title": "美国国防部高级研究计划局提出的通用入侵检测框架将入侵检测系统分为四个组件，包括：事件产生器、事件分析器、（）和响应单元",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "事件查看器" },
+        { "id": 2, "title": "事件数据库", "correct": true },
+        { "id": 3, "title": "入侵检测器" },
+        { "id": 4, "title": "网络收集器" }
+      ]
+    },
+    {
+      "id": 162,
+      "chapter": "第三章",
+      "title": "根据检测对象分类，可以将入侵检测系统分为：基于主机的入侵检测系统、（）和混合型入侵检测系统",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "基于网络的入侵检测系统", "correct": true },
+        { "id": 2, "title": "基于存储的入侵检测系统" },
+        { "id": 3, "title": "基于用户的入侵检测系统" },
+        { "id": 4, "title": "基于应用程序的入侵检测系统" }
+      ]
+    },
+    {
+      "id": 163,
+      "chapter": "第三章",
+      "title": "在一般的保密通信模型中，在发送端将明文P用加密算法E和密钥K加密，变换成密文C，即C=E（K，P），在接收端利用解密算法D和密钥K，对C进行解密，得到明文P，即（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "P=E（K，C）" },
+        { "id": 2, "title": "P=E（C，D）" },
+        { "id": 3, "title": "P=K（C，D）" },
+        { "id": 4, "title": "P=D（K，C）", "correct": true }
+      ]
+    },
+    {
+      "id": 164,
+      "chapter": "第三章",
+      "title": "经典的加密方法，主要包括：替换加密、换位加密和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "一次性填充", "correct": true },
+        { "id": 2, "title": "散列值" },
+        { "id": 3, "title": "奇偶校验" },
+        { "id": 4, "title": "报文摘要" }
+      ]
+    },
+    {
+      "id": 165,
+      "chapter": "第三章",
+      "title": "（）函数被设计用来验证和确保数据完整性",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "对称加密" },
+        { "id": 2, "title": "流加密" },
+        { "id": 3, "title": "密码散列", "correct": true },
+        { "id": 4, "title": "非对称加密" }
+      ]
+    },
+    {
+      "id": 166,
+      "chapter": "第三章",
+      "title": "MD5在本质上是简单的二进制操作（如异或运算）的一个复杂序列，被用于在输入数据上执行，生成一个（）位的报文摘要值",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "56" },
+        { "id": 2, "title": "128", "correct": true },
+        { "id": 3, "title": "160" },
+        { "id": 4, "title": "256" }
+      ]
+    },
+    {
+      "id": 167,
+      "chapter": "第三章",
+      "title": "PPP协议使用LCP来建立和维护数据链路连接。借助（）在同一条点到点连接上使用多种网络层协议",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "UDP" },
+        { "id": 2, "title": "TCP" },
+        { "id": 3, "title": "NCP", "correct": true },
+        { "id": 4, "title": "ICMP" }
+      ]
+    },
+    {
+      "id": 168,
+      "chapter": "第三章",
+      "title": "（）是一种基于票据（Ticket）的认证方式，其设计目标是通过使用一台中央服务器提供“票据”，而网络中提供资源的服务器和访问资源的客户端之间使用这个“票据”相互识别",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "AAA" },
+        { "id": 2, "title": "PPP" },
+        { "id": 3, "title": "802.1X" },
+        { "id": 4, "title": "Kerberos", "correct": true }
+      ]
+    },
+    {
+      "id": 169,
+      "chapter": "第三章",
+      "title": "从宏观角度来看，在使用Kerberos时，一个客户端需要经过（）个步骤来获取服务",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "2" },
+        { "id": 2, "title": "3", "correct": true },
+        { "id": 3, "title": "4" },
+        { "id": 4, "title": "5" }
+      ]
+    },
+    {
+      "id": 170,
+      "chapter": "第三章",
+      "title": "（）协议是一种广泛应用于无线网络的基于端口的网络访问控制协议。它具有完备的用户认证、管理功能，可以很好地支撑宽带网络的计费、安全访问、日常运营和管理要求",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "UDP" },
+        { "id": 2, "title": "802.1X", "correct": true },
+        { "id": 3, "title": "802.3" },
+        { "id": 4, "title": "Kerberos" }
+      ]
+    },
+    {
+      "id": 171,
+      "chapter": "第三章",
+      "title": "Netscape公司推出了一个名为（）的传输层安全协议，用以保障在Internet上数据传输的安全",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "TLS" },
+        { "id": 2, "title": "SSH" },
+        { "id": 3, "title": "FTP" },
+        { "id": 4, "title": "SSL", "correct": true }
+      ]
+    },
+    {
+      "id": 172,
+      "chapter": "第三章",
+      "title": "POP3（PostOfficeProtocol-Version3，邮局协议版本3）在使用TLS保护后，被称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "POP3S", "correct": true },
+        { "id": 2, "title": "SePOP3" },
+        { "id": 3, "title": "POP3-TLS" },
+        { "id": 4, "title": "TLS-POP3" }
+      ]
+    },
+    {
+      "id": 173,
+      "chapter": "第三章",
+      "title": "IPsec有两种工作模式：（）模式和隧道模式",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "汇聚" },
+        { "id": 2, "title": "分发" },
+        { "id": 3, "title": "传输", "correct": true },
+        { "id": 4, "title": "接入" }
+      ]
+    },
+    {
+      "id": 174,
+      "chapter": "第三章",
+      "title": "在WindowsServer服务器上的命令提示符窗口中，输入（），打开“高级安全Windows防火墙”窗口",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "wf.cpl" },
+        { "id": 2, "title": "firewall.msc" },
+        { "id": 3, "title": "firewall.cpl" },
+        { "id": 4, "title": "wf.msc", "correct": true }
+      ]
+    },
+    {
+      "id": 175,
+      "chapter": "第三章",
+      "title": "（）通常设置在企业内部网络中客户端与外部网络中服务器之间，它会暂存客户端发来的请求，并由自己发出这些请求",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "防火墙" },
+        { "id": 2, "title": "代理服务器", "correct": true },
+        { "id": 3, "title": "入侵检测系统" },
+        { "id": 4, "title": "加密服务器" }
+      ]
+    },
+    {
+      "id": 176,
+      "chapter": "第三章",
+      "title": "访问控制服务，与（）相关",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "加密机制" },
+        { "id": 2, "title": "数据完整性机制" },
+        { "id": 3, "title": "访问控制机制", "correct": true },
+        { "id": 4, "title": "公证机制" }
+      ]
+    },
+    {
+      "id": 177,
+      "chapter": "第三章",
+      "title": "AH的IP协议号为（），提供数据的完整性（MD5、SHA-1）和数据源身份验证，但是不能提供数据保密性功能，所有数据均以明文进行传输",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "51", "correct": true },
+        { "id": 2, "title": "53" },
+        { "id": 3, "title": "21" },
+        { "id": 4, "title": "23" }
+      ]
+    },
+    {
+      "id": 178,
+      "chapter": "第三章",
+      "title": "通常可以把网络信息安全的问题划分为物理层、网络层、（）和（）4个层面",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "传输层" },
+        { "id": 2, "title": "数据层", "correct": true },
+        { "id": 3, "title": "内容层", "correct": true },
+        { "id": 4, "title": "中间层" },
+        { "id": 5, "title": "支持层" }
+      ]
+    },
+    {
+      "id": 179,
+      "chapter": "第三章",
+      "title": "目前网络存在的威胁主要表现：非授权访问、信息泄漏、破坏数据完整性、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "拒绝服务攻击", "correct": true },
+        { "id": 2, "title": "下载软件不安全" },
+        { "id": 3, "title": "利用网络传播病毒", "correct": true },
+        { "id": 4, "title": "网络信息不对称" },
+        { "id": 5, "title": "网络带宽紧张" }
+      ]
+    },
+    {
+      "id": 180,
+      "chapter": "第三章",
+      "title": "抗抵赖性服务，主要涉及：数字签名机制、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "加密机制" },
+        { "id": 2, "title": "数据完整性机制", "correct": true },
+        { "id": 3, "title": "访问控制机制" },
+        { "id": 4, "title": "公证机制", "correct": true },
+        { "id": 5, "title": "业务流填充机制" }
+      ]
+    },
+    {
+      "id": 181,
+      "chapter": "第三章",
+      "title": "数据完整性服务，主要涉及：数字签名机制、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "加密机制", "correct": true },
+        { "id": 2, "title": "数据完整性机制", "correct": true },
+        { "id": 3, "title": "访问控制机制" },
+        { "id": 4, "title": "公证机制" },
+        { "id": 5, "title": "业务流填充机制" }
+      ]
+    },
+    {
+      "id": 182,
+      "chapter": "第三章",
+      "title": "数据保密性服务，主要涉及：加密机制、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "加密机制" },
+        { "id": 2, "title": "路由控制机制", "correct": true },
+        { "id": 3, "title": "访问控制机制" },
+        { "id": 4, "title": "公证机制" },
+        { "id": 5, "title": "业务流填充机制", "correct": true }
+      ]
+    },
+    {
+      "id": 183,
+      "chapter": "第三章",
+      "title": "认证服务，与加密机制、（）和（）相关",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "业务机制" },
+        { "id": 2, "title": "路由控制机制" },
+        { "id": 3, "title": "访问控制机制" },
+        { "id": 4, "title": "数字签名机制", "correct": true },
+        { "id": 5, "title": "认证机制", "correct": true }
+      ]
+    },
+    {
+      "id": 184,
+      "chapter": "第三章",
+      "title": "计算机病毒具有的特征包括：传染性、隐蔽性、潜伏性、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "破坏性", "correct": true },
+        { "id": 2, "title": "活跃性" },
+        { "id": 3, "title": "公开性" },
+        { "id": 4, "title": "自主性" },
+        { "id": 5, "title": "针对性", "correct": true }
+      ]
+    },
+    {
+      "id": 185,
+      "chapter": "第三章",
+      "title": "常见的加密算法包括哪些：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "3DES", "correct": true },
+        { "id": 2, "title": "Hash" },
+        { "id": 3, "title": "AES", "correct": true },
+        { "id": 4, "title": "MD5" },
+        { "id": 5, "title": "RSA", "correct": true }
+      ]
+    },
+    {
+      "id": 186,
+      "chapter": "第三章",
+      "title": "RSA密钥的长度可以是：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "128位" },
+        { "id": 2, "title": "256位" },
+        { "id": 3, "title": "512位", "correct": true },
+        { "id": 4, "title": "1024位", "correct": true },
+        { "id": 5, "title": "2048位", "correct": true }
+      ]
+    },
+    {
+      "id": 187,
+      "chapter": "第三章",
+      "title": "PPP身份验证方法包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "IPSec" },
+        { "id": 2, "title": "PAP", "correct": true },
+        { "id": 3, "title": "EAP" },
+        { "id": 4, "title": "CHAP", "correct": true },
+        { "id": 5, "title": "TLS" }
+      ]
+    },
+    {
+      "id": 188,
+      "chapter": "第三章",
+      "title": "提供认证、授权和计账功能的标准，包括:（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "RADIUS", "correct": true },
+        { "id": 2, "title": "ICMP" },
+        { "id": 3, "title": "EAP" },
+        { "id": 4, "title": "EIGRP" },
+        { "id": 5, "title": "TACACS", "correct": true }
+      ]
+    },
+    {
+      "id": 189,
+      "chapter": "第三章",
+      "title": "IPsec是开放标准的一个框架，包括两个主要协议：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "UDP" },
+        { "id": 2, "title": "AH", "correct": true },
+        { "id": 3, "title": "ESP", "correct": true },
+        { "id": 4, "title": "RIP" },
+        { "id": 5, "title": "OSPF" }
+      ]
+    },
+    {
+      "id": 190,
+      "chapter": "第四章",
+      "title": "应用数据主要是指保证业务系统正常运行所使用的系统目录、用户目录、系统配置文件、网络配置文件、应用配置文件、存取权限控制等",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 191,
+      "chapter": "第四章",
+      "title": "系统数据主要是指操作系统、数据库系统安装的各类软件包和应用系统执行程序",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 192,
+      "chapter": "第四章",
+      "title": "备份软件是备份系统的核心，负责维护所有的备份配置信息（涉及客户端、介质代理、备份设备等）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 193,
+      "chapter": "第四章",
+      "title": "备份系统的组件包括备份管理系统、备份客户端、备份软件和备份介质",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 194,
+      "chapter": "第四章",
+      "title": "常见的网络数据备份系统，按其架构不同可以分为7种备份组网方式",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 195,
+      "chapter": "第四章",
+      "title": "基于局域网（LAN-Base）结构是最简单的备份组网方式。在大多数情况下，这种备份是使用服务器主机上自带的备份介质，而备份操作往往也是通过手工操作的方式进行的",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 196,
+      "chapter": "第四章",
+      "title": "与LAN-Base结构相比，LAN-Free结构让多台服务器共享备份介质，备份数据不再经过局域网，而直接从磁盘阵列传到备份介质内",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 197,
+      "chapter": "第四章",
+      "title": "目前，最常用的备份介质有磁带、硬盘、光盘、云存储等",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 198,
+      "chapter": "第四章",
+      "title": "完全备份是在某一个时间点上对所有数据的一个完全复制。这种备份方式的优点是备份速度快，备份数据量较少，没有重复的备份数据",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 199,
+      "chapter": "第四章",
+      "title": "目标端重复数据删除是先将数据从业务中心传到备份中心，在备份中心存储时再删除重复数据。这种方法不会占用源端资源，但也不能节省传输带宽",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 200,
+      "chapter": "第四章",
+      "title": "WindowsServerBackup是单服务器备份解决方案。不能使用一个服务器上的WindowsServerBackup备份多个服务器上的数据",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 201,
+      "chapter": "第四章",
+      "title": "灾难恢复是指将信息系统从灾难造成的故障或瘫痪状态恢复到可正常运行状态，并将其支持的业务功能从灾难造成的不正常状态恢复到可接受状态，而设计的活动和流程",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 202,
+      "chapter": "第四章",
+      "title": "灾难恢复工作包括灾难发生后的应急响应与处置、信息系统在灾难备份中心的恢复和重新运行、业务系统的灾后重建和回退工作",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 203,
+      "chapter": "第四章",
+      "title": "恢复点目标（RecoveryPointObject，RPO）是指故障后恢复数据和服务上线所需的时间量",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 204,
+      "chapter": "第四章",
+      "title": "将某种业务的RPO设置为6小时，表示该业务能容忍最多6小时的数据丢失，所以必须每6小时至少执行一次备份，同时还要考虑执行备份所需的时间",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 205,
+      "chapter": "第四章",
+      "title": "数据的备份是整个灾备系统的基础。通常可以将灾难恢复方案分为离线灾难恢复和在线灾难恢复",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 207,
+      "chapter": "第四章",
+      "title": "备份的主要目标是保证数据安全性，保存的是历史数据，恢复时间相对长；而容灾的主要目标是防止生产数据丢失或数据中心遭受毁灭性灾难，快速恢复，保证业务连续性",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 208,
+      "chapter": "第四章",
+      "title": "简单来说，云存储就是将数据资源放到云计算平台上供人读写的一种方案",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 209,
+      "chapter": "第四章",
+      "title": "服务可用性是指用户可使用数据和服务的时间百分比（通常以周作为单位）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 210,
+      "chapter": "第四章",
+      "title": "同步远程复制能够向异地提供最新的数据，但应用程序会因等待写入完成指示而被延迟一段时间",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 211,
+      "chapter": "第四章",
+      "title": "异步远程复制对应用程序性能的影响最小，而且异地磁盘系统在数据的更新程度也不会有任何延迟",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 212,
+      "chapter": "第四章",
+      "title": "从数据用途角度来说，一般可将需要备份的数据分为系统数据、基本数据、应用数据、（）数据",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "临时", "correct": true },
+        { "id": 2, "title": "永久" },
+        { "id": 3, "title": "交换" },
+        { "id": 4, "title": "稀疏" }
+      ]
+    },
+    {
+      "id": 213,
+      "chapter": "第四章",
+      "title": "（）数据主要是指业务系统的所有业务数据，对数据的安全性、准确性、完整性、一致性要求很高，而且变化频繁",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "系统" },
+        { "id": 2, "title": "应用", "correct": true },
+        { "id": 3, "title": "基础" },
+        { "id": 4, "title": "缓存" }
+      ]
+    },
+    {
+      "id": 214,
+      "chapter": "第四章",
+      "title": "备份系统的组件包括：备份管理系统、备份客户端、（）和备份介质",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "备份对象" },
+        { "id": 2, "title": "备份软件" },
+        { "id": 3, "title": "备份网络", "correct": true },
+        { "id": 4, "title": "备份路由" }
+      ]
+    },
+    {
+      "id": 215,
+      "chapter": "第四章",
+      "title": "备份管理系统，主要包含（）和备份管理服务器，负责备份策略管理和备份作业监控，以及读取备份客户端的数据并把数据写入备份介质",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "备份对象" },
+        { "id": 2, "title": "备份软件", "correct": true },
+        { "id": 3, "title": "备份网络" },
+        { "id": 4, "title": "备份路由" }
+      ]
+    },
+    {
+      "id": 216,
+      "chapter": "第四章",
+      "title": "在一些大型的备份管理系统中，备份服务管理服务器通常由备份服务器和（）组成",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "介质服务器", "correct": true },
+        { "id": 2, "title": "备份介质" },
+        { "id": 3, "title": "文件服务器" },
+        { "id": 4, "title": "备份文件" }
+      ]
+    },
+    {
+      "id": 217,
+      "chapter": "第四章",
+      "title": "备份客户端是指需要备份数据的业务主机，它负责提供要备份的数据，一般需安装（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "备份软件服务器端程序" },
+        { "id": 2, "title": "备份介质" },
+        { "id": 3, "title": "备份软件客户端代理程序", "correct": true },
+        { "id": 4, "title": "备份管理软件" }
+      ]
+    },
+    {
+      "id": 218,
+      "chapter": "第四章",
+      "title": "备份介质是指备份数据存储的媒介，一般为磁盘阵列、物理磁带库或者虚拟带库、光盘塔、（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "软盘" },
+        { "id": 2, "title": "云存储", "correct": true },
+        { "id": 3, "title": "U盘" },
+        { "id": 4, "title": "移动硬盘" }
+      ]
+    },
+    {
+      "id": 219,
+      "chapter": "第四章",
+      "title": "最常见的网络数据备份系统按其架构不同可以分为：（）结构、基于局域网（LAN-Base）结构、不依赖局域网（LAN-Free）结构和不依赖服务器（Server-Free）结构",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "基于数据类型" },
+        { "id": 2, "title": "基于用户" },
+        { "id": 3, "title": "基于主机", "correct": true },
+        { "id": 4, "title": "基于应用" }
+      ]
+    },
+    {
+      "id": 220,
+      "chapter": "第四章",
+      "title": "（）是小型办公环境最常使用的备份组网方式。在这种结构中，预先配置一台服务器作为备份管理服务器，它负责整个企业系统的备份操作。备份介质接在某台服务器上，当需要备份数据时，备份对象把数据通过网络传输到备份介质中",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "基于数据类型结构" },
+        { "id": 2, "title": "基于用户结构" },
+        { "id": 3, "title": "基于主机结构" },
+        { "id": 4, "title": "基于局域网结构", "correct": true }
+      ]
+    },
+    {
+      "id": 221,
+      "chapter": "第四章",
+      "title": "（）是建立在SAN基础上的解决方案，是指数据无须通过局域网而直接进行备份",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "不依赖局域网（LAN-Free）结构", "correct": true },
+        { "id": 2, "title": "不依赖应用（Application-Free）结构" },
+        { "id": 3, "title": "不依赖主机（Host-Free）结构" },
+        { "id": 4, "title": "不依赖用户（User-Free）结构" }
+      ]
+    },
+    {
+      "id": 222,
+      "chapter": "第四章",
+      "title": "在（）中，备份服务器仍参与备份过程，但负担大大减轻，因为它的作用只是指挥，而且不涉及数据的装载和运输，不是主要的备份数据通道",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "不依赖局域网（LAN-Free）结构" },
+        { "id": 2, "title": "不依赖应用（Application-Free）结构" },
+        { "id": 3, "title": "不依赖服务器（Server-Free）结构", "correct": true },
+        { "id": 4, "title": "不依赖用户（User-Free）结构" }
+      ]
+    },
+    {
+      "id": 223,
+      "chapter": "第四章",
+      "title": "常用的数据备份方式有完全备份、差异备份以及（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "间隔备份" },
+        { "id": 2, "title": "差分备份" },
+        { "id": 3, "title": "副本备份" },
+        { "id": 4, "title": "增量备份", "correct": true }
+      ]
+    },
+    {
+      "id": 224,
+      "chapter": "第四章",
+      "title": "（）是以最近一次完全备份为基准，对最近一次完全备份后到进行此种备份的这段时间内，发生变化的数据进行备份",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "完全备份" },
+        { "id": 2, "title": "差异备份", "correct": true },
+        { "id": 3, "title": "副本备份" },
+        { "id": 4, "title": "增量备份" }
+      ]
+    },
+    {
+      "id": 225,
+      "chapter": "第四章",
+      "title": "（）是以最近一次备份为基准，对最近一次备份后到进行此种备份的这段时间内，发生变化的数据进行备份",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "完全备份" },
+        { "id": 2, "title": "差异备份" },
+        { "id": 3, "title": "副本备份" },
+        { "id": 4, "title": "增量备份", "correct": true }
+      ]
+    },
+    {
+      "id": 226,
+      "chapter": "第四章",
+      "title": "（）可以通过软件或硬件来实现，它把存储的文件切成小块，再比较每个小块的区别，然后对重复的数据块只保留一个副本",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "重复数据删除", "correct": true },
+        { "id": 2, "title": "差异数据删除" },
+        { "id": 3, "title": "副本数据删除" },
+        { "id": 4, "title": "增量数据删除" }
+      ]
+    },
+    {
+      "id": 227,
+      "chapter": "第四章",
+      "title": "每年99.9％的服务可用性意味着数据和服务每年的计划外停机时间不得超过0.1％，以一年365天，每天24小时为例，一年的停机时间不得超过（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "8.76小时", "correct": true },
+        { "id": 2, "title": "8.76分钟" },
+        { "id": 3, "title": "4.38小时" },
+        { "id": 4, "title": "4.38分钟" }
+      ]
+    },
+    {
+      "id": 228,
+      "chapter": "第四章",
+      "title": "每年99.95％的服务可用性意味着数据和服务每年的计划外停机时间不得超过0.05％，以一年365天，每天24小时为例，一年的停机时间不得超过（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "8.76小时" },
+        { "id": 2, "title": "8.76分钟" },
+        { "id": 3, "title": "4.38小时", "correct": true },
+        { "id": 4, "title": "4.38分钟" }
+      ]
+    },
+    {
+      "id": 229,
+      "chapter": "第四章",
+      "title": "《信息安全技术信息系统灾难恢复规范》（GB/T20988—2007）中定义的灾难恢复能力分为（）个等级",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "三" },
+        { "id": 2, "title": "五" },
+        { "id": 3, "title": "六", "correct": true },
+        { "id": 4, "title": "八" }
+      ]
+    },
+    {
+      "id": 230,
+      "chapter": "第四章",
+      "title": "灾难恢复体系规划设计包括灾难恢复需求分析、策略制定、技术体系规划、（）等方面",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "风险分析" },
+        { "id": 2, "title": "资源规划", "correct": true },
+        { "id": 3, "title": "灾难恢复目标规划" },
+        { "id": 4, "title": "备份网络技术" }
+      ]
+    },
+    {
+      "id": 231,
+      "chapter": "第四章",
+      "title": "灾难恢复需求分析能力包括对风险分析、（）和灾难恢复目标制定3个方面，对其分析结果进行评估，以确保企业灾难恢复需求分析的结论符合企业业务恢复要求",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "技术体系规划" },
+        { "id": 2, "title": "资源规划" },
+        { "id": 3, "title": "业务影响分析", "correct": true },
+        { "id": 4, "title": "策略制定" }
+      ]
+    },
+    {
+      "id": 232,
+      "chapter": "第四章",
+      "title": "基于数据库的复制方式可将远程数据库复制分为实时复制、（）和存储转发复制",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "快速复制" },
+        { "id": 2, "title": "定时复制", "correct": true },
+        { "id": 3, "title": "完整复制" },
+        { "id": 4, "title": "差异复制" }
+      ]
+    },
+    {
+      "id": 233,
+      "chapter": "第四章",
+      "title": "国际标准Share78对灾难恢复解决方案从低到高分为（）种不同层次",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "三" },
+        { "id": 2, "title": "五" },
+        { "id": 3, "title": "七", "correct": true },
+        { "id": 4, "title": "九" }
+      ]
+    },
+    {
+      "id": 234,
+      "chapter": "第四章",
+      "title": "国际标准Share78对灾难恢复解决方案从低到高分为多个不同层次，针对每个层次都有相应的容灾方案。其中（）级是最高级别的灾难恢复方案（零数据丢失）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "0" },
+        { "id": 2, "title": "1" },
+        { "id": 3, "title": "6", "correct": true },
+        { "id": 4, "title": "8" }
+      ]
+    },
+    {
+      "id": 235,
+      "chapter": "第四章",
+      "title": "国际标准Share78对灾难恢复解决方案从低到高分为多个不同层次，针对每个层次都有相应的容灾方案。其中（）级是成本最低的灾难恢复方案（无异地备份）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "0", "correct": true },
+        { "id": 2, "title": "1" },
+        { "id": 3, "title": "6" },
+        { "id": 4, "title": "8" }
+      ]
+    },
+    {
+      "id": 236,
+      "chapter": "第四章",
+      "title": "WindowsServerBackup是WindowsServer2016操作系统提供的一项备份功能，它提供的操作接口包括：管理控制台和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "backup命令" },
+        { "id": 2, "title": "wbadmin命令", "correct": true },
+        { "id": 3, "title": "WindowsPowerShell命令", "correct": true },
+        { "id": 4, "title": "ssh命令" },
+        { "id": 5, "title": "telnet命令" }
+      ]
+    },
+    {
+      "id": 237,
+      "chapter": "第四章",
+      "title": "灾难恢复的重要指标包括：服务可用性、恢复点目标、（）等",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "恢复时间目标", "correct": true },
+        { "id": 2, "title": "保留目标", "correct": true },
+        { "id": 3, "title": "应用响应时间" },
+        { "id": 4, "title": "网络往返延迟" },
+        { "id": 5, "title": "操作系统可靠性" }
+      ]
+    },
+    {
+      "id": 238,
+      "chapter": "第四章",
+      "title": "网络系统管理员可以使用WindowsServerBackup备份：完整服务器、系统状态、（）和（）等",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "仅单个设备的驱动程序" },
+        { "id": 2, "title": "仅注册表数据" },
+        { "id": 3, "title": "仅单个文件和文件夹", "correct": true },
+        { "id": 4, "title": "仅Hyper-V主机上的单个虚拟机", "correct": true },
+        { "id": 5, "title": "仅系统页面文件" }
+      ]
+    },
+    {
+      "id": 239,
+      "chapter": "第五章",
+      "title": "网络测量是利用测量工具检测网络设备或网络系统运行状态、获取网络性能参数的过程",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 240,
+      "chapter": "第五章",
+      "title": "根据测量过程中是否向网络系统中注入探测数据包，可以将测量方式分为主动测量和被动测量",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 241,
+      "chapter": "第五章",
+      "title": "被动测量会向网络中注入额外的数据包，从而对网络的实际行为造成影响，可能会遮盖网络行为的本来面目，因此，测量结果也会造成一定的偏差",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 242,
+      "chapter": "第五章",
+      "title": "数据的预处理是要对采集到的数据包进行分类、过滤、计数和归并",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 243,
+      "chapter": "第五章",
+      "title": "数据分析结果通常有两种交付形式：一是统计报表，二是可视化图形",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 244,
+      "chapter": "第五章",
+      "title": "传输控制协议（TransmissionControlProtocol，TCP）是面向数据报文的传输层协议。在基于TCP的主动测量过程中，测量主机需要向被测量主机发送探测数据包，但通信双方之间的传输没有明确的连接（类似于邮件传输），通信双方是对等的，单次传输的最大数据量取决于具体的网络",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 245,
+      "chapter": "第五章",
+      "title": "在测量单向时延时，首先应该使测量节点A和测量节点B的时间同步，然后在节点A形成一个64字节的UDP数据包，获取节点A的时间后在包头部加载一个时间戳（A）并立即发出，当节点B完整地接收到这个数据包后，立即获取接收时间（B），则“B减A”的值即为该链路的单向时延",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 246,
+      "chapter": "第五章",
+      "title": "带宽通常表示网络传输路径或链路的传输容量，即数据包的传输速度",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 247,
+      "chapter": "第五章",
+      "title": "链路带宽是指源节点到目的节点之间性能最低的链路所能达到的最大传输速度，也就是该传输路径所能提供给一个业务流的最大传输速度",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 248,
+      "chapter": "第五章",
+      "title": "丢包率是单位时间内传输中丢失的数据包与所有数据包的比值。数据包丢失一般是由网络拥塞引起的，当丢包率超过15%时，可能会导致网络不可用",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 249,
+      "chapter": "第五章",
+      "title": "吞吐量是描述网络设备转发速度的性能指标。其度量单位通常是字节/秒（Byte/s）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 250,
+      "chapter": "第五章",
+      "title": "ipconfig命令是个使用频率极高的测试命令，其主要功能是使用ICMP（InternetControlMessageProtocol，网络控制报文协议）数据包来测试从源端到目的端网络的连通性，它可以快速准确地判断网络故障",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 251,
+      "chapter": "第五章",
+      "title": "在Windows操作系统的命令提示符窗口中输入“ping127.0.0.1”，能够判断本机的TCP/IP协议设置是否正常",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 252,
+      "chapter": "第五章",
+      "title": "arp命令用于显示和修改地址解析协议（AddressResolutionProtocol，ARP）缓存表的内容",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 253,
+      "chapter": "第五章",
+      "title": "netstat命令用于显示TCP连接、当前计算机正在监听的端口、以太网统计信息、IP路由表、IPv4统计信息、IPv6统计信息等",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 254,
+      "chapter": "第五章",
+      "title": "tracert命令用来跟踪源与目标节点之间的所有路由器",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 255,
+      "chapter": "第五章",
+      "title": "主动测量方法的优点包括：不依赖于被测量对象的测量能力，能直接测量和分析网络性能；适合端到端的网络性能测量，对于所关注的内容只要在本地发送测试数据包，然后观察网络的响应即可；测量方式不涉及用户的网络信息，所以对用户而言安全性好",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 256,
+      "chapter": "第五章",
+      "title": "因为TCP协议是面向连接的，所以通过测试TCP的性能反映发送端与接收端之间的性能参数",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 257,
+      "chapter": "第五章",
+      "title": "ping命令还能显示TTL（TimeToLive，生存期）值，该值是由发送端主机设置的，它的作用是防止数据包在IP网络中永不终止地转发下去",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 258,
+      "chapter": "第五章",
+      "title": "在Windows操作系统的命令提示符窗口中输入arp-a命令，会显示所有网卡接口的ARP缓存表",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 259,
+      "chapter": "第五章",
+      "title": "通过发送（）数据包，可以获得网络往返时延、丢包率与连通性等参数",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ICMP", "correct": true },
+        { "id": 2, "title": "RIP" },
+        { "id": 3, "title": "PHP" },
+        { "id": 4, "title": "MAC" }
+      ]
+    },
+    {
+      "id": 260,
+      "chapter": "第五章",
+      "title": "（）会向网络中发送特定的探测数据包，网络系统管理员通过对探测数据包所受网络影响而发生特性变化的分析，得到网络状态和性能参数",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "被动测量" },
+        { "id": 2, "title": "主动测量", "correct": true },
+        { "id": 3, "title": "单点测量" },
+        { "id": 4, "title": "协作式测量" }
+      ]
+    },
+    {
+      "id": 261,
+      "chapter": "第五章",
+      "title": "按照网络测量点的位置，可以分为端系统测量和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "被动测量" },
+        { "id": 2, "title": "主动测量" },
+        { "id": 3, "title": "单点测量" },
+        { "id": 4, "title": "中间系统测量", "correct": true }
+      ]
+    },
+    {
+      "id": 262,
+      "chapter": "第五章",
+      "title": "网络测量技术的基本要求是有效性、高速测量、准确性和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "隐蔽性" },
+        { "id": 2, "title": "调节性" },
+        { "id": 3, "title": "实时性", "correct": true },
+        { "id": 4, "title": "变化性" }
+      ]
+    },
+    {
+      "id": 263,
+      "chapter": "第五章",
+      "title": "从网络测量系统的功能角度，网络测量系统的体系结构从底层到高层分别为数据采集层、数据管理层、（）和数据表示层",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据分析层", "correct": true },
+        { "id": 2, "title": "数据传输层" },
+        { "id": 3, "title": "数据应用层" },
+        { "id": 4, "title": "数据处理层" }
+      ]
+    },
+    {
+      "id": 264,
+      "chapter": "第五章",
+      "title": "数据管理功能包括基于数据管理和（）管理",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "病毒" },
+        { "id": 2, "title": "事件", "correct": true },
+        { "id": 3, "title": "用户" },
+        { "id": 4, "title": "计算机" }
+      ]
+    },
+    {
+      "id": 265,
+      "chapter": "第五章",
+      "title": "基础数据分析包括三方面功能：基本统计功能、（）和数据关联分析",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "事件分析" },
+        { "id": 2, "title": "数据库分析" },
+        { "id": 3, "title": "性能趋势预测", "correct": true },
+        { "id": 4, "title": "可靠性趋势预测" }
+      ]
+    },
+    {
+      "id": 266,
+      "chapter": "第五章",
+      "title": "（）通常采用便携式测量仪表，在网络中的某个节点上安置测量系统或测量仪表进行测量",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "集中式测量" },
+        { "id": 2, "title": "分布式测量" },
+        { "id": 3, "title": "多点测量" },
+        { "id": 4, "title": "单点测量", "correct": true }
+      ]
+    },
+    {
+      "id": 267,
+      "chapter": "第五章",
+      "title": "在（）体系中，测量节点是完整的测量系统，它们分布在网络中的多个位置，既可以独立地进行网络测量，也可以将测量数据发送到测量中央服务器",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "集中式测量" },
+        { "id": 2, "title": "分布式测量", "correct": true },
+        { "id": 3, "title": "双点测量" },
+        { "id": 4, "title": "单点测量" }
+      ]
+    },
+    {
+      "id": 268,
+      "chapter": "第五章",
+      "title": "主动测量方法可以利用TCP/IP协议中的（）、TCP、UDP等协议来发送探测数据包进行测量",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ICMP", "correct": true },
+        { "id": 2, "title": "ARP" },
+        { "id": 3, "title": "IPX" },
+        { "id": 4, "title": "AppleTalk" }
+      ]
+    },
+    {
+      "id": 269,
+      "chapter": "第五章",
+      "title": "TCP连接的建立与断开采用（）的方式",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "三次握手+三次断开" },
+        { "id": 2, "title": "三次握手+四次断开", "correct": true },
+        { "id": 3, "title": "四次握手+三次断开" },
+        { "id": 4, "title": "四次握手+四次断开" }
+      ]
+    },
+    {
+      "id": 270,
+      "chapter": "第五章",
+      "title": "SNMP协议提供了三类操作，包括：Get、Set和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Renew" },
+        { "id": 2, "title": "Answer" },
+        { "id": 3, "title": "Ask" },
+        { "id": 4, "title": "Trap", "correct": true }
+      ]
+    },
+    {
+      "id": 271,
+      "chapter": "第五章",
+      "title": "与带宽相关的参数有：链路带宽、瓶颈带宽、（）等",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "时延带宽" },
+        { "id": 2, "title": "可用带宽", "correct": true },
+        { "id": 3, "title": "总体带宽" },
+        { "id": 4, "title": "最小带宽" }
+      ]
+    },
+    {
+      "id": 272,
+      "chapter": "第五章",
+      "title": "（）是Windows操作系统中的一个系统命令，用于显示本机的TCP/IP网络配置值",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ping" },
+        { "id": 2, "title": "netstat" },
+        { "id": 3, "title": "ipconfig", "correct": true },
+        { "id": 4, "title": "arp" }
+      ]
+    },
+    {
+      "id": 273,
+      "chapter": "第五章",
+      "title": "在Windows操作系统的计算机上运行的ping命令会发送4个ICMP回送请求数据包，每个数据包为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "32比特" },
+        { "id": 2, "title": "32字节", "correct": true },
+        { "id": 3, "title": "16字节" },
+        { "id": 4, "title": "16比特" }
+      ]
+    },
+    {
+      "id": 274,
+      "chapter": "第五章",
+      "title": "输入netstat（）命令，则显示活动的TCP连接、地址和端口号（以数字形式表示）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "-t" },
+        { "id": 2, "title": "-q" },
+        { "id": 3, "title": "-n", "correct": true },
+        { "id": 4, "title": "-i" }
+      ]
+    },
+    {
+      "id": 275,
+      "chapter": "第五章",
+      "title": "（）命令用来跟踪源与目标节点之间的所有路由器",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "arp" },
+        { "id": 2, "title": "netstat" },
+        { "id": 3, "title": "tracert", "correct": true },
+        { "id": 4, "title": "ping" }
+      ]
+    },
+    {
+      "id": 276,
+      "chapter": "第五章",
+      "title": "可以使用（）组合键，打开Windows任务管理器",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Ctrl+Shift+Esc", "correct": true },
+        { "id": 2, "title": "Ctrl+Alt+Esc" },
+        { "id": 3, "title": "Shift+Alt+Esc" },
+        { "id": 4, "title": "Ctrl+Tab+Esc" }
+      ]
+    },
+    {
+      "id": 277,
+      "chapter": "第五章",
+      "title": "网络测量的功能按照测量对象，可分为三大类：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "网络性能测量", "correct": true },
+        { "id": 2, "title": "业务性能测量", "correct": true },
+        { "id": 3, "title": "应用可靠性测量" },
+        { "id": 4, "title": "数据库性能测量" },
+        { "id": 5, "title": "网络流量测量", "correct": true }
+      ]
+    },
+    {
+      "id": 278,
+      "chapter": "第五章",
+      "title": "TCP/IP网络性能指标可以从物理层、数据链路层、（）、传输层和（）5个层次来分析",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "管理层" },
+        { "id": 2, "title": "表示层" },
+        { "id": 3, "title": "会话层" },
+        { "id": 4, "title": "网络层", "correct": true },
+        { "id": 5, "title": "应用层", "correct": true }
+      ]
+    },
+    {
+      "id": 279,
+      "chapter": "第五章",
+      "title": "在Windows资源监视器中，可以查看到的选项卡包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "概述", "correct": true },
+        { "id": 2, "title": "服务" },
+        { "id": 3, "title": "CPU", "correct": true },
+        { "id": 4, "title": "网络", "correct": true },
+        { "id": 5, "title": "详细信息" }
+      ]
+    },
+    {
+      "id": 280,
+      "chapter": "第六章",
+      "title": "网络链路的问题通常是由网卡、跳线、信息插座、交换机、UPS等设备和服务配置引起的",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 281,
+      "chapter": "第六章",
+      "title": "网络故障大致可以分为4类，即应用故障、协议故障、操作故障和服务故障",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 282,
+      "chapter": "第六章",
+      "title": "数据包分析工具是一种可以捕获和记录网络数据包的工具，可以帮助网络系统管理员解决网络问题、检查网络安全隐患、显示数据包传输状态、学习网络传输协议",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 283,
+      "chapter": "第六章",
+      "title": "大部分的网络是基于TCP/IP协议构建的，网络系统管理员在排除网络故障时，可以参考TCP/IP协议的分层思想",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 284,
+      "chapter": "第六章",
+      "title": "数据链路层负责在网络层与传输层之间进行信息传输，数据帧的封装、解封装、差错校验等",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 285,
+      "chapter": "第六章",
+      "title": "网络层提供用户服务，如网页服务、电子邮件服务、文件传输服务、域名查询服务等",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 286,
+      "chapter": "第六章",
+      "title": "在Cisco公司的交换机上，可以使用show vlan命令查看交换机配置的VLAN相关信息",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 287,
+      "chapter": "第六章",
+      "title": "网络故障排查流程：描述网络故障现象、收集可能的网络故障原因信息、（）、网络故障分析、事后记录和总结",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "联系网络管理员" },
+        { "id": 2, "title": "建立诊断计划", "correct": true },
+        { "id": 3, "title": "立即修改当前配置" },
+        { "id": 4, "title": "查看日志" }
+      ]
+    },
+    {
+      "id": 288,
+      "chapter": "第六章",
+      "title": "网络服务故障主要包括3个方面：服务器硬件故障、网络操作系统故障和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "人为故障" },
+        { "id": 2, "title": "诊断故障" },
+        { "id": 3, "title": "网络服务故障", "correct": true },
+        { "id": 4, "title": "文件故障" }
+      ]
+    },
+    {
+      "id": 291,
+      "chapter": "第六章",
+      "title": "网络故障大致可以分为4类，即链路故障、协议故障、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "配置故障", "correct": true },
+        { "id": 2, "title": "应用故障" },
+        { "id": 3, "title": "服务故障", "correct": true },
+        { "id": 4, "title": "操作故障" },
+        { "id": 5, "title": "人为故障" }
+      ]
+    },
+    {
+      "id": 292,
+      "chapter": "第六章",
+      "title": "数据帧封装格式包括：HDLC、（）和、（）等",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "RIP" },
+        { "id": 2, "title": "ARP" },
+        { "id": 3, "title": "ICMP" },
+        { "id": 4, "title": "PPP", "correct": true },
+        { "id": 5, "title": "Frame-Realy", "correct": true }
+      ]
+    },
+    {
+      "id": 293,
+      "chapter": "第七章",
+      "title": "基于使用时间的计费最早应用于传统电话，它是根据用户使用网络的时间长短来收取用户费用的一种计费方法",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 294,
+      "chapter": "第七章",
+      "title": "代理服务器能够记录用户的IP地址、帐户、请求时间、访问地址、信息长度等详细数据，可以进行分类统计和记账",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 295,
+      "chapter": "第七章",
+      "title": "基于访问日志的数据采集方式既可以对IP地址进行流量计费，又可以对用户流量计费",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 296,
+      "chapter": "第七章",
+      "title": "基于流量计费是根据用户在一段时间内所使用的全部网络流量（发送和接收）统计数据来收取用户费用的一种计费方式",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 297,
+      "chapter": "第七章",
+      "title": "计费管理的组件包括：计费数据的采集和存储；（）；与用户、管理员之间的人机交互界面",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据的处理" },
+        { "id": 2, "title": "数据的分析和统计", "correct": true },
+        { "id": 3, "title": "数据的过滤" },
+        { "id": 4, "title": "数据的筛分" }
+      ]
+    },
+    {
+      "id": 298,
+      "chapter": "第七章",
+      "title": "计费管理可以用来确定网络中每一种服务的价值，包括（）类服务、软件类服务和人工服务",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "硬件", "correct": true },
+        { "id": 2, "title": "设备" },
+        { "id": 3, "title": "人工" },
+        { "id": 4, "title": "协议" }
+      ]
+    },
+    {
+      "id": 299,
+      "chapter": "第七章",
+      "title": "（）的计费是根据用户在一段时间内所使用的全部网络流量（发送和接收）统计数据来收取用户费用的一种计费方式",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "基于时间" },
+        { "id": 2, "title": "基于服务" },
+        { "id": 3, "title": "统一费用" },
+        { "id": 4, "title": "基于网络流量", "correct": true }
+      ]
+    },
+    {
+      "id": 300,
+      "chapter": "第七章",
+      "title": "住宅的宽带接入服务，当用户订购服务之后，可以按月或按年支付费用，并随意访问Internet。这种计费方式属于（）的计费",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "基于时间" },
+        { "id": 2, "title": "基于服务" },
+        { "id": 3, "title": "统一费用", "correct": true },
+        { "id": 4, "title": "基于网络流量" }
+      ]
+    },
+    {
+      "id": 301,
+      "chapter": "第七章",
+      "title": "（）是一种网络监测功能，可以收集流入和流出网络接口的IP数据包",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "NetCollect" },
+        { "id": 2, "title": "NetMon" },
+        { "id": 3, "title": "NetMonitor" },
+        { "id": 4, "title": "NetFlow", "correct": true }
+      ]
+    },
+    {
+      "id": 302,
+      "chapter": "第七章",
+      "title": "NetFlow通过将数据包中的多个关键字段相结合来定义一个“流”，最初定义了（）个关键字段",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "五" },
+        { "id": 2, "title": "六" },
+        { "id": 3, "title": "七", "correct": true },
+        { "id": 4, "title": "四" }
+      ]
+    },
+    {
+      "id": 303,
+      "chapter": "第七章",
+      "title": "当前许多计费系统采用三层体系结构，分别对应表示层、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "会话层" },
+        { "id": 2, "title": "管理层" },
+        { "id": 3, "title": "消费层" },
+        { "id": 4, "title": "应用层", "correct": true },
+        { "id": 5, "title": "数据层", "correct": true }
+      ]
+    },
+    {
+      "id": 304,
+      "chapter": "第七章",
+      "title": "可以基于（）等网络设备来实现基于流量的计费",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "中继器" },
+        { "id": 2, "title": "路由器", "correct": true },
+        { "id": 3, "title": "防火墙", "correct": true },
+        { "id": 4, "title": "集线器" },
+        { "id": 5, "title": "代理服务器", "correct": true }
+      ]
+    },
+    {
+      "id": 305,
+      "chapter": "易错集合",
+      "title": "按照防火墙实现的技术不同，可以分为硬件防火墙和软件防火墙",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 306,
+      "chapter": "易错集合",
+      "title": "CIDF体系结构中的事件产生器可以是来自网络的数据包，也可以是从系统日志等其他途径得到的信息",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 307,
+      "chapter": "易错集合",
+      "title": "为了支持《信息处理系统-开放系统互联-基本参考模型第2部分：安全体系结构》定义的安全服务，ISO的网络安全体系结构定义了（）类安全机制",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "八", "correct": true },
+        { "id": 2, "title": "七" },
+        { "id": 3, "title": "五" },
+        { "id": 4, "title": "三" }
+      ]
+    },
+    {
+      "id": 308,
+      "chapter": "易错集合",
+      "title": "数据保密性服务，主要涉及：加密机制、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "加密机制" },
+        { "id": 2, "title": "路由控制机制", "correct": true },
+        { "id": 3, "title": "访问控制机制" },
+        { "id": 4, "title": "公证机制" },
+        { "id": 5, "title": "业务流填充机制", "correct": true }
+      ]
+    },
+    {
+      "id": 309,
+      "chapter": "易错集合",
+      "title": "PPP身份验证方法包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "IPSec" },
+        { "id": 2, "title": "PAP", "correct": true },
+        { "id": 3, "title": "EAP" },
+        { "id": 4, "title": "CHAP", "correct": true },
+        { "id": 5, "title": "TLS" }
+      ]
+    },
+    {
+      "id": 310,
+      "chapter": "易错集合",
+      "title": "从Windows7开始，Windows操作系统才内置了软件防火墙功能",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 311,
+      "chapter": "易错集合",
+      "title": "防火墙可以分为硬件防火墙和逻辑防火墙两类",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 312,
+      "chapter": "易错集合",
+      "title": "数据完整性服务，主要涉及：数字签名机制、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "加密机制", "correct": true },
+        { "id": 2, "title": "数据完整性机制", "correct": true },
+        { "id": 3, "title": "访问控制机制" },
+        { "id": 4, "title": "公证机制" },
+        { "id": 5, "title": "业务流填充机制" }
+      ]
+    },
+    {
+      "id": 313,
+      "chapter": "易错集合",
+      "title": "MD5和SHA属于数据完整性检测方法",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 314,
+      "chapter": "易错集合",
+      "title": "认证服务，与加密机制、（）和（）相关",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "业务机制" },
+        { "id": 2, "title": "路由控制机制" },
+        { "id": 3, "title": "访问控制机制" },
+        { "id": 4, "title": "数字签名机制", "correct": true },
+        { "id": 5, "title": "认证机制", "correct": true }
+      ]
+    },
+    {
+      "id": 315,
+      "chapter": "易错集合",
+      "title": "抗抵赖性服务，主要涉及：数字签名机制、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "加密机制" },
+        { "id": 2, "title": "数据完整性机制", "correct": true },
+        { "id": 3, "title": "访问控制机制" },
+        { "id": 4, "title": "公证机制", "correct": true },
+        { "id": 5, "title": "业务流填充机制" }
+      ]
+    },
+    {
+      "id": 316,
+      "chapter": "易错集合",
+      "title": "通常可以把网络信息安全的问题划分为物理层、网络层、（）和（）4个层面",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "传输层" },
+        { "id": 2, "title": "数据层", "correct": true },
+        { "id": 3, "title": "内容层", "correct": true },
+        { "id": 4, "title": "中间层" },
+        { "id": 5, "title": "支持层" }
+      ]
+    },
+    {
+      "id": 317,
+      "chapter": "易错集合",
+      "title": "备份系统的组件包括：备份管理系统、备份客户端、（）和备份介质",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "备份对象" },
+        { "id": 2, "title": "备份软件" },
+        { "id": 3, "title": "备份网络", "correct": true },
+        { "id": 4, "title": "备份路由" }
+      ]
+    },
+    {
+      "id": 318,
+      "chapter": "易错集合",
+      "title": "备份管理系统，主要包含（）和备份管理服务器，负责备份策略管理和备份作业监控，以及读取备份客户端的数据并把数据写入备份介质",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "备份对象" },
+        { "id": 2, "title": "备份软件", "correct": true },
+        { "id": 3, "title": "备份网络" },
+        { "id": 4, "title": "备份路由" }
+      ]
+    },
+    {
+      "id": 319,
+      "chapter": "易错集合",
+      "title": "备份软件是备份系统的核心，负责维护所有的备份配置信息（涉及客户端、介质代理、备份设备等）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 320,
+      "chapter": "易错集合",
+      "title": "国际标准Share78对灾难恢复解决方案从低到高分为（）种不同层次",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "三" },
+        { "id": 2, "title": "五" },
+        { "id": 3, "title": "七", "correct": true },
+        { "id": 4, "title": "九" }
+      ]
+    },
+    {
+      "id": 321,
+      "chapter": "易错集合",
+      "title": "《信息安全技术信息系统灾难恢复规范》（GB/T20988—2007）中定义的灾难恢复能力分为（）个等级",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "三" },
+        { "id": 2, "title": "五" },
+        { "id": 3, "title": "六", "correct": true },
+        { "id": 4, "title": "八" }
+      ]
+    },
+    {
+      "id": 322,
+      "chapter": "易错集合",
+      "title": "灾难恢复体系规划设计包括灾难恢复需求分析、策略制定、技术体系规划、（）等方面",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "风险分析" },
+        { "id": 2, "title": "资源规划", "correct": true },
+        { "id": 3, "title": "灾难恢复目标规划" },
+        { "id": 4, "title": "备份网络技术" }
+      ]
+    },
+    {
+      "id": 323,
+      "chapter": "易错集合",
+      "title": "ISO的网络安全体系结构中定义了五类安全服务，包括：认证服务、访问控制服务、数据完整性服务、抗抵赖性服务和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据保密性服务", "correct": true },
+        { "id": 2, "title": "统一性服务" },
+        { "id": 3, "title": "数据签名服务" },
+        { "id": 4, "title": "路由控制服务" }
+      ]
+    },
+    {
+      "id": 324,
+      "chapter": "易错集合",
+      "title": "网络管理包括五大功能：故障管理、配置管理、计费管理、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "动态管理" },
+        { "id": 2, "title": "性能管理", "correct": true },
+        { "id": 3, "title": "服务管理" },
+        { "id": 4, "title": "安全管理", "correct": true },
+        { "id": 5, "title": "质量管理" }
+      ]
+    },
+    {
+      "id": 325,
+      "chapter": "易错集合",
+      "title": "安全管理的主要功能包括：身份验证、密钥管理、（）、访问控制",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "检验控制" },
+        { "id": 2, "title": "质量控制" },
+        { "id": 3, "title": "安全控制", "correct": true },
+        { "id": 4, "title": "服务管理" }
+      ]
+    },
+    {
+      "id": 326,
+      "chapter": "易错集合",
+      "title": "通过上网行为管理产品，网络系统管理员可以实时了解、统计、分析Internet使用状况，并根据分析结果对管理策略做出调整和优化。具体包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "上网行为实时监控", "correct": true },
+        { "id": 2, "title": "上网带宽控制" },
+        { "id": 3, "title": "上网行为日志查询", "correct": true },
+        { "id": 4, "title": "上网行为统计分析" },
+        { "id": 5, "title": "上网应用累计时长限额", "correct": true }
+      ]
+    },
+    {
+      "id": 327,
+      "chapter": "易错集合",
+      "title": "网络测量的功能按照测量对象，可分为三大类：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "网络性能测量", "correct": true },
+        { "id": 2, "title": "业务性能测量", "correct": true },
+        { "id": 3, "title": "应用可靠性测量" },
+        { "id": 4, "title": "数据库性能测量" },
+        { "id": 5, "title": "网络流量测量", "correct": true }
+      ]
+    },
+    {
+      "id": 328,
+      "chapter": "易错集合",
+      "title": "从网络测量系统的功能角度，网络测量系统的体系结构从底层到高层分别为数据采集层、数据管理层、（）和数据表示层",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据分析层", "correct": true },
+        { "id": 2, "title": "数据传输层" },
+        { "id": 3, "title": "数据应用层" },
+        { "id": 4, "title": "数据处理层" }
+      ]
+    },
+    {
+      "id": 329,
+      "chapter": "易错集合",
+      "title": "TCP/IP网络性能指标可以从物理层、数据链路层、（）、传输层和（）5个层次来分析",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "管理层" },
+        { "id": 2, "title": "表示层" },
+        { "id": 3, "title": "会话层" },
+        { "id": 4, "title": "网络层", "correct": true },
+        { "id": 5, "title": "应用层", "correct": true }
+      ]
+    },
+    {
+      "id": 330,
+      "chapter": "易错集合",
+      "title": "基础数据分析包括三方面功能：基本统计功能、（）和数据关联分析",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "事件分析" },
+        { "id": 2, "title": "数据库分析" },
+        { "id": 3, "title": "性能趋势预测", "correct": true },
+        { "id": 4, "title": "可靠性趋势预测" }
+      ]
+    },
+    {
+      "id": 331,
+      "chapter": "易错集合",
+      "title": "在Windows资源监视器中，可以查看到的选项卡包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "概述", "correct": true },
+        { "id": 2, "title": "服务" },
+        { "id": 3, "title": "CPU", "correct": true },
+        { "id": 4, "title": "网络", "correct": true },
+        { "id": 5, "title": "详细信息" }
+      ]
+    },
+    {
+      "id": 332,
+      "chapter": "易错集合",
+      "title": "数据管理功能包括基于数据管理和（）管理",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "病毒" },
+        { "id": 2, "title": "事件", "correct": true },
+        { "id": 3, "title": "用户" },
+        { "id": 4, "title": "计算机" }
+      ]
+    },
+    {
+      "id": 333,
+      "chapter": "易错集合",
+      "title": "网络故障排查流程：描述网络故障现象、收集可能的网络故障原因信息、（）、网络故障分析、事后记录和总结",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "联系网络管理员" },
+        { "id": 2, "title": "建立诊断计划", "correct": true },
+        { "id": 3, "title": "立即修改当前配置" },
+        { "id": 4, "title": "查看日志" }
+      ]
+    },
+    {
+      "id": 334,
+      "chapter": "易错集合",
+      "title": "数据帧封装格式包括：HDLC、（）和、（）等",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "RIP" },
+        { "id": 2, "title": "ARP" },
+        { "id": 3, "title": "ICMP" },
+        { "id": 4, "title": "PPP", "correct": true },
+        { "id": 5, "title": "Frame-Realy", "correct": true }
+      ]
+    },
+    {
+      "id": 335,
+      "chapter": "易错集合",
+      "title": "网络链路的问题通常是由网卡、跳线、信息插座、交换机、UPS等设备和服务配置引起的",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 336,
+      "chapter": "易错集合",
+      "title": "网络故障大致可以分为4类，即链路故障、协议故障、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "配置故障", "correct": true },
+        { "id": 2, "title": "应用故障" },
+        { "id": 3, "title": "服务故障", "correct": true },
+        { "id": 4, "title": "操作故障" },
+        { "id": 5, "title": "人为故障" }
+      ]
+    },
+    {
+      "id": 337,
+      "chapter": "易错集合",
+      "title": "数据链路层的故障主要表现在通信双方的（）封装协议是否一致",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "四层" },
+        { "id": 2, "title": "三层" },
+        { "id": 3, "title": "二层", "correct": true },
+        { "id": 4, "title": "一层" }
+      ]
+    },
+    {
+      "id": 338,
+      "chapter": "易错集合",
+      "title": "NetFlow通过将数据包中的多个关键字段相结合来定义一个“流”，最初定义了（）个关键字段",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "五" },
+        { "id": 2, "title": "六" },
+        { "id": 3, "title": "七", "correct": true },
+        { "id": 4, "title": "四" }
+      ]
+    },
+    {
+      "id": 339,
+      "chapter": "易错集合",
+      "title": "可以基于（）等网络设备来实现基于流量的计费",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "中继器" },
+        { "id": 2, "title": "路由器", "correct": true },
+        { "id": 3, "title": "防火墙", "correct": true },
+        { "id": 4, "title": "集线器" },
+        { "id": 5, "title": "代理服务器", "correct": true }
+      ]
+    },
+    {
+      "id": 340,
+      "chapter": "易错集合",
+      "title": "当前许多计费系统采用三层体系结构，分别对应表示层、（）和（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "会话层" },
+        { "id": 2, "title": "管理层" },
+        { "id": 3, "title": "消费层" },
+        { "id": 4, "title": "应用层", "correct": true },
+        { "id": 5, "title": "数据层", "correct": true }
+      ]
+    },
+    {
+      "id": 341,
+      "chapter": "易错集合",
+      "title": "操作系统、应用程序的采购和运维费用属于软件类服务",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 342,
+      "chapter": "易错集合",
+      "title": "计费管理的组件包括：计费数据的采集和存储；数据的分析和统计；与用户、管理员之间的人机交互界面",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 343,
+      "chapter": "易错集合",
+      "title": "当前，在机场候机厅提供的免费无线Wi-Fi服务，属于基于使用（）的计费方式",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "时间", "correct": true },
+        { "id": 2, "title": "流量" },
+        { "id": 3, "title": "服务" },
+        { "id": 4, "title": "应用" }
+      ]
+    },
+    {
+      "id": 344,
+      "chapter": "易错集合",
+      "title": "基于访问日志的数据采集方式既可以对IP地址进行流量计费，又可以对用户流量计费",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 345,
+      "chapter": "易错集合",
+      "title": "数据链路层负责在网络层与传输层之间进行信息传输，数据帧的封装、解封装、差错校验等",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 347,
+      "chapter": "易错集合",
+      "title": "在Windows操作系统的命令提示符窗口中输入“ping127.0.0.1”，能够判断本机的TCP/IP协议设置是否正常",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 348,
+      "chapter": "易错集合",
+      "title": "链路带宽是指源节点到目的节点之间性能最低的链路所能达到的最大传输速度，也就是该传输路径所能提供给一个业务流的最大传输速度",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 349,
+      "chapter": "易错集合",
+      "title": "状态检测防火墙，又称自动包过滤防火墙",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 350,
+      "chapter": "易错集合",
+      "title": "IPsec是一个建立在网络层之上的企业私有协议",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 351,
+      "chapter": "易错集合",
+      "title": "散列值只被用于提供数据完整性",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    }
+  ]
+}

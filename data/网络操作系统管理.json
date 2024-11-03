@@ -1,0 +1,5562 @@
+{
+  "subject": "网络操作系统管理",
+  "category": "国家开放大学",
+  "data": [
+    {
+      "id": 1,
+      "chapter": "第一章",
+      "title": "Windows Server 2022 的主要版本包含专业版和企业版",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 2,
+      "chapter": "第一章",
+      "title": "一个域中可以包含工作组",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 3,
+      "chapter": "第一章",
+      "title": "一个工作组中可以包含域",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 4,
+      "chapter": "第一章",
+      "title": "工作组网络也被称为对等式网络",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 5,
+      "chapter": "第一章",
+      "title": "域内的所有计算机不会共享一个集中式的数据库",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 6,
+      "chapter": "第一章",
+      "title": "在工作组中，存储活动目录数据库的计算机被称为域控制器",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 7,
+      "chapter": "第一章",
+      "title": "在工作组中，每一台计算机都有一个本地的安全帐户管理器",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 8,
+      "chapter": "第一章",
+      "title": "一台计算机不能同时属于多个域",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 9,
+      "chapter": "第一章",
+      "title": "工作组属于分散式的管理模式，每台计算机的管理员分别管理各自的计算机",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 10,
+      "chapter": "第一章",
+      "title": "Server Core 针对私有云和数据中心的托管环境进行了优化，并包含了完整的本地图形管理界面",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 11,
+      "chapter": "第一章",
+      "title": "Nano Server 是一个新的安装选项，Windows Server 2012 和早期版本没有这个安装选项",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 12,
+      "chapter": "第一章",
+      "title": "服务器管理器是用于管理 Windows Server 服务器的命令行管理工具",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 13,
+      "chapter": "第一章",
+      "title": "Windows Server 2022 操作系统，默认启用了“远程桌面”功能",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 14,
+      "chapter": "第一章",
+      "title": "使用密钥管理服务（Key Management Services）服务器能够统一激活网络环境中的 Windows 操作系统，而不是在每台计算机上逐一完成系统的激活",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 15,
+      "chapter": "第一章",
+      "title": "对于在硬件兼容性列表中列出的即插即用的硬件设备，Windows Server 能够自动检测并进行安装",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 16,
+      "chapter": "第一章",
+      "title": "（），不仅具有客户端操作系统的全部功能而且拥有强大的网络通信、网络管理等功能",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "打印机" },
+        { "id": 2, "title": "服务器操作系统", "correct": true },
+        { "id": 3, "title": "路由器" },
+        { "id": 4, "title": "域" }
+      ]
+    },
+    {
+      "id": 17,
+      "chapter": "第一章",
+      "title": "Windows Server 2022 操作系统的版本主要包括：Essentials、（）和 Datacenter",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "精简版" },
+        { "id": 2, "title": "Enterprise" },
+        { "id": 3, "title": "Standard", "correct": true },
+        { "id": 4, "title": "Student" }
+      ]
+    },
+    {
+      "id": 18,
+      "chapter": "第一章",
+      "title": "Windows 网络的管理架构主要有两种：工作组和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "域", "correct": true },
+        { "id": 2, "title": "对等网" },
+        { "id": 3, "title": "文件夹" },
+        { "id": 4, "title": "远程访问服务器" }
+      ]
+    },
+    {
+      "id": 19,
+      "chapter": "第一章",
+      "title": "域内的所有计算机共享一个（）式的数据库（即，活动目录数据库），其中包含整个域内所有用户帐户的相关数据",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "分散" },
+        { "id": 2, "title": "集中", "correct": true },
+        { "id": 3, "title": "连续" },
+        { "id": 4, "title": "分布" }
+      ]
+    },
+    {
+      "id": 20,
+      "chapter": "第一章",
+      "title": "Windows Server 2022 支持的文件系统，不包含（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "VMFS", "correct": true },
+        { "id": 2, "title": "exFAT" },
+        { "id": 3, "title": "NTFS" },
+        { "id": 4, "title": "ReFS" }
+      ]
+    },
+    {
+      "id": 21,
+      "chapter": "第一章",
+      "title": "Nano Server 适合承载（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DNS 服务", "correct": true },
+        { "id": 2, "title": "视频服务" },
+        { "id": 3, "title": "语音服务" },
+        { "id": 4, "title": "AD 服务" }
+      ]
+    },
+    {
+      "id": 22,
+      "chapter": "第一章",
+      "title": "安装 Windows Server 2022 的计算机，（）的最低配置为 1.4GHz",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "网卡" },
+        { "id": 2, "title": "内存" },
+        { "id": 3, "title": "CPU", "correct": true },
+        { "id": 4, "title": "硬盘" }
+      ]
+    },
+    {
+      "id": 23,
+      "chapter": "第一章",
+      "title": "只能将 Windows Server 2022 安装到()格式的磁盘内，其他格式的磁盘可用于存储数据",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "VMFS" },
+        { "id": 2, "title": "UFS" },
+        { "id": 3, "title": "FAT32" },
+        { "id": 4, "title": "NTFS", "correct": true }
+      ]
+    },
+    {
+      "id": 24,
+      "chapter": "第一章",
+      "title": "使用命令（），可以打开“Windows 防火墙”配置和查看窗口",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "firewall.cpl", "correct": true },
+        { "id": 2, "title": "windowsfirewall.cpl" },
+        { "id": 3, "title": "firewall.msc" },
+        { "id": 4, "title": "windowsfirewall" }
+      ]
+    },
+    {
+      "id": 25,
+      "chapter": "第一章",
+      "title": "管理员可以使用（）工具来查看、禁用和启用计算机上已经安装的硬件设备，也可以针对硬件设备执行调试、更新驱动程序、回滚驱动程序等工作",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "磁盘管理器" },
+        { "id": 2, "title": "任务管理器" },
+        { "id": 3, "title": "设备管理器", "correct": true },
+        { "id": 4, "title": "资源管理器" }
+      ]
+    },
+    {
+      "id": 26,
+      "chapter": "第一章",
+      "title": "Windows Server 2022 的 Datacenter 版本，最多可以包含（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "64 颗物理处理器", "correct": true },
+        { "id": 2, "title": "4TB 内存", "correct": true },
+        { "id": 3, "title": "64 节点的故障转移群集", "correct": true },
+        { "id": 4, "title": "640 个处理器内核", "correct": true },
+        { "id": 5, "title": "250 个用户" },
+        { "id": 6, "title": "500 台客户端设备" }
+      ]
+    },
+    {
+      "id": 27,
+      "chapter": "第一章",
+      "title": "Windows 网络的管理架构主要有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "域", "correct": true },
+        { "id": 2, "title": "对等网" },
+        { "id": 3, "title": "工作组", "correct": true },
+        { "id": 4, "title": "远程访问服务器" },
+        { "id": 5, "title": "Hyper-V" }
+      ]
+    },
+    {
+      "id": 28,
+      "chapter": "第二章",
+      "title": "Hyper-V 是微软的虚拟化平台，能够在一台物理服务器上运行多个虚拟机",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 29,
+      "chapter": "第二章",
+      "title": "Hyper-V 服务器不需要启用英特尔虚拟化技术（Intel VT）或 AMD 虚拟化技术（AMD-V）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 30,
+      "chapter": "第二章",
+      "title": "Hyper-V 服务器需要 64 位硬件架构平台，而虚拟机中所安装的操作系统可以是 32 位或 64 位",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 31,
+      "chapter": "第二章",
+      "title": "vhdx 文件最大容量可达 64 TB",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 32,
+      "chapter": "第二章",
+      "title": "Windows Server 2022 引入了.vhds 格式，这是专用于共享的虚拟硬盘",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 33,
+      "chapter": "第二章",
+      "title": "在 Hyper-V 中，“外部”类型的虚拟交换机，能够实现与其相连的虚拟机与物理机所在物理网络中其它计算机进行通信，也可以与 Internet 通信",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 34,
+      "chapter": "第二章",
+      "title": "在 Hyper-V 中，“专用”类型的虚拟交换机，只能实现与其相连的虚拟机之间进行通信",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 35,
+      "chapter": "第二章",
+      "title": "在 Hyper-V 中，“内部”类型的虚拟交换机，能够实现与其相连的虚拟机之间进行通信，以及虚拟机与所在 Hyper-V 服务器之间通信",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 36,
+      "chapter": "第二章",
+      "title": "第二代虚拟机使用不同的硬件型号，并全面支持第一代虚拟机的所有旧设备",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 37,
+      "chapter": "第二章",
+      "title": "在 Windows Server 2022 中，第二代虚拟机可以在运行状态下，实时更改虚拟机的配置内存",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 38,
+      "chapter": "第二章",
+      "title": "创建虚拟机后，可以其从第一代迁移到第二代，但无法将其从第二代迁移到第一代",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 39,
+      "chapter": "第二章",
+      "title": "从 Windows Server 2012 开始，无需共享存储和故障转移群集就可以执行虚拟机的实时迁移",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 40,
+      "chapter": "第二章",
+      "title": "使用存储迁移，可以将虚拟机的虚拟磁盘和其他数据文件（例如配置文件）从一个物理存储移动到另一个物理存储，迁移过程中并不影响虚拟机的运行状态",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 41,
+      "chapter": "第二章",
+      "title": "使用直通磁盘的虚拟机支持存储迁移",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 42,
+      "chapter": "第二章",
+      "title": "在 Windows Server 2022 中可以使用命令（），来验证物理服务器是否满足安装 Hyper-V 服务的要求",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ncpa.cpl" },
+        { "id": 2, "title": "systeminfo.exe", "correct": true },
+        { "id": 3, "title": "hyperinfo.exe" },
+        { "id": 4, "title": "info32.exe" }
+      ]
+    },
+    {
+      "id": 43,
+      "chapter": "第二章",
+      "title": "在“服务器管理器”中执行最佳实践分析器的扫描后，最佳实践分析器根据最佳实践规则，评估产生合规性结果，包括三种安全级别：错误、（ ）和警告",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "故障" },
+        { "id": 2, "title": "恢复" },
+        { "id": 3, "title": "信息", "correct": true },
+        { "id": 4, "title": "正常" }
+      ]
+    },
+    {
+      "id": 44,
+      "chapter": "第二章",
+      "title": "在 Windows Server 2022 的 Hyper-V 中，可以创建（）、vhdx 和 vhds 格式的虚拟硬盘文件",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "vhd", "correct": true },
+        { "id": 2, "title": "vmdk" },
+        { "id": 3, "title": "vmcx" },
+        { "id": 4, "title": "vhdk" }
+      ]
+    },
+    {
+      "id": 45,
+      "chapter": "第二章",
+      "title": "在 Windows Server 2022 的 Hyper-V 中，虚拟硬盘类型包括（）、动态扩展和差异",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "静态扩展" },
+        { "id": 2, "title": "固定大小", "correct": true },
+        { "id": 3, "title": "增量" },
+        { "id": 4, "title": "动态压缩" }
+      ]
+    },
+    {
+      "id": 46,
+      "chapter": "第二章",
+      "title": "（）类型的磁盘可更好地利用物理存储空间，建议用于运行不含有密集使用磁盘的应用程序的服务器",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "静态扩展" },
+        { "id": 2, "title": "固定大小" },
+        { "id": 3, "title": "动态扩展", "correct": true },
+        { "id": 4, "title": "动态压缩" }
+      ]
+    },
+    {
+      "id": 47,
+      "chapter": "第二章",
+      "title": "可以在虚拟机的网卡上配置一些高级功能，包括：（）、启用 VLAN 标识、MAC 地址欺骗等",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "杀毒" },
+        { "id": 2, "title": "带宽管理", "correct": true },
+        { "id": 3, "title": "去重" },
+        { "id": 4, "title": "入侵检测" }
+      ]
+    },
+    {
+      "id": 48,
+      "chapter": "第二章",
+      "title": "虚拟机工具栏中的按钮可以调节虚拟机的状态,虚拟机的状态包括：（）、开始、运行、暂停和保存",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "加载" },
+        { "id": 2, "title": "关闭", "correct": true },
+        { "id": 3, "title": "卸载" },
+        { "id": 4, "title": "休眠" }
+      ]
+    },
+    {
+      "id": 49,
+      "chapter": "第二章",
+      "title": "每个虚拟机最多可以有（）个检查点",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "25" },
+        { "id": 2, "title": "50", "correct": true },
+        { "id": 3, "title": "32" },
+        { "id": 4, "title": "64" }
+      ]
+    },
+    {
+      "id": 50,
+      "chapter": "第二章",
+      "title": "（）可以实现虚拟机数据文件的异步备份。借助这项技术，可以让一个虚拟机在不同的 Hyper-V 服务器上存在两个实例，一个实例作为主虚拟机（接受用户访问），另一个实例作为副本虚拟机（备用）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Hyper-V 复制", "correct": true },
+        { "id": 2, "title": "虚拟机迁移" },
+        { "id": 3, "title": "移动虚拟机存储" },
+        { "id": 4, "title": "虚拟机存储复制" }
+      ]
+    },
+    {
+      "id": 51,
+      "chapter": "第二章",
+      "title": "要启用嵌套虚拟化的虚拟机，需要满足哪些要求（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "至少 4GB 的配置内存", "correct": true },
+        { "id": 2, "title": "启用 MAC 地址欺骗", "correct": true },
+        { "id": 3, "title": "至少 2 颗 vCPU" },
+        { "id": 4, "title": "虚拟机中安装的操作系统为 Windows Server 2022 或 Windows 10", "correct": true },
+        { "id": 5, "title": "至少 40GB 硬盘空间" }
+      ]
+    },
+    {
+      "id": 52,
+      "chapter": "第二章",
+      "title": "Hyper-V 提供了三种类型的虚拟交换机：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "专用", "correct": true },
+        { "id": 2, "title": "内部", "correct": true },
+        { "id": 3, "title": "VPN" },
+        { "id": 4, "title": "环形" },
+        { "id": 5, "title": "外部", "correct": true }
+      ]
+    },
+    {
+      "id": 53,
+      "chapter": "第二章",
+      "title": "Hyper-V 提供了三种类型的虚拟机导入选项：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "就地注册虚拟机", "correct": true },
+        { "id": 2, "title": "还原虚拟机", "correct": true },
+        { "id": 3, "title": "恢复虚拟机" },
+        { "id": 4, "title": "部署虚拟机" },
+        { "id": 5, "title": "复制虚拟机", "correct": true }
+      ]
+    },
+    {
+      "id": 54,
+      "chapter": "第二章",
+      "title": "在 Windows Server 2016 的 Hyper-V 中，包括三种虚拟硬盘类型：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "动态压缩" },
+        { "id": 2, "title": "动态扩展", "correct": true },
+        { "id": 3, "title": "差异", "correct": true },
+        { "id": 4, "title": "固定大小", "correct": true },
+        { "id": 5, "title": "增量" }
+      ]
+    },
+    {
+      "id": 55,
+      "chapter": "第三章",
+      "title": "一个用户帐户只能被一个人使用，无法被多人同时使用",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 56,
+      "chapter": "第三章",
+      "title": "一个用户可以同时拥有多个用户帐户",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 57,
+      "chapter": "第三章",
+      "title": "可以多个人同时使用同一个用户帐户工作",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 58,
+      "chapter": "第三章",
+      "title": "内置的用户帐户可以被删除",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 59,
+      "chapter": "第三章",
+      "title": "如果一个用户暂时不工作，那么为了安全起见，管理员应该将他的用户帐户删除",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 60,
+      "chapter": "第三章",
+      "title": "在工作组中，每台计算机分别是一个独立的安全范围，拥有自己的本地用户帐户信息",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 61,
+      "chapter": "第三章",
+      "title": "Guest（来宾帐户）是供用户临时访问本台计算机所使用的用户帐户",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 62,
+      "chapter": "第三章",
+      "title": "每一个用户帐户都拥有一个唯一的安全标识符（Security Identifier，简称 SID），是在创建用户帐户时由系统管理员手动分配的",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 63,
+      "chapter": "第三章",
+      "title": "使用组帐户的主要目的是简化为用户分配权限和权利的管理工作",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 64,
+      "chapter": "第三章",
+      "title": "如果将某个用户帐户加入到某个组中，则该用户帐户不会拥有与这个组相同的权限和权利",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 65,
+      "chapter": "第三章",
+      "title": "Guests 是系统内置的本地组帐户",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 66,
+      "chapter": "第三章",
+      "title": "当从组中删除一个用户帐户后，该用户帐户的组成员关系不会立刻发生改变，只有在用户帐户下一次成功登录后这种组成员关系的变动才会生效",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 67,
+      "chapter": "第三章",
+      "title": "用户在网络中工作时所使用的身份标志称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "用户全名" },
+        { "id": 2, "title": "用户帐户", "correct": true },
+        { "id": 3, "title": "身份证" },
+        { "id": 4, "title": "用户信息" }
+      ]
+    },
+    {
+      "id": 68,
+      "chapter": "第三章",
+      "title": "在工作组中，每台计算机把自己的资源信息、用户帐户信息和安全信息存放在本地的（）中",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "活动目录数据库" },
+        { "id": 2, "title": "防火墙" },
+        { "id": 3, "title": "文件夹" },
+        { "id": 4, "title": "SAM 数据库", "correct": true }
+      ]
+    },
+    {
+      "id": 69,
+      "chapter": "第三章",
+      "title": "在工作组中，每台 Windows 计算机的（）帐户能够在本地计算机的 SAM 数据库中创建并管理本地用户帐户",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Administrator", "correct": true },
+        { "id": 2, "title": "Guest" },
+        { "id": 3, "title": "Everyone" },
+        { "id": 4, "title": "Authenticated users" }
+      ]
+    },
+    {
+      "id": 70,
+      "chapter": "第三章",
+      "title": "管理员无法更改（）组的成员关系，但是可以为其分配权限和权利",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Performance Monitor Users" },
+        { "id": 2, "title": "Everyone", "correct": true },
+        { "id": 3, "title": "Users" },
+        { "id": 4, "title": "Administrators" }
+      ]
+    },
+    {
+      "id": 71,
+      "chapter": "第三章",
+      "title": "内置的本地用户帐户主要有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "Administrator", "correct": true },
+        { "id": 2, "title": "Guest", "correct": true },
+        { "id": 3, "title": "Everyone" },
+        { "id": 4, "title": "Authenticated users" },
+        { "id": 5, "title": "Users" },
+        { "id": 6, "title": "Backup Operators" }
+      ]
+    },
+    {
+      "id": 72,
+      "chapter": "第三章",
+      "title": "以下关于组帐户描述正确的有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "一个组中可以根据需要包含多个用户帐户", "correct": true },
+        {
+          "id": 2,
+          "title": "如果给一个组分配了某项权限或权利，那么该组中的所有成员都将继承这些权限或权利",
+          "correct": true
+        },
+        { "id": 3, "title": "本地管理员组 administrators 可以被禁用" },
+        { "id": 4, "title": "新建组中只能包含 100 个用户帐户" }
+      ]
+    },
+    {
+      "id": 73,
+      "chapter": "第三章",
+      "title": "以下说法中正确的是（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "一个用户帐户只能被一个人使用，无法被多人同时使用" },
+        { "id": 2, "title": "一个用户帐户可以同时被多个用户使用", "correct": true },
+        { "id": 3, "title": " 一个用户只能拥有一个用户帐户" },
+        { "id": 4, "title": "一个用户可以同时拥有多个用户帐户", "correct": true }
+      ]
+    },
+    {
+      "id": 74,
+      "chapter": "第三章",
+      "title": "在活动目录中，存储着数量众多的资源、规则和策略，它们被称作“活动目录对象”，简称“对象”（Object）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 75,
+      "chapter": "第三章",
+      "title": "林是一个或多个域树的集合，林内的所有域共享同一个活动目录架构",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 76,
+      "chapter": "第三章",
+      "title": "在一个域中，活动目录数据库必须存储在域中特定的计算机上，这些计算机称为“域控制器”",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 77,
+      "chapter": "第三章",
+      "title": "活动目录对象所具有的各种各样的特征，称为“属性”（简称 AD）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 78,
+      "chapter": "第三章",
+      "title": "在一个域中，活动目录数据库可以存储在 Windows 客户端计算机上",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 79,
+      "chapter": "第三章",
+      "title": "一个域中不可以有多台域控制器",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 80,
+      "chapter": "第三章",
+      "title": "活动目录域服务并不依赖于 DNS 服务",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 81,
+      "chapter": "第三章",
+      "title": "域控制器需要使用 NTFS 分区存储 SYSVOL 文件夹",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 82,
+      "chapter": "第三章",
+      "title": "默认情况下，RODC 不会缓存任何用户密码",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 83,
+      "chapter": "第三章",
+      "title": "创建域内第一台域控制器时，该计算机原有的本地用户帐户会被删除",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 84,
+      "chapter": "第三章",
+      "title": "域中的安全组，可以根据使用范围的不同，将其分为三种类型：本地域组（Domain Local Group）、全局组（Global Group）和通用组（Universal Group）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 85,
+      "chapter": "第三章",
+      "title": "管理员可以为通讯组分配权限和权利",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 86,
+      "chapter": "第三章",
+      "title": "域内所有的计算机共享一个集中式的安全数据库，它包含着整个域中所有的资源信息、用户帐户信息与安全信息，负责管理与维护这个安全数据库的功能组件被称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DHCP 数据库" },
+        { "id": 2, "title": "SAM 数据库" },
+        { "id": 3, "title": "活动目录", "correct": true },
+        { "id": 4, "title": "主要区域" }
+      ]
+    },
+    {
+      "id": 87,
+      "chapter": "第三章",
+      "title": "（）是一个或多个域的集合",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "组织单位" },
+        { "id": 2, "title": "对象" },
+        { "id": 3, "title": "域树", "correct": true },
+        { "id": 4, "title": "架构" }
+      ]
+    },
+    {
+      "id": 88,
+      "chapter": "第三章",
+      "title": "一个域中至少需要（）台域控制器",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "一", "correct": true },
+        { "id": 2, "title": "二" },
+        { "id": 3, "title": "三" },
+        { "id": 4, "title": "四" }
+      ]
+    },
+    {
+      "id": 89,
+      "chapter": "第三章",
+      "title": "（）包含了一份只读的活动目录数据库副本",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "RWDC" },
+        { "id": 2, "title": "RODC", "correct": true },
+        { "id": 3, "title": "RepDC" },
+        { "id": 4, "title": "Schema" }
+      ]
+    },
+    {
+      "id": 90,
+      "chapter": "第三章",
+      "title": "（），提供对 AD DS 对象及属性的定义，通常不会经常查看或变更它们",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "组织单位" },
+        { "id": 2, "title": "对象" },
+        { "id": 3, "title": "架构", "correct": true },
+        { "id": 4, "title": "域树" }
+      ]
+    },
+    {
+      "id": 91,
+      "chapter": "第三章",
+      "title": "使用（）工具，可以从 Active Directory 回收站恢复已删除的对象",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Active Directory 站点和服务" },
+        { "id": 2, "title": "Active Directory 用户和计算机" },
+        { "id": 3, "title": "Active Directory 域和信任关系" },
+        { "id": 4, "title": "Active Directory 管理中心", "correct": true }
+      ]
+    },
+    {
+      "id": 92,
+      "chapter": "第三章",
+      "title": "()文件就是活动目录数据库文件",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "edb.log" },
+        { "id": 2, "title": "sysvol" },
+        { "id": 3, "title": "ntds.dit", "correct": true },
+        { "id": 4, "title": "api" }
+      ]
+    },
+    {
+      "id": 93,
+      "chapter": "第三章",
+      "title": "（）组成员有权修改活动目录架构",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Schema Admins", "correct": true },
+        { "id": 2, "title": "Domain Guests" },
+        { "id": 3, "title": "Users" },
+        { "id": 4, "title": "Administrators" }
+      ]
+    },
+    {
+      "id": 94,
+      "chapter": "第三章",
+      "title": "在一个域中使用组帐户为用户分配资源访问权限时，建议使用（）的原则",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "P-A" },
+        { "id": 2, "title": "P-G-A" },
+        { "id": 3, "title": "G-A-DL-P" },
+        { "id": 4, "title": "A-G-DL-P", "correct": true }
+      ]
+    },
+    {
+      "id": 95,
+      "chapter": "第三章",
+      "title": "活动目录具有的特点是（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "动态的组织形式", "correct": true },
+        { "id": 2, "title": "方便的资源查找", "correct": true },
+        { "id": 3, "title": "集中管理与分散管理相结合", "correct": true },
+        { "id": 4, "title": "资源访问的分级管理", "correct": true },
+        { "id": 5, "title": "快速链路的网络" }
+      ]
+    },
+    {
+      "id": 96,
+      "chapter": "第三章",
+      "title": "Windows Server 2022 提供了活动目录数据的两种复制方式：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "通过站点复制" },
+        { "id": 2, "title": "通过网络进行活动目录的复制", "correct": true },
+        { "id": 3, "title": "通过安装媒体复制", "correct": true },
+        { "id": 4, "title": "通过系统更新服务" },
+        { "id": 5, "title": "通过工作组" }
+      ]
+    },
+    {
+      "id": 97,
+      "chapter": "第三章",
+      "title": "在 Windows Server 2022 域中，组帐户分为两种类型：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "本地组" },
+        { "id": 2, "title": "安全组", "correct": true },
+        { "id": 3, "title": "通讯组", "correct": true },
+        { "id": 4, "title": "发布组" },
+        { "id": 5, "title": "特权组" }
+      ]
+    },
+    {
+      "id": 98,
+      "chapter": "第四章",
+      "title": "GPT 格式支持大于 2TB 的磁盘",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 99,
+      "chapter": "第四章",
+      "title": "MBR 格式的磁盘，最多支持 4 个主分区",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 100,
+      "chapter": "第四章",
+      "title": "配置动态磁盘时，可以创建卷（Volume）而不是分区",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 101,
+      "chapter": "第四章",
+      "title": "跨区卷上的数据交替和均匀地分配给每个物理磁盘",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 102,
+      "chapter": "第四章",
+      "title": "带区卷不具有容错功能",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 103,
+      "chapter": "第四章",
+      "title": "镜像卷是将两个物理磁盘上的相同大小的可用磁盘空间创建成为的一个卷",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 104,
+      "chapter": "第四章",
+      "title": "条带也称为 RAID-2",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 105,
+      "chapter": "第四章",
+      "title": "RAID 5 卷将三个或三个以上物理磁盘上的相同大小的可用磁盘空间创建成为的一个卷",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 106,
+      "chapter": "第四章",
+      "title": "RAID 可以使用两种机制（磁盘镜像和奇偶校验信息）来实现存储系统的容错功能",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 107,
+      "chapter": "第四章",
+      "title": "ReFS 卷只能扩展不能收缩",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 108,
+      "chapter": "第四章",
+      "title": "DAS（Direct-Attached Storage，直接附加存储） 包括位于服务器内部物理磁盘、直接与服务器连接的外部磁盘，或者通过 USB 电缆连接到服务器的磁盘",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 109,
+      "chapter": "第四章",
+      "title": "NAS（Network-Attached Storage，网络附加存储）是通过网络访问的专用存储。与 DAS 不同，NAS 存储不直接附加到每个单独的服务器上，而是通过网络被许多服务器访问",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 110,
+      "chapter": "第四章",
+      "title": "SAN（Storage Area Network，存储区域网络），它通过高速网络将服务器连接到高性能存储系统，并提供块级访问",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 111,
+      "chapter": "第四章",
+      "title": "重复数据删除，能够将卷上存放的文件分割成大小可变（32-128 KB）的小区块（Chunk），再标示重复的区块，然后为每个区块保留三个副本",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 112,
+      "chapter": "第四章",
+      "title": "Windows 操作系统支持两种分区表格式：（）和全局唯一标识分区表",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "GPT" },
+        { "id": 2, "title": "MBR", "correct": true },
+        { "id": 3, "title": "简单卷" },
+        { "id": 4, "title": "镜像卷" }
+      ]
+    },
+    {
+      "id": 113,
+      "chapter": "第四章",
+      "title": "Windows 操作系统可以管理多种类型的磁盘，最常见的磁盘类型有 EIDE、SATA、SCSI 和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SLC" },
+        { "id": 2, "title": "SAS", "correct": true },
+        { "id": 3, "title": "TLC" },
+        { "id": 4, "title": "Volume" }
+      ]
+    },
+    {
+      "id": 114,
+      "chapter": "第四章",
+      "title": "可以将跨区卷扩展到最多（ ）个磁盘",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "8" },
+        { "id": 2, "title": "24" },
+        { "id": 3, "title": "16" },
+        { "id": 4, "title": "32", "correct": true }
+      ]
+    },
+    {
+      "id": 115,
+      "chapter": "第四章",
+      "title": "镜像也称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "RAID 5" },
+        { "id": 2, "title": "RAID 2" },
+        { "id": 3, "title": "RAID 1", "correct": true },
+        { "id": 4, "title": "RAID 6" }
+      ]
+    },
+    {
+      "id": 116,
+      "chapter": "第四章",
+      "title": "FAT 和（）格式的简单卷无法被扩展",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "EXT3" },
+        { "id": 2, "title": "NTFS" },
+        { "id": 3, "title": "FAT32", "correct": true },
+        { "id": 4, "title": "RsFS" }
+      ]
+    },
+    {
+      "id": 117,
+      "chapter": "第四章",
+      "title": "命令（），用于列出所有可访问的卷",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Format-Volume" },
+        { "id": 2, "title": "Get-Disk" },
+        { "id": 3, "title": "Clear-Disk" },
+        { "id": 4, "title": "Get-Volume", "correct": true }
+      ]
+    },
+    {
+      "id": 118,
+      "chapter": "第四章",
+      "title": "NAS 设备提供对存储的（）级访问，这意味着存储中的数据只能作为文件和文件夹访问",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "文件", "correct": true },
+        { "id": 2, "title": "块" },
+        { "id": 3, "title": "磁盘" },
+        { "id": 4, "title": "硬盘" }
+      ]
+    },
+    {
+      "id": 119,
+      "chapter": "第四章",
+      "title": "SAN 使用专用协议，例如，（）或 iSCSI（Internet SCSI）将数据块直接写入磁盘",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "通用 Internet 文件系统" },
+        { "id": 2, "title": "网络文件系统" },
+        { "id": 3, "title": "服务器消息块" },
+        { "id": 4, "title": "以太网光纤通道", "correct": true }
+      ]
+    },
+    {
+      "id": 120,
+      "chapter": "第四章",
+      "title": "重复数据删除的作业类型包括（）、垃圾回收、清理和未优化",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "优化", "correct": true },
+        { "id": 2, "title": "加密" },
+        { "id": 3, "title": "传输" },
+        { "id": 4, "title": "解密" }
+      ]
+    },
+    {
+      "id": 121,
+      "chapter": "第四章",
+      "title": "在 Windows Server 2022 中配置磁盘时，可以在（）文件系统之间进行选择",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "VMFS" },
+        { "id": 2, "title": "NTFS", "correct": true },
+        { "id": 3, "title": "ReFS", "correct": true },
+        { "id": 4, "title": "FAT", "correct": true },
+        { "id": 5, "title": "NFS" }
+      ]
+    },
+    {
+      "id": 122,
+      "chapter": "第四章",
+      "title": "SSD 三种常见的闪存存储单元为（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "SLC", "correct": true },
+        { "id": 2, "title": "M.2" },
+        { "id": 3, "title": "TLC", "correct": true },
+        { "id": 4, "title": "MLC", "correct": true },
+        { "id": 5, "title": "PLC" }
+      ]
+    },
+    {
+      "id": 123,
+      "chapter": "第四章",
+      "title": "（）可以容忍一个及以上的磁盘故障",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "RAID 0" },
+        { "id": 2, "title": "RAID 10", "correct": true },
+        { "id": 3, "title": "RAID 6", "correct": true },
+        { "id": 4, "title": "RAID 5", "correct": true }
+      ]
+    },
+    {
+      "id": 124,
+      "chapter": "第四章",
+      "title": "可以使用 Windows PowerShell 命令行管理磁盘分区和卷，常见的磁盘管理命令包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "Get-Disk", "correct": true },
+        { "id": 2, "title": "Initialize-Disk", "correct": true },
+        { "id": 3, "title": "Clear-Volume" },
+        { "id": 4, "title": "Get-Volume", "correct": true },
+        { "id": 5, "title": "Format-Volume", "correct": true }
+      ]
+    },
+    {
+      "id": 125,
+      "chapter": "第四章",
+      "title": "FAT32 文件系统比 NTFS 文件系统更安全",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 126,
+      "chapter": "第四章",
+      "title": "在 FAT 和 FAT32 分区中，可以对文件和文件夹设置 NTFS 权限",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 127,
+      "chapter": "第四章",
+      "title": "如果为某个用户分配对某个文件夹的 NTFS 权限，同时又为该用户分配对这个文件夹中某个文件的另一种 NTFS 权限，则文件权限优先于文件夹权限",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 128,
+      "chapter": "第四章",
+      "title": "对某个文件夹设置权限后，这个权限默认会被此文件夹中的子文件夹和子文件继承",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 129,
+      "chapter": "第四章",
+      "title": "在 FAT 和 FAT32 分区中，只有管理员才能对文件或文件夹设置本地访问权限",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 130,
+      "chapter": "第四章",
+      "title": "如果希望本地文件资源能够被其它计算机上的用户通过网络来访问，则必须对这些资源实施共享",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 131,
+      "chapter": "第四章",
+      "title": "当用户通过网络访问 NTFS 资源时，会同时受到 NTFS 权限和共享文件夹权限的限制，此时用户的最终访问权限是二者的累加",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 132,
+      "chapter": "第四章",
+      "title": "在一台计算机上，任何用户帐户都有权利创建共享文件夹",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 133,
+      "chapter": "第四章",
+      "title": "共享文件夹权限只对用户通过网络访问这个文件夹时起到约束作用，如果用户在这个文件夹所在的计算机上以交互式方式访问它时，则不会受到共享文件夹权限的限制",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 134,
+      "chapter": "第四章",
+      "title": "基于访问的枚举提供了更好的用户体验，它为用户提供了一个比较简单的共享文件夹视图，当用户访问共享文件夹时，只会看到他们有权访问的文件和文件夹",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 135,
+      "chapter": "第四章",
+      "title": "“UNC（Universal Naming Convention）路径”的格式为“//IP 地址（或计算机名）/文件夹共享名”",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 136,
+      "chapter": "第四章",
+      "title": "在 NTFS 分区（卷）中，任何文件和文件夹均具有权限，称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "FAT32 权限" },
+        { "id": 2, "title": "FAT 权限" },
+        { "id": 3, "title": "打印权限" },
+        { "id": 4, "title": "NTFS 权限", "correct": true }
+      ]
+    },
+    {
+      "id": 137,
+      "chapter": "第四章",
+      "title": "NTFS权限通常可分为：（）和特殊权限",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "打印权限" },
+        { "id": 2, "title": "管理员权限" },
+        { "id": 3, "title": "访问权限" },
+        { "id": 4, "title": "标准权限", "correct": true }
+      ]
+    },
+    {
+      "id": 138,
+      "chapter": "第四章",
+      "title": "NTFS 文件权限主要包括（）、写入、读取和执行、修改",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "替代" },
+        { "id": 2, "title": "删除" },
+        { "id": 3, "title": "读取", "correct": true },
+        { "id": 4, "title": "列出文件夹目录" }
+      ]
+    },
+    {
+      "id": 139,
+      "chapter": "第四章",
+      "title": "管理员在对文件夹实施共享之后，必须设置（）权限，这样才能保证访问共享文件夹的安全",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "NTFS" },
+        { "id": 2, "title": "共享", "correct": true },
+        { "id": 3, "title": "打印" },
+        { "id": 4, "title": "磁盘配额" }
+      ]
+    },
+    {
+      "id": 140,
+      "chapter": "第四章",
+      "title": "共享权限包括（）、读取和完全控制",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "替代" },
+        { "id": 2, "title": "删除" },
+        { "id": 3, "title": "更改", "correct": true },
+        { "id": 4, "title": "列出文件夹目录" }
+      ]
+    },
+    {
+      "id": 141,
+      "chapter": "第四章",
+      "title": "创建隐藏共享文件夹时，需要在文件夹共享名的后面附加一个（）符号",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "&" },
+        { "id": 2, "title": "#" },
+        { "id": 3, "title": "$", "correct": true },
+        { "id": 4, "title": "@" }
+      ]
+    },
+    {
+      "id": 142,
+      "chapter": "第四章",
+      "title": "以下关于 NTFS 权限作用原则的描述中，正确的是（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "具有累加性", "correct": true },
+        { "id": 2, "title": "拒绝权限优先于其他权限", "correct": true },
+        { "id": 3, "title": "文件权限优先于文件夹权限", "correct": true },
+        { "id": 4, "title": "具有继承性", "correct": true },
+        { "id": 5, "title": "文件夹权限优先于文件权限" },
+        { "id": 6, "title": "不具有累加性" }
+      ]
+    },
+    {
+      "id": 143,
+      "chapter": "第四章",
+      "title": "NTFS 文件夹权限主要包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "读取", "correct": true },
+        { "id": 2, "title": "写入", "correct": true },
+        { "id": 3, "title": "读取和执行", "correct": true },
+        { "id": 4, "title": "完全控制", "correct": true },
+        { "id": 5, "title": "列出文件夹目录", "correct": true },
+        { "id": 6, "title": "修改", "correct": true },
+        { "id": 7, "title": "删除" },
+        { "id": 8, "title": "替代" }
+      ]
+    },
+    {
+      "id": 144,
+      "chapter": "第五章",
+      "title": "故障转移群集无法实现单节点工作",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 145,
+      "chapter": "第五章",
+      "title": "部署五节点的故障转移群集后，其中四节点故障，群集依然可以正常使用",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 146,
+      "chapter": "第五章",
+      "title": "故障转移群集中的每个节点必须独立存储设备",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 147,
+      "chapter": "第五章",
+      "title": "故障转移群集节点故障可以实现自动切换到其他节点，也可以手动切换到其他节点",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 148,
+      "chapter": "第五章",
+      "title": "当故障转移群集的节点数为奇数时，建议仲裁模式配置为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "多数节点", "correct": true },
+        { "id": 2, "title": "节点和磁盘多数" },
+        { "id": 3, "title": "仅磁盘" },
+        { "id": 4, "title": "任意模式均可以" }
+      ]
+    },
+    {
+      "id": 149,
+      "chapter": "第五章",
+      "title": "当故障转移群集的节点数为偶数时，建议仲裁模式配置为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "多数节点" },
+        { "id": 2, "title": "节点和磁盘多数", "correct": true },
+        { "id": 3, "title": "仅磁盘" },
+        { "id": 4, "title": "任意模式均可以" }
+      ]
+    },
+    {
+      "id": 150,
+      "chapter": "第五章",
+      "title": "在创建故障转移群集之前，应该进行验证测试，哪项测试用于记录服务器硬件每个重要组成的配置信息",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "清单测试", "correct": true },
+        { "id": 2, "title": "网络测试" },
+        { "id": 3, "title": "存储设备测试" },
+        { "id": 4, "title": "系统配置测试" }
+      ]
+    },
+    {
+      "id": 151,
+      "chapter": "第五章",
+      "title": "在创建故障转移群集之前，应该进行验证测试，哪项测试用于实现群集的网络拓扑、IP 地址和 Windows防火墙的配置情况",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "清单测试" },
+        { "id": 2, "title": "网络测试", "correct": true },
+        { "id": 3, "title": "存储设备测试" },
+        { "id": 4, "title": "系统配置测试" }
+      ]
+    },
+    {
+      "id": 152,
+      "chapter": "第五章",
+      "title": "在创建故障转移群集之前，应该进行验证测试，哪项测试出测试的服务器上可用的所有磁盘",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "清单测试" },
+        { "id": 2, "title": "网络测试" },
+        { "id": 3, "title": "存储设备测试", "correct": true },
+        { "id": 4, "title": "系统配置测试" }
+      ]
+    },
+    {
+      "id": 153,
+      "chapter": "第五章",
+      "title": "故障转移群集中最多可以包含多少个节点",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "5" },
+        { "id": 2, "title": "8", "correct": true },
+        { "id": 3, "title": "32" },
+        { "id": 4, "title": "没有限制" }
+      ]
+    },
+    {
+      "id": 154,
+      "chapter": "第五章",
+      "title": "故障转移群集适配器接口状态包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "UP", "correct": true },
+        { "id": 2, "title": "Unavailable", "correct": true },
+        { "id": 3, "title": "Failed", "correct": true },
+        { "id": 4, "title": "Unreachable", "correct": true }
+      ]
+    },
+    {
+      "id": 155,
+      "chapter": "第五章",
+      "title": "安装故障转移群集中的验证配置步骤，测试工作包括如下哪几项（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "清单测试", "correct": true },
+        { "id": 2, "title": "网络测试", "correct": true },
+        { "id": 3, "title": "存储设备测试", "correct": true },
+        { "id": 4, "title": "系统配置测试", "correct": true }
+      ]
+    },
+    {
+      "id": 156,
+      "chapter": "第五章",
+      "title": "故障转移群集仲裁配置包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "多数节点", "correct": true },
+        { "id": 2, "title": "节点和磁盘多数", "correct": true },
+        { "id": 3, "title": "多数节点和文件共享", "correct": true },
+        { "id": 4, "title": "非多数，仅磁盘", "correct": true }
+      ]
+    },
+    {
+      "id": 157,
+      "chapter": "第六章",
+      "title": "IP 地址的分配方法有两种：手动分配和自动分配",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 158,
+      "chapter": "第六章",
+      "title": "在 TCP/IP 网络中，为网络设备自动分配 IP 参数的服务，称作“动态主机配置协议（Dynamic Host Configuration Protocol，简称 DHCP）”",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 159,
+      "chapter": "第六章",
+      "title": "有线 DHCP 客户端的默认租期为 3 天",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 160,
+      "chapter": "第六章",
+      "title": "在工作组的环境中，DHCP 服务器需要被授权",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 161,
+      "chapter": "第六章",
+      "title": "DHCP 客户机自动获取的 IP 地址租约是有使用期限的，这个使用期限由 DHCP 客户机决定",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 162,
+      "chapter": "第六章",
+      "title": "在跨路由网络中实现 DHCP 服务的方法有：在每个子网中分别配置一台 DHCP 服务器、使用 RFC 1542 路由器以及使用 DHCP 中继代理",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 163,
+      "chapter": "第六章",
+      "title": "在一台 DHCP 服务器上，针对同一个网络地址可以建立多个作用域",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 164,
+      "chapter": "第六章",
+      "title": "在安装 DHCP 服务器角色之前，应该为 DHCP 服务器本机配置静态 IP 地址",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 165,
+      "chapter": "第六章",
+      "title": "一台计算机可以既是打印服务器又是 DHCP 客户机",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 166,
+      "chapter": "第六章",
+      "title": "DHCP 数据库的备份方法有：自动备份和手动备份",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 167,
+      "chapter": "第六章",
+      "title": "作用域划分，需要两台 DHCP 服务器，每个 DHCP 服务器管理整个 IP 地址范围的部分地址，而且两个服务器都可以在相同的网络上启用",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 168,
+      "chapter": "第六章",
+      "title": "Windows Server 2022 的 DHCP 故障转移功能，可让两台 DHCP 服务器为同一个 IPv4 作用域提供 IP 参数",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 169,
+      "chapter": "第六章",
+      "title": "默认情况下，DHCP 数据库每 90 分钟会自动备份一次",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 170,
+      "chapter": "第六章",
+      "title": "在 TCP/IP 网络中，（）服务可以为网络设备自动分配 IP 参数",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DNS" },
+        { "id": 2, "title": "DHCP", "correct": true },
+        { "id": 3, "title": "RAS" },
+        { "id": 4, "title": "Router" }
+      ]
+    },
+    {
+      "id": 171,
+      "chapter": "第六章",
+      "title": "在活动目录中，只有（）组的成员才有权执行 DHCP 授权工作",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Administrators" },
+        { "id": 2, "title": "Enterprise Admins", "correct": true },
+        { "id": 3, "title": "Guests" },
+        { "id": 4, "title": "Users" }
+      ]
+    },
+    {
+      "id": 172,
+      "chapter": "第六章",
+      "title": "管理员可以随时释放已有的 IP 地址租约，操作命令为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ipconfig /renew" },
+        { "id": 2, "title": "ipconfig /reorder" },
+        { "id": 3, "title": "ipconfig /retreat" },
+        { "id": 4, "title": "ipconfig /release", "correct": true }
+      ]
+    },
+    {
+      "id": 173,
+      "chapter": "第六章",
+      "title": "被（）的DHCP服务器的IP地址会被注册到域控制器的活动目录数据库中",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "激活" },
+        { "id": 2, "title": "加载" },
+        { "id": 3, "title": "启用" },
+        { "id": 4, "title": "授权", "correct": true }
+      ]
+    },
+    {
+      "id": 174,
+      "chapter": "第六章",
+      "title": "被授权的DHCP服务器的IP地址会被注册到域控制器的（）中",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SAM 数据库" },
+        { "id": 2, "title": "活动目录数据库", "correct": true },
+        { "id": 3, "title": "WINS 数据库" },
+        { "id": 4, "title": "DNS 数据库" }
+      ]
+    },
+    {
+      "id": 175,
+      "chapter": "第六章",
+      "title": "一个作用域在必须被（）后才能正常工作",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "升级" },
+        { "id": 2, "title": "激活", "correct": true },
+        { "id": 3, "title": "授权" },
+        { "id": 4, "title": "卸载" }
+      ]
+    },
+    {
+      "id": 176,
+      "chapter": "第六章",
+      "title": "打开“网络连接”窗口的命令是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "network" },
+        { "id": 2, "title": "control" },
+        { "id": 3, "title": "ncpa.cpl", "correct": true },
+        { "id": 4, "title": "connect" }
+      ]
+    },
+    {
+      "id": 177,
+      "chapter": "第六章",
+      "title": "DHCP 客户端可以从四个级别分配到所需的 DHCP 选项，这四个级别为：（ ）、作用域级别、类级别和保留级别",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "服务器级别", "correct": true },
+        { "id": 2, "title": "计算机级别" },
+        { "id": 3, "title": "网络级别" },
+        { "id": 4, "title": "域级别" }
+      ]
+    },
+    {
+      "id": 178,
+      "chapter": "第六章",
+      "title": "如果希望一个 DHCP 客户机总是获取一个固定的 IP 地址，那么可以在 DHCP 服务器上为其设置（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "IP 地址的保留", "correct": true },
+        { "id": 2, "title": "IP 作用域" },
+        { "id": 3, "title": "DHCP 中继代理" },
+        { "id": 4, "title": "子网掩码" }
+      ]
+    },
+    {
+      "id": 179,
+      "chapter": "第六章",
+      "title": "在安装 DHCP 服务器之前，必须保证这台计算机具有静态的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "VPN 服务器的 IP 地址" },
+        { "id": 2, "title": "DNS 服务器的 IP 地址" },
+        { "id": 3, "title": "IP 地址", "correct": true },
+        { "id": 4, "title": "WINS 服务器的 IP 地址" }
+      ]
+    },
+    {
+      "id": 180,
+      "chapter": "第六章",
+      "title": "DHCP服务器新建“保留”时，必须要配置（）等信息",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "保留名称", "correct": true },
+        { "id": 2, "title": "IP 地址", "correct": true },
+        { "id": 3, "title": "MAC 地址", "correct": true },
+        { "id": 4, "title": "描述" },
+        { "id": 5, "title": "计算机名" }
+      ]
+    },
+    {
+      "id": 181,
+      "chapter": "第六章",
+      "title": "DHCP 服务器除了必须给 DHCP 客户端分配 IP 地址和子网掩码之外，还可以有选择性地分配其它参数，例如（），这些可选分配的参数称为“DHCP 选项”",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "默认网关（路由器）", "correct": true },
+        { "id": 2, "title": "完全限定域名" },
+        { "id": 3, "title": "DNS 域名", "correct": true },
+        { "id": 4, "title": "DNS 服务器地址", "correct": true },
+        { "id": 5, "title": "计算机名" }
+      ]
+    },
+    {
+      "id": 182,
+      "chapter": "第六章",
+      "title": "DHCP 是大多数现代网络中一个非常重要的组件，为使 DHCP 服务具有高可用性，可使用（）等机制来完成这个目标",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "DHCP 故障转移", "correct": true },
+        { "id": 2, "title": "设置防火墙" },
+        { "id": 3, "title": "DHCP 群集", "correct": true },
+        { "id": 4, "title": "作用域划分", "correct": true }
+      ]
+    },
+    {
+      "id": 183,
+      "chapter": "第六章",
+      "title": "在安装 DHCP 服务器之前，需要保证这台计算机具有静态的（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "子网掩码", "correct": true },
+        { "id": 2, "title": "默认网关", "correct": true },
+        { "id": 3, "title": "DNS 服务" },
+        { "id": 4, "title": "完全限定域名" },
+        { "id": 5, "title": "IP 地址", "correct": true }
+      ]
+    },
+    {
+      "id": 184,
+      "chapter": "第七章",
+      "title": "DNS 服务器应该具有静态的 IP 地址",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 185,
+      "chapter": "第七章",
+      "title": "一台计算机不可能同时承担着 DHCP 服务器角色和 DNS 服务器角色",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 186,
+      "chapter": "第七章",
+      "title": "为了保证计算机名称的唯一性，我们把计算机的主机名与其所在域的完整域名组合在一起（用“.”隔开）从而构成一个在整个域名空间中唯一确定的计算机名称，这个计算机名称被称为“完全限定域名”（Fully Qualified Domain Name，简称 FQDN）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 187,
+      "chapter": "第七章",
+      "title": "在一台 DNS 服务器上，只能建立一个 DNS 区域",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 188,
+      "chapter": "第七章",
+      "title": "管理员可以在辅助区域中直接添加、修改或删除资源记录",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 189,
+      "chapter": "第七章",
+      "title": "在未经许可的情况下，用户仍然可以建立一个主要区域的辅助区域",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 190,
+      "chapter": "第七章",
+      "title": "对于传统的 DNS 区域，可以使用“区域传送”技术来实现一个区域文件在多台 DNS 服务器上保存多个副本",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 191,
+      "chapter": "第七章",
+      "title": "主机（AAAA）记录。用来将 FQDN 对应为 IPv4 地址",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 192,
+      "chapter": "第七章",
+      "title": "在互联网上，所有维护根域“.”的 DNS 服务器被称作“根 DNS 服务器”，这些服务器是由 13 个完全限定域名（FQDN）来表示",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 193,
+      "chapter": "第七章",
+      "title": "DnsAdmins 组的成员具有管理 DNS 服务器的所有权限",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 194,
+      "chapter": "第七章",
+      "title": "DNS 区域的数据默认保存于 C:\\System32\\dns\\<区域名称>.dns 文件中",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 195,
+      "chapter": "第七章",
+      "title": "设置“条件转发器”，可以将不同域名的查询转发给不同的转发器",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 196,
+      "chapter": "第七章",
+      "title": "对完全限定域名的解析方法是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "路由服务" },
+        { "id": 2, "title": "DNS 服务", "correct": true },
+        { "id": 3, "title": "DHCP 服务" },
+        { "id": 4, "title": "远程访问服务" }
+      ]
+    },
+    {
+      "id": 197,
+      "chapter": "第七章",
+      "title": "在以下列出的名称中，（）是一台计算机的完全限定域名",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "client1" },
+        { "id": 2, "title": "news.xyz.com", "correct": true },
+        { "id": 3, "title": "abc@163.com" },
+        { "id": 4, "title": "pc1[20H]" }
+      ]
+    },
+    {
+      "id": 198,
+      "chapter": "第七章",
+      "title": "（）是域名空间树状结构的一部分，通过它来将域名空间分割为若干较小的部分以便管理",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DNS 区域", "correct": true },
+        { "id": 2, "title": "DNS 子网" },
+        { "id": 3, "title": "DNS 转发" },
+        { "id": 4, "title": "DNS 记录" }
+      ]
+    },
+    {
+      "id": 199,
+      "chapter": "第七章",
+      "title": "在 DNS 服务器上可以定义（）值来缓存查询结果",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "TCL" },
+        { "id": 2, "title": "会话连接" },
+        { "id": 3, "title": "访问时间" },
+        { "id": 4, "title": "生存周期", "correct": true }
+      ]
+    },
+    {
+      "id": 200,
+      "chapter": "第七章",
+      "title": "默认情况下，DNS 区域的 TTL 值是（），在此期间内对此区域中完全限定域名的查询请求的响应都来自这个缓存",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1 小时", "correct": true },
+        { "id": 2, "title": "10 分钟" },
+        { "id": 3, "title": "2 小时" },
+        { "id": 4, "title": "30 分钟" }
+      ]
+    },
+    {
+      "id": 201,
+      "chapter": "第七章",
+      "title": "可以使用命令（）手动清除 DNS 查询缓存",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ipconfig /flushdns", "correct": true },
+        { "id": 2, "title": "ipconfig /displaydns" },
+        { "id": 3, "title": "ipconfig /renew" },
+        { "id": 4, "title": "ipconfig /release" }
+      ]
+    },
+    {
+      "id": 202,
+      "chapter": "第七章",
+      "title": "在 DNS 服务器上，区域文件中的每一行数据被称为资源记录,简称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "RO" },
+        { "id": 2, "title": "RE" },
+        { "id": 3, "title": "RR", "correct": true },
+        { "id": 4, "title": "ER" }
+      ]
+    },
+    {
+      "id": 203,
+      "chapter": "第七章",
+      "title": "将 DNS 客户机请求的完全限定域名解析为对应的 IP 地址的过程被称为（）查询",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "递归" },
+        { "id": 2, "title": "迭代" },
+        { "id": 3, "title": "正向", "correct": true },
+        { "id": 4, "title": "反向" }
+      ]
+    },
+    {
+      "id": 204,
+      "chapter": "第七章",
+      "title": "将 DNS 客户机请求的 IP 地址解析为对应的完全限定域名的过程称为（）查询",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "递归" },
+        { "id": 2, "title": "迭代" },
+        { "id": 3, "title": "正向" },
+        { "id": 4, "title": "反向", "correct": true }
+      ]
+    },
+    {
+      "id": 205,
+      "chapter": "第七章",
+      "title": "为了容错，可以在另一台 DNS 服务器上建立某个主要区域的只读副本，这个副本被称为（）区域，里面的资源记录内容与主要区域中的资源记录内容完全相同",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "备份" },
+        { "id": 2, "title": "辅助", "correct": true },
+        { "id": 3, "title": "活动目录集成" },
+        { "id": 4, "title": "存根" }
+      ]
+    },
+    {
+      "id": 206,
+      "chapter": "第七章",
+      "title": "在Windows Server 2022的DNS服务器上，可以创建四种类型的DNS区域：（）、辅助区域、存根区域和Active Directory集成区域",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "主要区域", "correct": true },
+        { "id": 2, "title": "次要区域" },
+        { "id": 3, "title": "加密区域" },
+        { "id": 4, "title": "缓存区域" }
+      ]
+    },
+    {
+      "id": 207,
+      "chapter": "第七章",
+      "title": "常用的DNS资源记录包括：（）、SOA记录、NS记录、PTR记录和CNAME记录等",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SVR记录" },
+        { "id": 2, "title": "A记录", "correct": true },
+        { "id": 3, "title": "X记录" },
+        { "id": 4, "title": "XM记录" }
+      ]
+    },
+    {
+      "id": 208,
+      "chapter": "第七章",
+      "title": "从查询的流程看，DNS 服务器支持的查询类型是（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "迭代", "correct": true },
+        { "id": 2, "title": "嵌套" },
+        { "id": 3, "title": "循环" },
+        { "id": 4, "title": "递归", "correct": true }
+      ]
+    },
+    {
+      "id": 209,
+      "chapter": "第七章",
+      "title": "DNS 客户端在查找某个完全限定域名（FQDN）的 IP 地址时的解析方法有：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "本地缓存", "correct": true },
+        { "id": 2, "title": "路由器服务" },
+        { "id": 3, "title": "DNS服务", "correct": true },
+        { "id": 4, "title": "RAS服务" },
+        { "id": 5, "title": "HOSTS文件", "correct": true }
+      ]
+    },
+    {
+      "id": 210,
+      "chapter": "第七章",
+      "title": "一旦在 DNS 服务器上创建了一个主要区域，就可以直接对这个区域及其内容进行（）的操作",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "只读" },
+        { "id": 2, "title": "只写" },
+        { "id": 3, "title": "添加", "correct": true },
+        { "id": 4, "title": "修改", "correct": true },
+        { "id": 5, "title": "删除", "correct": true }
+      ]
+    },
+    {
+      "id": 211,
+      "chapter": "第八章",
+      "title": "WWW 主要通过超文本向用户提供网页信息",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 212,
+      "chapter": "第八章",
+      "title": "完成 IIS 安装后，可以使用一个默认网站，该网站没有任何内容，无法浏览",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 213,
+      "chapter": "第八章",
+      "title": "IIS 默认站点中的默认文档名称包括：Default.html",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 214,
+      "chapter": "第八章",
+      "title": "IIS 默认站点中的默认文档名称包括：Default.htm",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 215,
+      "chapter": "第八章",
+      "title": "IIS 默认站点中的默认文档名称包括：Default.asp",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 216,
+      "chapter": "第八章",
+      "title": "IIS 默认站点中的默认文档名称包括：iisstart.html",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 217,
+      "chapter": "第八章",
+      "title": "IIS 默认站点中的默认文档名称包括：index.htm",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 218,
+      "chapter": "第八章",
+      "title": "IIS 站点中的默认文档顺序可以手动调整优先级",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 219,
+      "chapter": "第八章",
+      "title": "IIS 站点中的默认文档顺序无法调整优先级",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 220,
+      "chapter": "第八章",
+      "title": "在 IIS 中创建站点使用的物理路径必须保存在 C 盘目录下",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 221,
+      "chapter": "第八章",
+      "title": "IIS 建立的网站只能通过 80 端口进行访问",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 222,
+      "chapter": "第八章",
+      "title": "访问 FTP 服务器不可以匿名访问",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 223,
+      "chapter": "第八章",
+      "title": "访问 FTP 服务器可以匿名访问",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 224,
+      "chapter": "第八章",
+      "title": "可以匿名访问 IIS 网站",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 225,
+      "chapter": "第八章",
+      "title": "在 IIS 中，使用同一个 IP 地址实现多个站点的方法是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "主机头名方式", "correct": true },
+        { "id": 2, "title": "DNS 解析方式" },
+        { "id": 3, "title": "第三方软件方式" },
+        { "id": 4, "title": "无法实现" }
+      ]
+    },
+    {
+      "id": 226,
+      "chapter": "第八章",
+      "title": "默认情况下，Web 服务所使用的 TCP 端口号为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "21" },
+        { "id": 2, "title": "80", "correct": true },
+        { "id": 3, "title": "53" },
+        { "id": 4, "title": "随机生成" }
+      ]
+    },
+    {
+      "id": 227,
+      "chapter": "第八章",
+      "title": "在 IIS 中默认的匿名访问用户帐号是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "IUSR_admin" },
+        { "id": 2, "title": "IUSR_computer" },
+        { "id": 3, "title": "IUSR_administrator" },
+        { "id": 4, "title": "IUSR", "correct": true }
+      ]
+    },
+    {
+      "id": 228,
+      "chapter": "第八章",
+      "title": "在配置 IIS 时，如果想禁止某些 IP 地址访问 Web 服务器，应在“默认 Web 站点”属性对话框中的（）选项卡中进行配置",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "目录安全性", "correct": true },
+        { "id": 2, "title": "文档" },
+        { "id": 3, "title": "主目录" },
+        { "id": 4, "title": "ISAPI 筛选器" }
+      ]
+    },
+    {
+      "id": 229,
+      "chapter": "第八章",
+      "title": "用于从 Web 网站服务器传输超文本到本地浏览器的传输协议是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "HTTP", "correct": true },
+        { "id": 2, "title": "POP3" },
+        { "id": 3, "title": "SMTP" },
+        { "id": 4, "title": "FTP" }
+      ]
+    },
+    {
+      "id": 230,
+      "chapter": "第八章",
+      "title": "用于支持使用客户端远程管理在服务器上的电子邮件的协议是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "HTTP" },
+        { "id": 2, "title": "POP3", "correct": true },
+        { "id": 3, "title": "SMTP" },
+        { "id": 4, "title": "FTP" }
+      ]
+    },
+    {
+      "id": 231,
+      "chapter": "第八章",
+      "title": "用于给内部网络或网络服务供应商自动分配 IP 地址的协议是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "HTTP" },
+        { "id": 2, "title": "POP3" },
+        { "id": 3, "title": "DHCP", "correct": true },
+        { "id": 4, "title": "FTP" }
+      ]
+    },
+    {
+      "id": 232,
+      "chapter": "第八章",
+      "title": "在 IIS 中可以配置如下哪些功能（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "网站", "correct": true },
+        { "id": 2, "title": "FTP网站", "correct": true },
+        { "id": 3, "title": "SMTP网站", "correct": true },
+        { "id": 4, "title": "网络新闻传输协议（NNTP）站点", "correct": true }
+      ]
+    },
+    {
+      "id": 233,
+      "chapter": "第八章",
+      "title": "IIS 在一台计算机上可以通过如下哪些方式同时建立多个网站（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "使用主机头名称来建立多个网站", "correct": true },
+        { "id": 2, "title": "使用多个 IP 地址建立多个网站", "correct": true },
+        { "id": 3, "title": "使用 TCP 连接端口来创建多个网站", "correct": true },
+        { "id": 4, "title": "无法实现" }
+      ]
+    },
+    {
+      "id": 234,
+      "chapter": "第八章",
+      "title": "在 IIS 网站中，默认文档包括如下哪几个（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "Default.htm", "correct": true },
+        { "id": 2, "title": "Default.asp", "correct": true },
+        { "id": 3, "title": "iisstart.htm", "correct": true },
+        { "id": 4, "title": "index.html", "correct": true }
+      ]
+    },
+    {
+      "id": 235,
+      "chapter": "第九章",
+      "title": "用户证书到期后必须向 CA 重新申请全新的证书",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 236,
+      "chapter": "第九章",
+      "title": "只有企业 CA 才能对证书模板进行自定义",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 237,
+      "chapter": "第九章",
+      "title": "企业 CA 和独立 CA 均可以对证书模板进行自定义",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 238,
+      "chapter": "第九章",
+      "title": "企业 CA 必须在拥有 AD 的前提下方可部署",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 239,
+      "chapter": "第九章",
+      "title": "独立 CA 无法部署在 AD 环境内",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 240,
+      "chapter": "第九章",
+      "title": "企业从属 CA 只能部署在企业根 CA 之下",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 241,
+      "chapter": "第九章",
+      "title": "可以在无 AD 的企业环境中部署的 CA 类型是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "独立 CA", "correct": true },
+        { "id": 2, "title": "企业 CA" },
+        { "id": 3, "title": "两个均可以" },
+        { "id": 4, "title": "两个均不可以" }
+      ]
+    },
+    {
+      "id": 242,
+      "chapter": "第九章",
+      "title": "可以管理证书模板的 CA 类型是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "独立 CA" },
+        { "id": 2, "title": "企业 CA", "correct": true },
+        { "id": 3, "title": "两个均可以" },
+        { "id": 4, "title": "两个均不可以" }
+      ]
+    },
+    {
+      "id": 243,
+      "chapter": "第九章",
+      "title": "无法管理证书模板的 CA 类型是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "独立 CA", "correct": true },
+        { "id": 2, "title": "企业 CA" },
+        { "id": 3, "title": "两个均可以" },
+        { "id": 4, "title": "两个均不可以" }
+      ]
+    },
+    {
+      "id": 244,
+      "chapter": "第九章",
+      "title": "可以自动颁发证书的 CA 类型是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "独立 CA" },
+        { "id": 2, "title": "企业 CA", "correct": true },
+        { "id": 3, "title": "两个均可以" },
+        { "id": 4, "title": "两个均不可以" }
+      ]
+    },
+    {
+      "id": 245,
+      "chapter": "第九章",
+      "title": "CA 颁发的证书内必须包含如下哪些信息（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "证书拥有者姓名", "correct": true },
+        { "id": 2, "title": "电子邮件账号", "correct": true },
+        { "id": 3, "title": "公开密钥", "correct": true },
+        { "id": 4, "title": "证书有效期" }
+      ]
+    },
+    {
+      "id": 246,
+      "chapter": "第九章",
+      "title": "微软的证书颁发机构包括如下哪几种类型（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "企业根 CA", "correct": true },
+        { "id": 2, "title": "企业从属 CA", "correct": true },
+        { "id": 3, "title": "独立根 CA", "correct": true },
+        { "id": 4, "title": "独立从属 CA", "correct": true }
+      ]
+    },
+    {
+      "id": 247,
+      "chapter": "第九章",
+      "title": "如下哪类 CA，可以部署在非 AD 环境中（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "企业根 CA" },
+        { "id": 2, "title": "企业从属 CA" },
+        { "id": 3, "title": "独立根 CA", "correct": true },
+        { "id": 4, "title": "独立从属 CA", "correct": true }
+      ]
+    },
+    {
+      "id": 248,
+      "chapter": "第九章",
+      "title": "如下哪类 CA，可以管理证书模板（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "企业根 CA", "correct": true },
+        { "id": 2, "title": "企业从属 CA", "correct": true },
+        { "id": 3, "title": "独立根 CA" },
+        { "id": 4, "title": "独立从属 CA" }
+      ]
+    },
+    {
+      "id": 249,
+      "chapter": "第九章",
+      "title": "常见的证书格式包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "PFX", "correct": true },
+        { "id": 2, "title": "P12", "correct": true },
+        { "id": 3, "title": "P7B", "correct": true },
+        { "id": 4, "title": "CER", "correct": true }
+      ]
+    },
+    {
+      "id": 250,
+      "chapter": "真题",
+      "title": "一个工作组中可以包含域",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 251,
+      "chapter": "真题",
+      "title": "内置的用户帐户可以被删除",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 252,
+      "chapter": "真题",
+      "title": "为了满足最大限度的安全性，应该避免多个用户共享一个用户帐户",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 253,
+      "chapter": "真题",
+      "title": "DAS（Direct-Attached Storage，直接附加存储） 包括位于服务器内部物理磁盘、直接与服务器连接的外部磁盘，或者通过USB 电缆连接到服务器的磁盘",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 254,
+      "chapter": "真题",
+      "title": "使用直通磁盘的虚拟机支持存储迁移",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 255,
+      "chapter": "真题",
+      "title": "所谓“交互式访问”，是指用户本地登录到文件资源所在的计算机上直接对它们进行访问",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 256,
+      "chapter": "真题",
+      "title": "在一台DHCP服务器上，针对不同的网络地址可以分别建立多个不同的作用域",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 257,
+      "chapter": "真题",
+      "title": "在未经许可的情况下，用户仍然可以建立一个主要区域的辅助区域",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 258,
+      "chapter": "真题",
+      "title": "Windows Server 2016 支持的身份验证方法有：PAP、CHAP、MS-CHAPv2和RIP",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 259,
+      "chapter": "真题",
+      "title": "Windows Server 2016操作系统，默认启用了“远程桌面”功能",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 260,
+      "chapter": "真题",
+      "title": "如果将某个用户帐户加入到某个组中，则该用户帐户不会拥有与这个组相同的权限和权利",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 261,
+      "chapter": "真题",
+      "title": "如果删除了域中最后一台域控制器，那么该域将不复存在",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 262,
+      "chapter": "真题",
+      "title": "RAID 可以使用两种机制（磁盘镜像和奇偶校验信息）来实现存储系统的容错功能",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 263,
+      "chapter": "真题",
+      "title": "vhdx文件最大容量可达64TB",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 264,
+      "chapter": "真题",
+      "title": "默认情况下，所有用户都可以把文档发送到共享打印机",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 265,
+      "chapter": "真题",
+      "title": "DHCP客户机自动获取的IP地址租约是有使用期限的，这个使用期限由DHCP客户机决定",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 266,
+      "chapter": "真题",
+      "title": "管理员可以在辅助区域中直接添加、修改或删除资源记录",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 267,
+      "chapter": "真题",
+      "title": "VPN的部署方案主要有两种：“远程访问VPN”和“站点到站点VPN”",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 268,
+      "chapter": "真题",
+      "title": "域内的所有计算机不会共享一个集中式的数据库",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 269,
+      "chapter": "真题",
+      "title": "一个用户只能拥有一个用户帐户",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 270,
+      "chapter": "真题",
+      "title": "在域中，默认只存在一个组织单位（即Domain Controllers）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 271,
+      "chapter": "真题",
+      "title": "GPT 格式支持大于2TB的磁盘",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 272,
+      "chapter": "真题",
+      "title": "Hyper-V服务器需要64位硬件架构平台，而虚拟机中所安装的操作系统可以是 32 位或 64 位",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 273,
+      "chapter": "真题",
+      "title": "通过对打印机设置权限，从而限制用户使用打印机",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 274,
+      "chapter": "真题",
+      "title": "在工作组的环境中，DHCP服务器需要被授权",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 275,
+      "chapter": "真题",
+      "title": "Dns Admins组的成员具有管理 DNS服务器的所有权限",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 276,
+      "chapter": "真题",
+      "title": "VPN（Virtual Private Network，虚拟专用网络）连接是跨互联网建立的一条临时的、安全的连接，是一条穿越不安全公共网络的可靠的隧道",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 277,
+      "chapter": "真题",
+      "title": "在工作组中，每一台计算机都有一个本地的安全帐户管理器",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 278,
+      "chapter": "真题",
+      "title": "每一个用户帐户都拥有一个唯一的安全标识符（Security Identifier，简称SID），是在创建用户帐户时由系统管理员手动分配的",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 279,
+      "chapter": "真题",
+      "title": "创建域内第一台域控制器时，该计算机原有的本地用户帐户会被删除",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 280,
+      "chapter": "真题",
+      "title": "NAS（Network-Attached Storage，网络附加存储）是通过网络访问的专用存储。与DAS不同，NAS存储不直接附加到每个单独的服务器上，而是通过网络被许多服务器访问",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 281,
+      "chapter": "真题",
+      "title": "检查点是虚拟机的一个重要功能，管理员可以为虚拟机创建检查点（保留其状态），以便能够反复恢复到创建检查点时的状态",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 282,
+      "chapter": "真题",
+      "title": "如果希望本地文件资源能够被其它计算机上的用户通过网络来访问，则必须对这些资源实施共享",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 283,
+      "chapter": "真题",
+      "title": "一台计算机可以既是打印服务器又是DHCP客户机",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 284,
+      "chapter": "真题",
+      "title": "主机（AAAA）记录。用来将FQDN对应为IPv4地址",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 285,
+      "chapter": "真题",
+      "title": "一个域中可以包含工作组",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 286,
+      "chapter": "真题",
+      "title": "一个用户帐户可以同时被多个用户使用",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 287,
+      "chapter": "真题",
+      "title": "一个域中不可以有多台域控制器",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 288,
+      "chapter": "真题",
+      "title": "MBR 格式的磁盘，最多支持4个主分区",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 289,
+      "chapter": "真题",
+      "title": "第二代虚拟机使用不同的硬件型号，并全面支持第一代虚拟机的所有旧设备",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 290,
+      "chapter": "真题",
+      "title": "共享文件夹权限只对用户通过网络访问这个文件夹时起到约束作用，如果用户在这个文件夹所在的计算机上以交互式方式访问它时，则不会受到共享文件夹权限的限制",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 291,
+      "chapter": "真题",
+      "title": "在安装DHCP服务器角色之前，应该为DHCP服务器本机配置静态IP地址",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 292,
+      "chapter": "真题",
+      "title": "在互联网上，所有维护根域“.”的DNS服务器被称作“根DNS服务器”，这些服务器是由13个完全限定域名（FQDN）来表示",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 293,
+      "chapter": "真题",
+      "title": "部署VPN解决方案的人员，需要具有本机Power Users组的成员身份",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 294,
+      "chapter": "真题",
+      "title": "在工作组中，存储活动目录数据库的计算机被称为域控制器",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 295,
+      "chapter": "真题",
+      "title": "可以多个人同时使用同一个用户帐户工作",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 296,
+      "chapter": "真题",
+      "title": "默认情况下，RODC不会缓存任何用户密码",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 297,
+      "chapter": "真题",
+      "title": "SAN（Storage Area Network，存储区域网络），它通过高速网络将服务器连接到高性能存储系统，并提供块级访问",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 298,
+      "chapter": "真题",
+      "title": "在Hyper-V中，“专用”类型的虚拟交换机，只能实现与其相连的虚拟机之间进行通信",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 299,
+      "chapter": "真题",
+      "title": "默认情况下，Administrators组的成员有权创建共享文件夹",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 300,
+      "chapter": "真题",
+      "title": "IP地址的分配方法有两种：手动分配和自动分配",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 301,
+      "chapter": "真题",
+      "title": "正向查找区域能够将客户端请求的IP地址解析为对应的完全限定域名",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 302,
+      "chapter": "真题",
+      "title": "工作组网络也被称为对等式网络",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 303,
+      "chapter": "真题",
+      "title": "Guests是系统内置的本地组帐户",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 304,
+      "chapter": "真题",
+      "title": "在一个域中，活动目录数据库可以存储在Windows 客户端计算机上",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 305,
+      "chapter": "真题",
+      "title": "条带也称为RAID 2",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 306,
+      "chapter": "真题",
+      "title": "Hyper-V服务器不需要启用英特尔虚拟化技术（Intel VT）或 AMD 虚拟化技术（AMD-V）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 307,
+      "chapter": "真题",
+      "title": "如果一个用户帐户同时属于多个组，并且这些组对同一文件（夹）具有不同的访问权限，则该用户帐户对该文件（夹）的权限为所有组权限的累加",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 308,
+      "chapter": "真题",
+      "title": "默认情况下，DHCP数据库每90分钟会自动备份一次",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 309,
+      "chapter": "真题",
+      "title": "手动配置的静态记录不会受到老化的影响，不会从数据库中自动被删除",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 310,
+      "chapter": "真题",
+      "title": "一台计算机不能同时属于多个域",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 311,
+      "chapter": "真题",
+      "title": "使用组帐户的主要目的是简化为用户分配权限和权利的管理工作",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 312,
+      "chapter": "真题",
+      "title": "活动目录对象所具有的各种各样的特征，称为“属性”（简称AD）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 313,
+      "chapter": "真题",
+      "title": "带区卷不具有容错功能",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 314,
+      "chapter": "真题",
+      "title": "在Hyper-V中，“外部”类型的虚拟交换机，能够实现与其相连的虚拟机与物理机所在物理网络中其它计算机进行通信，也可以与Internet通信",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 315,
+      "chapter": "真题",
+      "title": "FAT32文件系统比NTFS文件系统更安全",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 316,
+      "chapter": "真题",
+      "title": "作用域划分，需要两台DHCP服务器，每个DHCP服务器管理整个IP地址范围的部分地址，而且两个服务器都可以在相同的网络上启用",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 317,
+      "chapter": "真题",
+      "title": "一台计算机不可能同时承担着DHCP服务器角色和DNS服务器角色",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 318,
+      "chapter": "真题",
+      "title": "在一个物理网络中，可以同时建立多个域",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 319,
+      "chapter": "真题",
+      "title": "在工作组中，每台计算机分别是一个独立的安全范围，拥有自己的本地用户帐户信息",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 320,
+      "chapter": "真题",
+      "title": "管理员可以为通讯组分配权限和权利",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 321,
+      "chapter": "真题",
+      "title": "跨区卷不具有容错功能",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 322,
+      "chapter": "真题",
+      "title": "在 Windows Server 2016中，第二代虚拟机可以在运行状态下，实时更改虚拟机的配置内存",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 323,
+      "chapter": "真题",
+      "title": "在一台计算机上，任何用户帐户都有权利创建共享文件夹",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 324,
+      "chapter": "真题",
+      "title": "在一台DHCP服务器上，针对同一个网络地址可以建立多个作用域",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 325,
+      "chapter": "真题",
+      "title": "对于传统的DNS区域，可以使用“区域传送”技术来实现一个区域文件在多台DNS服务器上保存多个副本",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 326,
+      "chapter": "真题",
+      "title": "使用密钥管理服务（Key Management Services）服务器能够统一激活网络环境中的Windows操作系统，而不是在每台计算机上逐一完成系统的激活",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 327,
+      "chapter": "真题",
+      "title": "Guest（来宾帐户）是供用户临时访问本台计算机所使用的用户帐户",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 328,
+      "chapter": "真题",
+      "title": "一个域中至少需要一台域控制器",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 329,
+      "chapter": "真题",
+      "title": "重复数据删除，能够将卷上存放的文件分割成大小可变（32-128 KB）的小区块（Chunk），再标示重复的区块，然后为每个区块保留三个副本",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 330,
+      "chapter": "真题",
+      "title": "Windows 10的专业版和企业版中内置了Hyper-V功能（客户端 Hyper-V）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 331,
+      "chapter": "真题",
+      "title": "NTFS（New Technology File System）是一种文件系统格式",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 332,
+      "chapter": "真题",
+      "title": "在不同的DHCP服务器上，针对同一个网络地址可以分别建立多个作用域",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 333,
+      "chapter": "真题",
+      "title": "在一个域名区域内可以包含多个子域",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 334,
+      "chapter": "真题",
+      "title": "配置VPN的工作分为三步：配置VPN服务器、为用户帐户分配远程访问权限、配置VPN客户端",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 335,
+      "chapter": "真题",
+      "title": "（），不仅具有客户端操作系统的全部功能而且拥有强大的网络通信、网络管理等功能",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "打印机" },
+        { "id": 2, "title": "服务器操作系统", "correct": true },
+        { "id": 3, "title": "路由器" },
+        { "id": 4, "title": "域" }
+      ]
+    },
+    {
+      "id": 336,
+      "chapter": "真题",
+      "title": "在工作组中，每台Windows计算机的（）帐户能够在本地计算机的SAM数据库中创建并管理本地用户帐户",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Administrator", "correct": true },
+        { "id": 2, "title": "Guest" },
+        { "id": 3, "title": "Everyone" },
+        { "id": 4, "title": "Authenticated users" }
+      ]
+    },
+    {
+      "id": 337,
+      "chapter": "真题",
+      "title": "（）包含了一份只读的活动目录数据库副本",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "RWDC" },
+        { "id": 2, "title": "RODC", "correct": true },
+        { "id": 3, "title": "RepDC" },
+        { "id": 4, "title": "Schema" }
+      ]
+    },
+    {
+      "id": 338,
+      "chapter": "真题",
+      "title": "（）组成员有权修改活动目录架构",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Schema Admins", "correct": true },
+        { "id": 2, "title": "Domain Guests" },
+        { "id": 3, "title": "Users" },
+        { "id": 4, "title": "Administrators" }
+      ]
+    },
+    {
+      "id": 339,
+      "chapter": "真题",
+      "title": "可以将跨区卷扩展到最多（）个磁盘",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "8" },
+        { "id": 2, "title": "24" },
+        { "id": 3, "title": "16" },
+        { "id": 4, "title": "32", "correct": true }
+      ]
+    },
+    {
+      "id": 340,
+      "chapter": "真题",
+      "title": "Windows Server 2016内置的（）角色，能够向用户提供服务器虚拟化功能",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "User" },
+        { "id": 2, "title": "DNS" },
+        { "id": 3, "title": "DHCP" },
+        { "id": 4, "title": "Hyper-V", "correct": true }
+      ]
+    },
+    {
+      "id": 341,
+      "chapter": "真题",
+      "title": "在NTFS分区（卷）中，任何文件和文件夹均具有权限，称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "FAT32 权限" },
+        { "id": 2, "title": "FAT 权限" },
+        { "id": 3, "title": "打印权限" },
+        { "id": 4, "title": "NTFS 权限", "correct": true }
+      ]
+    },
+    {
+      "id": 342,
+      "chapter": "真题",
+      "title": "在安装DHCP服务器之前，必须保证这台计算机具有静态的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "VPN 服务器的 IP 地址" },
+        { "id": 2, "title": "DNS 服务器的 IP 地址" },
+        { "id": 3, "title": "IP 地址", "correct": true },
+        { "id": 4, "title": "WINS 服务器的 IP 地址" }
+      ]
+    },
+    {
+      "id": 343,
+      "chapter": "真题",
+      "title": "如果希望一个DHCP客户机总是获取一个固定的IP地址，那么可以在DHCP服务器上为其设置（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "IP 地址的保留", "correct": true },
+        { "id": 2, "title": "IP 作用域" },
+        { "id": 3, "title": "DHCP 中继代理" },
+        { "id": 4, "title": "子网掩码" }
+      ]
+    },
+    {
+      "id": 344,
+      "chapter": "真题",
+      "title": "在DNS服务器上，区域文件中的每一行数据被称为资源记录,简称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "RO" },
+        { "id": 2, "title": "RE" },
+        { "id": 3, "title": "RR", "correct": true },
+        { "id": 4, "title": "ER" }
+      ]
+    },
+    {
+      "id": 345,
+      "chapter": "真题",
+      "title": "Windows Server 2016支持的VPN协议有：（）、L2TP/IPSec、SSTP和IKEv2",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "V2-Ray" },
+        { "id": 2, "title": "SSH" },
+        { "id": 3, "title": "PPTP", "correct": true },
+        { "id": 4, "title": "TCP/IP" }
+      ]
+    },
+    {
+      "id": 346,
+      "chapter": "真题",
+      "title": "以下说法中正确的是（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "一个用户帐户只能被一个人使用，无法被多人同时使用" },
+        { "id": 2, "title": "一个用户帐户可以同时被多个用户使用", "correct": true },
+        { "id": 3, "title": " 一个用户只能拥有一个用户帐户" },
+        { "id": 4, "title": "一个用户可以同时拥有多个用户帐户", "correct": true }
+      ]
+    },
+    {
+      "id": 347,
+      "chapter": "真题",
+      "title": "Windows Server 2016 提供了活动目录数据的两种复制方式：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "通过站点复制" },
+        { "id": 2, "title": "通过网络进行活动目录的复制", "correct": true },
+        { "id": 3, "title": "通过安装媒体复制", "correct": true },
+        { "id": 4, "title": "通过系统更新服务" },
+        { "id": 5, "title": "通过工作组" }
+      ]
+    },
+    {
+      "id": 348,
+      "chapter": "真题",
+      "title": "在Windows Server 2016的Hyper-V中，包括三种虚拟硬盘类型：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "动态压缩" },
+        { "id": 2, "title": "动态扩展", "correct": true },
+        { "id": 3, "title": "差异", "correct": true },
+        { "id": 4, "title": "固定大小", "correct": true },
+        { "id": 5, "title": "增量" }
+      ]
+    },
+    {
+      "id": 349,
+      "chapter": "真题",
+      "title": "DHCP是大多数现代网络中一个非常重要的组件，为使DHCP服务具有高可用性，可使用（）等机制来完成这个目标",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "DHCP 故障转移", "correct": true },
+        { "id": 2, "title": "设置防火墙" },
+        { "id": 3, "title": "DHCP 群集", "correct": true },
+        { "id": 4, "title": "作用域划分", "correct": true }
+      ]
+    },
+    {
+      "id": 350,
+      "chapter": "真题",
+      "title": "Windows Server 2016 支持的身份验证方法，包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "PAP" },
+        { "id": 2, "title": "CHAP" },
+        { "id": 3, "title": "MS-CHAPv2", "correct": true },
+        { "id": 4, "title": "RIP" },
+        { "id": 5, "title": "EAP", "correct": true }
+      ]
+    },
+    {
+      "id": 351,
+      "chapter": "真题",
+      "title": "Windows网络的管理架构主要有两种：工作组和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "域", "correct": true },
+        { "id": 2, "title": "对等网" },
+        { "id": 3, "title": "文件夹" },
+        { "id": 4, "title": "远程访问服务器" }
+      ]
+    },
+    {
+      "id": 352,
+      "chapter": "真题",
+      "title": "管理员无法更改（）组的成员关系，但是可以为其分配权限和权利",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Performance Monitor Users" },
+        { "id": 2, "title": "Everyone", "correct": true },
+        { "id": 3, "title": "Users" },
+        { "id": 4, "title": "Administrators" }
+      ]
+    },
+    {
+      "id": 353,
+      "chapter": "真题",
+      "title": "（）可将域中所有对象进行分组，并将其组织到一个分层式结构中",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "域" },
+        { "id": 2, "title": "组织单位", "correct": true },
+        { "id": 3, "title": "工作组" },
+        { "id": 4, "title": "管理员" }
+      ]
+    },
+    {
+      "id": 354,
+      "chapter": "真题",
+      "title": "域中的SYSVOL文件夹必须存储在（）分区内",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "FAT" },
+        { "id": 2, "title": "NTFS", "correct": true },
+        { "id": 3, "title": "FAT32" },
+        { "id": 4, "title": "ReFS" }
+      ]
+    },
+    {
+      "id": 355,
+      "chapter": "真题",
+      "title": "Windows操作系统支持两种分区表格式：（）和全局唯一标识分区表",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "GPT" },
+        { "id": 2, "title": "MBR", "correct": true },
+        { "id": 3, "title": "简单卷" },
+        { "id": 4, "title": "镜像卷" }
+      ]
+    },
+    {
+      "id": 356,
+      "chapter": "真题",
+      "title": "安装Hyper-V角色之后，物理服务器被称为主机（Host），其操作系统被称为主机操作系统（Host OS），而虚拟机中所安装的操作系统被称为()",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "客户操作系统" },
+        { "id": 2, "title": "来宾操作系统", "correct": true },
+        { "id": 3, "title": "子操作系统" },
+        { "id": 4, "title": "次要操作系统" }
+      ]
+    },
+    {
+      "id": 357,
+      "chapter": "真题",
+      "title": "如果希望本地的文件资源能够被其它计算机上的用户通过网络来访问，必须对这些文件资源设置（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "权限" },
+        { "id": 2, "title": "共享", "correct": true },
+        { "id": 3, "title": "用户帐户" },
+        { "id": 4, "title": "隐藏" }
+      ]
+    },
+    {
+      "id": 358,
+      "chapter": "真题",
+      "title": "管理员可以随时释放已有的IP地址租约，操作命令为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ipconfig /renew" },
+        { "id": 2, "title": "ipconfig /reorder" },
+        { "id": 3, "title": "ipconfig /retreat" },
+        { "id": 4, "title": "ipconfig /release", "correct": true }
+      ]
+    },
+    {
+      "id": 359,
+      "chapter": "真题",
+      "title": "一个作用域在必须被（）后才能正常工作",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "升级" },
+        { "id": 2, "title": "激活", "correct": true },
+        { "id": 3, "title": "授权" },
+        { "id": 4, "title": "卸载" }
+      ]
+    },
+    {
+      "id": 360,
+      "chapter": "真题",
+      "title": "常用的DNS资源记录包括：（）、SOA记录、NS记录、PTR记录和CNAME记录等",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SVR记录" },
+        { "id": 2, "title": "A记录", "correct": true },
+        { "id": 3, "title": "X记录" },
+        { "id": 4, "title": "XM记录" }
+      ]
+    },
+    {
+      "id": 361,
+      "chapter": "真题",
+      "title": "使用（）协议，VPN客户端发送到VPN服务器的密码以“明文”的方式发送，也就是没有加密",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "CHAP" },
+        { "id": 2, "title": "PAP", "correct": true },
+        { "id": 3, "title": "RIP" },
+        { "id": 4, "title": "EAP" }
+      ]
+    },
+    {
+      "id": 362,
+      "chapter": "真题",
+      "title": "内置的本地用户帐户主要有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "Administrator", "correct": true },
+        { "id": 2, "title": "Guest", "correct": true },
+        { "id": 3, "title": "Everyone" },
+        { "id": 4, "title": "Authenticated users" },
+        { "id": 5, "title": "Users" },
+        { "id": 6, "title": "Backup Operators" }
+      ]
+    },
+    {
+      "id": 363,
+      "chapter": "真题",
+      "title": "一个域中的计算机角色有：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "域控制器", "correct": true },
+        { "id": 2, "title": "成员服务器", "correct": true },
+        { "id": 3, "title": "工作站", "correct": true },
+        { "id": 4, "title": "工作组" }
+      ]
+    },
+    {
+      "id": 364,
+      "chapter": "真题",
+      "title": "要启用嵌套虚拟化的虚拟机，需要满足哪些要求（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "至少 4GB 的配置内存", "correct": true },
+        { "id": 2, "title": "启用 MAC 地址欺骗", "correct": true },
+        { "id": 3, "title": "至少 2 颗 vCPU" },
+        { "id": 4, "title": "虚拟机中安装的操作系统为 Windows Server 2022 或 Windows 10", "correct": true },
+        { "id": 5, "title": "至少 40GB 硬盘空间" }
+      ]
+    },
+    {
+      "id": 365,
+      "chapter": "真题",
+      "title": "DHCP服务器新建“保留”时，必须要配置（）等信息",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "保留名称", "correct": true },
+        { "id": 2, "title": "IP 地址", "correct": true },
+        { "id": 3, "title": "MAC 地址", "correct": true },
+        { "id": 4, "title": "描述" },
+        { "id": 5, "title": "计算机名" }
+      ]
+    },
+    {
+      "id": 366,
+      "chapter": "真题",
+      "title": "Windows网络的管理架构主要有两种：工作组和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "域", "correct": true },
+        { "id": 2, "title": "对等网" },
+        { "id": 3, "title": "文件夹" },
+        { "id": 4, "title": "远程访问服务器" }
+      ]
+    },
+    {
+      "id": 367,
+      "chapter": "真题",
+      "title": "一个域中至少需要（）台域控制器",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "一", "correct": true },
+        { "id": 2, "title": "二" },
+        { "id": 3, "title": "三" },
+        { "id": 4, "title": "四" }
+      ]
+    },
+    {
+      "id": 368,
+      "chapter": "真题",
+      "title": "()文件就是活动目录数据库文件",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "edb.log" },
+        { "id": 2, "title": "sysvol" },
+        { "id": 3, "title": "ntds.dit", "correct": true },
+        { "id": 4, "title": "api" }
+      ]
+    },
+    {
+      "id": 369,
+      "chapter": "真题",
+      "title": "可以使用服务器管理器、（）和Windows PowerShell等工具来创建和管理卷",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "磁盘管理器", "correct": true },
+        { "id": 2, "title": "任务管理器" },
+        { "id": 3, "title": "设备管理器" },
+        { "id": 4, "title": "资源管理器" }
+      ]
+    },
+    {
+      "id": 370,
+      "chapter": "真题",
+      "title": "每个虚拟机最多可以有（）个检查点",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "25" },
+        { "id": 2, "title": "50", "correct": true },
+        { "id": 3, "title": "32" },
+        { "id": 4, "title": "64" }
+      ]
+    },
+    {
+      "id": 371,
+      "chapter": "真题",
+      "title": "管理员在对文件夹实施共享之后，必须设置（）权限，这样才能保证访问共享文件夹的安全",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "NTFS" },
+        { "id": 2, "title": "共享", "correct": true },
+        { "id": 3, "title": "打印" },
+        { "id": 4, "title": "磁盘配额" }
+      ]
+    },
+    {
+      "id": 372,
+      "chapter": "真题",
+      "title": "打开“网络连接”窗口的命令是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "network" },
+        { "id": 2, "title": "control" },
+        { "id": 3, "title": "ncpa.cpl", "correct": true },
+        { "id": 4, "title": "connect" }
+      ]
+    },
+    {
+      "id": 373,
+      "chapter": "真题",
+      "title": "用户通过（）远程访问企业内部网络中的资源时，需要建立VPN连接",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "局域网" },
+        { "id": 2, "title": "WLAN" },
+        { "id": 3, "title": "Internet", "correct": true },
+        { "id": 4, "title": "FTP" }
+      ]
+    },
+    {
+      "id": 374,
+      "chapter": "真题",
+      "title": "以下关于组帐户描述正确的有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "一个组中可以根据需要包含多个用户帐户", "correct": true },
+        {
+          "id": 2,
+          "title": "如果给一个组分配了某项权限或权利，那么该组中的所有成员都将继承这些权限或权利",
+          "correct": true
+        },
+        { "id": 3, "title": "本地管理员组 administrators 可以被禁用" },
+        { "id": 4, "title": "新建组中只能包含 100 个用户帐户" }
+      ]
+    },
+    {
+      "id": 375,
+      "chapter": "真题",
+      "title": "Hyper-V提供了三种类型的虚拟交换机：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "专用", "correct": true },
+        { "id": 2, "title": "内部", "correct": true },
+        { "id": 3, "title": "VPN" },
+        { "id": 4, "title": "环形" },
+        { "id": 5, "title": "外部", "correct": true }
+      ]
+    },
+    {
+      "id": 376,
+      "chapter": "真题",
+      "title": "DHCP服务器除了必须给DHCP客户端分配IP地址和子网掩码之外，还可以有选择性地分配其它参数，例如（），这些可选分配的参数称为“DHCP选项”",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "默认网关（路由器）", "correct": true },
+        { "id": 2, "title": "完全限定域名" },
+        { "id": 3, "title": "DNS 域名", "correct": true },
+        { "id": 4, "title": "DNS 服务器地址", "correct": true },
+        { "id": 5, "title": "计算机名" }
+      ]
+    },
+    {
+      "id": 377,
+      "chapter": "真题",
+      "title": "管理员可以使用（）工具来查看、禁用和启用计算机上已经安装的硬件设备，也可以针对硬件设备执行调试、更新驱动程序、回滚驱动程序等工作",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "磁盘管理器" },
+        { "id": 2, "title": "任务管理器" },
+        { "id": 3, "title": "设备管理器", "correct": true },
+        { "id": 4, "title": "资源管理器" }
+      ]
+    },
+    {
+      "id": 378,
+      "chapter": "真题",
+      "title": "用户在网络中工作时所使用的身份标志称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "用户全名" },
+        { "id": 2, "title": "用户帐户", "correct": true },
+        { "id": 3, "title": "身份证" },
+        { "id": 4, "title": "用户信息" }
+      ]
+    },
+    {
+      "id": 379,
+      "chapter": "真题",
+      "title": "（）是一个或多个域的集合",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "组织单位" },
+        { "id": 2, "title": "对象" },
+        { "id": 3, "title": "域树", "correct": true },
+        { "id": 4, "title": "架构" }
+      ]
+    },
+    {
+      "id": 380,
+      "chapter": "真题",
+      "title": "在一个域中使用组帐户为用户分配资源访问权限时，建议使用（）的原则",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "P-A" },
+        { "id": 2, "title": "P-G-A" },
+        { "id": 3, "title": "G-A-DL-P" },
+        { "id": 4, "title": "A-G-DL-P", "correct": true }
+      ]
+    },
+    {
+      "id": 381,
+      "chapter": "真题",
+      "title": "重复数据删除的作业类型包括（）、垃圾回收、清理和未优化",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "优化", "correct": true },
+        { "id": 2, "title": "加密" },
+        { "id": 3, "title": "传输" },
+        { "id": 4, "title": "解密" }
+      ]
+    },
+    {
+      "id": 382,
+      "chapter": "真题",
+      "title": "在“服务器管理器”中执行最佳实践分析器的扫描后，最佳实践分析器根据最佳实践规则，评估产生合规性结果，包括三种安全级别：错误、（）和警告",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "故障" },
+        { "id": 2, "title": "恢复" },
+        { "id": 3, "title": "信息", "correct": true },
+        { "id": 4, "title": "正常" }
+      ]
+    },
+    {
+      "id": 383,
+      "chapter": "真题",
+      "title": "在活动目录中，只有（）组的成员才有权执行DHCP授权工作",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Administrators" },
+        { "id": 2, "title": "Enterprise Admins", "correct": true },
+        { "id": 3, "title": "Guests" },
+        { "id": 4, "title": "Users" }
+      ]
+    },
+    {
+      "id": 384,
+      "chapter": "真题",
+      "title": "在TCP/IP网络中，（）服务可以为网络设备自动分配IP参数",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DNS" },
+        { "id": 2, "title": "DHCP", "correct": true },
+        { "id": 3, "title": "RAS" },
+        { "id": 4, "title": "Router" }
+      ]
+    },
+    {
+      "id": 385,
+      "chapter": "真题",
+      "title": "（）是域名空间树状结构的一部分，通过它来将域名空间分割为若干较小的部分以便管理",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DNS 区域", "correct": true },
+        { "id": 2, "title": "DNS 子网" },
+        { "id": 3, "title": "DNS 转发" },
+        { "id": 4, "title": "DNS 记录" }
+      ]
+    },
+    {
+      "id": 386,
+      "chapter": "真题",
+      "title": "在 Windows Server 2016 中，DirectAccess、（）、Web应用程序代理以及路由，这四种组件技术整合到远程访问（Remote Access）服务角色中",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "VPN", "correct": true },
+        { "id": 2, "title": "DNS" },
+        { "id": 3, "title": "DHCP" },
+        { "id": 4, "title": "FTP" }
+      ]
+    },
+    {
+      "id": 387,
+      "chapter": "真题",
+      "title": "在Windows Server 2016域中，组帐户分为两种类型：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "本地组" },
+        { "id": 2, "title": "安全组", "correct": true },
+        { "id": 3, "title": "通讯组", "correct": true },
+        { "id": 4, "title": "发布组" },
+        { "id": 5, "title": "特权组" }
+      ]
+    },
+    {
+      "id": 388,
+      "chapter": "真题",
+      "title": "在安装DHCP服务器之前，需要保证这台计算机具有静态的（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "子网掩码", "correct": true },
+        { "id": 2, "title": "默认网关", "correct": true },
+        { "id": 3, "title": "DNS 服务" },
+        { "id": 4, "title": "完全限定域名" },
+        { "id": 5, "title": "IP 地址", "correct": true }
+      ]
+    },
+    {
+      "id": 389,
+      "chapter": "真题",
+      "title": "为了能够实现网络通信，管理员需要为计算机上的网卡等网络设备设置TCP/IP参数，主要包括：IP地址、（）、默认网关、首选DNS服务器等",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "子网掩码", "correct": true },
+        { "id": 2, "title": "工作组" },
+        { "id": 3, "title": "域" },
+        { "id": 4, "title": "用户帐户" }
+      ]
+    },
+    {
+      "id": 390,
+      "chapter": "真题",
+      "title": "在工作组中，每台计算机把自己的资源信息、用户帐户信息和安全信息存放在本地的（）中",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "活动目录数据库" },
+        { "id": 2, "title": "防火墙" },
+        { "id": 3, "title": "文件夹" },
+        { "id": 4, "title": "SAM 数据库", "correct": true }
+      ]
+    },
+    {
+      "id": 391,
+      "chapter": "真题",
+      "title": "使用（）工具，可以从 Active Directory 回收站恢复已删除的对象",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Active Directory 站点和服务" },
+        { "id": 2, "title": "Active Directory 用户和计算机" },
+        { "id": 3, "title": "Active Directory 域和信任关系" },
+        { "id": 4, "title": "Active Directory 管理中心", "correct": true }
+      ]
+    },
+    {
+      "id": 392,
+      "chapter": "真题",
+      "title": "（）,提供对 AD DS 对象及属性的定义，通常不会经常查看或变更它们",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "组织单位" },
+        { "id": 2, "title": "对象" },
+        { "id": 3, "title": "架构", "correct": true },
+        { "id": 4, "title": "域树" }
+      ]
+    },
+    {
+      "id": 393,
+      "chapter": "真题",
+      "title": "磁盘可以被划分为（）和扩展分区等",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "逻辑分区" },
+        { "id": 2, "title": "扇" },
+        { "id": 3, "title": "主分区", "correct": true },
+        { "id": 4, "title": "MBR" }
+      ]
+    },
+    {
+      "id": 394,
+      "chapter": "真题",
+      "title": "在Windows Server 2016中可以使用命令（），来验证物理服务器是否满足安装Hyper-V服务的要求",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ncpa.cpl" },
+        { "id": 2, "title": "systeminfo.exe", "correct": true },
+        { "id": 3, "title": "hyperinfo.exe" },
+        { "id": 4, "title": "info32.exe" }
+      ]
+    },
+    {
+      "id": 395,
+      "chapter": "真题",
+      "title": "NTFS权限通常可分为：（）和特殊权限",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "打印权限" },
+        { "id": 2, "title": "管理员权限" },
+        { "id": 3, "title": "访问权限" },
+        { "id": 4, "title": "标准权限", "correct": true }
+      ]
+    },
+    {
+      "id": 396,
+      "chapter": "真题",
+      "title": "DHCP客户端可以从四个级别分配到所需的DHCP选项，这四个级别为：（）、作用域级别、类级别和保留级别",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "服务器级别", "correct": true },
+        { "id": 2, "title": "计算机级别" },
+        { "id": 3, "title": "网络级别" },
+        { "id": 4, "title": "域级别" }
+      ]
+    },
+    {
+      "id": 397,
+      "chapter": "真题",
+      "title": "在一台DHCP服务器上，针对同一个网络地址只能建立（）个作用域",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1", "correct": true },
+        { "id": 2, "title": "5" },
+        { "id": 3, "title": "10" },
+        { "id": 4, "title": "无限制" }
+      ]
+    },
+    {
+      "id": 398,
+      "chapter": "真题",
+      "title": "将DNS客户机请求的IP地址解析为对应的完全限定域名的过程称为（）查询",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "递归" },
+        { "id": 2, "title": "迭代" },
+        { "id": 3, "title": "正向" },
+        { "id": 4, "title": "反向", "correct": true }
+      ]
+    },
+    {
+      "id": 399,
+      "chapter": "真题",
+      "title": "Hyper-V提供了三种类型的虚拟机导入选项：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "就地注册虚拟机", "correct": true },
+        { "id": 2, "title": "还原虚拟机", "correct": true },
+        { "id": 3, "title": "恢复虚拟机" },
+        { "id": 4, "title": "部署虚拟机" },
+        { "id": 5, "title": "复制虚拟机", "correct": true }
+      ]
+    },
+    {
+      "id": 400,
+      "chapter": "真题",
+      "title": "域内的所有计算机共享一个（）式的数据库（即，活动目录数据库），其中包含整个域内所有用户帐户的相关数据",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "分散" },
+        { "id": 2, "title": "集中", "correct": true },
+        { "id": 3, "title": "连续" },
+        { "id": 4, "title": "分布" }
+      ]
+    },
+    {
+      "id": 401,
+      "chapter": "真题",
+      "title": "如果一个员工长时间不工作，那么为安全起见，管理员应该将他的用户帐户（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "删除" },
+        { "id": 2, "title": "禁用", "correct": true },
+        { "id": 3, "title": "复制" },
+        { "id": 4, "title": "更新" }
+      ]
+    },
+    {
+      "id": 402,
+      "chapter": "真题",
+      "title": "一个域中无论有多少台计算机，一个用户只要拥有（）个域用户帐户，便可以访问域中所有计算机上允许访问的资源",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "一", "correct": true },
+        { "id": 2, "title": "二" },
+        { "id": 3, "title": "三" },
+        { "id": 4, "title": "四" }
+      ]
+    },
+    {
+      "id": 403,
+      "chapter": "真题",
+      "title": "SAN使用专用协议，例如，（）或iSCSI（Internet SCSI）将数据块直接写入磁盘",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "通用 Internet 文件系统" },
+        { "id": 2, "title": "网络文件系统" },
+        { "id": 3, "title": "服务器消息块" },
+        { "id": 4, "title": "以太网光纤通道", "correct": true }
+      ]
+    },
+    {
+      "id": 404,
+      "chapter": "真题",
+      "title": "Hyper-V提供了三种类型的虚拟交换机：（）、内部和外部",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "专用", "correct": true },
+        { "id": 2, "title": "VPN" },
+        { "id": 3, "title": "环形" },
+        { "id": 4, "title": "星形" }
+      ]
+    },
+    {
+      "id": 405,
+      "chapter": "真题",
+      "title": "（）负责把文档转换为打印设备所能够理解的格式，以便打印",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "打印机驱动程序", "correct": true },
+        { "id": 2, "title": "网卡驱动程序" },
+        { "id": 3, "title": "光驱" },
+        { "id": 4, "title": "显卡" }
+      ]
+    },
+    {
+      "id": 406,
+      "chapter": "真题",
+      "title": "被授权的DHCP服务器的IP地址会被注册到域控制器的（）中",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SAM 数据库" },
+        { "id": 2, "title": "活动目录数据库", "correct": true },
+        { "id": 3, "title": "WINS 数据库" },
+        { "id": 4, "title": "DNS 数据库" }
+      ]
+    },
+    {
+      "id": 407,
+      "chapter": "真题",
+      "title": "为了容错，可以在另一台DNS服务器上建立某个主要区域的只读副本，这个副本被称为（）区域，里面的资源记录内容与主要区域中的资源记录内容完全相同",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "备份" },
+        { "id": 2, "title": "辅助", "correct": true },
+        { "id": 3, "title": "活动目录集成" },
+        { "id": 4, "title": "存根" }
+      ]
+    },
+    {
+      "id": 408,
+      "chapter": "真题",
+      "title": "Windows Server 2016内置了功能强大的（），它可以保护计算机免受来自外部的恶意攻击",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "用户组" },
+        { "id": 2, "title": "Windows防火墙", "correct": true },
+        { "id": 3, "title": "安全组" },
+        { "id": 4, "title": "策略" }
+      ]
+    },
+    {
+      "id": 409,
+      "chapter": "真题",
+      "title": "管理员可以更改（）组的成员关系，以减少系统管理员分配权限和权利的负担",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Guests" },
+        { "id": 2, "title": "Administrators", "correct": true },
+        { "id": 3, "title": "Everyone" },
+        { "id": 4, "title": "Users" }
+      ]
+    },
+    {
+      "id": 410,
+      "chapter": "真题",
+      "title": "镜像也称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "RAID 5" },
+        { "id": 2, "title": "RAID 2" },
+        { "id": 3, "title": "RAID 1", "correct": true },
+        { "id": 4, "title": "RAID 6" }
+      ]
+    },
+    {
+      "id": 411,
+      "chapter": "真题",
+      "title": "（）类型的磁盘可更好地利用物理存储空间，建议用于运行不含有密集使用磁盘的应用程序的服务器",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "静态扩展" },
+        { "id": 2, "title": "固定大小" },
+        { "id": 3, "title": "动态扩展", "correct": true },
+        { "id": 4, "title": "动态压缩" }
+      ]
+    },
+    {
+      "id": 412,
+      "chapter": "真题",
+      "title": "打印机的权限包括（）、管理此打印机和管理文档",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "扫描" },
+        { "id": 2, "title": "备份" },
+        { "id": 3, "title": "打印", "correct": true },
+        { "id": 4, "title": "删除" }
+      ]
+    },
+    {
+      "id": 413,
+      "chapter": "真题",
+      "title": "在Windows Server 2016的DNS服务器上，可以创建四种类型的DNS区域：（）、辅助区域、存根区域和Active Directory集成区域",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "主要区域", "correct": true },
+        { "id": 2, "title": "次要区域" },
+        { "id": 3, "title": "加密区域" },
+        { "id": 4, "title": "缓存区域" }
+      ]
+    },
+    {
+      "id": 414,
+      "chapter": "真题",
+      "title": "IKEv2 仅支持（）以及之后的操作系统",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Windows 7", "correct": true },
+        { "id": 2, "title": "Windows XP" },
+        { "id": 3, "title": "Windows 8" },
+        { "id": 4, "title": "Windows 10" }
+      ]
+    },
+    {
+      "id": 415,
+      "chapter": "真题",
+      "title": "Windows Server 2016支持的文件系统，不包含（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "VMFS", "correct": true },
+        { "id": 2, "title": "exFAT" },
+        { "id": 3, "title": "NTFS" },
+        { "id": 4, "title": "ReFS" }
+      ]
+    },
+    {
+      "id": 416,
+      "chapter": "真题",
+      "title": "FAT和（）格式的简单卷无法被扩展",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "EXT3" },
+        { "id": 2, "title": "NTFS" },
+        { "id": 3, "title": "FAT32", "correct": true },
+        { "id": 4, "title": "RsFS" }
+      ]
+    },
+    {
+      "id": 417,
+      "chapter": "真题",
+      "title": "（）可以实现虚拟机数据文件的异步备份。借助这项技术，可以让一个虚拟机在不同的Hyper-V服务器上存在两个实例，一个实例作为主虚拟机（接受用户访问），另一个实例作为副本虚拟机（备用）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Hyper-V 复制", "correct": true },
+        { "id": 2, "title": "虚拟机迁移" },
+        { "id": 3, "title": "移动虚拟机存储" },
+        { "id": 4, "title": "虚拟机存储复制" }
+      ]
+    },
+    {
+      "id": 418,
+      "chapter": "真题",
+      "title": "在一个Windows网络中，执行打印工作的物理设备称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "打印设备", "correct": true },
+        { "id": 2, "title": "显示设备" },
+        { "id": 3, "title": "网络设备" },
+        { "id": 4, "title": "存储设备" }
+      ]
+    },
+    {
+      "id": 419,
+      "chapter": "真题",
+      "title": "在DHCP服务器上新建一个作用域，需要定义：（）、IP地址范围、子网掩码和租用期限等内容",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "工作组" },
+        { "id": 2, "title": "名称及描述", "correct": true },
+        { "id": 3, "title": "域" },
+        { "id": 4, "title": "权限" }
+      ]
+    },
+    {
+      "id": 420,
+      "chapter": "真题",
+      "title": "如果DNS服务器收到DNS客户机查询IP地址的请求，而自己无法解析，则可以把这个请求送给（），继续进行查询",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DHCP服务器" },
+        { "id": 2, "title": "Internet上的根DNS服务器", "correct": true },
+        { "id": 3, "title": "Web服务器" },
+        { "id": 4, "title": "FTP服务器" }
+      ]
+    },
+    {
+      "id": 421,
+      "chapter": "真题",
+      "title": "（）是目前较新的服务器操作系统",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Windows Server 2003" },
+        { "id": 2, "title": "Windows Server 2008" },
+        { "id": 3, "title": "Windows Server 2016" },
+        { "id": 4, "title": "Windows Server 2022", "correct": true }
+      ]
+    },
+    {
+      "id": 422,
+      "chapter": "真题",
+      "title": "Windows 操作系统可以管理多种类型的磁盘，最常见的磁盘类型有 EIDE、SATA、SCSI 和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SLC" },
+        { "id": 2, "title": "SAS", "correct": true },
+        { "id": 3, "title": "TLC" },
+        { "id": 4, "title": "Volume" }
+      ]
+    },
+    {
+      "id": 423,
+      "chapter": "真题",
+      "title": "虚拟机工具栏中的按钮可以调节虚拟机的状态,虚拟机的状态包括：（）、开始、运行、暂停和保存",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "加载" },
+        { "id": 2, "title": "关闭", "correct": true },
+        { "id": 3, "title": "卸载" },
+        { "id": 4, "title": "休眠" }
+      ]
+    },
+    {
+      "id": 424,
+      "chapter": "真题",
+      "title": "在Windows Server 2016中，（）是一种能够设置文件权限的文件系统",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "FAT" },
+        { "id": 2, "title": "NTFS", "correct": true },
+        { "id": 3, "title": "FAT32" },
+        { "id": 4, "title": "VMFS" }
+      ]
+    },
+    {
+      "id": 425,
+      "chapter": "真题",
+      "title": "通常，通过（）个步骤DHCP服务器将IP参数以租约的方式提供给DHCP客户端",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1" },
+        { "id": 2, "title": "2" },
+        { "id": 3, "title": "3" },
+        { "id": 4, "title": "4", "correct": true }
+      ]
+    },
+    {
+      "id": 427,
+      "chapter": "真题",
+      "title": "为了向用户提供完全限定域名的解析功能，需要在网络中安装并配置（）服务器",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Web" },
+        { "id": 2, "title": "FTP" },
+        { "id": 3, "title": "DHCP" },
+        { "id": 4, "title": "DNS", "correct": true }
+      ]
+    },
+    {
+      "id": 428,
+      "chapter": "真题",
+      "title": "以下关于组帐户描述正确的有（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "一个组中可以根据需要包含多个用户帐户", "correct": true },
+        {
+          "id": 2,
+          "title": "如果给一个组分配了某项权限或权利，那么该组中的所有成员都将继承这些权限或权利",
+          "correct": true
+        },
+        { "id": 3, "title": "本地管理员组 administrators 可以被禁用" },
+        { "id": 4, "title": "新建组中只能包含 100 个用户帐户" }
+      ]
+    },
+    {
+      "id": 429,
+      "chapter": "真题",
+      "title": "活动目录具有的特点是（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "动态的组织形式", "correct": true },
+        { "id": 2, "title": "方便的资源查找", "correct": true },
+        { "id": 3, "title": "集中管理与分散管理相结合", "correct": true },
+        { "id": 4, "title": "资源访问的分级管理", "correct": true },
+        { "id": 5, "title": "快速链路的网络" }
+      ]
+    },
+    {
+      "id": 430,
+      "chapter": "真题",
+      "title": "Windows Server 2022 操作系统的版本主要包括：Essentials、（）和 Datacenter",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "精简版" },
+        { "id": 2, "title": "Enterprise" },
+        { "id": 3, "title": "Standard", "correct": true },
+        { "id": 4, "title": "Student" }
+      ]
+    },
+    {
+      "id": 431,
+      "chapter": "真题",
+      "title": "一个活动目录对象所具有的各种各样的特征，称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "属性", "correct": true },
+        { "id": 2, "title": "键" },
+        { "id": 3, "title": "值" },
+        { "id": 4, "title": "关系" }
+      ]
+    },
+    {
+      "id": 432,
+      "chapter": "真题",
+      "title": "域内所有的计算机共享一个集中式的安全数据库，它包含着整个域中所有的资源信息、用户帐户信息与安全信息，负责管理与维护这个安全数据库的功能组件被称为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DHCP 数据库" },
+        { "id": 2, "title": "SAM 数据库" },
+        { "id": 3, "title": "活动目录", "correct": true },
+        { "id": 4, "title": "主要区域" }
+      ]
+    },
+    {
+      "id": 433,
+      "chapter": "真题",
+      "title": "命令（），用于列出所有可访问的卷",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Format-Volume" },
+        { "id": 2, "title": "Get-Disk" },
+        { "id": 3, "title": "Clear-Disk" },
+        { "id": 4, "title": "Get-Volume", "correct": true }
+      ]
+    },
+    {
+      "id": 434,
+      "chapter": "真题",
+      "title": "第二代虚拟机支持更安全的启动、更好的性能，但仅支持（）以及之后的64位来宾操作系统",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Windows XP" },
+        { "id": 2, "title": "Windows 7" },
+        { "id": 3, "title": "Windows 8", "correct": true },
+        { "id": 4, "title": "Windows 10" }
+      ]
+    },
+    {
+      "id": 435,
+      "chapter": "真题",
+      "title": "在Internet上，广泛使用（）来标识计算机",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "计算机名" },
+        { "id": 2, "title": "IP地址" },
+        { "id": 3, "title": "完全限定域名", "correct": true },
+        { "id": 4, "title": "MAC地址" }
+      ]
+    },
+    {
+      "id": 436,
+      "chapter": "易错集合",
+      "title": "Server Core 针对私有云和数据中心的托管环境进行了优化，并包含了完整的本地图形管理界面",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 437,
+      "chapter": "易错集合",
+      "title": "创建虚拟机后，可以其从第一代迁移到第二代，但无法将其从第二代迁移到第一代",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 438,
+      "chapter": "易错集合",
+      "title": "第二代虚拟机使用不同的硬件型号，并全面支持第一代虚拟机的所有旧设备",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 439,
+      "chapter": "易错集合",
+      "title": "活动目录对象所具有的各种各样的特征，称为“属性”（简称AD）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 440,
+      "chapter": "易错集合",
+      "title": "在活动目录中，存储着数量众多的资源、规则和策略，它们被称作“活动目录对象”，简称“对象”（Object）",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 441,
+      "chapter": "易错集合",
+      "title": "活动目录具有的特点是（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "动态的组织形式", "correct": true },
+        { "id": 2, "title": "方便的资源查找", "correct": true },
+        { "id": 3, "title": "集中管理与分散管理相结合", "correct": true },
+        { "id": 4, "title": "资源访问的分级管理", "correct": true },
+        { "id": 5, "title": "快速链路的网络" }
+      ]
+    },
+    {
+      "id": 442,
+      "chapter": "易错集合",
+      "title": "条带也称为 RAID-2",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 443,
+      "chapter": "易错集合",
+      "title": "NTFS 文件夹权限主要包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "读取", "correct": true },
+        { "id": 2, "title": "写入", "correct": true },
+        { "id": 3, "title": "读取和执行", "correct": true },
+        { "id": 4, "title": "完全控制", "correct": true },
+        { "id": 5, "title": "列出文件夹目录", "correct": true },
+        { "id": 6, "title": "修改", "correct": true },
+        { "id": 7, "title": "删除" },
+        { "id": 8, "title": "替代" }
+      ]
+    },
+    {
+      "id": 444,
+      "chapter": "易错集合",
+      "title": "NTFS 文件权限主要包括（）、写入、读取和执行、修改",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "替代" },
+        { "id": 2, "title": "删除" },
+        { "id": 3, "title": "读取", "correct": true },
+        { "id": 4, "title": "列出文件夹目录" }
+      ]
+    },
+    {
+      "id": 445,
+      "chapter": "易错集合",
+      "title": "在 FAT 和 FAT32 分区中，只有管理员才能对文件或文件夹设置本地访问权限",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 446,
+      "chapter": "易错集合",
+      "title": "故障转移群集仲裁配置包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "多数节点", "correct": true },
+        { "id": 2, "title": "节点和磁盘多数", "correct": true },
+        { "id": 3, "title": "多数节点和文件共享", "correct": true },
+        { "id": 4, "title": "非多数，仅磁盘", "correct": true }
+      ]
+    },
+    {
+      "id": 447,
+      "chapter": "易错集合",
+      "title": "故障转移群集中最多可以包含多少个节点",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "5" },
+        { "id": 2, "title": "8", "correct": true },
+        { "id": 3, "title": "32" },
+        { "id": 4, "title": "没有限制" }
+      ]
+    },
+    {
+      "id": 448,
+      "chapter": "易错集合",
+      "title": "Windows Server 2022 的 DHCP 故障转移功能，可让两台 DHCP 服务器为同一个 IPv4 作用域提供 IP 参数",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 449,
+      "chapter": "易错集合",
+      "title": "DHCP 服务器除了必须给 DHCP 客户端分配 IP 地址和子网掩码之外，还可以有选择性地分配其它参数，例如（），这些可选分配的参数称为“DHCP 选项”",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "默认网关（路由器）", "correct": true },
+        { "id": 2, "title": "完全限定域名" },
+        { "id": 3, "title": "DNS 域名", "correct": true },
+        { "id": 4, "title": "DNS 服务器地址", "correct": true },
+        { "id": 5, "title": "计算机名" }
+      ]
+    },
+    {
+      "id": 450,
+      "chapter": "易错集合",
+      "title": "在安装 DHCP 服务器之前，需要保证这台计算机具有静态的（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "子网掩码", "correct": true },
+        { "id": 2, "title": "默认网关", "correct": true },
+        { "id": 3, "title": "DNS 服务" },
+        { "id": 4, "title": "完全限定域名" },
+        { "id": 5, "title": "IP 地址", "correct": true }
+      ]
+    },
+    {
+      "id": 451,
+      "chapter": "易错集合",
+      "title": "管理员可以在辅助区域中直接添加、修改或删除资源记录",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 452,
+      "chapter": "易错集合",
+      "title": "用于支持使用客户端远程管理在服务器上的电子邮件的协议是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "HTTP" },
+        { "id": 2, "title": "POP3", "correct": true },
+        { "id": 3, "title": "SMTP" },
+        { "id": 4, "title": "FTP" }
+      ]
+    },
+    {
+      "id": 453,
+      "chapter": "易错集合",
+      "title": "用于从 Web 网站服务器传输超文本到本地浏览器的传输协议是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "HTTP", "correct": true },
+        { "id": 2, "title": "POP3" },
+        { "id": 3, "title": "SMTP" },
+        { "id": 4, "title": "FTP" }
+      ]
+    },
+    {
+      "id": 454,
+      "chapter": "易错集合",
+      "title": "可以自动颁发证书的 CA 类型是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "独立 CA" },
+        { "id": 2, "title": "企业 CA", "correct": true },
+        { "id": 3, "title": "两个均可以" },
+        { "id": 4, "title": "两个均不可以" }
+      ]
+    },
+    {
+      "id": 455,
+      "chapter": "易错集合",
+      "title": "Windows Server 2016 支持的身份验证方法，包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "PAP" },
+        { "id": 2, "title": "CHAP" },
+        { "id": 3, "title": "MS-CHAPv2", "correct": true },
+        { "id": 4, "title": "RIP" },
+        { "id": 5, "title": "EAP", "correct": true }
+      ]
+    },
+    {
+      "id": 456,
+      "chapter": "易错集合",
+      "title": "第二代虚拟机支持更安全的启动、更好的性能，但仅支持（）以及之后的64位来宾操作系统",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Windows XP" },
+        { "id": 2, "title": "Windows 7" },
+        { "id": 3, "title": "Windows 8", "correct": true },
+        { "id": 4, "title": "Windows 10" }
+      ]
+    },
+    {
+      "id": 457,
+      "chapter": "易错集合",
+      "title": "部署VPN解决方案的人员，需要具有本机Power Users组的成员身份",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对" },
+        { "id": 2, "title": "错", "correct": true }
+      ]
+    },
+    {
+      "id": 458,
+      "chapter": "易错集合",
+      "title": "一个域中的计算机角色有：（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "域控制器", "correct": true },
+        { "id": 2, "title": "成员服务器", "correct": true },
+        { "id": 3, "title": "工作站", "correct": true },
+        { "id": 4, "title": "工作组" }
+      ]
+    }
+  ]
+}

@@ -1,20 +1,33 @@
 'use client'
 
 import * as React from 'react'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { signOut } from 'next-auth/react'
 import Link from 'next/link'
 import { useMount } from 'react-use'
-import { Dropdown, Spin } from 'antd'
+import { Dropdown, Spin, MenuProps } from 'antd'
 import { PageContainer, ProLayout, ProSkeleton } from '@ant-design/pro-components'
 import type { MenuDataItem } from '@ant-design/pro-components'
-import { HeartOutlined, SmileOutlined, LogoutOutlined } from '@ant-design/icons'
-import { ROUTES } from '@/constants'
+import { HeartOutlined, SmileOutlined, LogoutOutlined, DesktopOutlined } from '@ant-design/icons'
+import { ROUTES, PATHS } from '@/constants'
 
 const menuIconMap = {
   smile: <SmileOutlined />,
   heart: <HeartOutlined />,
 }
+
+const items: MenuProps['items'] = [
+  {
+    key: 'home',
+    icon: <DesktopOutlined />,
+    label: '前往首页',
+  },
+  {
+    key: 'logout',
+    icon: <LogoutOutlined />,
+    label: '退出登录',
+  },
+]
 
 const loopMenuItem = (menus: any[]): MenuDataItem[] =>
   menus.map(({ icon, routes, ...item }) => ({
@@ -26,6 +39,12 @@ const loopMenuItem = (menus: any[]): MenuDataItem[] =>
 export function AdminMainLayout({ children }: React.PropsWithChildren) {
   const pathname = usePathname()
   const [mounted, setMounted] = React.useState(false)
+  const router = useRouter()
+
+  const onClick: MenuProps['onClick'] = (event) => {
+    if (event.key === 'home') router.push(PATHS.SITE_HOME)
+    if (event.key === 'logout') signOut()
+  }
 
   useMount(() => {
     setMounted(true)
@@ -70,13 +89,7 @@ export function AdminMainLayout({ children }: React.PropsWithChildren) {
         ),
         title: '煎蛋',
         size: 'small',
-        render: (props, dom) => (
-          <Dropdown
-            menu={{ items: [{ key: 'logout', icon: <LogoutOutlined />, label: '退出' }], onClick: () => signOut() }}
-          >
-            {dom}
-          </Dropdown>
-        ),
+        render: (props, dom) => <Dropdown menu={{ items, onClick }}>{dom}</Dropdown>,
       }}
     >
       <PageContainer header={{ title: false }}>

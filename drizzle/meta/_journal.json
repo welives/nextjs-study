@@ -8,6 +8,13 @@
       "when": 1730544117103,
       "tag": "0000_lethal_sharon_ventura",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1730620881716,
+      "tag": "0001_sloppy_wiccan",
+      "breakpoints": true
     }
   ]
 }

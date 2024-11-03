@@ -33,7 +33,7 @@ const formFields = {
   pid: {
     label: '上级分类',
     placeholder: '输入关键字进行搜索',
-    rules: undefined,
+    rules: void 0,
   },
   name: {
     label: '分类名称',
@@ -43,7 +43,7 @@ const formFields = {
   remark: {
     label: '备注',
     placeholder: '请输入备注',
-    rules: undefined,
+    rules: void 0,
   },
 }
 

@@ -3,8 +3,9 @@
 import * as React from 'react'
 import { ProTable } from '@ant-design/pro-components'
 import type { ProColumns, ActionType } from '@ant-design/pro-components'
-import { Space, Button, Typography, Popconfirm, message } from 'antd'
+import { Space, Button, Typography, Popconfirm } from 'antd'
 import { SearchOutlined } from '@ant-design/icons'
+import { toast } from 'sonner'
 import http from '@/lib/http'
 import { deleteOne } from '@/actions/course'
 import { CourseModalForm } from './modal-form'
@@ -25,12 +26,12 @@ export function CourseListPage() {
       dataIndex: ['category', 'name'],
       align: 'center',
       ellipsis: true,
-      width: 250,
+      width: 200,
     },
     {
-      title: '课程描述',
+      title: () => <Typography className="text-center">课程描述</Typography>,
       dataIndex: 'description',
-      align: 'center',
+      align: 'left',
       ellipsis: true,
       hideInSearch: true,
     },
@@ -62,10 +63,10 @@ export function CourseListPage() {
             onConfirm={async () => {
               const res = await deleteOne(record.id)
               if (!res.success) {
-                message.error(res.message)
+                toast.error(res.message)
                 return false
               }
-              message.success(res.message)
+              toast.success(res.message)
               tableRef.current?.reload()
               return true
             }}
@@ -101,15 +102,15 @@ export function CourseListPage() {
       debounceTime={500}
       columns={columns}
       request={async (values) => {
-        const res = await http.get<Api.CourseListData[]>('/api/course', {
+        const res = await http.get('/api/course', {
           page: values.current,
           limit: values.pageSize,
           keyword: values.keyword,
         })
         return {
-          total: res.data?.length,
           success: res.success,
-          data: res.data,
+          total: res.data.count,
+          data: res.data.rows,
         }
       }}
     />

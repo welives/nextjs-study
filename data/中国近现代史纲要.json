@@ -1,0 +1,2508 @@
+{
+  "subject": "中国近现代史纲要",
+  "category": "自考",
+  "data": [
+    {
+      "id": 1,
+      "chapter": "第一章",
+      "title": "中国的封建社会在政治上实行（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "高度中央集权的封建君主专制制度", "correct": true },
+        { "id": 2, "title": "君主立宪制 " },
+        { "id": 3, "title": "共和制" },
+        { "id": 4, "title": "民主制" }
+      ]
+    },
+    {
+      "id": 2,
+      "chapter": "第一章",
+      "title": "中国封建社会的文化以（）为核心",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "法家思想" },
+        { "id": 2, "title": "道家思想 " },
+        { "id": 3, "title": "墨家思想" },
+        { "id": 4, "title": "儒家思想", "correct": true }
+      ]
+    },
+    {
+      "id": 3,
+      "chapter": "第一章",
+      "title": "中国封建社会的主要矛盾是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "地主阶级和农民阶级的矛盾", "correct": true },
+        { "id": 2, "title": "君主和农民阶级的矛盾 " },
+        { "id": 3, "title": "落后的社会生产力和人们不断增长的生活需要之间的矛盾" },
+        { "id": 4, "title": "统治阶级和反抗阶级之间的矛盾" }
+      ]
+    },
+    {
+      "id": 4,
+      "chapter": "第一章",
+      "title": "列强侵略中国的过程中，政治控制的手段不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "控制中国内政" },
+        { "id": 2, "title": "把持中国海关 " },
+        { "id": 3, "title": "扶植、收买代理人" },
+        { "id": 4, "title": "签订不平等条约", "correct": true }
+      ]
+    },
+    {
+      "id": 5,
+      "chapter": "第一章",
+      "title": "1900年，八国联军发动侵华战争，以签订（）而结束",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《北京条约》" },
+        { "id": 2, "title": "《江宁条约》" },
+        { "id": 3, "title": "《辛丑条约》", "correct": true },
+        { "id": 4, "title": "《马关条约》" }
+      ]
+    },
+    {
+      "id": 6,
+      "chapter": "第一章",
+      "title": "1895年，中日甲午战争后签订了（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《江宁条约》" },
+        { "id": 2, "title": "《天津条约》" },
+        { "id": 3, "title": "《北京条约》" },
+        { "id": 4, "title": "《马关条约》", "correct": true }
+      ]
+    },
+    {
+      "id": 7,
+      "chapter": "第一章",
+      "title": "（）是中国近代史的开端",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "清王朝的建立" },
+        { "id": 2, "title": "第一次鸦片战争", "correct": true },
+        { "id": 3, "title": "《江宁条约》的签订" },
+        { "id": 4, "title": "辛亥革命" }
+      ]
+    },
+    {
+      "id": 8,
+      "chapter": "第一章",
+      "title": "从1840年开始，中国逐步形成并加深地演变为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "封建社会" },
+        { "id": 2, "title": "殖民地国家" },
+        { "id": 3, "title": "资产阶级国家" },
+        { "id": 4, "title": "半殖民地半封建社会", "correct": true }
+      ]
+    },
+    {
+      "id": 9,
+      "chapter": "第一章",
+      "title": "中国民族资产阶级具有的特点是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "两面性", "correct": true },
+        { "id": 2, "title": "经济实力强" },
+        { "id": 3, "title": "政治地位高" },
+        { "id": 4, "title": "斗争性强" }
+      ]
+    },
+    {
+      "id": 10,
+      "chapter": "第一章",
+      "title": "近代中国社会的性质和主要矛盾决定了近代以来中华民族的两大历史任务：一是（）；二是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "求得民族独立和人民解放，实现国家繁荣富强和人民共同富裕", "correct": true },
+        { "id": 2, "title": "实现国家繁荣富强和人民共同富裕，建立资本主义国家" },
+        { "id": 3, "title": "求得民族独立和人民解放，建立资本主义国家" },
+        { "id": 4, "title": "建立资本主义国家，发展资本主义经济" }
+      ]
+    },
+    {
+      "id": 11,
+      "chapter": "第一章",
+      "title": "实现国家繁荣富强和人民共同富裕是解决（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "生产力问题", "correct": true },
+        { "id": 2, "title": "政权问题" },
+        { "id": 3, "title": "生产关系问题" },
+        { "id": 4, "title": "国家独立问题" }
+      ]
+    },
+    {
+      "id": 12,
+      "chapter": "第一章",
+      "title": "求得民族独立和人民解放是解决（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "生产力问题" },
+        { "id": 2, "title": "政权问题" },
+        { "id": 3, "title": "生产关系问题", "correct": true },
+        { "id": 4, "title": "国家独立问题" }
+      ]
+    },
+    {
+      "id": 13,
+      "chapter": "第一章",
+      "title": "列强瓜分中国图谋破产的最根本原因是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "生中国国土广大，人口众多力问题" },
+        { "id": 2, "title": "帝国主义国家之间的矛盾和相互制约" },
+        { "id": 3, "title": "中国人民进行了不屈不挠的反侵略斗争", "correct": true },
+        { "id": 4, "title": "世界舆论的监督" }
+      ]
+    },
+    {
+      "id": 14,
+      "chapter": "第一章",
+      "title": "（）后，帝国主义列强对中国的侵略和瓜分达到高潮",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "第一次鸦片战争" },
+        { "id": 2, "title": "第二次鸦片战争" },
+        { "id": 3, "title": "中日甲午战争", "correct": true },
+        { "id": 4, "title": "八国联军侵华" }
+      ]
+    },
+    {
+      "id": 15,
+      "chapter": "第一章",
+      "title": "近代提出“门户开放”政策的国家是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "日本" },
+        { "id": 2, "title": "美国", "correct": true },
+        { "id": 3, "title": "德国" },
+        { "id": 4, "title": "英国" }
+      ]
+    },
+    {
+      "id": 16,
+      "chapter": "第一章",
+      "title": "中国近代史上最早的大规模反侵略武装斗争是1841年5月的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "台湾人民在黑旗军刘永福领导下抗击日本侵略的斗争" },
+        { "id": 2, "title": "太平军重创外国侵略者" },
+        { "id": 3, "title": "义和团抗击八国联军" },
+        { "id": 4, "title": "三元里人民抗英斗争", "correct": true }
+      ]
+    },
+    {
+      "id": 17,
+      "chapter": "第一章",
+      "title": "1841年战死虎门的广东水师提督是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "陈化成" },
+        { "id": 2, "title": "海龄" },
+        { "id": 3, "title": "史荣春" },
+        { "id": 4, "title": "关天培", "correct": true }
+      ]
+    },
+    {
+      "id": 18,
+      "chapter": "第一章",
+      "title": "中国近代史上第一次大规模反侵略武装斗争是（）的三元里人民抗英斗争",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1841年5月", "correct": true },
+        { "id": 2, "title": "1842年5月" },
+        { "id": 3, "title": "1840年5月" },
+        { "id": 4, "title": "1843年5月" }
+      ]
+    },
+    {
+      "id": 27,
+      "chapter": "第二章",
+      "title": "1851年，（）在广西金田村发动起义，建号太平天国",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "杨秀清" },
+        { "id": 2, "title": "洪秀全", "correct": true },
+        { "id": 3, "title": "冯云山" },
+        { "id": 4, "title": "韦昌辉" }
+      ]
+    },
+    {
+      "id": 28,
+      "chapter": "第二章",
+      "title": "标志太平天国由盛到衰转折的事件是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "北伐失利" },
+        { "id": 2, "title": "天京事变", "correct": true },
+        { "id": 3, "title": "安庆失守" },
+        { "id": 4, "title": "天京被围" }
+      ]
+    },
+    {
+      "id": 29,
+      "chapter": "第二章",
+      "title": "太平天国农民起义爆发的时间是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1851年", "correct": true },
+        { "id": 2, "title": "1853年" },
+        { "id": 3, "title": "1856年" },
+        { "id": 4, "title": "1864年" }
+      ]
+    },
+    {
+      "id": 32,
+      "chapter": "第二章",
+      "title": "洋务派举办军事工业的首要目的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "镇压太平天国起义", "correct": true },
+        { "id": 2, "title": "加强海防边防" },
+        { "id": 3, "title": "抵御外来侵略" },
+        { "id": 4, "title": "发展资本主义" }
+      ]
+    },
+    {
+      "id": 33,
+      "chapter": "第二章",
+      "title": "洋务派以（）为目标",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "自强、求富", "correct": true },
+        { "id": 2, "title": "自强、独立" },
+        { "id": 3, "title": "民生、求富" },
+        { "id": 4, "title": "自强、民生" }
+      ]
+    },
+    {
+      "id": 34,
+      "chapter": "第二章",
+      "title": "洋务派兴办的第一个规模较大的近代意义上的军事兵工厂是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "汉阳湖北枪炮厂" },
+        { "id": 2, "title": "江南制造总局", "correct": true },
+        { "id": 3, "title": "天津机器局" },
+        { "id": 4, "title": "马尾船政局" }
+      ]
+    },
+    {
+      "id": 35,
+      "chapter": "第二章",
+      "title": "洋务派举办的洋务事业归纳起来主要有“兴办近代企业”、“建立新式海陆军”和“创办新式学堂、派遣留学生”三个方面",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 38,
+      "chapter": "第一章",
+      "title": "西方的侵略所使用的政治控制手段主要有控制内政、操纵外交、领事裁判权、把持海关、勾结清政府、扶植代理人",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "对", "correct": true },
+        { "id": 2, "title": "错" }
+      ]
+    },
+    {
+      "id": 41,
+      "chapter": "第二章",
+      "title": "下列不属于资产阶级维新派掀起的维新救亡运动的领军人物的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "严复" },
+        { "id": 2, "title": "梁启超" },
+        { "id": 3, "title": "康有为" },
+        { "id": 4, "title": "洪秀全", "correct": true }
+      ]
+    },
+    {
+      "id": 42,
+      "chapter": "第二章",
+      "title": "严复翻译英国赫胥黎的《进化与伦理》的前两篇，命名为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《新学伪经考》" },
+        { "id": 2, "title": "《孔子改制考》" },
+        { "id": 3, "title": "《人类公理》" },
+        { "id": 4, "title": "《天演论》", "correct": true }
+      ]
+    },
+    {
+      "id": 43,
+      "chapter": "第二章",
+      "title": "戊戌维新运动持续的具体时间是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "98天" },
+        { "id": 2, "title": "103天", "correct": true },
+        { "id": 3, "title": "100天" },
+        { "id": 4, "title": "101天" }
+      ]
+    },
+    {
+      "id": 44,
+      "chapter": "第三章",
+      "title": "资产阶级革命派的阶级基础是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "大地主大资产阶级" },
+        { "id": 2, "title": "民族资产阶级", "correct": true },
+        { "id": 3, "title": "工人阶级" },
+        { "id": 4, "title": "农民阶级" }
+      ]
+    },
+    {
+      "id": 45,
+      "chapter": "第三章",
+      "title": "1906年清政府宣布“预备仿行宪政”，并于1908年颁布了（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《临时约法》" },
+        { "id": 2, "title": "《暂时新政律》" },
+        { "id": 3, "title": "《定国是诏》" },
+        { "id": 4, "title": "《钦定宪法大纲》", "correct": true }
+      ]
+    },
+    {
+      "id": 46,
+      "chapter": "第三章",
+      "title": "清政府规定的预备立宪的期限是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "7年" },
+        { "id": 2, "title": "8年" },
+        { "id": 3, "title": "9年", "correct": true },
+        { "id": 4, "title": "10年" }
+      ]
+    },
+    {
+      "id": 47,
+      "chapter": "第三章",
+      "title": "（）以黄兴为会长",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "华兴会", "correct": true },
+        { "id": 2, "title": "光复会" },
+        { "id": 3, "title": "岳王会" },
+        { "id": 4, "title": "兴中会" }
+      ]
+    },
+    {
+      "id": 48,
+      "chapter": "第三章",
+      "title": "1904年，孙中山发表的指出只有推翻清政府的统治，建立“中华民国”，才能真正解决中国问题的文章是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《革命军》" },
+        { "id": 2, "title": "《警世钟》" },
+        { "id": 3, "title": "《猛回头》" },
+        { "id": 4, "title": "《中国问题的真解决》", "correct": true }
+      ]
+    },
+    {
+      "id": 49,
+      "chapter": "第三章",
+      "title": "同盟会成立后，将（）作为自己的机关报",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《民报》", "correct": true },
+        { "id": 2, "title": "《新民丛报》" },
+        { "id": 3, "title": "《万国公报》" },
+        { "id": 4, "title": "《湘报》" }
+      ]
+    },
+    {
+      "id": 51,
+      "chapter": "第三章",
+      "title": "保路风潮中，运动最强烈的省份是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "湖北" },
+        { "id": 2, "title": "湖南" },
+        { "id": 3, "title": "广东" },
+        { "id": 4, "title": "四川", "correct": true }
+      ]
+    },
+    {
+      "id": 52,
+      "chapter": "第三章",
+      "title": "清帝退位，在中国延续了两千余年的封建帝制覆灭的时间是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1911年10月10日" },
+        { "id": 2, "title": "1911年4月27日" },
+        { "id": 3, "title": "1912年2月12日", "correct": true },
+        { "id": 4, "title": "1912年1月1日" }
+      ]
+    },
+    {
+      "id": 53,
+      "chapter": "第三章",
+      "title": "中国历史上第一部资产阶级共和国宪法性质的法典是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《中华民国宪法》" },
+        { "id": 2, "title": "《钦定宪法大纲》" },
+        { "id": 3, "title": "《中华民国临时约法》", "correct": true },
+        { "id": 4, "title": "《共同纲领》" }
+      ]
+    },
+    {
+      "id": 56,
+      "chapter": "第三章",
+      "title": "辛亥革命胜利的历史意义叙述不正确的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "辛亥革命推翻了清王朝在中国的统治，沉重打击了中外反动势力在中国的统治" },
+        { "id": 2, "title": "辛亥革命不能算作是一场思想解放运动", "correct": true },
+        { "id": 3, "title": "辛亥革命促使社会经济、思想习惯和社会风俗等方面发生了新的变化" },
+        {
+          "id": 4,
+          "title": "辛亥革命打击了帝国主义在华势力，为亚洲各国人民的革命斗争提供了范例，推动了亚洲各国民族解放运动的高涨"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "chapter": "第三章",
+      "title": "下列关于辛亥革命的说法错误的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "辛亥革命推翻了清王朝在中国的统治" },
+        { "id": 2, "title": "辛亥革命改变了旧中国半殖民地半封建的社会性质", "correct": true },
+        { "id": 3, "title": "辛亥革命没有改变中国人民的悲惨遭遇" },
+        { "id": 4, "title": "辛亥革命，没有完成实现民族独立、人民解放的历史任务" }
+      ]
+    },
+    {
+      "id": 58,
+      "chapter": "第三章",
+      "title": "辛亥革命的局限性不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "没有提出彻底的反对帝国主义和反对封建主义的革命纲领" },
+        { "id": 2, "title": "没有充分发动和依靠民众" },
+        { "id": 3, "title": "没有得到国际支援", "correct": true },
+        { "id": 4, "title": "没有建立坚强的革命政党，发挥团结一切革命力量的强有力的核心作用" }
+      ]
+    },
+    {
+      "id": 59,
+      "chapter": "第三章",
+      "title": "1915年5月，袁世凯为取得日本对他复辟帝制的支持，基本接受日本提出的严重损害中国权益的条约是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "西原借款" },
+        { "id": 2, "title": "二十一条", "correct": true },
+        { "id": 3, "title": "善后大借款" },
+        { "id": 4, "title": "铁路借款" }
+      ]
+    },
+    {
+      "id": 60,
+      "chapter": "第三章",
+      "title": "北洋军阀政府代表的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "民族资产阶级利益" },
+        { "id": 2, "title": "大地主和买办资产阶级利益", "correct": true },
+        { "id": 3, "title": "小资产阶级知识分子利益" },
+        { "id": 4, "title": "工农利益" }
+      ]
+    },
+    {
+      "id": 61,
+      "chapter": "第三章",
+      "title": "1915年12月25日，（）在云南宣布独立，护国战争爆发",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "唐继尧" },
+        { "id": 2, "title": "陆荣廷" },
+        { "id": 3, "title": "蔡锷", "correct": true },
+        { "id": 4, "title": "黄兴" }
+      ]
+    },
+    {
+      "id": 62,
+      "chapter": "第三章",
+      "title": "1906年清政府宣布“预备仿行宪政”，并于1908年颁布了（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《临时约法》" },
+        { "id": 2, "title": "《暂时新政律》" },
+        { "id": 3, "title": "《定国是诏》" },
+        { "id": 4, "title": "《钦定宪法大纲》", "correct": true }
+      ]
+    },
+    {
+      "id": 63,
+      "chapter": "第四章",
+      "title": "俄国爆发十月革命的时间是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1918年11月7日" },
+        { "id": 2, "title": "1917年11月7日", "correct": true },
+        { "id": 3, "title": "1918年7月11日" },
+        { "id": 4, "title": "1917年7月11日" }
+      ]
+    },
+    {
+      "id": 64,
+      "chapter": "第四章",
+      "title": "新文化运动兴起的标志是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "蔡元培就任北大校长" },
+        { "id": 2, "title": "鲁迅发表《狂人日记》" },
+        { "id": 3, "title": "陈独秀在上海创办《青年》杂志", "correct": true },
+        { "id": 4, "title": "陈独秀成为北大文科学长" }
+      ]
+    },
+    {
+      "id": 65,
+      "chapter": "第四章",
+      "title": "下列不属于第一次世界大战同盟国的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "德国" },
+        { "id": 2, "title": "奥地利" },
+        { "id": 3, "title": "意大利" },
+        { "id": 4, "title": "俄国", "correct": true }
+      ]
+    },
+    {
+      "id": 66,
+      "chapter": "第四章",
+      "title": "五四运动中学生喊出“罢免国贼”的口号，这里的“国贼”不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "曹汝霖" },
+        { "id": 2, "title": "章宗祥" },
+        { "id": 3, "title": "陆宗舆" },
+        { "id": 4, "title": "段祺瑞", "correct": true }
+      ]
+    },
+    {
+      "id": 67,
+      "chapter": "第四章",
+      "title": "五四运动爆发的直接导火索是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "发生在俄国十月革命所开辟的世界无产阶级社会主义革命的新时代" },
+        { "id": 2, "title": "新的社会力量的成长，民族资产阶级和工人阶级力量的进一步壮大" },
+        { "id": 3, "title": "新文化运动掀起的思想解放潮流" },
+        { "id": 4, "title": "巴黎和会上中国外交的失败", "correct": true }
+      ]
+    },
+    {
+      "id": 72,
+      "chapter": "第四章",
+      "title": "以下不是五四运动中的左翼骨干的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "毛泽东" },
+        { "id": 2, "title": "蔡和森" },
+        { "id": 3, "title": "董必武", "correct": true },
+        { "id": 4, "title": "周恩来" }
+      ]
+    },
+    {
+      "id": 73,
+      "chapter": "第四章",
+      "title": "1920年5月，在上海成立马克思主义研究会的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "李大钊" },
+        { "id": 2, "title": "陈独秀", "correct": true },
+        { "id": 3, "title": "胡适" },
+        { "id": 4, "title": "毛泽东" }
+      ]
+    },
+    {
+      "id": 79,
+      "chapter": "第四章",
+      "title": "共产党早期组织领导的第一个产业工会是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "上海印刷工会" },
+        { "id": 2, "title": "上海机器工会", "correct": true },
+        { "id": 3, "title": "上海纺织工会" },
+        { "id": 4, "title": "北京长辛店劳动补习学校" }
+      ]
+    },
+    {
+      "id": 80,
+      "chapter": "第四章",
+      "title": "在中国最早成立的地方共产党组织是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "北京共产主义小组" },
+        { "id": 2, "title": "上海共产主义小组", "correct": true },
+        { "id": 3, "title": "武汉共产主义小组" },
+        { "id": 4, "title": "广州共产主义小组" }
+      ]
+    },
+    {
+      "id": 81,
+      "chapter": "第四章",
+      "title": "1921年7月23日，举行中国共产党第一次全国代表大会的城市是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "北京" },
+        { "id": 2, "title": "广州" },
+        { "id": 3, "title": "上海", "correct": true },
+        { "id": 4, "title": "武汉" }
+      ]
+    },
+    {
+      "id": 82,
+      "chapter": "第四章",
+      "title": "第一个农民协会成立的地点和领导者是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "浙江省萧山县衙前村和沈定一", "correct": true },
+        { "id": 2, "title": "广东省海丰县和彭湃" },
+        { "id": 3, "title": "湖南省韶山和毛泽东" },
+        { "id": 4, "title": "江西省井冈山和毛泽东" }
+      ]
+    },
+    {
+      "id": 83,
+      "chapter": "第四章",
+      "title": "1922年7月，中国共产党第二次全国代表大会在（）召开",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "上海", "correct": true },
+        { "id": 2, "title": "北京" },
+        { "id": 3, "title": "南京" },
+        { "id": 4, "title": "天津" }
+      ]
+    },
+    {
+      "id": 84,
+      "chapter": "第四章",
+      "title": "第一次中国工人运动高潮的起点是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "香港海员罢工", "correct": true },
+        { "id": 2, "title": "二七惨案" },
+        { "id": 3, "title": "安源罢工" },
+        { "id": 4, "title": "京汉铁路工人罢工" }
+      ]
+    },
+    {
+      "id": 85,
+      "chapter": "第四章",
+      "title": "在中国近代史上第一次明确提出反帝反封建的民主革命纲领，解决了分清敌友这个革命的首要问题的会议是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中共一大" },
+        { "id": 2, "title": "中共二大", "correct": true },
+        { "id": 3, "title": "中共二大二次会议" },
+        { "id": 4, "title": "中共一大二次会议" }
+      ]
+    },
+    {
+      "id": 87,
+      "chapter": "第四章",
+      "title": "1925年，中共四大在上海召开，主要内容不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "提出了无产阶级在民主革命中的领导权" },
+        { "id": 2, "title": "提出了农商联盟的问题", "correct": true },
+        { "id": 3, "title": "制定了开展工农运动的计划" },
+        { "id": 4, "title": "决定在全国建立和加强党的组织以适应革命形势的发展" }
+      ]
+    },
+    {
+      "id": 88,
+      "chapter": "第四章",
+      "title": "以第一次国共合作为基础的革命统一战线正式形成的标志是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "孙中山发表《国民党宣言》" },
+        { "id": 2, "title": "国民党一大的成功召开", "correct": true },
+        { "id": 3, "title": "中国共产党三大的召开" },
+        { "id": 4, "title": "中共中央杭州西湖特别会议的召开" }
+      ]
+    },
+    {
+      "id": 89,
+      "chapter": "第四章",
+      "title": "国共合作的政治基础和革命统一战线的共同纲领是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "旧三民主义" },
+        { "id": 2, "title": "中国共产党的最低纲领" },
+        { "id": 3, "title": "新三民主义", "correct": true },
+        { "id": 4, "title": "《孙文越飞宣言》" }
+      ]
+    },
+    {
+      "id": 90,
+      "chapter": "第四章",
+      "title": "1923年6月，中国共产党第三次全国代表大会集中讨论的问题是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "挽救革命失败的问题" },
+        { "id": 2, "title": "工农联盟问题" },
+        { "id": 3, "title": "无产阶级在民主革命中的领导权问题" },
+        { "id": 4, "title": "国共合作，建立革命统一战线的问题", "correct": true }
+      ]
+    },
+    {
+      "id": 91,
+      "chapter": "第四章",
+      "title": "全国范围的大革命风暴起始于（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "省港大罢工" },
+        { "id": 2, "title": "京汉铁路工人大罢工" },
+        { "id": 3, "title": "五卅运动", "correct": true },
+        { "id": 4, "title": "香港海员大罢工" }
+      ]
+    },
+    {
+      "id": 92,
+      "chapter": "第四章",
+      "title": "1927年3月，领导上海工人第三次武装起义的人是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "陈独秀" },
+        { "id": 2, "title": "李大钊" },
+        { "id": 3, "title": "毛泽东" },
+        { "id": 4, "title": "周恩来", "correct": true }
+      ]
+    },
+    {
+      "id": 93,
+      "chapter": "第四章",
+      "title": "1927年2月9日，国民政府外交部同英国方面签订协议，收回了汉口和（）的英租界。这是中国人民反帝斗争取得的重大胜利",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "武汉" },
+        { "id": 2, "title": "九江", "correct": true },
+        { "id": 3, "title": "连云港" },
+        { "id": 4, "title": "威海" }
+      ]
+    },
+    {
+      "id": 94,
+      "chapter": "第四章",
+      "title": "北伐战争正式开始的标志是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1925年7月国民政府的成立" },
+        { "id": 2, "title": "1925年8月国民革命军的组建" },
+        { "id": 3, "title": "1926年5月北伐先遣军进入湖南" },
+        { "id": 4, "title": "1926年7月9日国民革命军举行誓师典礼", "correct": true }
+      ]
+    },
+    {
+      "id": 95,
+      "chapter": "第五章",
+      "title": "1928年（）宣布东北“服从国民政府，改易旗帜”，国民党在全国范围内建立了自己的统治",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "张学良", "correct": true },
+        { "id": 2, "title": "张作霖" },
+        { "id": 3, "title": "汪精卫" },
+        { "id": 4, "title": "段祺瑞" }
+      ]
+    },
+    {
+      "id": 96,
+      "chapter": "第五章",
+      "title": "蒋介石反动政权的经济基础是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "产业经济" },
+        { "id": 2, "title": "封建经济" },
+        { "id": 3, "title": "民族资本" },
+        { "id": 4, "title": "国家垄断资本", "correct": true }
+      ]
+    },
+    {
+      "id": 97,
+      "chapter": "第五章",
+      "title": "中国的民族资产阶级所经营的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中等规模和小规模的资本主义经济", "correct": true },
+        { "id": 2, "title": "大规模的资本主义经济" },
+        { "id": 3, "title": "实质上的自给自足经济" },
+        { "id": 4, "title": "买办性质的资本主义经济" }
+      ]
+    },
+    {
+      "id": 98,
+      "chapter": "第五章",
+      "title": "中国国民党临时行动委员会（）年8月建立",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1928" },
+        { "id": 2, "title": "1929" },
+        { "id": 3, "title": "1930", "correct": true },
+        { "id": 4, "title": "1931" }
+      ]
+    },
+    {
+      "id": 99,
+      "chapter": "第五章",
+      "title": "中间派基本上要用（）的方式走发展资本主义的中间道路",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "改良", "correct": true },
+        { "id": 2, "title": "改革" },
+        { "id": 3, "title": "社会革命" },
+        { "id": 4, "title": "守旧" }
+      ]
+    },
+    {
+      "id": 100,
+      "chapter": "第五章",
+      "title": "在中间派别中，由梁漱溟领导的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中国国民党临时行动委员会" },
+        { "id": 2, "title": "乡村建设派", "correct": true },
+        { "id": 3, "title": "中国青年党" },
+        { "id": 4, "title": "再造派" }
+      ]
+    },
+    {
+      "id": 101,
+      "chapter": "第五章",
+      "title": "打响了武装反抗国民党反动统治的第一枪的是（），揭开了土地革命战争的序幕",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "南昌起义", "correct": true },
+        { "id": 2, "title": "秋收起义" },
+        { "id": 3, "title": "广州起义" },
+        { "id": 4, "title": "三湾改编" }
+      ]
+    },
+    {
+      "id": 102,
+      "chapter": "第五章",
+      "title": "1927年8月7日，中共中央在（）秘密召开紧急会议",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "上海" },
+        { "id": 2, "title": "南京" },
+        { "id": 3, "title": "汉口", "correct": true },
+        { "id": 4, "title": "武汉" }
+      ]
+    },
+    {
+      "id": 107,
+      "chapter": "第五章",
+      "title": "红色政权能够存在和发展的根本原因是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        {
+          "id": 1,
+          "title": "中国是一个几个帝国主义国家间接统治的政治经济发展极端不平衡的半殖民地半封建的大国",
+          "correct": true
+        },
+        { "id": 2, "title": "国民革命的影响" },
+        { "id": 3, "title": "全国革命形势的继续向前发展" },
+        { "id": 4, "title": "相当力量的正式红军的存在" }
+      ]
+    },
+    {
+      "id": 108,
+      "chapter": "第五章",
+      "title": "在（）一文中，毛泽东提出以乡村为中心，初步形成农村包围城市、武装夺取政权的理论",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《中国的红色政权为什么能够存在?》" },
+        { "id": 2, "title": "《井冈山的斗争》" },
+        { "id": 3, "title": "《星星之火，可以燎原》", "correct": true },
+        { "id": 4, "title": "《反对本本主义》" }
+      ]
+    },
+    {
+      "id": 109,
+      "chapter": "第五章",
+      "title": "1930年5月，毛泽东发表（），明确提出“中国革命斗争的胜利要靠中国同志了解中国情况”，表现了毛泽东开辟新道路、开创新理论的革命首创精神",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《反对本本主义》", "correct": true },
+        { "id": 2, "title": "《中国的红色政权为什么能够存在?》" },
+        { "id": 3, "title": "《星星之火，可以燎原》" },
+        { "id": 4, "title": "《井冈山的斗争》" }
+      ]
+    },
+    {
+      "id": 110,
+      "chapter": "第五章",
+      "title": "中华苏维埃第一次全国代表大会选举的中央执行委员会主席是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "毛泽东", "correct": true },
+        { "id": 2, "title": "刘少奇" },
+        { "id": 3, "title": "王明" },
+        { "id": 4, "title": "周恩来" }
+      ]
+    },
+    {
+      "id": 111,
+      "chapter": "第五章",
+      "title": "1931年11月，中华苏维埃第一次全国代表大会在（）举行",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "延安" },
+        { "id": 2, "title": "瑞金", "correct": true },
+        { "id": 3, "title": "井冈山" },
+        { "id": 4, "title": "兴国" }
+      ]
+    },
+    {
+      "id": 112,
+      "chapter": "第五章",
+      "title": "中华苏维埃共和国实行（）制度",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "人民代表大会" },
+        { "id": 2, "title": "统一战线" },
+        { "id": 3, "title": "各级工农兵代表大会", "correct": true },
+        { "id": 4, "title": "政治协商" }
+      ]
+    },
+    {
+      "id": 113,
+      "chapter": "第五章",
+      "title": "确立了以毛泽东为代表的新的中央的领导，成为中国共产党历史上一个生死攸关的转折点的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中共三大" },
+        { "id": 2, "title": "遵义会议", "correct": true },
+        { "id": 3, "title": "古田会议" },
+        { "id": 4, "title": "赣南会议" }
+      ]
+    },
+    {
+      "id": 114,
+      "chapter": "第五章",
+      "title": "1935年1月，（）召开",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "八七会议" },
+        { "id": 2, "title": "古田会议" },
+        { "id": 3, "title": "遵义会议", "correct": true },
+        { "id": 4, "title": "瓦窑堡会议" }
+      ]
+    },
+    {
+      "id": 115,
+      "chapter": "第五章",
+      "title": "标志着中国共产党在政治上走向成熟的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中共三大" },
+        { "id": 2, "title": "八七会议" },
+        { "id": 3, "title": "赣南会议" },
+        { "id": 4, "title": "遵义会议", "correct": true }
+      ]
+    },
+    {
+      "id": 116,
+      "chapter": "第五章",
+      "title": "红军胜利结束长征的标志是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "同红四方面军会师于懋功" },
+        { "id": 2, "title": "红军一、二、四方面军会宁会师", "correct": true },
+        { "id": 3, "title": "红二、六军团合编为红二方面军" },
+        { "id": 4, "title": "同红十五军团会师于吴起镇" }
+      ]
+    },
+    {
+      "id": 117,
+      "chapter": "第五章",
+      "title": "中央红军和红四方面军会师后，提出南下四川、西康的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "毛泽东" },
+        { "id": 2, "title": "张国焘", "correct": true },
+        { "id": 3, "title": "徐向前" },
+        { "id": 4, "title": "朱德" }
+      ]
+    },
+    {
+      "id": 118,
+      "chapter": "第五章",
+      "title": "1935年6月，中央红军和红四方面军会师于（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "四川懋功", "correct": true },
+        { "id": 2, "title": "陕北吴起镇" },
+        { "id": 3, "title": "四川甘孜" },
+        { "id": 4, "title": "甘肃会宁" }
+      ]
+    },
+    {
+      "id": 122,
+      "chapter": "第六章",
+      "title": "1927年日本召开“东方会议”，声称“惟欲征服支那，必先征服满蒙；如欲征服世界，必先征服支那”，会议制定了（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《对华政策纲领》", "correct": true },
+        { "id": 2, "title": "《反共产国际协定》" },
+        { "id": 3, "title": "《昭和十二年度对华作战计划》" },
+        { "id": 4, "title": "《大陆政策》" }
+      ]
+    },
+    {
+      "id": 123,
+      "chapter": "第六章",
+      "title": "日本开始实施变中国为其独占殖民地的事件是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "九一八", "correct": true },
+        { "id": 2, "title": "华北事变" },
+        { "id": 3, "title": "皇姑屯事变" },
+        { "id": 4, "title": "卢沟桥事变" }
+      ]
+    },
+    {
+      "id": 124,
+      "chapter": "第六章",
+      "title": "明治维新后，日本推行的政策是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "大陆政策", "correct": true },
+        { "id": 2, "title": "中立政策" },
+        { "id": 3, "title": "均衡政策" },
+        { "id": 4, "title": "门户开放政策" }
+      ]
+    },
+    {
+      "id": 125,
+      "chapter": "第六章",
+      "title": "以下不是中共中央派到东北组织领导抗日斗争的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "罗登贤" },
+        { "id": 2, "title": "杨靖宇" },
+        { "id": 3, "title": "赵一曼" },
+        { "id": 4, "title": "蒋光鼐", "correct": true }
+      ]
+    },
+    {
+      "id": 126,
+      "chapter": "第六章",
+      "title": "1936年2月，东北各地的抗日游击队改建为（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "东北抗日联军", "correct": true },
+        { "id": 2, "title": "东北革命军" },
+        { "id": 3, "title": "东北人民革命军" },
+        { "id": 4, "title": "东北人民军" }
+      ]
+    },
+    {
+      "id": 127,
+      "chapter": "第六章",
+      "title": "1932年4月15日，宣布对日宣战的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "南京国民政府" },
+        { "id": 2, "title": "中华苏维埃共和国临时中央政府", "correct": true },
+        { "id": 3, "title": "东北抗日同盟军" },
+        { "id": 4, "title": "中共中央人民政府" }
+      ]
+    },
+    {
+      "id": 128,
+      "chapter": "第六章",
+      "title": "1942年初成立的中国战区最高统帅是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "蒋介石", "correct": true },
+        { "id": 2, "title": "毛泽东" },
+        { "id": 3, "title": "朱德" },
+        { "id": 4, "title": "史迪威" }
+      ]
+    },
+    {
+      "id": 129,
+      "chapter": "第六章",
+      "title": "在入缅作战中为国牺牲的国民党将领是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "佟麟阁" },
+        { "id": 2, "title": "张自忠" },
+        { "id": 3, "title": "赵登禹" },
+        { "id": 4, "title": "戴安澜", "correct": true }
+      ]
+    },
+    {
+      "id": 130,
+      "chapter": "第六章",
+      "title": "在枣宜会战中壮烈殉国的国民党将领是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "佟麟阁" },
+        { "id": 2, "title": "张自忠", "correct": true },
+        { "id": 3, "title": "赵登禹" },
+        { "id": 4, "title": "戴安澜" }
+      ]
+    },
+    {
+      "id": 131,
+      "chapter": "第六章",
+      "title": "抗战时期被称为大后方的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中华民国特区" },
+        { "id": 2, "title": "国民党统治区", "correct": true },
+        { "id": 3, "title": "敌后根据地" },
+        { "id": 4, "title": "沦陷区" }
+      ]
+    },
+    {
+      "id": 132,
+      "chapter": "第六章",
+      "title": "抗战开始后，迁往昆明，合并组建为西南联合大学的学校不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "北京大学" },
+        { "id": 2, "title": "南开大学" },
+        { "id": 3, "title": "清华大学" },
+        { "id": 4, "title": "复旦大学", "correct": true }
+      ]
+    },
+    {
+      "id": 133,
+      "chapter": "第六章",
+      "title": "1938年初，周恩来担任国民政府军事委员会政治部副部长以后，掌管宣传工作的政治部第三厅厅长由（）担任",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "郭沫若", "correct": true },
+        { "id": 2, "title": "叶剑英" },
+        { "id": 3, "title": "李先念" },
+        { "id": 4, "title": "瞿秋白" }
+      ]
+    },
+    {
+      "id": 134,
+      "chapter": "第六章",
+      "title": "体现中国人民的根本利益和要求以及人民战争路线的彻底的抗日纲领的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《抗战建国纲领》" },
+        { "id": 2, "title": "《抗日救国十大纲领》", "correct": true },
+        { "id": 3, "title": "《为抗日救国告全国同胞书》" },
+        { "id": 4, "title": "《论持久战》" }
+      ]
+    },
+    {
+      "id": 135,
+      "chapter": "第六章",
+      "title": "1937年8月，中国共产党提出关于抗日的基本主张的会议是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "瓦窑堡会议" },
+        { "id": 2, "title": "中共七大" },
+        { "id": 3, "title": "洛川会议", "correct": true },
+        { "id": 4, "title": "中共扩大的六届六中全会" }
+      ]
+    },
+    {
+      "id": 136,
+      "chapter": "第六章",
+      "title": "毛泽东的论持久战的理论指出中国抗日战争取得最后胜利的最关键的阶段是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "战略防御阶段" },
+        { "id": 2, "title": "战略相持阶段", "correct": true },
+        { "id": 3, "title": "战略反攻阶段" },
+        { "id": 4, "title": "战略扩张阶段" }
+      ]
+    },
+    {
+      "id": 137,
+      "chapter": "第六章",
+      "title": "抗日民族统一战线中的中间势力不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "民族资产阶级" },
+        { "id": 2, "title": "开明绅士" },
+        { "id": 3, "title": "地方实力派" },
+        { "id": 4, "title": "城市小资产阶级", "correct": true }
+      ]
+    },
+    {
+      "id": 138,
+      "chapter": "第六章",
+      "title": "中国共产党在抗日民族统一战线中必须坚持独立自主原则的实质是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "力争中国共产党对抗日战争的领导权以取得抗战的胜利", "correct": true },
+        { "id": 2, "title": "扩充自己的军事实力" },
+        { "id": 3, "title": "防止国民党顽固派的反共政策" },
+        { "id": 4, "title": "独自抗击日本侵略者" }
+      ]
+    },
+    {
+      "id": 139,
+      "chapter": "第六章",
+      "title": "国民党顽固派发动的第一次反共高潮是在（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1939年冬至1940年春", "correct": true },
+        { "id": 2, "title": "1938年冬至1939年春" },
+        { "id": 3, "title": "1937年冬至1938年春" },
+        { "id": 4, "title": "1940年冬至1941年春" }
+      ]
+    },
+    {
+      "id": 140,
+      "chapter": "第六章",
+      "title": "抗日根据地的政权建设实行“三三制”的原则，政府成员分配的阶级和阶层的代表不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "非党的左派进步分子" },
+        { "id": 2, "title": "中间派" },
+        { "id": 3, "title": "共产党员" },
+        { "id": 4, "title": "地主阶级", "correct": true }
+      ]
+    },
+    {
+      "id": 141,
+      "chapter": "第六章",
+      "title": "1940年8月创办的（）是中国共产党历史上第一个开展自然科学教学与研究的专门机构",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "延安自然科学院", "correct": true },
+        { "id": 2, "title": "中国自然科学研究院" },
+        { "id": 3, "title": "国家科学研究院" },
+        { "id": 4, "title": "中国科学研究院" }
+      ]
+    },
+    {
+      "id": 142,
+      "chapter": "第六章",
+      "title": "为了度过根据地严重的经济困难，中共中央采纳党外人士李鼎铭的建议，实施了（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "“三三制”原则" },
+        { "id": 2, "title": "大生产运动" },
+        { "id": 3, "title": "精兵简政", "correct": true },
+        { "id": 4, "title": "减租减息" }
+      ]
+    },
+    {
+      "id": 143,
+      "chapter": "第六章",
+      "title": "中国战区的抗日战争受降仪式是在（）举行的",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "重庆" },
+        { "id": 2, "title": "南京", "correct": true },
+        { "id": 3, "title": "北京" },
+        { "id": 4, "title": "上海" }
+      ]
+    },
+    {
+      "id": 144,
+      "chapter": "第六章",
+      "title": "中国人民抗日战争胜利纪念日是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1945年9月3日", "correct": true },
+        { "id": 2, "title": "1945年9月2日" },
+        { "id": 3, "title": "1945年8月15日" },
+        { "id": 4, "title": "1945年8月9日" }
+      ]
+    },
+    {
+      "id": 145,
+      "chapter": "第六章",
+      "title": "1945年春，正面战场收复了一些被日军占领的城市，其中不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "包头" },
+        { "id": 2, "title": "归绥" },
+        { "id": 3, "title": "桂林" },
+        { "id": 4, "title": "忻州", "correct": true }
+      ]
+    },
+    {
+      "id": 149,
+      "chapter": "第七章",
+      "title": "抗日战争胜利之后的三种建国方案中，第三种方案的代表阶级不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "工人阶级" },
+        { "id": 2, "title": "农民阶级" },
+        { "id": 3, "title": "城市小资产阶级" },
+        { "id": 4, "title": "地主阶级", "correct": true }
+      ]
+    },
+    {
+      "id": 150,
+      "chapter": "第七章",
+      "title": "抗日战争胜利时，中国共产党党员人数达到（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "120万", "correct": true },
+        { "id": 2, "title": "100万" },
+        { "id": 3, "title": "220万" },
+        { "id": 4, "title": "210万" }
+      ]
+    },
+    {
+      "id": 151,
+      "chapter": "第七章",
+      "title": "第二次世界大战后，开始在资本主义世界中称雄的国家是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "美国", "correct": true },
+        { "id": 2, "title": "英国" },
+        { "id": 3, "title": "法国" },
+        { "id": 4, "title": "德国" }
+      ]
+    },
+    {
+      "id": 152,
+      "chapter": "第七章",
+      "title": "国统区人民所进行的第二条战线的斗争（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "以工人运动为发端" },
+        { "id": 2, "title": "以农民运动为发端" },
+        { "id": 3, "title": "以学生运动为发端", "correct": true },
+        { "id": 4, "title": "以城镇贫民运动为发端" }
+      ]
+    },
+    {
+      "id": 153,
+      "chapter": "第七章",
+      "title": "“一二·一”运动的基本口号是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "“反对内战，争取自由”", "correct": true },
+        { "id": 2, "title": "“抗议驻华美军暴行”" },
+        { "id": 3, "title": "“反饥饿、反内战”" },
+        { "id": 4, "title": "“反饥饿、反内战、反迫害”" }
+      ]
+    },
+    {
+      "id": 154,
+      "chapter": "第七章",
+      "title": "第二条战线正式形成在（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "“一二·一”运动后" },
+        { "id": 2, "title": "“抗暴运动”后" },
+        { "id": 3, "title": "“五二〇”运动后", "correct": true },
+        { "id": 4, "title": "民盟被国民党当局列为“非法团体”之后" }
+      ]
+    },
+    {
+      "id": 155,
+      "chapter": "第七章",
+      "title": "晋察冀野战军于1947年11月12日攻占（　），开创了人民军队攻占大城市的先例",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "天津" },
+        { "id": 2, "title": "济南" },
+        { "id": 3, "title": "石家庄", "correct": true },
+        { "id": 4, "title": "太原" }
+      ]
+    },
+    {
+      "id": 156,
+      "chapter": "第七章",
+      "title": "中国人民解放军总部发表的《中国人民解放军宣言》，正式提出“打倒蒋介石，解放全中国”的行动口号是在（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1947年10月1日" },
+        { "id": 2, "title": "1947年10月10日", "correct": true },
+        { "id": 3, "title": "1946年10月10日" },
+        { "id": 4, "title": "1946年10月1日" }
+      ]
+    },
+    {
+      "id": 157,
+      "chapter": "第七章",
+      "title": "1947年6月底，刘伯承、邓小平率领的（）野战军主力强渡黄河，在鲁西南地区大量歼敌，配合华东野战军粉碎国民党军的重点进攻，随后千里跃进大别山",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "晋冀鲁豫", "correct": true },
+        { "id": 2, "title": "华东" },
+        { "id": 3, "title": "晋察冀" },
+        { "id": 4, "title": "东北" }
+      ]
+    },
+    {
+      "id": 158,
+      "chapter": "第七章",
+      "title": "自1948年9月12日开始于1949年1月31结束的三大战役是指（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "济南战役、辽沈战役、淮海战役" },
+        { "id": 2, "title": "济南战役、淮海战役、平津战役" },
+        { "id": 3, "title": "辽沈战役、淮海战役、平津战役", "correct": true },
+        { "id": 4, "title": "淮海战役、平津战役、渡江战役" }
+      ]
+    },
+    {
+      "id": 159,
+      "chapter": "第七章",
+      "title": "1949年4月21日，向中国人民解放军发布《向全国进军的命令》的是毛泽东和（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "刘少奇" },
+        { "id": 2, "title": "朱德", "correct": true },
+        { "id": 3, "title": "周恩来" },
+        { "id": 4, "title": "彭德怀" }
+      ]
+    },
+    {
+      "id": 160,
+      "chapter": "第七章",
+      "title": "毛泽东为新华社写的1949年新年献词题目是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《论人民民主专政》" },
+        { "id": 2, "title": "《将革命进行到底》", "correct": true },
+        { "id": 3, "title": "《丢掉幻想，准备斗争》" },
+        { "id": 4, "title": "《唯心历史观的破产》" }
+      ]
+    },
+    {
+      "id": 161,
+      "chapter": "第七章",
+      "title": "中国人民政治协商会议通过的《共同纲领》最基本、最核心的内容是关于新中国的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "国体和政体的规定" },
+        { "id": 2, "title": "基本的民族政策", "correct": true },
+        { "id": 3, "title": "经济工作方针" },
+        { "id": 4, "title": "外交工作原则" }
+      ]
+    },
+    {
+      "id": 162,
+      "chapter": "第七章",
+      "title": "中共七届二中全会是在（）召开的",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "延安" },
+        { "id": 2, "title": "瑞金" },
+        { "id": 3, "title": "遵义" },
+        { "id": 4, "title": "西柏坡", "correct": true }
+      ]
+    },
+    {
+      "id": 163,
+      "chapter": "第七章",
+      "title": "中共七届二中全会的主要内容不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "规定了全国胜利后中国共产党在政治、经济、外交等方面的本政策" },
+        { "id": 2, "title": "规定了党在过渡时期的总路线", "correct": true },
+        { "id": 3, "title": "指出了中国由农业国转变为工业国、由新民主主义社会转变为社会主义社会的发展方向" },
+        { "id": 4, "title": "在中国共产党自身建设的问题上，提出了“两个务必”的要求" }
+      ]
+    },
+    {
+      "id": 164,
+      "chapter": "第七章",
+      "title": "坚持和发展革命的政治基础是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "建立广泛的统一战线", "correct": true },
+        { "id": 2, "title": "武装斗争" },
+        { "id": 3, "title": "独立自主" },
+        { "id": 4, "title": "党的建设" }
+      ]
+    },
+    {
+      "id": 165,
+      "chapter": "第七章",
+      "title": "中国的武装斗争实质上是工人阶级领导的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "无产阶级战争" },
+        { "id": 2, "title": "资产阶级战争" },
+        { "id": 3, "title": "农民战争", "correct": true },
+        { "id": 4, "title": "群众战争" }
+      ]
+    },
+    {
+      "id": 166,
+      "chapter": "第七章",
+      "title": "中国民主革命的主要力量不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "工人" },
+        { "id": 2, "title": "农民" },
+        { "id": 3, "title": "城市小资产阶级" },
+        { "id": 4, "title": "民族资产阶级", "correct": true }
+      ]
+    },
+    {
+      "id": 167,
+      "chapter": "第七章",
+      "title": "1947年5月1日，成立了以乌兰夫为主席的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "新疆维吾尔自治区" },
+        { "id": 2, "title": "宁夏回族自治区" },
+        { "id": 3, "title": "内蒙古自治区", "correct": true },
+        { "id": 4, "title": "西藏自治区" }
+      ]
+    },
+    {
+      "id": 168,
+      "chapter": "第七章",
+      "title": "于1945年建立革命政府的少数民族群众的“三区革命”发生在（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "河北省" },
+        { "id": 2, "title": "河南省" },
+        { "id": 3, "title": "陕西省" },
+        { "id": 4, "title": "新疆省", "correct": true }
+      ]
+    },
+    {
+      "id": 169,
+      "chapter": "第八章",
+      "title": "宣告中国人民当家作主的时代已经到来，中国历史由此开辟了一个新纪元的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1915年新文化运动的兴起" },
+        { "id": 2, "title": "1911年辛亥革命的爆发" },
+        { "id": 3, "title": "1919年五四运动的爆发" },
+        { "id": 4, "title": "1949年中华人民共和国的成立", "correct": true }
+      ]
+    },
+    {
+      "id": 170,
+      "chapter": "第八章",
+      "title": "1949年我国人均国民收入只有（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "27美元", "correct": true },
+        { "id": 2, "title": "37美元" },
+        { "id": 3, "title": "47美元" },
+        { "id": 4, "title": "57美元" }
+      ]
+    },
+    {
+      "id": 171,
+      "chapter": "第八章",
+      "title": "中华人民共和国成立于（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1937年7月7日" },
+        { "id": 2, "title": "1949年10月1日", "correct": true },
+        { "id": 3, "title": "1950年8月1日" },
+        { "id": 4, "title": "1956年10月1日" }
+      ]
+    },
+    {
+      "id": 172,
+      "chapter": "第八章",
+      "title": "在没收官僚资本方面，1949年1月，中共中央发出（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《关于没收官僚资本主义企业的指示》" },
+        { "id": 2, "title": "《关于改造官僚资本企业的指示》" },
+        { "id": 3, "title": "《关于接收官僚资本企业的指示》", "correct": true },
+        { "id": 4, "title": "《关于加入官僚资本主义企业的指示》" }
+      ]
+    },
+    {
+      "id": 173,
+      "chapter": "第八章",
+      "title": "下面不属于1952年开展的“五反”运动的内容是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "反行贿和反偷税漏税" },
+        { "id": 2, "title": "反盗窃国家资财" },
+        { "id": 3, "title": "反偷工减料" },
+        { "id": 4, "title": "反官僚主义", "correct": true }
+      ]
+    },
+    {
+      "id": 174,
+      "chapter": "第八章",
+      "title": "1950年6月，中国共产党召开（）。毛泽东作了《为争取国家财政经济状况的基本好转而斗争》的报告",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "十一届三中全会" },
+        { "id": 2, "title": "七届三中全会", "correct": true },
+        { "id": 3, "title": "六届四中全会" },
+        { "id": 4, "title": "七届四中全会" }
+      ]
+    },
+    {
+      "id": 175,
+      "chapter": "第八章",
+      "title": "新民主主义革命过程中形成和发展起来的新民主主义政治、经济、文化，都是由工人阶级领导的，因而都具有（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "民主主义因素" },
+        { "id": 2, "title": "资本主义因素" },
+        { "id": 3, "title": "新民主主义因素" },
+        { "id": 4, "title": "社会主义因素", "correct": true }
+      ]
+    },
+    {
+      "id": 176,
+      "chapter": "第八章",
+      "title": "由新民主主义向社会主义转变的必要条件不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中国共产党的政治领导" },
+        { "id": 2, "title": "社会主义国营经济的领导地位" },
+        { "id": 3, "title": "马克思主义在思想文化领域中的指导地位" },
+        { "id": 4, "title": "社会主义工业化的实现", "correct": true }
+      ]
+    },
+    {
+      "id": 177,
+      "chapter": "第八章",
+      "title": "中国的新民主主义社会经历了（）发展阶段",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "一个" },
+        { "id": 2, "title": "两个", "correct": true },
+        { "id": 3, "title": "三个" },
+        { "id": 4, "title": "四个" }
+      ]
+    },
+    {
+      "id": 178,
+      "chapter": "第八章",
+      "title": "对农业进行社会主义改造的途径是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "公私合营" },
+        { "id": 2, "title": "合作化", "correct": true },
+        { "id": 3, "title": "国家资本主义" },
+        { "id": 4, "title": "和平赎买" }
+      ]
+    },
+    {
+      "id": 179,
+      "chapter": "第八章",
+      "title": "对资本主义工商业进行社会主义改造，就是实行（）政策",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "赎买", "correct": true },
+        { "id": 2, "title": "变卖" },
+        { "id": 3, "title": "改造" },
+        { "id": 4, "title": "无偿占有" }
+      ]
+    },
+    {
+      "id": 180,
+      "chapter": "第八章",
+      "title": "在农业社会主义改造中建立的初级农业生产合作社的性质是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "新民主主义性质" },
+        { "id": 2, "title": "社会主义萌芽性质" },
+        { "id": 3, "title": "半社会主义性质", "correct": true },
+        { "id": 4, "title": "社会主义性质" }
+      ]
+    },
+    {
+      "id": 181,
+      "chapter": "第八章",
+      "title": "生产资料所有制的社会主义改造基本完成是在（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1949年" },
+        { "id": 2, "title": "1952年" },
+        { "id": 3, "title": "1953年" },
+        { "id": 4, "title": "1956年", "correct": true }
+      ]
+    },
+    {
+      "id": 182,
+      "chapter": "第八章",
+      "title": "中国进入开始全面建设社会主义的历史阶段是在（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1949年" },
+        { "id": 2, "title": "1952年" },
+        { "id": 3, "title": "1953年" },
+        { "id": 4, "title": "1956年", "correct": true }
+      ]
+    },
+    {
+      "id": 183,
+      "chapter": "第八章",
+      "title": "1956年，在中共中央书记处会议上，毛泽东认为最重要的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "独立自主", "correct": true },
+        { "id": 2, "title": "改革开放" },
+        { "id": 3, "title": "实事求是" },
+        { "id": 4, "title": "与时俱进" }
+      ]
+    },
+    {
+      "id": 184,
+      "chapter": "第九章",
+      "title": "1966年5月至1976年10月的（）是全局性的、长时间的“左”倾严重错误",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "“文化大革命”", "correct": true },
+        { "id": 2, "title": "“大跃进”" },
+        { "id": 3, "title": "人民公社化运动" },
+        { "id": 4, "title": "“批林批孔”运动" }
+      ]
+    },
+    {
+      "id": 185,
+      "chapter": "第九章",
+      "title": "毛泽东发动“文化大革命”的导火线是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "姚文元的文章《评新编历史剧〈海瑞罢官〉》在上海《文汇报》发表", "correct": true },
+        { "id": 2, "title": "大中学生“踢开党委闹革命”" },
+        { "id": 3, "title": "毛泽东主持召开中共八届十一中全会，并在全会上印发《炮打司令部——我的一张大字报》" },
+        { "id": 4, "title": "设立“中央文化革命小组”" }
+      ]
+    },
+    {
+      "id": 186,
+      "chapter": "第九章",
+      "title": "“文化大革命”是（）发动和领导的",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "毛泽东", "correct": true },
+        { "id": 2, "title": "刘少奇" },
+        { "id": 3, "title": "“四人帮”" },
+        { "id": 4, "title": "林彪" }
+      ]
+    },
+    {
+      "id": 187,
+      "chapter": "第九章",
+      "title": "1972年，中国与（）在上海发表了联合公报，开辟了两国关系的新前景",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "英国" },
+        { "id": 2, "title": "美国", "correct": true },
+        { "id": 3, "title": "日本" },
+        { "id": 4, "title": "印尼" }
+      ]
+    },
+    {
+      "id": 188,
+      "chapter": "第九章",
+      "title": "中国爆炸第一颗原子弹是在（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1960年" },
+        { "id": 2, "title": "1962年" },
+        { "id": 3, "title": "1964年", "correct": true },
+        { "id": 4, "title": "1970年" }
+      ]
+    },
+    {
+      "id": 189,
+      "chapter": "第九章",
+      "title": "从（）开始，中国具备了自主设计制造万吨级远洋轮船的能力",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "20世纪50年代" },
+        { "id": 2, "title": "20世纪60年代" },
+        { "id": 3, "title": "20世纪70年代", "correct": true },
+        { "id": 4, "title": "20世纪80年代" }
+      ]
+    },
+    {
+      "id": 190,
+      "chapter": "第九章",
+      "title": "1958年5月，中共八大二次会议通过了（）的总路线",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "在综合平衡中稳步前进" },
+        { "id": 2, "title": "鼓足干劲、力争上游、多快好省地建设社会主义", "correct": true },
+        { "id": 3, "title": "正确处理重工业和轻工业、农业的关系" },
+        { "id": 4, "title": "调整、巩固、充实、提高" }
+      ]
+    },
+    {
+      "id": 191,
+      "chapter": "第九章",
+      "title": "中共中央《关于建国以来党的若干历史问题的决议》是在（）通过的",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1979年" },
+        { "id": 2, "title": "1980年" },
+        { "id": 3, "title": "1981年", "correct": true },
+        { "id": 4, "title": "1982年" }
+      ]
+    },
+    {
+      "id": 192,
+      "chapter": "第九章",
+      "title": "中共中央正式通过对国民经济实行“调整、巩固、充实、提高”方针的会议是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中共七届三中全会" },
+        { "id": 2, "title": "中共“八大”" },
+        { "id": 3, "title": "中共八届九中全会", "correct": true },
+        { "id": 4, "title": "“七千人大会”" }
+      ]
+    },
+    {
+      "id": 193,
+      "chapter": "第九章",
+      "title": "“文化大革命”的社会历史原因不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "对于建设社会主义，缺乏充分的思想准备和科学研究" },
+        { "id": 2, "title": "把过去的经验教条化，犯了脱离现实生活的主观主义错误" },
+        {
+          "id": 3,
+          "title": "党的民主集中制和集体领导制度遭到严重破坏,致使党无法依靠制度的和集体的力量及时地发现并纠正错误"
+        },
+        { "id": 4, "title": "是由社会主义制度本身所造成的", "correct": true }
+      ]
+    },
+    {
+      "id": 194,
+      "chapter": "第九章",
+      "title": "1961年1月，中共八届九中全会决定对国民经济实行的方针是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "在综合平衡中稳步前进" },
+        { "id": 2, "title": "调整、巩固、充实、提高", "correct": true },
+        { "id": 3, "title": "既反保守又反冒进" },
+        { "id": 4, "title": "正确处理重工业和轻工业、农业的关系" }
+      ]
+    },
+    {
+      "id": 195,
+      "chapter": "第十章",
+      "title": "1978年12月18日至22日，在北京召开的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中共十一届三中全会", "correct": true },
+        { "id": 2, "title": "中共十一届六中全会" },
+        { "id": 3, "title": "中共十届三中全会" },
+        { "id": 4, "title": "中共十届六中全会" }
+      ]
+    },
+    {
+      "id": 196,
+      "chapter": "第十章",
+      "title": "1978年5月11日，发表题为《实践是检验真理的唯一标准》的特邀评论员文章的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《人民日报》" },
+        { "id": 2, "title": "《新华日报》" },
+        { "id": 3, "title": "《光明日报》", "correct": true },
+        { "id": 4, "title": "《参考消息》" }
+      ]
+    },
+    {
+      "id": 197,
+      "chapter": "第十章",
+      "title": "关于真理标准问题讨论开始于（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1976年5月11日" },
+        { "id": 2, "title": "1977年5月11日" },
+        { "id": 3, "title": "1978年5月11日", "correct": true },
+        { "id": 4, "title": "1979年5月11日" }
+      ]
+    },
+    {
+      "id": 198,
+      "chapter": "第十章",
+      "title": "中共十二届三中全会通过《关于经济体制改革的决定》，标志着经济体制改革（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "以农村为重点展开" },
+        { "id": 2, "title": "以城市为重点全面展开", "correct": true },
+        { "id": 3, "title": "以国有企业的改革为重点展开" },
+        { "id": 4, "title": "以管理体制的改革为重点展开" }
+      ]
+    },
+    {
+      "id": 199,
+      "chapter": "第十章",
+      "title": "海南省成立于（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1984年" },
+        { "id": 2, "title": "1985年" },
+        { "id": 3, "title": "1987年" },
+        { "id": 4, "title": "1988年", "correct": true }
+      ]
+    },
+    {
+      "id": 200,
+      "chapter": "第十章",
+      "title": "作出开始全面整党的决定是在（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "十二届二中全会", "correct": true },
+        { "id": 2, "title": "十二届三中全会" },
+        { "id": 3, "title": "十二届六中全会" },
+        { "id": 4, "title": "十三届二中全会" }
+      ]
+    },
+    {
+      "id": 201,
+      "chapter": "第十章",
+      "title": "确立了邓小平建设有中国特色社会主义理论在全党的指导地位，概括了建设有中国特色社会主义理论的主要内容是在（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "十四大", "correct": true },
+        { "id": 2, "title": "十三大" },
+        { "id": 3, "title": "十五大" },
+        { "id": 4, "title": "十二大" }
+      ]
+    },
+    {
+      "id": 202,
+      "chapter": "第十章",
+      "title": "1992年，以邓小平南方谈话和（）为标志，改革开放和现代化建设事业进入从计划经济体制向社会主义市场经济体制转变的新阶段，由此打开了中国经济、政治、文化发展的崭新局面",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中共十四大", "correct": true },
+        { "id": 2, "title": "中共十五大" },
+        { "id": 3, "title": "中共十三大" },
+        { "id": 4, "title": "中共十二大" }
+      ]
+    },
+    {
+      "id": 203,
+      "chapter": "第十章",
+      "title": "1992年，明确提出“社会主义市场经济体制”的论断的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "邓小平" },
+        { "id": 2, "title": "江泽民", "correct": true },
+        { "id": 3, "title": "胡锦涛" },
+        { "id": 4, "title": "习近平" }
+      ]
+    },
+    {
+      "id": 204,
+      "chapter": "第十章",
+      "title": "明确提出全面建设小康社会的奋斗目标是在（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "十五大" },
+        { "id": 2, "title": "十六大", "correct": true },
+        { "id": 3, "title": "十七大" },
+        { "id": 4, "title": "十八大" }
+      ]
+    },
+    {
+      "id": 205,
+      "chapter": "第十章",
+      "title": "中国共产党第十六次全国代表大会召开是在（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "2001年" },
+        { "id": 2, "title": "2002年", "correct": true },
+        { "id": 3, "title": "2003年" },
+        { "id": 4, "title": "2004年" }
+      ]
+    },
+    {
+      "id": 206,
+      "chapter": "第十章",
+      "title": "通过《关于同意江泽民同志辞去中共中央军事委员会主席的决定》，选举胡锦涛为中共中央军委主席是在（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "十六届三中全会" },
+        { "id": 2, "title": "十六届四中全会", "correct": true },
+        { "id": 3, "title": "十六届五中全会" },
+        { "id": 4, "title": "十六届六中全会" }
+      ]
+    },
+    {
+      "id": 207,
+      "chapter": "第十章",
+      "title": "中央决定为刘少奇彻底平反并恢复名誉是在（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "十一届五中全会", "correct": true },
+        { "id": 2, "title": "十一届三中全会" },
+        { "id": 3, "title": "十二届三中全会" },
+        { "id": 4, "title": "十二届六中全会" }
+      ]
+    },
+    {
+      "id": 208,
+      "chapter": "第十章",
+      "title": "促进“政社合一”的人民公社体制解体的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "村民自治组织的普遍建立" },
+        { "id": 2, "title": "乡(镇)基层政权的普遍建立" },
+        { "id": 3, "title": "统分结合的农村家庭联产承包责任制的普遍实行", "correct": true },
+        { "id": 4, "title": "乡镇企业的异军突起" }
+      ]
+    },
+    {
+      "id": 209,
+      "chapter": "第十章",
+      "title": "全国大规模的平反冤、假、错案工作基本结束，290多万名干部的冤假错案得到了平反和纠正是在（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "1982年底", "correct": true },
+        { "id": 2, "title": "1981年底" },
+        { "id": 3, "title": "1983年底" },
+        { "id": 4, "title": "1980年底" }
+      ]
+    },
+    {
+      "id": 210,
+      "chapter": "第十章",
+      "title": "科学地评价了毛泽东和毛泽东思想的历史地位的会议是中共十一届（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "三中全会" },
+        { "id": 2, "title": "四中全会" },
+        { "id": 3, "title": "五中全会" },
+        { "id": 4, "title": "六中全会", "correct": true }
+      ]
+    },
+    {
+      "id": 211,
+      "chapter": "第十章",
+      "title": "1980年5月，中央设立经济特区，采取多种形式吸引和利用外资，学习国外的先进技术和经营管理方法，设立的经济特区不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "深圳" },
+        { "id": 2, "title": "珠海" },
+        { "id": 3, "title": "厦门" },
+        { "id": 4, "title": "苏州", "correct": true }
+      ]
+    },
+    {
+      "id": 212,
+      "chapter": "第十一章",
+      "title": "下列不属于2015年12月中央经济工作会议提出的“三去”的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "去产能" },
+        { "id": 2, "title": "去库存" },
+        { "id": 3, "title": "去杠杆" },
+        { "id": 4, "title": "去短板", "correct": true }
+      ]
+    },
+    {
+      "id": 213,
+      "chapter": "第十一章",
+      "title": "2015年1月，（）召开会议，专门听取全国人大常委会、国务院、全国政协、最高人民法院、最高人民检察院党组工作汇报",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中共中央政治局常委会", "correct": true },
+        { "id": 2, "title": "中共中央党委会" },
+        { "id": 3, "title": "中国共产党党组织" },
+        { "id": 4, "title": "全国人民协商代表大会" }
+      ]
+    },
+    {
+      "id": 214,
+      "chapter": "第十一章",
+      "title": "2015年1月，中共中央印发（），推进社会主义协商民主广泛多层制度化发展，把协商民主嵌人我国社会主义民主政治全过程",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《关于加强社会主义协商民主建设的意见》", "correct": true },
+        { "id": 2, "title": "《关于加强和改进新形势下民族工作的意见》" },
+        { "id": 3, "title": "《中华人民共和国环境保护法》" },
+        { "id": 4, "title": "《中共中央关于全面深化改革若干重大问题的决定》" }
+      ]
+    },
+    {
+      "id": 215,
+      "chapter": "第十一章",
+      "title": "2014年1月，中共中央、国务院印发（），明确了农村改革的八大任务，第一条就是完善国家粮食安全保障体系",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《关于全面深化农村改革加快推进农业现代化的若干意见》", "correct": true },
+        { "id": 2, "title": "《关于加强和改进新形势下民族工作的意见》" },
+        { "id": 3, "title": "《中华人民共和国环境保护法》" },
+        { "id": 4, "title": "《中共中央关于全面深化改革若干重大问题的决定》" }
+      ]
+    },
+    {
+      "id": 216,
+      "chapter": "第十一章",
+      "title": "2013年11月，中共十八届三中全会审议通过（），勾画了到2020年全面深化改革的时间表、路线图",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《关于加强社会主义协商民主建设的意见》" },
+        { "id": 2, "title": "《关于加强和改进新形势下民族工作的意见》" },
+        { "id": 3, "title": "《中华人民共和国环境保护法》" },
+        { "id": 4, "title": "《中共中央关于全面深化改革若干重大问题的决定》", "correct": true }
+      ]
+    },
+    {
+      "id": 217,
+      "chapter": "第十一章",
+      "title": "2016年3月，（）通过“十三五”规划纲要，明确了2016-2020年经济社会发展宏伟目标、主要任务和重大举措",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "十二届全国人大四次会议", "correct": true },
+        { "id": 2, "title": "十三届全国人大四次会议" },
+        { "id": 3, "title": "十二届全国人大三次会议" },
+        { "id": 4, "title": "十三届全国人大三次会议" }
+      ]
+    },
+    {
+      "id": 218,
+      "chapter": "第十一章",
+      "title": "中国共产党第十九次全国代表大会强调，坚持和发展中国特色社会主义，是（）新时代中国特色社会主义思想的核心要义",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "习近平", "correct": true },
+        { "id": 2, "title": "胡锦涛" },
+        { "id": 3, "title": "江泽民" },
+        { "id": 4, "title": "李鹏" }
+      ]
+    },
+    {
+      "id": 219,
+      "chapter": "第十一章",
+      "title": "2017年10月18日至24日，中国共产党（）在北京举行",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "第十九次全国代表大会", "correct": true },
+        { "id": 2, "title": "第十八次全国代表大会" },
+        { "id": 3, "title": "第十七次全国代表大会" },
+        { "id": 4, "title": "第二十次全国代表大会" }
+      ]
+    },
+    {
+      "id": 220,
+      "chapter": "第十一章",
+      "title": "把习近平新时代中国特色社会主义思想确立为党行动指南的会议是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "十九大", "correct": true },
+        { "id": 2, "title": "十八大" },
+        { "id": 3, "title": "十七大" },
+        { "id": 4, "title": "二十大" }
+      ]
+    },
+    {
+      "id": 221,
+      "chapter": "第十一章",
+      "title": "2013年3月，十二届全国人大一次会议选举（）为国家主席、国家中央军事委员会主席",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "习近平", "correct": true },
+        { "id": 2, "title": "胡锦涛" },
+        { "id": 3, "title": "江泽民" },
+        { "id": 4, "title": "李克强" }
+      ]
+    },
+    {
+      "id": 222,
+      "chapter": "第十一章",
+      "title": "2015年1月，（）召开会议，专门听取全国人大常委会、国务院、全国政协、最高人民法院、最高人民检察院党组工作汇报",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "习近平", "correct": true },
+        { "id": 2, "title": "胡锦涛" },
+        { "id": 3, "title": "江泽民" },
+        { "id": 4, "title": "李克强" }
+      ]
+    },
+    {
+      "id": 223,
+      "chapter": "第十一章",
+      "title": "2001年6月正式成立的（）是第一个以中国城市命名的国际组织，它进一步加强了中国与周边国家的关系",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "北京合作组织" },
+        { "id": 2, "title": "上海合作组织", "correct": true },
+        { "id": 3, "title": "杭州合作组织" },
+        { "id": 4, "title": "广州合作组织" }
+      ]
+    },
+    {
+      "id": 224,
+      "chapter": "第十一章",
+      "title": "2013年3月，（）在十二届全国人大一次会议上进一步强调，实现中华民族伟大复兴的中国梦，就是要实现国家富强、民族振兴、人民幸福",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "习近平", "correct": true },
+        { "id": 2, "title": "胡锦涛" },
+        { "id": 3, "title": "江泽民" },
+        { "id": 4, "title": "李克强" }
+      ]
+    },
+    {
+      "id": 225,
+      "chapter": "第十一章",
+      "title": "全党全国各族人民为实现中华民族伟大复兴而奋斗的行动指南，指的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "李先念中国特色社会主义思想" },
+        { "id": 2, "title": "江泽民中国特色社会主义思想" },
+        { "id": 3, "title": "胡锦涛新时代中国特色社会主义思想" },
+        { "id": 4, "title": "习近平新时代中国特色社会主义思想", "correct": true }
+      ]
+    },
+    {
+      "id": 226,
+      "chapter": "第十一章",
+      "title": "2018年是中国实行改革开放（　）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "40周年", "correct": true },
+        { "id": 2, "title": "30周年" },
+        { "id": 3, "title": "20周年" },
+        { "id": 4, "title": "50周年" }
+      ]
+    },
+    {
+      "id": 226,
+      "chapter": "第十一章",
+      "title": "2012年11月8日至14日，中国共产党（）在北京举行",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "第十八次全国代表大会", "correct": true },
+        { "id": 2, "title": "第十次全国代表大会" },
+        { "id": 3, "title": "第八次全国代表大会" },
+        { "id": 4, "title": "第十六次全国代表大会" }
+      ]
+    },
+    {
+      "id": 227,
+      "chapter": "第十一章",
+      "title": "1921年，在中华民族内忧外患、社会危机空前深重的背景下，在马克思列宁主义同（）相结合的进程中，中国共产党诞生了",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中国工人运动", "correct": true },
+        { "id": 2, "title": "中国农民运动" },
+        { "id": 3, "title": "中国政治运动" },
+        { "id": 4, "title": "中国学生运动" }
+      ]
+    },
+    {
+      "id": 228,
+      "chapter": "第十一章",
+      "title": "中共十八大后党和国家事业之所以取得历史性成就、发生历史性变革，最根本、最重要的在于有以（）为核心的党中央的坚强领导",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "习近平同志", "correct": true },
+        { "id": 2, "title": "胡锦涛同志" },
+        { "id": 3, "title": "江泽民同志" },
+        { "id": 4, "title": "李鹏同志" }
+      ]
+    }
+  ]
+}

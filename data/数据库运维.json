@@ -1,0 +1,4470 @@
+{
+  "subject": "数据库运维",
+  "category": "国家开放大学",
+  "data": [
+    {
+      "id": 1,
+      "chapter": "第一章",
+      "title": "数据库系统的核心是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据库" },
+        { "id": 2, "title": "数据库管理员" },
+        { "id": 3, "title": "数据库管理系统", "correct": true },
+        { "id": 4, "title": "计算机软硬件系统" }
+      ]
+    },
+    {
+      "id": 2,
+      "chapter": "第一章",
+      "title": "以下不属于数据库特点的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据共享" },
+        { "id": 2, "title": "数据冗余度高", "correct": true },
+        { "id": 3, "title": "数据完整性高" },
+        { "id": 4, "title": "数据独立性高" }
+      ]
+    },
+    {
+      "id": 3,
+      "chapter": "第一章",
+      "title": "哪个选项是用来创建和修改数据库结构的",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DDL", "correct": true },
+        { "id": 2, "title": "DML" },
+        { "id": 3, "title": "DCL" },
+        { "id": 4, "title": "DQL" }
+      ]
+    },
+    {
+      "id": 4,
+      "chapter": "第一章",
+      "title": "数据库中数据的逻辑独立性是指",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据与储存结构的逻辑相互独立" },
+        { "id": 2, "title": "数据元素之间的逻辑相互独立" },
+        { "id": 3, "title": "存储结构与物理结构的逻辑相互独立" },
+        { "id": 4, "title": "数据与程序之间的逻辑相互独立", "correct": true }
+      ]
+    },
+    {
+      "id": 5,
+      "chapter": "第一章",
+      "title": "要保证数据库的数据独立性，需要修改的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "模式与外模式" },
+        { "id": 2, "title": "模式与内模式" },
+        { "id": 3, "title": "三级模式之间的两层映射", "correct": true },
+        { "id": 4, "title": "三层模式" }
+      ]
+    },
+    {
+      "id": 6,
+      "chapter": "第一章",
+      "title": "在数据库系统中，负责监控数据库系统的运行情况，及时处理运行过程中出现的问题，这是（）人员的职责",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据库设计员" },
+        { "id": 2, "title": "应用程序员" },
+        { "id": 3, "title": "数据库管理员", "correct": true },
+        { "id": 4, "title": "系统分析员" }
+      ]
+    },
+    {
+      "id": 7,
+      "chapter": "第一章",
+      "title": "MySQL数据库运维中系统高可用性，其中年度可服务时间比例“5个9”，其年度停机时间大约为",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "87.6h" },
+        { "id": 2, "title": "8.8h" },
+        { "id": 3, "title": "5min", "correct": true },
+        { "id": 4, "title": "<1min" }
+      ]
+    },
+    {
+      "id": 8,
+      "chapter": "第一章",
+      "title": "mysqladmin为用户root设置密码的语句",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysql -u root -P password -e \"set passowrd for root=passowrd('passowrd')\"" },
+        { "id": 2, "title": "mysql -u root -p password -e \"set passowrd for root=passowrd('passowrd')\"" },
+        { "id": 3, "title": "mysqladmin -u root passowrd \"NEWPASSWORD\"", "correct": true },
+        { "id": 4, "title": "mysqladmin -u root -p passowrd \"NEWPASSWORD\"" }
+      ]
+    },
+    {
+      "id": 9,
+      "chapter": "第一章",
+      "title": "mysqladmin command参数中删除一个库的参数是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "delete[DB_NAME]" },
+        { "id": 2, "title": "drop[DB_NAME]", "correct": true },
+        { "id": 3, "title": "drop database [DB_NAME]" },
+        { "id": 4, "title": "delete database [DB_NAME]" }
+      ]
+    },
+    {
+      "id": 10,
+      "chapter": "第一章",
+      "title": "mysqlbinlog中使用参数（）可以打开指定库的binlog文件",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "-d", "correct": true },
+        { "id": 2, "title": "-r" },
+        { "id": 3, "title": "-h" },
+        { "id": 4, "title": "-u" }
+      ]
+    },
+    {
+      "id": 11,
+      "chapter": "第一章",
+      "title": "MySQL可视化管理工具MySQL GUI Tools中方便数据库迁移的图形化应用程序是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "MySQL Administrator" },
+        { "id": 2, "title": "MySQL Migration Toolkit", "correct": true },
+        { "id": 3, "title": "MySQL Query Browser" },
+        { "id": 4, "title": "MySQL Workbench" }
+      ]
+    },
+    {
+      "id": 12,
+      "chapter": "第一章",
+      "title": "广义上来说，属于数据的可以是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "数字", "correct": true },
+        { "id": 2, "title": "文本", "correct": true },
+        { "id": 3, "title": "图像", "correct": true },
+        { "id": 4, "title": "音频", "correct": true }
+      ]
+    },
+    {
+      "id": 13,
+      "chapter": "第一章",
+      "title": "数据实现集中控制，包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "安全性控制", "correct": true },
+        { "id": 2, "title": "完整性控制", "correct": true },
+        { "id": 3, "title": "并发控制", "correct": true },
+        { "id": 4, "title": "稳定性控制" }
+      ]
+    },
+    {
+      "id": 14,
+      "chapter": "第一章",
+      "title": "数据库管理系统的主要功能包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "数据定义功能", "correct": true },
+        { "id": 2, "title": "数据操作功能", "correct": true },
+        { "id": 3, "title": "数据库的运行管理", "correct": true },
+        { "id": 4, "title": "数据库的建立和维护", "correct": true }
+      ]
+    },
+    {
+      "id": 15,
+      "chapter": "第一章",
+      "title": "以下属于数据库系统运维的主要内容的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "数据库安装与配置", "correct": true },
+        { "id": 2, "title": "数据库安全性管理", "correct": true },
+        { "id": 3, "title": "数据库备份与恢复", "correct": true },
+        { "id": 4, "title": "预防性巡检", "correct": true }
+      ]
+    },
+    {
+      "id": 16,
+      "chapter": "第一章",
+      "title": "数据库系统日常的运维管理中包括日维护作业计划， 以下属于日维护作业计划的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "检查数据库网络连通与否", "correct": true },
+        { "id": 2, "title": "检查磁盘空间的使用情况，监视数据库的表空间利用率", "correct": true },
+        { "id": 3, "title": "对数据库的主要配置文件及参数进行检测、调整及备份" },
+        { "id": 4, "title": "收集数据库性能统计数据，检查高速缓存区命中率、资源争用统计信息" }
+      ]
+    },
+    {
+      "id": 17,
+      "chapter": "第一章",
+      "title": "以下是MySQL数据库运维的指标的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "数据可恢复性", "correct": true },
+        { "id": 2, "title": "数据可备份性" },
+        { "id": 3, "title": "系统高可用性", "correct": true },
+        { "id": 4, "title": "成本问题", "correct": true }
+      ]
+    },
+    {
+      "id": 18,
+      "chapter": "第二章",
+      "title": "MySQL使用的默认端口是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "3600" },
+        { "id": 2, "title": "3306", "correct": true },
+        { "id": 3, "title": "8080" },
+        { "id": 4, "title": "3366" }
+      ]
+    },
+    {
+      "id": 19,
+      "chapter": "第二章",
+      "title": "连接MySQL服务器的指令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysqladmin -u root password test" },
+        { "id": 2, "title": "mysql -u root password test" },
+        { "id": 3, "title": "mysql -u root -p test", "correct": true },
+        { "id": 4, "title": "mysql -u root -password test" }
+      ]
+    },
+    {
+      "id": 20,
+      "chapter": "第二章",
+      "title": "下面哪个是MySQL客户端程序的功能",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "创建、删除、修改表和索引", "correct": true },
+        { "id": 2, "title": "使用shutdown命令关闭服务器" },
+        { "id": 3, "title": "使用start backup命令来进行数据库二进制备份" },
+        { "id": 4, "title": "查询数据库日志文件信息" }
+      ]
+    },
+    {
+      "id": 21,
+      "chapter": "第二章",
+      "title": "MySQL服务器的存储引擎中支持事务处理、支持外键、支持崩溃修复能力和并发控制的存储引擎是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "InnoDB", "correct": true },
+        { "id": 2, "title": "MyISAM" },
+        { "id": 3, "title": "Memory" },
+        { "id": 4, "title": "NDB" }
+      ]
+    },
+    {
+      "id": 22,
+      "chapter": "第二章",
+      "title": "SQL标准中事务的四种隔离级，MySQL数据库的InnoDB存储引擎中默认采用的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "未提交读（Read Uncommitted）" },
+        { "id": 2, "title": "提交读（Read Committed）" },
+        { "id": 3, "title": "可重复读（Repeatable Read）", "correct": true },
+        { "id": 4, "title": "可串行化（Serializable）" }
+      ]
+    },
+    {
+      "id": 23,
+      "chapter": "第二章",
+      "title": "在MySQL数据库中，InnoDB无法向MyISAM表一样，直接将表定义文件*.frm和*.ibd复制到另一个库中的原因是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "InnoDB的锁机制是行机制" },
+        {
+          "id": 2,
+          "title": "InnoDB系统表空间文件ibdata1中存放着回滚段、所有的InnoDB表元数据信息等部分元数据信息",
+          "correct": true
+        },
+        { "id": 3, "title": "InnoDB的表定义文件与MyISAM表定义文件不同" },
+        { "id": 4, "title": "InnoDB复制过程中日志文件无法复制" }
+      ]
+    },
+    {
+      "id": 24,
+      "chapter": "第二章",
+      "title": "MySQL数据库中，关于作为临时存放查询的中间结果集的存储引擎描述正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "始终使用Memory作为临时存放查询的中间结果集" },
+        { "id": 2, "title": "默认使用InnoDB作为临时存放查询的中间结果集" },
+        {
+          "id": 3,
+          "title": "如果中间结果集含有TEXT或BLOB列的类型字段，则MySQL数据库会将其转换到MyISAM存储引擎表而存放到磁盘中",
+          "correct": true
+        },
+        { "id": 4, "title": "默认使用MyISAM作为临时存放查询的中间结果集" }
+      ]
+    },
+    {
+      "id": 25,
+      "chapter": "第二章",
+      "title": "MySQL数据库通过命令行参数和配置文件来获得配置信息，查看当前使用的配置文件路径的DOS命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "select @@basedir" },
+        { "id": 2, "title": "select @@datadir", "correct": true },
+        { "id": 3, "title": "mysql-verbose-help" },
+        { "id": 4, "title": "select @@my.ini" }
+      ]
+    },
+    {
+      "id": 26,
+      "chapter": "第二章",
+      "title": "MySQL数据库中创建表并指定MyISAM存储引擎的语句是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        {
+          "id": 1,
+          "title": "Create table t_myisam(id int(10) auto_increment, name varchar(10), age int(3), primary key (id));"
+        },
+        {
+          "id": 2,
+          "title": "Create table t_myisam(id int(10) auto_increment, name varchar(10), age int(3), primary key (id)) set engine = MyISAM;"
+        },
+        {
+          "id": 3,
+          "title": "Create table t_myisam(id int(10) auto_increment, name varchar(10), age int(3), primary key (id)), MyISAM;"
+        },
+        {
+          "id": 4,
+          "title": "Create table t_myisam(id int(10) auto_increment, name varchar(10), age int(3), primary key (id)) engine = MyISAM;",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "chapter": "第二章",
+      "title": "在配置MySQL服务器时缓存池的大小设置，下面正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "缓冲池大小可以设置的很大，以保证数据库的性能" },
+        { "id": 2, "title": "缓冲池的大小设置为系统内存剩余空间最好" },
+        {
+          "id": 3,
+          "title": "缓冲池的配置，不仅要兼顾系统中其他程序使用的内存空间，还要减去其他配置的MySQL缓存和缓存需要的内存空间",
+          "correct": true
+        },
+        { "id": 4, "title": "缓冲池大小的设置对性能产生很大的影响，所以要设置成最大" }
+      ]
+    },
+    {
+      "id": 28,
+      "chapter": "第二章",
+      "title": "MySQL内部有4种常见日志， 哪种日志是不能直接cat或more文件查阅日志内容",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "错误日志（error-log）" },
+        { "id": 2, "title": "二进制日志（bin-log）", "correct": true },
+        { "id": 3, "title": "查询日志（query-log）" },
+        { "id": 4, "title": "慢查询日志（slow-log）" }
+      ]
+    },
+    {
+      "id": 29,
+      "chapter": "第二章",
+      "title": "MYSQL中，下列关于慢查询日志描述正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "慢查询日志不仅记录执行慢的查询，而且会将所有执行的查询语句都记录下来" },
+        {
+          "id": 2,
+          "title": "在通过环境变量开启慢查询日志时，slow_query_log针对当前登录的连接实时生效",
+          "correct": true
+        },
+        { "id": 3, "title": "在通过环境变量开启慢查询日志时，long_query_time针对当前连接生效（query-log）" },
+        { "id": 4, "title": "慢查询文件已.ini格式的文件格式存储" }
+      ]
+    },
+    {
+      "id": 30,
+      "chapter": "第二章",
+      "title": "在mySQL数据库中，数据库文件的扩展名包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": ".exe", "correct": true },
+        { "id": 2, "title": ".myi" },
+        { "id": 3, "title": ".ibd", "correct": true },
+        { "id": 4, "title": ".frm", "correct": true }
+      ]
+    },
+    {
+      "id": 31,
+      "chapter": "第二章",
+      "title": "MySQL数据库中，存储引擎InnoDB的功能特点有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "支持事务的提交和回滚", "correct": true },
+        { "id": 2, "title": "崩溃修复能力", "correct": true },
+        { "id": 3, "title": "并发控制", "correct": true },
+        { "id": 4, "title": "数据可压缩" }
+      ]
+    },
+    {
+      "id": 32,
+      "chapter": "第二章",
+      "title": "MySQL数据库中，关于Memory存储引擎描述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "默认使用哈希索引", "correct": true },
+        { "id": 2, "title": "MySQL使用Memory存储引擎作为临时表来存放查询的中间结果集", "correct": true },
+        { "id": 3, "title": "支持外键和事务处理" },
+        { "id": 4, "title": "将表中数据存放在内存中", "correct": true }
+      ]
+    },
+    {
+      "id": 33,
+      "chapter": "第二章",
+      "title": "MySQL 中，下面可以查看Country表的存储引擎的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "SHOW CREATE TABLE Country;", "correct": true },
+        { "id": 2, "title": "SHOW ENGINE Country STATUS;" },
+        { "id": 3, "title": "SHOW TABLE STATUS LIKE 'Country';", "correct": true },
+        {
+          "id": 4,
+          "title": "SELECT ENGINE FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Country';",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "chapter": "第二章",
+      "title": "MySQL中，对二进制文件的功能描述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "主从数据库通过二进制文件的传递达到主从同步目的", "correct": true },
+        {
+          "id": 2,
+          "title": "二进制文件可用于数据恢复，通过应用二进制日志文件，能够将数据库恢复到故障发生前的状态",
+          "correct": true
+        },
+        { "id": 3, "title": "数据库运行过程中的错误信息，也会被记录到二进制文件中，以便数据库恢复正常" },
+        { "id": 4, "title": "二进制文件中记录了数据库查询语句以及其运行时间，可用于服务器性能的优化" }
+      ]
+    },
+    {
+      "id": 35,
+      "chapter": "第二章",
+      "title": "关于临时表的描述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "只在创建的会话可见，其它会话不能访问另一个会话创建的临时表", "correct": true },
+        { "id": 2, "title": "临时表只存在于会话生命周期中", "correct": true },
+        { "id": 3, "title": "临时表可以与非临时表有相同的名称", "correct": true },
+        { "id": 4, "title": "临时表不能使用SHOW TABLES显示", "correct": true }
+      ]
+    },
+    {
+      "id": 36,
+      "chapter": "第二章",
+      "title": "关于MySQL服务器内存管理叙述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        {
+          "id": 1,
+          "title": "MySQL数据库的内存从使用方式上主要分为以下两类：线程独享内存（Thread memory）和全局共享内存（Sharing）",
+          "correct": true
+        },
+        { "id": 2, "title": "线程独享内存主要用于各客户端连接线程存储各种操作的独享数据", "correct": true },
+        {
+          "id": 3,
+          "title": "全局共享内存主要是MySQL实例（mysqld进程）以及底层存储引擎用来暂存各种全局运算及可共享的暂存信息",
+          "correct": true
+        },
+        { "id": 4, "title": "全局共享内存包括thread_stack、sort_buffer_size等 TABLES显示" }
+      ]
+    },
+    {
+      "id": 37,
+      "chapter": "第三章",
+      "title": "视图建立后，在数据字典中存放的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "视图的定义", "correct": true },
+        { "id": 2, "title": "产生视图的表的定义" },
+        { "id": 3, "title": "查询语句" },
+        { "id": 4, "title": "组成视图的表的内容" }
+      ]
+    },
+    {
+      "id": 38,
+      "chapter": "第三章",
+      "title": "查找数据库中所有的数据表用以下哪一项",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SHOW DATABASE" },
+        { "id": 2, "title": "SHOW TABLES", "correct": true },
+        { "id": 3, "title": "SHOW DATABASES" },
+        { "id": 4, "title": "SHOW TABLE" }
+      ]
+    },
+    {
+      "id": 39,
+      "chapter": "第三章",
+      "title": "创建数据库的命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "CREATE DATABASE", "correct": true },
+        { "id": 2, "title": "NEW DATABASE" },
+        { "id": 3, "title": "CREATE DATABASES" },
+        { "id": 4, "title": "NEW DATABASES" }
+      ]
+    },
+    {
+      "id": 40,
+      "chapter": "第三章",
+      "title": "以下关于聚集索引和非聚集索引说法正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "每个表只能建立一个非聚集索引" },
+        { "id": 2, "title": "每个表只能建立一个聚集索引", "correct": true },
+        { "id": 3, "title": "一个表上不能同时建立聚集索引和非聚集索引" },
+        { "id": 4, "title": "以上都不对" }
+      ]
+    },
+    {
+      "id": 41,
+      "chapter": "第三章",
+      "title": "在视图上不能完成的操作是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "更新视图" },
+        { "id": 2, "title": "查询" },
+        { "id": 3, "title": "在视图上定义新的表", "correct": true },
+        { "id": 4, "title": "在视图上定义新的视图" }
+      ]
+    },
+    {
+      "id": 42,
+      "chapter": "第三章",
+      "title": "若要在基本表中添加一列CNAME（课程名），可用",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ADD TABLE S (CNAME CHAR(8))" },
+        { "id": 2, "title": "ADD TABLE S ALTER (CNAME CHAR(8))" },
+        { "id": 3, "title": "ALTER TABLE S ADD (CNAME CHAR(8))", "correct": true },
+        { "id": 4, "title": "ALTER TABLE S (ADD CNAME CHAR(8))" }
+      ]
+    },
+    {
+      "id": 43,
+      "chapter": "第三章",
+      "title": "在关系数据库中，为了简化用户的查询操作，而又不增加数据的存储空间，常用的方法是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "另一个表" },
+        { "id": 2, "title": "游标" },
+        { "id": 3, "title": "索引" },
+        { "id": 4, "title": "视图", "correct": true }
+      ]
+    },
+    {
+      "id": 44,
+      "chapter": "第三章",
+      "title": "关于索引正确的说法是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "使用索引可以提高数据查询速度和数据更新速度" },
+        { "id": 2, "title": "使用索引可以提高数据查询速度，但会降低数据更新速度", "correct": true },
+        { "id": 3, "title": "使用索引可以提高数据查询速度，对数据更新没有影响" },
+        { "id": 4, "title": "使用索引对数据查询速度和数据更新速度都没有影响" }
+      ]
+    },
+    {
+      "id": 45,
+      "chapter": "第三章",
+      "title": "以下表示可变长度字符串的数据类型是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "CHAR" },
+        { "id": 2, "title": "VARCHAR", "correct": true },
+        { "id": 3, "title": "TEXT" },
+        { "id": 4, "title": "BLOB" }
+      ]
+    },
+    {
+      "id": 46,
+      "chapter": "第三章",
+      "title": "下列关于数据库对象的描述，错误的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "存储过程、函数均可接收输入参数" },
+        { "id": 2, "title": "触发器可以在数据更新时被激活" },
+        { "id": 3, "title": "域可以由用户创建，可以加约束条件" },
+        { "id": 4, "title": "一个关系可以有多个主码", "correct": true }
+      ]
+    },
+    {
+      "id": 47,
+      "chapter": "第三章",
+      "title": "在MySQL数据库中，下列关于创建数据库表的描述不正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "在创建表时必须设定列的约束", "correct": true },
+        { "id": 2, "title": "在删除表的时候通过外键约束连接在一起的表会被一同删除", "correct": true },
+        { "id": 3, "title": "在创建表时必须设置列类型" },
+        {
+          "id": 4,
+          "title": "通过CREATE TABLE new_t SELECT * FROM old_t复制表的同时，表的约束能够一起被复制到新表中",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "chapter": "第三章",
+      "title": "MySQL中可以创建的索引有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "聚簇索引", "correct": true },
+        { "id": 2, "title": "普通索引", "correct": true },
+        { "id": 3, "title": "主键索引", "correct": true },
+        { "id": 4, "title": "全文索引", "correct": true }
+      ]
+    },
+    {
+      "id": 49,
+      "chapter": "第三章",
+      "title": "关于临时表的描述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "只在创建的会话可见，其它会话不能访问另一个会话创建的临时表", "correct": true },
+        { "id": 2, "title": "临时表只存在于会话生命周期中", "correct": true },
+        { "id": 3, "title": "临时表可以与非临时表有相同的名称", "correct": true },
+        { "id": 4, "title": "临时表不能使用SHOW TABLES显示", "correct": true }
+      ]
+    },
+    {
+      "id": 50,
+      "chapter": "第三章",
+      "title": "创建唯一性索引的方法有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "设置主键约束", "correct": true },
+        { "id": 2, "title": "CREATE INDEX", "correct": true },
+        { "id": 3, "title": "设置非空约束" },
+        { "id": 4, "title": "CREATE TABLE" }
+      ]
+    },
+    {
+      "id": 51,
+      "chapter": "第三章",
+      "title": "更新视图是指通过视图对数据进行（）操作",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "插入", "correct": true },
+        { "id": 2, "title": "删除", "correct": true },
+        { "id": 3, "title": "修改", "correct": true },
+        { "id": 4, "title": "查询" }
+      ]
+    },
+    {
+      "id": 52,
+      "chapter": "第四章",
+      "title": "关于自主访问控制，下列说法错误的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "S表示主体，即操作用户" },
+        { "id": 2, "title": "O表示客体，即数据" },
+        { "id": 3, "title": "M表示数据库基本的查询、修改、添加、删除等操作" },
+        { "id": 4, "title": "P元素用来表示操作语句具体内容", "correct": true }
+      ]
+    },
+    {
+      "id": 53,
+      "chapter": "第四章",
+      "title": "权限表中User表的作用是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "存储用户对某数据库的操作权限" },
+        { "id": 2, "title": "存储了某主机对数据库操作的权限" },
+        { "id": 3, "title": "表示存储过程和存储函数操作权限约束" },
+        { "id": 4, "title": "记录允许连接到服务器的账号信息和与账号信息对应的权限规范", "correct": true }
+      ]
+    },
+    {
+      "id": 54,
+      "chapter": "第四章",
+      "title": "以下哪个命令是使用超级管理员身份创建普通账户",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "create user username@localhost identified by 123456" },
+        { "id": 2, "title": "create user 'username'@ 'localhost' identified by 123456" },
+        { "id": 3, "title": "create user username@localhost identified by '123456'" },
+        { "id": 4, "title": "create user 'username'@'localhost' identified by '123456'", "correct": true }
+      ]
+    },
+    {
+      "id": 55,
+      "chapter": "第四章",
+      "title": "下列Mysql权限表中，只存在用户列和权限列，对表级别设置权限的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "columns_priv权限表" },
+        { "id": 2, "title": "table_priv权限表", "correct": true },
+        { "id": 3, "title": "db权限表" },
+        { "id": 4, "title": "procs_priv权限表" }
+      ]
+    },
+    {
+      "id": 56,
+      "chapter": "第四章",
+      "title": "使用grant select on table.* to username@localhost语句时如果table不存在会如何响应",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "显示请选择其他数据库" },
+        { "id": 2, "title": "显示查询成功并创建表" },
+        { "id": 3, "title": "只显示查询成功", "correct": true },
+        { "id": 4, "title": "显示表不存在请重新查询" }
+      ]
+    },
+    {
+      "id": 57,
+      "chapter": "第四章",
+      "title": "用于控制用户对数据库表建立或删除索引的权限为",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "select权限" },
+        { "id": 2, "title": "index权限", "correct": true },
+        { "id": 3, "title": "alter权限" },
+        { "id": 4, "title": "create权限" }
+      ]
+    },
+    {
+      "id": 58,
+      "chapter": "第四章",
+      "title": "下列属于数据层级操作权限的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "select权限、insert权限、update权限、delete权限", "correct": true },
+        { "id": 2, "title": "select权限、index权限、update权限、alter权限" },
+        { "id": 3, "title": "select权限、drop权限、update权限、grant权限" },
+        { "id": 4, "title": "select权限、index权限、create权限、delete权限" }
+      ]
+    },
+    {
+      "id": 59,
+      "chapter": "第四章",
+      "title": "MySQL权限系统对用户可操作行为的认证说法不正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "需要通过用户名密码以及IP与数据库记录相匹配" },
+        { "id": 2, "title": "如果用户名和密码都匹配，IP不匹配，用户仍可继续访问", "correct": true },
+        { "id": 3, "title": "需要对通过验证的用户进行权限匹配，赋予其应有权限" },
+        { "id": 4, "title": "不同IP登入的用户，同名用户属于不同的身份" }
+      ]
+    },
+    {
+      "id": 60,
+      "chapter": "第四章",
+      "title": "关于限制MySQL账户资源次数，表示限定每小时内该用户账户向MySQL服务器发送查询语句或者mysql命令的最大允许次数的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "max_questions", "correct": true },
+        { "id": 2, "title": "max_update" },
+        { "id": 3, "title": "max_updates" },
+        { "id": 4, "title": "max_user_connections" }
+      ]
+    },
+    {
+      "id": 61,
+      "chapter": "第四章",
+      "title": "Mysql权限层级中用户层级相当于",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "全局层级", "correct": true },
+        { "id": 2, "title": "数据层级" },
+        { "id": 3, "title": "子程序层级" },
+        { "id": 4, "title": "列层级" }
+      ]
+    },
+    {
+      "id": 62,
+      "chapter": "第四章",
+      "title": "为数据表创建索引的目的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "提高查询的检索性能", "correct": true },
+        { "id": 2, "title": "归类" },
+        { "id": 3, "title": "创建唯一索引" },
+        { "id": 4, "title": "创建主键" }
+      ]
+    },
+    {
+      "id": 63,
+      "chapter": "第四章",
+      "title": "假定登录用户只有GRANT权限，username3@localhost不存在，执行语句：“GRANT SELECT ON *.* TO username3@localhost IDENTIFIED BY '123456' WITH GRANT OPTION；”时，Mysql如何反应",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "操作被拒绝", "correct": true },
+        { "id": 2, "title": "操作被接受并创建username3@localhost用户" },
+        { "id": 3, "title": "操作被接受但不执行任何改变" },
+        { "id": 4, "title": "操作被拒绝并创建username3@localhost用户" }
+      ]
+    },
+    {
+      "id": 64,
+      "chapter": "第四章",
+      "title": "MySQL中，在某表内除主键以外的某一列，每一元组该列的取值都是唯一的约束类型为",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "主键完整性约束" },
+        { "id": 2, "title": "唯一索引约束", "correct": true },
+        { "id": 3, "title": "完整性约束" },
+        { "id": 4, "title": "替代键约束", "correct": true }
+      ]
+    },
+    {
+      "id": 65,
+      "chapter": "第四章",
+      "title": "MySQL服务器安装时，自动建立两个数据库，首先是mysql数据库，该数据库是MySQL权限系统的核心，包含以下哪几个表",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "user表", "correct": true },
+        { "id": 2, "title": "db表", "correct": true },
+        { "id": 3, "title": "procs_priv表" },
+        { "id": 4, "title": "tables_priv表", "correct": true }
+      ]
+    },
+    {
+      "id": 66,
+      "chapter": "第四章",
+      "title": "MySQL修改root用户密码的语法为",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "mysqladmin –u user_name –h host_name –p password 'new_password';", "correct": true },
+        {
+          "id": 2,
+          "title": "INSERT INTO mysql.user (password,root,hostname) VALUES (PASSWORD('rootpassword'),'root','hostname');"
+        },
+        { "id": 3, "title": "SET PASSWORD=PASSWORD('rootpassword');", "correct": true },
+        {
+          "id": 4,
+          "title": "UPDATE mysql.user SET password=PASSWORD('rootpassword') WHERE user='root' and host='host_name';",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 67,
+      "chapter": "第四章",
+      "title": "下列对 MySQL唯一索引约束描述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "指的是在某表内除主键以外的某一列，每一元组该列的取值都是唯一的", "correct": true },
+        { "id": 2, "title": "可以当作没有被选作主键的候选键", "correct": true },
+        { "id": 3, "title": "UNIQUE子句来定义唯一索引约束", "correct": true },
+        { "id": 4, "title": "存在主键时唯一索引约束定义列可重复" }
+      ]
+    },
+    {
+      "id": 68,
+      "chapter": "第四章",
+      "title": "关于外键说法正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        {
+          "id": 1,
+          "title": "在一个数据表中定义了外键后，数据库系统会保证插入外键中的每一个非空值都在被参照表当中作为主键出现",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "title": "使用RESTRICT动作时，将待插入的记录值相应外键字段改成其所参照表中不存在的数据值，插入操作会被数据库拒绝",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "title": "使用SET DEFAULT动作时，从所参照父表删除或更新行时，删除在参照子表中对应的该外键值对应行或者对该行外键作同样的修改"
+        },
+        {
+          "id": 4,
+          "title": "使用CASCADE动作时，当所参照父表中试图删除某行或对外键列某行数据值进行更新，参照子表中不作任何反应动作"
+        }
+      ]
+    },
+    {
+      "id": 69,
+      "chapter": "第四章",
+      "title": "用户自定义完整性约束包括以下哪几种约束",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "元组约束", "correct": true },
+        { "id": 2, "title": "关系间约束", "correct": true },
+        { "id": 3, "title": "替代键约束" },
+        { "id": 4, "title": "域约束", "correct": true }
+      ]
+    },
+    {
+      "id": 70,
+      "chapter": "第四章",
+      "title": "关于MySQL列约束的下列描述中正确的有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "主键约束会影响表的查找操作执行效率，应当谨慎使用" },
+        { "id": 2, "title": "外键约束会影响表的插入操作执行效率，应当谨慎使用", "correct": true },
+        { "id": 3, "title": "一个表可以声明多个主键列" },
+        { "id": 4, "title": "一个表可以声明多个外键列", "correct": true }
+      ]
+    },
+    {
+      "id": 71,
+      "chapter": "第五章",
+      "title": "下面关于写日志优先准则描述正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "当数据库执行更新操作时，先把写日志和更新数据库同时进行" },
+        { "id": 2, "title": "当数据库执行更新操作时，先更新数据库，然后再将更新信息写进日志" },
+        { "id": 3, "title": "当数据库执行更新操作时，先把更新信息写进日志，然后更新数据库", "correct": true },
+        { "id": 4, "title": "当数据库执行更新操作时，先把更新信息写进日志，然后更新缓冲区" }
+      ]
+    },
+    {
+      "id": 72,
+      "chapter": "第五章",
+      "title": "数据库中缓冲区写入磁盘使用的算法是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "FIFO" },
+        { "id": 2, "title": "LFU" },
+        { "id": 3, "title": "ARC" },
+        { "id": 4, "title": "LRU", "correct": true }
+      ]
+    },
+    {
+      "id": 73,
+      "chapter": "第五章",
+      "title": "适用通配符查看名称包含dir的系统变量的值",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "show variables like 'dir'" },
+        { "id": 2, "title": "show variables like '%dir%'", "correct": true },
+        { "id": 3, "title": "show variables like '%dir'" },
+        { "id": 4, "title": "show variables like '_dir_'" }
+      ]
+    },
+    {
+      "id": 74,
+      "chapter": "第五章",
+      "title": "select…into outfile语句中用于指定字段值之间符号的子句是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "lines terminated by" },
+        { "id": 2, "title": "fileds terminated by", "correct": true },
+        { "id": 3, "title": "fileds enclosed by" },
+        { "id": 4, "title": "fileds escaped by" }
+      ]
+    },
+    {
+      "id": 75,
+      "chapter": "第五章",
+      "title": "下面关于mysqldump命令使用正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysqldump -u root -p 123456 --databases employees test> file.sql", "correct": true },
+        { "id": 2, "title": "mysqldump -u root -p 123456 -databases employees test> file.sql" },
+        { "id": 3, "title": "mysqldump -u root -p 123456 -database employee >file.sql" },
+        { "id": 4, "title": "mysqldump -u root -p 123456 --all -databases >file.sql" }
+      ]
+    },
+    {
+      "id": 76,
+      "chapter": "第五章",
+      "title": "远程执行mysqldump命令的界定格式进行备份，那么",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": ".sql文件和.txt文件都在client端" },
+        { "id": 2, "title": ".sql文件和.txt文件都在server端" },
+        { "id": 3, "title": ".sql文件记录在client端，.txt 文件记录在server端", "correct": true },
+        { "id": 4, "title": ".sql文件记录在server端，.txt 文件记录在client端" }
+      ]
+    },
+    {
+      "id": 77,
+      "chapter": "第五章",
+      "title": "设置日志清理时间为5天的命令正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "set expire_logs_days=120" },
+        { "id": 2, "title": "set global expire_logs_days=120" },
+        { "id": 3, "title": "set expire_logs_days=5" },
+        { "id": 4, "title": "set global expire_logs_days=5", "correct": true }
+      ]
+    },
+    {
+      "id": 78,
+      "chapter": "第五章",
+      "title": "使用load data …infile命令后报错“Data truncated for colum …”,出现的原因可能是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "插入数据的过程中违反了唯一性约束" },
+        { "id": 2, "title": "数据存储的文件中列的类型与数据库中表的类型不一致", "correct": true },
+        { "id": 3, "title": "数据存储的文件中的主键值数据库中已经存在" },
+        { "id": 4, "title": "数据存储的文件中部分字段存在NULL值" }
+      ]
+    },
+    {
+      "id": 79,
+      "chapter": "第五章",
+      "title": "在进行InnoDB崩溃恢复的过程中，希望在恢复过程中不执行插入缓冲的合并操作，那么innodb_force_recovery参数的值应该设置为",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "3" },
+        { "id": 2, "title": "4", "correct": true },
+        { "id": 3, "title": "5" },
+        { "id": 4, "title": "6" }
+      ]
+    },
+    {
+      "id": 80,
+      "chapter": "第五章",
+      "title": "对于不同存储引擎的数据表的描述错误的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "MyISAM存储引擎不支持事务和行级锁" },
+        { "id": 2, "title": "InnoDB存储引擎的数据表" },
+        { "id": 3, "title": "MySQL中的存储引擎都不支持并发插入", "correct": true },
+        { "id": 4, "title": "Memory存储引擎支持内存表的实现" }
+      ]
+    },
+    {
+      "id": 81,
+      "chapter": "第五章",
+      "title": "MySQL中，可以用于备份数据库的命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysqlimport" },
+        { "id": 2, "title": "mysqldump", "correct": true },
+        { "id": 3, "title": "mysql" },
+        { "id": 4, "title": "copy" }
+      ]
+    },
+    {
+      "id": 82,
+      "chapter": "第五章",
+      "title": "下面关于mysqldump备份特性中说法错误的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "是逻辑备份，需将表结构和数据转换称SQL语句" },
+        { "id": 2, "title": "备份与恢复速度比物理备份快", "correct": true },
+        { "id": 3, "title": "mysql服务必须运行" },
+        { "id": 4, "title": "支持MySQL所有存储引擎" }
+      ]
+    },
+    {
+      "id": 83,
+      "chapter": "第五章",
+      "title": "事务故障的恢复的步骤包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "正向扫描日志文件，建立撤销队列和重做队列" },
+        { "id": 2, "title": "反向扫描日志文件，查找此事务的更新操作", "correct": true },
+        { "id": 3, "title": "对事务的更新操作执行逆操作", "correct": true },
+        { "id": 4, "title": "分别对撤销队列和重做队列执行相应的操作" }
+      ]
+    },
+    {
+      "id": 84,
+      "chapter": "第五章",
+      "title": "下列关于查看MySQL二进制日志文件的命令正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "select binary logs" },
+        { "id": 2, "title": "select master logs" },
+        { "id": 3, "title": "show binary logs", "correct": true },
+        { "id": 4, "title": "show master logs", "correct": true }
+      ]
+    },
+    {
+      "id": 85,
+      "chapter": "第五章",
+      "title": "关于文件系统冷备份的说法正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "文件系统冷备份就是直接使用操作系统提供的命令对文件进行拷贝", "correct": true },
+        { "id": 2, "title": "文件系统冷备份只需要拷贝相关的数据文件即可" },
+        {
+          "id": 3,
+          "title": "对于InnoDB存储引擎的数据表中的数据文件包含在根目录下的ibdata*文件中，在文件系统冷备份过程中需要拷贝此文件",
+          "correct": true
+        },
+        {
+          "id": 4,
+          "title": "要备份只有MyISAM存储引擎的数据库，只需要复制数据库对应名称的目录下的数据文件，不需要复制ibdata*文件",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 86,
+      "chapter": "第五章",
+      "title": "关于load data infile命令和mysqlimport命令的说法正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "mysqlimport支持SQL文件的导入" },
+        { "id": 2, "title": "mysqlimport本质上是load data infile的命令接口", "correct": true },
+        { "id": 3, "title": "mysqlimport可以导入多张表", "correct": true },
+        { "id": 4, "title": "两种方法都可以导入select…into outfile导出的文件", "correct": true }
+      ]
+    },
+    {
+      "id": 87,
+      "chapter": "第五章",
+      "title": "关于InnoDB崩溃恢复说法正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "InnoDB崩溃恢复借助于InnoDB引擎的Redo和Undo日志", "correct": true },
+        { "id": 2, "title": "InnoDB的恢复过程是在MySQL线程中进行的", "correct": true },
+        { "id": 3, "title": "多数情况下，InnoDB会自觉地执行线程恢复", "correct": true },
+        { "id": 4, "title": "发生系统故障后，仍然能够执行InnoDB崩溃恢复" }
+      ]
+    },
+    {
+      "id": 88,
+      "chapter": "第六章",
+      "title": "连接到MyTop的命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Mytop -u root password test" },
+        { "id": 2, "title": "Mytop -user root password test" },
+        { "id": 3, "title": "mytop -u root -p test -d database", "correct": true },
+        { "id": 4, "title": "mytop u root -password test" }
+      ]
+    },
+    {
+      "id": 89,
+      "chapter": "第六章",
+      "title": "关于连接检查指标以下说法错误的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Aborted_connects表示连接失败的次数" },
+        { "id": 2, "title": "Threads_running表示运行连接数量" },
+        { "id": 3, "title": "Connection_errors_internal表示超出最大限制而失败的连接数", "correct": true },
+        { "id": 4, "title": "Threads_connected表示当前连接数量" }
+      ]
+    },
+    {
+      "id": 90,
+      "chapter": "第六章",
+      "title": "MySQL默认的存储引擎为",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "MyISAM" },
+        { "id": 2, "title": "MEMORY" },
+        { "id": 3, "title": "InnoDB", "correct": true },
+        { "id": 4, "title": "FEDERATED" }
+      ]
+    },
+    {
+      "id": 91,
+      "chapter": "第六章",
+      "title": "以下哪个数据库保存所有的临时表和临时存储过程",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "tempdb数据库", "correct": true },
+        { "id": 2, "title": "master数据库" },
+        { "id": 3, "title": "model数据库" },
+        { "id": 4, "title": "msdb数据库" }
+      ]
+    },
+    {
+      "id": 92,
+      "chapter": "第六章",
+      "title": "以下关于数据库性能监视，错误的说法是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据库性能监视不仅要监视MySQL当前的状态，还需监视OS的状态", "correct": true },
+        { "id": 2, "title": "Nagios可以监视操作系统的状态" },
+        { "id": 3, "title": "监视工具可以分为非交互性和交互性" },
+        { "id": 4, "title": "Innotop和MyTop属于非交互性监视工具" }
+      ]
+    },
+    {
+      "id": 93,
+      "chapter": "第六章",
+      "title": "MySQL支持以下哪种情况的子查询优化",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "简单SELECT查询中的子查询", "correct": true },
+        { "id": 2, "title": "带有GROUPBY、HAVING、聚集函数" },
+        { "id": 3, "title": "使用ORDERBY中带有LIMIT" },
+        { "id": 4, "title": "内表、外表的个数超过MySQL支持的最大表的连接数" }
+      ]
+    },
+    {
+      "id": 94,
+      "chapter": "第六章",
+      "title": "使用下列哪个字符串作为Like谓词后的表达式时不会使用索引",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "abc" },
+        { "id": 2, "title": "%abc%", "correct": true },
+        { "id": 3, "title": "abc%" },
+        { "id": 4, "title": "a%bc" }
+      ]
+    },
+    {
+      "id": 95,
+      "chapter": "第六章",
+      "title": "查询代价的估算公式为",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "r*pages*a_page_cpu_time+(1-r)W*T" },
+        { "id": 2, "title": "pages*a_page_cpu_time" },
+        { "id": 3, "title": "W*T" },
+        { "id": 4, "title": "pages*a_page_cpu_time+W*T", "correct": true }
+      ]
+    },
+    {
+      "id": 96,
+      "chapter": "第六章",
+      "title": "以下不适合使用聚集索引的情况是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "频繁修改索引的列", "correct": true },
+        { "id": 2, "title": "外键列" },
+        { "id": 3, "title": "主键列" },
+        { "id": 4, "title": "列经常被分组排序" }
+      ]
+    },
+    {
+      "id": 97,
+      "chapter": "第六章",
+      "title": "TIMESTAMP的默认值是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "0000-00-00" },
+        { "id": 2, "title": "0000-00-00 00:00:00", "correct": true },
+        { "id": 3, "title": "00-00 00:00" },
+        { "id": 4, "title": "null" }
+      ]
+    },
+    {
+      "id": 98,
+      "chapter": "第六章",
+      "title": "以下哪个命令用于查看SQL语句会作用于哪些分区",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "EXPLAIN" },
+        { "id": 2, "title": "SHOW GLOBAL STATUS" },
+        { "id": 3, "title": "EXPLAIN DEFINATION" },
+        { "id": 4, "title": "EXPLAIN PARTITIONS", "correct": true }
+      ]
+    },
+    {
+      "id": 99,
+      "chapter": "第六章",
+      "title": "MySQL数据库中，列的相关信息存储于（）文件当中",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": ".idb" },
+        { "id": 2, "title": ".MYD" },
+        { "id": 3, "title": ".opt" },
+        { "id": 4, "title": ".frm", "correct": true }
+      ]
+    },
+    {
+      "id": 100,
+      "chapter": "第六章",
+      "title": "将外连接消除转化为内连接的好处是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "节省更多的磁盘空间" },
+        { "id": 2, "title": "内连接的操作所需要的时间低于外连接", "correct": true },
+        { "id": 3, "title": "优化器可以更好地选择多表连接顺序，降低IO消耗", "correct": true },
+        { "id": 4, "title": "可以使SQL语句更加直观易懂" }
+      ]
+    },
+    {
+      "id": 101,
+      "chapter": "第六章",
+      "title": "常用的逆规范化技术有以下哪种",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "增加冗余列", "correct": true },
+        { "id": 2, "title": "增加派生列", "correct": true },
+        { "id": 3, "title": "重新组表", "correct": true },
+        { "id": 4, "title": "分割表", "correct": true }
+      ]
+    },
+    {
+      "id": 102,
+      "chapter": "第六章",
+      "title": "以下哪些方法可以减少对MySQL的访问次数",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "避免重复检索", "correct": true },
+        { "id": 2, "title": "使用查询缓存", "correct": true },
+        { "id": 3, "title": "使用Cache层", "correct": true },
+        { "id": 4, "title": "避免修改数据" }
+      ]
+    },
+    {
+      "id": 103,
+      "chapter": "第六章",
+      "title": "数据库性能监视的主要指标有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "吞吐量", "correct": true },
+        { "id": 2, "title": "并发量", "correct": true },
+        { "id": 3, "title": "网络流量" },
+        { "id": 4, "title": "响应时间", "correct": true }
+      ]
+    },
+    {
+      "id": 104,
+      "chapter": "第六章",
+      "title": "MySQL中的sys_schema库中存储以下哪些信息",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "Innodb相关信息", "correct": true },
+        { "id": 2, "title": "IO使用情况", "correct": true },
+        { "id": 3, "title": "连接与会话信息", "correct": true },
+        { "id": 4, "title": "索引信息", "correct": true }
+      ]
+    },
+    {
+      "id": 105,
+      "chapter": "期末复习一",
+      "title": "以下哪个选项是关系数据库中外模式的具体体现",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "索引" },
+        { "id": 2, "title": "视图", "correct": true },
+        { "id": 3, "title": "存储方式" },
+        { "id": 4, "title": "数据结构" }
+      ]
+    },
+    {
+      "id": 106,
+      "chapter": "期末复习一",
+      "title": "创建用户的命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "join user" },
+        { "id": 2, "title": "create user", "correct": true },
+        { "id": 3, "title": "create root" },
+        { "id": 4, "title": "mysql user" }
+      ]
+    },
+    {
+      "id": 107,
+      "chapter": "期末复习一",
+      "title": "SQL标准中事务的四种隔离级，MySQL数据库的InnoDB存储引擎中默认采用的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "未提交读（Read Uncommitted）" },
+        { "id": 2, "title": "提交读（Read Committed）" },
+        { "id": 3, "title": "可重复读（Repeatable Read）", "correct": true },
+        { "id": 4, "title": "可串行化（Serializable）" }
+      ]
+    },
+    {
+      "id": 108,
+      "chapter": "期末复习一",
+      "title": "MySQL中，使用命令行查看二进制文件（filename.number）的命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SELECT binlog events in filename.number" },
+        { "id": 2, "title": "SHOW binlog  in filename.number" },
+        { "id": 3, "title": "SELECT binlog in filename.number" },
+        { "id": 4, "title": "SHOW binlog events in filename.number", "correct": true }
+      ]
+    },
+    {
+      "id": 109,
+      "chapter": "期末复习一",
+      "title": "MySQL关于表的存储引擎叙述正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "主机和从机可以是不同类型的存储引擎表", "correct": true },
+        { "id": 2, "title": "同一数据库中不同的表的数据类型必须相同，且保持一致" },
+        { "id": 3, "title": "一旦表建立时设置存储引擎，后续操作表不能重置新的存储引擎" },
+        { "id": 4, "title": "MySQL中默认的存储引擎是MyISAM" }
+      ]
+    },
+    {
+      "id": 110,
+      "chapter": "期末复习一",
+      "title": "查找数据库中所有的数据表用以下哪一项",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SHOW DATABASE" },
+        { "id": 2, "title": "SHOW TABLES", "correct": true },
+        { "id": 3, "title": "SHOW DATABASES" },
+        { "id": 4, "title": "SHOW TABLE" }
+      ]
+    },
+    {
+      "id": 111,
+      "chapter": "期末复习一",
+      "title": "关于视图，不正确的说法是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "查询一个视图和查询一个基本表没有什么两样" },
+        { "id": 2, "title": "视图中并不存在数据" },
+        { "id": 3, "title": "若一个视图view_1由基本表t1和t2导出，删除t1不会对视图view_1有影响", "correct": true },
+        { "id": 4, "title": "更新视图中的数据，本质上更新的是导出该视图的基本表中的数据" }
+      ]
+    },
+    {
+      "id": 112,
+      "chapter": "期末复习一",
+      "title": "（）是用来存储数据库中数据对象的描述信息和数据库管理系统需要的控制信息",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据字典", "correct": true },
+        { "id": 2, "title": "日志" },
+        { "id": 3, "title": "主索引" },
+        { "id": 4, "title": "索引记录" }
+      ]
+    },
+    {
+      "id": 113,
+      "chapter": "期末复习一",
+      "title": "在MySQL的授权表中，记录各个账号在各个数据库上操作权限的权限表是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "host权限表" },
+        { "id": 2, "title": "table_priv权限表" },
+        { "id": 3, "title": "db权限表", "correct": true },
+        { "id": 4, "title": "user权限表" }
+      ]
+    },
+    {
+      "id": 114,
+      "chapter": "期末复习一",
+      "title": "MySQL主键规则的规则的描述错误的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "一个或多个主键列对应不同行之间的值可以完全相同", "correct": true },
+        { "id": 2, "title": "每个表必须定义一个主键" },
+        { "id": 3, "title": "一个表不能有两个主键" },
+        { "id": 4, "title": "主键的指定应满足最小化原则" }
+      ]
+    },
+    {
+      "id": 115,
+      "chapter": "期末复习一",
+      "title": "数据库中缓冲区写入磁盘使用的算法是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "FIFO" },
+        { "id": 2, "title": "LFU" },
+        { "id": 3, "title": "ARC" },
+        { "id": 4, "title": "LRU", "correct": true }
+      ]
+    },
+    {
+      "id": 116,
+      "chapter": "期末复习一",
+      "title": "MySQL中，可以用于备份数据库的命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysqlimport" },
+        { "id": 2, "title": "mysqldump", "correct": true },
+        { "id": 3, "title": "mysql" },
+        { "id": 4, "title": "copy" }
+      ]
+    },
+    {
+      "id": 117,
+      "chapter": "期末复习一",
+      "title": "以下关于数据库性能监视，错误的说法是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据库性能监视不仅要监视MySQL当前的状态，还需监视OS的状态", "correct": true },
+        { "id": 2, "title": "Nagios可以监视操作系统的状态" },
+        { "id": 3, "title": "监视工具可以分为非交互性和交互性" },
+        { "id": 4, "title": "Innotop和MyTop属于非交互性监视工具" }
+      ]
+    },
+    {
+      "id": 118,
+      "chapter": "期末复习一",
+      "title": "有时为了数据统计的方便会建立（）来加速辅助统计量的计算工作",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "影子表" },
+        { "id": 2, "title": "临时表" },
+        { "id": 3, "title": "汇总表", "correct": true },
+        { "id": 4, "title": "系统变量表" }
+      ]
+    },
+    {
+      "id": 119,
+      "chapter": "期末复习一",
+      "title": "查看复制线程的语句是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SHOW PROCESSLIST", "correct": true },
+        { "id": 2, "title": "SHOW PROCESS" },
+        { "id": 3, "title": "SHOW SLAVE STATUS" },
+        { "id": 4, "title": "上述都不是" }
+      ]
+    },
+    {
+      "id": 120,
+      "chapter": "期末复习一",
+      "title": "以下不属于数据库必须提供的数据控制功能的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "安全性" },
+        { "id": 2, "title": "可移植性", "correct": true },
+        { "id": 3, "title": "完整性" },
+        { "id": 4, "title": "并发控制" }
+      ]
+    },
+    {
+      "id": 121,
+      "chapter": "期末复习一",
+      "title": "MySQL服务器的存储引擎中支持事务处理、支持外键、支持崩溃修复能力和并发控制的存储引擎是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "InnoDB", "correct": true },
+        { "id": 2, "title": "MyISAM" },
+        { "id": 3, "title": "Memory" },
+        { "id": 4, "title": "NDB" }
+      ]
+    },
+    {
+      "id": 122,
+      "chapter": "期末复习一",
+      "title": "MySQL数据库通过命令行参数和配置文件来获得配置信息，查看当前使用的配置文件路径的DOS命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "select @@basedir" },
+        { "id": 2, "title": "select @@datadir", "correct": true },
+        { "id": 3, "title": "mysql-verbose-help" },
+        { "id": 4, "title": "select @@my.ini" }
+      ]
+    },
+    {
+      "id": 123,
+      "chapter": "期末复习一",
+      "title": "MySQL中设置停止二进制文件的操作是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "删除文件my.ini中[mysqld]组里log-bin内容" },
+        { "id": 2, "title": "使用SET命令设置SQL_LOG_BIN的值为0", "correct": true },
+        { "id": 3, "title": "执行二进制日志删除命令删除全部二进制文件即可" },
+        { "id": 4, "title": "以上都对" }
+      ]
+    },
+    {
+      "id": 124,
+      "chapter": "期末复习一",
+      "title": "SQL模式（sql_mode）这个设置可以接受多种选项来改变服务器行为，不允许置换存储引擎的选项值是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "NO_AUTO_CREATE_USER" },
+        { "id": 2, "title": "STRICT_TABLES" },
+        { "id": 3, "title": "NO_ENGINE_SUBSTITUTION", "correct": true },
+        { "id": 4, "title": "ONLY_FULL_GROUP_BY" }
+      ]
+    },
+    {
+      "id": 125,
+      "chapter": "期末复习一",
+      "title": "为数据库表创建索引的目的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "创建主键" },
+        { "id": 2, "title": "创建唯一索引" },
+        { "id": 3, "title": "提高查询的检索性能", "correct": true },
+        { "id": 4, "title": "归类" }
+      ]
+    },
+    {
+      "id": 126,
+      "chapter": "期末复习一",
+      "title": "下列关于视图说法不正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "视图是外模式" },
+        { "id": 2, "title": "视图是虚表" },
+        { "id": 3, "title": "使用视图可以加快查询语句的执行", "correct": true },
+        { "id": 4, "title": "使用视图可以简化查询语句" }
+      ]
+    },
+    {
+      "id": 127,
+      "chapter": "期末复习一",
+      "title": "DBMS内的数据字典用于存储",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据库对象的描述信息" },
+        { "id": 2, "title": "DBMS的控制信息" },
+        { "id": 3, "title": "用户数据" },
+        { "id": 4, "title": "A和B", "correct": true }
+      ]
+    },
+    {
+      "id": 128,
+      "chapter": "期末复习一",
+      "title": "在MySQL的授权表中，不受GRANT和REVOKE语句影响的权限表是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "host权限表", "correct": true },
+        { "id": 2, "title": "table_priv权限表" },
+        { "id": 3, "title": "db权限表" },
+        { "id": 4, "title": "user权限表" }
+      ]
+    },
+    {
+      "id": 129,
+      "chapter": "期末复习一",
+      "title": "一张表的主键个数为",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "至多3个" },
+        { "id": 2, "title": "没有限制" },
+        { "id": 3, "title": "至多1个", "correct": true },
+        { "id": 4, "title": "至多2个" }
+      ]
+    },
+    {
+      "id": 130,
+      "chapter": "期末复习一",
+      "title": "若使用load data infile命令中，若想要跳过数据文件中的前3行，命令子句正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "FROM 4 LINE" },
+        { "id": 2, "title": "IGNORE 3" },
+        { "id": 3, "title": "IGNORE 3 LINES", "correct": true },
+        { "id": 4, "title": "FROM 4" }
+      ]
+    },
+    {
+      "id": 131,
+      "chapter": "期末复习一",
+      "title": "可以查看二进制日志文件的工具为",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysqldump" },
+        { "id": 2, "title": "mysqld" },
+        { "id": 3, "title": "mysqlbinlog", "correct": true },
+        { "id": 4, "title": "mysqlshow" }
+      ]
+    },
+    {
+      "id": 132,
+      "chapter": "期末复习一",
+      "title": "以下哪个命令可以查看查询语句的执行计划",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysqladmin" },
+        { "id": 2, "title": "desc" },
+        { "id": 3, "title": "truncate" },
+        { "id": 4, "title": "explain", "correct": true }
+      ]
+    },
+    {
+      "id": 133,
+      "chapter": "期末复习一",
+      "title": "将子查询的结果缓存于内存或临时表中的技术叫做",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "视图重写" },
+        { "id": 2, "title": "物化子查询", "correct": true },
+        { "id": 3, "title": "扁平化" },
+        { "id": 4, "title": "持久化子查询" }
+      ]
+    },
+    {
+      "id": 134,
+      "chapter": "期末复习一",
+      "title": "从数据库服务器中SQL线程的作用是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中继日志文件的管理", "correct": true },
+        { "id": 2, "title": "保存节点自身产生的事件" },
+        { "id": 3, "title": "保存接收来自其他节点的事件" },
+        { "id": 4, "title": "访问主数据库的二进制文件存放在中继日志文件中" }
+      ]
+    },
+    {
+      "id": 135,
+      "chapter": "期末复习一",
+      "title": "以下属于数据库系统运维的主要内容的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "数据库安装与配置", "correct": true },
+        { "id": 2, "title": "数据库安全性管理", "correct": true },
+        { "id": 3, "title": "数据库备份与恢复", "correct": true },
+        { "id": 4, "title": "预防性巡检", "correct": true }
+      ]
+    },
+    {
+      "id": 136,
+      "chapter": "期末复习一",
+      "title": "在MySQL数据库中，数据库文件的扩展名包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": ".exe" },
+        { "id": 2, "title": ".myi", "correct": true },
+        { "id": 3, "title": ".ibd", "correct": true },
+        { "id": 4, "title": ".frm", "correct": true }
+      ]
+    },
+    {
+      "id": 137,
+      "chapter": "期末复习一",
+      "title": "MySQL中，对二进制文件的功能描述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "主从数据库通过二进制文件的传递达到主从同步目的", "correct": true },
+        {
+          "id": 2,
+          "title": "二进制文件可用于数据恢复，通过应用二进制日志文件，能够将数据库恢复到故障发生前的状态",
+          "correct": true
+        },
+        { "id": 3, "title": "数据库运行过程中的错误信息，也会被记录到二进制文件中，以便数据库恢复正常" },
+        { "id": 4, "title": "二进制文件中记录了数据库查询语句以及其运行时间，可用于服务器性能的优化" }
+      ]
+    },
+    {
+      "id": 138,
+      "chapter": "期末复习一",
+      "title": "在MySQL数据库中，下列关于创建数据库表的描述不正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "在创建表时必须设定列的约束", "correct": true },
+        { "id": 2, "title": "在删除表的时候通过外键约束连接在一起的表会被一同删除", "correct": true },
+        { "id": 3, "title": "在创建表时必须设置列类型" },
+        {
+          "id": 4,
+          "title": "通过CREATE TABLE new_t SELECT * FROM old_t复制表的同时，表的约束能够一起被复制到新表中",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 139,
+      "chapter": "期末复习一",
+      "title": "在MySQL中，下列说法正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "数据表一旦建立完成就不能修改" },
+        { "id": 2, "title": "建立数据表之前必须先建立表结构", "correct": true },
+        { "id": 3, "title": "用户在单机上操作的数据就存放在单机上", "correct": true },
+        { "id": 4, "title": "可以建立多个数据库，但也可以通过限定，使用户只能建立一个数据库", "correct": true }
+      ]
+    },
+    {
+      "id": 140,
+      "chapter": "期末复习一",
+      "title": "关于MySQL列约束的下列描述中正确的有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "主键约束会影响表的查找操作执行效率，应当谨慎使用" },
+        { "id": 2, "title": "外键约束会影响表的插入操作执行效率，应当谨慎使用", "correct": true },
+        { "id": 3, "title": "一个表可以声明多个主键列" },
+        { "id": 4, "title": "一个表可以声明多个外键列", "correct": true }
+      ]
+    },
+    {
+      "id": 141,
+      "chapter": "期末复习一",
+      "title": "下列关于事务日志和二进制日志说法正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "二进制日志记录了对MySQL数据库中的DML操作", "correct": true },
+        { "id": 2, "title": "事务日志是InnoDB存储引擎特有的日志", "correct": true },
+        { "id": 3, "title": "默认情况下事务日志与二进制日志存放的目录是不同的" },
+        { "id": 4, "title": "事务日志与可以使用记事本直接打开，而二进制日志则不能等直接打开" }
+      ]
+    },
+    {
+      "id": 142,
+      "chapter": "期末复习一",
+      "title": "查询代价估算是基于哪些指标进行的",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "I/O代价", "correct": true },
+        { "id": 2, "title": "GPU代价" },
+        { "id": 3, "title": "网络代价" },
+        { "id": 4, "title": "CPU代价", "correct": true }
+      ]
+    },
+    {
+      "id": 143,
+      "chapter": "期末复习一",
+      "title": "以下关于CHAR和VARCHAR的区别，说法正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "CHAR是固定长度，VARCHAR是可变长度", "correct": true },
+        { "id": 2, "title": "CHAR会占据多余的空间", "correct": true },
+        { "id": 3, "title": "CHAR最多存放255个字符，VARCHAR最多存放65532个字符", "correct": true },
+        { "id": 4, "title": "VARCHAR的存取速度快于CHAR" }
+      ]
+    },
+    {
+      "id": 144,
+      "chapter": "期末复习一",
+      "title": "在MySQL复制中，复制模式分为哪几种",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "基于关键字的复制模式" },
+        { "id": 2, "title": "基于语句的复制模式", "correct": true },
+        { "id": 3, "title": "基于行的复制模式", "correct": true },
+        { "id": 4, "title": "混合记录模式", "correct": true }
+      ]
+    },
+    {
+      "id": 145,
+      "chapter": "期末复习一",
+      "title": "数据库管理员的核心目标是保证数据库管理系统的",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "稳定性", "correct": true },
+        { "id": 2, "title": "安全性", "correct": true },
+        { "id": 3, "title": "高性能", "correct": true },
+        { "id": 4, "title": "完整性", "correct": true }
+      ]
+    },
+    {
+      "id": 146,
+      "chapter": "期末复习一",
+      "title": "MySQL数据库正常使用情况下必须含有以下哪三种文件",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "ibd文件", "correct": true },
+        { "id": 2, "title": "myd文件", "correct": true },
+        { "id": 3, "title": "myi文件", "correct": true },
+        { "id": 4, "title": "csv文件" }
+      ]
+    },
+    {
+      "id": 147,
+      "chapter": "期末复习一",
+      "title": "关于临时表的描述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "只在创建的会话可见，其它会话不能访问另一个会话创建的临时表", "correct": true },
+        { "id": 2, "title": "临时表只存在于会话生命周期中", "correct": true },
+        { "id": 3, "title": "临时表可以与非临时表有相同的名称", "correct": true },
+        { "id": 4, "title": "临时表不能使用SHOW TABLES显示", "correct": true }
+      ]
+    },
+    {
+      "id": 148,
+      "chapter": "期末复习一",
+      "title": "关于索引的描述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "一个表上可以创建多个索引", "correct": true },
+        { "id": 2, "title": "一个索引可以包括多个字段", "correct": true },
+        { "id": 3, "title": "一个字段可以出现在多个不同的索引中", "correct": true },
+        { "id": 4, "title": "一个索引可以建立在多个表上" }
+      ]
+    },
+    {
+      "id": 149,
+      "chapter": "期末复习一",
+      "title": "SELECT语句完整性比较复杂，但至少包含的部分有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "SELECT", "correct": true },
+        { "id": 2, "title": "FROM", "correct": true },
+        { "id": 3, "title": "WHERE" },
+        { "id": 4, "title": "GROUP" }
+      ]
+    },
+    {
+      "id": 150,
+      "chapter": "期末复习一",
+      "title": "MySQL可以授予的权限包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "列权限", "correct": true },
+        { "id": 2, "title": "表权限", "correct": true },
+        { "id": 3, "title": "数据库权限", "correct": true },
+        { "id": 4, "title": "用户权限", "correct": true }
+      ]
+    },
+    {
+      "id": 151,
+      "chapter": "期末复习一",
+      "title": "基于拷贝文件的恢复说法正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "在恢复过程中不需要关闭MySQL服务器" },
+        { "id": 2, "title": "进行数据库恢复的MySQL服务的版本要与备份的MySQL服务的版本保持一致", "correct": true },
+        { "id": 3, "title": "恢复过程中需要备份的配置文件与数据文件", "correct": true },
+        { "id": 4, "title": "恢复过程中只需要数据文件" }
+      ]
+    },
+    {
+      "id": 152,
+      "chapter": "期末复习一",
+      "title": "以下属于索引的缺点的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "使用索引会降低表的更新速度", "correct": true },
+        { "id": 2, "title": "索引会占用大量的磁盘空间", "correct": true },
+        { "id": 3, "title": "索引文件的大小会随着表的增大迅速膨胀", "correct": true },
+        { "id": 4, "title": "索引会降低查询的速度" }
+      ]
+    },
+    {
+      "id": 153,
+      "chapter": "期末复习一",
+      "title": "使用垂直拆分的方式拆分表的优点有以下哪些",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "垂直拆分会引起表连接join操作，减少CPU开销" },
+        { "id": 2, "title": "垂直拆分会减少查询时的I/O次数", "correct": true },
+        { "id": 3, "title": "垂直拆分能最大化地利用Cache加速查询", "correct": true },
+        { "id": 4, "title": "垂直拆分可以减少行数据的大小使得数据块存放更多数据", "correct": true }
+      ]
+    },
+    {
+      "id": 154,
+      "chapter": "期末复习二",
+      "title": "ITIL（Information Technology Infrastructure Library，信息技术基础架构库）运维服务体系中问题管理流程的目标是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "系统运行出现问题时尽可能小地影响用户业务" },
+        { "id": 2, "title": "消除运维服务中的潜在问题以防止事件的发生", "correct": true },
+        { "id": 3, "title": "全面有效地管理运维服务各方面的信息" },
+        { "id": 4, "title": "通过对变更过程的有效管理将所导致的业务中断的影响降到最低" }
+      ]
+    },
+    {
+      "id": 155,
+      "chapter": "期末复习二",
+      "title": "MySQL配置文件当中，正确的语法格式是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Atuo-increment-offset=5" },
+        { "id": 2, "title": "atuo increment offset=5" },
+        { "id": 3, "title": "Auto_increment_offset=5" },
+        { "id": 4, "title": "auto-increment-offset=5", "correct": true }
+      ]
+    },
+    {
+      "id": 156,
+      "chapter": "期末复习二",
+      "title": "关于MySQL动态设置变量叙述正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "在服务器运行时修改了变量的全局值，这个值只会对当前会话起作用" },
+        { "id": 2, "title": "动态设置变量的时，MySQL服务器关闭时这些设置也会保存到配置文件中" },
+        { "id": 3, "title": "在配置文件中和动态设置变量时都可以使用表达式" },
+        {
+          "id": 4,
+          "title": "DEFAULT值赋给会话级变量可以把变量改为使用全局值，把它赋值给全局变量可以设置这个变量为编译内置的默认值",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 157,
+      "chapter": "期末复习二",
+      "title": "在关系数据库中，为了简化用户的查询操作，而又不增加数据的存储空间，常用的方法是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "另一个表" },
+        { "id": 2, "title": "游标" },
+        { "id": 3, "title": "索引" },
+        { "id": 4, "title": "视图", "correct": true }
+      ]
+    },
+    {
+      "id": 158,
+      "chapter": "期末复习二",
+      "title": "下列（）数据不适合创建索引",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "经常被查询搜索的列，如经常在where字句中出现的列" },
+        { "id": 2, "title": "是外键或主键的列" },
+        { "id": 3, "title": "包含太多重复选用值得列", "correct": true },
+        { "id": 4, "title": "在ORDER BY字句中使用的列" }
+      ]
+    },
+    {
+      "id": 159,
+      "chapter": "期末复习二",
+      "title": "以下表示可变长度字符串的数据类型是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "CHAR" },
+        { "id": 2, "title": "VARCHAR", "correct": true },
+        { "id": 3, "title": "TEXT" },
+        { "id": 4, "title": "BLOB" }
+      ]
+    },
+    {
+      "id": 160,
+      "chapter": "期末复习二",
+      "title": "以下哪个命令是使用超级管理员身份创建普通账户",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "create user username@localhost identified by 123456" },
+        { "id": 2, "title": "create user 'username'@'localhost' identified by 123456" },
+        { "id": 3, "title": "create user username@localhost identified by '123456'" },
+        { "id": 4, "title": "create user 'username'@'localhost' identified by '123456'", "correct": true }
+      ]
+    },
+    {
+      "id": 161,
+      "chapter": "期末复习二",
+      "title": "执行语句grant select on *.* to username@localhost的意义",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "赋予username用户在任意用户任意表的select权限" },
+        { "id": 2, "title": "登录到username用户" },
+        { "id": 3, "title": "不赋予username用户选择权限" },
+        { "id": 4, "title": "赋予username用户全局在任意表任意列的select权限", "correct": true }
+      ]
+    },
+    {
+      "id": 162,
+      "chapter": "期末复习二",
+      "title": "关于MySQL修改密码权限说法错误的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "root账户的密码只能由root账户进行修改" },
+        { "id": 2, "title": "普通用户账户密码的修改可以由root账户进行修改" },
+        { "id": 3, "title": "普通用户账户密码的修改可以由普通账户自己进行修改" },
+        { "id": 4, "title": "普通用户账户密码的修改可以由其他普通账户进行修改", "correct": true }
+      ]
+    },
+    {
+      "id": 163,
+      "chapter": "期末复习二",
+      "title": "关系数据库中，主键是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "创建唯一的索引，允许空值" },
+        { "id": 2, "title": "只允许以表中第一字段建立" },
+        { "id": 3, "title": "允许有多个主键的" },
+        { "id": 4, "title": "为标识表中唯一的实体", "correct": true }
+      ]
+    },
+    {
+      "id": 164,
+      "chapter": "期末复习二",
+      "title": "数据库恢复用到的技术是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据库备份和登记日志文件", "correct": true },
+        { "id": 2, "title": "数据库备份" },
+        { "id": 3, "title": "登记日志文件" },
+        { "id": 4, "title": "数据库复制" }
+      ]
+    },
+    {
+      "id": 165,
+      "chapter": "期末复习二",
+      "title": "select…into outfile语句中用于指定字段值之间符号的子句是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "lines terminated by" },
+        { "id": 2, "title": "fileds terminated by", "correct": true },
+        { "id": 3, "title": "fileds enclosed by" },
+        { "id": 4, "title": "fileds escaped by" }
+      ]
+    },
+    {
+      "id": 166,
+      "chapter": "期末复习二",
+      "title": "从sys_schema中查询哪些语句出现错误的命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SELECT * FROM sys.statements_with_errors_or_warnings", "correct": true },
+        { "id": 2, "title": "SELECT * FROM sys.statements_with_runtimes_in_95th_percentile" },
+        { "id": 3, "title": "SELECT * FROM sys.statement_analysis" },
+        { "id": 4, "title": "SELECT * FROM sys.host_summary_by_file_io" }
+      ]
+    },
+    {
+      "id": 167,
+      "chapter": "期末复习二",
+      "title": "查询优化策略中，正确的策略是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "尽可能早地执行笛卡尔积操作" },
+        { "id": 2, "title": "尽可能早地执行并操作" },
+        { "id": 3, "title": "尽可能早地执行差操作" },
+        { "id": 4, "title": "尽可能早地执行选择操作", "correct": true }
+      ]
+    },
+    {
+      "id": 168,
+      "chapter": "期末复习二",
+      "title": "下面关于复制的基本步骤哪一项是错误的？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "在主数据库服务器上把数据更改记录到二进制日志中" },
+        { "id": 2, "title": "从数据库服务器将主数据库服务器上的日志复制到自己的中继日志中" },
+        { "id": 3, "title": "主数据库服务器将从数据库服务器上的日志复制到自己的中继日志中", "correct": true },
+        { "id": 4, "title": "从数据库服务器读取中继日志中的事件，将其重放在从数据库数据之上" }
+      ]
+    },
+    {
+      "id": 169,
+      "chapter": "期末复习二",
+      "title": "MySQL数据库运维中系统高可用性，其中年度可服务时间比例“5个9”，其年度停机时间大约为",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "87.6h" },
+        { "id": 2, "title": "8.8h" },
+        { "id": 3, "title": "5min", "correct": true },
+        { "id": 4, "title": "<1min" }
+      ]
+    },
+    {
+      "id": 170,
+      "chapter": "期末复习二",
+      "title": "MySQL数据库中创建表并指定MyISAM存储引擎的语句是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        {
+          "id": 1,
+          "title": "Create table t_myisam(id int(10) auto_increment, name varchar(10), age int(3), primary key (id));"
+        },
+        {
+          "id": 2,
+          "title": "Create table t_myisam(id int(10) auto_increment, name varchar(10), age int(3), primary key (id)) set engine = MyISAM;"
+        },
+        {
+          "id": 3,
+          "title": "Create table t_myisam(id int(10) auto_increment, name varchar(10), age int(3), primary key (id)), MyISAM;"
+        },
+        {
+          "id": 4,
+          "title": "Create table t_myisam(id int(10) auto_increment, name varchar(10), age int(3), primary key (id)) engine = MyISAM;",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 171,
+      "chapter": "期末复习二",
+      "title": "SQL模式（sql_mode）这个设置可以接受多种选项来改变服务器行为，不允许置换存储引擎的选项值是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "NO_AUTO_CREATE_USER" },
+        { "id": 2, "title": "STRICT_TABLES" },
+        { "id": 3, "title": "NO_ENGINE_SUBSTITUTION", "correct": true },
+        { "id": 4, "title": "ONLY_FULL_GROUP_BY" }
+      ]
+    },
+    {
+      "id": 172,
+      "chapter": "期末复习二",
+      "title": "语句DELETE FROM stu表明",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "删除stu表中的全部记录", "correct": true },
+        { "id": 2, "title": "删除基本表stu" },
+        { "id": 3, "title": "删除基本表stu中的列" },
+        { "id": 4, "title": "删除基本表stu中的部分行" }
+      ]
+    },
+    {
+      "id": 173,
+      "chapter": "期末复习二",
+      "title": "关于索引正确的说法是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "使用索引可以提高数据查询速度和数据更新速度" },
+        { "id": 2, "title": "使用索引可以提高数据查询速度，但会降低数据更新速度", "correct": true },
+        { "id": 3, "title": "使用索引可以提高数据查询速度，对数据更新没有影响" },
+        { "id": 4, "title": "使用索引对数据查询速度和数据更新速度都没有影响" }
+      ]
+    },
+    {
+      "id": 174,
+      "chapter": "期末复习二",
+      "title": "存储用户密码的MD5哈希值，一般使用的数据类型是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "CHAR", "correct": true },
+        { "id": 2, "title": "VARCHAR" },
+        { "id": 3, "title": "TEXT" },
+        { "id": 4, "title": "BLOB" }
+      ]
+    },
+    {
+      "id": 175,
+      "chapter": "期末复习二",
+      "title": "在Mysql的授权表中，记录各个账号在各个数据库上操作权限的权限表是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "host权限表" },
+        { "id": 2, "title": "table_priv权限表" },
+        { "id": 3, "title": "db权限表", "correct": true },
+        { "id": 4, "title": "user权限表" }
+      ]
+    },
+    {
+      "id": 176,
+      "chapter": "期末复习二",
+      "title": "Mysql服务器安装时，下列说法正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据库内容为空" },
+        { "id": 2, "title": "Mysql建立一个名为mysql的数据库" },
+        { "id": 3, "title": "Mysql建立一个名为mysql的数据库和一个名为test的数据库", "correct": true },
+        { "id": 4, "title": "Mysql建立一个名为test的数据库" }
+      ]
+    },
+    {
+      "id": 177,
+      "chapter": "期末复习二",
+      "title": "关于限制MySQL账户资源次数，表示限定同时段内该用户账户连接到MySQL服务器的最大并发连接数的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "max_questions" },
+        { "id": 2, "title": "max_update" },
+        { "id": 3, "title": "max_updates" },
+        { "id": 4, "title": "max_user_connections", "correct": true }
+      ]
+    },
+    {
+      "id": 178,
+      "chapter": "期末复习二",
+      "title": "下列哪些语句对主键的说明正确",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "主键可重复" },
+        { "id": 2, "title": "主键不唯一" },
+        { "id": 3, "title": "在数据表中的唯一索引", "correct": true },
+        { "id": 4, "title": "主键用foreign key修饰" }
+      ]
+    },
+    {
+      "id": 179,
+      "chapter": "期末复习二",
+      "title": "MySQL中查询系统变量的命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "show variables", "correct": true },
+        { "id": 2, "title": "show variable" },
+        { "id": 3, "title": "check variables" },
+        { "id": 4, "title": "check variable" }
+      ]
+    },
+    {
+      "id": 180,
+      "chapter": "期末复习二",
+      "title": "使用命令select…into outfile将数据库employees中的数据表departments中的数据导出到D盘下的tmp.txt文件中的命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SELECT employees.departments INTO OUTFILE \"D:/tmp.txt\"" },
+        { "id": 2, "title": "SELECT * FROM employees.departments INTO OUTFILE \"D:/tmp.txt\"", "correct": true },
+        { "id": 3, "title": "SELECT employees.departments INTO OUTFILE \"D:\\tmp.txt\"" },
+        { "id": 4, "title": "SELECT * FROM employees.departments INTO OUTFILE \"D:\\tmp.txt\"" }
+      ]
+    },
+    {
+      "id": 181,
+      "chapter": "期末复习二",
+      "title": "以下哪个数据库保存所有的临时表和临时存储过程",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "tempdb数据库", "correct": true },
+        { "id": 2, "title": "master数据库" },
+        { "id": 3, "title": "model数据库" },
+        { "id": 4, "title": "msdb数据库" }
+      ]
+    },
+    {
+      "id": 182,
+      "chapter": "期末复习二",
+      "title": "MySQL支持以下哪种情况的子查询优化",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "简单SELECT查询中的子查询", "correct": true },
+        { "id": 2, "title": "带有GROUPBY、HAVING、聚集函数" },
+        { "id": 3, "title": "使用ORDERBY中带有LIMIT" },
+        { "id": 4, "title": "内表、外表的个数超过MySQL支持的最大表的连接数" }
+      ]
+    },
+    {
+      "id": 183,
+      "chapter": "期末复习二",
+      "title": "下列关于复制过滤描述正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "复制过滤就是对用于复制的数据进行过滤，允许复制服务器上的全部数据" },
+        { "id": 2, "title": "过滤方式包括在主数据库上过滤记录到中继日志中的事件" },
+        { "id": 3, "title": "过滤方式包括在从数据库上过滤记录到二进制日志中的事件" },
+        { "id": 4, "title": "在主数据库上可以使用选项binlog_do_db来控制过滤", "correct": true }
+      ]
+    },
+    {
+      "id": 184,
+      "chapter": "期末复习二",
+      "title": "MySQL二进制日志binlog其作用是记录MySQL内部（）的内容",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "增删改", "correct": true },
+        { "id": 2, "title": "查询select" },
+        { "id": 3, "title": "显示show" },
+        { "id": 4, "title": "异常Exception" }
+      ]
+    },
+    {
+      "id": 185,
+      "chapter": "期末复习二",
+      "title": "下面哪种方式是MySQL默认事务隔离级别",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "read uncommitted" },
+        { "id": 2, "title": "read committed" },
+        { "id": 3, "title": "repeatable read", "correct": true },
+        { "id": 4, "title": "serializable" }
+      ]
+    },
+    {
+      "id": 186,
+      "chapter": "期末复习二",
+      "title": "关系的所有人若允许某用户仅访问该关系指定的字段或元组，可用的方法是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "要求用户不阅读不使用关系中指定的数据以外的其他数据" },
+        { "id": 2, "title": "对关系删除一些属性" },
+        { "id": 3, "title": "对关系删除一些元组" },
+        { "id": 4, "title": "提供适当的视图", "correct": true }
+      ]
+    },
+    {
+      "id": 187,
+      "chapter": "期末复习二",
+      "title": "在MySQL数据库中，以下数据库对象与数据库三级模式对应关系正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "表属于模式、索引属于内模式、视图属于外模式", "correct": true },
+        { "id": 2, "title": "表属于模式、索引属于外模式、视图属于内模式" },
+        { "id": 3, "title": "表属于外模式、索引属于内模式、视图属于模式" },
+        { "id": 4, "title": "表属于外模式、索引属于模式、视图属于内模式" }
+      ]
+    },
+    {
+      "id": 188,
+      "chapter": "期末复习二",
+      "title": "下列关于数据库对象的描述，错误的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "存储过程、函数均可接收输入参数" },
+        { "id": 2, "title": "触发器可以在数据更新时被激活" },
+        { "id": 3, "title": "域可以由用户创建，可以加约束条件" },
+        { "id": 4, "title": "一个关系可以有多个主码", "correct": true }
+      ]
+    },
+    {
+      "id": 189,
+      "chapter": "期末复习二",
+      "title": "MySQL权限系统对用户可操作行为的认证说法不正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "需要通过用户名密码以及IP与数据库记录相匹配" },
+        { "id": 2, "title": "如果用户名和密码都匹配，IP不匹配，用户仍可继续访问", "correct": true },
+        { "id": 3, "title": "需要对通过验证的用户进行权限匹配，赋予其应有权限" },
+        { "id": 4, "title": "不同IP登入的用户，同名用户属于不同的身份" }
+      ]
+    },
+    {
+      "id": 190,
+      "chapter": "期末复习二",
+      "title": "Mysql的自身防御机制不包括",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据库注入", "correct": true },
+        { "id": 2, "title": "用户的身份验证管理" },
+        { "id": 3, "title": "基于权限系统的访问控制" },
+        { "id": 4, "title": "视图、存储过程、加密函数" }
+      ]
+    },
+    {
+      "id": 191,
+      "chapter": "期末复习二",
+      "title": "关于限制MySQL账户资源次数，表示限定每小时内该用户账户向MySQL服务器发送查询语句或者mysql命令的最大允许次数的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "max_questions", "correct": true },
+        { "id": 2, "title": "max_update" },
+        { "id": 3, "title": "max_updates" },
+        { "id": 4, "title": "max_user_connections" }
+      ]
+    },
+    {
+      "id": 192,
+      "chapter": "期末复习二",
+      "title": "用户自定义完整性中，不同表的两列或多列之间可能存在的直接要求关系，这种直接要求关系涉及两个不同的表，这种约束为",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "元组约束" },
+        { "id": 2, "title": "域约束" },
+        { "id": 3, "title": "关系间约束", "correct": true },
+        { "id": 4, "title": "完整性约束" }
+      ]
+    },
+    {
+      "id": 193,
+      "chapter": "期末复习二",
+      "title": "系统变量中哪一个的值对应MySQL的数据目录",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "datadir", "correct": true },
+        { "id": 2, "title": "basedir" },
+        { "id": 3, "title": "backlog" },
+        { "id": 4, "title": "log-bin" }
+      ]
+    },
+    {
+      "id": 194,
+      "chapter": "期末复习二",
+      "title": "关于PROCESSLIST结果中字段的含义，正确的说法是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "TIME记录该线程从创建到现在的存活时间" },
+        { "id": 2, "title": "STATE显示当前连接的SQL语句的执行状态", "correct": true },
+        { "id": 3, "title": "INFO记录该线程执行的完整语句" },
+        { "id": 4, "title": "DB记录当前执行语句的默认数据库，并且不能为NULL" }
+      ]
+    },
+    {
+      "id": 195,
+      "chapter": "期末复习二",
+      "title": "以下关于使用逆规范化技术优化数据库对象说法错误的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "逆规范化会引入数据冗余" },
+        { "id": 2, "title": "逆规范化可以提升检索速度并减少JOIN操作" },
+        { "id": 3, "title": "逆规范化不会带来数据完整性的额外问题", "correct": true },
+        { "id": 4, "title": "使用拟规范化操作之前应充分考虑其他方法" }
+      ]
+    },
+    {
+      "id": 196,
+      "chapter": "期末复习二",
+      "title": "在MySQL复制中，复制模式为",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "基于语句的复制模式" },
+        { "id": 2, "title": "基于行的复制模式" },
+        { "id": 3, "title": "混合记录模式" },
+        { "id": 4, "title": "上述所有模式", "correct": true }
+      ]
+    },
+    {
+      "id": 197,
+      "chapter": "期末复习二",
+      "title": "数据库系统的重要特征包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "数据的独立性", "correct": true },
+        { "id": 2, "title": "数据的高冗余" },
+        { "id": 3, "title": "数据的完整性", "correct": true },
+        { "id": 4, "title": "数据的共享性", "correct": true }
+      ]
+    },
+    {
+      "id": 198,
+      "chapter": "期末复习二",
+      "title": "MySQL数据库中，存储引擎InnoDB的功能特点有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "支持事务的提交和回滚", "correct": true },
+        { "id": 2, "title": "崩溃修复能力", "correct": true },
+        { "id": 3, "title": "并发控制", "correct": true },
+        { "id": 4, "title": "数据可压缩" }
+      ]
+    },
+    {
+      "id": 199,
+      "chapter": "期末复习二",
+      "title": "在配置MySQL服务器时缓存池的大小设置，下面正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "缓冲池大小可以设置的很大，以保证数据库的性能" },
+        { "id": 2, "title": "缓冲池的大小设置为系统内存剩余空间最好" },
+        {
+          "id": 3,
+          "title": "缓冲池的配置，不仅要兼顾系统中其他程序使用的内存空间，还要减去其他配置的MySQL缓存和缓存需要的内存空间",
+          "correct": true
+        },
+        {
+          "id": 4,
+          "title": "缓冲池大小的设置过大，则可能会造成更严重的问题，如出现内存交换、磁盘抖动，甚至内存耗尽和硬件死机等现象",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 200,
+      "chapter": "期末复习二",
+      "title": "MySQL中可以创建的索引有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "聚簇索引", "correct": true },
+        { "id": 2, "title": "普通索引", "correct": true },
+        { "id": 3, "title": "主键索引", "correct": true },
+        { "id": 4, "title": "全文索引", "correct": true }
+      ]
+    },
+    {
+      "id": 201,
+      "chapter": "期末复习二",
+      "title": "必须明确指定组成视图的所有列名的情况有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "在视图的定义中使用ORDER BY语句" },
+        { "id": 2, "title": "多表连接时选出了几个同名列作为视图的字段", "correct": true },
+        { "id": 3, "title": "需要在视图中为某个列启用新的、更合适的名字", "correct": true },
+        { "id": 4, "title": "某个目标列不是单纯的属性名，而是聚集函数或列表达式", "correct": true }
+      ]
+    },
+    {
+      "id": 202,
+      "chapter": "期末复习二",
+      "title": "MySQL服务器安装时，自动建立两个数据库，首先是mysql数据库，该数据库是MySQL权限系统的核心，包含以下哪几个表",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "user表", "correct": true },
+        { "id": 2, "title": "db表", "correct": true },
+        { "id": 3, "title": "procs_priv表" },
+        { "id": 4, "title": "tables_priv表", "correct": true }
+      ]
+    },
+    {
+      "id": 203,
+      "chapter": "期末复习二",
+      "title": "MySQL数据库创建外键可以通过哪些SQL语句实现",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "CREATE TABLE", "correct": true },
+        { "id": 2, "title": "INSERT INTO" },
+        { "id": 3, "title": "ALTER TABLE", "correct": true },
+        { "id": 4, "title": "CREATE FOREIGN KEY" }
+      ]
+    },
+    {
+      "id": 204,
+      "chapter": "期末复习二",
+      "title": "关于文件系统冷备份的说法正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "文件系统冷备份就是直接使用操作系统提供的命令对文件进行拷贝", "correct": true },
+        { "id": 2, "title": "文件系统冷备份只需要拷贝相关的数据文件即可" },
+        {
+          "id": 3,
+          "title": "对于InnoDB存储引擎的数据表中的数据文件包含在根目录下的ibdata*文件中，在文件系统冷备份过程中需要拷贝此文件",
+          "correct": true
+        },
+        {
+          "id": 4,
+          "title": "要备份只有MyISAM存储引擎的数据库，只需要复制数据库对应名称的目录下的数据文件，不需要复制ibdata*文件",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 205,
+      "chapter": "期末复习二",
+      "title": "以下哪些语句会导致查询缓存失效",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "select" },
+        { "id": 2, "title": "update", "correct": true },
+        { "id": 3, "title": "insert", "correct": true },
+        { "id": 4, "title": "truncate", "correct": true }
+      ]
+    },
+    {
+      "id": 206,
+      "chapter": "期末复习二",
+      "title": "在MySQL中，复制比较常见的用途有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "数据分布", "correct": true },
+        { "id": 2, "title": "负载均衡", "correct": true },
+        { "id": 3, "title": "备份", "correct": true },
+        { "id": 4, "title": "高可用性和故障切换", "correct": true }
+      ]
+    },
+    {
+      "id": 207,
+      "chapter": "期末复习二",
+      "title": "数据库系统运维内容包括数据库备份与恢复，其中数据库备份分级包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "本地备份", "correct": true },
+        { "id": 2, "title": "异地备份", "correct": true },
+        { "id": 3, "title": "同步备份", "correct": true },
+        { "id": 4, "title": "实时备份", "correct": true }
+      ]
+    },
+    {
+      "id": 208,
+      "chapter": "期末复习二",
+      "title": "在数据库中事务的ACID原则中，包含下列哪些内容",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "原子性", "correct": true },
+        { "id": 2, "title": "一致性", "correct": true },
+        { "id": 3, "title": "隔离性", "correct": true },
+        { "id": 4, "title": "持久性", "correct": true }
+      ]
+    },
+    {
+      "id": 209,
+      "chapter": "期末复习二",
+      "title": "MySQL中，关于各类日志文件叙述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "二进制日志会以二进制的形式记录数据库的各种操作，并记录查询语句" },
+        { "id": 2, "title": "错误日志会记录MySQL服务器启动、关闭和运行时出错等信息", "correct": true },
+        {
+          "id": 3,
+          "title": "慢查询日志记录执行时间超过指定时间的各种操作，通过工具分析慢查询日志可以定位MySQL服务器性能瓶颈所在",
+          "correct": true
+        },
+        {
+          "id": 4,
+          "title": "通用查询日志记录MySQL服务器的启动和关闭信息、客户端的连接信息、更新数据记录SQL语句和查询数据记录SQL语句",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 210,
+      "chapter": "期末复习二",
+      "title": "外键定义中ON DELETE与ON UPDATE有几种设置",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "CASCADE", "correct": true },
+        { "id": 2, "title": "NO ACTION", "correct": true },
+        { "id": 3, "title": "RESTRICT", "correct": true },
+        { "id": 4, "title": "SET NULL", "correct": true }
+      ]
+    },
+    {
+      "id": 211,
+      "chapter": "期末复习二",
+      "title": "创建数据库时，下列哪些类型的长度是可以省略的",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "DATE", "correct": true },
+        { "id": 2, "title": "CHAR" },
+        { "id": 3, "title": "TEXT", "correct": true },
+        { "id": 4, "title": "INT", "correct": true }
+      ]
+    },
+    {
+      "id": 212,
+      "chapter": "期末复习二",
+      "title": "MySQL中权限的范围可以到数据库或表的权限为",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "select" },
+        { "id": 2, "title": "update" },
+        { "id": 3, "title": "create", "correct": true },
+        { "id": 4, "title": "drop", "correct": true }
+      ]
+    },
+    {
+      "id": 213,
+      "chapter": "期末复习二",
+      "title": "用户自定义完整性约束包括以下哪几种约束",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "元组约束", "correct": true },
+        { "id": 2, "title": "关系间约束", "correct": true },
+        { "id": 3, "title": "替代键约束" },
+        { "id": 4, "title": "域约束", "correct": true }
+      ]
+    },
+    {
+      "id": 214,
+      "chapter": "期末复习二",
+      "title": "基于拷贝文件的恢复说法正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "在恢复过程中不需要关闭MySQL服务器" },
+        { "id": 2, "title": "进行数据库恢复的MySQL服务的版本要与备份的MySQL服务的版本保持一致", "correct": true },
+        { "id": 3, "title": "恢复过程中需要备份的配置文件与数据文件", "correct": true },
+        { "id": 4, "title": "恢复过程中只需要数据文件" }
+      ]
+    },
+    {
+      "id": 215,
+      "chapter": "期末复习二",
+      "title": "以下哪些修改表结构的操作可以通过修改.frm文件提升效率",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "修改字段的默认值" },
+        { "id": 2, "title": "修改字段的数据类型" },
+        { "id": 3, "title": "增加/删除字段的AUTO_INCREMENT属性", "correct": true },
+        { "id": 4, "title": "增加/删除/修改 ENUM的常量值", "correct": true }
+      ]
+    },
+    {
+      "id": 216,
+      "chapter": "期末复习二",
+      "title": "在MySQL复制中，复制模式分为哪几种",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "基于关键字的复制模式" },
+        { "id": 2, "title": "基于语句的复制模式", "correct": true },
+        { "id": 3, "title": "基于行的复制模式", "correct": true },
+        { "id": 4, "title": "混合记录模式", "correct": true }
+      ]
+    },
+    {
+      "id": 217,
+      "chapter": "期末复习二",
+      "title": "关于MySQL数据库的MyISAM存储引擎描述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "表锁、全文索引和不支持事务", "correct": true },
+        { "id": 2, "title": "不缓存数据文件，只缓存索引文件", "correct": true },
+        { "id": 3, "title": "含有系统表空间文件" },
+        { "id": 4, "title": "每个MyISAM在磁盘上存储成三个文件，文件名都和表名不同，扩展名不同" }
+      ]
+    },
+    {
+      "id": 218,
+      "chapter": "期末复习二",
+      "title": "关于MySQL查询日志表特点描述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        {
+          "id": 1,
+          "title": "日志表的写操作不会记入二进制日志，同样，如果有复制环境的话，日志表的内容也不会被复制到其他Slaves节点",
+          "correct": true
+        },
+        { "id": 2, "title": "刷新日志表或日志文件，可以使用FLUSH TABLES或FLUSH LOGS", "correct": true },
+        {
+          "id": 3,
+          "title": "日志表不支持LOCK TABLES，并且也不允许用户在其上进行INSERT、UPDATE、DELETE操作，该表的增、删、改、查都是由MySQL服务内部操作的",
+          "correct": true
+        },
+        { "id": 4, "title": "日志表不支持RENAME、TRUNCATE/CHECK操作" }
+      ]
+    },
+    {
+      "id": 219,
+      "chapter": "期末复习二",
+      "title": "创建唯一性索引的方法有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "设置主键约束", "correct": true },
+        { "id": 2, "title": "CREATE INDEX", "correct": true },
+        { "id": 3, "title": "设置非空约束" },
+        { "id": 4, "title": "CREATE TABLE" }
+      ]
+    },
+    {
+      "id": 220,
+      "chapter": "期末复习二",
+      "title": "关于DELETE和TRUNCATE TABLE说法正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "两者都可以删除表中所有记录", "correct": true },
+        { "id": 2, "title": "两者都可以删除指定条目的记录" },
+        { "id": 3, "title": "前者可以删除指定条目的记录，后者不能", "correct": true },
+        { "id": 4, "title": "后者可以清空一个表的所有数据，并归1自增ID的值", "correct": true }
+      ]
+    },
+    {
+      "id": 221,
+      "chapter": "期末复习二",
+      "title": "MySQL中主键的规则包括以下哪几项",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "每个表必须定义一个主键", "correct": true },
+        { "id": 2, "title": "一个表不能有两个主键", "correct": true },
+        { "id": 3, "title": "一个表主键可以有两列", "correct": true },
+        { "id": 4, "title": "主键的指定应满足最小化原则", "correct": true }
+      ]
+    },
+    {
+      "id": 222,
+      "chapter": "期末复习二",
+      "title": "下列对命名完整性描述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "使得数据库中每个完整性约束都有一个名字", "correct": true },
+        { "id": 2, "title": "完整性约束名字能够体现完整性约束种类以及作用表的名称", "correct": true },
+        { "id": 3, "title": "表示的是不同表的两列或多列之间可能存在的直接要求关系" },
+        { "id": 4, "title": "记录中其中某一列的值确定了，那么拥有这种关系的另外一个值即确定" }
+      ]
+    },
+    {
+      "id": 223,
+      "chapter": "期末复习二",
+      "title": "关于InnoDB崩溃恢复说法正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "InnoDB崩溃恢复借助于InnoDB引擎的Redo和Undo日志", "correct": true },
+        { "id": 2, "title": "InnoDB的恢复过程是在MySQL线程中进行的", "correct": true },
+        { "id": 3, "title": "多数情况下，InnoDB会自觉地执行线程恢复", "correct": true },
+        { "id": 4, "title": "发生系统故障后，仍然能够执行InnoDB崩溃恢复" }
+      ]
+    },
+    {
+      "id": 224,
+      "chapter": "期末复习二",
+      "title": "复制配置成功后，如果在主数据库上做一些数据更新，下列情况会出现的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "从数据库上文件增加", "correct": true },
+        { "id": 2, "title": "从数据库日志文件增加", "correct": true },
+        { "id": 3, "title": "从数据库数据更新", "correct": true },
+        { "id": 4, "title": "从数据库数据不变" }
+      ]
+    },
+    {
+      "id": 225,
+      "chapter": "期末复习三",
+      "title": "数据库（DB）、数据库系统（DBS）和数据库管理系统（DBMS）三者之间的关系是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DBS包括DB和DBMS", "correct": true },
+        { "id": 2, "title": "DBMS包括DB和DBS" },
+        { "id": 3, "title": "DB包括DBS和DBMS" },
+        { "id": 4, "title": "DBS包括DB，也就是DBMS" }
+      ]
+    },
+    {
+      "id": 226,
+      "chapter": "期末复习三",
+      "title": "对数据库特征的描述不准确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据具有独立性" },
+        { "id": 2, "title": "数据结构化" },
+        { "id": 3, "title": "数据集中控制" },
+        { "id": 4, "title": "数据没有冗余", "correct": true }
+      ]
+    },
+    {
+      "id": 227,
+      "chapter": "期末复习三",
+      "title": "连接MySQL服务器的指令是？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysqladmin -u root password test" },
+        { "id": 2, "title": "mysql -u root password test" },
+        { "id": 3, "title": "mysql -u root -p test", "correct": true },
+        { "id": 4, "title": "mysql -u root -password test" }
+      ]
+    },
+    {
+      "id": 228,
+      "chapter": "期末复习三",
+      "title": "在Windows 的DOS（命令提示符）下启动和停止MySQL服务器的命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "net start mysql 和net shutdown mysql" },
+        { "id": 2, "title": "net start mysql 和 net stop mysql", "correct": true },
+        { "id": 3, "title": "net open mysql 和 net stop mysql" },
+        { "id": 4, "title": "net open mysql 和 net shutdown mysql" }
+      ]
+    },
+    {
+      "id": 229,
+      "chapter": "期末复习三",
+      "title": "关于MySQL数据库存储引擎描述正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Archive存储引擎是一个集群存储引擎" },
+        { "id": 2, "title": "NDB存储引擎只支持INSERT和SELECT操作，提供高速的插入和压缩功能" },
+        {
+          "id": 3,
+          "title": "Memory存储引擎默认使用哈希索引，这使得它们对于单值查找非常快速，并且对于创建临时表非常有用",
+          "correct": true
+        },
+        { "id": 4, "title": "MyISAM存储引擎的特点是支持事务、表锁和全文索引" }
+      ]
+    },
+    {
+      "id": 230,
+      "chapter": "期末复习三",
+      "title": "下列特点（）是视图不具备的",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "分割数据，屏蔽用户所不需要浏览的数据" },
+        { "id": 2, "title": "提高应用程序和表之间的独立性，充当程序和表之间的数据" },
+        { "id": 3, "title": "降低对最终用户查询水平的要求" },
+        { "id": 4, "title": "提高数据的网络传输速度", "correct": true }
+      ]
+    },
+    {
+      "id": 231,
+      "chapter": "期末复习三",
+      "title": "下列（）数据不适合创建索引",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "经常被查询搜索的列，如经常在where字句中出现的列" },
+        { "id": 2, "title": "是外键或主键的列" },
+        { "id": 3, "title": "包含太多重复选用值得列", "correct": true },
+        { "id": 4, "title": "在ORDER BY字句中使用的列" }
+      ]
+    },
+    {
+      "id": 232,
+      "chapter": "期末复习三",
+      "title": "为数据表创建索引的目的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "提高查询的检索性能", "correct": true },
+        { "id": 2, "title": "归类" },
+        { "id": 3, "title": "创建唯一索引" },
+        { "id": 4, "title": "创建主键" }
+      ]
+    },
+    {
+      "id": 233,
+      "chapter": "期末复习三",
+      "title": "在MySQL中关于limit 2,4，说法正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "表示检索出第二行开始的四条数据" },
+        { "id": 2, "title": "表示检索出第三行开始的四条数据", "correct": true },
+        { "id": 3, "title": "表示检索出第二行到第四行的数据" },
+        { "id": 4, "title": "表示检索出第三行到第四行的数据" }
+      ]
+    },
+    {
+      "id": 234,
+      "chapter": "期末复习三",
+      "title": "以下哪个命令是使用超级管理员身份创建普通账户",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "create user username@localhost identified by 123456" },
+        { "id": 2, "title": "create user 'username'@'localhost' identified by 123456" },
+        { "id": 3, "title": "create user username@localhost identified by '123456'" },
+        { "id": 4, "title": "create user 'username'@'localhost' identified by '123456'", "correct": true }
+      ]
+    },
+    {
+      "id": 235,
+      "chapter": "期末复习三",
+      "title": "下列语句中创建新用户的语句为",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        {
+          "id": 1,
+          "title": "insert into mysql.user(Host,User,Password) VALUES('host_name', 'user_name',PASSWORD('password')",
+          "correct": true
+        },
+        { "id": 2, "title": "create user username@localhost identified by '123456'" },
+        {
+          "id": 3,
+          "title": "insert into mysql.user(Host,User,Password) VALUES(host_name, user_name,PASSWORD(password)"
+        },
+        { "id": 4, "title": "create user username@localhost identified by 123456" }
+      ]
+    },
+    {
+      "id": 236,
+      "chapter": "期末复习三",
+      "title": "下列属于数据层级操作权限的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "select权限、insert权限、update权限、delete权限", "correct": true },
+        { "id": 2, "title": "select权限、index权限、update权限、alter权限" },
+        { "id": 3, "title": "select权限、drop权限、update权限、grant权限" },
+        { "id": 4, "title": "select权限、index权限、create权限、delete权限" }
+      ]
+    },
+    {
+      "id": 237,
+      "chapter": "期末复习三",
+      "title": "数据库恢复用到的技术是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据库备份和登记日志文件", "correct": true },
+        { "id": 2, "title": "数据库备份" },
+        { "id": 3, "title": "登记日志文件" },
+        { "id": 4, "title": "数据库复制" }
+      ]
+    },
+    {
+      "id": 238,
+      "chapter": "期末复习三",
+      "title": "MySQL中，可以用于备份数据库的命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysqlimport" },
+        { "id": 2, "title": "mysqldump", "correct": true },
+        { "id": 3, "title": "mysql" },
+        { "id": 4, "title": "copy" }
+      ]
+    },
+    {
+      "id": 239,
+      "chapter": "期末复习三",
+      "title": "查询优化策略中，正确的策略是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "尽可能早地执行笛卡尔积操作" },
+        { "id": 2, "title": "尽可能早地执行并操作" },
+        { "id": 3, "title": "尽可能早地执行差操作" },
+        { "id": 4, "title": "尽可能早地执行选择操作", "correct": true }
+      ]
+    },
+    {
+      "id": 240,
+      "chapter": "期末复习三",
+      "title": "以下哪个选项属于关系数据库中内模式的范畴",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "索引", "correct": true },
+        { "id": 2, "title": "视图" },
+        { "id": 3, "title": "存储方式" },
+        { "id": 4, "title": "数据结构" }
+      ]
+    },
+    {
+      "id": 241,
+      "chapter": "期末复习三",
+      "title": "要保证数据库的数据独立性，需要修改的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "模式与外模式" },
+        { "id": 2, "title": "模式与内模式" },
+        { "id": 3, "title": "三级模式之间的两层映射", "correct": true },
+        { "id": 4, "title": "三层模式" }
+      ]
+    },
+    {
+      "id": 242,
+      "chapter": "期末复习三",
+      "title": "MySQL使用的默认端口是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "3600" },
+        { "id": 2, "title": "3306", "correct": true },
+        { "id": 3, "title": "8080" },
+        { "id": 4, "title": "3366" }
+      ]
+    },
+    {
+      "id": 243,
+      "chapter": "期末复习三",
+      "title": "慢查询日志为MySQL软件非常重要的日志之一，下面对其描述正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "主要是用来记录执行时间超过规定时间的查询语句", "correct": true },
+        { "id": 2, "title": "慢查询日志中语句记录和顺序跟执行顺序完全相同" },
+        { "id": 3, "title": "慢查询日志在打开MySQL服务器时自动启动" },
+        { "id": 4, "title": "更改了MySQL服务器配置文件my.ini文件来开启慢查询日志，不需重新启动即可效" }
+      ]
+    },
+    {
+      "id": 244,
+      "chapter": "期末复习三",
+      "title": "MySQL中，关于各类日志文件叙述正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "二进制日志会以二进制的形式记录数据库的各种操作，并记录查询语句" },
+        { "id": 2, "title": "错误日志会记录MySQL服务器启动、关闭和运行时出错等信息", "correct": true },
+        {
+          "id": 3,
+          "title": "通用查询日志记录执行时间超过指定时间的各种操作，通过工具分析慢查询日志可以定位MySQL服务器性能瓶颈所在"
+        },
+        {
+          "id": 4,
+          "title": "慢查询日志记录MySQL服务器的启动和关闭信息、客户端的连接信息、更新数据记录SQL语句和查询数据记录SQL语句"
+        }
+      ]
+    },
+    {
+      "id": 245,
+      "chapter": "期末复习三",
+      "title": "SQL语言集数据查询、数据操纵、数据控制功能于一体，其中，CREATE、DROP、ALTER语句是实现哪种功能",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据查询" },
+        { "id": 2, "title": "数据操纵" },
+        { "id": 3, "title": "数据定义", "correct": true },
+        { "id": 4, "title": "数据控制" }
+      ]
+    },
+    {
+      "id": 246,
+      "chapter": "期末复习三",
+      "title": "（）的视图，是可以完全更新的",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "一个由两个以上的表导出的视图" },
+        { "id": 2, "title": "视图的定义中含有集函数" },
+        { "id": 3, "title": "仅由一个表的行列子集构成的", "correct": true },
+        { "id": 4, "title": "视图的定义中含有ORDER BY字句" }
+      ]
+    },
+    {
+      "id": 247,
+      "chapter": "期末复习三",
+      "title": "下列关于视图说法不正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "视图是外模式" },
+        { "id": 2, "title": "视图是虚表" },
+        { "id": 3, "title": "使用视图可以加快查询语句的执行", "correct": true },
+        { "id": 4, "title": "使用视图可以简化查询语句" }
+      ]
+    },
+    {
+      "id": 248,
+      "chapter": "期末复习三",
+      "title": "执行语句grant select on *.* to username@localhost的意义",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "赋予username用户在任意用户任意表的select权限" },
+        { "id": 2, "title": "登录到username用户" },
+        { "id": 3, "title": "不赋予username用户选择权限" },
+        { "id": 4, "title": "赋予username用户全局在任意表任意列的select权限", "correct": true }
+      ]
+    },
+    {
+      "id": 249,
+      "chapter": "期末复习三",
+      "title": "MySQL权限系统对用户可操作行为的认证说法不正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "需要通过用户名密码以及IP与数据库记录相匹配" },
+        { "id": 2, "title": "如果用户名和密码都匹配，IP不匹配，用户仍可继续访问", "correct": true },
+        { "id": 3, "title": "需要对通过验证的用户进行权限匹配，赋予其应有权限" },
+        { "id": 4, "title": "不同IP登入的用户，同名用户属于不同的身份" }
+      ]
+    },
+    {
+      "id": 250,
+      "chapter": "期末复习三",
+      "title": "关于Mysql修改密码权限说法错误的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "root账户的密码只能由root账户进行修改" },
+        { "id": 2, "title": "普通用户账户密码的修改可以由root账户进行修改" },
+        { "id": 3, "title": "普通用户账户密码的修改可以由普通账户自己进行修改" },
+        { "id": 4, "title": "普通用户账户密码的修改可以由其他普通账户进行修改", "correct": true }
+      ]
+    },
+    {
+      "id": 251,
+      "chapter": "期末复习三",
+      "title": "适用通配符查看名称包含dir的系统变量的值",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "show variables like 'dir'" },
+        { "id": 2, "title": "show variables like '%dir%'", "correct": true },
+        { "id": 3, "title": "show variables like '%dir'" },
+        { "id": 4, "title": "show variables like '_dir_'" }
+      ]
+    },
+    {
+      "id": 252,
+      "chapter": "期末复习三",
+      "title": "设置日志清理时间为5天的命令正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "set expire_logs_days=120" },
+        { "id": 2, "title": "set global expire_logs_days=120" },
+        { "id": 3, "title": "set expire_logs_days=5" },
+        { "id": 4, "title": "set global expire_logs_days=5", "correct": true }
+      ]
+    },
+    {
+      "id": 253,
+      "chapter": "期末复习三",
+      "title": "若使用load data infile命令中，若想要跳过数据文件中的前3行，命令子句正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "FROM 4 LINE" },
+        { "id": 2, "title": "IGNORE 3" },
+        { "id": 3, "title": "IGNORE 3 LINES", "correct": true },
+        { "id": 4, "title": "FROM 4" }
+      ]
+    },
+    {
+      "id": 254,
+      "chapter": "期末复习三",
+      "title": "以下关于数据库性能监视，错误的说法是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据库性能监视不仅要监视MySQL当前的状态，还需监视OS的状态", "correct": true },
+        { "id": 2, "title": "Nagios可以监视操作系统的状态" },
+        { "id": 3, "title": "监视工具可以分为非交互性和交互性" },
+        { "id": 4, "title": "Innotop和MyTop属于非交互性监视工具" }
+      ]
+    },
+    {
+      "id": 255,
+      "chapter": "期末复习三",
+      "title": "数据库系统的核心是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据库" },
+        { "id": 2, "title": "数据库管理员" },
+        { "id": 3, "title": "数据库管理系统", "correct": true },
+        { "id": 4, "title": "计算机软硬件系统" }
+      ]
+    },
+    {
+      "id": 256,
+      "chapter": "期末复习三",
+      "title": "MySQL服务器的存储引擎中支持事务处理、支持外键、支持崩溃修复能力和并发控制的存储引擎是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "InnoDB", "correct": true },
+        { "id": 2, "title": "MyISAM" },
+        { "id": 3, "title": "Memory" },
+        { "id": 4, "title": "NDB" }
+      ]
+    },
+    {
+      "id": 257,
+      "chapter": "期末复习三",
+      "title": "在MySQL中，建立数据库用",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "CREATE TABLE" },
+        { "id": 2, "title": "CREATE TRIGGER" },
+        { "id": 3, "title": "CREATE INDEX" },
+        { "id": 4, "title": "CREATE DATABASE", "correct": true }
+      ]
+    },
+    {
+      "id": 258,
+      "chapter": "期末复习三",
+      "title": "为数据库表创建索引的目的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "创建主键" },
+        { "id": 2, "title": "创建唯一索引" },
+        { "id": 3, "title": "提高查询的检索性能", "correct": true },
+        { "id": 4, "title": "归类" }
+      ]
+    },
+    {
+      "id": 259,
+      "chapter": "期末复习三",
+      "title": "在视图上不能完成的操作是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "更新视图" },
+        { "id": 2, "title": "查询" },
+        { "id": 3, "title": "在视图上定义新的表", "correct": true },
+        { "id": 4, "title": "在视图上定义新的视图" }
+      ]
+    },
+    {
+      "id": 260,
+      "chapter": "期末复习三",
+      "title": "数据库审计的内容不包括",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "客户端IP" },
+        { "id": 2, "title": "数据库内容", "correct": true },
+        { "id": 3, "title": "数据库操作及数据库对象" },
+        { "id": 4, "title": "数据库操作内容" }
+      ]
+    },
+    {
+      "id": 261,
+      "chapter": "期末复习三",
+      "title": "关于create user语句，下列说法正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "用来为用户设置名称和密码" },
+        { "id": 2, "title": "只有超级管理员权限才可以使用" },
+        { "id": 3, "title": "每增加一个新用户，都会在User表中添加一条新记录", "correct": true },
+        { "id": 4, "title": "如果输入用户重名，则覆盖之前的名称" }
+      ]
+    },
+    {
+      "id": 262,
+      "chapter": "期末复习三",
+      "title": "下列全部属于数据库层级操作权限（操作对象为表或者其他数据库逻辑层面）的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "select权限、drop权限、reload权限、grant权限" },
+        { "id": 2, "title": "index权限、drop权限、reload权限、alter权限", "correct": true },
+        { "id": 3, "title": "index权限、drop权限、update权限、grant权限" },
+        { "id": 4, "title": "grant权限、index权限、create权限、delete权限" }
+      ]
+    },
+    {
+      "id": 263,
+      "chapter": "期末复习三",
+      "title": "系统故障的恢复操作正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        {
+          "id": 1,
+          "title": "反向扫描日志文件，对故障发生前已经提交的事务记入重做队列，故障发生时未完成的事务计入撤销队列"
+        },
+        {
+          "id": 2,
+          "title": "反向扫描日志文件，对故障发生前已经提交的事务记入撤销队列，故障发生时未完成的事务计入重做队列"
+        },
+        {
+          "id": 3,
+          "title": "正向扫描日志文件，对故障发生前已经提交的事务记入撤销队列，故障发生时未完成的事务计入重做队列"
+        },
+        {
+          "id": 4,
+          "title": "正向扫描日志文件，对故障发生前已经提交的事务记入重做队列，故障发生时未完成的事务计入撤销队列",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 264,
+      "chapter": "期末复习三",
+      "title": "使用命令select…into outfile将数据库employees中的数据表departments中的数据导出到D盘下的tmp.txt文件中的命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SELECT employees.departments INTO OUTFILE \"D:/tmp.txt\"" },
+        { "id": 2, "title": "SELECT * FROM employees.departments INTO OUTFILE \"D:/tmp.txt\"", "correct": true },
+        { "id": 3, "title": "SELECT employees.departments INTO OUTFILE \"D:\\tmp.txt\"" },
+        { "id": 4, "title": "SELECT * FROM employees.departments INTO OUTFILE \"D:\\tmp.txt\"" }
+      ]
+    },
+    {
+      "id": 265,
+      "chapter": "期末复习三",
+      "title": "获取当前二进制日志文件所在的位置的正确命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "show master status", "correct": true },
+        { "id": 2, "title": "show master logs status" },
+        { "id": 3, "title": "show binary status" },
+        { "id": 4, "title": "show binary logs status" }
+      ]
+    },
+    {
+      "id": 266,
+      "chapter": "期末复习三",
+      "title": "查询已执行SELECT语句总数的命令是？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "show global status" },
+        { "id": 2, "title": "show global status Com_delete" },
+        { "id": 3, "title": "show global status Com_update" },
+        { "id": 4, "title": "show global status Com_select", "correct": true }
+      ]
+    },
+    {
+      "id": 267,
+      "chapter": "期末复习三",
+      "title": "关于MySQL最大连接数，以下说法错误的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "当已使用连接数占最大连接数的85%时是相对理想的状态" },
+        { "id": 2, "title": "可以通过命令行永久修改max_connections的值", "correct": true },
+        { "id": 3, "title": "MySQL总会保留一个连接用于管理员的登陆" },
+        { "id": 4, "title": "当已使用连接数超过最大连接数时，新的连接将会被拒绝" }
+      ]
+    },
+    {
+      "id": 268,
+      "chapter": "期末复习三",
+      "title": "主数据库的进行服务器ID等相关配置的文件是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "my.ini", "correct": true },
+        { "id": 2, "title": "mysql-relay-bin.index" },
+        { "id": 3, "title": "my.txt" },
+        { "id": 4, "title": "master.info" }
+      ]
+    },
+    {
+      "id": 269,
+      "chapter": "期末复习三",
+      "title": "从数据库服务器中I/O线程的作用是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "中继日志文件的管理" },
+        { "id": 2, "title": "保存节点自身产生的事件" },
+        { "id": 3, "title": "保存接收来自其他节点的事件" },
+        { "id": 4, "title": "访问主数据库的二进制文件存放在中继日志文件中", "correct": true }
+      ]
+    },
+    {
+      "id": 270,
+      "chapter": "期末复习三",
+      "title": "以下不属于数据库特点的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据共享" },
+        { "id": 2, "title": "数据冗余度高", "correct": true },
+        { "id": 3, "title": "数据完整性高" },
+        { "id": 4, "title": "数据独立性高" }
+      ]
+    },
+    {
+      "id": 271,
+      "chapter": "期末复习三",
+      "title": "以下哪个选项是关系数据库中外模式的具体体现",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "索引" },
+        { "id": 2, "title": "视图", "correct": true },
+        { "id": 3, "title": "存储方式" },
+        { "id": 4, "title": "数据结构" }
+      ]
+    },
+    {
+      "id": 272,
+      "chapter": "期末复习三",
+      "title": "数据库中数据的逻辑独立性是指",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数据与储存结构的逻辑相互独立" },
+        { "id": 2, "title": "数据元素之间的逻辑相互独立" },
+        { "id": 3, "title": "存储结构与物理结构的逻辑相互独立" },
+        { "id": 4, "title": "数据与程序之间的逻辑相互独立", "correct": true }
+      ]
+    },
+    {
+      "id": 273,
+      "chapter": "期末复习三",
+      "title": "MySQL内部有4种常见日志， 哪种日志是不能直接cat或more文件查阅日志内容",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "错误日志（error-log）" },
+        { "id": 2, "title": "二进制日志（bin-log）", "correct": true },
+        { "id": 3, "title": "查询日志（query-log）" },
+        { "id": 4, "title": "慢查询日志（slow-log）" }
+      ]
+    },
+    {
+      "id": 274,
+      "chapter": "期末复习三",
+      "title": "MySQL数据文件类型中，下列表示索引文件的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "frm文件" },
+        { "id": 2, "title": "ibd文件" },
+        { "id": 3, "title": "myi文件", "correct": true },
+        { "id": 4, "title": "pid文件" }
+      ]
+    },
+    {
+      "id": 275,
+      "chapter": "期末复习三",
+      "title": "以下关于聚集索引和非聚集索引说法正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "每个表只能建立一个非聚集索引" },
+        { "id": 2, "title": "每个表只能建立一个聚集索引", "correct": true },
+        { "id": 3, "title": "一个表上不能同时建立聚集索引和非聚集索引" },
+        { "id": 4, "title": "以上都不对" }
+      ]
+    },
+    {
+      "id": 276,
+      "chapter": "期末复习三",
+      "title": "下列的SQL语句中，（）不是数据定义语句",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "CREATE TABLE" },
+        { "id": 2, "title": "DROP VIEW" },
+        { "id": 3, "title": "CREATE VIEW" },
+        { "id": 4, "title": "GRANT", "correct": true }
+      ]
+    },
+    {
+      "id": 277,
+      "chapter": "期末复习三",
+      "title": "若要在基本表中添加一列CNAME（课程名），可用",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ADD TABLE S (CNAME CHAR(8))" },
+        { "id": 2, "title": "ADD TABLE S ALTER (CNAME CHAR(8))" },
+        { "id": 3, "title": "ALTER TABLE S ADD (CNAME CHAR(8))", "correct": true },
+        { "id": 4, "title": "ALTER TABLE S (ADD CNAME CHAR(8))" }
+      ]
+    },
+    {
+      "id": 278,
+      "chapter": "期末复习三",
+      "title": "在Mysql的授权表中，记录各个账号在各个数据库上操作权限的权限表是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "host权限表" },
+        { "id": 2, "title": "table_priv权限表" },
+        { "id": 3, "title": "db权限表", "correct": true },
+        { "id": 4, "title": "user权限表" }
+      ]
+    },
+    {
+      "id": 279,
+      "chapter": "期末复习三",
+      "title": "下面关于写日志优先准则描述正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "当数据库执行更新操作时，先把写日志和更新数据库同时进行" },
+        { "id": 2, "title": "当数据库执行更新操作时，先更新数据库，然后再将更新信息写进日志" },
+        { "id": 3, "title": "当数据库执行更新操作时，先把更新信息写进日志，然后更新数据库", "correct": true },
+        { "id": 4, "title": "当数据库执行更新操作时，先把更新信息写进日志，然后更新缓冲区" }
+      ]
+    },
+    {
+      "id": 280,
+      "chapter": "期末复习三",
+      "title": "下面关于mysqldump命令使用正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysqldump -u root -p 123456 --databases employees test> file.sql", "correct": true },
+        { "id": 2, "title": "mysqldump -u root -p 123456 -databases employees test> file.sql" },
+        { "id": 3, "title": "mysqldump -u root -p 123456 -database employee >file.sql" },
+        { "id": 4, "title": "mysqldump -u root -p 123456 --all -databases > file.sql" }
+      ]
+    },
+    {
+      "id": 281,
+      "chapter": "期末复习三",
+      "title": "以下关于慢查询日志说法正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "MySQL默认启动慢查询日志" },
+        { "id": 2, "title": "慢查询日志只记录响应时间超过阈值的语句" },
+        { "id": 3, "title": "慢查询会导致CPU、内存消耗过高", "correct": true },
+        { "id": 4, "title": "开启慢查询日志不会影响数据库性能" }
+      ]
+    },
+    {
+      "id": 282,
+      "chapter": "期末复习三",
+      "title": "以下哪个命令可以查看查询语句的执行计划",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysqladmin" },
+        { "id": 2, "title": "desc" },
+        { "id": 3, "title": "truncate" },
+        { "id": 4, "title": "explain", "correct": true }
+      ]
+    },
+    {
+      "id": 283,
+      "chapter": "期末复习三",
+      "title": "确认二进制日志文件是否已经在主库上创建的命令是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SHOW SLAVER STATUS" },
+        { "id": 2, "title": "SHOW MASTER STATUS", "correct": true },
+        { "id": 3, "title": "SHOW MASTER" },
+        { "id": 4, "title": "SHOW SLAVER" }
+      ]
+    },
+    {
+      "id": 284,
+      "chapter": "期末复习三",
+      "title": "数据库系统的重要特征包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "数据的独立性", "correct": true },
+        { "id": 2, "title": "数据的高冗余" },
+        { "id": 3, "title": "数据的完整性", "correct": true },
+        { "id": 4, "title": "数据的共享性", "correct": true }
+      ]
+    },
+    {
+      "id": 285,
+      "chapter": "期末复习三",
+      "title": "一个完整的IT运维服务体系主要有（）部分组成",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "运维服务管理流程", "correct": true },
+        { "id": 2, "title": "运维规章制度与工作规范", "correct": true },
+        { "id": 3, "title": "运维服务业务流程" },
+        { "id": 4, "title": "运维服务团队", "correct": true }
+      ]
+    },
+    {
+      "id": 286,
+      "chapter": "期末复习三",
+      "title": "关于临时表的描述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "只在创建的会话可见，其它会话不能访问另一个会话创建的临时表", "correct": true },
+        { "id": 2, "title": "临时表只存在于会话生命周期中", "correct": true },
+        { "id": 3, "title": "临时表可以与非临时表有相同的名称", "correct": true },
+        { "id": 4, "title": "临时表不能使用SHOW TABLES显示", "correct": true }
+      ]
+    },
+    {
+      "id": 287,
+      "chapter": "期末复习三",
+      "title": "下面数据库名称合法的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "db1/student" },
+        { "id": 2, "title": "db1.student" },
+        { "id": 3, "title": "db1_student", "correct": true },
+        { "id": 4, "title": "db1&student", "correct": true }
+      ]
+    },
+    {
+      "id": 288,
+      "chapter": "期末复习三",
+      "title": "MySQL服务器安装时，自动建立两个数据库，首先是mysql数据库，该数据库是MySQL权限系统的核心，包含以下哪几个表",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "user表", "correct": true },
+        { "id": 2, "title": "db表", "correct": true },
+        { "id": 3, "title": "procs_priv表" },
+        { "id": 4, "title": "tables_priv表", "correct": true }
+      ]
+    },
+    {
+      "id": 289,
+      "chapter": "期末复习三",
+      "title": "MySQL可以授予的权限包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "列权限", "correct": true },
+        { "id": 2, "title": "表权限", "correct": true },
+        { "id": 3, "title": "数据库权限", "correct": true },
+        { "id": 4, "title": "用户权限", "correct": true }
+      ]
+    },
+    {
+      "id": 290,
+      "chapter": "期末复习三",
+      "title": "下面关于select…into outfile使用的命令正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "SELECT employees.departments INTO OUTFILE \"D:/tmp.txt\"", "correct": true },
+        { "id": 2, "title": "SELECT employees.departments INTO OUTFILE \"D:\\tmp.txt\"", "correct": true },
+        { "id": 3, "title": "SELECT employees.departments INTO OUTFILE \"D:\tmp.txt\"" },
+        { "id": 4, "title": "SELECT employees.departments INTO OUTFILE \"D:\\tmp.txt\"lines", "correct": true }
+      ]
+    },
+    {
+      "id": 291,
+      "chapter": "期末复习三",
+      "title": "将外连接消除转化为内连接的好处是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "节省更多的磁盘空间" },
+        { "id": 2, "title": "内连接的操作所需要的时间低于外连接", "correct": true },
+        { "id": 3, "title": "优化器可以更好地选择多表连接顺序，降低IO消耗", "correct": true },
+        { "id": 4, "title": "可以使SQL语句更加直观易懂" }
+      ]
+    },
+    {
+      "id": 292,
+      "chapter": "期末复习三",
+      "title": "主从同步过程中，从数据库可能发生错误并导致数据不一致的原因可能是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "网络中断", "correct": true },
+        { "id": 2, "title": "服务器崩溃", "correct": true },
+        { "id": 3, "title": "MySQL的Bug", "correct": true },
+        { "id": 4, "title": "服务器非正常关闭", "correct": true }
+      ]
+    },
+    {
+      "id": 293,
+      "chapter": "期末复习三",
+      "title": "数据库运维的目标是保证数据库系统的",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "共享性" },
+        { "id": 2, "title": "高性能", "correct": true },
+        { "id": 3, "title": "高可用性", "correct": true },
+        { "id": 4, "title": "安全性" }
+      ]
+    },
+    {
+      "id": 294,
+      "chapter": "期末复习三",
+      "title": "MySQL数据库中，存储引擎InnoDB的功能特点有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "支持事务的提交和回滚", "correct": true },
+        { "id": 2, "title": "崩溃修复能力", "correct": true },
+        { "id": 3, "title": "并发控制", "correct": true },
+        { "id": 4, "title": "数据可压缩" }
+      ]
+    },
+    {
+      "id": 295,
+      "chapter": "期末复习三",
+      "title": "在配置MySQL服务器时缓存池的大小设置，下面正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "缓冲池大小可以设置的很大，以保证数据库的性能" },
+        { "id": 2, "title": "缓冲池的大小设置为系统内存剩余空间最好" },
+        {
+          "id": 3,
+          "title": "缓冲池的配置，不仅要兼顾系统中其他程序使用的内存空间，还要减去其他配置的MySQL缓存和缓存需要的内存空间",
+          "correct": true
+        },
+        {
+          "id": 4,
+          "title": "缓冲池大小的设置过大，则可能会造成更严重的问题，如出现内存交换、磁盘抖动，甚至内存耗尽和硬件死机等现象",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 296,
+      "chapter": "期末复习三",
+      "title": "在MySQL数据库中，下列关于创建数据库表的描述不正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "在创建表时必须设定列的约束", "correct": true },
+        { "id": 2, "title": "在删除表的时候通过外键约束连接在一起的表会被一同删除", "correct": true },
+        { "id": 3, "title": "在创建表时必须设置列类型" },
+        {
+          "id": 4,
+          "title": "通过CREATE TABLE new_t SELECT * FROM old_t复制表的同时，表的约束能够一起被复制到新表中",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 297,
+      "chapter": "期末复习三",
+      "title": "对于显示操作以下说法正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "SHOW database;显示所有数据库" },
+        { "id": 2, "title": "SHOW databases;显示所有数据库", "correct": true },
+        { "id": 3, "title": "SHOW table;显示所有表" },
+        { "id": 4, "title": "DESC table_name;显示表定义", "correct": true }
+      ]
+    },
+    {
+      "id": 298,
+      "chapter": "期末复习三",
+      "title": "关于外键说法正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        {
+          "id": 1,
+          "title": "在一个数据表中定义了外键后，数据库系统会保证插入外键中的每一个非空值都在被参照表当中作为主键出现",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "title": "使用RESTRICT动作时，将待插入的记录值相应外键字段改成其所参照表中不存在的数据值，插入操作会被数据库拒绝",
+          "correct": true
+        },
+        {
+          "id": 3,
+          "title": "使用SET DEFAULT动作时，从所参照父表删除或更新行时，删除在参照子表中对应的该外键值对应行或者对该行外键作同样的修改"
+        },
+        {
+          "id": 4,
+          "title": "使用CASCADE动作时，当所参照父表中试图删除某行或对外键列某行数据值进行更新，参照子表中不作任何反应动作"
+        }
+      ]
+    },
+    {
+      "id": 299,
+      "chapter": "期末复习三",
+      "title": "事务故障的恢复的步骤包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "正向扫描日志文件，建立撤销队列和重做队列" },
+        { "id": 2, "title": "反向扫描日志文件，查找此事务的更新操作", "correct": true },
+        { "id": 3, "title": "对事务的更新操作执行逆操作", "correct": true },
+        { "id": 4, "title": "分别对撤销队列和重做队列执行相应的操作" }
+      ]
+    },
+    {
+      "id": 300,
+      "chapter": "期末复习三",
+      "title": "以下哪些方法可以减少对MySQL的访问次数",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "避免重复检索", "correct": true },
+        { "id": 2, "title": "使用查询缓存", "correct": true },
+        { "id": 3, "title": "使用Cache层", "correct": true },
+        { "id": 4, "title": "避免修改数据" }
+      ]
+    },
+    {
+      "id": 301,
+      "chapter": "期末复习三",
+      "title": "在MySQL中，复制比较常见的用途有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "数据分布", "correct": true },
+        { "id": 2, "title": "负载均衡", "correct": true },
+        { "id": 3, "title": "备份", "correct": true },
+        { "id": 4, "title": "高可用性和故障切换", "correct": true }
+      ]
+    },
+    {
+      "id": 302,
+      "chapter": "期末复习三",
+      "title": "数据库的特点包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "实现数据共享", "correct": true },
+        { "id": 2, "title": "减少数据的冗余", "correct": true },
+        { "id": 3, "title": "数据的独立性", "correct": true },
+        { "id": 4, "title": "数据实现集中控制", "correct": true }
+      ]
+    },
+    {
+      "id": 303,
+      "chapter": "期末复习三",
+      "title": "在数据库中事务的ACID原则中，包含下列哪些内容",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "原子性", "correct": true },
+        { "id": 2, "title": "一致性", "correct": true },
+        { "id": 3, "title": "隔离性", "correct": true },
+        { "id": 4, "title": "持久性", "correct": true }
+      ]
+    },
+    {
+      "id": 304,
+      "chapter": "期末复习三",
+      "title": "MySQL中，对二进制文件的功能描述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "主从数据库通过二进制文件的传递达到主从同步目的", "correct": true },
+        {
+          "id": 2,
+          "title": "二进制文件可用于数据恢复，通过应用二进制日志文件，能够将数据库恢复到故障发生前的状态",
+          "correct": true
+        },
+        { "id": 3, "title": "数据库运行过程中的错误信息，也会被记录到二进制文件中，以便数据库恢复正常" },
+        { "id": 4, "title": "二进制文件中记录了数据库查询语句以及其运行时间，可用于服务器性能的优化" }
+      ]
+    },
+    {
+      "id": 305,
+      "chapter": "期末复习三",
+      "title": "下列关于MySQL通用日志查询文件叙述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        {
+          "id": 1,
+          "title": "动态地控制通用查询日志的开启与关闭，设置MySQL的环境变量general_log_file为OFF可以停止该日志",
+          "correct": true
+        },
+        {
+          "id": 2,
+          "title": "和慢查询日志相似，通用查询日志文件中语句出现的顺序是与mysqld接收到的顺序可能不同"
+        },
+        {
+          "id": 3,
+          "title": "如果要启用或禁止某个会话产生的通用查询日志，可以通过会话级设置sql_log_off参数的值为OFF/ON来控制, sql_log_off仅作用于当前会话",
+          "correct": true
+        },
+        {
+          "id": 4,
+          "title": "在默认情况下，通用查询日志不会被启用，因为它记录的信息太过详尽，安全性是一方面，效率方面的影响也是值得评估的因素"
+        }
+      ]
+    },
+    {
+      "id": 306,
+      "chapter": "期末复习三",
+      "title": "下面关于创建和管理索引不正确的描述是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "索引的目的是为增加数据操作的速度", "correct": true },
+        { "id": 2, "title": "索引是数据库内部使用的对象", "correct": true },
+        { "id": 3, "title": "索引建立得太多，会降低数据增加删除修改速度" },
+        { "id": 4, "title": "只能为一个字段建立索引", "correct": true }
+      ]
+    },
+    {
+      "id": 307,
+      "chapter": "期末复习三",
+      "title": "SELECT语句完整性比较复杂，但至少包含的部分有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "SELECT", "correct": true },
+        { "id": 2, "title": "FROM", "correct": true },
+        { "id": 3, "title": "WHERE" },
+        { "id": 4, "title": "GROUP" }
+      ]
+    },
+    {
+      "id": 308,
+      "chapter": "期末复习三",
+      "title": "用户自定义完整性约束包括以下哪几种约束",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "元组约束", "correct": true },
+        { "id": 2, "title": "关系间约束", "correct": true },
+        { "id": 3, "title": "替代键约束" },
+        { "id": 4, "title": "域约束", "correct": true }
+      ]
+    },
+    {
+      "id": 309,
+      "chapter": "期末复习三",
+      "title": "下面正确恢复SQL格式备份数据的命令正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "mysql -u root -p 123456 employees departments< departments.sql" },
+        { "id": 2, "title": "mysql -u root -p 123456 employees < departments.sql", "correct": true },
+        { "id": 3, "title": "直接在mysql命令行工具输入source departments.sql", "correct": true },
+        { "id": 4, "title": "直接在mysql命令行工具输入source <departments.sql" }
+      ]
+    },
+    {
+      "id": 310,
+      "chapter": "期末复习三",
+      "title": "查询语句优化有以下哪些方法",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "查询重写", "correct": true },
+        { "id": 2, "title": "并行查询", "correct": true },
+        { "id": 3, "title": "查询重用", "correct": true },
+        { "id": 4, "title": "拆分查询" }
+      ]
+    },
+    {
+      "id": 311,
+      "chapter": "期末复习三",
+      "title": "测量从数据库延迟的方法有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "SHOW SLAVE STATUS命令", "correct": true },
+        { "id": 2, "title": "SHOW BINLOG EVENTS命令" },
+        { "id": 3, "title": "SHOW MASTER STATUS命令" },
+        { "id": 4, "title": "采用第三方工具", "correct": true }
+      ]
+    },
+    {
+      "id": 312,
+      "chapter": "期末复习三",
+      "title": "数据实现集中控制，包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "安全性控制", "correct": true },
+        { "id": 2, "title": "完整性控制", "correct": true },
+        { "id": 3, "title": "并发控制", "correct": true },
+        { "id": 4, "title": "稳定性控制" }
+      ]
+    },
+    {
+      "id": 313,
+      "chapter": "期末复习三",
+      "title": "数据库管理系统的主要功能包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "数据定义功能", "correct": true },
+        { "id": 2, "title": "数据操作功能", "correct": true },
+        { "id": 3, "title": "数据库的运行管理", "correct": true },
+        { "id": 4, "title": "数据库的建立和维护", "correct": true }
+      ]
+    },
+    {
+      "id": 314,
+      "chapter": "期末复习三",
+      "title": "MySQL数据库中，关于Memory存储引擎描述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "默认使用哈希索引", "correct": true },
+        { "id": 2, "title": "MySQL使用Memory存储引擎作为临时表来存放查询的中间结果集", "correct": true },
+        { "id": 3, "title": "支持外键和事务处理" },
+        { "id": 4, "title": "将表中数据存放在内存中", "correct": true }
+      ]
+    },
+    {
+      "id": 315,
+      "chapter": "期末复习三",
+      "title": "在MySQL数据库中，下列关于创建、管理数据库的操作语句不正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "CREATE DATABASE Instant" },
+        { "id": 2, "title": "USE Instant" },
+        { "id": 3, "title": "NEW DATABASE Instant", "correct": true },
+        { "id": 4, "title": "Connection Instant", "correct": true }
+      ]
+    },
+    {
+      "id": 316,
+      "chapter": "期末复习三",
+      "title": "关于临时表的描述正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "只在创建的会话可见，其它会话不能访问另一个会话创建的临时表", "correct": true },
+        { "id": 2, "title": "临时表只存在于会话生命周期中", "correct": true },
+        { "id": 3, "title": "临时表可以与非临时表有相同的名称", "correct": true },
+        { "id": 4, "title": "临时表不能使用SHOW TABLES显示", "correct": true }
+      ]
+    },
+    {
+      "id": 317,
+      "chapter": "期末复习三",
+      "title": "关于MySQL列约束的下列描述中正确的有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "主键约束会影响表的查找操作执行效率，应当谨慎使用" },
+        { "id": 2, "title": "外键约束会影响表的插入操作执行效率，应当谨慎使用", "correct": true },
+        { "id": 3, "title": "一个表可以声明多个主键列" },
+        { "id": 4, "title": "一个表可以声明多个外键列", "correct": true }
+      ]
+    },
+    {
+      "id": 318,
+      "chapter": "期末复习三",
+      "title": "MySQL的备份策略收到哪些因素的影响",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "数据库的可用性", "correct": true },
+        { "id": 2, "title": "存储引擎", "correct": true },
+        { "id": 3, "title": "锁策略", "correct": true },
+        { "id": 4, "title": "MySQL拓扑结构", "correct": true }
+      ]
+    },
+    {
+      "id": 319,
+      "chapter": "期末复习三",
+      "title": "关于load data infile命令和mysqlimport命令的说法正确的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "mysqlimport支持SQL文件的导入" },
+        { "id": 2, "title": "mysqlimport本质上是load data infile的命令接口", "correct": true },
+        { "id": 3, "title": "mysqlimport可以导入多张表", "correct": true },
+        { "id": 4, "title": "两种方法都可以导入select…into outfile导出的文件", "correct": true }
+      ]
+    },
+    {
+      "id": 320,
+      "chapter": "期末复习三",
+      "title": "以下哪些语句会导致查询缓存失效",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "select" },
+        { "id": 2, "title": "update", "correct": true },
+        { "id": 3, "title": "Insert", "correct": true },
+        { "id": 4, "title": "truncate", "correct": true }
+      ]
+    },
+    {
+      "id": 321,
+      "chapter": "期末复习三",
+      "title": "实现MySQL负载均衡的方法有",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "读写分离", "correct": true },
+        { "id": 2, "title": "使用影子表" },
+        { "id": 3, "title": "修改DNS", "correct": true },
+        { "id": 4, "title": "使用中间件", "correct": true }
+      ]
+    },
+    {
+      "id": 322,
+      "chapter": "期末复习一",
+      "title": "主从同步过程中，从数据库可能发生错误并导致数据不一致的原因可能是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "网络中断", "correct": true },
+        { "id": 2, "title": "服务器崩溃", "correct": true },
+        { "id": 3, "title": "MySQL的Bug", "correct": true },
+        { "id": 4, "title": "服务器非正常关闭", "correct": true }
+      ]
+    },
+    {
+      "id": 323,
+      "chapter": "期末复习二",
+      "title": "关于MySQL日志文件叙述正确的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "在MySQL所支持的日志文件里，所有日志文件都是文本文件格式存储的，方便查看" },
+        { "id": 2, "title": "在默认情况下，MySQL只会启动二进制日志文件，而其他日志文件则需要手动启动" },
+        { "id": 3, "title": "启动日志后，可以帮助数据库管理员对MySQL服务器进行维护，所以尽可能的启动所有日志文件" },
+        {
+          "id": 4,
+          "title": "日志文件会记录MySQL服务器的各种信息，所以当MySQL服务器遇到意外的损害时，不仅可以通过日志文件来查看出错的原因，还可以通过日志文件进行数据恢复",
+          "correct": true
+        }
+      ]
+    },
+    {
+      "id": 324,
+      "chapter": "期末复习二",
+      "title": "如果误删除了employees数据库中的数据表departments，现使用命令恢复SQL格式的备份数据",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "mysql -u root -p 123456 employees < departments.sql", "correct": true },
+        { "id": 2, "title": "mysql -u root -p 123456 employees > departments.sql" },
+        { "id": 3, "title": "mysql -u root -p 123456 employees departments< departments.sql" },
+        { "id": 4, "title": "mysql -u root -p 123456 employees departments> departments.sql" }
+      ]
+    },
+    {
+      "id": 325,
+      "chapter": "期末复习二",
+      "title": "数据库系统日常的运维管理中包括日维护作业计划，以下属于日维护作业计划的是",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "检查数据库网络连通与否", "correct": true },
+        { "id": 2, "title": "检查磁盘空间的使用情况，监视数据库的表空间利用率", "correct": true },
+        { "id": 3, "title": "对数据库的主要配置文件及参数进行检测、调整及备份" },
+        { "id": 4, "title": "收集数据库性能统计数据，检查高速缓存区命中率、资源争用统计信息" }
+      ]
+    },
+    {
+      "id": 326,
+      "chapter": "期末复习二",
+      "title": "MySQL中的sys_schema库中存储以下哪些信息",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "Innodb相关信息", "correct": true },
+        { "id": 2, "title": "IO使用情况", "correct": true },
+        { "id": 3, "title": "连接与会话信息", "correct": true },
+        { "id": 4, "title": "索引信息", "correct": true }
+      ]
+    },
+    {
+      "id": 327,
+      "chapter": "期末复习三",
+      "title": "数据库中的故障种类可以分为",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "事务故障", "correct": true },
+        { "id": 2, "title": "系统故障", "correct": true },
+        { "id": 3, "title": "介质故障", "correct": true },
+        { "id": 4, "title": "计算机病毒", "correct": true }
+      ]
+    }
+  ]
+}

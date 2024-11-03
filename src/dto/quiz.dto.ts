@@ -8,6 +8,8 @@ const baseQuizSchema = z.object({
   title: z.string({ message: '不是一个字符串' }).min(1, { message: requiredMessage('题目') }),
   course_id: z.string({ message: '不是一个字符串' }).min(1, { message: requiredMessage('课程ID') }),
   type: z.nativeEnum(QuizType, { message: '不是一个合法的枚举值' }),
+  chapter: z.string({ message: '不是一个字符串' }).nullable().optional(),
+  remark: z.string({ message: '不是一个字符串' }).nullable().optional(),
 })
 
 const answerOptionsSchema = z.object({

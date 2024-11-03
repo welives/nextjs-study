@@ -3,8 +3,9 @@
 import * as React from 'react'
 import { ProTable } from '@ant-design/pro-components'
 import type { ProColumns, ActionType } from '@ant-design/pro-components'
-import { Space, Button, Typography, Popconfirm, message } from 'antd'
+import { Space, Button, Typography, Popconfirm } from 'antd'
 import { SearchOutlined } from '@ant-design/icons'
+import { toast } from 'sonner'
 import http from '@/lib/http'
 import { deleteOne } from '@/actions/category'
 import { CategoryModalForm } from './modal-form'
@@ -18,19 +19,19 @@ export function CategoryListPage() {
       dataIndex: 'name',
       align: 'center',
       ellipsis: true,
-      width: 250,
+      width: 200,
     },
     {
       title: '上级分类',
       dataIndex: ['parent', 'name'],
       align: 'center',
       ellipsis: true,
-      width: 250,
+      width: 200,
     },
     {
-      title: '备注',
+      title: () => <Typography className="text-center">备注</Typography>,
       dataIndex: 'remark',
-      align: 'center',
+      align: 'left',
       ellipsis: true,
       hideInSearch: true,
     },
@@ -62,10 +63,10 @@ export function CategoryListPage() {
             onConfirm={async () => {
               const res = await deleteOne(record.id)
               if (!res.success) {
-                message.error(res.message)
+                toast.error(res.message)
                 return false
               }
-              message.success(res.message)
+              toast.success(res.message)
               tableRef.current?.reload()
               return true
             }}
@@ -101,15 +102,15 @@ export function CategoryListPage() {
       debounceTime={500}
       columns={columns}
       request={async (values) => {
-        const res = await http.get<Api.CategoryListData[]>('/api/category', {
+        const res = await http.get('/api/category', {
           page: values.current,
           limit: values.pageSize,
           keyword: values.keyword,
         })
         return {
-          total: res.data?.length,
           success: res.success,
-          data: res.data,
+          total: res.data.count,
+          data: res.data.rows,
         }
       }}
     />

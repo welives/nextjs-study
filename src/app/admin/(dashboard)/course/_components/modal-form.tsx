@@ -43,7 +43,7 @@ const formFields = {
   description: {
     label: '课程描述',
     placeholder: '请输入课程描述',
-    rules: undefined,
+    rules: void 0,
   },
 }
 

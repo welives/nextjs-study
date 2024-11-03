@@ -4,8 +4,9 @@ import * as React from 'react'
 import Link from 'next/link'
 import { ProTable } from '@ant-design/pro-components'
 import type { ProColumns, ActionType } from '@ant-design/pro-components'
-import { Button, Space, Typography, Popconfirm, message } from 'antd'
-import { SearchOutlined } from '@ant-design/icons'
+import { Button, Space, Typography, Popconfirm, Table, TableColumnsType, Tag } from 'antd'
+import { toast } from 'sonner'
+import { SearchOutlined, CheckCircleOutlined, CloseCircleOutlined } from '@ant-design/icons'
 import http from '@/lib/http'
 import { deleteOne } from '@/actions/quiz'
 
@@ -14,11 +15,10 @@ export function QuizListPage() {
 
   const columns: ProColumns<Api.QuizListData>[] = [
     {
-      title: '题目',
+      title: () => <Typography className="text-center">题目</Typography>,
       dataIndex: 'title',
-      align: 'center',
+      align: 'left',
       ellipsis: true,
-      width: 250,
     },
     {
       title: '所属课程',
@@ -26,6 +26,12 @@ export function QuizListPage() {
       align: 'center',
       ellipsis: true,
       width: 200,
+    },
+    {
+      title: '章节',
+      dataIndex: 'chapter',
+      align: 'center',
+      width: 180,
     },
     {
       title: '创建时间',
@@ -50,10 +56,10 @@ export function QuizListPage() {
             onConfirm={async () => {
               const res = await deleteOne(record.id)
               if (!res.success) {
-                message.error(res.message)
+                toast.error(res.message)
                 return false
               }
-              message.success(res.message)
+              toast.success(res.message)
               tableRef.current?.reload()
               return true
             }}
@@ -61,6 +67,31 @@ export function QuizListPage() {
             <Typography.Link type="danger">删除</Typography.Link>
           </Popconfirm>
         </Space>
+      ),
+    },
+  ]
+
+  const expandColumns: TableColumnsType<Api.QuizAnswerOption> = [
+    {
+      title: '是否正确答案',
+      dataIndex: 'isCorrect',
+      width: 100,
+      align: 'center',
+      render: (text, record) => (
+        <Tag
+          bordered={false}
+          color={record.isCorrect ? 'success' : 'error'}
+          icon={
+            record.isCorrect ? <CheckCircleOutlined></CheckCircleOutlined> : <CloseCircleOutlined></CloseCircleOutlined>
+          }
+        />
+      ),
+    },
+    {
+      title: '候选答案',
+      dataIndex: 'content',
+      render: (text, record) => (
+        <Typography.Text type={record.isCorrect ? 'success' : 'secondary'}>{text}</Typography.Text>
       ),
     },
   ]
@@ -91,16 +122,25 @@ export function QuizListPage() {
       debounceTime={500}
       columns={columns}
       request={async (values) => {
-        const res = await http.get<Api.QuizListData[]>('/api/quiz', {
+        const res = await http.get('/api/quiz', {
           page: values.current,
           limit: values.pageSize,
           keyword: values.keyword,
         })
         return {
-          total: res.data?.length,
           success: res.success,
-          data: res.data,
+          total: res.data.count,
+          data: res.data.rows,
         }
+      }}
+      expandable={{
+        expandedRowRender: (record) => (
+          <Table<Api.QuizAnswerOption>
+            columns={expandColumns}
+            pagination={false}
+            dataSource={record.answerOptions.map((e) => ({ ...e, key: e.id }))}
+          ></Table>
+        ),
       }}
     />
   )
