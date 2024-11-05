@@ -26,3 +26,11 @@ export const updateQuizSchema = baseQuizSchema.extend({
   options: answerOptionsSchema.extend({ id: z.string({ message: '不是一个字符串' }).min(1, { message: requiredMessage('答案ID') }) }).array().optional()
 })
 export type UpdateQuizData = z.infer<typeof updateQuizSchema>
+
+export const checkQuizAnswer = z.object({
+  id: quizIdSchema,
+  options: z.string({ message: '不是一个字符串' }).min(1, { message: requiredMessage('答案ID') }).array().min(1, { message: '候选答案不能为空' }),
+  answered: z.string({ message: '不是一个字符串' }).array().optional()
+}).array().min(1, { message: '答题不能为空' })
+
+export type CheckQuizAnswer = z.infer<typeof checkQuizAnswer>

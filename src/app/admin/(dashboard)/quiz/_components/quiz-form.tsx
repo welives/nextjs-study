@@ -207,7 +207,7 @@ export function QuizForm({ initialData }: QuizFormProps) {
                 { label: '多选题', value: QuizType.MULTIPLE },
                 { label: '判断题', value: QuizType.JUDGEMENT },
               ]}
-              onChange={(value: QuizType) => setType(value)}
+              onSelect={(value: QuizType) => setType(value)}
             />
           </Form.Item>
           <Form.Item
@@ -226,7 +226,7 @@ export function QuizForm({ initialData }: QuizFormProps) {
               notFoundContent={fetching ? <Spin size="small" /> : null}
               options={courseOptions}
               onSearch={debounceCourseFetch}
-            ></Select>
+            />
           </Form.Item>
           <Form.Item
             labelCol={{ span: 4 }}

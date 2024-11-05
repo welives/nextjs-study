@@ -4,10 +4,63 @@ import { revalidatePath } from 'next/cache'
 import * as QuizService from '@/models/quiz-service'
 import { isAdmin, actionFailure, actionSuccess } from '@/lib/api'
 import { formatZodErrorMsg } from '@/lib/utils'
-import { quizIdSchema, createQuizSchema, updateQuizSchema, CreateQuizData, UpdateQuizData } from '../dto'
+import { quizIdSchema, createQuizSchema, updateQuizSchema, checkQuizAnswer } from '../dto'
+import type { CreateQuizData, UpdateQuizData, CheckQuizAnswer } from '@/dto'
 
+/**
+ * 根据课程id获取试题
+ * @param id
+ * @returns
+ */
+export async function getListForTest(id: string, withCorrectAnswer = false) {
+  try {
+    const data = await QuizService.findByCourseId(id, withCorrectAnswer)
+    return actionSuccess({ data })
+  } catch (error: any) {
+    return actionFailure({ msg: error.message })
+  }
+}
+
+export async function checkTest(data: CheckQuizAnswer) {
+  try {
+    const parsed = checkQuizAnswer.safeParse(data)
+    if (!parsed.success) {
+      const msg = formatZodErrorMsg(parsed.error.issues)
+      throw new Error(msg)
+    }
+    // 查出要校验答案的题目
+    const quizzes = await QuizService.findByIds(data.map(e => e.id))
+    // 对比答案
+    const res = quizzes.map(e => {
+      const correctOptions = e.answerOptions.filter(c => c.isCorrect)
+      const answered = data.find(d => d.id === e.id)?.answered
+      return {
+        id: e.id,
+        correctOptions: correctOptions.map(op => op.id),
+        result: answered ? correctOptions.every(c => answered.includes(c.id)) : false
+      }
+    })
+    return actionSuccess({ data: res })
+  } catch (error: any) {
+    return actionFailure({ msg: error.message })
+  }
+}
+
+/**
+ * 获取单个试题详情
+ * @param id
+ * @returns
+ */
 export async function getOne(id: string) {
   try {
+    if (!(await isAdmin())) throw new Error('Unauthorized')
+
+    const parsed = quizIdSchema.safeParse(id)
+    if (!parsed.success) {
+      const msg = formatZodErrorMsg(parsed.error.issues)
+      throw new Error(msg)
+    }
+
     const data = await QuizService.getOne(id)
     return actionSuccess({ data })
   } catch (error: any) {

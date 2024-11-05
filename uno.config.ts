@@ -4,7 +4,8 @@ import {
   presetAttributify,
   presetIcons,
   transformerDirectives,
-  PresetUnoTheme
+  PresetUnoTheme,
+  toEscapedSelector
 } from 'unocss'
 import presetAnimations from 'unocss-preset-animations'
 
@@ -37,7 +38,17 @@ export default defineConfig({
       'absolute-center': 'absolute top-1/2 left-1/2 -translate-1/2',
       'flex-center': 'flex justify-center items-center',
       'flex-col-center': 'flex flex-col justify-center items-center',
+      'no-bar-container': 'scrollbar-hide overflow-x-hidden overflow-y-auto w-full h-full'
     }
+  ],
+  rules: [
+    [
+      /^scrollbar-hide$/,
+      ([_], { rawSelector }) => {
+        const selector = toEscapedSelector(rawSelector)
+        return `${selector}::-webkit-scrollbar{display:none}`
+      },
+    ],
   ],
   extendTheme: (theme: PresetUnoTheme) => {
     theme.colors = {

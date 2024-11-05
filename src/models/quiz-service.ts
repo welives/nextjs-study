@@ -1,6 +1,6 @@
 import { cache } from 'react'
 import { notFound } from 'next/navigation'
-import { eq } from 'drizzle-orm'
+import { eq, inArray, arrayContains } from 'drizzle-orm'
 import { matchSorter } from 'match-sorter'
 
 import { quiz, quizAnswerOption } from '../lib/schema'
@@ -40,6 +40,40 @@ export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: 
     rows: quizzes,
     count
   }
+})
+
+
+export const findByCourseId = cache(async (id: string, withCorrectAnswer = false) => {
+  const res = await db.query.quiz.findMany({
+    where: eq(quiz.courseId, id),
+    with: {
+      answerOptions: {
+        columns: {
+          id: true,
+          content: true,
+          isCorrect: withCorrectAnswer
+        }
+      }
+    }
+  })
+
+  return res
+})
+
+export const findByIds = cache(async (ids: string[]) => {
+  const res = await db.query.quiz.findMany({
+    where: inArray(quiz.id, ids),
+    with: {
+      answerOptions: {
+        columns: {
+          id: true,
+          content: true,
+          isCorrect: true
+        }
+      }
+    }
+  })
+  return res
 })
 
 /**
