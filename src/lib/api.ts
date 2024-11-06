@@ -1,10 +1,12 @@
 import { NextResponse } from "next/server"
 import { __DEV__ } from '../config'
 import { auth } from './auth'
+import { UserRole } from './schema'
 
 export async function isAdmin() {
   const session = await auth()
   if (!session?.user) return false
+  if (session.user.role !== UserRole.ADMIN) return false
 
   if (!__DEV__) {
     const adminIds = `${process.env.ADMIN_IDS}`.split(', ')
@@ -43,20 +45,18 @@ export function failure({ msg = 'failed', code = 'E0001', status = 400 }: IFailu
   }, { status })
 }
 
-export function actionSuccess<T = any>({ data = void 0, msg = 'ok' }: ISuccess<T>) {
+export function actionSuccess<T = any>(data: T, message = 'ok') {
   return {
     success: true,
-    code: 0,
-    message: msg,
-    data,
+    message,
+    data
   }
 }
 
-export function actionFailure({ msg = 'failed', code = 'E0001', }: IFailure) {
+export function actionFailure(message = 'Something went wrong') {
   return {
     success: false,
-    code,
-    message: msg,
+    message,
     data: void 0,
   }
 }

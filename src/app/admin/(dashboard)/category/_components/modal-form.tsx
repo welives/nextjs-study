@@ -7,7 +7,7 @@ import { ErrorBoundary } from 'react-error-boundary'
 import { matchSorter } from 'match-sorter'
 import { toast } from 'sonner'
 
-import { getAll, createOne, updateOne } from '@/actions/category'
+import { getAllCategory, createOne, updateOne } from '@/actions/category'
 import { CreateCategoryData, UpdateCategoryData } from '@/dto'
 
 type CategoryProps = {
@@ -99,15 +99,21 @@ export function CategoryModalForm(props: CategoryProps) {
           showSearch
           debounceTime={1000}
           request={async (values) => {
-            const res = await getAll()
-            const list = values.keyWords ? matchSorter(res, values.keyWords, { keys: ['name'] }) : res
-            const currentChildIds = props.record?.id ? list.find((e) => e.id === props.record?.id)?.childIds : []
-            return list.map((e) => ({
-              label: e.name,
-              value: e.id,
-              // 自己和后代不能选
-              disabled: e.id === props.record?.id || currentChildIds?.includes(e.id),
-            }))
+            const res = await getAllCategory()
+            if (!res.success) {
+              toast.error(res.message)
+              return []
+            } else {
+              let data = res.data ?? []
+              data = values.keyWords ? matchSorter(data, values.keyWords, { keys: ['name'] }) : data
+              const currentChildIds = props.record?.id ? data.find((e) => e.id === props.record?.id)?.childIds : []
+              return data.map((e) => ({
+                label: e.name,
+                value: e.id,
+                // 自己和后代不能选
+                disabled: e.id === props.record?.id || currentChildIds?.includes(e.id),
+              }))
+            }
           }}
         />
         <ProFormText

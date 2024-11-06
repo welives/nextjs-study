@@ -2,14 +2,14 @@
 
 import * as React from 'react'
 import { usePathname, useRouter } from 'next/navigation'
-import { signOut } from 'next-auth/react'
+import { signOut, useSession } from 'next-auth/react'
 import Link from 'next/link'
 import { useMount } from 'react-use'
 import { Dropdown, Spin, MenuProps } from 'antd'
 import { PageContainer, ProLayout, ProSkeleton } from '@ant-design/pro-components'
 import type { MenuDataItem } from '@ant-design/pro-components'
 import { HeartOutlined, SmileOutlined, LogoutOutlined, DesktopOutlined } from '@ant-design/icons'
-import { ROUTES, PATHS } from '@/constants'
+import { SIDE_BAR_ROUTES, PATHS } from '@/constants'
 
 const menuIconMap = {
   smile: <SmileOutlined />,
@@ -37,9 +37,10 @@ const loopMenuItem = (menus: any[]): MenuDataItem[] =>
   }))
 
 export function AdminMainLayout({ children }: React.PropsWithChildren) {
+  const { data: session } = useSession()
+  const router = useRouter()
   const pathname = usePathname()
   const [mounted, setMounted] = React.useState(false)
-  const router = useRouter()
 
   const onClick: MenuProps['onClick'] = (event) => {
     if (event.key === 'home') router.push(PATHS.SITE_HOME)
@@ -71,7 +72,7 @@ export function AdminMainLayout({ children }: React.PropsWithChildren) {
       }
       layout="mix"
       location={{ pathname }}
-      menu={{ request: async () => loopMenuItem(ROUTES) }}
+      menu={{ request: async () => loopMenuItem(SIDE_BAR_ROUTES) }}
       menuItemRender={(item, dom) => <Link href={item.path!}>{dom}</Link>}
       avatarProps={{
         src: (
@@ -87,7 +88,7 @@ export function AdminMainLayout({ children }: React.PropsWithChildren) {
             </svg>
           </div>
         ),
-        title: '煎蛋',
+        title: session?.user?.name,
         size: 'small',
         render: (props, dom) => <Dropdown menu={{ items, onClick }}>{dom}</Dropdown>,
       }}

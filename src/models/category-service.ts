@@ -2,9 +2,32 @@ import { cache } from 'react'
 import { eq } from 'drizzle-orm'
 import { matchSorter } from 'match-sorter'
 
-import { category } from '../lib/schema'
-import db from '../lib/drizzle'
+import { findChildren } from '@/lib/utils'
+import { category as categoryTable } from '@/lib/schema'
+import db from '@/lib/drizzle'
 import { ListPageData, CreateCategoryData, UpdateCategoryData } from '../dto'
+
+// 用 React.cache 将服务端/客户端请求数据的函数包裹起来，如果多个组件同时请求该函数，则在相同页面仅请求一次
+
+/**
+ * 获取全部分类
+ */
+export const getAll = cache(async () => {
+  const res = await db.query.category.findMany({
+    columns: {
+      id: true,
+      name: true,
+      pid: true
+    }
+  })
+
+  const data = res.map((e) => {
+    const children = findChildren<string>(res, [e.id])
+    return { ...e, childIds: children }
+  })
+
+  return data
+})
 
 /**
  * 分页列表
@@ -38,34 +61,34 @@ export const getList = cache(async ({ keyword, page = 1, limit = 20 }: ListPageD
 /**
  * 添加分类
  */
-export const createOne = cache(async ({ name, ...rest }: CreateCategoryData) => {
-  const [entity] = await db.insert(category).values({ name, pid: rest.pid, remark: rest.remark }).returning({ insertId: category.id })
+export const createOne = async ({ name, ...rest }: CreateCategoryData) => {
+  const [entity] = await db.insert(categoryTable).values({ name, pid: rest.pid, remark: rest.remark }).returning({ insertId: categoryTable.id })
   if (!entity) {
     throw new Error('创建失败')
   }
-  return !!entity
-})
+  return entity
+}
 
 /**
  * 更新分类
  */
-export const updateOne = cache(async ({ id, ...rest }: UpdateCategoryData) => {
-  const [entity] = await db.update(category).set(rest).where(eq(category.id, id)).returning({ updateId: category.id })
+export const updateOne = async ({ id, ...rest }: UpdateCategoryData) => {
+  const [entity] = await db.update(categoryTable).set(rest).where(eq(categoryTable.id, id)).returning({ updateId: categoryTable.id })
   if (!entity) {
     throw new Error('修改失败')
   }
-  return !!entity
-})
+  return entity
+}
 
 /**
  * 删除分类
  * @param id
  * @returns
  */
-export const deleteOne = cache(async (id: string) => {
-  const [entity] = await db.delete(category).where(eq(category.id, id)).returning({ deleteId: category.id })
+export const deleteOne = async (id: string) => {
+  const [entity] = await db.delete(categoryTable).where(eq(categoryTable.id, id)).returning({ deleteId: categoryTable.id })
   if (!entity) {
     throw new Error('删除失败')
   }
   return id === entity.deleteId
-})
+}

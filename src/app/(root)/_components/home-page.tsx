@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState, useMemo, useRef, useEffect, useCallback } from 'react'
-import { useRouter } from 'next/navigation'
-import { useSession } from 'next-auth/react'
+import Link from 'next/link'
+import { useSession, signOut } from 'next-auth/react'
 import { List, Select, Spin, Typography, Radio, Checkbox, Space, Tag, Card, Flex, Tabs, Modal, Form } from 'antd'
 import { debounce } from 'radash'
 import { useMount } from 'react-use'
@@ -11,7 +11,7 @@ import { toast } from 'sonner'
 
 import { Button } from '@/components/button'
 import { PATHS } from '@/constants'
-import { getAll as getAllCourse } from '@/actions/course'
+import { getAllCourse } from '@/actions/course'
 import { getListForTest, checkTest } from '@/actions/quiz'
 import { shuffle, cn } from '@/lib/utils'
 
@@ -44,7 +44,7 @@ const { confirm } = Modal
 export default function HomePage() {
   // 客户端获取session的方式
   const { data: session } = useSession()
-  const router = useRouter()
+  console.log(session)
 
   const [form] = Form.useForm()
   const [courseOptions, setCourseOptions] = useState<CourseValueType[]>([])
@@ -88,12 +88,16 @@ export default function HomePage() {
       setCourseOptions([])
       setCourseFetching(true)
 
-      getAllCourse().then((options) => {
+      getAllCourse().then((res) => {
         if (fetchId !== courseFetchRef.current) return
-
-        const res = keyword ? matchSorter(options, keyword, { keys: ['title'] }) : options
-        setCourseOptions(res.map((e) => ({ key: e.id, label: e.title, value: e.id })))
-        setCourseFetching(false)
+        if (!res.success) {
+          toast.error(res.message)
+        } else {
+          const data = res.data ?? []
+          const options = keyword ? matchSorter(data, keyword, { keys: ['title'] }) : data
+          setCourseOptions(options.map((e) => ({ key: e.id, label: e.title, value: e.id })))
+          setCourseFetching(false)
+        }
       })
     }
     return debounce({ delay: 500 }, loadOptions)
@@ -273,9 +277,16 @@ export default function HomePage() {
             style={{ width: '300px' }}
           />
           {session ? (
-            <Button onClick={() => router.push(PATHS.ADMIN_HOME)}>后台管理</Button>
+            <div className="flex gap-4">
+              <Link href={PATHS.ADMIN_HOME}>
+                <Button>后台管理</Button>
+              </Link>
+              <Button onClick={() => signOut()}>退出</Button>
+            </div>
           ) : (
-            <Button onClick={() => router.push(PATHS.AUTH_SIGN_IN)}>登录</Button>
+            <Link href={PATHS.AUTH_SIGN_IN}>
+              <Button>登录</Button>
+            </Link>
           )}
         </nav>
       </header>

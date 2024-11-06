@@ -15,9 +15,9 @@ import type { CreateQuizData, UpdateQuizData, CheckQuizAnswer } from '@/dto'
 export async function getListForTest(id: string, withCorrectAnswer = false) {
   try {
     const data = await QuizService.findByCourseId(id, withCorrectAnswer)
-    return actionSuccess({ data })
+    return actionSuccess(data)
   } catch (error: any) {
-    return actionFailure({ msg: error.message })
+    return actionFailure(error.message)
   }
 }
 
@@ -40,9 +40,9 @@ export async function checkTest(data: CheckQuizAnswer) {
         result: answered ? correctOptions.every(c => answered.includes(c.id)) : false
       }
     })
-    return actionSuccess({ data: res })
+    return actionSuccess(res)
   } catch (error: any) {
-    return actionFailure({ msg: error.message })
+    return actionFailure(error.message)
   }
 }
 
@@ -62,9 +62,9 @@ export async function getOne(id: string) {
     }
 
     const data = await QuizService.getOne(id)
-    return actionSuccess({ data })
+    return actionSuccess(data)
   } catch (error: any) {
-    return actionFailure({ msg: error.message })
+    return actionFailure(error.message)
   }
 }
 
@@ -86,9 +86,9 @@ export async function createOne(data: CreateQuizData) {
     await QuizService.createOne(data)
     revalidatePath('/admin/quiz')
     revalidatePath('/admin/quiz/new')
-    return actionSuccess({ msg: '创建成功' })
+    return actionSuccess(void 0, '创建成功')
   } catch (error: any) {
-    return actionFailure({ msg: error.message })
+    return actionFailure(error.message)
   }
 }
 
@@ -108,9 +108,9 @@ export async function updateOne(data: UpdateQuizData) {
     }
     await QuizService.updateOne(data)
     revalidatePath('/admin/quiz')
-    return actionSuccess({ msg: '修改成功' })
+    return actionSuccess(void 0, '修改成功')
   } catch (error: any) {
-    return actionFailure({ msg: error.message })
+    return actionFailure(error.message)
   }
 }
 
@@ -131,8 +131,8 @@ export async function deleteOne(id: string) {
 
     await QuizService.deleteOne(id)
     revalidatePath('/admin/quiz')
-    return actionSuccess({ msg: '删除成功' })
+    return actionSuccess(void 0, '删除成功')
   } catch (error: any) {
-    return actionFailure({ msg: error.message })
+    return actionFailure(error.message)
   }
 }

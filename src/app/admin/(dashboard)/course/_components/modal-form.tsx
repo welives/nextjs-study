@@ -8,7 +8,7 @@ import { matchSorter } from 'match-sorter'
 import { toast } from 'sonner'
 
 import { createOne, updateOne } from '@/actions/course'
-import { getAll } from '@/actions/category'
+import { getAllCategory } from '@/actions/category'
 
 type CourseProps = {
   /**
@@ -99,9 +99,15 @@ export function CourseModalForm(props: CourseProps) {
           showSearch
           debounceTime={1000}
           request={async (values) => {
-            const res = await getAll()
-            const list = values.keyWords ? matchSorter(res, values.keyWords, { keys: ['name'] }) : res
-            return list.map((e) => ({ label: e.name, value: e.id }))
+            const res = await getAllCategory()
+            if (!res.success) {
+              toast.error(res.message)
+              return []
+            } else {
+              let data = res.data ?? []
+              data = values.keyWords ? matchSorter(data, values.keyWords, { keys: ['name'] }) : data
+              return data.map((e) => ({ label: e.name, value: e.id }))
+            }
           }}
         />
         <ProFormText

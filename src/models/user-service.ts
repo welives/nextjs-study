@@ -1,0 +1,38 @@
+import { cache } from 'react'
+import { eq, or } from 'drizzle-orm'
+import bcrypt from 'bcrypt'
+
+import db from '../lib/drizzle'
+import { user as userTable, UserRole } from '@/lib/schema'
+import { CreateUserData } from '@/dto'
+
+export const findByEmail = cache(async (email: string) => {
+  const res = await db.query.user.findFirst({
+    where: eq(userTable.email, email)
+  })
+
+  return res
+})
+
+
+/**
+ * 创建用户
+ * @param param
+ * @returns
+ */
+export const createOne = async ({ username, email, ...rest }: CreateUserData) => {
+  const isExisted = await db.query.user.findFirst({
+    where: or(eq(userTable.username, username), eq(userTable.email, email)),
+    columns: {
+      id: true
+    }
+  })
+  if (isExisted) throw new Error('用户名或邮箱已被占用')
+
+  const encryptPassword = bcrypt.hashSync(rest.password, 10)
+
+  const [entity] = await db.insert(userTable).values({ username, email, password: encryptPassword, role: rest.role ?? UserRole.USER }).returning()
+  if (!entity) throw new Error('用户创建失败')
+  const { password, ...user } = entity
+  return user
+}

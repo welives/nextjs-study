@@ -5,3 +5,5 @@ export * from './category.dto'
 export * from './course.dto'
 
 export * from './quiz.dto'
+
+export * from './user.dto'

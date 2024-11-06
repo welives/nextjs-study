@@ -1,10 +1,9 @@
 import { cache } from 'react'
-import { notFound } from 'next/navigation'
-import { eq, inArray, arrayContains } from 'drizzle-orm'
+import { eq, inArray } from 'drizzle-orm'
 import { matchSorter } from 'match-sorter'
 
-import { quiz, quizAnswerOption } from '../lib/schema'
-import db from '../lib/drizzle'
+import { quiz as quizTable, quizAnswerOption as answerTable } from '@/lib/schema'
+import db from '@/lib/drizzle'
 import { ListPageData, CreateQuizData, UpdateQuizData } from '../dto'
 
 /**
@@ -45,7 +44,7 @@ export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: 
 
 export const findByCourseId = cache(async (id: string, withCorrectAnswer = false) => {
   const res = await db.query.quiz.findMany({
-    where: eq(quiz.courseId, id),
+    where: eq(quizTable.courseId, id),
     with: {
       answerOptions: {
         columns: {
@@ -62,7 +61,7 @@ export const findByCourseId = cache(async (id: string, withCorrectAnswer = false
 
 export const findByIds = cache(async (ids: string[]) => {
   const res = await db.query.quiz.findMany({
-    where: inArray(quiz.id, ids),
+    where: inArray(quizTable.id, ids),
     with: {
       answerOptions: {
         columns: {
@@ -82,7 +81,7 @@ export const findByIds = cache(async (ids: string[]) => {
 export const getOne = cache(async (id: string) => {
   try {
     const res = await db.query.quiz.findFirst({
-      where: eq(quiz.id, id),
+      where: eq(quizTable.id, id),
       with: {
         answerOptions: {
           columns: {
@@ -99,9 +98,7 @@ export const getOne = cache(async (id: string) => {
         }
       }
     })
-    if (!res) {
-      notFound()
-    }
+
     return res
   } catch (error: any) {
     throw new Error(error.message)
@@ -111,64 +108,56 @@ export const getOne = cache(async (id: string) => {
 /**
  * 添加试题和答案选项
  */
-export const createOne = cache(async ({ title, type, course_id, chapter, remark, ...rest }: CreateQuizData) => {
+export const createOne = async ({ title, type, course_id, chapter, remark, ...rest }: CreateQuizData) => {
   await db.transaction(async (tx) => {
     try {
-      const [quizEntity] = await tx.insert(quiz).values({ title, type, chapter, remark, courseId: course_id }).returning({ insertId: quiz.id })
+      const [quizEntity] = await tx.insert(quizTable).values({ title, type, chapter, remark, courseId: course_id }).returning({ insertId: quizTable.id })
       if (!quizEntity) throw new Error('试题添加失败')
 
       const answerOptions = await Promise.all(rest.options.map(async (el) => {
-        const [entity] = await tx.insert(quizAnswerOption).values({ content: el.content, isCorrect: el.is_correct, quizId: quizEntity.insertId }).returning({ insertId: quizAnswerOption.id })
+        const [entity] = await tx.insert(answerTable).values({ content: el.content, isCorrect: el.is_correct, quizId: quizEntity.insertId }).returning({ insertId: answerTable.id })
         return entity.insertId
       }))
-      if (answerOptions.length === 0) {
-        throw new Error('试题添加失败')
-      }
+      if (answerOptions.length === 0) throw new Error('试题添加失败')
     } catch (error: any) {
       tx.rollback()
       throw new Error(error.message)
     }
   })
-})
+}
 
 /**
  * 更新试题和答案选项
  */
-export const updateOne = cache(async ({ id, title, type, course_id, chapter, remark, ...rest }: UpdateQuizData) => {
+export const updateOne = async ({ id, title, type, course_id, chapter, remark, ...rest }: UpdateQuizData) => {
   await db.transaction(async (tx) => {
     try {
-      const [quizEntity] = await tx.update(quiz).set({ title, type, chapter, remark, courseId: course_id }).where(eq(quiz.id, id)).returning({ updateId: quiz.id })
-      if (!quizEntity) {
-        notFound()
-      }
+      const [quizEntity] = await tx.update(quizTable).set({ title, type, chapter, remark, courseId: course_id }).where(eq(quizTable.id, id)).returning({ updateId: quizTable.id })
+      if (!quizEntity) throw new Error('试题修改失败')
 
       if (rest.options?.length) {
         const answerOptions = await Promise.all(
           rest.options.map(async (el) => {
-            const [entity] = await tx.update(quizAnswerOption).set({ content: el.content, isCorrect: el.is_correct }).where(eq(quizAnswerOption.id, el.id)).returning({ updateId: quizAnswerOption.id })
+            const [entity] = await tx.update(answerTable).set({ content: el.content, isCorrect: el.is_correct }).where(eq(answerTable.id, el.id)).returning({ updateId: answerTable.id })
             return entity.updateId
           })
         )
-        if (answerOptions.length === 0) {
-          throw new Error('试题修改失败')
-        }
+        if (answerOptions.length === 0) throw new Error('试题修改失败')
       }
     } catch (error: any) {
       tx.rollback()
       throw new Error(error.message)
     }
   })
-})
+}
 
 /**
  * 删除试题
  * @param id
  * @returns
  */
-export const deleteOne = cache(async (id: string) => {
-  const [entity] = await db.delete(quiz).where(eq(quiz.id, id)).returning({ deleteId: quiz.id })
-  if (!entity) {
-    notFound()
-  }
+export const deleteOne = async (id: string) => {
+  const [entity] = await db.delete(quizTable).where(eq(quizTable.id, id)).returning({ deleteId: quizTable.id })
+  if (!entity) throw new Error('删除失败')
   return id === entity.deleteId
-})
+}

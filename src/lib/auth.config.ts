@@ -1,8 +1,10 @@
 import { NextAuthConfig } from 'next-auth'
 import CredentialProvider from 'next-auth/providers/credentials'
 import GithubProvider from 'next-auth/providers/github'
+
 import { AUTH_GITHUB_ID, AUTH_GITHUB_SECRET, AUTH_SECRET, __DEV__ } from '@/config'
 import { PATHS } from '@/constants'
+
 
 export default {
   providers: [
@@ -19,33 +21,44 @@ export default {
      */
     CredentialProvider({
       credentials: {
-        email: { label: '邮箱', type: 'email', placeholder: 'admin@google.com' },
-        password: { label: '密码', type: 'password', },
+        id: {},
+        name: {},
+        email: {},
+        role: {},
       },
       async authorize(credentials, req) {
-        // 在这里写自己的账号密码逻辑检验, 例如请求自己的接口或远端服务器
         const user = {
-          id: '1',
-          name: 'Jandan',
-          email: credentials?.email as string,
+          id: credentials.id as string,
+          name: credentials.name as string,
+          email: credentials.email as string,
+          role: credentials.role as string
         }
-        if (user) {
-          // Any object returned will be saved in `user` property of the JWT
-          return user
-        } else {
-          // If you return null then an error will be displayed advising the user to check their details.
-          return null
-          // You can also Reject this callback with an Error thus the user will be sent to the error page with the error message as a query parameter
-        }
+        return user ?? null
       },
     }),
   ],
-  secret: AUTH_SECRET,
   callbacks: {
-    session({ session, user }) {
+    // 执行顺序 signIn => jwt => session
+    async signIn({ user, account, }) {
+      return true
+    },
+    async jwt({ token, user }) {
+      if (user) {
+        token.id = user.id
+        token.role = user.role
+      }
+      return token
+    },
+    // 可在session中读到在jwt方法返回的token值，可将需要的属性放到session中，如角色、权限等
+    session({ session, token }) {
+      if (token.sub && session.user) {
+        session.user.id = token.sub
+        session.user.role = token.role as string
+      }
       return session
     },
   },
+  secret: AUTH_SECRET,
   session: { strategy: 'jwt' },
   debug: __DEV__,
   pages: {

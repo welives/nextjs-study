@@ -5,6 +5,10 @@ import { useRouter } from 'next/navigation'
 import '@/styles/globals.css'
 import '@/styles/uno-cli.css'
 
+/**
+ * 全局错误页面，只在生产环境下生效
+ * @returns
+ */
 export default function GlobalError({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
   const router = useRouter()
   return (

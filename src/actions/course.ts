@@ -1,26 +1,23 @@
 'use server'
 
-import { cache } from 'react'
 import { revalidatePath } from 'next/cache'
-import db from '@/lib/drizzle'
 import * as CourseService from '@/models/course-service'
 import { isAdmin, actionFailure, actionSuccess } from '@/lib/api'
 import { formatZodErrorMsg } from '@/lib/utils'
-import { courseIdSchema, createCourseSchema, updateCourseSchema, CreateCourseData, UpdateCourseData } from '../dto'
+import { courseIdSchema, createCourseSchema, updateCourseSchema } from '../dto'
+import type { CreateCourseData, UpdateCourseData } from '../dto'
 
 /**
  * 获取全部课程
  */
-export const getAll = cache(async () => {
-  const res = await db.query.course.findMany({
-    columns: {
-      id: true,
-      title: true,
-    }
-  })
-
-  return res
-})
+export const getAllCourse = async () => {
+  try {
+    const res = await CourseService.getAll()
+    return actionSuccess(res)
+  } catch (error: any) {
+    return actionFailure(error.message)
+  }
+}
 
 /**
  * 添加课程
@@ -46,9 +43,9 @@ export async function createOne(formData: FormData) {
 
     await CourseService.createOne(data)
     revalidatePath('/admin/course')
-    return actionSuccess({ msg: '创建成功' })
+    return actionSuccess(void 0, '创建成功')
   } catch (error: any) {
-    return actionFailure({ msg: error.message })
+    return actionFailure(error.message)
   }
 }
 
@@ -77,9 +74,9 @@ export async function updateOne(formData: FormData) {
 
     await CourseService.updateOne(data)
     revalidatePath('/admin/course')
-    return actionSuccess({ msg: '修改成功' })
+    return actionSuccess(void 0, '修改成功')
   } catch (error: any) {
-    return actionFailure({ msg: error.message })
+    return actionFailure(error.message)
   }
 }
 
@@ -100,8 +97,8 @@ export async function deleteOne(id: string) {
 
     await CourseService.deleteOne(id)
     revalidatePath('/admin/course')
-    return actionSuccess({ msg: '删除成功' })
+    return actionSuccess(void 0, '删除成功')
   } catch (error: any) {
-    return actionFailure({ msg: error.message })
+    return actionFailure(error.message)
   }
 }

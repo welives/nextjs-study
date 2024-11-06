@@ -1,32 +1,23 @@
 'use server'
 
-import { cache } from 'react'
 import { revalidatePath } from 'next/cache'
-import db from '@/lib/drizzle'
 import * as CategoryService from '@/models/category-service'
 import { isAdmin, actionFailure, actionSuccess } from '@/lib/api'
-import { findChildren, formatZodErrorMsg } from '@/lib/utils'
-import { categoryIdSchema, createCategorySchema, updateCategorySchema, CreateCategoryData, UpdateCategoryData } from '../dto'
+import { formatZodErrorMsg } from '@/lib/utils'
+import { categoryIdSchema, createCategorySchema, updateCategorySchema } from '../dto'
+import type { CreateCategoryData, UpdateCategoryData } from '../dto'
 
 /**
  * 获取全部分类
  */
-export const getAll = cache(async () => {
-  const res = await db.query.category.findMany({
-    columns: {
-      id: true,
-      name: true,
-      pid: true
-    }
-  })
-
-  const data = res.map((e) => {
-    const children = findChildren<string>(res, [e.id])
-    return { ...e, childIds: children }
-  })
-
-  return data
-})
+export const getAllCategory = async () => {
+  try {
+    const res = await CategoryService.getAll()
+    return actionSuccess(res)
+  } catch (error: any) {
+    return actionFailure(error.message)
+  }
+}
 
 /**
  * 添加分类
@@ -51,9 +42,9 @@ export async function createOne(formData: FormData) {
 
     await CategoryService.createOne(data)
     revalidatePath('/admin/category')
-    return actionSuccess({ msg: '创建成功' })
+    return actionSuccess(void 0, '创建成功')
   } catch (error: any) {
-    return actionFailure({ msg: error.message })
+    return actionFailure(error.message)
   }
 }
 
@@ -81,9 +72,9 @@ export async function updateOne(formData: FormData) {
 
     await CategoryService.updateOne(data)
     revalidatePath('/admin/category')
-    return actionSuccess({ msg: '修改成功' })
+    return actionSuccess(void 0, '修改成功')
   } catch (error: any) {
-    return actionFailure({ msg: error.message })
+    return actionFailure(error.message)
   }
 }
 
@@ -104,8 +95,8 @@ export async function deleteOne(id: string) {
 
     await CategoryService.deleteOne(id)
     revalidatePath('/admin/category')
-    return actionSuccess({ msg: '删除成功' })
+    return actionSuccess(void 0, '删除成功')
   } catch (error: any) {
-    return actionFailure({ msg: error.message })
+    return actionFailure(error.message)
   }
 }

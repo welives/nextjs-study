@@ -4,7 +4,9 @@ import { fileURLToPath } from 'url'
 import dotenv from 'dotenv'
 import { drizzle } from 'drizzle-orm/node-postgres'
 import pg from 'pg'
-import { schemas, course as courseSchema, quiz as quizSchema, quizAnswerOption, category as categorySchema, QuizType } from '../src/lib/schema'
+import { schemas, QuizType } from '../src/lib/schema'
+
+const { course: courseSchema, quiz: quizSchema, quizAnswerOption, category: categorySchema } = schemas
 
 interface AnswerOptions {
   id: number

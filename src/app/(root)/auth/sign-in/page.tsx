@@ -1,41 +1,46 @@
 'use client'
 
-import * as React from 'react'
-import { useRouter } from 'next/navigation'
-import { useSession } from 'next-auth/react'
-import { useSearchParams } from 'next/navigation'
+import { useTransition } from 'react'
 import { signIn } from 'next-auth/react'
 import { LockOutlined, UserOutlined } from '@ant-design/icons'
-import { LoginFormPage, ProConfigProvider, ProFormCheckbox, ProFormText } from '@ant-design/pro-components'
-import { message } from 'antd'
-import { cn } from '@/lib/utils'
+import { LoginFormPage, ProConfigProvider, ProFormText } from '@ant-design/pro-components'
+import { toast } from 'sonner'
+import { useSearchParams } from 'next/navigation'
+
+import { cn, formatZodErrorMsg } from '@/lib/utils'
+import { userSignIn } from '@/actions/user'
+import { signInSchema } from '@/dto'
 import { PATHS } from '@/constants'
 
 export default function Page() {
-  // 客户端获取session的方式
-  const { data: session } = useSession()
-  const router = useRouter()
-  if (session) {
-    return router.replace(PATHS.ADMIN_HOME)
-  }
   const searchParams = useSearchParams()
   const callbackUrl = searchParams.get('callbackUrl')
-  const [loading, startTransition] = React.useTransition()
+  const [isPending, startTransition] = useTransition()
   // 提交表单
   function onSubmit(data: any) {
-    startTransition(() => {
-      signIn('credentials', {
-        email: data.email,
-        password: data.password,
-        callbackUrl: callbackUrl ?? PATHS.ADMIN_HOME,
-      })
-      message.success('登录成功')
+    const parsed = signInSchema.safeParse(data)
+    if (!parsed.success) {
+      const msg = formatZodErrorMsg(parsed.error.issues)
+      toast.error(msg)
+      return
+    }
+
+    startTransition(async () => {
+      const res = await userSignIn({ email: data.email, password: data.password })
+      toast.success(res.message)
+      if (res.success) {
+        await signIn('credentials', {
+          ...res.data,
+          redirectTo: callbackUrl ?? PATHS.SITE_HOME,
+        })
+      }
     })
   }
   return (
     <ProConfigProvider dark hashed={false}>
       <LoginFormPage
         onFinish={onSubmit}
+        loading={isPending}
         backgroundImageUrl="https://mdn.alipayobjects.com/huamei_gcee1x/afts/img/A*y0ZTS6WLwvgAAAAAAAAAAAAADml6AQ/fmt.webp"
         logo={
           <svg
@@ -89,17 +94,6 @@ export default function Page() {
             },
           ]}
         />
-
-        <div
-          style={{
-            marginBlockEnd: 24,
-          }}
-        >
-          <ProFormCheckbox noStyle name="autoLogin">
-            自动登录
-          </ProFormCheckbox>
-          <a className="float-right">忘记密码</a>
-        </div>
       </LoginFormPage>
     </ProConfigProvider>
   )

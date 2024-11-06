@@ -16,7 +16,7 @@ import hash from 'hash-sum'
 import { useBreakpoints } from '@/hooks'
 import { QuizType } from '@/lib/schema'
 import { cn } from '@/lib/utils'
-import { getAll as getAllCourse } from '@/actions/course'
+import { getAllCourse } from '@/actions/course'
 import { createOne, updateOne } from '@/actions/quiz'
 import { CreateQuizData, UpdateQuizData } from '@/dto'
 
@@ -105,15 +105,17 @@ export function QuizForm({ initialData }: QuizFormProps) {
       setCourseOptions([])
       setFetching(true)
 
-      getAllCourse().then((options) => {
-        if (fetchId !== fetchRef.current) {
-          // for fetch callback order
-          return
-        }
+      getAllCourse().then((res) => {
+        if (fetchId !== fetchRef.current) return
 
-        const res = keyword ? matchSorter(options, keyword, { keys: ['title'] }) : options
-        setCourseOptions(res.map((e) => ({ key: e.id, label: e.title, value: e.id })))
-        setFetching(false)
+        if (!res.success) {
+          toast.error(res.message)
+        } else {
+          const data = res.data ?? []
+          const options = keyword ? matchSorter(data, keyword, { keys: ['title'] }) : data
+          setCourseOptions(options.map((e) => ({ key: e.id, label: e.title, value: e.id })))
+          setFetching(false)
+        }
       })
     }
     return debounce({ delay: 500 }, loadOptions)

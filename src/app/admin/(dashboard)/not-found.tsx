@@ -1,9 +1,10 @@
 'use client'
 
 import { useRouter } from 'next/navigation'
+import { PATHS } from '@/constants'
 
 /**
- * 全局NotFound, 用于处理没有匹配路由时的404
+ * 局部NotFound, 用于处理接口返回404的情况,需要手动调用`next/navigation`的`notFound`方法
  * @returns
  */
 export default function NotFound() {
@@ -25,7 +26,7 @@ export default function NotFound() {
         </button>
         <button
           className="px-3 py-1 rounded-md bg-primary text-primary-foreground transition-all hover:bg-primary/80 hover:cursor-pointer"
-          onClick={() => router.push('/')}
+          onClick={() => router.push(PATHS.ADMIN_HOME)}
         >
           Back to Home
         </button>
