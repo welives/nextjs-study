@@ -1,9 +1,72 @@
 {
-  "id": "67d02ef3-9a9f-4856-a4ea-9e7bd1b2b74f",
+  "id": "6d37be5e-466d-4b67-b802-a446ae45972b",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
+    "public.answer_options": {
+      "name": "answer_options",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "varchar",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "content": {
+          "name": "content",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "quiz_id": {
+          "name": "quiz_id",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_correct": {
+          "name": "is_correct",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "answer_options_quiz_id_quizzes_id_fk": {
+          "name": "answer_options_quiz_id_quizzes_id_fk",
+          "tableFrom": "answer_options",
+          "tableTo": "quizzes",
+          "columnsFrom": [
+            "quiz_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
     "public.categories": {
       "name": "categories",
       "schema": "",
@@ -134,69 +197,6 @@
       "uniqueConstraints": {},
       "checkConstraints": {}
     },
-    "public.quiz_answer_options": {
-      "name": "quiz_answer_options",
-      "schema": "",
-      "columns": {
-        "id": {
-          "name": "id",
-          "type": "varchar",
-          "primaryKey": true,
-          "notNull": true
-        },
-        "content": {
-          "name": "content",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "quiz_id": {
-          "name": "quiz_id",
-          "type": "varchar",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "is_correct": {
-          "name": "is_correct",
-          "type": "boolean",
-          "primaryKey": false,
-          "notNull": true,
-          "default": false
-        },
-        "created_at": {
-          "name": "created_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true,
-          "default": "now()"
-        },
-        "updated_at": {
-          "name": "updated_at",
-          "type": "timestamp",
-          "primaryKey": false,
-          "notNull": true
-        }
-      },
-      "indexes": {},
-      "foreignKeys": {
-        "quiz_answer_options_quiz_id_quizzes_id_fk": {
-          "name": "quiz_answer_options_quiz_id_quizzes_id_fk",
-          "tableFrom": "quiz_answer_options",
-          "tableTo": "quizzes",
-          "columnsFrom": [
-            "quiz_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
-          "onDelete": "cascade",
-          "onUpdate": "no action"
-        }
-      },
-      "compositePrimaryKeys": {},
-      "uniqueConstraints": {},
-      "checkConstraints": {}
-    },
     "public.quizzes": {
       "name": "quizzes",
       "schema": "",
@@ -225,6 +225,18 @@
           "typeSchema": "public",
           "primaryKey": false,
           "notNull": true
+        },
+        "chapter": {
+          "name": "chapter",
+          "type": "varchar(30)",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "remark": {
+          "name": "remark",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
         },
         "created_at": {
           "name": "created_at",
@@ -298,6 +310,13 @@
         },
         "status": {
           "name": "status",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": true,
+          "default": true
+        },
+        "canBeDeleted": {
+          "name": "canBeDeleted",
           "type": "boolean",
           "primaryKey": false,
           "notNull": true,

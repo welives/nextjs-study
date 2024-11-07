@@ -1,12 +1,12 @@
 import { courseTable, courseRelations } from '../../schemas/course'
 import { quizTable, quizRelations } from '../../schemas/quiz'
-import { answerOptionsTable, answerOptionsRelations } from '../../schemas/quiz-answer-option'
+import { answerOptionsTable, answerOptionsRelations } from '../../schemas/answer-options'
 import { categoryTable, categoryRelations } from '../../schemas/category'
 import { userTable } from '../../schemas/user'
 
 export * from '../../schemas/course'
 export * from '../../schemas/quiz'
-export * from '../../schemas/quiz-answer-option'
+export * from '../../schemas/answer-options'
 export * from '../../schemas/category'
 export * from '../../schemas/user'
 

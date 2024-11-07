@@ -5,7 +5,7 @@ import { quizTable } from './quiz'
 
 /** 测试答案选项表 */
 
-export const answerOptionsTable = pgTable('quiz_answer_options', {
+export const answerOptionsTable = pgTable('answer_options', {
   id: varchar('id').primaryKey().$defaultFn(createId),
   content: text('content').notNull(),
   quizId: varchar('quiz_id')

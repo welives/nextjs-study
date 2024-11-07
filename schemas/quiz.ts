@@ -1,7 +1,7 @@
 import { pgTable, text, timestamp, varchar, pgEnum } from 'drizzle-orm/pg-core'
 import { relations } from 'drizzle-orm'
 import { createId } from '@paralleldrive/cuid2'
-import { answerOptionsTable } from './quiz-answer-option'
+import { answerOptionsTable } from './answer-options'
 import { courseTable } from './course'
 
 export enum QuizType {
