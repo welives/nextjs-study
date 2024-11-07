@@ -1,8 +1,8 @@
-import { course, courseRelations } from '../../schemas/course'
-import { quiz, quizRelations } from '../../schemas/quiz'
-import { quizAnswerOption, quizAnswerOptionRelations } from '../../schemas/quiz-answer-option'
-import { category, categoryRelations } from '../../schemas/category'
-import { user } from '../../schemas/user'
+import { courseTable, courseRelations } from '../../schemas/course'
+import { quizTable, quizRelations } from '../../schemas/quiz'
+import { answerOptionsTable, answerOptionsRelations } from '../../schemas/quiz-answer-option'
+import { categoryTable, categoryRelations } from '../../schemas/category'
+import { userTable } from '../../schemas/user'
 
 export * from '../../schemas/course'
 export * from '../../schemas/quiz'
@@ -11,15 +11,15 @@ export * from '../../schemas/category'
 export * from '../../schemas/user'
 
 export const schemas = {
-  course,
+  course: courseTable,
   courseRelations,
-  quiz,
+  quiz: quizTable,
   quizRelations,
-  quizAnswerOption,
-  quizAnswerOptionRelations,
-  category,
+  answerOptions: answerOptionsTable,
+  answerOptionsRelations,
+  category: categoryTable,
   categoryRelations,
-  user
+  user: userTable
 }
 
 export type SchemaType = typeof schemas

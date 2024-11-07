@@ -1,8 +1,8 @@
 import { pgTable, text, timestamp, varchar, pgEnum } from 'drizzle-orm/pg-core'
 import { relations } from 'drizzle-orm'
 import { createId } from '@paralleldrive/cuid2'
-import { quizAnswerOption } from './quiz-answer-option'
-import { course } from './course'
+import { answerOptionsTable } from './quiz-answer-option'
+import { courseTable } from './course'
 
 export enum QuizType {
   SINGLE = 'single',
@@ -18,12 +18,12 @@ export const quizTypeEnums = pgEnum('type', [
 
 /** 测试题干表 */
 
-export const quiz = pgTable('quizzes', {
+export const quizTable = pgTable('quizzes', {
   id: varchar('id').primaryKey().$defaultFn(createId),
   title: text('title').notNull(),
   courseId: varchar('course_id')
     .notNull()
-    .references(() => course.id, { onDelete: 'set null' }),
+    .references(() => courseTable.id, { onDelete: 'set null' }),
   type: quizTypeEnums('type').notNull(),
   chapter: varchar('chapter', { length: 30 }),
   remark: text("remark"),
@@ -33,10 +33,7 @@ export const quiz = pgTable('quizzes', {
     .$onUpdateFn(() => new Date()),
 })
 
-export const quizRelations = relations(quiz, ({ many, one }) => ({
-  answerOptions: many(quizAnswerOption),
-  course: one(course, { fields: [quiz.courseId], references: [course.id] }),
+export const quizRelations = relations(quizTable, ({ many, one }) => ({
+  answerOptions: many(answerOptionsTable),
+  course: one(courseTable, { fields: [quizTable.courseId], references: [courseTable.id] }),
 }))
-
-export type InsertQuiz = typeof quiz.$inferInsert
-export type SelectQuiz = typeof quiz.$inferSelect

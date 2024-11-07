@@ -1,18 +1,18 @@
 import { pgTable, text, timestamp, varchar } from 'drizzle-orm/pg-core'
 import { relations } from 'drizzle-orm'
 import { createId } from '@paralleldrive/cuid2'
-import { quiz } from './quiz'
-import { category } from './category'
+import { quizTable } from './quiz'
+import { categoryTable } from './category'
 
 /** 课程表 */
 
-export const course = pgTable('courses', {
+export const courseTable = pgTable('courses', {
   id: varchar('id').primaryKey().$defaultFn(createId),
   title: varchar('title', { length: 256 }).notNull(),
   description: text('description'),
   cateId: varchar('cate_id')
     .notNull()
-    .references(() => category.id, { onDelete: 'set null' }),
+    .references(() => categoryTable.id, { onDelete: 'set null' }),
   cover: text("cover"),
   createdAt: timestamp('created_at').notNull().defaultNow(),
   updatedAt: timestamp('updated_at')
@@ -20,10 +20,7 @@ export const course = pgTable('courses', {
     .$onUpdateFn(() => new Date()),
 })
 
-export const courseRelations = relations(course, ({ one, many }) => ({
-  quizzes: many(quiz),
-  category: one(category, { fields: [course.cateId], references: [category.id] }),
+export const courseRelations = relations(courseTable, ({ one, many }) => ({
+  quizzes: many(quizTable),
+  category: one(categoryTable, { fields: [courseTable.cateId], references: [categoryTable.id] }),
 }))
-
-export type InsertCourse = typeof course.$inferInsert
-export type SelectCourse = typeof course.$inferSelect

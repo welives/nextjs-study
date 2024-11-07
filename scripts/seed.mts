@@ -6,7 +6,7 @@ import { drizzle } from 'drizzle-orm/node-postgres'
 import pg from 'pg'
 import { schemas, QuizType } from '../src/lib/schema'
 
-const { course: courseSchema, quiz: quizSchema, quizAnswerOption, category: categorySchema } = schemas
+const { course: courseTable, quiz: quizTable, answerOptions: answerOptionsTable, category: categoryTable } = schemas
 
 interface AnswerOptions {
   id: number
@@ -40,17 +40,17 @@ async function main() {
   const db = drizzle(client, { schema: schemas })
 
   // 清空旧数据
-  await db.delete(quizAnswerOption)
-  await db.delete(quizSchema)
-  await db.delete(courseSchema)
-  await db.delete(categorySchema)
+  await db.delete(answerOptionsTable)
+  await db.delete(quizTable)
+  await db.delete(courseTable)
+  await db.delete(categoryTable)
 
   const categories = ['国家开放大学', '自考']
 
   // 创建分类
   const insertedCategories = await Promise.all(
     categories.map(async (cate) => {
-      const [entity] = await db.insert(categorySchema).values({ name: cate }).returning({ insertId: categorySchema.id })
+      const [entity] = await db.insert(categoryTable).values({ name: cate }).returning({ insertId: categoryTable.id })
       return { id: entity.insertId, name: cate }
     })
   )
@@ -76,7 +76,7 @@ async function main() {
         const category = insertedCategories.find(cate => cate.name === courseJsonData.category)
         if (!category) throw new Error('找不到分类')
         // 创建课程
-        const [courseEntity] = await db.insert(courseSchema).values({ title: courseName, cateId: category.id }).returning({ insertId: courseSchema.id })
+        const [courseEntity] = await db.insert(courseTable).values({ title: courseName, cateId: category.id }).returning({ insertId: courseTable.id })
         console.log(`创建课程: ${courseName} id: ${courseEntity.insertId}`)
 
         // 整理试题数据
@@ -89,11 +89,11 @@ async function main() {
         }))
 
         for (const quiz of quizList) {
-          const [quizEntity] = await tx.insert(quizSchema).values({ title: quiz.title, courseId: quiz.courseId, type: quiz.type, chapter: quiz.chapter }).returning({ insertId: quizSchema.id })
+          const [quizEntity] = await tx.insert(quizTable).values({ title: quiz.title, courseId: quiz.courseId, type: quiz.type, chapter: quiz.chapter }).returning({ insertId: quizTable.id })
           console.log(`创建试题 id: ${quizEntity.insertId} 题目: ${quiz.title}`)
 
           const answerEntities = await Promise.all(quiz.options.map(async (op) => {
-            const [answerEntity] = await tx.insert(quizAnswerOption).values({ content: op.content, isCorrect: op.isCorrect, quizId: quizEntity.insertId }).returning({ insertId: quizAnswerOption.id })
+            const [answerEntity] = await tx.insert(answerOptionsTable).values({ content: op.content, isCorrect: op.isCorrect, quizId: quizEntity.insertId }).returning({ insertId: answerOptionsTable.id })
             return answerEntity.insertId
           }))
           if (answerEntities.length === 0) throw new Error('试题答案创建失败')

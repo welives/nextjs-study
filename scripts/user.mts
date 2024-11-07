@@ -15,7 +15,7 @@ if (error || [void 0, ''].indexOf(parsed!.DATABASE_DSN) !== -1) {
   process.exit(1)
 }
 
-const { user: userSchema } = schemas
+const { user: userTable } = schemas
 
 async function main() {
   const client = new pg.Client({ connectionString: process.env.DATABASE_DSN })
@@ -43,7 +43,7 @@ async function main() {
   }
 
   const isExisted = await db.query.user.findFirst({
-    where: or(eq(userSchema.username, username), eq(userSchema.email, email)),
+    where: or(eq(userTable.username, username), eq(userTable.email, email)),
     columns: {
       id: true
     }
@@ -53,7 +53,7 @@ async function main() {
     process.exit(1)
   }
   const encryptPassword = bcrypt.hashSync(password, 10)
-  const [entity] = await db.insert(userSchema).values({ username, email, password: encryptPassword, role }).returning({ insertId: userSchema.id })
+  const [entity] = await db.insert(userTable).values({ username, email, password: encryptPassword, role }).returning({ insertId: userTable.id })
 
   if (!entity) {
     console.error('用户创建失败')

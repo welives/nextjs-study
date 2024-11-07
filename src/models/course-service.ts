@@ -2,7 +2,7 @@ import { cache } from 'react'
 import { eq } from 'drizzle-orm'
 import { matchSorter } from 'match-sorter'
 
-import { course as courseTable } from '@/lib/schema'
+import { courseTable } from '@/lib/schema'
 import db from '@/lib/drizzle'
 import { ListPageData, CreateCourseData, UpdateCourseData } from '@/dto'
 

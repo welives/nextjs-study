@@ -3,7 +3,7 @@ import { eq, or } from 'drizzle-orm'
 import bcrypt from 'bcrypt'
 
 import db from '../lib/drizzle'
-import { user as userTable, UserRole } from '@/lib/schema'
+import { userTable, UserRole } from '@/lib/schema'
 import { CreateUserData } from '@/dto'
 
 export const findByEmail = cache(async (email: string) => {

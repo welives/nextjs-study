@@ -1,0 +1,1 @@
+ALTER TABLE "users" ADD COLUMN "canBeDeleted" boolean DEFAULT true NOT NULL;

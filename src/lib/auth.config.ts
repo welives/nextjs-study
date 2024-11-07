@@ -11,10 +11,10 @@ export default {
     /**
      * @see https://next-auth.js.org/providers/github
      */
-    GithubProvider({
-      clientId: AUTH_GITHUB_ID ?? '',
-      clientSecret: AUTH_GITHUB_SECRET ?? '',
-    }),
+    // GithubProvider({
+    //   clientId: AUTH_GITHUB_ID ?? '',
+    //   clientSecret: AUTH_GITHUB_SECRET ?? '',
+    // }),
     /**
      * 自定义口令登录
      * @see https://next-auth.js.org/configuration/providers/credentials

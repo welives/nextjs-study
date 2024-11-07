@@ -3,7 +3,7 @@ import { eq } from 'drizzle-orm'
 import { matchSorter } from 'match-sorter'
 
 import { findChildren } from '@/lib/utils'
-import { category as categoryTable } from '@/lib/schema'
+import { categoryTable } from '@/lib/schema'
 import db from '@/lib/drizzle'
 import { ListPageData, CreateCategoryData, UpdateCategoryData } from '../dto'
 

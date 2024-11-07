@@ -1,14 +1,14 @@
 import { pgTable, text, timestamp, varchar, AnyPgColumn } from 'drizzle-orm/pg-core'
 import { relations } from 'drizzle-orm'
 import { createId } from '@paralleldrive/cuid2'
-import { course } from './course'
+import { courseTable } from './course'
 
 /** 分类表 */
 
-export const category = pgTable('categories', {
+export const categoryTable = pgTable('categories', {
   id: varchar('id').primaryKey().$defaultFn(createId),
   name: varchar('name', { length: 100 }).notNull(),
-  pid: varchar('p_id').references((): AnyPgColumn => category.id, { onDelete: 'cascade' }),
+  pid: varchar('p_id').references((): AnyPgColumn => categoryTable.id, { onDelete: 'cascade' }),
   remark: text('remark'),
   createdAt: timestamp('created_at').notNull().defaultNow(),
   updatedAt: timestamp('updated_at')
@@ -16,11 +16,8 @@ export const category = pgTable('categories', {
     .$onUpdateFn(() => new Date()),
 })
 
-export const categoryRelations = relations(category, ({ one, many }) => ({
-  courses: many(course),
-  children: many(category),
-  parent: one(category, { fields: [category.pid], references: [category.id] }),
+export const categoryRelations = relations(categoryTable, ({ one, many }) => ({
+  courses: many(courseTable),
+  children: many(categoryTable),
+  parent: one(categoryTable, { fields: [categoryTable.pid], references: [categoryTable.id] }),
 }))
-
-export type InsertCategory = typeof category.$inferInsert
-export type SelectCategory = typeof category.$inferSelect

@@ -2,7 +2,7 @@ import { cache } from 'react'
 import { eq, inArray } from 'drizzle-orm'
 import { matchSorter } from 'match-sorter'
 
-import { quiz as quizTable, quizAnswerOption as answerTable } from '@/lib/schema'
+import { quizTable, answerOptionsTable } from '@/lib/schema'
 import db from '@/lib/drizzle'
 import { ListPageData, CreateQuizData, UpdateQuizData } from '../dto'
 
@@ -115,7 +115,7 @@ export const createOne = async ({ title, type, course_id, chapter, remark, ...re
       if (!quizEntity) throw new Error('试题添加失败')
 
       const answerOptions = await Promise.all(rest.options.map(async (el) => {
-        const [entity] = await tx.insert(answerTable).values({ content: el.content, isCorrect: el.is_correct, quizId: quizEntity.insertId }).returning({ insertId: answerTable.id })
+        const [entity] = await tx.insert(answerOptionsTable).values({ content: el.content, isCorrect: el.is_correct, quizId: quizEntity.insertId }).returning({ insertId: answerOptionsTable.id })
         return entity.insertId
       }))
       if (answerOptions.length === 0) throw new Error('试题添加失败')
@@ -138,7 +138,7 @@ export const updateOne = async ({ id, title, type, course_id, chapter, remark, .
       if (rest.options?.length) {
         const answerOptions = await Promise.all(
           rest.options.map(async (el) => {
-            const [entity] = await tx.update(answerTable).set({ content: el.content, isCorrect: el.is_correct }).where(eq(answerTable.id, el.id)).returning({ updateId: answerTable.id })
+            const [entity] = await tx.update(answerOptionsTable).set({ content: el.content, isCorrect: el.is_correct }).where(eq(answerOptionsTable.id, el.id)).returning({ updateId: answerOptionsTable.id })
             return entity.updateId
           })
         )
