@@ -20,7 +20,7 @@ export const findByEmail = cache(async (email: string) => {
  * @param param
  * @returns
  */
-export const createOne = async ({ username, email, ...rest }: CreateUserData) => {
+export async function createOne({ username, email, ...rest }: CreateUserData) {
   const isExisted = await db.query.user.findFirst({
     where: or(eq(userTable.username, username), eq(userTable.email, email)),
     columns: {

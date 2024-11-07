@@ -7,8 +7,8 @@ import { ErrorBoundary } from 'react-error-boundary'
 import { matchSorter } from 'match-sorter'
 import { toast } from 'sonner'
 
-import { createOne, updateOne } from '@/actions/course'
-import { getAllCategory } from '@/actions/category'
+import { createOne, updateOne } from '@/actions/course.action'
+import { getAllCategory } from '@/actions/category.action'
 
 type CourseProps = {
   /**

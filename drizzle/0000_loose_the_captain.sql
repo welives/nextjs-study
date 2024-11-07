@@ -39,6 +39,17 @@ CREATE TABLE IF NOT EXISTS "quizzes" (
 	"updated_at" timestamp NOT NULL
 );
 --> statement-breakpoint
+CREATE TABLE IF NOT EXISTS "test_records" (
+	"id" varchar PRIMARY KEY NOT NULL,
+	"user_id" varchar NOT NULL,
+	"title" varchar(100) NOT NULL,
+	"quiz_ids" varchar[] NOT NULL,
+	"answer_options_ids" varchar[][] NOT NULL,
+	"answered_ids" json[][],
+	"created_at" timestamp DEFAULT now() NOT NULL,
+	"updated_at" timestamp NOT NULL
+);
+--> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "users" (
 	"id" varchar PRIMARY KEY NOT NULL,
 	"username" varchar(30) NOT NULL,
@@ -73,6 +84,12 @@ END $$;
 --> statement-breakpoint
 DO $$ BEGIN
  ALTER TABLE "quizzes" ADD CONSTRAINT "quizzes_course_id_courses_id_fk" FOREIGN KEY ("course_id") REFERENCES "public"."courses"("id") ON DELETE set null ON UPDATE no action;
+EXCEPTION
+ WHEN duplicate_object THEN null;
+END $$;
+--> statement-breakpoint
+DO $$ BEGIN
+ ALTER TABLE "test_records" ADD CONSTRAINT "test_records_user_id_users_id_fk" FOREIGN KEY ("user_id") REFERENCES "public"."users"("id") ON DELETE set null ON UPDATE no action;
 EXCEPTION
  WHEN duplicate_object THEN null;
 END $$;

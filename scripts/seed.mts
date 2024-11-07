@@ -6,7 +6,7 @@ import { drizzle } from 'drizzle-orm/node-postgres'
 import pg from 'pg'
 import { schemas, QuizType } from '../src/lib/schema'
 
-const { course: courseTable, quiz: quizTable, answerOptions: answerOptionsTable, category: categoryTable } = schemas
+const { course: courseTable, quiz: quizTable, answerOption: answerOptionTable, category: categoryTable } = schemas
 
 interface AnswerOptions {
   id: number
@@ -40,7 +40,7 @@ async function main() {
   const db = drizzle(client, { schema: schemas })
 
   // 清空旧数据
-  await db.delete(answerOptionsTable)
+  await db.delete(answerOptionTable)
   await db.delete(quizTable)
   await db.delete(courseTable)
   await db.delete(categoryTable)
@@ -93,7 +93,7 @@ async function main() {
           console.log(`创建试题 id: ${quizEntity.insertId} 题目: ${quiz.title}`)
 
           const answerEntities = await Promise.all(quiz.options.map(async (op) => {
-            const [answerEntity] = await tx.insert(answerOptionsTable).values({ content: op.content, isCorrect: op.isCorrect, quizId: quizEntity.insertId }).returning({ insertId: answerOptionsTable.id })
+            const [answerEntity] = await tx.insert(answerOptionTable).values({ content: op.content, isCorrect: op.isCorrect, quizId: quizEntity.insertId }).returning({ insertId: answerOptionTable.id })
             return answerEntity.insertId
           }))
           if (answerEntities.length === 0) throw new Error('试题答案创建失败')

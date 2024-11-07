@@ -7,7 +7,7 @@ import { Space, Button, Typography, Popconfirm } from 'antd'
 import { SearchOutlined } from '@ant-design/icons'
 import { toast } from 'sonner'
 import http from '@/lib/http'
-import { deleteOne } from '@/actions/category'
+import { deleteOne } from '@/actions/category.action'
 import { CategoryModalForm } from './modal-form'
 
 export function CategoryListPage() {

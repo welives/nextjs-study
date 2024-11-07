@@ -1,5 +1,5 @@
 {
-  "id": "6d37be5e-466d-4b67-b802-a446ae45972b",
+  "id": "188d8407-1fe9-4c8a-a7f5-7cb358af9405",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
@@ -260,6 +260,80 @@
           "tableTo": "courses",
           "columnsFrom": [
             "course_id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "set null",
+          "onUpdate": "no action"
+        }
+      },
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    },
+    "public.test_records": {
+      "name": "test_records",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "varchar",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "user_id": {
+          "name": "user_id",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "title": {
+          "name": "title",
+          "type": "varchar(100)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "quiz_ids": {
+          "name": "quiz_ids",
+          "type": "varchar[]",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "answer_options_ids": {
+          "name": "answer_options_ids",
+          "type": "varchar[][]",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "answered_ids": {
+          "name": "answered_ids",
+          "type": "json[][]",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {
+        "test_records_user_id_users_id_fk": {
+          "name": "test_records_user_id_users_id_fk",
+          "tableFrom": "test_records",
+          "tableTo": "users",
+          "columnsFrom": [
+            "user_id"
           ],
           "columnsTo": [
             "id"

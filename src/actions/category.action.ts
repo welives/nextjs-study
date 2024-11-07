@@ -1,26 +1,29 @@
 'use server'
 
+import { cache } from 'react'
 import { revalidatePath } from 'next/cache'
-import * as CourseService from '@/models/course-service'
+import * as CategoryService from '@/models/category.service'
 import { isAdmin, actionFailure, actionSuccess } from '@/lib/api'
 import { formatZodErrorMsg } from '@/lib/utils'
-import { courseIdSchema, createCourseSchema, updateCourseSchema } from '../dto'
-import type { CreateCourseData, UpdateCourseData } from '../dto'
+import { categoryIdSchema, createCategorySchema, updateCategorySchema } from '../dto'
+import type { CreateCategoryData, UpdateCategoryData } from '../dto'
+
+// 用 React.cache 将服务端/客户端请求数据的函数包裹起来，如果多个组件同时请求该函数，则在相同页面仅请求一次
 
 /**
- * 获取全部课程
+ * 获取全部分类
  */
-export const getAllCourse = async () => {
+export const getAllCategory = cache(async () => {
   try {
-    const res = await CourseService.getAll()
+    const res = await CategoryService.getAll()
     return actionSuccess(res)
   } catch (error: any) {
     return actionFailure(error.message)
   }
-}
+})
 
 /**
- * 添加课程
+ * 添加分类
  * @param formData
  * @returns
  */
@@ -28,21 +31,20 @@ export async function createOne(formData: FormData) {
   try {
     if (!(await isAdmin())) throw new Error('Unauthorized')
 
-    const data: CreateCourseData = {
-      title: formData.get('title')!.toString(),
-      cate_id: formData.get('cate_id')!.toString(),
-      description: formData.get('description')?.toString(),
-      cover: formData.get('cover')?.toString(),
+    const data: CreateCategoryData = {
+      name: formData.get('name')!.toString(),
+      pid: formData.get('pid')?.toString(),
+      remark: formData.get('remark')?.toString()
     }
 
-    const parsed = createCourseSchema.safeParse(data)
+    const parsed = createCategorySchema.safeParse(data)
     if (!parsed.success) {
       const msg = formatZodErrorMsg(parsed.error.issues)
       throw new Error(msg)
     }
 
-    await CourseService.createOne(data)
-    revalidatePath('/admin/course')
+    await CategoryService.createOne(data)
+    revalidatePath('/admin/category')
     return actionSuccess(void 0, '创建成功')
   } catch (error: any) {
     return actionFailure(error.message)
@@ -50,7 +52,7 @@ export async function createOne(formData: FormData) {
 }
 
 /**
- * 修改课程
+ * 修改分类
  * @param formData
  * @returns
  */
@@ -58,22 +60,21 @@ export async function updateOne(formData: FormData) {
   try {
     if (!(await isAdmin())) throw new Error('Unauthorized')
 
-    const data: UpdateCourseData = {
+    const data: UpdateCategoryData = {
       id: formData.get('id')!.toString(),
-      title: formData.get('title')!.toString(),
-      cate_id: formData.get('cate_id')!.toString(),
-      description: formData.get('description')?.toString(),
-      cover: formData.get('cover')?.toString(),
+      name: formData.get('name')!.toString(),
+      pid: formData.get('pid')?.toString(),
+      remark: formData.get('remark')?.toString()
     }
 
-    const parsed = updateCourseSchema.safeParse(data)
+    const parsed = updateCategorySchema.safeParse(data)
     if (!parsed.success) {
       const msg = formatZodErrorMsg(parsed.error.issues)
       throw new Error(msg)
     }
 
-    await CourseService.updateOne(data)
-    revalidatePath('/admin/course')
+    await CategoryService.updateOne(data)
+    revalidatePath('/admin/category')
     return actionSuccess(void 0, '修改成功')
   } catch (error: any) {
     return actionFailure(error.message)
@@ -81,7 +82,7 @@ export async function updateOne(formData: FormData) {
 }
 
 /**
- * 删除课程
+ * 删除分类
  * @param id
  * @returns
  */
@@ -89,14 +90,14 @@ export async function deleteOne(id: string) {
   try {
     if (!(await isAdmin())) throw new Error('Unauthorized')
 
-    const parsed = courseIdSchema.safeParse(id)
+    const parsed = categoryIdSchema.safeParse(id)
     if (!parsed.success) {
       const msg = formatZodErrorMsg(parsed.error.issues)
       throw new Error(msg)
     }
 
-    await CourseService.deleteOne(id)
-    revalidatePath('/admin/course')
+    await CategoryService.deleteOne(id)
+    revalidatePath('/admin/category')
     return actionSuccess(void 0, '删除成功')
   } catch (error: any) {
     return actionFailure(error.message)

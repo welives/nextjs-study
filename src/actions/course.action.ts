@@ -1,26 +1,27 @@
 'use server'
 
+import { cache } from 'react'
 import { revalidatePath } from 'next/cache'
-import * as CategoryService from '@/models/category-service'
+import * as CourseService from '@/models/course.service'
 import { isAdmin, actionFailure, actionSuccess } from '@/lib/api'
 import { formatZodErrorMsg } from '@/lib/utils'
-import { categoryIdSchema, createCategorySchema, updateCategorySchema } from '../dto'
-import type { CreateCategoryData, UpdateCategoryData } from '../dto'
+import { courseIdSchema, createCourseSchema, updateCourseSchema } from '../dto'
+import type { CreateCourseData, UpdateCourseData } from '../dto'
 
 /**
- * 获取全部分类
+ * 获取全部课程
  */
-export const getAllCategory = async () => {
+export const getAllCourse = cache(async () => {
   try {
-    const res = await CategoryService.getAll()
+    const res = await CourseService.getAll()
     return actionSuccess(res)
   } catch (error: any) {
     return actionFailure(error.message)
   }
-}
+})
 
 /**
- * 添加分类
+ * 添加课程
  * @param formData
  * @returns
  */
@@ -28,20 +29,21 @@ export async function createOne(formData: FormData) {
   try {
     if (!(await isAdmin())) throw new Error('Unauthorized')
 
-    const data: CreateCategoryData = {
-      name: formData.get('name')!.toString(),
-      pid: formData.get('pid')?.toString(),
-      remark: formData.get('remark')?.toString()
+    const data: CreateCourseData = {
+      title: formData.get('title')!.toString(),
+      cate_id: formData.get('cate_id')!.toString(),
+      description: formData.get('description')?.toString(),
+      cover: formData.get('cover')?.toString(),
     }
 
-    const parsed = createCategorySchema.safeParse(data)
+    const parsed = createCourseSchema.safeParse(data)
     if (!parsed.success) {
       const msg = formatZodErrorMsg(parsed.error.issues)
       throw new Error(msg)
     }
 
-    await CategoryService.createOne(data)
-    revalidatePath('/admin/category')
+    await CourseService.createOne(data)
+    revalidatePath('/admin/course')
     return actionSuccess(void 0, '创建成功')
   } catch (error: any) {
     return actionFailure(error.message)
@@ -49,7 +51,7 @@ export async function createOne(formData: FormData) {
 }
 
 /**
- * 修改分类
+ * 修改课程
  * @param formData
  * @returns
  */
@@ -57,21 +59,22 @@ export async function updateOne(formData: FormData) {
   try {
     if (!(await isAdmin())) throw new Error('Unauthorized')
 
-    const data: UpdateCategoryData = {
+    const data: UpdateCourseData = {
       id: formData.get('id')!.toString(),
-      name: formData.get('name')!.toString(),
-      pid: formData.get('pid')?.toString(),
-      remark: formData.get('remark')?.toString()
+      title: formData.get('title')!.toString(),
+      cate_id: formData.get('cate_id')!.toString(),
+      description: formData.get('description')?.toString(),
+      cover: formData.get('cover')?.toString(),
     }
 
-    const parsed = updateCategorySchema.safeParse(data)
+    const parsed = updateCourseSchema.safeParse(data)
     if (!parsed.success) {
       const msg = formatZodErrorMsg(parsed.error.issues)
       throw new Error(msg)
     }
 
-    await CategoryService.updateOne(data)
-    revalidatePath('/admin/category')
+    await CourseService.updateOne(data)
+    revalidatePath('/admin/course')
     return actionSuccess(void 0, '修改成功')
   } catch (error: any) {
     return actionFailure(error.message)
@@ -79,7 +82,7 @@ export async function updateOne(formData: FormData) {
 }
 
 /**
- * 删除分类
+ * 删除课程
  * @param id
  * @returns
  */
@@ -87,14 +90,14 @@ export async function deleteOne(id: string) {
   try {
     if (!(await isAdmin())) throw new Error('Unauthorized')
 
-    const parsed = categoryIdSchema.safeParse(id)
+    const parsed = courseIdSchema.safeParse(id)
     if (!parsed.success) {
       const msg = formatZodErrorMsg(parsed.error.issues)
       throw new Error(msg)
     }
 
-    await CategoryService.deleteOne(id)
-    revalidatePath('/admin/category')
+    await CourseService.deleteOne(id)
+    revalidatePath('/admin/course')
     return actionSuccess(void 0, '删除成功')
   } catch (error: any) {
     return actionFailure(error.message)

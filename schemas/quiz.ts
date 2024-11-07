@@ -1,7 +1,7 @@
 import { pgTable, text, timestamp, varchar, pgEnum } from 'drizzle-orm/pg-core'
 import { relations } from 'drizzle-orm'
 import { createId } from '@paralleldrive/cuid2'
-import { answerOptionsTable } from './answer-options'
+import { answerOptionTable } from './answer-option'
 import { courseTable } from './course'
 
 export enum QuizType {
@@ -34,6 +34,6 @@ export const quizTable = pgTable('quizzes', {
 })
 
 export const quizRelations = relations(quizTable, ({ many, one }) => ({
-  answerOptions: many(answerOptionsTable),
+  answerOptions: many(answerOptionTable),
   course: one(courseTable, { fields: [quizTable.courseId], references: [courseTable.id] }),
 }))

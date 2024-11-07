@@ -5,7 +5,7 @@ import { quizTable } from './quiz'
 
 /** 测试答案选项表 */
 
-export const answerOptionsTable = pgTable('answer_options', {
+export const answerOptionTable = pgTable('answer_options', {
   id: varchar('id').primaryKey().$defaultFn(createId),
   content: text('content').notNull(),
   quizId: varchar('quiz_id')
@@ -18,6 +18,6 @@ export const answerOptionsTable = pgTable('answer_options', {
     .$onUpdateFn(() => new Date()),
 })
 
-export const answerOptionsRelations = relations(answerOptionsTable, ({ one }) => ({
-  quiz: one(quizTable, { fields: [answerOptionsTable.quizId], references: [quizTable.id] }),
+export const answerOptionRelations = relations(answerOptionTable, ({ one }) => ({
+  quiz: one(quizTable, { fields: [answerOptionTable.quizId], references: [quizTable.id] }),
 }))

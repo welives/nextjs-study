@@ -11,8 +11,8 @@ import { toast } from 'sonner'
 
 import { Button } from '@/components/button'
 import { PATHS } from '@/constants'
-import { getAllCourse } from '@/actions/course'
-import { getListForTest, checkTest } from '@/actions/quiz'
+import { getAllCourse } from '@/actions/course.action'
+import { getByCourseId, checkTest } from '@/actions/quiz.action'
 import { shuffle, cn } from '@/lib/utils'
 
 interface CourseValueType {
@@ -21,7 +21,7 @@ interface CourseValueType {
   value: string | number
 }
 
-type QuizListType = Awaited<ReturnType<typeof getListForTest>>['data']
+type QuizListType = Awaited<ReturnType<typeof getByCourseId>>['data']
 type CheckAnsweredResult = Awaited<ReturnType<typeof checkTest>>['data']
 
 interface TabData {
@@ -44,7 +44,6 @@ const { confirm } = Modal
 export default function HomePage() {
   // 客户端获取session的方式
   const { data: session } = useSession()
-  console.log(session)
 
   const [form] = Form.useForm()
   const [courseOptions, setCourseOptions] = useState<CourseValueType[]>([])
@@ -69,8 +68,9 @@ export default function HomePage() {
   }, [activeTab, tabList])
   /**
    * 答题集合, 每次提交时会被清空
+   * 结构类似这样 {题目id: [{答案id: 选项顺序}]}
    */
-  const [answerMap, setAnswerMap] = useState(new Map<string, string[]>())
+  const [answerMap, setAnswerMap] = useState(new Map<string, Record<string, number>[]>())
   /**
    * 根据答题集合来判断是否进入了答题状态
    */
@@ -112,17 +112,16 @@ export default function HomePage() {
     setTabList([])
     setActiveTab(void 0)
     handleResetAnswerData()
-    getListForTest(courseId).then((res) => {
+    getByCourseId(courseId).then((res) => {
       if (!res.success) {
         toast.error(res.message)
       } else {
         const tabs: string[] = []
+        // 题目乱序
         const quizzes = shuffle(res.data ?? [])
         quizzes.forEach((e) => {
-          if (e.type !== 'judgement') {
-            // 答案乱序
-            e.answerOptions = shuffle(e.answerOptions)
-          }
+          // 答案乱序
+          e.answerOptions = shuffle(e.answerOptions)
           if (e.chapter && !tabs.includes(e.chapter)) {
             tabs.push(e.chapter)
           }
@@ -220,7 +219,7 @@ export default function HomePage() {
     const answeredList = quizList.map((q) => {
       return { id: q.id, options: q.answerOptions.map((e) => e.id), answered: answerMap.get(q.id) }
     })
-    const res = await checkTest(answeredList)
+    const res = await checkTest({ title: activeTab!, quizzesData: answeredList })
     if (res.success) {
       setAnswerMap((prev) => {
         prev.clear()
@@ -321,13 +320,16 @@ export default function HomePage() {
                               {item.type === 'multiple' ? (
                                 <Checkbox.Group
                                   disabled={submitState}
-                                  onChange={(e: string[]) => {
+                                  onChange={(ids: string[]) => {
+                                    const value = ids.map((id) => {
+                                      return { [id]: item.answerOptions.findIndex((option) => option.id === id) }
+                                    })
                                     setAnswerMap((prev) => {
                                       if (!prev.has(item.id)) {
-                                        return new Map(prev.set(item.id, e))
+                                        return new Map(prev.set(item.id, value))
                                       } else {
                                         prev.delete(item.id)
-                                        return new Map(prev.set(item.id, e))
+                                        return new Map(prev.set(item.id, value))
                                       }
                                     })
                                   }}
@@ -349,19 +351,23 @@ export default function HomePage() {
                                 <Radio.Group
                                   disabled={submitState}
                                   onChange={(e) => {
+                                    const value = e.target.value as string
+                                    const obj = {
+                                      [value]: item.answerOptions.findIndex((option) => option.id === value),
+                                    }
                                     // 如果用对象收集数据的话,更新时需要用结构的方式
                                     // setAnswerMap((prev) => {
-                                    //   prev[item.id] = [e.target.value]
+                                    //   prev[item.id] = [obj]
                                     //   return { ...prev }
                                     // })
 
                                     // 如果用map结构收集数据的话,更新时需要用 new Map
                                     setAnswerMap((prev) => {
                                       if (!prev.has(item.id)) {
-                                        return new Map(prev.set(item.id, [e.target.value]))
+                                        return new Map(prev.set(item.id, [obj]))
                                       } else {
                                         prev.delete(item.id)
-                                        return new Map(prev.set(item.id, [e.target.value]))
+                                        return new Map(prev.set(item.id, [obj]))
                                       }
                                     })
                                   }}

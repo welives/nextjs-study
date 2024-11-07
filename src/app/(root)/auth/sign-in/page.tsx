@@ -8,7 +8,7 @@ import { toast } from 'sonner'
 import { useSearchParams } from 'next/navigation'
 
 import { cn, formatZodErrorMsg } from '@/lib/utils'
-import { userSignIn } from '@/actions/user'
+import { userSignIn } from '@/actions/user.action'
 import { signInSchema } from '@/dto'
 import { PATHS } from '@/constants'
 

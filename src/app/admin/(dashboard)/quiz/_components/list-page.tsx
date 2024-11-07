@@ -8,7 +8,7 @@ import { Button, Space, Typography, Popconfirm, Table, TableColumnsType, Tag } f
 import { toast } from 'sonner'
 import { SearchOutlined, CheckCircleOutlined, CloseCircleOutlined } from '@ant-design/icons'
 import http from '@/lib/http'
-import { deleteOne } from '@/actions/quiz'
+import { deleteOne } from '@/actions/quiz.action'
 
 export function QuizListPage() {
   const tableRef = React.useRef<ActionType>()

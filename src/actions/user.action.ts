@@ -2,7 +2,7 @@
 
 import { notFound } from 'next/navigation'
 import bcrypt from 'bcrypt'
-import * as UserService from '@/models/user-service'
+import * as UserService from '@/models/user.service'
 import { isAdmin, actionFailure, actionSuccess } from '@/lib/api'
 import { formatZodErrorMsg } from '@/lib/utils'
 import { createUserSchema, signInSchema } from '@/dto'

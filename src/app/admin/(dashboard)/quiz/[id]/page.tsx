@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation'
-import { getOne } from '@/actions/quiz'
+import { getOne } from '@/actions/quiz.action'
 import { QuizForm } from '../_components/quiz-form'
 
 type PageProps = { params: { id: string } }

@@ -16,8 +16,8 @@ import hash from 'hash-sum'
 import { useBreakpoints } from '@/hooks'
 import { QuizType } from '@/lib/schema'
 import { cn } from '@/lib/utils'
-import { getAllCourse } from '@/actions/course'
-import { createOne, updateOne } from '@/actions/quiz'
+import { getAllCourse } from '@/actions/course.action'
+import { createOne, updateOne } from '@/actions/quiz.action'
 import { CreateQuizData, UpdateQuizData } from '@/dto'
 
 interface CourseValueType {

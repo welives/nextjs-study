@@ -7,7 +7,7 @@ import { ErrorBoundary } from 'react-error-boundary'
 import { matchSorter } from 'match-sorter'
 import { toast } from 'sonner'
 
-import { getAllCategory, createOne, updateOne } from '@/actions/category'
+import { getAllCategory, createOne, updateOne } from '@/actions/category.action'
 import { CreateCategoryData, UpdateCategoryData } from '@/dto'
 
 type CategoryProps = {

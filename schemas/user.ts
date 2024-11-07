@@ -1,5 +1,7 @@
 import { pgTable, timestamp, varchar, pgEnum, boolean } from 'drizzle-orm/pg-core'
+import { relations } from 'drizzle-orm'
 import { createId } from '@paralleldrive/cuid2'
+import { testRecordTable } from './test-record'
 
 export enum UserRole {
   ADMIN = 'admin',
@@ -26,3 +28,7 @@ export const userTable = pgTable('users', {
     .notNull()
     .$onUpdateFn(() => new Date()),
 })
+
+export const userRelations = relations(userTable, ({ many }) => ({
+  testRecords: many(testRecordTable),
+}))
