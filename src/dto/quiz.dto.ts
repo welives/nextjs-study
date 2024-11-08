@@ -32,8 +32,8 @@ export const checkQuizAnswer = z.object({
   quizzesData: z.object({
     id: quizIdSchema,
     options: z.string({ message: '不是一个字符串' }).min(1, { message: requiredMessage('答案ID') }).array().min(1, { message: '候选答案不能为空' }),
-    // 把答案id和当时所处的顺序组成键值对数组
-    answered: z.record(z.number({ message: '不是一个数字' })).array().optional()
+    // 把答案id和当时所处的顺序组成元祖
+    answered: z.tuple([z.string({ message: '不是一个字符串' }), z.number({ message: '不是一个数字' })]).array().optional()
   }).array().min(1, { message: '答题不能为空' })
 })
 

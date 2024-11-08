@@ -8,7 +8,7 @@ export default function Error({ error, reset }: { error: Error & { digest?: stri
   }, [error])
 
   return (
-    <div className="absolute-center mb-16 text-center">
+    <div className="absolute-center size-full mb-16 text-center">
       <span className="bg-gradient-to-b from-foreground to-transparent bg-clip-text text-[10rem] font-extrabold leading-none text-transparent">
         500
       </span>

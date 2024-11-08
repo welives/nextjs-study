@@ -1,6 +1,5 @@
 import { cache } from 'react'
-import { eq } from 'drizzle-orm'
-import { matchSorter } from 'match-sorter'
+import { eq, like, or } from 'drizzle-orm'
 
 import { courseTable } from '@/lib/schema'
 import db from '@/lib/drizzle'
@@ -21,7 +20,8 @@ export async function getAll() {
  * 分页列表
  */
 export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: ListPageData) => {
-  let res = await db.query.course.findMany({
+  console.log('keyword', keyword);
+  const res = await db.query.course.findMany({
     with: {
       category: {
         columns: {
@@ -30,17 +30,14 @@ export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: 
         }
       }
     },
+    ...(keyword ? { where: or(like(courseTable.title, `%${keyword}%`), like(courseTable.description, `%${keyword}%`)) } : void 0),
+    limit,
+    offset: (page - 1) * limit
   })
-  if (keyword) {
-    res = matchSorter(res, keyword, { keys: ['title', 'description'] })
-  }
-  // Pagination logic
-  const offset = (page - 1) * limit
-  const courses = res.slice(offset, offset + limit)
-  const count = res.length
+  const count = await db.$count(courseTable, keyword ? or(like(courseTable.title, `%${keyword}%`), like(courseTable.description, `%${keyword}%`)) : void 0)
 
   return {
-    rows: courses,
+    rows: res,
     count
   }
 })

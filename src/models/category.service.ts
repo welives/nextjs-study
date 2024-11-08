@@ -1,11 +1,10 @@
 import { cache } from 'react'
-import { eq } from 'drizzle-orm'
-import { matchSorter } from 'match-sorter'
+import { eq, like } from 'drizzle-orm'
 
 import { findChildren } from '@/lib/utils'
 import { categoryTable } from '@/lib/schema'
 import db from '@/lib/drizzle'
-import { ListPageData, CreateCategoryData, UpdateCategoryData } from '../dto'
+import { ListPageData, CreateCategoryData, UpdateCategoryData } from '@/dto'
 
 /**
  * 获取全部分类
@@ -31,7 +30,7 @@ export async function getAll() {
  * 分页列表
  */
 export const getList = cache(async ({ keyword, page = 1, limit = 20 }: ListPageData) => {
-  let res = await db.query.category.findMany({
+  const res = await db.query.category.findMany({
     with: {
       parent: {
         columns: {
@@ -40,18 +39,15 @@ export const getList = cache(async ({ keyword, page = 1, limit = 20 }: ListPageD
           pid: true
         }
       }
-    }
+    },
+    ...(keyword ? { where: like(categoryTable.name, `%${keyword}%`) } : void 0),
+    limit,
+    offset: (page - 1) * limit
   })
-  if (keyword) {
-    res = matchSorter(res, keyword, { keys: ['name'] })
-  }
-  // Pagination logic
-  const offset = (page - 1) * limit
-  const categories = res.slice(offset, offset + limit)
-  const count = res.length
+  const count = await db.$count(categoryTable, keyword ? like(categoryTable.name, `%${keyword}%`) : void 0)
 
   return {
-    rows: categories,
+    rows: res,
     count
   }
 })

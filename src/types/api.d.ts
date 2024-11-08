@@ -10,6 +10,7 @@ declare namespace Api {
     [key: string]: any
   }
 
+  // 分页列表的基础参数
   interface GetListPage {
     page?: number | undefined
     limit?: number | undefined
@@ -52,7 +53,7 @@ declare namespace Api {
     }
     type: import('@/lib/schema').QuizType
     chapter?: string
-    remark?: string
+    remark?: string | null
     answerOptions: QuizAnswerOption[]
     createdAt?: Date
     updatedAt?: Date
@@ -63,5 +64,19 @@ declare namespace Api {
     isCorrect: boolean
     createdAt?: Date
     updatedAt?: Date
+  }
+
+  // 答题记录
+  interface RecordListData {
+    id: string
+    title: string
+    userId: string
+    user: {
+      id: string
+      username: string
+      email: string
+    }
+    ratio: number
+    createdAt?: Date
   }
 }

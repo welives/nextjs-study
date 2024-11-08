@@ -1,5 +1,5 @@
 import { pgTable, text, timestamp, varchar, pgEnum } from 'drizzle-orm/pg-core'
-import { relations } from 'drizzle-orm'
+import { relations, sql } from 'drizzle-orm'
 import { createId } from '@paralleldrive/cuid2'
 import { answerOptionTable } from './answer-option'
 import { courseTable } from './course'
@@ -25,7 +25,7 @@ export const quizTable = pgTable('quizzes', {
     .notNull()
     .references(() => courseTable.id, { onDelete: 'set null' }),
   type: quizTypeEnums('type').notNull(),
-  chapter: varchar('chapter', { length: 30 }),
+  chapter: varchar('chapter', { length: 30 }).notNull().default(''),
   remark: text("remark"),
   createdAt: timestamp('created_at').notNull().defaultNow(),
   updatedAt: timestamp('updated_at')

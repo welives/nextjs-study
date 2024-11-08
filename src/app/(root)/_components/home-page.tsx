@@ -10,10 +10,11 @@ import { matchSorter } from 'match-sorter'
 import { toast } from 'sonner'
 
 import { Button } from '@/components/button'
-import { PATHS } from '@/constants'
 import { getAllCourse } from '@/actions/course.action'
 import { getByCourseId, checkTest } from '@/actions/quiz.action'
 import { shuffle, cn } from '@/lib/utils'
+import { TupleAnswered } from '@/lib/schema'
+import { PATHS } from '@/constants'
 
 interface CourseValueType {
   key?: string
@@ -67,10 +68,10 @@ export default function HomePage() {
     return tabList[index]?.answers
   }, [activeTab, tabList])
   /**
-   * 答题集合, 每次提交时会被清空
-   * 结构类似这样 {题目id: [{答案id: 选项顺序}]}
+   * 以元祖配合map结构的方式来收集答题数据, 每次提交时会被清空
+   * 结构类似这样 [题目id, [[答案id, 选项顺序], [...]]]
    */
-  const [answerMap, setAnswerMap] = useState(new Map<string, Record<string, number>[]>())
+  const [answerMap, setAnswerMap] = useState(new Map<string, Array<TupleAnswered>>())
   /**
    * 根据答题集合来判断是否进入了答题状态
    */
@@ -219,7 +220,8 @@ export default function HomePage() {
     const answeredList = quizList.map((q) => {
       return { id: q.id, options: q.answerOptions.map((e) => e.id), answered: answerMap.get(q.id) }
     })
-    const res = await checkTest({ title: activeTab!, quizzesData: answeredList })
+    const title = `${courseOptions.find((e) => e.key === courseId)?.label} - ${activeTab}`
+    const res = await checkTest({ title, quizzesData: answeredList })
     if (res.success) {
       setAnswerMap((prev) => {
         prev.clear()
@@ -290,14 +292,14 @@ export default function HomePage() {
         </nav>
       </header>
       <div className="h-15 shrink-0"></div>
-      <main className="flex-1 flex flex-col overflow-hidden">
-        {tabList.length > 0 && (
-          <div className="shrink-0 w-screen-md xl:w-screen-lg mx-a">
-            <Tabs activeKey={activeTab} items={tabList} onChange={onTabChange} />
-          </div>
-        )}
-        <div className="relative flex-1 overflow-hidden">
-          <div className="overflow-x-hidden overflow-y-auto w-full h-full">
+      <main className="relative flex-1 flex overflow-hidden">
+        <div className="flex-1 flex flex-col pl-5 pr-[400px] overflow-hidden">
+          {tabList.length > 0 && (
+            <div className="shrink-0 w-screen-md xl:w-screen-lg">
+              <Tabs activeKey={activeTab} items={tabList} onChange={onTabChange} />
+            </div>
+          )}
+          <div className="overflow-x-hidden overflow-y-auto w-full h-full scrollbar-hide">
             <Form form={form}>
               <List
                 itemLayout="horizontal"
@@ -321,15 +323,18 @@ export default function HomePage() {
                                 <Checkbox.Group
                                   disabled={submitState}
                                   onChange={(ids: string[]) => {
-                                    const value = ids.map((id) => {
-                                      return { [id]: item.answerOptions.findIndex((option) => option.id === id) }
+                                    const tuple = ids.map((id) => {
+                                      return [
+                                        id,
+                                        item.answerOptions.findIndex((option) => option.id === id),
+                                      ] as TupleAnswered
                                     })
                                     setAnswerMap((prev) => {
                                       if (!prev.has(item.id)) {
-                                        return new Map(prev.set(item.id, value))
+                                        return new Map(prev.set(item.id, tuple))
                                       } else {
                                         prev.delete(item.id)
-                                        return new Map(prev.set(item.id, value))
+                                        return new Map(prev.set(item.id, tuple))
                                       }
                                     })
                                   }}
@@ -352,24 +357,26 @@ export default function HomePage() {
                                   disabled={submitState}
                                   onChange={(e) => {
                                     const value = e.target.value as string
-                                    const obj = {
-                                      [value]: item.answerOptions.findIndex((option) => option.id === value),
-                                    }
-                                    // 如果用对象收集数据的话,更新时需要用结构的方式
+                                    const tuple = [
+                                      value,
+                                      item.answerOptions.findIndex((option) => option.id === value),
+                                    ] as TupleAnswered
+
+                                    // 用map结构收集数据的话,更新时需要用 new Map
+                                    setAnswerMap((prev) => {
+                                      if (!prev.has(item.id)) {
+                                        return new Map(prev.set(item.id, [tuple]))
+                                      } else {
+                                        prev.delete(item.id)
+                                        return new Map(prev.set(item.id, [tuple]))
+                                      }
+                                    })
+
+                                    // 如果用对象收集数据的话,更新时需要用解构的方式
                                     // setAnswerMap((prev) => {
                                     //   prev[item.id] = [obj]
                                     //   return { ...prev }
                                     // })
-
-                                    // 如果用map结构收集数据的话,更新时需要用 new Map
-                                    setAnswerMap((prev) => {
-                                      if (!prev.has(item.id)) {
-                                        return new Map(prev.set(item.id, [obj]))
-                                      } else {
-                                        prev.delete(item.id)
-                                        return new Map(prev.set(item.id, [obj]))
-                                      }
-                                    })
                                   }}
                                 >
                                   <Space direction="vertical">
@@ -397,7 +404,7 @@ export default function HomePage() {
             </Form>
           </div>
         </div>
-        <div className="fixed z-10 top-1/4 right-4 w-sm">
+        <div className="absolute top-5 right-2 w-sm">
           <Card
             loading={loading}
             type="inner"

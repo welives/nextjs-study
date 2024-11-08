@@ -32,6 +32,11 @@ export const SIDE_BAR_ROUTES = [
     icon: 'heart',
   },
   {
+    path: "/admin/record",
+    name: '答题记录',
+    icon: 'heart',
+  },
+  {
     path: '/admin/course',
     name: '课程',
     icon: 'heart',
@@ -46,7 +51,7 @@ export const SIDE_BAR_ROUTES = [
 /**
  * 公开路由
  */
-export const PUBLIC_ROUTES = ['/', '/api/category', '/api/course', '/api/quiz']
+export const PUBLIC_ROUTES = ['/', '/api/category', '/api/course', '/api/quiz', '/api/record']
 
 /**
  * 权限路由

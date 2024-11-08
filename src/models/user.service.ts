@@ -2,10 +2,13 @@ import { cache } from 'react'
 import { eq, or } from 'drizzle-orm'
 import bcrypt from 'bcrypt'
 
-import db from '../lib/drizzle'
+import db from '@/lib/drizzle'
 import { userTable, UserRole } from '@/lib/schema'
 import { CreateUserData } from '@/dto'
 
+/**
+ * 根据邮箱查找用户
+ */
 export const findByEmail = cache(async (email: string) => {
   const res = await db.query.user.findFirst({
     where: eq(userTable.email, email)

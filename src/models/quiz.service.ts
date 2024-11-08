@@ -1,6 +1,5 @@
 import { cache } from 'react'
-import { eq, inArray } from 'drizzle-orm'
-import { matchSorter } from 'match-sorter'
+import { eq, like, inArray } from 'drizzle-orm'
 
 import { quizTable, answerOptionTable } from '@/lib/schema'
 import db from '@/lib/drizzle'
@@ -10,7 +9,7 @@ import { ListPageData, CreateQuizData, UpdateQuizData } from '../dto'
  * 分页列表
  */
 export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: ListPageData) => {
-  let res = await db.query.quiz.findMany({
+  const res = await db.query.quiz.findMany({
     with: {
       course: {
         columns: {
@@ -26,19 +25,24 @@ export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: 
         }
       }
     },
+    ...(keyword ? { where: like(quizTable.title, `%${keyword}%`) } : void 0),
+    limit,
+    offset: (page - 1) * limit
   })
-  if (keyword) {
-    res = matchSorter(res, keyword, { keys: ['title'] })
-  }
-  // Pagination logic
-  const offset = (page - 1) * limit
-  const quizzes = res.slice(offset, offset + limit)
-  const count = res.length
+  const count = await db.$count(quizTable, keyword ? like(quizTable.title, `%${keyword}%`) : void 0)
 
   return {
-    rows: quizzes,
+    rows: res,
     count
   }
+
+  // if (keyword) {
+  //   res = matchSorter(res, keyword, { keys: ['title'] })
+  // }
+  // // Pagination logic
+  // const offset = (page - 1) * limit
+  // const quizzes = res.slice(offset, offset + limit)
+  // const count = res.length
 })
 
 /**
@@ -113,7 +117,7 @@ export async function getOne(id: string) {
 export async function createOne({ title, type, course_id, chapter, remark, ...rest }: CreateQuizData) {
   await db.transaction(async (tx) => {
     try {
-      const [quizEntity] = await tx.insert(quizTable).values({ title, type, chapter, remark, courseId: course_id }).returning({ insertId: quizTable.id })
+      const [quizEntity] = await tx.insert(quizTable).values({ title, type, chapter: chapter ?? '', remark, courseId: course_id }).returning({ insertId: quizTable.id })
       if (!quizEntity) throw new Error('试题添加失败')
 
       const answerOptions = await Promise.all(rest.options.map(async (el) => {
@@ -134,7 +138,7 @@ export async function createOne({ title, type, course_id, chapter, remark, ...re
 export async function updateOne({ id, title, type, course_id, chapter, remark, ...rest }: UpdateQuizData) {
   await db.transaction(async (tx) => {
     try {
-      const [quizEntity] = await tx.update(quizTable).set({ title, type, chapter, remark, courseId: course_id }).where(eq(quizTable.id, id)).returning({ updateId: quizTable.id })
+      const [quizEntity] = await tx.update(quizTable).set({ title, type, chapter: chapter ?? '', remark, courseId: course_id }).where(eq(quizTable.id, id)).returning({ updateId: quizTable.id })
       if (!quizEntity) throw new Error('试题修改失败')
 
       if (rest.options?.length) {

@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState, useMemo, useRef } from 'react'
-import { useRouter } from 'next/navigation'
+import { useRouter, notFound } from 'next/navigation'
 import { Row, Col, Card, Button, Form, Input, Select, Spin, Radio, Checkbox, Tooltip, Space } from 'antd'
 import type { FormListFieldData, FormInstance, FormListOperation } from 'antd'
 import { ProCard, ProForm, ProFormText } from '@ant-design/pro-components'
@@ -17,7 +17,7 @@ import { useBreakpoints } from '@/hooks'
 import { QuizType } from '@/lib/schema'
 import { cn } from '@/lib/utils'
 import { getAllCourse } from '@/actions/course.action'
-import { createOne, updateOne } from '@/actions/quiz.action'
+import { getOne, createOne, updateOne } from '@/actions/quiz.action'
 import { CreateQuizData, UpdateQuizData } from '@/dto'
 
 interface CourseValueType {
@@ -78,35 +78,36 @@ const FormListItemTrigger = React.forwardRef<
 })
 
 interface QuizFormProps {
-  initialData: Api.QuizListData | null
+  id: string
 }
 
 /**
  * 试题表单页
  */
-export function QuizForm({ initialData }: QuizFormProps) {
+export function QuizForm({ id }: QuizFormProps) {
   const { isBelowXl } = useBreakpoints('xl')
   const router = useRouter()
   const [form] = Form.useForm()
   const [type, setType] = useState<QuizType>()
   const [courseOptions, setCourseOptions] = useState<CourseValueType[]>([])
-  const [fetching, setFetching] = useState(false)
-  const fetchRef = useRef(0)
+  const [courseFetching, setCourseFetching] = useState(false)
+  const courseFetchRef = useRef(0)
+
+  const [isMounted, setIsMounted] = useState(false)
+  const [initialData, setInitialData] = useState<Api.QuizListData | null>()
   // 按照接口提交的格式构造数据并生成 hashkey
-  const answerOptionsHashKey = useRef(
-    hash(initialData?.answerOptions.map((e) => ({ id: e.id, content: e.content, is_correct: e.isCorrect })))
-  )
+  const answerOptionsHashKey = useRef<string>()
 
   // 封装远程搜索课程选项的防抖函数
   const debounceCourseFetch = useMemo(() => {
     const loadOptions = (keyword?: string) => {
-      fetchRef.current += 1
-      const fetchId = fetchRef.current
+      courseFetchRef.current += 1
+      const fetchId = courseFetchRef.current
       setCourseOptions([])
-      setFetching(true)
+      setCourseFetching(true)
 
       getAllCourse().then((res) => {
-        if (fetchId !== fetchRef.current) return
+        if (fetchId !== courseFetchRef.current) return
 
         if (!res.success) {
           toast.error(res.message)
@@ -114,7 +115,7 @@ export function QuizForm({ initialData }: QuizFormProps) {
           const data = res.data ?? []
           const options = keyword ? matchSorter(data, keyword, { keys: ['title'] }) : data
           setCourseOptions(options.map((e) => ({ key: e.id, label: e.title, value: e.id })))
-          setFetching(false)
+          setCourseFetching(false)
         }
       })
     }
@@ -122,9 +123,18 @@ export function QuizForm({ initialData }: QuizFormProps) {
   }, [])
 
   // 页面加载时执行一次初始搜索
-  useMount(() => {
+  useMount(async () => {
+    if (id !== 'new') {
+      const res = await getOne(id)
+      if (!res.success || !res.data) notFound()
+      setInitialData(res.data)
+      setType(res.data.type)
+      answerOptionsHashKey.current = hash(
+        res.data.answerOptions.map((e) => ({ id: e.id, content: e.content, is_correct: e.isCorrect }))
+      )
+    }
     debounceCourseFetch()
-    setType(initialData?.type)
+    setIsMounted(true)
   })
 
   const onSubmit = async (values: CreateQuizData & UpdateQuizData) => {
@@ -160,144 +170,148 @@ export function QuizForm({ initialData }: QuizFormProps) {
 
   return (
     <ErrorBoundary fallback={<h2>出错啦!</h2>}>
-      <ProCard
-        title={
-          <div className="flex gap-4 items-center">
-            <span className="flex gap-2 hover:cursor-pointer hover:text-blue" onClick={() => router.back()}>
-              <ArrowLeftOutlined />
-              返回
-            </span>
-            <h3 className="m-0">{initialData ? initialData.title : '添加试题'}</h3>
-          </div>
-        }
-      >
-        <ProForm
-          autoComplete="off"
-          layout="horizontal"
-          form={form}
-          onFinish={onSubmit}
-          submitter={{
-            resetButtonProps: {
-              onClick: () => {
-                setType(void 0)
-                form.resetFields()
-              },
-            },
-            render: (props, doms) => (
-              <Row>
-                <Col span={isBelowXl ? 24 : 18} className="text-center">
-                  <Space>{doms}</Space>
-                </Col>
-              </Row>
-            ),
-          }}
+      {isMounted ? (
+        <ProCard
+          title={
+            <div className="flex gap-4 items-center">
+              <span className="flex gap-2 hover:cursor-pointer hover:text-blue" onClick={() => router.back()}>
+                <ArrowLeftOutlined />
+                返回
+              </span>
+              <h3 className="m-0">{initialData ? initialData.title : '添加试题'}</h3>
+            </div>
+          }
         >
-          <ProFormText hidden={true} name="id" initialValue={initialData?.id} />
-          <Form.Item
-            labelCol={{ span: 4 }}
-            wrapperCol={{ span: isBelowXl ? 20 : 12 }}
-            name="type"
-            label={formFields.type.label}
-            rules={formFields.type.rules}
-            initialValue={initialData?.type}
-          >
-            <Select
-              allowClear
-              placeholder={formFields.type.placeholder}
-              options={[
-                { label: '单选题', value: QuizType.SINGLE },
-                { label: '多选题', value: QuizType.MULTIPLE },
-                { label: '判断题', value: QuizType.JUDGEMENT },
-              ]}
-              onSelect={(value: QuizType) => setType(value)}
-            />
-          </Form.Item>
-          <Form.Item
-            labelCol={{ span: 4 }}
-            wrapperCol={{ span: isBelowXl ? 20 : 12 }}
-            name="course_id"
-            label={formFields.course_id.label}
-            rules={formFields.course_id.rules}
-            initialValue={initialData?.courseId}
-          >
-            <Select
-              showSearch
-              allowClear
-              filterOption={false}
-              placeholder={formFields.course_id.placeholder}
-              notFoundContent={fetching ? <Spin size="small" /> : null}
-              options={courseOptions}
-              onSearch={debounceCourseFetch}
-            />
-          </Form.Item>
-          <Form.Item
-            labelCol={{ span: 4 }}
-            wrapperCol={{ span: isBelowXl ? 20 : 12 }}
-            name="title"
-            label={formFields.title.label}
-            rules={formFields.title.rules}
-            initialValue={initialData?.title}
-          >
-            <Input placeholder={formFields.title.placeholder}></Input>
-          </Form.Item>
-          <Form.Item
-            labelCol={{ span: 4 }}
-            wrapperCol={{ span: isBelowXl ? 20 : 12 }}
-            name="chapter"
-            label={formFields.chapter.label}
-            rules={formFields.chapter.rules}
-            initialValue={initialData?.chapter}
-          >
-            <Input placeholder={formFields.chapter.placeholder}></Input>
-          </Form.Item>
-          <Form.Item
-            labelCol={{ span: 4 }}
-            wrapperCol={{ span: isBelowXl ? 20 : 12 }}
-            name="remark"
-            label={formFields.remark.label}
-            rules={formFields.remark.rules}
-            initialValue={initialData?.remark}
-          >
-            <Input placeholder={formFields.remark.placeholder}></Input>
-          </Form.Item>
-
-          <Form.List
-            name="options"
-            //! 官方文档说应该始终在 Form.List 组件设置初始值进行回显, 其内部的子字段不应该设置初始值
-            initialValue={initialData?.answerOptions.map((e) => ({
-              id: e.id,
-              content: e.content,
-              is_correct: e.isCorrect,
-            }))}
-            rules={[
-              {
-                async validator(_, options) {
-                  if (!options || options.length < 1) {
-                    return Promise.reject(new Error('候选答案不能为空'))
-                  }
-                  return true
+          <ProForm
+            autoComplete="off"
+            layout="horizontal"
+            form={form}
+            onFinish={onSubmit}
+            submitter={{
+              resetButtonProps: {
+                onClick: () => {
+                  setType(void 0)
+                  form.resetFields()
                 },
               },
-            ]}
-          >
-            {(fields, { add, remove }, { errors }) => {
-              return (
-                type && (
-                  <DynamicFormContent
-                    type={type}
-                    add={add}
-                    remove={remove}
-                    form={form}
-                    fields={fields}
-                    errors={errors}
-                    isNew={!initialData}
-                  />
-                )
-              )
+              render: (props, doms) => (
+                <Row>
+                  <Col span={isBelowXl ? 24 : 18} className="text-center">
+                    <Space>{doms}</Space>
+                  </Col>
+                </Row>
+              ),
             }}
-          </Form.List>
-        </ProForm>
-      </ProCard>
+          >
+            <ProFormText hidden={true} name="id" initialValue={initialData?.id} />
+            <Form.Item
+              labelCol={{ span: 4 }}
+              wrapperCol={{ span: isBelowXl ? 20 : 12 }}
+              name="type"
+              label={formFields.type.label}
+              rules={formFields.type.rules}
+              initialValue={initialData?.type}
+            >
+              <Select
+                allowClear
+                placeholder={formFields.type.placeholder}
+                options={[
+                  { label: '单选题', value: QuizType.SINGLE },
+                  { label: '多选题', value: QuizType.MULTIPLE },
+                  { label: '判断题', value: QuizType.JUDGEMENT },
+                ]}
+                onSelect={(value: QuizType) => setType(value)}
+              />
+            </Form.Item>
+            <Form.Item
+              labelCol={{ span: 4 }}
+              wrapperCol={{ span: isBelowXl ? 20 : 12 }}
+              name="course_id"
+              label={formFields.course_id.label}
+              rules={formFields.course_id.rules}
+              initialValue={initialData?.courseId}
+            >
+              <Select
+                showSearch
+                allowClear
+                filterOption={false}
+                placeholder={formFields.course_id.placeholder}
+                notFoundContent={courseFetching ? <Spin size="small" /> : null}
+                options={courseOptions}
+                onSearch={debounceCourseFetch}
+              />
+            </Form.Item>
+            <Form.Item
+              labelCol={{ span: 4 }}
+              wrapperCol={{ span: isBelowXl ? 20 : 12 }}
+              name="title"
+              label={formFields.title.label}
+              rules={formFields.title.rules}
+              initialValue={initialData?.title}
+            >
+              <Input placeholder={formFields.title.placeholder}></Input>
+            </Form.Item>
+            <Form.Item
+              labelCol={{ span: 4 }}
+              wrapperCol={{ span: isBelowXl ? 20 : 12 }}
+              name="chapter"
+              label={formFields.chapter.label}
+              rules={formFields.chapter.rules}
+              initialValue={initialData?.chapter}
+            >
+              <Input placeholder={formFields.chapter.placeholder}></Input>
+            </Form.Item>
+            <Form.Item
+              labelCol={{ span: 4 }}
+              wrapperCol={{ span: isBelowXl ? 20 : 12 }}
+              name="remark"
+              label={formFields.remark.label}
+              rules={formFields.remark.rules}
+              initialValue={initialData?.remark}
+            >
+              <Input placeholder={formFields.remark.placeholder}></Input>
+            </Form.Item>
+
+            <Form.List
+              name="options"
+              //! 官方文档说应该始终在 Form.List 组件设置初始值进行回显, 其内部的子字段不应该设置初始值
+              initialValue={initialData?.answerOptions.map((e) => ({
+                id: e.id,
+                content: e.content,
+                is_correct: e.isCorrect,
+              }))}
+              rules={[
+                {
+                  async validator(_, options) {
+                    if (!options || options.length < 1) {
+                      return Promise.reject(new Error('候选答案不能为空'))
+                    }
+                    return true
+                  },
+                },
+              ]}
+            >
+              {(fields, { add, remove }, { errors }) => {
+                return (
+                  type && (
+                    <DynamicFormContent
+                      type={type}
+                      add={add}
+                      remove={remove}
+                      form={form}
+                      fields={fields}
+                      errors={errors}
+                      isNew={!initialData}
+                    />
+                  )
+                )
+              }}
+            </Form.List>
+          </ProForm>
+        </ProCard>
+      ) : (
+        <Spin />
+      )}
     </ErrorBoundary>
   )
 }

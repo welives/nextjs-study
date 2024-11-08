@@ -3,10 +3,11 @@ import { relations } from 'drizzle-orm'
 import { createId } from '@paralleldrive/cuid2'
 import { userTable } from './user'
 
-type AnsweredData = [string, number]
+// 第一项是用户的答案id, 第二项是当时候选答案中所处的顺序
+export type TupleAnswered = [string, number]
 
-// 自定义字段类型
-const answeredIdsJson = <TData>(name: string) =>
+// 自定义元祖类型字段
+const customJson = <TData>(name: string) =>
   customType<{ data: TData; driverData: string }>({
     dataType() {
       return 'json'
@@ -16,8 +17,7 @@ const answeredIdsJson = <TData>(name: string) =>
     },
   })(name)
 
-
-/** 测试记录表 */
+/** 答题记录表 */
 
 export const testRecordTable = pgTable('test_records', {
   id: varchar('id').primaryKey().$defaultFn(createId),
@@ -27,7 +27,8 @@ export const testRecordTable = pgTable('test_records', {
   title: varchar('title', { length: 100 }).notNull(),
   quizIds: varchar('quiz_ids').array().notNull(),
   answerOptionsIds: varchar('answer_options_ids').array().array().notNull(),
-  answeredIds: answeredIdsJson<Record<string, number>[]>('answered_ids').array(),
+  answeredIds: customJson<TupleAnswered[]>('answered_ids').array().default([]),
+  correctRatio: json('correct_ratio').$type<[number, number]>().notNull(),
   createdAt: timestamp('created_at').notNull().defaultNow(),
   updatedAt: timestamp('updated_at')
     .notNull()

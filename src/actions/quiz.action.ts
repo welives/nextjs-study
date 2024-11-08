@@ -47,16 +47,14 @@ export async function checkTest(data: CheckQuizAnswer) {
       let result = false
       if (answered) {
         // 用户提交的答案每一项都在正确答案当中时
-        result = answered.length === correctOptions.length && answered.every(op => {
-          const key = Object.keys(op)[0]
-          return correctOptions.includes(key)
-        })
+        result = answered.length === correctOptions.length && answered.every(op => correctOptions.includes(op[0]))
       }
       return { id: quiz.id, correctOptions, result }
     })
 
     if (session?.user) {
-      await RecordService.createOne(data, session.user.id!)
+      const ratio: [number, number] = [res.filter(e => e.result).length, res.map(e => e.id).length]
+      await RecordService.createOne(data, ratio, session.user.id!)
     }
 
     return actionSuccess(res)
@@ -72,8 +70,6 @@ export async function checkTest(data: CheckQuizAnswer) {
  */
 export const getOne = cache(async (id: string) => {
   try {
-    if (!(await isAdmin())) throw new Error('Unauthorized')
-
     const parsed = quizIdSchema.safeParse(id)
     if (!parsed.success) {
       const msg = formatZodErrorMsg(parsed.error.issues)
