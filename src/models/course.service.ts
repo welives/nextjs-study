@@ -20,7 +20,6 @@ export async function getAll() {
  * 分页列表
  */
 export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: ListPageData) => {
-  console.log('keyword', keyword);
   const res = await db.query.course.findMany({
     with: {
       category: {

@@ -43,7 +43,6 @@ export function RecordDetailPage({ id }: PageProps) {
 
   useMount(async () => {
     const res = await getOne(id)
-    console.log(res)
     if (!res.success || !res.data) notFound()
     setRecordData(res.data.quizzes)
     setTitle(res.data.title)

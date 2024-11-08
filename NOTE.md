@@ -1,22 +1,10 @@
 #### 开发随记
 
-## UNOCSS在Nextjs 14中不能正常解析的写法
+## UNOCSS在Nextjs 中并不是所有功能都支持
 
-`transformerCompileClass`和`transformerVariantGroup` 不支持
+`transformerCompileClass`和`transformerVariantGroup` 这两个预设不支持
 
-先说结论：尽量写在`className`里
-
-不支持解析的写法，不完全统计
-
-```js
-grid="~ xxx"
-position="relative xxx"
-absolute="~ xxx"
-flex="1"
-border="~ xxx"
-text="xxx"
-shadow="xxx"
-```
+然后样式类的话尽量写在`className`里
 
 ---
 

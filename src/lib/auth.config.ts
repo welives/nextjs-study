@@ -26,6 +26,14 @@ export default {
         email: {},
         role: {},
       },
+      /**
+       * drizzle-orm不能在中间件进行数据库操作,会报找不到node的原生模块的错误
+       * 所有需要把登录验证的操作放到server action去做
+       * 然后调用signIn方法把验证通过的用户数据提交过来
+       * @param credentials next-auth的signIn方法提交的数据会塞进这个参数
+       * @param req
+       * @returns
+       */
       async authorize(credentials, req) {
         const user = {
           id: credentials.id as string,
