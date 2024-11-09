@@ -56,6 +56,7 @@ export default function HomePage() {
 
   const [tabList, setTabList] = useState<TabData[]>([])
   const [activeTab, setActiveTab] = useState<string>()
+  const activeTabRef = useRef<string>()
   /**
    * 当前选项卡下的试题列表
    */
@@ -111,6 +112,7 @@ export default function HomePage() {
   useEffect(() => {
     setLoading(true)
     setTabList([])
+    activeTabRef.current = void 0
     setActiveTab(void 0)
     handleResetAnswerData()
     getByCourseId(courseId).then((res) => {
@@ -135,6 +137,7 @@ export default function HomePage() {
             answers: void 0,
           }))
         )
+        activeTabRef.current = tabs[0]
         setActiveTab(tabs[0])
       }
       setLoading(false)
@@ -168,6 +171,11 @@ export default function HomePage() {
     })
   }
 
+  const resetScroll = () => {
+    const dom = document.querySelector('.quiz-list')
+    dom?.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
   const onTabChange = (e: string) => {
     // 已开始答题,但是没提交时拦截切换给个提示
     if (startedState) {
@@ -176,13 +184,17 @@ export default function HomePage() {
         content: '你的新一轮测试还没做完，确定要放弃吗？',
         okText: '放弃',
         onOk() {
+          activeTabRef.current = e
           setActiveTab(e)
           handleResetAnswerData()
+          resetScroll()
         },
         cancelText: '继续做',
       })
     } else {
+      activeTabRef.current = e
       setActiveTab(e)
+      resetScroll()
     }
   }
 
@@ -190,12 +202,14 @@ export default function HomePage() {
    * 重置当前选项卡的答题数据
    */
   const handleResetAnswerData = () => {
+    prevScrollToId.current = void 0
+    resetScroll()
     form.resetFields()
     setAnswerMap((prev) => {
       prev.clear()
       return new Map()
     })
-    const index = tabList.findIndex((e) => e.key === activeTab)
+    const index = tabList.findIndex((e) => e.key === activeTabRef.current)
     if (index !== -1) {
       setTabList((prev) => {
         prev[index].answers = void 0
@@ -299,7 +313,7 @@ export default function HomePage() {
               <Tabs activeKey={activeTab} items={tabList} onChange={onTabChange} />
             </div>
           )}
-          <div className="overflow-x-hidden overflow-y-auto w-full h-full scrollbar-hide">
+          <div className="quiz-list overflow-x-hidden overflow-y-auto w-full h-full scrollbar-hide">
             <Form form={form}>
               <List
                 itemLayout="horizontal"
@@ -404,7 +418,7 @@ export default function HomePage() {
             </Form>
           </div>
         </div>
-        <div className="absolute top-5 right-2 w-sm">
+        <div className="absolute top-15 right-2 w-sm">
           <Card
             loading={loading}
             type="inner"
