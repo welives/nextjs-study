@@ -1,7 +1,26 @@
 {
   "name": "next-study",
   "version": "0.1.0",
+  "description": "a simple next.js demo for beginner",
   "private": true,
+  "keywords": [
+    "Next.js",
+    "next-auth",
+    "ant-design",
+    "drizzle-orm",
+    "postgreSQL",
+    "zod",
+    "unocss",
+    "docker"
+  ],
+  "author": {
+    "name": "welives",
+    "url": "https://github.com/welives"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:welives/nextjs-study.git"
+  },
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
@@ -23,7 +42,6 @@
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
     "drizzle-orm": "^0.35.3",
-    "foxact": "^0.2.40",
     "hash-sum": "^2.0.0",
     "immer": "^10.1.1",
     "match-sorter": "^7.0.0",
@@ -32,7 +50,6 @@
     "next-intl": "^3.23.5",
     "next-themes": "^0.3.0",
     "nextjs-toploader": "^3.7.15",
-    "nuqs": "^2.0.4",
     "ofetch": "^1.4.1",
     "radash": "^12.1.0",
     "react": "^18.3.1",

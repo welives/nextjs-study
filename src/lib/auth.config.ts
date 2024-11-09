@@ -27,8 +27,9 @@ export default {
         role: {},
       },
       /**
-       * drizzle-orm不能在中间件进行数据库操作,会报找不到node的原生模块的错误
-       * 所有需要把登录验证的操作放到server action去做
+       * 在这里写自己的账号密码逻辑检验, 例如请求自己的接口或远端服务器
+       * 但是`drizzle-orm`不像`prima`那样能在中间件进行数据库操作,会报找不到node的原生模块的错误
+       * 所以换个姿势, 把登录验证的操作放到server action去做, 验证成功后返回用户信息
        * 然后调用signIn方法把验证通过的用户数据提交过来
        * @param credentials next-auth的signIn方法提交的数据会塞进这个参数
        * @param req

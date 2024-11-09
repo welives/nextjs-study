@@ -295,7 +295,7 @@ export default function HomePage() {
       <main className="relative flex-1 flex overflow-hidden">
         <div className="flex-1 flex flex-col pl-5 pr-[400px] overflow-hidden">
           {tabList.length > 0 && (
-            <div className="shrink-0 w-screen-md xl:w-screen-lg">
+            <div className="shrink-0 w-screen-md xl:w-screen-lg mx-a">
               <Tabs activeKey={activeTab} items={tabList} onChange={onTabChange} />
             </div>
           )}

@@ -36,46 +36,71 @@
 
 ## next-auth
 
-- 在根目录或者`lib`目录下创建`auth.ts`和`auth.config.ts`两个文件，主要用来处理鉴权逻辑
+- 在`src/app/lib`目录下创建`auth.ts`和`auth.config.ts`两个文件，主要用来处理鉴权逻辑
 
 ```ts
 // auth.config.ts
 import { NextAuthConfig } from 'next-auth'
 import CredentialProvider from 'next-auth/providers/credentials'
-import GithubProvider from 'next-auth/providers/github'
+import { AUTH_SECRET, __DEV__ } from '@/config'
 
 export default {
   providers: [
-    /** @see https://next-auth.js.org/providers/github */
-    GithubProvider({
-      clientId: process.env.GITHUB_ID ?? '',
-      clientSecret: process.env.GITHUB_SECRET ?? '',
-    }),
     /**
      * 自定义口令登录
      * @see https://next-auth.js.org/configuration/providers/credentials
      */
     CredentialProvider({
       credentials: {
-        email: { label: '邮箱', type: 'email', placeholder: 'admin@google.com' },
-        password: { label: '密码', type: 'password', },
+        id: {},
+        name: {},
+        email: {},
+        role: {},
       },
+      /**
+       * 在这里写自己的账号密码逻辑检验, 例如请求自己的接口或远端服务器
+       * 但是`drizzle-orm`不像`prima`那样能在中间件进行数据库操作,会报找不到node的原生模块的错误
+       * 所以换个姿势, 把登录验证的操作放到server action去做, 验证成功后返回用户信息
+       * 然后调用signIn方法把验证通过的用户数据提交过来
+       * @param credentials next-auth的signIn方法提交的数据会塞进这个参数
+       * @param req
+       * @returns
+       */
       async authorize(credentials, req) {
-        // 在这里写自己的账号密码逻辑检验, 例如请求自己的接口或远端服务器
         const user = {
-          id: '1',
-          name: 'Jandan',
-          email: credentials?.email as string,
+          id: credentials.id as string,
+          name: credentials.name as string,
+          email: credentials.email as string,
+          role: credentials.role as string
         }
-        // 这里为了简单演示,直接不校验
-        if (user) {
-          return user
-        } else {
-          return null
-        }
+        return user ?? null
       },
     }),
   ],
+  callbacks: {
+    // 执行顺序 signIn => jwt => session
+    async signIn({ user, account, }) {
+      return true
+    },
+    async jwt({ token, user }) {
+      if (user) {
+        token.id = user.id
+        token.role = user.role
+      }
+      return token
+    },
+    // 可在session中读到在jwt方法返回的token值，可将需要的属性放到session中，如角色、权限等
+    session({ session, token }) {
+      if (token.sub && session.user) {
+        session.user.id = token.sub
+        session.user.role = token.role as string
+      }
+      return session
+    },
+  },
+  secret: AUTH_SECRET,
+  session: { strategy: 'jwt' },
+  debug: __DEV__,
   pages: {
     signIn: '/auth/sign-in',
   },
@@ -90,73 +115,66 @@ import authConfig from './auth.config'
 export const { auth, handlers, signOut, signIn } = NextAuth(authConfig)
 ```
 
-- 创建`app/api/auth/[...nextauth]/route.ts`文件，用来处理`next-auth`的接口
+- 在`src/types`目录下创建`next-auth.d.ts`，用来扩展`next-auth`的类型
+
+```ts
+import { type DefaultSession, User as NextUser } from 'next-auth'
+
+declare module 'next-auth' {
+  interface User extends NextUser {
+    role?: string
+  }
+}
+```
+
+- 创建`src/app/api/auth/[...nextauth]/route.ts`文件，用来处理`next-auth`的接口
 
 ```ts
 import { handlers } from '@/lib/auth'
 export const { GET, POST } = handlers
 ```
 
-- 在登录页的表单组件中编写前端的登录逻辑
+- 在登录页编写前端的登录逻辑
 
 ```tsx
 'use client'
-import * as React from 'react'
-import { useSearchParams } from 'next/navigation'
-import { useForm } from 'react-hook-form'
-import { z } from 'zod'
-import { zodResolver } from '@hookform/resolvers/zod'
+
+import { useTransition } from 'react'
 import { signIn } from 'next-auth/react'
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
+import { useSearchParams } from 'next/navigation'
+import { cn, formatZodErrorMsg } from '@/lib/utils'
+import { userSignIn } from '@/actions/user.action'
+import { signInSchema } from '@/dto'
+import { PATHS } from '@/constants'
 
-const formSchema = z.object({
-  email: z.string().min(1, { message: '请输入邮箱' }).email({ message: '邮箱格式不正确' }),
-  password: z.string().min(1, { message: '请输入密码' }).min(6, { message: '密码长度至少6位' }),
-})
-
-export function CredentialsForm({ className, ...props }: SignInFormProps) {
+export default function Page() {
   const searchParams = useSearchParams()
   const callbackUrl = searchParams.get('callbackUrl')
-  const [loading, startTransition] = React.useTransition()
-
-  // 使用zod校验用户输入
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    defaultValues: {
-      email: '',
-      password: '',
-    },
-  })
-
+  const [isPending, startTransition] = useTransition()
   // 提交表单
-  function onSubmit(data: z.infer<typeof formSchema>) {
-    startTransition(() => {
-      signIn('credentials', {
-        ...data,
-        callbackUrl: callbackUrl ?? '/admin',
-      })
+  function onSubmit(data: any) {
+    const parsed = signInSchema.safeParse(data)
+    if (!parsed.success) {
+      const msg = formatZodErrorMsg(parsed.error.issues)
+      toast.error(msg)
+      return
+    }
+
+    startTransition(async () => {
+      // 因为drizzle-orm不能在中间件进行数据库操作,所以改成在这里调用action进行用户登录校验
+      const res = await userSignIn({ email: data.email, password: data.password })
+      toast.success(res.message)
+      if (res.success) {
+        // 把校验通过的用户信息提交给next-auth, 会在authorize方法中接收到数据
+        await signIn('credentials', {
+          ...res.data,
+          redirectTo: callbackUrl ?? PATHS.SITE_HOME,
+        })
+      }
     })
   }
-
   return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)}>
-        <FormField
-          control={form.control}
-          name="email"
-          render={({ field }) => (
-            <FormItem className="space-y-1">
-              <FormLabel>邮箱</FormLabel>
-              <FormControl>
-                <Input placeholder="name@example.com" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        // ...
-      </form>
-    </Form>
+    ...
   )
 }
 ```
@@ -165,7 +183,7 @@ export function CredentialsForm({ className, ...props }: SignInFormProps) {
 
 ```tsx
 import { SessionProvider, SessionProviderProps } from 'next-auth/react'
-import { ThemeProvider } from './theme'
+import { ThemeProvider } from '../theme'
 
 export function AuthProvider({
   session,
@@ -185,7 +203,9 @@ export function AuthProvider({
 - 根据自己的情况在合适的位置应用`AuthProvider`。我这里简单的以根布局`RootLayout`为例，这表示整个应用的访问都受`next-auth`管控
 
 ```tsx
-import { AuthProvider } from '@/components/auth-provider'
+import NextTopLoader from 'nextjs-toploader'
+import { AuthProvider, AntdStyleRegistry } from '@/components/layouts'
+import { Toaster } from '@/components/toaster'
 import { auth } from '@/lib/auth'
 
 export default async function RootLayout({
@@ -197,11 +217,11 @@ export default async function RootLayout({
   const session = await auth()
   return (
     <html lang="en">
-      <body className={`${inter.className} overflow-hidden`} suppressHydrationWarning>
+      <body className={inter.className} suppressHydrationWarning>
         <NextTopLoader showSpinner={false} />
+        <Toaster />
         <AuthProvider session={session}>
-          <Toaster />
-          {children}
+          <AntdStyleRegistry>{children}</AntdStyleRegistry>
         </AuthProvider>
       </body>
     </html>
@@ -212,24 +232,42 @@ export default async function RootLayout({
 - 设置中间件
 
 ```ts
-import { NextResponse } from 'next/server'
 import NextAuth from 'next-auth'
+import { NextResponse } from 'next/server'
 import authConfig from '@/lib/auth.config'
+import { PATHS, PUBLIC_ROUTES, AUTH_ROUTES } from '@/constants'
 
 const { auth } = NextAuth(authConfig)
 
 // 中间件处理逻辑
 export default auth(async (req) => {
-  if (!req.auth) {
-    const url = new URL('/auth/sign-in', req.nextUrl.origin)
-    return NextResponse.redirect(url)
+  const { nextUrl } = req
+  const isSignedIn = !!req.auth // 是否已经登录
+  const isApiAuthRoute = nextUrl.pathname.startsWith(PATHS.API_AUTH_PREFIX)
+  const isPublicRoute = PUBLIC_ROUTES.includes(nextUrl.pathname)
+  const isAuthRoute = AUTH_ROUTES.includes(nextUrl.pathname)
+  // 返回空表示不用执行权限检查, 对于公开路径和鉴权接口,无需登录即可访问
+  // next-auth的鉴权接口
+  if (isApiAuthRoute) return NextResponse.next()
+
+  // 需要鉴权的路由
+  if (isAuthRoute) {
+    // 登录后, 再访问鉴权路由时会重定向到后台
+    if (isSignedIn) {
+      return NextResponse.redirect(new URL(PATHS.ADMIN_HOME, nextUrl))
+    } else {
+      return NextResponse.next()
+    }
   }
-  return NextResponse.next()
+
+  // 没有登录时重定向到登录页
+  if (!isSignedIn && !isPublicRoute) {
+    return NextResponse.redirect(new URL(PATHS.AUTH_SIGN_IN, nextUrl))
+  }
 })
 
 export const config = {
-  // 表示 /admin 下面的所有链接都需要登录才能访问
-  matcher: ['/admin/:path']
+  matcher: ['/((?!.+\\.[\\w]+$|_next).*)', '/', '/(api|trpc)(.*)'],
 }
 ```
 

@@ -26,9 +26,11 @@ export default function Page() {
     }
 
     startTransition(async () => {
+      // 因为drizzle-orm不能在中间件进行数据库操作,所以改成在这里调用action进行用户登录校验
       const res = await userSignIn({ email: data.email, password: data.password })
       toast.success(res.message)
       if (res.success) {
+        // 把校验通过的用户信息提交给next-auth, 会在authorize方法中接收到数据
         await signIn('credentials', {
           ...res.data,
           redirectTo: callbackUrl ?? PATHS.SITE_HOME,
@@ -68,7 +70,7 @@ export default function Page() {
             size: 'large',
             prefix: <UserOutlined className={cn('text-secondary-foreground')} />,
           }}
-          placeholder={'邮箱: admin@gmail.com'}
+          placeholder={'邮箱: jandan@qq.com'}
           rules={[
             {
               required: true,
@@ -86,7 +88,7 @@ export default function Page() {
             size: 'large',
             prefix: <LockOutlined className={cn('text-secondary-foreground')} />,
           }}
-          placeholder={'密码: ant.design'}
+          placeholder={'密码: 123456'}
           rules={[
             {
               required: true,

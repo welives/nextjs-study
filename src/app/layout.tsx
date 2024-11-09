@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import NextTopLoader from 'nextjs-toploader'
 import { Inter } from 'next/font/google'
-import { NuqsAdapter } from 'nuqs/adapters/next/app'
 
 import { AuthProvider, AntdStyleRegistry } from '@/components/layouts'
 import { Toaster } from '@/components/toaster'
@@ -41,12 +40,10 @@ export default async function RootLayout({
       <link rel="icon" type="image/png" href="favicon.png" />
       <body className={inter.className} suppressHydrationWarning>
         <NextTopLoader showSpinner={false} />
-        <NuqsAdapter>
-          <Toaster />
-          <AuthProvider session={session}>
-            <AntdStyleRegistry>{children}</AntdStyleRegistry>
-          </AuthProvider>
-        </NuqsAdapter>
+        <Toaster />
+        <AuthProvider session={session}>
+          <AntdStyleRegistry>{children}</AntdStyleRegistry>
+        </AuthProvider>
       </body>
     </html>
   )
