@@ -2,13 +2,14 @@ import { cache } from 'react'
 import { eq, like, inArray } from 'drizzle-orm'
 
 import { quizTable, answerOptionTable } from '@/lib/schema'
-import db from '@/lib/drizzle'
-import { ListPageData, CreateQuizData, UpdateQuizData } from '../dto'
+import { getConnection } from '@/lib/drizzle'
+import { ListPageData, CreateQuizData, UpdateQuizData } from '@/dto'
 
 /**
  * 分页列表
  */
 export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: ListPageData) => {
+  const db = await getConnection()
   const res = await db.query.quiz.findMany({
     with: {
       course: {
@@ -52,6 +53,7 @@ export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: 
  * @returns
  */
 export async function findByCourseId(id: string, withCorrectAnswer = false) {
+  const db = await getConnection()
   const res = await db.query.quiz.findMany({
     where: eq(quizTable.courseId, id),
     with: {
@@ -71,6 +73,7 @@ export async function findByCourseId(id: string, withCorrectAnswer = false) {
  * 根据试题集合进行查找
  */
 export const findByIds = cache(async (ids: string[]) => {
+  const db = await getConnection()
   const res = await db.query.quiz.findMany({
     where: inArray(quizTable.id, ids),
     with: {
@@ -90,6 +93,7 @@ export const findByIds = cache(async (ids: string[]) => {
  * 试题详情
  */
 export async function getOne(id: string) {
+  const db = await getConnection()
   const res = await db.query.quiz.findFirst({
     where: eq(quizTable.id, id),
     with: {
@@ -115,6 +119,7 @@ export async function getOne(id: string) {
  * 添加试题和答案选项
  */
 export async function createOne({ title, type, course_id, chapter, remark, ...rest }: CreateQuizData) {
+  const db = await getConnection()
   await db.transaction(async (tx) => {
     try {
       const [quizEntity] = await tx.insert(quizTable).values({ title, type, chapter: chapter ?? '', remark, courseId: course_id }).returning({ insertId: quizTable.id })
@@ -136,6 +141,7 @@ export async function createOne({ title, type, course_id, chapter, remark, ...re
  * 更新试题和答案选项
  */
 export async function updateOne({ id, title, type, course_id, chapter, remark, ...rest }: UpdateQuizData) {
+  const db = await getConnection()
   await db.transaction(async (tx) => {
     try {
       const [quizEntity] = await tx.update(quizTable).set({ title, type, chapter: chapter ?? '', remark, courseId: course_id }).where(eq(quizTable.id, id)).returning({ updateId: quizTable.id })
@@ -163,6 +169,7 @@ export async function updateOne({ id, title, type, course_id, chapter, remark, .
  * @returns
  */
 export async function deleteOne(id: string) {
+  const db = await getConnection()
   const [entity] = await db.delete(quizTable).where(eq(quizTable.id, id)).returning({ deleteId: quizTable.id })
   if (!entity) throw new Error('删除失败')
   return id === entity.deleteId

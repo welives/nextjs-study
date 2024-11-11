@@ -79,54 +79,6 @@
     -webkit-text-fill-color: unset !important;
   }
 
-  @keyframes accordionDown {
-    from: {
-      height: '0';
-    }
-    ,
-    to: {
-      height: 'var(--radix-accordion-content-height)';
-    }
-  }
-  @keyframes accordionUp {
-    from: {
-      height: 'var(--radix-accordion-content-height)';
-    }
-    ,
-    to: {
-      height: '0';
-    }
-  }
-
-  @keyframes slideDown {
-    from {
-      height: 0;
-    }
-    to {
-      height: var(--radix-collapsible-content-height);
-    }
-  }
-  @keyframes slideUp {
-    from {
-      height: var(--radix-collapsible-content-height);
-    }
-    to {
-      height: 0;
-    }
-  }
-
-  @keyframes blink {
-    0% {
-      opacity: 0.2;
-    }
-    20% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0.2;
-    }
-  }
-
   @media (prefers-color-scheme: dark) {
     html {
       color-scheme: dark;

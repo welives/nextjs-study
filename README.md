@@ -22,16 +22,12 @@ Follow these steps to clone the repository and start the development server:
 
 - `git clone https://github.com/welives/nextjs-study.git`
 - `pnpm i`
-- Create a `.env` file by copying the example environment file:
-  `cp .env.example .env`
-- Add the required environment variables to the `.env` file.
-  `docker compose up --build -d`
-- Create database file:
-  `pnpm drizzle:action` select the `generate` action
-- Migrate datebase:
-  `pnpm drizzle:action` select the `migrate` action
-- Start the development server
-  `pnpm dev`
+- Create a `.env.local` file by copying the example environment file: `cp .env.example .env.local`
+- Add the required environment variables to the `.env.local` file.
+- Create a Docker network: `docker network create -d bridge next-study`
+- Start up the database Docker  `make start-database`
+- Migrate datebase: `pnpm drizzle:action` and select the `migrate` option
+- Start the development server `pnpm dev`
 
 You should now be able to access the application at [http://localhost:3000](http://localhost:3000)
 

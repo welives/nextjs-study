@@ -5,6 +5,8 @@ import { Inter } from 'next/font/google'
 import { AuthProvider, AntdStyleRegistry } from '@/components/layouts'
 import { Toaster } from '@/components/toaster'
 import { auth } from '@/lib/auth'
+import { isAdmin } from '@/lib/api'
+import { useSettingStore } from '@/store'
 
 import '@/styles/globals.css'
 import '@/styles/uno-cli.css'
@@ -34,6 +36,10 @@ export default async function RootLayout({
   children: React.ReactNode
 }>) {
   const session = await auth()
+  if (session && session?.user?.id) {
+    const setIsAdmin = useSettingStore.getState().setIsAdmin
+    setIsAdmin(await isAdmin())
+  }
   return (
     <html lang="en">
       <link rel="icon" type="image/svg+xml" href="favicon.svg" />

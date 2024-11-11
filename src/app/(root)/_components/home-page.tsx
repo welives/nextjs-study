@@ -4,6 +4,7 @@ import React, { useState, useMemo, useRef, useEffect, useCallback } from 'react'
 import Link from 'next/link'
 import { useSession, signOut } from 'next-auth/react'
 import { List, Select, Spin, Typography, Radio, Checkbox, Space, Tag, Card, Flex, Tabs, Modal, Form } from 'antd'
+import { GithubOutlined } from '@ant-design/icons'
 import { debounce } from 'radash'
 import { useMount } from 'react-use'
 import { matchSorter } from 'match-sorter'
@@ -50,6 +51,33 @@ export default function HomePage() {
   const [courseOptions, setCourseOptions] = useState<CourseValueType[]>([])
   const [courseFetching, setCourseFetching] = useState(false)
   const courseFetchRef = useRef(0)
+
+  // 封装远程搜索课程选项的防抖函数
+  const debounceCourseFetch = useMemo(() => {
+    const loadOptions = (keyword?: string) => {
+      courseFetchRef.current += 1
+      const fetchId = courseFetchRef.current
+      setCourseOptions([])
+      setCourseFetching(true)
+
+      getAllCourse().then((res) => {
+        if (fetchId !== courseFetchRef.current) return
+        if (!res.success) {
+          toast.error(res.message)
+        } else {
+          const data = res.data ?? []
+          const options = keyword ? matchSorter(data, keyword, { keys: ['title'] }) : data
+          setCourseOptions(options.map((e) => ({ key: e.id, label: e.title, value: e.id })))
+          setCourseFetching(false)
+        }
+      })
+    }
+    return debounce({ delay: 500 }, loadOptions)
+  }, [])
+
+  // 页面加载时执行一次初始搜索
+  useMount(debounceCourseFetch)
+
   const [courseId, setCourseId] = useState<string>('') // 当前选中的课程id
   const [loading, setLoading] = useState(false)
   const prevScrollToId = useRef<string>() // 记录上一次滚动位置的id
@@ -81,32 +109,6 @@ export default function HomePage() {
    * 根据当前tab是否有答题结果来判断提交状态
    */
   const submitState = useMemo(() => !!curAnsweredResult, [curAnsweredResult])
-
-  // 封装远程搜索课程选项的防抖函数
-  const debounceCourseFetch = useMemo(() => {
-    const loadOptions = (keyword?: string) => {
-      courseFetchRef.current += 1
-      const fetchId = courseFetchRef.current
-      setCourseOptions([])
-      setCourseFetching(true)
-
-      getAllCourse().then((res) => {
-        if (fetchId !== courseFetchRef.current) return
-        if (!res.success) {
-          toast.error(res.message)
-        } else {
-          const data = res.data ?? []
-          const options = keyword ? matchSorter(data, keyword, { keys: ['title'] }) : data
-          setCourseOptions(options.map((e) => ({ key: e.id, label: e.title, value: e.id })))
-          setCourseFetching(false)
-        }
-      })
-    }
-    return debounce({ delay: 500 }, loadOptions)
-  }, [])
-
-  // 页面加载时执行一次初始搜索
-  useMount(debounceCourseFetch)
 
   // 切换课程时重新请求数据
   useEffect(() => {
@@ -291,18 +293,27 @@ export default function HomePage() {
             onSelect={(v) => setCourseId(v)}
             style={{ width: '300px' }}
           />
-          {session ? (
-            <div className="flex gap-4">
-              <Link href={PATHS.ADMIN_HOME}>
-                <Button>后台管理</Button>
+          <div className="flex gap-4 items-center">
+            {session ? (
+              <>
+                <Link href={PATHS.ADMIN_HOME}>
+                  <Button>后台管理</Button>
+                </Link>
+                <Button onClick={() => signOut()}>退出</Button>
+              </>
+            ) : (
+              <Link href={PATHS.AUTH_SIGN_IN}>
+                <Button>登录</Button>
               </Link>
-              <Button onClick={() => signOut()}>退出</Button>
-            </div>
-          ) : (
-            <Link href={PATHS.AUTH_SIGN_IN}>
-              <Button>登录</Button>
+            )}
+            <Link
+              href="https://github.com/welives/nextjs-study"
+              target="_blank"
+              className="text-primary transition-[opacity] hover:text-primary hover:opacity-70 hover:cursor-pointer"
+            >
+              <GithubOutlined style={{ fontSize: '24px' }} />
             </Link>
-          )}
+          </div>
         </nav>
       </header>
       <div className="h-15 shrink-0"></div>

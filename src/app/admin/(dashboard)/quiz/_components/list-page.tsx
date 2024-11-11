@@ -9,9 +9,11 @@ import { toast } from 'sonner'
 import { SearchOutlined, CheckCircleOutlined, CloseCircleOutlined } from '@ant-design/icons'
 import http from '@/lib/http'
 import { deleteOne } from '@/actions/quiz.action'
+import { useSettingStore } from '@/store'
 
 export function QuizListPage() {
   const tableRef = React.useRef<ActionType>()
+  const isAdmin = useSettingStore.getState().isAdmin
 
   const columns: ProColumns<Api.QuizListData>[] = [
     {
@@ -41,34 +43,36 @@ export function QuizListPage() {
       hideInSearch: true,
       width: 180,
     },
-    {
-      title: '操作',
-      dataIndex: 'option',
-      valueType: 'option',
-      fixed: 'right',
-      align: 'center',
-      width: 120,
-      render: (dom, record) => (
-        <Space>
-          <Link href={`/admin/quiz/${record.id}`}>编辑</Link>
-          <Popconfirm
-            title="确定要删除吗?"
-            onConfirm={async () => {
-              const res = await deleteOne(record.id)
-              if (!res.success) {
-                toast.error(res.message)
-                return false
-              }
-              toast.success(res.message)
-              tableRef.current?.reload()
-              return true
-            }}
-          >
-            <Typography.Link type="danger">删除</Typography.Link>
-          </Popconfirm>
-        </Space>
-      ),
-    },
+    isAdmin
+      ? {
+          title: '操作',
+          dataIndex: 'option',
+          valueType: 'option',
+          fixed: 'right',
+          align: 'center',
+          width: 120,
+          render: (dom, record) => (
+            <Space>
+              <Link href={`/admin/quiz/${record.id}`}>编辑</Link>
+              <Popconfirm
+                title="确定要删除吗?"
+                onConfirm={async () => {
+                  const res = await deleteOne(record.id)
+                  if (!res.success) {
+                    toast.error(res.message)
+                    return false
+                  }
+                  toast.success(res.message)
+                  tableRef.current?.reload()
+                  return true
+                }}
+              >
+                <Typography.Link type="danger">删除</Typography.Link>
+              </Popconfirm>
+            </Space>
+          ),
+        }
+      : {},
   ]
 
   const expandColumns: TableColumnsType<Api.QuizAnswerOption> = [
@@ -101,9 +105,11 @@ export function QuizListPage() {
       actionRef={tableRef}
       scroll={{ x: 1200 }}
       headerTitle={
-        <Link href="/admin/quiz/new">
-          <Button type="primary">添加试题</Button>
-        </Link>
+        isAdmin && (
+          <Link href="/admin/quiz/new">
+            <Button type="primary">添加试题</Button>
+          </Link>
+        )
       }
       search={false}
       options={{

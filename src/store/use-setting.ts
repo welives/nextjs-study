@@ -7,10 +7,12 @@ import { createSelectors } from './selectors'
 interface State {
   defaultLocale: string
   locales: string[]
+  isAdmin: boolean
 }
 
 interface Action {
   setDefaultLocale: (newVal: string) => void
+  setIsAdmin: (newVal: boolean) => void
 }
 
 type SettingState = State & Action
@@ -18,6 +20,7 @@ type SettingState = State & Action
 const initialState: State = {
   defaultLocale,
   locales: [...locales],
+  isAdmin: false
 }
 
 const store = create<SettingState>()(
@@ -26,6 +29,7 @@ const store = create<SettingState>()(
       (set) => ({
         ...initialState,
         setDefaultLocale: (val) => set({ defaultLocale: val }),
+        setIsAdmin: val => set({ isAdmin: val })
       }),
       { name: StoreSceneKey.SETTING, storage: createJSONStorage(() => sessionStorage) }
     )

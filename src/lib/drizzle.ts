@@ -1,8 +1,14 @@
-import { drizzle } from 'drizzle-orm/node-postgres'
+import { drizzle, NodePgDatabase } from 'drizzle-orm/node-postgres'
 import pg from 'pg'
-import { schemas } from './schema'
-import { __DEV__ } from '../config'
+import { schemas, SchemaType } from './schema'
+import { DATABASE_URL } from '../config'
 
-const client = new pg.Client({ connectionString: process.env.DATABASE_DSN })
-await client.connect()
-export default drizzle(client, { schema: schemas })
+let db: NodePgDatabase<SchemaType>
+
+export async function getConnection() {
+  if (db) return db
+  const client = new pg.Client({ connectionString: DATABASE_URL })
+  await client.connect()
+  db = drizzle(client, { schema: schemas })
+  return db
+}

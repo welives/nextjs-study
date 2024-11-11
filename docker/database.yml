@@ -1,0 +1,37 @@
+# 设置容器名词
+name: next-study-database
+
+# 设置网络, 这里表示加入一个外部网络 next-study
+networks:
+  next-study:
+    external: true
+    driver: bridge
+
+services:
+  # 主数据库
+  postgres_db:
+    image: postgres:14-alpine
+    container_name: postgres_db
+    restart: always
+    # 设置默认的环境变量文件
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+      TZ: ${TIMEZONE}
+    volumes:
+      - '../.volumes/main_db:/var/lib/postgresql/data'
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready']
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    ports:
+      - 5432:5432
+    networks:
+      - next-study
+
+# 卷标定义
+volumes:
+  data:
+    driver: local

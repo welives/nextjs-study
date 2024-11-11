@@ -8,10 +8,12 @@ import { SearchOutlined } from '@ant-design/icons'
 import { toast } from 'sonner'
 import http from '@/lib/http'
 import { deleteOne } from '@/actions/category.action'
+import { useSettingStore } from '@/store'
 import { CategoryModalForm } from './modal-form'
 
 export function CategoryListPage() {
   const tableRef = React.useRef<ActionType>()
+  const isAdmin = useSettingStore.getState().isAdmin
 
   const columns: ProColumns<Api.CategoryListData>[] = [
     {
@@ -43,39 +45,41 @@ export function CategoryListPage() {
       hideInSearch: true,
       width: 180,
     },
-    {
-      title: '操作',
-      dataIndex: 'option',
-      valueType: 'option',
-      fixed: 'right',
-      align: 'center',
-      width: 120,
-      render: (dom, record) => (
-        <Space>
-          <CategoryModalForm
-            tableRef={tableRef}
-            title="编辑分类"
-            trigger={<Typography.Link>编辑</Typography.Link>}
-            record={record}
-          />
-          <Popconfirm
-            title="确定要删除吗?"
-            onConfirm={async () => {
-              const res = await deleteOne(record.id)
-              if (!res.success) {
-                toast.error(res.message)
-                return false
-              }
-              toast.success(res.message)
-              tableRef.current?.reload()
-              return true
-            }}
-          >
-            <Typography.Link type="danger">删除</Typography.Link>
-          </Popconfirm>
-        </Space>
-      ),
-    },
+    isAdmin
+      ? {
+          title: '操作',
+          dataIndex: 'option',
+          valueType: 'option',
+          fixed: 'right',
+          align: 'center',
+          width: 120,
+          render: (dom, record) => (
+            <Space>
+              <CategoryModalForm
+                tableRef={tableRef}
+                title="编辑分类"
+                trigger={<Typography.Link>编辑</Typography.Link>}
+                record={record}
+              />
+              <Popconfirm
+                title="确定要删除吗?"
+                onConfirm={async () => {
+                  const res = await deleteOne(record.id)
+                  if (!res.success) {
+                    toast.error(res.message)
+                    return false
+                  }
+                  toast.success(res.message)
+                  tableRef.current?.reload()
+                  return true
+                }}
+              >
+                <Typography.Link type="danger">删除</Typography.Link>
+              </Popconfirm>
+            </Space>
+          ),
+        }
+      : {},
   ]
   return (
     <ProTable<Api.CategoryListData>
@@ -83,7 +87,9 @@ export function CategoryListPage() {
       actionRef={tableRef}
       scroll={{ x: 1200 }}
       headerTitle={
-        <CategoryModalForm tableRef={tableRef} title="新增分类" trigger={<Button type="primary">新增分类</Button>} />
+        isAdmin && (
+          <CategoryModalForm tableRef={tableRef} title="新增分类" trigger={<Button type="primary">新增分类</Button>} />
+        )
       }
       search={false}
       options={{

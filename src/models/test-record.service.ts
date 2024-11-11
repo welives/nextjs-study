@@ -2,13 +2,14 @@ import { cache } from 'react'
 import { eq, like, inArray } from 'drizzle-orm'
 
 import { quizTable, testRecordTable } from '@/lib/schema'
-import db from '@/lib/drizzle'
+import { getConnection } from '@/lib/drizzle'
 import { ListPageData, CheckQuizAnswer } from '@/dto'
 
 /**
  * 分页列表
  */
 export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: ListPageData) => {
+  const db = await getConnection()
   const res = await db.query.testRecord.findMany({
     with: {
       user: {
@@ -37,6 +38,7 @@ export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: 
  * @returns
  */
 export async function findById(id: string) {
+  const db = await getConnection()
   const record = await db.query.testRecord.findFirst({ where: eq(testRecordTable.id, id) })
   if (!record) throw new Error('答题记录不存在')
 
@@ -80,6 +82,7 @@ export async function findById(id: string) {
  * @param data
  */
 export async function createOne(data: CheckQuizAnswer, ratio: [number, number], userId: string) {
+  const db = await getConnection()
   const quizIds = data.quizzesData.map(el => el.id)
   const answerOptionsIds = data.quizzesData.map(el => el.options)
   const answeredIds = data.quizzesData.map(el => el.answered ?? [])

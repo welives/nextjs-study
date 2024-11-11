@@ -36,13 +36,14 @@ export default {
        * @returns
        */
       async authorize(credentials, req) {
-        const user = {
+        if (!credentials || !credentials.id) throw new Error('Invalid credentials')
+
+        return {
           id: credentials.id as string,
           name: credentials.name as string,
           email: credentials.email as string,
           role: credentials.role as string
         }
-        return user ?? null
       },
     }),
   ],
@@ -67,6 +68,7 @@ export default {
       return session
     },
   },
+  trustHost: true,
   secret: AUTH_SECRET,
   session: { strategy: 'jwt' },
   debug: __DEV__,

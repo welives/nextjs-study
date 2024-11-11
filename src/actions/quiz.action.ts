@@ -25,7 +25,7 @@ export const getByCourseId = cache(async (id: string, withCorrectAnswer = false)
 })
 
 /**
- * 校验测试结果
+ * 校验答题结果
  * @param data
  * @returns
  */

@@ -3,13 +3,14 @@ import { eq, like } from 'drizzle-orm'
 
 import { findChildren } from '@/lib/utils'
 import { categoryTable } from '@/lib/schema'
-import db from '@/lib/drizzle'
+import { getConnection } from '@/lib/drizzle'
 import { ListPageData, CreateCategoryData, UpdateCategoryData } from '@/dto'
 
 /**
  * 获取全部分类
  */
 export async function getAll() {
+  const db = await getConnection()
   const res = await db.query.category.findMany({
     columns: {
       id: true,
@@ -30,6 +31,7 @@ export async function getAll() {
  * 分页列表
  */
 export const getList = cache(async ({ keyword, page = 1, limit = 20 }: ListPageData) => {
+  const db = await getConnection()
   const res = await db.query.category.findMany({
     with: {
       parent: {
@@ -56,6 +58,7 @@ export const getList = cache(async ({ keyword, page = 1, limit = 20 }: ListPageD
  * 添加分类
  */
 export async function createOne({ name, ...rest }: CreateCategoryData) {
+  const db = await getConnection()
   const [entity] = await db.insert(categoryTable).values({ name, pid: rest.pid, remark: rest.remark }).returning({ insertId: categoryTable.id })
   if (!entity) throw new Error('创建失败')
 
@@ -66,6 +69,7 @@ export async function createOne({ name, ...rest }: CreateCategoryData) {
  * 更新分类
  */
 export async function updateOne({ id, ...rest }: UpdateCategoryData) {
+  const db = await getConnection()
   const [entity] = await db.update(categoryTable).set(rest).where(eq(categoryTable.id, id)).returning({ updateId: categoryTable.id })
   if (!entity) throw new Error('修改失败')
 
@@ -78,6 +82,7 @@ export async function updateOne({ id, ...rest }: UpdateCategoryData) {
  * @returns
  */
 export async function deleteOne(id: string) {
+  const db = await getConnection()
   const [entity] = await db.delete(categoryTable).where(eq(categoryTable.id, id)).returning({ deleteId: categoryTable.id })
   if (!entity) throw new Error('删除失败')
 

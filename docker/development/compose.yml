@@ -1,0 +1,17 @@
+name: nextjs-study-development
+
+networks:
+  next-study:
+    external: true
+    driver: bridge
+
+services:
+  nextjs:
+    build:
+      context: ../../
+      dockerfile: docker/development/Dockerfile
+    image: nextjs-study-development
+    ports:
+      - "3000:3000"
+    networks:
+      - next-study

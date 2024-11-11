@@ -2,10 +2,11 @@ import { cache } from 'react'
 import { eq, like, or } from 'drizzle-orm'
 
 import { courseTable } from '@/lib/schema'
-import db from '@/lib/drizzle'
+import { getConnection } from '@/lib/drizzle'
 import { ListPageData, CreateCourseData, UpdateCourseData } from '@/dto'
 
 export async function getAll() {
+  const db = await getConnection()
   const res = await db.query.course.findMany({
     columns: {
       id: true,
@@ -20,6 +21,7 @@ export async function getAll() {
  * 分页列表
  */
 export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: ListPageData) => {
+  const db = await getConnection()
   const res = await db.query.course.findMany({
     with: {
       category: {
@@ -45,6 +47,7 @@ export const getList = cache(async ({ page = 1, limit = 20, keyword = void 0 }: 
  * 添加课程
  */
 export async function createOne({ title, ...rest }: CreateCourseData) {
+  const db = await getConnection()
   const [entity] = await db.insert(courseTable).values({ title, cateId: rest.cate_id, description: rest.description, cover: rest.cover }).returning({ insertId: courseTable.id })
   if (!entity) throw new Error('创建失败')
 
@@ -55,6 +58,7 @@ export async function createOne({ title, ...rest }: CreateCourseData) {
  * 更新课程
  */
 export async function updateOne({ id, cate_id, ...rest }: UpdateCourseData) {
+  const db = await getConnection()
   const [entity] = await db.update(courseTable).set({ ...rest, cateId: cate_id }).where(eq(courseTable.id, id)).returning({ updateId: courseTable.id })
   if (!entity) throw new Error('修改失败')
 
@@ -67,6 +71,7 @@ export async function updateOne({ id, cate_id, ...rest }: UpdateCourseData) {
  * @returns
  */
 export async function deleteOne(id: string) {
+  const db = await getConnection()
   const [entity] = await db.delete(courseTable).where(eq(courseTable.id, id)).returning({ deleteId: courseTable.id })
   if (!entity) throw new Error('删除失败')
 

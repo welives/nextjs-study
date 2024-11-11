@@ -1,0 +1,24 @@
+name: nextjs-study-production
+
+networks:
+  next-study:
+    external: true
+    driver: bridge
+
+services:
+  nextjs:
+    build:
+      context: ../../
+      dockerfile: docker/production/Dockerfile
+    image: nextjs-study-production
+    container_name: nextjs
+    networks:
+      - next-study
+  nginx:
+    build:
+      context: ../../
+      dockerfile: nginx/Dockerfile
+    ports:
+      - "3000:80"
+    networks:
+      - next-study
