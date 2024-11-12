@@ -13,7 +13,7 @@ services:
     image: postgres:14-alpine
     container_name: postgres_db
     restart: always
-    # 设置默认的环境变量文件
+    # 环境变量读取自 .env.database 文件
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
