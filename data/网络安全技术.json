@@ -1,0 +1,4408 @@
+{
+  "subject": "网络安全技术",
+  "category": "国家开放大学",
+  "data": [
+    {
+      "id": 1,
+      "chapter": "第一章",
+      "title": "没有网络安全就没有______，就没有______，广大人民群众利益也难以得到保障。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "国家发展、社会进步" },
+        { "id": 2, "title": "国家安全、经济社会稳定运行", "correct": true },
+        { "id": 3, "title": "社会稳定运行、经济繁荣" },
+        { "id": 4, "title": "社会安全、国家稳定运行" }
+      ]
+    },
+    {
+      "id": 2,
+      "chapter": "第一章",
+      "title": "《中华人民共和国网络安全法》正式施行的时间是？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "2017年6月1日", "correct": true },
+        { "id": 2, "title": "2016年11月7日" },
+        { "id": 3, "title": "2017年1月1日" },
+        { "id": 4, "title": "2016年12月1日" }
+      ]
+    },
+    {
+      "id": 3,
+      "chapter": "第一章",
+      "title": "网络安全的基本属性有：可用性、完整性和______。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "多样性" },
+        { "id": 2, "title": "复杂性" },
+        { "id": 3, "title": "保密性", "correct": true },
+        { "id": 4, "title": "不可否认性" }
+      ]
+    },
+    {
+      "id": 4,
+      "chapter": "第一章",
+      "title": "CTF（Capture The Flag）中文一般译作夺旗赛，在网络安全领域中指的是网络安全技术人员之间进行技术竞技的一种比赛形式。常见的CTF竞赛模式有：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "解题模式（Jeopardy）", "correct": true },
+        { "id": 2, "title": "攻防模式（Attack-Defense）", "correct": true },
+        { "id": 3, "title": "渗透模式（Penatration）" },
+        { "id": 4, "title": "混合模式（Mix）", "correct": true }
+      ]
+    },
+    {
+      "id": 5,
+      "chapter": "第一章",
+      "title": "可以通过以下哪种方式来获取网络安全情报与科技信息（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "网络安全会议", "correct": true },
+        { "id": 2, "title": "网络安全期刊", "correct": true },
+        { "id": 3, "title": "网络安全网站", "correct": true },
+        { "id": 4, "title": "CTF比赛", "correct": true }
+      ]
+    },
+    {
+      "id": 6,
+      "chapter": "第一章",
+      "title": "2019年5月13日，《信息安全技术网络安全等级保护基本要求》（简称等保2.0）正式发布，并已于2019年12月1日起正式实行。“等保2.0”保护对象包括：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "基础信息网络（广电网、电信网等）", "correct": true },
+        { "id": 2, "title": "信息系统（采用传统技术的系统）", "correct": true },
+        { "id": 3, "title": "云计算平台、以及大数据平台", "correct": true },
+        { "id": 4, "title": "移动互联、物联网和工业控制系统等", "correct": true }
+      ]
+    },
+    {
+      "id": 7,
+      "chapter": "第一章",
+      "title": "我国网络安全领域的基础性法律《中华人民共和国网络安全法》正式施行，对保护个人信息、治理网络诈骗、保护关键信息基础设施、网络实名制等方面作出明确规定，成为我国网络空间法治化建设的重要里程碑。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 8,
+      "chapter": "第一章",
+      "title": "网络社会的形成与发展为现实社会中的违法犯罪分子提供了一个新的违法犯罪领域，但其社会危害性不及现实社会中的违法犯罪。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 9,
+      "chapter": "第二章",
+      "title": "下列哪个不是网络攻击的主要目的：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "获取目标的重要信息和数据" },
+        { "id": 2, "title": "对目标系统进行信息篡改和数据资料删除等" },
+        { "id": 3, "title": "让目标无法正常提供服务" },
+        { "id": 4, "title": "造成人员伤亡", "correct": true }
+      ]
+    },
+    {
+      "id": 10,
+      "chapter": "第二章",
+      "title": "以下哪个不是常见的网络攻击手段：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "端口和漏洞扫描" },
+        { "id": 2, "title": "破坏供电系统造成服务器停电", "correct": true },
+        { "id": 3, "title": "网络窃听" },
+        { "id": 4, "title": "使用MS17-010漏洞获取服务器权限" }
+      ]
+    },
+    {
+      "id": 11,
+      "chapter": "第二章",
+      "title": "网络嗅探器 (Network Sniffer) 是一种常用的网络管理工具，也常常被攻击者利用来进行信息获取，以下哪个工具可以进行网络嗅探：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "fscan" },
+        { "id": 2, "title": "hydra" },
+        { "id": 3, "title": "snort", "correct": true },
+        { "id": 4, "title": "metasploit" }
+      ]
+    },
+    {
+      "id": 12,
+      "chapter": "第二章",
+      "title": "随着攻防技术对抗的不断演进，一些漏洞扫描工具在检测目标系统的脆弱点时，还会进行攻击的概念验证（POC），从而确认此脆弱点是否可以被利用。以下哪个工具有攻击概念验证的功能：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ping" },
+        { "id": 2, "title": "fscan", "correct": true },
+        { "id": 3, "title": "netstat" },
+        { "id": 4, "title": "ipconfig" }
+      ]
+    },
+    {
+      "id": 13,
+      "chapter": "第二章",
+      "title": "明文保存的用户口令容易被直接利用，很多系统对口令进行哈希加密运算后再保存。对这种加密后口令，以下哪个说法是正确的：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "加密后的口令只要获得密钥后可以还原出明文" },
+        { "id": 2, "title": "加密后的口令可以抵御字典爆破的攻击" },
+        { "id": 3, "title": "通过哈希加密的口令，即便知道了密文和相关的配置，也完全无法恢复出任何明文口令" },
+        { "id": 4, "title": "加密储存的口令可以被“撞库”攻击", "correct": true }
+      ]
+    },
+    {
+      "id": 14,
+      "chapter": "第二章",
+      "title": "端口扫描工具能获取以下哪些信息：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "端口开放信息", "correct": true },
+        { "id": 2, "title": "端口提供的服务", "correct": true },
+        { "id": 3, "title": "主机的操作系统", "correct": true },
+        { "id": 4, "title": "主机带宽信息" }
+      ]
+    },
+    {
+      "id": 15,
+      "chapter": "第二章",
+      "title": "软件漏洞利用是攻击者利用软件应用程序中的缺陷进行攻击的方法，常见被利用的软件漏洞有：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "缓冲区溢出漏洞", "correct": true },
+        { "id": 2, "title": "业务逻辑错误", "correct": true },
+        { "id": 3, "title": "数据验证问题", "correct": true },
+        { "id": 4, "title": "身份认证和授权错误", "correct": true },
+        { "id": 5, "title": "文件处理问题", "correct": true }
+      ]
+    },
+    {
+      "id": 16,
+      "chapter": "第二章",
+      "title": "高级持续威胁（APT）的特征有：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        {
+          "id": 1,
+          "title": "它比传统攻击具有更高的定制程度和复杂程度，需要花费大量时间和资源来研究确定系统内部的漏洞",
+          "correct": true
+        },
+        { "id": 2, "title": "这类攻击持续监控目标，对目标保有长期的访问权", "correct": true },
+        {
+          "id": 3,
+          "title": "攻击目标通常是特定的重要目标，攻击方一旦得手，往往会给被攻击目标造成巨大的经济损失或政治影响，乃至于毁灭性打击",
+          "correct": true
+        },
+        { "id": 4, "title": "APT攻击可以被防病毒软件发现并查杀阻断" }
+      ]
+    },
+    {
+      "id": 17,
+      "chapter": "第二章",
+      "title": "MITRE公司提出的网络攻击矩阵模型，它是一个站在防守者的视角来描述攻击中各阶段用到的技术的模型。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 18,
+      "chapter": "第二章",
+      "title": "口令是最常用的资源访问控制机制，也是最容易被突破的。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 19,
+      "chapter": "第二章",
+      "title": "常见的口令破解方式有口令组合、社会工程学、机器学习破解、撞库等。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 20,
+      "chapter": "第三章",
+      "title": "病毒为什么会将自己附着在主机可执行程序中？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "因为病毒不能独立执行", "correct": true },
+        { "id": 2, "title": "因为隐藏在主机中会传播的更快" },
+        { "id": 3, "title": "因为病毒将主机可执行程序的代码添加到它们本身" },
+        { "id": 4, "title": "因为病毒是用主机的功能增加它们的破坏性" }
+      ]
+    },
+    {
+      "id": 21,
+      "chapter": "第三章",
+      "title": "以下哪一种是防止系统不受恶意代码威胁的最简单最完美的方法？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "安全知识、系统补丁和一个好的防毒程序" },
+        { "id": 2, "title": "一个防毒程序就够了" },
+        { "id": 3, "title": "只需安装最新的安全补丁" },
+        { "id": 4, "title": "没有这样通用的完美的保护系统的方法", "correct": true }
+      ]
+    },
+    {
+      "id": 22,
+      "chapter": "第三章",
+      "title": "防病毒产品可以实施在网络的哪三个层次中？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "网关、服务器、桌面", "correct": true },
+        { "id": 2, "title": "互联网、内部网、桌面" },
+        { "id": 3, "title": "防火墙、代理服务器、邮件处理服务器" },
+        { "id": 4, "title": "网关、桌面、无线设备" }
+      ]
+    },
+    {
+      "id": 23,
+      "chapter": "第三章",
+      "title": "以下关于恶意代码的说法，哪个是错误的：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "恶意代码可以利用软件或系统漏洞对目标进入攻击利用。" },
+        { "id": 2, "title": "恶意代码无法独立运行，需要与捆绑在正常软件上才能运行。", "correct": true },
+        { "id": 3, "title": "恶意代码可以通过远程下载到主机执行。" },
+        { "id": 4, "title": "恶意代码可以通过移动介质进行传播。" }
+      ]
+    },
+    {
+      "id": 24,
+      "chapter": "第三章",
+      "title": "以下哪个不是漏洞数据库：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "CVE", "correct": true },
+        { "id": 2, "title": "CNVD" },
+        { "id": 3, "title": "CNNVD" },
+        { "id": 4, "title": "NVD" }
+      ]
+    },
+    {
+      "id": 25,
+      "chapter": "第三章",
+      "title": "以下哪个不是常见的恶意代码：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "病毒" },
+        { "id": 2, "title": "木马" },
+        { "id": 3, "title": "蠕虫" },
+        { "id": 4, "title": "细菌", "correct": true }
+      ]
+    },
+    {
+      "id": 26,
+      "chapter": "第三章",
+      "title": "关于勒索软件，以下哪个说明是错误的：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "勒索软件是一种恶意软件，传播范围广，危害大。" },
+        { "id": 2, "title": "勒索软件通过加密受害者文件并试图通过威胁勒索获利。" },
+        { "id": 3, "title": "解密高手可以破解勒索软件的密钥，从而恢复出被加密的文件。", "correct": true },
+        { "id": 4, "title": "勒索软件通常要求使用数字货币支付赎金，这使得追踪和起诉犯罪者都十分困难。" }
+      ]
+    },
+    {
+      "id": 27,
+      "chapter": "第三章",
+      "title": "以下哪个不是计算机病毒的生命周期：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "感染阶段", "correct": true },
+        { "id": 2, "title": "繁殖阶段" },
+        { "id": 3, "title": "触发阶段" },
+        { "id": 4, "title": "执行阶段" }
+      ]
+    },
+    {
+      "id": 28,
+      "chapter": "第三章",
+      "title": "以下哪个不是计算机病毒的类别：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "文件型病毒" },
+        { "id": 2, "title": "宏病毒" },
+        { "id": 3, "title": "电子邮件病毒" },
+        { "id": 4, "title": "电子病毒", "correct": true }
+      ]
+    },
+    {
+      "id": 29,
+      "chapter": "第三章",
+      "title": "以下哪个不是预防计算机病毒的方法：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "安装防病毒软件并及时升级更新" },
+        { "id": 2, "title": "不轻易运行互联网传递的程序" },
+        { "id": 3, "title": "及时给系统和应用打补丁" },
+        { "id": 4, "title": "不使用容易被猜到弱口令", "correct": true }
+      ]
+    },
+    {
+      "id": 30,
+      "chapter": "第三章",
+      "title": "恶意软件主要采用以下哪些传播途径进行传播：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "软件捆绑", "correct": true },
+        { "id": 2, "title": "利用漏洞", "correct": true },
+        { "id": 3, "title": "移动介质", "correct": true },
+        { "id": 4, "title": "远程下载", "correct": true },
+        { "id": 5, "title": "社会工程学", "correct": true }
+      ]
+    },
+    {
+      "id": 31,
+      "chapter": "第三章",
+      "title": "漏洞蠕虫破坏力强、传播速度快，它的传播过程一般可以分为（）步骤。",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "扫描", "correct": true },
+        { "id": 2, "title": "攻击", "correct": true },
+        { "id": 3, "title": "复制", "correct": true },
+        { "id": 4, "title": "破坏" }
+      ]
+    },
+    {
+      "id": 32,
+      "chapter": "第三章",
+      "title": "下列哪些步骤属于恶意代码的作用过程：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "入侵系统", "correct": true },
+        { "id": 2, "title": "提升权限", "correct": true },
+        { "id": 3, "title": "实施隐藏", "correct": true },
+        { "id": 4, "title": "潜伏等待", "correct": true },
+        { "id": 5, "title": "执行破坏", "correct": true }
+      ]
+    },
+    {
+      "id": 33,
+      "chapter": "第三章",
+      "title": "受感染机器间是否能够协同工作是区分僵尸网络和其他恶意软件的重要特征。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 34,
+      "chapter": "第四章",
+      "title": "以下哪个不是防火墙的基本功能：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "访问控制功能" },
+        { "id": 2, "title": "内容控制功能" },
+        { "id": 3, "title": "日志功能" },
+        { "id": 4, "title": "防范钓鱼邮件功能", "correct": true }
+      ]
+    },
+    {
+      "id": 35,
+      "chapter": "第四章",
+      "title": "网络防御技术所包含的身份认证基本方法，不包括（）。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "基于信息秘密的身份认证" },
+        { "id": 2, "title": "基于信任物体的身份认证" },
+        { "id": 3, "title": "基于生物特征的身份认证" },
+        { "id": 4, "title": "基于数字签名的身份认证", "correct": true }
+      ]
+    },
+    {
+      "id": 36,
+      "chapter": "第四章",
+      "title": "根据Endsley模型，可以将态势感知划分为三个层级，不包括（）。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "要素感知" },
+        { "id": 2, "title": "态势理解" },
+        { "id": 3, "title": "安全审计", "correct": true },
+        { "id": 4, "title": "态势预测" }
+      ]
+    },
+    {
+      "id": 37,
+      "chapter": "第四章",
+      "title": "网络防御技术所包含的访问控制技术内容，不包括（）。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "负载均衡", "correct": true },
+        { "id": 2, "title": "认证" },
+        { "id": 3, "title": "控制策略实现安全审计" },
+        { "id": 4, "title": "安全审计" }
+      ]
+    },
+    {
+      "id": 38,
+      "chapter": "第四章",
+      "title": "按照访问控制方式不同，防火墙可以分为（）。",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "包过滤防火墙", "correct": true },
+        { "id": 2, "title": "新一代防火墙" },
+        { "id": 3, "title": "应用代理防火墙", "correct": true },
+        { "id": 4, "title": "状态检测防火墙", "correct": true }
+      ]
+    },
+    {
+      "id": 39,
+      "chapter": "第四章",
+      "title": "入侵检测技术系统分为：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "基于主机的入侵检测系统", "correct": true },
+        { "id": 2, "title": "基于网络的入侵检测系统", "correct": true },
+        { "id": 3, "title": "基于应用的入侵检测系统" },
+        { "id": 4, "title": "分布式入侵检测系统", "correct": true }
+      ]
+    },
+    {
+      "id": 40,
+      "chapter": "第四章",
+      "title": "防火墙的典型部署模式包括（）。",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "屏蔽主机模式", "correct": true },
+        { "id": 2, "title": "物理隔离模式" },
+        { "id": 3, "title": "双宿/多宿主机模式", "correct": true },
+        { "id": 4, "title": "屏蔽子网模式", "correct": true }
+      ]
+    },
+    {
+      "id": 41,
+      "chapter": "第四章",
+      "title": "逻辑隔离的主要技术包括（）。",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "虚拟局域网", "correct": true },
+        { "id": 2, "title": "虚拟路由及转发", "correct": true },
+        { "id": 3, "title": "多协议标签转换", "correct": true },
+        { "id": 4, "title": "虚拟交换机", "correct": true }
+      ]
+    },
+    {
+      "id": 42,
+      "chapter": "第四章",
+      "title": "入侵防御系统主要包括以下几个部分（）。",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "应用数据重组", "correct": true },
+        { "id": 2, "title": "协议识别和协议解析", "correct": true },
+        { "id": 3, "title": "特征匹配", "correct": true },
+        { "id": 4, "title": "响应处理", "correct": true }
+      ]
+    },
+    {
+      "id": 43,
+      "chapter": "第四章",
+      "title": "网络隔离技术总体上可以分为物理隔离及逻辑隔离两类方法。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 44,
+      "chapter": "第五章",
+      "title": "加密算法的功能是实现信息的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "不可否认性" },
+        { "id": 2, "title": "保密性", "correct": true },
+        { "id": 3, "title": "完整性" },
+        { "id": 4, "title": "真实性" }
+      ]
+    },
+    {
+      "id": 45,
+      "chapter": "第五章",
+      "title": "数字签名算法可实现信息的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "不可否认性", "correct": true },
+        { "id": 2, "title": "保密性" },
+        { "id": 3, "title": "可用性" },
+        { "id": 4, "title": "真实性" }
+      ]
+    },
+    {
+      "id": 46,
+      "chapter": "第五章",
+      "title": "在以下古典密码体制中，不属于置换密码的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "移位密码" },
+        { "id": 2, "title": "倒序密码", "correct": true },
+        { "id": 3, "title": "凯撒密码" },
+        { "id": 4, "title": "转轮密码" }
+      ]
+    },
+    {
+      "id": 47,
+      "chapter": "第五章",
+      "title": "使用VPN技术，可以建立安全通道，并能用VPN提供的安全服务，这些安全服务包括：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "保密性服务", "correct": true },
+        { "id": 2, "title": "可用性服务" },
+        { "id": 3, "title": "完整性服务", "correct": true },
+        { "id": 4, "title": "认证服务", "correct": true }
+      ]
+    },
+    {
+      "id": 48,
+      "chapter": "第五章",
+      "title": "零信任遵循的原则有：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "不做任何假定", "correct": true },
+        { "id": 2, "title": "不相信任何人", "correct": true },
+        { "id": 3, "title": "随时检查一切", "correct": true },
+        { "id": 4, "title": "防范动态威胁", "correct": true },
+        { "id": 5, "title": "做最坏打算", "correct": true }
+      ]
+    },
+    {
+      "id": 49,
+      "chapter": "第五章",
+      "title": "PKI系统包含以下哪些部分：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "权威认证机构CA", "correct": true },
+        { "id": 2, "title": "证书库", "correct": true },
+        { "id": 3, "title": "密钥备份及恢复系统", "correct": true },
+        { "id": 4, "title": "证书废止处理系统", "correct": true },
+        { "id": 5, "title": "PKI应用接口系统", "correct": true }
+      ]
+    },
+    {
+      "id": 50,
+      "chapter": "第五章",
+      "title": "迪菲（Diffie）和赫尔曼（Hellman）提出的公钥密码系统是密码学历史上的一次革命。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 51,
+      "chapter": "第五章",
+      "title": "在DES加密过程中，S盒对加密的强度没有影响。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 52,
+      "chapter": "第六章",
+      "title": "人脸识别采用了哪个认证技术：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "基于生物特征", "correct": true },
+        { "id": 2, "title": "基于人工智能" },
+        { "id": 3, "title": "基于唯一性" },
+        { "id": 4, "title": "基于官方认证" }
+      ]
+    },
+    {
+      "id": 53,
+      "chapter": "第六章",
+      "title": "以下哪种认证方式相对最安全？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "口令认证技术" },
+        { "id": 2, "title": "人脸识别认证" },
+        { "id": 3, "title": "短信验证码认证" },
+        { "id": 4, "title": "人脸识别加短信验证码认证", "correct": true }
+      ]
+    },
+    {
+      "id": 54,
+      "chapter": "第六章",
+      "title": "以下哪个口令相对最为安全？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "123456" },
+        { "id": 2, "title": "1qaz2wsx" },
+        { "id": 3, "title": "pAsswOrd", "correct": true },
+        { "id": 4, "title": "p@ssword" }
+      ]
+    },
+    {
+      "id": 55,
+      "chapter": "第六章",
+      "title": "按照对验证对象要求提供的认证凭据的类型数量，认证可以分成：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "单因素认证", "correct": true },
+        { "id": 2, "title": "双因素认证", "correct": true },
+        { "id": 3, "title": "多因素认证", "correct": true },
+        { "id": 4, "title": "单点登陆认证" }
+      ]
+    },
+    {
+      "id": 56,
+      "chapter": "第六章",
+      "title": "一般来说，认证机制由哪几个部分构成：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "验证对象", "correct": true },
+        { "id": 2, "title": "认证协议", "correct": true },
+        { "id": 3, "title": "认证口令" },
+        { "id": 4, "title": "鉴别实体", "correct": true }
+      ]
+    },
+    {
+      "id": 57,
+      "chapter": "第七章",
+      "title": "某网站后台密码过于简单，被黑客破解登录了后台，并篡改了后台登录密码导致管理员无法登录，该网站遭受到了什么类型的攻击？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "非授权访问", "correct": true },
+        { "id": 2, "title": "数据泄露" },
+        { "id": 3, "title": "网站仿冒" },
+        { "id": 4, "title": "拒绝服务" }
+      ]
+    },
+    {
+      "id": 58,
+      "chapter": "第七章",
+      "title": "以下哪种是常见的网站拒绝服务攻击技术？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "HTTP Flood", "correct": true },
+        { "id": 2, "title": "SQL注入" },
+        { "id": 3, "title": "目录扫描" },
+        { "id": 4, "title": "XSS攻击" }
+      ]
+    },
+    {
+      "id": 59,
+      "chapter": "第七章",
+      "title": "某单位员工收到一封仿冒邮件，要求其立马通过邮件里的链接更新账号密码，该员工受到了电子邮件什么类型的攻击？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "附件病毒" },
+        { "id": 2, "title": "钓鱼邮件", "correct": true },
+        { "id": 3, "title": "勒索病毒" },
+        { "id": 4, "title": "窃听攻击" }
+      ]
+    },
+    {
+      "id": 60,
+      "chapter": "第七章",
+      "title": "网站面临的主要安全威胁有哪些：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "非授权访问", "correct": true },
+        { "id": 2, "title": "数据泄露", "correct": true },
+        { "id": 3, "title": "拒绝服务", "correct": true },
+        { "id": 4, "title": "网站后台管理安全威胁", "correct": true }
+      ]
+    },
+    {
+      "id": 61,
+      "chapter": "第七章",
+      "title": "电子邮件面临的主要安全威胁有哪些：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "钓鱼邮件", "correct": true },
+        { "id": 2, "title": "勒索病毒", "correct": true },
+        { "id": 3, "title": "拒绝服务" },
+        { "id": 4, "title": "恶意链接", "correct": true }
+      ]
+    },
+    {
+      "id": 62,
+      "chapter": "第七章",
+      "title": "以下哪些是政务网站安全防护的内容：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "网页防篡改", "correct": true },
+        { "id": 2, "title": "入侵防御和病毒防护", "correct": true },
+        { "id": 3, "title": "网络/数据库审计", "correct": true },
+        { "id": 4, "title": "钓鱼邮件防护" }
+      ]
+    },
+    {
+      "id": 63,
+      "chapter": "第八章",
+      "title": "以下关于云计算安全的说法，哪个是错误的：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "云计算的网络边界不可见，传统安全的边界防御手段需要调整才能适用于云计算环境" },
+        { "id": 2, "title": "云计算对数据安全要求更高，需要采用更严格的权限访问控制" },
+        { "id": 3, "title": "云计算的责任主体更为复杂，需要更明确的职责划分和更清晰的用户协议等" },
+        { "id": 4, "title": "云计算的用户资源相互会干扰，需要让不同用户使用的资源在物理环境中分开", "correct": true }
+      ]
+    },
+    {
+      "id": 64,
+      "chapter": "第八章",
+      "title": "某单位员工收到了一封电子邮件，发件人显示为网络管理员，邮件内容里提示其帐户过期，要求他重置密码，并给出了一个重置密码的链接。该员工点开链接发现网站要求他输入当前使用的用户名和密码。该员工经过观察，发现网站页面内容显示有问题，URL的地址栏并不是熟悉的域名。请问该员工遇到攻击手段的类型是：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "缓冲区溢出攻击" },
+        { "id": 2, "title": "社会工程攻击", "correct": true },
+        { "id": 3, "title": "威胁情报攻击" },
+        { "id": 4, "title": "人工智能攻击" }
+      ]
+    },
+    {
+      "id": 65,
+      "chapter": "第八章",
+      "title": "以下哪个不属于物联网安全防护层次：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "终端安全" },
+        { "id": 2, "title": "通信网络安全" },
+        { "id": 3, "title": "服务端安全" },
+        { "id": 4, "title": "应用层安全", "correct": true }
+      ]
+    },
+    {
+      "id": 66,
+      "chapter": "第八章",
+      "title": "目前漏洞挖掘分析技术有多种，主要包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "手工测试技术", "correct": true },
+        { "id": 2, "title": "模糊测试技术", "correct": true },
+        { "id": 3, "title": "二进制比对技术", "correct": true },
+        { "id": 4, "title": "静态分析技术", "correct": true },
+        { "id": 5, "title": "动态分析技术", "correct": true }
+      ]
+    },
+    {
+      "id": 67,
+      "chapter": "第八章",
+      "title": "区块链技术主要有哪些特点：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "去中心化", "correct": true },
+        { "id": 2, "title": "不可篡改", "correct": true },
+        { "id": 3, "title": "共识", "correct": true },
+        { "id": 4, "title": "匿名性" }
+      ]
+    },
+    {
+      "id": 68,
+      "chapter": "第八章",
+      "title": "移动应用安全和传统的Web安全面临的问题是一样的，可以完全借鉴，不需要专门为移动应用单独考虑安全问题。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 69,
+      "chapter": "第八章",
+      "title": "安全大数据分析要以建立科学合理的分析模型作为前提。一般认为安全大数据的分析模型包括但不仅限于：规则模型、关联模型、统计模型、异常检测模型等。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 70,
+      "chapter": "第八章",
+      "title": "威胁情报的目的是利用公开的资源、数据、情报等，发现安全威胁并指导企业行动以改善安全状况，可以帮助企业和组织快速了解到敌对方对自己的威胁信息，从而帮助提前威胁防范、攻击检测与响应、事后攻击溯源等能力。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 71,
+      "chapter": "期末复习",
+      "title": "网络安全的基本属性有：可用性、完整性和保密性，保密性是指对信息资源（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "使用设备" },
+        { "id": 2, "title": "开放范围", "correct": true },
+        { "id": 3, "title": "保存介质" },
+        { "id": 4, "title": "存储环境" }
+      ]
+    },
+    {
+      "id": 72,
+      "chapter": "期末复习",
+      "title": "数据被非法篡改破坏了信息安全的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "完整性", "correct": true },
+        { "id": 2, "title": "可用性" },
+        { "id": 3, "title": "保密性" },
+        { "id": 4, "title": "不可抵赖性" }
+      ]
+    },
+    {
+      "id": 73,
+      "chapter": "期末复习",
+      "title": "在网络安全的三大基本属性中，关注信息不被非授权访问和泄露的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "可用性" },
+        { "id": 2, "title": "完整性" },
+        { "id": 3, "title": "保密性", "correct": true },
+        { "id": 4, "title": "透明性" }
+      ]
+    },
+    {
+      "id": 74,
+      "chapter": "期末复习",
+      "title": "哪一部法律明确了个人信息跨境传输规则的相关内容？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《中华人民共和国个人信息保护法》", "correct": true },
+        { "id": 2, "title": "《中华人民共和国数据安全法》" },
+        { "id": 3, "title": "《中华人民共和国密码法》" },
+        { "id": 4, "title": "《中华人民共和国网络安全法》" }
+      ]
+    },
+    {
+      "id": 75,
+      "chapter": "期末复习",
+      "title": "全国人民代表大会常务委员会于哪一年表决通过了《中华人民共和国网络安全法》？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "2015年" },
+        { "id": 2, "title": "2016年", "correct": true },
+        { "id": 3, "title": "2017年" },
+        { "id": 4, "title": "2018年" }
+      ]
+    },
+    {
+      "id": 76,
+      "chapter": "期末复习",
+      "title": "（）主要规定了数据加密和保护的相关内容。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《中华人民共和国个人信息保护法》" },
+        { "id": 2, "title": "《中华人民共和国数据安全法》" },
+        { "id": 3, "title": "《中华人民共和国密码法》", "correct": true },
+        { "id": 4, "title": "《中华人民共和国网络安全法》" }
+      ]
+    },
+    {
+      "id": 77,
+      "chapter": "期末复习",
+      "title": "随着攻防对抗技术的不断演进，一些漏洞扫描工具在检测目标系统的脆弱点时，还会进行攻击概念验证（POC），从而确认此脆弱点是否可以被利用。以下哪个工具具有攻击概念验证的功能？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ping" },
+        { "id": 2, "title": "netstat" },
+        { "id": 3, "title": "ipconfig" },
+        { "id": 4, "title": "fscan", "correct": true }
+      ]
+    },
+    {
+      "id": 78,
+      "chapter": "期末复习",
+      "title": "被动攻击主要是监视公共媒体传输的信息，下列属于典型被动攻击的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "解密通信数据", "correct": true },
+        { "id": 2, "title": "会话拦截" },
+        { "id": 3, "title": "系统干涉" },
+        { "id": 4, "title": "修改数据" }
+      ]
+    },
+    {
+      "id": 79,
+      "chapter": "期末复习",
+      "title": "网络扫描是信息收集的重要手段，以下哪个工具不属于网络扫描工具？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "nmap" },
+        { "id": 2, "title": "zmap" },
+        { "id": 3, "title": "ipconfig", "correct": true },
+        { "id": 4, "title": "masscan" }
+      ]
+    },
+    {
+      "id": 80,
+      "chapter": "期末复习",
+      "title": "下列哪项不是网络攻击的主要目的？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "获取目标的重要信息和数据" },
+        { "id": 2, "title": "对目标系统进行信息篡改和数据资料删除" },
+        { "id": 3, "title": "让目标无法正常提供服务" },
+        { "id": 4, "title": "造成人员伤亡", "correct": true }
+      ]
+    },
+    {
+      "id": 81,
+      "chapter": "期末复习",
+      "title": "以下哪个不是常见的网络攻击手段？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "端口和漏洞扫描" },
+        { "id": 2, "title": "进入机房将服务器下电", "correct": true },
+        { "id": 3, "title": "网络窃听" },
+        { "id": 4, "title": "使用MS17-010漏洞获取服务器权限" }
+      ]
+    },
+    {
+      "id": 82,
+      "chapter": "期末复习",
+      "title": "向有限的存储空间输入超长的字符串属于（）攻击手段。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "缓冲区溢出", "correct": true },
+        { "id": 2, "title": "运行恶意软件" },
+        { "id": 3, "title": "浏览恶意代码网站" },
+        { "id": 4, "title": "SQL注入" }
+      ]
+    },
+    {
+      "id": 83,
+      "chapter": "期末复习",
+      "title": "SQL注入是一种常见的数据库攻击手段，SQL注入漏洞也是最普遍的漏洞之一。以下哪个工具是SQL注入常用的工具？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SQLMap", "correct": true },
+        { "id": 2, "title": "PostgresSQL" },
+        { "id": 3, "title": "SQLite" },
+        { "id": 4, "title": "Wireshark" }
+      ]
+    },
+    {
+      "id": 84,
+      "chapter": "期末复习",
+      "title": "网络嗅探器（Network Sniffer）常用于网络管理，也经常被攻击者用于信息获取。以下哪个工具可用于网络嗅探？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "fscan" },
+        { "id": 2, "title": "hydra" },
+        { "id": 3, "title": "wireshark", "correct": true },
+        { "id": 4, "title": "metasploit" }
+      ]
+    },
+    {
+      "id": 85,
+      "chapter": "期末复习",
+      "title": "口令破解是攻击者常用的手段，以下哪个工具可用于口令破解？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "fscan" },
+        { "id": 2, "title": "hydra", "correct": true },
+        { "id": 3, "title": "wireshark" },
+        { "id": 4, "title": "nmap" }
+      ]
+    },
+    {
+      "id": 86,
+      "chapter": "期末复习",
+      "title": "进行网络渗透测试通常遵循哪种顺序？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "控制阶段、侦查阶段、入侵阶段" },
+        { "id": 2, "title": "入侵阶段、侦查阶段、控制阶段" },
+        { "id": 3, "title": "侦查阶段、入侵阶段、控制阶段", "correct": true },
+        { "id": 4, "title": "侦查阶段、控制阶段、入侵阶段" }
+      ]
+    },
+    {
+      "id": 87,
+      "chapter": "期末复习",
+      "title": "以下哪种是常见的恶意代码类型？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "PoC" },
+        { "id": 2, "title": "木马", "correct": true },
+        { "id": 3, "title": "漏洞信息" },
+        { "id": 4, "title": "IoC" }
+      ]
+    },
+    {
+      "id": 88,
+      "chapter": "期末复习",
+      "title": "中国国家信息安全漏洞库（China National Vulnerability Database of Information Security）的简称是什么？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "CNVD" },
+        { "id": 2, "title": "NVD" },
+        { "id": 3, "title": "CNNVD", "correct": true },
+        { "id": 4, "title": "CVE" }
+      ]
+    },
+    {
+      "id": 89,
+      "chapter": "期末复习",
+      "title": "使用哪种语言编写的软件通常更容易出现缓冲区溢出漏洞？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "Python" },
+        { "id": 2, "title": "Java" },
+        { "id": 3, "title": "C/C++", "correct": true },
+        { "id": 4, "title": "JavaScript" }
+      ]
+    },
+    {
+      "id": 90,
+      "chapter": "期末复习",
+      "title": "在漏洞管理中，哪个组织负责发布通用漏洞和暴露（CVE）编号？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "MITRE", "correct": true },
+        { "id": 2, "title": "ISO" },
+        { "id": 3, "title": "IETF" },
+        { "id": 4, "title": "NIST" }
+      ]
+    },
+    {
+      "id": 91,
+      "chapter": "期末复习",
+      "title": "以下关于恶意代码的描述错误的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "独立的恶意代码能够独立传播、运行" },
+        { "id": 2, "title": "蠕虫与病毒类似，但传播能力更强，可以自动进行传播" },
+        {
+          "id": 3,
+          "title": "安全知识、系统补丁和一个好的防病毒软件能有效地保护系统不受恶意代码的威胁",
+          "correct": true
+        },
+        { "id": 4, "title": "后门需要嵌入某个完整的程序中，成为该程序的一个组成部分来运行" }
+      ]
+    },
+    {
+      "id": 92,
+      "chapter": "期末复习",
+      "title": "要完全杜绝计算机系统受到恶意攻击，应该采取哪种方法？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "仅安装最新的操作系统" },
+        { "id": 2, "title": "购买最贵的安全软件" },
+        { "id": 3, "title": "只在知名网站上浏览" },
+        { "id": 4, "title": "没有万无一失的方法", "correct": true }
+      ]
+    },
+    {
+      "id": 93,
+      "chapter": "期末复习",
+      "title": "以下哪一种是防止系统不受恶意代码威胁的良好习惯？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "学习安全知识、及时更新系统补丁，以及安装一个好的防病毒程序", "correct": true },
+        { "id": 2, "title": "来历不明的U盘先插到个人电脑上杀毒后使用" },
+        { "id": 3, "title": "安全补丁攒到一定数量再一起安装，节省系统资源" },
+        { "id": 4, "title": "系统的管理员密码保存到桌面上防止丢失" }
+      ]
+    },
+    {
+      "id": 94,
+      "chapter": "期末复习",
+      "title": "当你感觉到你的电脑运行速度明显减慢，打开任务管理器后发现CPU的使用率达到了百分之百，你认为你受到了哪一种攻击？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "特洛伊木马" },
+        { "id": 2, "title": "拒绝服务攻击", "correct": true },
+        { "id": 3, "title": "欺骗攻击" },
+        { "id": 4, "title": "中间人攻击" }
+      ]
+    },
+    {
+      "id": 95,
+      "chapter": "期末复习",
+      "title": "以下哪个不是计算机病毒的类别？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "朊病毒", "correct": true },
+        { "id": 2, "title": "宏病毒" },
+        { "id": 3, "title": "文件型病毒" },
+        { "id": 4, "title": "电子邮件病毒" }
+      ]
+    },
+    {
+      "id": 96,
+      "chapter": "期末复习",
+      "title": "对于电子邮件附件，哪一种做法最不安全？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "打开来自不明发送者的附件", "correct": true },
+        { "id": 2, "title": "先使用防病毒软件扫描附件" },
+        { "id": 3, "title": "仅打开来自已知联系人的附件" },
+        { "id": 4, "title": "先将附件保存在隔离区域，然后打开" }
+      ]
+    },
+    {
+      "id": 97,
+      "chapter": "期末复习",
+      "title": "以下哪个不是防火墙的基本功能？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "访问控制功能" },
+        { "id": 2, "title": "内容控制功能" },
+        { "id": 3, "title": "日志功能" },
+        { "id": 4, "title": "防范垃圾邮件功能", "correct": true }
+      ]
+    },
+    {
+      "id": 98,
+      "chapter": "期末复习",
+      "title": "下列哪项不是防火墙的部署位置？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "网络边缘" },
+        { "id": 2, "title": "内部网络" },
+        { "id": 3, "title": "数据中心" },
+        { "id": 4, "title": "远程桌面", "correct": true }
+      ]
+    },
+    {
+      "id": 99,
+      "chapter": "期末复习",
+      "title": "网络防御技术中，哪一项不是用于数据保密的？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "加密算法" },
+        { "id": 2, "title": "身份认证" },
+        { "id": 3, "title": "访问控制" },
+        { "id": 4, "title": "电子邮件过滤", "correct": true }
+      ]
+    },
+    {
+      "id": 100,
+      "chapter": "期末复习",
+      "title": "网络防御技术中，哪种方法用于识别合法用户？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "身份认证", "correct": true },
+        { "id": 2, "title": "入侵检测" },
+        { "id": 3, "title": "数据加密" },
+        { "id": 4, "title": "数据备份" }
+      ]
+    },
+    {
+      "id": 101,
+      "chapter": "期末复习",
+      "title": "在Endsley模型中，态势预测是基于（）的。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "要素感知" },
+        { "id": 2, "title": "态势理解", "correct": true },
+        { "id": 3, "title": "事件审计" },
+        { "id": 4, "title": "风险控制" }
+      ]
+    },
+    {
+      "id": 102,
+      "chapter": "期末复习",
+      "title": "哪一项是Endsley模型中的第一个层级？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "要素感知", "correct": true },
+        { "id": 2, "title": "态势理解" },
+        { "id": 3, "title": "事件审计" },
+        { "id": 4, "title": "态势预测" }
+      ]
+    },
+    {
+      "id": 103,
+      "chapter": "期末复习",
+      "title": "哪一项是Endsley模型中的最后一个层级？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "要素感知" },
+        { "id": 2, "title": "态势理解" },
+        { "id": 3, "title": "事件审计" },
+        { "id": 4, "title": "态势预测", "correct": true }
+      ]
+    },
+    {
+      "id": 104,
+      "chapter": "期末复习",
+      "title": "加密算法的功能是实现信息的（），数字签名算法可实现信息的（）。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "保密性，不可否认性", "correct": true },
+        { "id": 2, "title": "不可否认性，保密性" },
+        { "id": 3, "title": "完整性，可用性" },
+        { "id": 4, "title": "真实性，保密性" }
+      ]
+    },
+    {
+      "id": 105,
+      "chapter": "期末复习",
+      "title": "以下算法中属于非对称算法的是（）。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "DES" },
+        { "id": 2, "title": "RSA", "correct": true },
+        { "id": 3, "title": "IDEA" },
+        { "id": 4, "title": "AES" }
+      ]
+    },
+    {
+      "id": 106,
+      "chapter": "期末复习",
+      "title": "AES算法属于哪一类型的加密算法？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "非对称加密" },
+        { "id": 2, "title": "对称加密", "correct": true },
+        { "id": 3, "title": "哈希算法" },
+        { "id": 4, "title": "流加密" }
+      ]
+    },
+    {
+      "id": 107,
+      "chapter": "期末复习",
+      "title": "以下关于数字签名说法正确的是（）。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数字签名是在所传输的数据后附加上一段和传输数据毫无关系的数字信息" },
+        { "id": 2, "title": "数字签名能够解决数据的加密传输，即安全传输问题" },
+        { "id": 3, "title": "数字签名一般采用对称加密机制" },
+        { "id": 4, "title": "数字签名用于解决篡改、伪造等安全性问题", "correct": true }
+      ]
+    },
+    {
+      "id": 108,
+      "chapter": "期末复习",
+      "title": "数字签名算法主要用于确保信息的哪两项？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "完整性和真实性" },
+        { "id": 2, "title": "真实性和不可否认性" },
+        { "id": 3, "title": "保密性和完整性" },
+        { "id": 4, "title": "完整性和不可否认性", "correct": true }
+      ]
+    },
+    {
+      "id": 109,
+      "chapter": "期末复习",
+      "title": "在以下古典密码体制中，不属于置换密码的是",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "移位密码" },
+        { "id": 2, "title": "逆序密码" },
+        { "id": 3, "title": "凯撒密码", "correct": true },
+        { "id": 4, "title": "转轮密码" }
+      ]
+    },
+    {
+      "id": 110,
+      "chapter": "期末复习",
+      "title": "以下哪种密码体制不需要密钥？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "AES" },
+        { "id": 2, "title": "RSA" },
+        { "id": 3, "title": "DES" },
+        { "id": 4, "title": "ROT13", "correct": true }
+      ]
+    },
+    {
+      "id": 111,
+      "chapter": "期末复习",
+      "title": "在古典密码中，哪种方法是基于破译明文攻击的？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "暴力破解" },
+        { "id": 2, "title": "频率分析", "correct": true },
+        { "id": 3, "title": "逐字替换" },
+        { "id": 4, "title": "时间戳攻击" }
+      ]
+    },
+    {
+      "id": 112,
+      "chapter": "期末复习",
+      "title": "以下哪种认证方式相对最安全？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "口令认证技术" },
+        { "id": 2, "title": "人脸识别认证" },
+        { "id": 3, "title": "短信验证码认证" },
+        { "id": 4, "title": "多因素认证", "correct": true }
+      ]
+    },
+    {
+      "id": 113,
+      "chapter": "期末复习",
+      "title": "以下哪种不是常见的安全认证技术？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "口令认证技术" },
+        { "id": 2, "title": "人脸识别认证" },
+        { "id": 3, "title": "短信验证码认证" },
+        { "id": 4, "title": "基于已有知识的认证技术", "correct": true }
+      ]
+    },
+    {
+      "id": 114,
+      "chapter": "期末复习",
+      "title": "CA认证中心的主要作用是？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "加密数据" },
+        { "id": 2, "title": "发放数字证书", "correct": true },
+        { "id": 3, "title": "安全管理" },
+        { "id": 4, "title": "解密数据" }
+      ]
+    },
+    {
+      "id": 115,
+      "chapter": "期末复习",
+      "title": "对于数字证书，哪个组织负责其全球互认？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "IETF" },
+        { "id": 2, "title": "ISO" },
+        { "id": 3, "title": "PKI", "correct": true },
+        { "id": 4, "title": "ICANN" }
+      ]
+    },
+    {
+      "id": 116,
+      "chapter": "期末复习",
+      "title": "以下哪个口令相对最为安全？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "12345678" },
+        { "id": 2, "title": "1qaz@WSX" },
+        { "id": 3, "title": "p%ss#w8Rd", "correct": true },
+        { "id": 4, "title": "p@ssword" }
+      ]
+    },
+    {
+      "id": 117,
+      "chapter": "期末复习",
+      "title": "以下哪个口令相对最为安全？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ZXCV5TGB" },
+        { "id": 2, "title": "pAsswOrd@3!!", "correct": true },
+        { "id": 3, "title": "1QAZ2WSX" },
+        { "id": 4, "title": "p@ssword" }
+      ]
+    },
+    {
+      "id": 118,
+      "chapter": "期末复习",
+      "title": "以下哪种是常见的网站拒绝服务攻击技术？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "HTTP Flood", "correct": true },
+        { "id": 2, "title": "SQL注入" },
+        { "id": 3, "title": "目录扫描" },
+        { "id": 4, "title": "XSS攻击" }
+      ]
+    },
+    {
+      "id": 119,
+      "chapter": "期末复习",
+      "title": "以下哪种是常见的网站拒绝服务攻击技术？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "SQL注入" },
+        { "id": 2, "title": "CC攻击", "correct": true },
+        { "id": 3, "title": "目录扫描" },
+        { "id": 4, "title": "XSS攻击" }
+      ]
+    },
+    {
+      "id": 120,
+      "chapter": "期末复习",
+      "title": "安全电子邮件使用（）协议？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "PGP", "correct": true },
+        { "id": 2, "title": "HTTPS" },
+        { "id": 3, "title": "MIME" },
+        { "id": 4, "title": "DES" }
+      ]
+    },
+    {
+      "id": 121,
+      "chapter": "期末复习",
+      "title": "使用HTTPS的主要目的是什么？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "加速网站访问" },
+        { "id": 2, "title": "提供数据加密", "correct": true },
+        { "id": 3, "title": "提高搜索引擎排名" },
+        { "id": 4, "title": "压缩网站数据" }
+      ]
+    },
+    {
+      "id": 122,
+      "chapter": "期末复习",
+      "title": "某单位员工收到一封仿冒的邮件，要求其立即通过邮件里的链接更新账号密码，该员工受到的是什么类型的电子邮件攻击？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "病毒攻击" },
+        { "id": 2, "title": "钓鱼邮件攻击", "correct": true },
+        { "id": 3, "title": "勒索攻击" },
+        { "id": 4, "title": "窃听攻击" }
+      ]
+    },
+    {
+      "id": 123,
+      "chapter": "期末复习",
+      "title": "下列关于VPN的说法中哪一项是正确的？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "VPN是虚拟专用网的简称，它只能对ISP实施维护" },
+        { "id": 2, "title": "VPN只能在第二层数据链路层上实现加密" },
+        { "id": 3, "title": "使用VPN技术，可以建立安全通道，并能使用VPN提供的安全服务", "correct": true },
+        { "id": 4, "title": "VPN使用通道技术加密，但没有身份验证功能" }
+      ]
+    },
+    {
+      "id": 124,
+      "chapter": "期末复习",
+      "title": "即使域名邮箱配置了SPF和DKIM，添加哪种策略也可以进一步强化电子邮件的安全性？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "TLS" },
+        { "id": 2, "title": "DMARC", "correct": true },
+        { "id": 3, "title": "PGP" },
+        { "id": 4, "title": "S/MIME" }
+      ]
+    },
+    {
+      "id": 125,
+      "chapter": "期末复习",
+      "title": "区块链技术在安全性方面的一个主要优点是什么？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "更快的交易速度" },
+        { "id": 2, "title": "数据不可篡改", "correct": true },
+        { "id": 3, "title": "低成本" },
+        { "id": 4, "title": "可编程性" }
+      ]
+    },
+    {
+      "id": 126,
+      "chapter": "期末复习",
+      "title": "在云环境中，责任主体",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "相对于传统环境更加简单" },
+        { "id": 2, "title": "相对于传统环境更加复杂", "correct": true },
+        { "id": 3, "title": "与传统环境相同" },
+        { "id": 4, "title": "没有责任主体" }
+      ]
+    },
+    {
+      "id": 127,
+      "chapter": "期末复习",
+      "title": "数据安全在云环境中的要求是什么？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "相对于传统环境更低" },
+        { "id": 2, "title": "相对于传统环境更高", "correct": true },
+        { "id": 3, "title": "与传统环境相同" },
+        { "id": 4, "title": "无要求" }
+      ]
+    },
+    {
+      "id": 128,
+      "chapter": "期末复习",
+      "title": "CTF（Capture The Flag）中文一般译作夺旗赛，常见的竞赛模式包含哪几项？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "解题模式（Jeopardy）", "correct": true },
+        { "id": 2, "title": "攻防模式（Attack-Defense）", "correct": true },
+        { "id": 3, "title": "对抗模式（Adversarial）" },
+        { "id": 4, "title": "混合模式（Mix）", "correct": true }
+      ]
+    },
+    {
+      "id": 129,
+      "chapter": "期末复习",
+      "title": "在网络安全中，哪些是评估系统安全性的关键因素？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "可用性", "correct": true },
+        { "id": 2, "title": "可靠性" },
+        { "id": 3, "title": "完整性", "correct": true },
+        { "id": 4, "title": "保密性", "correct": true }
+      ]
+    },
+    {
+      "id": 130,
+      "chapter": "期末复习",
+      "title": "端口扫描工具能获取以下哪些信息？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "端口开放信息", "correct": true },
+        { "id": 2, "title": "端口提供的服务", "correct": true },
+        { "id": 3, "title": "主机的操作系统", "correct": true },
+        { "id": 4, "title": "主机硬件信息" }
+      ]
+    },
+    {
+      "id": 131,
+      "chapter": "期末复习",
+      "title": "网络攻击的一般过程包括：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "采集目标信息、脆弱点和漏洞分析", "correct": true },
+        { "id": 2, "title": "实施攻击和获取权限", "correct": true },
+        { "id": 3, "title": "关闭目标上运行的服务" },
+        { "id": 4, "title": "权限提升、横向移动、后门和持久化", "correct": true }
+      ]
+    },
+    {
+      "id": 132,
+      "chapter": "期末复习",
+      "title": "下列哪些是入侵检测系统信息收集的来源？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "日志文件", "correct": true },
+        { "id": 2, "title": "网络流量", "correct": true },
+        { "id": 3, "title": "系统目录和文件", "correct": true },
+        { "id": 4, "title": "硬件配置" }
+      ]
+    },
+    {
+      "id": 133,
+      "chapter": "期末复习",
+      "title": "高级持续威胁（APT）攻击的主要特征包括哪些？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "高度定制和复杂性", "correct": true },
+        { "id": 2, "title": "持续监控目标并保持长期访问权", "correct": true },
+        { "id": 3, "title": "攻击目标通常重要，造成巨大的损失或影响", "correct": true },
+        { "id": 4, "title": "容易被专业杀毒软件查杀" }
+      ]
+    },
+    {
+      "id": 134,
+      "chapter": "期末复习",
+      "title": "关于MITRE公司提出的Adversarial Tactics, Techniques, and Common Knowledge (ATT&CK) 网络攻击矩阵模型，哪些说法是正确的？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "ATT&CK模型从攻击者的视角描述攻击阶段使用的技术", "correct": true },
+        { "id": 2, "title": "Enterprise ATT&CK框架包含14个战术阶段", "correct": true },
+        { "id": 3, "title": "ATT&CK常见的应用场景包括网络威胁情报收集", "correct": true },
+        { "id": 4, "title": "ATT&CK只针对Windows系统" }
+      ]
+    },
+    {
+      "id": 135,
+      "chapter": "期末复习",
+      "title": "洛克希德·马丁公司提出的网络杀伤链（Kill Chain）模型包括哪些阶段？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "目标侦察（Reconnaissance）", "correct": true },
+        { "id": 2, "title": "武器构造（Weaponization）", "correct": true },
+        { "id": 3, "title": "载荷投送（Delivery）", "correct": true },
+        { "id": 4, "title": "数据加密（Data Encryption）" }
+      ]
+    },
+    {
+      "id": 136,
+      "chapter": "期末复习",
+      "title": "漏洞蠕虫破坏力强、传播速度快，其传播过程一般可以分为哪几个步骤？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "扫描", "correct": true },
+        { "id": 2, "title": "攻击", "correct": true },
+        { "id": 3, "title": "复制", "correct": true },
+        { "id": 4, "title": "潜伏" }
+      ]
+    },
+    {
+      "id": 137,
+      "chapter": "期末复习",
+      "title": "恶意软件主要通过哪些方式进行传播？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "软件捆绑", "correct": true },
+        { "id": 2, "title": "利用漏洞", "correct": true },
+        { "id": 3, "title": "空气传播" },
+        { "id": 4, "title": "远程下载", "correct": true }
+      ]
+    },
+    {
+      "id": 138,
+      "chapter": "期末复习",
+      "title": "恶意代码的行为表现可能包括哪些？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "系统破坏", "correct": true },
+        { "id": 2, "title": "数据窃取", "correct": true },
+        { "id": 3, "title": "非授权访问", "correct": true },
+        { "id": 4, "title": "系统优化" }
+      ]
+    },
+    {
+      "id": 139,
+      "chapter": "期末复习",
+      "title": "预防计算机病毒，应该注意哪些方面？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "安装并更新防病毒软件", "correct": true },
+        { "id": 2, "title": "确认文件来源后再运行", "correct": true },
+        { "id": 3, "title": "及时更新系统和应用补丁", "correct": true },
+        { "id": 4, "title": "任意下载和运行程序" }
+      ]
+    },
+    {
+      "id": 140,
+      "chapter": "期末复习",
+      "title": "针对病毒的防护，哪些检测方法是常用的？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "人工检测", "correct": true },
+        { "id": 2, "title": "自动检测", "correct": true },
+        { "id": 3, "title": "使用内存监测工具检查", "correct": true },
+        { "id": 4, "title": "随机删除文件" }
+      ]
+    },
+    {
+      "id": 141,
+      "chapter": "期末复习",
+      "title": "按照访问控制方式不同，防火墙可以分为哪几种？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "包过滤防火墙", "correct": true },
+        { "id": 2, "title": "下一代防火墙" },
+        { "id": 3, "title": "应用代理防火墙", "correct": true },
+        { "id": 4, "title": "状态检测防火墙", "correct": true }
+      ]
+    },
+    {
+      "id": 142,
+      "chapter": "期末复习",
+      "title": "关于防火墙规则的描述，哪些是错误的？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "入站规则即你的电脑连接其他主机的规则", "correct": true },
+        { "id": 2, "title": "出站规则即其他主机连入你的电脑的规则", "correct": true },
+        { "id": 3, "title": "默认情况下防火墙允许所有传出连接" },
+        { "id": 4, "title": "默认情况下防火墙拒绝所有传入连接", "correct": true }
+      ]
+    },
+    {
+      "id": 143,
+      "chapter": "期末复习",
+      "title": "入侵检测系统（IDS）的主要功能包括哪些？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "异常行为识别", "correct": true },
+        { "id": 2, "title": "与防火墙联动", "correct": true },
+        { "id": 3, "title": "实时保护", "correct": true },
+        { "id": 4, "title": "对入侵行为采取动作" }
+      ]
+    },
+    {
+      "id": 144,
+      "chapter": "期末复习",
+      "title": "零信任遵循的原则有哪些？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "不做任何假定", "correct": true },
+        { "id": 2, "title": "相信任何人" },
+        { "id": 3, "title": "随时检查一切", "correct": true },
+        { "id": 4, "title": "防范动态威胁", "correct": true }
+      ]
+    },
+    {
+      "id": 145,
+      "chapter": "期末复习",
+      "title": "密码分析学中注重哪几大规律？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "密码规律", "correct": true },
+        { "id": 2, "title": "文字规律", "correct": true },
+        { "id": 3, "title": "情况规律", "correct": true },
+        { "id": 4, "title": "算法规律" }
+      ]
+    },
+    {
+      "id": 146,
+      "chapter": "期末复习",
+      "title": "流密码的安全性依赖于哪些因素？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "密钥序列的随机性", "correct": true },
+        { "id": 2, "title": "密钥序列的不可预测性", "correct": true },
+        { "id": 3, "title": "收发两端密钥流的精确同步", "correct": true },
+        { "id": 4, "title": "密码的复杂性" }
+      ]
+    },
+    {
+      "id": 147,
+      "chapter": "期末复习",
+      "title": "一般来说，认证机制由哪几个部分构成？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "验证对象", "correct": true },
+        { "id": 2, "title": "验证协议", "correct": true },
+        { "id": 3, "title": "认证口令" },
+        { "id": 4, "title": "鉴别实体", "correct": true }
+      ]
+    },
+    {
+      "id": 148,
+      "chapter": "期末复习",
+      "title": "以下哪些属于身份认证方案的常见类型？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "基于秘密信息的身份认证", "correct": true },
+        { "id": 2, "title": "基于信任物体的身份认证", "correct": true },
+        { "id": 3, "title": "基于生物特征的身份认证", "correct": true },
+        { "id": 4, "title": "基于用户管理的身份认证" }
+      ]
+    },
+    {
+      "id": 149,
+      "chapter": "期末复习",
+      "title": "认证技术主要有哪些实现方式？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "口令认证技术", "correct": true },
+        { "id": 2, "title": "单点登录技术", "correct": true },
+        { "id": 3, "title": "基于生物特征认证技术", "correct": true },
+        { "id": 4, "title": "网络监控技术" }
+      ]
+    },
+    {
+      "id": 150,
+      "chapter": "期末复习",
+      "title": "下列选项中哪些可以增强口令认证的安全性？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "采用MD5等单向HASH算法保护密码", "correct": true },
+        { "id": 2, "title": "在传输过程中对口令进行加密", "correct": true },
+        { "id": 3, "title": "采用挑战响应的认证方式", "correct": true },
+        { "id": 4, "title": "采用长度较长的英文单词做口令" }
+      ]
+    },
+    {
+      "id": 151,
+      "chapter": "期末复习",
+      "title": "以下哪些属于政务网站安全防护的内容？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "网页防篡改", "correct": true },
+        { "id": 2, "title": "入侵防御和病毒防护", "correct": true },
+        { "id": 3, "title": "网络/数据库审计", "correct": true },
+        { "id": 4, "title": "钓鱼邮件防护" }
+      ]
+    },
+    {
+      "id": 152,
+      "chapter": "期末复习",
+      "title": "邮件安全防护中常用的手段包括哪些？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "垃圾邮件过滤", "correct": true },
+        { "id": 2, "title": "邮件加密", "correct": true },
+        { "id": 3, "title": "恶意链接检测", "correct": true },
+        { "id": 4, "title": "网络监控" }
+      ]
+    },
+    {
+      "id": 153,
+      "chapter": "期末复习",
+      "title": "为增强网站和邮件安全，应注意哪些方面？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "使用强口令", "correct": true },
+        { "id": 2, "title": "定期更新安全补丁", "correct": true },
+        { "id": 3, "title": "数据备份", "correct": true },
+        { "id": 4, "title": "无线网络加密" }
+      ]
+    },
+    {
+      "id": 154,
+      "chapter": "期末复习",
+      "title": "区块链技术主要有哪些特点？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "去中心化", "correct": true },
+        { "id": 2, "title": "不可篡改", "correct": true },
+        { "id": 3, "title": "共识", "correct": true },
+        { "id": 4, "title": "隐私保护" }
+      ]
+    },
+    {
+      "id": 155,
+      "chapter": "期末复习",
+      "title": "物联网安全防护主要分为哪几个层次？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "终端安全", "correct": true },
+        { "id": 2, "title": "通信网络安全", "correct": true },
+        { "id": 3, "title": "服务端安全", "correct": true },
+        { "id": 4, "title": "物理安全" }
+      ]
+    },
+    {
+      "id": 156,
+      "chapter": "期末复习",
+      "title": "网络安全体系是由各种网络安全单元构成的，共同实现网络安全目标的一种体系架构，包括法律法规、安全策略、组织管理、技术措施等多方面因素。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 157,
+      "chapter": "期末复习",
+      "title": "存储和处理涉及国家秘密信息的网络的运行安全保护，除遵守《网络安全法》外，还应遵守保密法律和行政法规。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 158,
+      "chapter": "期末复习",
+      "title": "网络安全目标的实现需要综合多方面因素，包括但不限于法律法规、安全策略和技术措施。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 159,
+      "chapter": "期末复习",
+      "title": "网络社会的发展为违法犯罪分子提供了一个新的领域，但其社会危害性远不如现实社会中的违法犯罪。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 160,
+      "chapter": "期末复习",
+      "title": "通过电话方式骗取用户账号密码属于社会工程学方法。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 161,
+      "chapter": "期末复习",
+      "title": "《国家网络安全事件应急预案》主要内容仅包括组织机构和职责。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 162,
+      "chapter": "期末复习",
+      "title": "各单位应按照“谁主管谁负责，谁运营谁负责”的原则，组织对本单位网络和信息系统进行安全监测。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 163,
+      "chapter": "期末复习",
+      "title": "MITRE公司提出的网络攻击矩阵模型是从防守者视角来描述各阶段攻击技术的模型。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 164,
+      "chapter": "期末复习",
+      "title": "目前使用较多的网络攻击模型主要包括网络杀伤链模型和网络攻击矩阵模型。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 165,
+      "chapter": "期末复习",
+      "title": "目标系统存在的漏洞是产生网络安全威胁的唯一原因。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 166,
+      "chapter": "期末复习",
+      "title": "只要设置了口令，资源就能得到很好的访问控制。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 167,
+      "chapter": "期末复习",
+      "title": "抵抗入侵者的第一道防线通常是口令系统。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 168,
+      "chapter": "期末复习",
+      "title": "口令通常是最容易被突破的资源访问控制机制。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 169,
+      "chapter": "期末复习",
+      "title": "明文保存的用户口令容易被直接利用，因此很多系统采用单向哈希算法进行加密保存。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 170,
+      "chapter": "期末复习",
+      "title": "受感染机器间能够协同工作是区分僵尸网络和其他恶意软件的关键特性。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 171,
+      "chapter": "期末复习",
+      "title": "掌握漏洞资源等于掌握了网络安全的绝对主动权。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 172,
+      "chapter": "期末复习",
+      "title": "网络蠕虫按传播途径和攻击性可分为传统蠕虫、邮件蠕虫和漏洞蠕虫，其中邮件蠕虫主要依赖邮件传播。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 173,
+      "chapter": "期末复习",
+      "title": "网络蠕虫的危害性通常大于计算机病毒，但其生命周期比计算机病毒短得多。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 174,
+      "chapter": "期末复习",
+      "title": "网络隔离技术总体上分为物理隔离和逻辑隔离两类。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 175,
+      "chapter": "期末复习",
+      "title": "入侵防御技术在攻击到达的同时或之后会发出告警。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 176,
+      "chapter": "期末复习",
+      "title": "签名仅用于描述网络中正常数据流的特征。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 177,
+      "chapter": "期末复习",
+      "title": "迪菲和赫尔曼提出的公钥密码系统在保密通信、密钥分配和鉴别等方面具有深远的影响。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 178,
+      "chapter": "期末复习",
+      "title": "在设计密码系统时，应遵循Kerckhoffs假设以确保安全性。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 179,
+      "chapter": "期末复习",
+      "title": "在DES加密过程中，S盒对加密的强度不产生影响。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 180,
+      "chapter": "期末复习",
+      "title": "三重DES能够抵御中途相遇攻击。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 181,
+      "chapter": "期末复习",
+      "title": "单点登录是指用户在访问不同系统时，只需进行一次身份认证，然后可根据该认证访问授权资源。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 182,
+      "chapter": "期末复习",
+      "title": "认证通常由标识（Identification）和鉴别（Authentication）两部分组成。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 183,
+      "chapter": "期末复习",
+      "title": "认证是指一个实体向另一个实体证明其声称的身份。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 184,
+      "chapter": "期末复习",
+      "title": "多因素认证通过组合多种鉴别信息提升了认证安全性。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 185,
+      "chapter": "期末复习",
+      "title": "网站假冒仅通过网站域名欺骗进行。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 186,
+      "chapter": "期末复习",
+      "title": "非授权访问是由于网站服务的技术缺陷导致的安全漏洞。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 187,
+      "chapter": "期末复习",
+      "title": "Web应用防火墙用于保护Web服务器和Web应用，提供安全防护功能。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 188,
+      "chapter": "期末复习",
+      "title": "SPF是电子邮件验证中最基本和最常见的保护技术之一。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 189,
+      "chapter": "期末复习",
+      "title": "移动应用安全与传统的Web安全问题相同，不需单独考虑移动应用的安全。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 190,
+      "chapter": "期末复习",
+      "title": "安全大数据分析是指利用大数据手段对网络安全运维相关数据进行分析和挖掘。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 191,
+      "chapter": "期末模拟",
+      "title": "没有网络安全就没有（），就没有（），广大人民群众利益也难以得到保障。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "经济繁荣、社会稳定" },
+        { "id": 2, "title": "国家安全、经济社会稳定运行", "correct": true },
+        { "id": 3, "title": "社会和谐、个人财产安全" },
+        { "id": 4, "title": "国家安全、个人隐私保护" }
+      ]
+    },
+    {
+      "id": 192,
+      "chapter": "期末模拟",
+      "title": "网络安全的基本属性不包括：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "可用性" },
+        { "id": 2, "title": "完整性" },
+        { "id": 3, "title": "保密性" },
+        { "id": 4, "title": "不可抵赖性", "correct": true }
+      ]
+    },
+    {
+      "id": 193,
+      "chapter": "期末模拟",
+      "title": "哪一部法律是专门针对个人信息处理规则而制定的？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "《中华人民共和国个人信息保护法》", "correct": true },
+        { "id": 2, "title": "《中华人民共和国数据安全法》" },
+        { "id": 3, "title": "《中华人民共和国密码法》" },
+        { "id": 4, "title": "《中华人民共和国网络安全法》" }
+      ]
+    },
+    {
+      "id": 194,
+      "chapter": "期末模拟",
+      "title": "随着攻防对抗技术的不断演进，在进行检测时往往需要扫描目标机器开放的端口，以下哪个工具或者命令具有扫描开放端口的功能？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ping" },
+        { "id": 2, "title": "netstat" },
+        { "id": 3, "title": "nmap", "correct": true },
+        { "id": 4, "title": "ipconfig" }
+      ]
+    },
+    {
+      "id": 195,
+      "chapter": "期末模拟",
+      "title": "以下哪个不是常见的网络攻击手段？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "端口和漏洞扫描" },
+        { "id": 2, "title": "网络窃听" },
+        { "id": 3, "title": "物理关机", "correct": true },
+        { "id": 4, "title": "软件漏洞利用" }
+      ]
+    },
+    {
+      "id": 196,
+      "chapter": "期末模拟",
+      "title": "网络嗅探器（Network Sniffer）常用于网络管理，也经常被攻击者用于信息获取。以下哪个工具可用于网络嗅探？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "fscan" },
+        { "id": 2, "title": "hydra" },
+        { "id": 3, "title": "snort", "correct": true },
+        { "id": 4, "title": "metasploit" }
+      ]
+    },
+    {
+      "id": 197,
+      "chapter": "期末模拟",
+      "title": "关于勒索软件，下列哪个说法是正确的？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "勒索软件威胁低，影响有限" },
+        { "id": 2, "title": "勒索软件通过加密文件进行勒索", "correct": true },
+        { "id": 3, "title": "支付赎金后可获密钥，恢复文件" },
+        { "id": 4, "title": "数字货币支付赎金，便于追踪犯罪者" }
+      ]
+    },
+    {
+      "id": 198,
+      "chapter": "期末模拟",
+      "title": "针对恶意软件的防御，哪一项是不推荐的？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "禁用自动播放功能，以减少恶意代码的自动执行机会" },
+        { "id": 2, "title": "不安装任何第三方软件以确保系统安全", "correct": true },
+        { "id": 3, "title": "定期更换复杂的密码" },
+        { "id": 4, "title": "使用多种安全措施综合防御" }
+      ]
+    },
+    {
+      "id": 199,
+      "chapter": "期末模拟",
+      "title": "以下哪个不是计算机病毒的类别？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "电子病毒", "correct": true },
+        { "id": 2, "title": "宏病毒" },
+        { "id": 3, "title": "文件型病毒" },
+        { "id": 4, "title": "电子邮件病毒" }
+      ]
+    },
+    {
+      "id": 200,
+      "chapter": "期末模拟",
+      "title": "以下哪项属于防火墙的基本功能？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "多租户管理功能" },
+        { "id": 2, "title": "镜像备份功能" },
+        { "id": 3, "title": "内网穿透功能" },
+        { "id": 4, "title": "访问控制功能", "correct": true }
+      ]
+    },
+    {
+      "id": 201,
+      "chapter": "期末模拟",
+      "title": "网络防御中，哪项技术主要用于信息加密？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "公钥基础设施", "correct": true },
+        { "id": 2, "title": "防火墙" },
+        { "id": 3, "title": "入侵检测系统" },
+        { "id": 4, "title": "访问控制" }
+      ]
+    },
+    {
+      "id": 202,
+      "chapter": "期末模拟",
+      "title": "态势感知中哪一项需要先于其他项进行？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "要素感知", "correct": true },
+        { "id": 2, "title": "态势理解" },
+        { "id": 3, "title": "事件审计" },
+        { "id": 4, "title": "态势预测" }
+      ]
+    },
+    {
+      "id": 203,
+      "chapter": "期末模拟",
+      "title": "加密算法的功能是实现信息的（）。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "不可抵赖性" },
+        { "id": 2, "title": "保密性", "correct": true },
+        { "id": 3, "title": "完整性" },
+        { "id": 4, "title": "真实性" }
+      ]
+    },
+    {
+      "id": 204,
+      "chapter": "期末模拟",
+      "title": "使用数字签名来确保信息在传输过程中没有被篡改，这属于保障了信息的哪个属性？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "对称性" },
+        { "id": 2, "title": "完整性", "correct": true },
+        { "id": 3, "title": "保密性" },
+        { "id": 4, "title": "真实性" }
+      ]
+    },
+    {
+      "id": 205,
+      "chapter": "期末模拟",
+      "title": "以下哪种算法不属于古典密码体制？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "凯撒密码" },
+        { "id": 2, "title": "RSA算法", "correct": true },
+        { "id": 3, "title": "维吉尼亚密码" },
+        { "id": 4, "title": "逐字替换密码" }
+      ]
+    },
+    {
+      "id": 206,
+      "chapter": "期末模拟",
+      "title": "哪种认证方法最容易受到社会工程学攻击？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "口令认证", "correct": true },
+        { "id": 2, "title": "人脸识别认证" },
+        { "id": 3, "title": "短信验证码认证" },
+        { "id": 4, "title": "多因素认证" }
+      ]
+    },
+    {
+      "id": 207,
+      "chapter": "期末模拟",
+      "title": "以下哪个口令相对最为安全？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ZXCV5TGB" },
+        { "id": 2, "title": "pAsswOrd@3!!", "correct": true },
+        { "id": 3, "title": "1QAZ2WSX" },
+        { "id": 4, "title": "p@ssword" }
+      ]
+    },
+    {
+      "id": 208,
+      "chapter": "期末模拟",
+      "title": "以下哪种不是用于保护电子邮件安全的技术？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "数字签名" },
+        { "id": 2, "title": "数据加密" },
+        { "id": 3, "title": "验证码", "correct": true },
+        { "id": 4, "title": "数据完整性验证" }
+      ]
+    },
+    {
+      "id": 209,
+      "chapter": "期末模拟",
+      "title": "某单位员工收到一封电子邮件，提示其账号即将过期，要求其立即通过邮件里的链接更新账号密码，该员工受到的是什么类型的电子邮件攻击？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "病毒攻击" },
+        { "id": 2, "title": "钓鱼邮件攻击", "correct": true },
+        { "id": 3, "title": "勒索攻击" },
+        { "id": 4, "title": "拒绝服务攻击" }
+      ]
+    },
+    {
+      "id": 210,
+      "chapter": "期末模拟",
+      "title": "以下哪个不属于物联网安全防护层次？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "终端安全" },
+        { "id": 2, "title": "通信网络安全" },
+        { "id": 3, "title": "服务端安全" },
+        { "id": 4, "title": "业务层安全", "correct": true }
+      ]
+    },
+    {
+      "id": 211,
+      "chapter": "期末模拟",
+      "title": "当前网络安全面临的主要问题有哪些？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "APT组织持续对重要行业实施攻击", "correct": true },
+        { "id": 2, "title": "个人信息数据泄露风险问题突出", "correct": true },
+        { "id": 3, "title": "仿冒诈骗和钓鱼邮件层出不穷", "correct": true },
+        { "id": 4, "title": "个人电脑未安装杀毒软件" }
+      ]
+    },
+    {
+      "id": 212,
+      "chapter": "期末模拟",
+      "title": "网络攻击的主要目的和形式包括哪些？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "获得数据", "correct": true },
+        { "id": 2, "title": "利用资源", "correct": true },
+        { "id": 3, "title": "破坏业务", "correct": true },
+        { "id": 4, "title": "破坏硬件" }
+      ]
+    },
+    {
+      "id": 213,
+      "chapter": "期末模拟",
+      "title": "关于网络攻击，哪些因素通常是攻击者的驱动因素？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "政治因素", "correct": true },
+        { "id": 2, "title": "经济利益", "correct": true },
+        { "id": 3, "title": "技术炫耀", "correct": true },
+        { "id": 4, "title": "伦理考量" }
+      ]
+    },
+    {
+      "id": 214,
+      "chapter": "期末模拟",
+      "title": "僵尸网络常被用于进行哪些类型的攻击？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "发送垃圾邮件", "correct": true },
+        { "id": 2, "title": "分布式拒绝服务攻击", "correct": true },
+        { "id": 3, "title": "特定领域攻击", "correct": true },
+        { "id": 4, "title": "集体关机下线用于进行的攻击类型" }
+      ]
+    },
+    {
+      "id": 215,
+      "chapter": "期末模拟",
+      "title": "恶意代码防范技术中，哪些是可行的有效手段？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "定期更新安全补丁", "correct": true },
+        { "id": 2, "title": "安装防火墙", "correct": true },
+        { "id": 3, "title": "禁用所有网络服务" },
+        { "id": 4, "title": "使用反病毒软件提高安全性，但在实际应用中并不可行", "correct": true }
+      ]
+    },
+    {
+      "id": 216,
+      "chapter": "期末模拟",
+      "title": "防火墙根据形态主要有哪些类型？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "软件防火墙", "correct": true },
+        { "id": 2, "title": "硬件防火墙", "correct": true },
+        { "id": 3, "title": "专用防火墙", "correct": true },
+        { "id": 4, "title": "液体防火墙" }
+      ]
+    },
+    {
+      "id": 217,
+      "chapter": "期末模拟",
+      "title": "根据密码分析者破译时已具备的前提条件，通常将攻击类型分为哪几种？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "唯密文攻击", "correct": true },
+        { "id": 2, "title": "密码喷射攻击" },
+        { "id": 3, "title": "已知明文攻击", "correct": true },
+        { "id": 4, "title": "选择明文攻击", "correct": true }
+      ]
+    },
+    {
+      "id": 218,
+      "chapter": "期末模拟",
+      "title": "以下属于双因素认证的有哪些？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "密码加验证码认证", "correct": true },
+        { "id": 2, "title": "密码加人脸识别认证", "correct": true },
+        { "id": 3, "title": "发送一次性短信验证码认证" },
+        { "id": 4, "title": "电话语音加人脸识别认证", "correct": true }
+      ]
+    },
+    {
+      "id": 219,
+      "chapter": "期末模拟",
+      "title": "以下哪些属于政务网站安全防护的内容？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "网页防篡改", "correct": true },
+        { "id": 2, "title": "网站安全监控", "correct": true },
+        { "id": 3, "title": "钓鱼邮件防护" },
+        { "id": 4, "title": "入侵防御", "correct": true }
+      ]
+    },
+    {
+      "id": 220,
+      "chapter": "期末模拟",
+      "title": "区块链技术与传统数据库相比，有哪些不同？",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "去中心化", "correct": true },
+        { "id": 2, "title": "由中央机构控制" },
+        { "id": 3, "title": "账本分布存储于多台计算机", "correct": true },
+        { "id": 4, "title": "数据不可篡改", "correct": true }
+      ]
+    },
+    {
+      "id": 221,
+      "chapter": "期末模拟",
+      "title": "仅仅通过法律法规就可以实现网络安全目标，不需要考虑安全策略、组织管理、技术措施等因素。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 222,
+      "chapter": "期末模拟",
+      "title": "应根据事件级别，启动相应级别的应急响应流程。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 223,
+      "chapter": "期末模拟",
+      "title": "MITRE公司提出的网络攻击矩阵模型是一个站在攻击者视角描述各攻击阶段技术的模型。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 224,
+      "chapter": "期末模拟",
+      "title": "口令是最常用的资源访问控制机制，其安全性很好，不易出现问题。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 225,
+      "chapter": "期末模拟",
+      "title": "特洛伊木马通过伪装成实用程序赢得用户信任，并趁机控制目标主机。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 226,
+      "chapter": "期末模拟",
+      "title": "为防护病毒，需要理解其传播和攻击原理，并根据特性进行检测和消除。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 227,
+      "chapter": "期末模拟",
+      "title": "防火墙是一种硬件设备，不能通过软件来实现。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 228,
+      "chapter": "期末模拟",
+      "title": "入侵防御系统可通过网络流量分析来检测包括缓冲区溢出攻击、木马和蠕虫等入侵行为。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 229,
+      "chapter": "期末模拟",
+      "title": "在密码学的研究中，应专注于密码算法而非密码破译。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 230,
+      "chapter": "期末模拟",
+      "title": "当前，由于DES密钥长度仅为56位，DES不被视为绝对安全的加密方法。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 231,
+      "chapter": "期末模拟",
+      "title": "单点登录要求用户在访问不同授权资源时，每次都需进行新的身份认证。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 232,
+      "chapter": "期末模拟",
+      "title": "认证机制是实施访问控制的基础性手段。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 233,
+      "chapter": "期末模拟",
+      "title": "非授权访问是由网络配置错误导致的。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 234,
+      "chapter": "期末模拟",
+      "title": "目前没有任何技术可以帮助我们应对电子邮件面临的安全威胁。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 235,
+      "chapter": "期末模拟",
+      "title": "云安全是一套包括政策、技术和布署控制方法的广泛体系，用以保护资料和应用程序。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 236,
+      "chapter": "形考四",
+      "title": "没有网络安全就没有____________，就没有_____________，广大人民群众利益也难以得到保障。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "国家发展、社会进步" },
+        { "id": 2, "title": "国家安全、经济社会稳定运行", "correct": true },
+        { "id": 3, "title": "社会稳定运行、经济繁荣" },
+        { "id": 4, "title": "社会安全、国家稳定运行" }
+      ]
+    },
+    {
+      "id": 237,
+      "chapter": "形考四",
+      "title": "《中华人民共和国网络安全法》正式施行的时间是？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "2017年6月1日", "correct": true },
+        { "id": 2, "title": "2016年11月7日" },
+        { "id": 3, "title": "2017年1月1日" },
+        { "id": 4, "title": "2016年12月1日" }
+      ]
+    },
+    {
+      "id": 238,
+      "chapter": "形考四",
+      "title": "网络安全的基本属性有：可用性、完整性和_________。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "多样性" },
+        { "id": 2, "title": "复杂性" },
+        { "id": 3, "title": "保密性", "correct": true },
+        { "id": 4, "title": "不可否认性" }
+      ]
+    },
+    {
+      "id": 239,
+      "chapter": "形考四",
+      "title": "CTF（Capture The Flag）中文一般译作夺旗赛，在网络安全领域中指的是网络安全技术人员之间进行技术竞技的一种比赛形式。常见的CTF竞赛模式有：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "解题模式（Jeopardy）", "correct": true },
+        { "id": 2, "title": "攻防模式（Attack-Defense）", "correct": true },
+        { "id": 3, "title": "渗透模式（Penatration）" },
+        { "id": 4, "title": "混合模式（Mix）", "correct": true }
+      ]
+    },
+    {
+      "id": 240,
+      "chapter": "形考四",
+      "title": "可以通过以下哪种方式来获取网络安全情报与科技信息（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "网络安全会议", "correct": true },
+        { "id": 2, "title": "网络安全期刊", "correct": true },
+        { "id": 3, "title": "网络安全网站", "correct": true },
+        { "id": 4, "title": "CTF比赛", "correct": true }
+      ]
+    },
+    {
+      "id": 241,
+      "chapter": "形考四",
+      "title": "2019年5月13日，《信息安全技术网络安全等级保护基本要求》（简称等保2.0）正式发布，并已于2019年12月1日起正式实行。“等保2.0”保护对象包括：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "基础信息网络（广电网、电信网等）", "correct": true },
+        { "id": 2, "title": "信息系统（采用传统技术的系统）", "correct": true },
+        { "id": 3, "title": "云计算平台、以及大数据平台", "correct": true },
+        { "id": 4, "title": "移动互联、物联网和工业控制系统等", "correct": true }
+      ]
+    },
+    {
+      "id": 242,
+      "chapter": "形考四",
+      "title": "我国网络安全领域的基础性法律《中华人民共和国网络安全法》正式施行，对保护个人信息、治理网络诈骗、保护关键信息基础设施、网络实名制等方面作出明确规定，成为我国网络空间法治化建设的重要里程碑。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 243,
+      "chapter": "形考四",
+      "title": "网络社会的形成与发展为现实社会中的违法犯罪分子提供了一个新的违法犯罪领域，但其社会危害性不及现实社会中的违法犯罪。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 244,
+      "chapter": "形考四",
+      "title": "下列哪个不是网络攻击的主要目的：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "获取目标的重要信息和数据" },
+        { "id": 2, "title": "对目标系统进行信息篡改和数据资料删除等" },
+        { "id": 3, "title": "让目标无法正常提供服务" },
+        { "id": 4, "title": "造成人员伤亡", "correct": true }
+      ]
+    },
+    {
+      "id": 245,
+      "chapter": "形考四",
+      "title": "以下哪个不是常见的网络攻击手段：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "端口和漏洞扫描" },
+        { "id": 2, "title": "破坏供电系统造成服务器停电", "correct": true },
+        { "id": 3, "title": "网络窃听" },
+        { "id": 4, "title": "使用MS17-010漏洞获取服务器权限" }
+      ]
+    },
+    {
+      "id": 246,
+      "chapter": "形考四",
+      "title": "网络嗅探器 (Network Sniffer) 是一种常用的网络管理工具，也常常被攻击者利用来进行信息获取，以下哪个工具可以进行网络嗅探：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "fscan" },
+        { "id": 2, "title": "hydra" },
+        { "id": 3, "title": "snort", "correct": true },
+        { "id": 4, "title": "metasploit" }
+      ]
+    },
+    {
+      "id": 247,
+      "chapter": "形考四",
+      "title": "随着攻防技术对抗的不断演进，一些漏洞扫描工具在检测目标系统的脆弱点时，还会进行攻击的概念验证（POC），从而确认此脆弱点是否可以被利用。以下哪个工具有攻击概念验证的功能：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "ping" },
+        { "id": 2, "title": "fscan", "correct": true },
+        { "id": 3, "title": "netstat" },
+        { "id": 4, "title": "ipconfig" }
+      ]
+    },
+    {
+      "id": 248,
+      "chapter": "形考四",
+      "title": "明文保存的用户口令容易被直接利用，很多系统对口令进行哈希加密运算后再保存。对这种加密后口令，以下哪个说法是正确的：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "加密后的口令只要获得密钥后可以还原出明文" },
+        { "id": 2, "title": "加密后的口令可以抵御字典爆破的攻击" },
+        { "id": 3, "title": "通过哈希加密的口令，即便知道了密文和相关的配置，也完全无法恢复出任何明文口令" },
+        { "id": 4, "title": "加密储存的口令可以被“撞库”攻击", "correct": true }
+      ]
+    },
+    {
+      "id": 249,
+      "chapter": "形考四",
+      "title": "端口扫描工具能获取以下哪些信息：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "端口开放信息", "correct": true },
+        { "id": 2, "title": "端口提供的服务", "correct": true },
+        { "id": 3, "title": "主机的操作系统", "correct": true },
+        { "id": 4, "title": "主机带宽信息" }
+      ]
+    },
+    {
+      "id": 250,
+      "chapter": "形考四",
+      "title": "软件漏洞利用是攻击者利用软件应用程序中的缺陷进行攻击的方法，常见被利用的软件漏洞有：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "缓冲区溢出漏洞", "correct": true },
+        { "id": 2, "title": "业务逻辑错误", "correct": true },
+        { "id": 3, "title": "数据验证问题", "correct": true },
+        { "id": 4, "title": "身份认证和授权错误", "correct": true },
+        { "id": 5, "title": "文件处理问题", "correct": true }
+      ]
+    },
+    {
+      "id": 251,
+      "chapter": "形考四",
+      "title": "高级持续威胁（APT）的特征有：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        {
+          "id": 1,
+          "title": "它比传统攻击具有更高的定制程度和复杂程度，需要花费大量时间和资源来研究确定系统内部的漏洞",
+          "correct": true
+        },
+        { "id": 2, "title": "这类攻击持续监控目标，对目标保有长期的访问权", "correct": true },
+        {
+          "id": 3,
+          "title": "攻击目标通常是特定的重要目标，攻击方一旦得手，往往会给被攻击目标造成巨大的经济损失或政治影响，乃至于毁灭性打击",
+          "correct": true
+        },
+        { "id": 4, "title": "APT攻击可以被防病毒软件发现并查杀阻断" }
+      ]
+    },
+    {
+      "id": 252,
+      "chapter": "形考四",
+      "title": "MITRE公司提出的网络攻击矩阵模型，它是一个站在防守者的视角来描述攻击中各阶段用到的技术的模型。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 253,
+      "chapter": "形考四",
+      "title": "常见的口令破解方式有口令组合、社会工程学、机器学习破解、撞库等。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 254,
+      "chapter": "形考五",
+      "title": "病毒为什么会将自己附着在主机可执行程序中？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "因为病毒不能独立执行", "correct": true },
+        { "id": 2, "title": "因为隐藏在主机中会传播的更快" },
+        { "id": 3, "title": "因为病毒将主机可执行程序的代码添加到它们本身" },
+        { "id": 4, "title": "因为病毒是用主机的功能增加它们的破坏性" }
+      ]
+    },
+    {
+      "id": 255,
+      "chapter": "形考五",
+      "title": "以下哪一种是防止系统不受恶意代码威胁的最简单最完美的方法？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "安全知识、系统补丁和一个好的防毒程序" },
+        { "id": 2, "title": "一个防毒程序就够了" },
+        { "id": 3, "title": "只需安装最新的安全补丁" },
+        { "id": 4, "title": "没有这样通用的完美的保护系统的方法", "correct": true }
+      ]
+    },
+    {
+      "id": 256,
+      "chapter": "形考五",
+      "title": "防病毒产品可以实施在网络的哪三个层次中？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "网关、服务器、桌面", "correct": true },
+        { "id": 2, "title": "互联网、内部网、桌面" },
+        { "id": 3, "title": "防火墙、代理服务器、邮件处理服务器" },
+        { "id": 4, "title": "网关、桌面、无线设备" }
+      ]
+    },
+    {
+      "id": 257,
+      "chapter": "形考五",
+      "title": "以下关于恶意代码的说法，哪个是错误的：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "恶意代码可以利用软件或系统漏洞对目标进入攻击利用。" },
+        { "id": 2, "title": "恶意代码无法独立运行，需要与捆绑在正常软件上才能运行。", "correct": true },
+        { "id": 3, "title": "恶意代码可以通过远程下载到主机执行。" },
+        { "id": 4, "title": "恶意代码可以通过移动介质进行传播。" }
+      ]
+    },
+    {
+      "id": 258,
+      "chapter": "形考五",
+      "title": "以下哪个不是漏洞数据库：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "CVE", "correct": true },
+        { "id": 2, "title": "CNVD" },
+        { "id": 3, "title": "CNNVD" },
+        { "id": 4, "title": "NVD" }
+      ]
+    },
+    {
+      "id": 259,
+      "chapter": "形考五",
+      "title": "以下哪个不是常见的恶意代码：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "病毒" },
+        { "id": 2, "title": "木马" },
+        { "id": 3, "title": "蠕虫" },
+        { "id": 4, "title": "细菌", "correct": true }
+      ]
+    },
+    {
+      "id": 260,
+      "chapter": "形考五",
+      "title": "关于勒索软件，以下哪个说明是错误的：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "勒索软件是一种恶意软件，传播范围广，危害大。" },
+        { "id": 2, "title": "勒索软件通过加密受害者文件并试图通过威胁勒索获利。" },
+        { "id": 3, "title": "解密高手可以破解勒索软件的密钥，从而恢复出被加密的文件", "correct": true },
+        { "id": 4, "title": "勒索软件通常要求使用数字货币支付赎金，这使得追踪和起诉犯罪者都十分困难" }
+      ]
+    },
+    {
+      "id": 261,
+      "chapter": "形考五",
+      "title": "以下哪个不是计算机病毒的生命周期：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "感染阶段", "correct": true },
+        { "id": 2, "title": "繁殖阶段" },
+        { "id": 3, "title": "触发阶段" },
+        { "id": 4, "title": "执行阶段" }
+      ]
+    },
+    {
+      "id": 262,
+      "chapter": "形考五",
+      "title": "以下哪个不是计算机病毒的类别：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "文件型病毒" },
+        { "id": 2, "title": "宏病毒" },
+        { "id": 3, "title": "电子邮件病毒" },
+        { "id": 4, "title": "电子病毒", "correct": true }
+      ]
+    },
+    {
+      "id": 263,
+      "chapter": "形考五",
+      "title": "以下哪个不是预防计算机病毒的方法：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "安装防病毒软件并及时升级更新" },
+        { "id": 2, "title": "不轻易运行互联网传递的程序" },
+        { "id": 3, "title": "及时给系统和应用打补丁" },
+        { "id": 4, "title": "不使用容易被猜到弱口令", "correct": true }
+      ]
+    },
+    {
+      "id": 264,
+      "chapter": "形考五",
+      "title": "恶意软件主要采用以下哪些传播途径进行传播：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "软件捆绑", "correct": true },
+        { "id": 2, "title": "利用漏洞", "correct": true },
+        { "id": 3, "title": "移动介质", "correct": true },
+        { "id": 4, "title": "远程下载", "correct": true },
+        { "id": 5, "title": "社会工程学", "correct": true }
+      ]
+    },
+    {
+      "id": 265,
+      "chapter": "形考五",
+      "title": "漏洞蠕虫破坏力强、传播速度快，它的传播过程一般可以分为（）步骤",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "扫描", "correct": true },
+        { "id": 2, "title": "攻击", "correct": true },
+        { "id": 3, "title": "复制", "correct": true },
+        { "id": 4, "title": "破坏" }
+      ]
+    },
+    {
+      "id": 266,
+      "chapter": "形考五",
+      "title": "下列哪些步骤属于恶意代码的作用过程：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "入侵系统", "correct": true },
+        { "id": 2, "title": "提升权限", "correct": true },
+        { "id": 3, "title": "实施隐藏", "correct": true },
+        { "id": 4, "title": "潜伏等待", "correct": true },
+        { "id": 5, "title": "执行破坏", "correct": true }
+      ]
+    },
+    {
+      "id": 267,
+      "chapter": "形考五",
+      "title": "受感染机器间是否能够协同工作是区分僵尸网络和其他恶意软件的重要特征。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 268,
+      "chapter": "形考五",
+      "title": "以下哪个不是防火墙的基本功能：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "访问控制功能" },
+        { "id": 2, "title": "内容控制功能" },
+        { "id": 3, "title": "日志功能" },
+        { "id": 4, "title": "防范钓鱼邮件功能", "correct": true }
+      ]
+    },
+    {
+      "id": 269,
+      "chapter": "形考五",
+      "title": "网络防御技术所包含的身份认证基本方法，不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "基于信息秘密的身份认证" },
+        { "id": 2, "title": "基于信任物体的身份认证" },
+        { "id": 3, "title": "基于生物特征的身份认证" },
+        { "id": 4, "title": "基于数字签名的身份认证", "correct": true }
+      ]
+    },
+    {
+      "id": 270,
+      "chapter": "形考五",
+      "title": "根据Endsley模型，可以将态势感知划分为三个层级，不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "要素感知" },
+        { "id": 2, "title": "态势理解" },
+        { "id": 3, "title": "安全审计", "correct": true },
+        { "id": 4, "title": "态势预测" }
+      ]
+    },
+    {
+      "id": 271,
+      "chapter": "形考五",
+      "title": "网络防御技术所包含的访问控制技术内容，不包括（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "负载均衡", "correct": true },
+        { "id": 2, "title": "认证" },
+        { "id": 3, "title": "控制策略实现" },
+        { "id": 4, "title": "安全审计" }
+      ]
+    },
+    {
+      "id": 272,
+      "chapter": "形考五",
+      "title": "按照访问控制方式不同，防火墙可以分为（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "包过滤防火墙", "correct": true },
+        { "id": 2, "title": "新一代防火墙" },
+        { "id": 3, "title": "应用代理防火墙", "correct": true },
+        { "id": 4, "title": "状态检测防火墙", "correct": true }
+      ]
+    },
+    {
+      "id": 273,
+      "chapter": "形考五",
+      "title": "入侵检测技术系统分为：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "基于主机的入侵检测系统", "correct": true },
+        { "id": 2, "title": "基于网络的入侵检测系统", "correct": true },
+        { "id": 3, "title": "基于应用的入侵检测系统" },
+        { "id": 4, "title": "分布式入侵检测系统", "correct": true }
+      ]
+    },
+    {
+      "id": 274,
+      "chapter": "形考五",
+      "title": "防火墙的典型部署模式包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "屏蔽主机模式", "correct": true },
+        { "id": 2, "title": "物理隔离模式" },
+        { "id": 3, "title": "双宿/多宿主机模式", "correct": true },
+        { "id": 4, "title": "屏蔽子网模式", "correct": true }
+      ]
+    },
+    {
+      "id": 275,
+      "chapter": "形考五",
+      "title": "逻辑隔离的主要技术包括（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "虚拟局域网", "correct": true },
+        { "id": 2, "title": "虚拟路由及转发", "correct": true },
+        { "id": 3, "title": "多协议标签转换", "correct": true },
+        { "id": 4, "title": "虚拟交换机", "correct": true }
+      ]
+    },
+    {
+      "id": 276,
+      "chapter": "形考五",
+      "title": "入侵防御系统主要包括以下几个部分（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "应用数据重组", "correct": true },
+        { "id": 2, "title": "协议识别和协议解析", "correct": true },
+        { "id": 3, "title": "特征匹配", "correct": true },
+        { "id": 4, "title": "响应处理", "correct": true }
+      ]
+    },
+    {
+      "id": 277,
+      "chapter": "形考五",
+      "title": "网络隔离技术总体上可以分为物理隔离及逻辑隔离两类方法。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 278,
+      "chapter": "形考五",
+      "title": "加密算法的功能是实现信息的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "不可否认性" },
+        { "id": 2, "title": "保密性", "correct": true },
+        { "id": 3, "title": "完整性" },
+        { "id": 4, "title": "真实性" }
+      ]
+    },
+    {
+      "id": 279,
+      "chapter": "形考五",
+      "title": "数字签名算法可实现信息的（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "不可否认性", "correct": true },
+        { "id": 2, "title": "保密性" },
+        { "id": 3, "title": "可用性" },
+        { "id": 4, "title": "真实性" }
+      ]
+    },
+    {
+      "id": 280,
+      "chapter": "形考五",
+      "title": "在以下古典密码体制中，不属于置换密码的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "移位密码" },
+        { "id": 2, "title": "倒序密码", "correct": true },
+        { "id": 3, "title": "凯撒密码" },
+        { "id": 4, "title": "转轮密码" }
+      ]
+    },
+    {
+      "id": 281,
+      "chapter": "形考五",
+      "title": "使用VPN技术，可以建立安全通道，并能用VPN提供的安全服务，这些安全服务包括：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "保密性服务", "correct": true },
+        { "id": 2, "title": "可用性服务" },
+        { "id": 3, "title": "完整性服务", "correct": true },
+        { "id": 4, "title": "认证服务", "correct": true }
+      ]
+    },
+    {
+      "id": 282,
+      "chapter": "形考五",
+      "title": "零信任遵循的原则有：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "不做任何假定", "correct": true },
+        { "id": 2, "title": "不相信任何人", "correct": true },
+        { "id": 3, "title": "随时检查一切", "correct": true },
+        { "id": 4, "title": "防范动态威胁", "correct": true },
+        { "id": 5, "title": "做最坏打算", "correct": true }
+      ]
+    },
+    {
+      "id": 283,
+      "chapter": "形考五",
+      "title": "PKI系统包含以下哪些部分：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "权威认证机构CA", "correct": true },
+        { "id": 2, "title": "证书库", "correct": true },
+        { "id": 3, "title": "密钥备份及恢复系统", "correct": true },
+        { "id": 4, "title": "证书废止处理系统", "correct": true },
+        { "id": 5, "title": "PKI应用接口系统", "correct": true }
+      ]
+    },
+    {
+      "id": 284,
+      "chapter": "形考五",
+      "title": "迪菲（Diffie）和赫尔曼（Hellman）提出的公钥密码系统是密码学历史上的一次革命。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 285,
+      "chapter": "形考五",
+      "title": "在DES加密过程中，S盒对加密的强度没有影响。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 286,
+      "chapter": "形考六",
+      "title": "人脸识别采用了哪个认证技术：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "基于生物特征", "correct": true },
+        { "id": 2, "title": "基于人工智能" },
+        { "id": 3, "title": "基于唯一性" },
+        { "id": 4, "title": "基于官方认证" }
+      ]
+    },
+    {
+      "id": 287,
+      "chapter": "形考六",
+      "title": "以下哪种认证方式相对最安全？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "口令认证技术" },
+        { "id": 2, "title": "人脸识别认证" },
+        { "id": 3, "title": "短信验证码认证" },
+        { "id": 4, "title": "人脸识别加短信验证码认证", "correct": true }
+      ]
+    },
+    {
+      "id": 288,
+      "chapter": "形考六",
+      "title": "以下哪个口令相对最为安全？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "123456" },
+        { "id": 2, "title": "1qaz2wsx" },
+        { "id": 3, "title": "pAsswOrd", "correct": true },
+        { "id": 4, "title": "p@ssword" }
+      ]
+    },
+    {
+      "id": 289,
+      "chapter": "形考六",
+      "title": "按照对验证对象要求提供的认证凭据的类型数量，认证可以分成：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "单因素认证", "correct": true },
+        { "id": 2, "title": "双因素认证", "correct": true },
+        { "id": 3, "title": "多因素认证", "correct": true },
+        { "id": 4, "title": "单点登陆认证" }
+      ]
+    },
+    {
+      "id": 290,
+      "chapter": "形考六",
+      "title": "一般来说，认证机制由哪几个部分构成：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "验证对象", "correct": true },
+        { "id": 2, "title": "认证协议", "correct": true },
+        { "id": 3, "title": "认证口令" },
+        { "id": 4, "title": "鉴别实体", "correct": true }
+      ]
+    },
+    {
+      "id": 291,
+      "chapter": "形考六",
+      "title": "某网站后台密码过于简单，被黑客破解登录了后台，并篡改了后台登录密码导致管理员无法登录，该网站遭受到了什么类型的攻击？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "非授权访问", "correct": true },
+        { "id": 2, "title": "数据泄露" },
+        { "id": 3, "title": "网站仿冒" },
+        { "id": 4, "title": "拒绝服务" }
+      ]
+    },
+    {
+      "id": 292,
+      "chapter": "形考六",
+      "title": "以下哪种是常见的网站拒绝服务攻击技术？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "HTTP Flood", "correct": true },
+        { "id": 2, "title": "SQL注入" },
+        { "id": 3, "title": "目录扫描" },
+        { "id": 4, "title": "XSS攻击" }
+      ]
+    },
+    {
+      "id": 293,
+      "chapter": "形考六",
+      "title": "某单位员工收到一封仿冒邮件，要求其立马通过邮件里的链接更新账号密码，该员工受到了电子邮件什么类型的攻击？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "附件病毒" },
+        { "id": 2, "title": "钓鱼邮件", "correct": true },
+        { "id": 3, "title": "勒索病毒" },
+        { "id": 4, "title": "窃听攻击" }
+      ]
+    },
+    {
+      "id": 294,
+      "chapter": "形考六",
+      "title": "网站面临的主要安全威胁有哪些：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "非授权访问", "correct": true },
+        { "id": 2, "title": "数据泄露", "correct": true },
+        { "id": 3, "title": "拒绝服务", "correct": true },
+        { "id": 4, "title": "网站后台管理安全威胁", "correct": true }
+      ]
+    },
+    {
+      "id": 295,
+      "chapter": "形考六",
+      "title": "以下哪些是政务网站安全防护的内容：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "网页防篡改", "correct": true },
+        { "id": 2, "title": "入侵防御和病毒防护", "correct": true },
+        { "id": 3, "title": "网络/数据库审计", "correct": true },
+        { "id": 4, "title": "钓鱼邮件防护" }
+      ]
+    },
+    {
+      "id": 296,
+      "chapter": "形考六",
+      "title": "电子邮件面临的主要安全威胁有哪些：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "钓鱼邮件", "correct": true },
+        { "id": 2, "title": "勒索病毒", "correct": true },
+        { "id": 3, "title": "拒绝服务" },
+        { "id": 4, "title": "恶意链接", "correct": true }
+      ]
+    },
+    {
+      "id": 297,
+      "chapter": "形考六",
+      "title": "以下关于云计算安全的说法，哪个是错误的：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "云计算的网络边界不可见，传统安全的边界防御手段需要调整才能适用于云计算环境" },
+        { "id": 2, "title": "云计算对数据安全要求更高，需要采用更严格的权限访问控制" },
+        { "id": 3, "title": "云计算的责任主体更为复杂，需要更明确的职责划分和更清晰的用户协议等" },
+        { "id": 4, "title": "云计算的用户资源相互会干扰，需要让不同用户使用的资源在物理环境中分开", "correct": true }
+      ]
+    },
+    {
+      "id": 298,
+      "chapter": "形考六",
+      "title": "某单位员工收到了一封电子邮件，发件人显示为网络管理员，邮件内容里提示其帐户过期，要求他重置密码，并给出了一个重置密码的链接。该员工点开链接发现网站要求他输入当前使用的用户名和密码。该员工经过观察，发现网站页面内容显示有问题，URL的地址栏并不是熟悉的域名。请问该员工遇到攻击手段的类型是：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "缓冲区溢出攻击" },
+        { "id": 2, "title": "社会工程攻击", "correct": true },
+        { "id": 3, "title": "威胁情报攻击" },
+        { "id": 4, "title": "人工智能攻击" }
+      ]
+    },
+    {
+      "id": 299,
+      "chapter": "形考六",
+      "title": "以下哪个不属于物联网安全防护层次：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "终端安全" },
+        { "id": 2, "title": "通信网络安全" },
+        { "id": 3, "title": "服务端安全" },
+        { "id": 4, "title": "应用层安全", "correct": true }
+      ]
+    },
+    {
+      "id": 300,
+      "chapter": "形考六",
+      "title": "目前漏洞挖掘分析技术有多种，主要包括",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "手工测试技术", "correct": true },
+        { "id": 2, "title": "模糊测试技术", "correct": true },
+        { "id": 3, "title": "二进制比对技术", "correct": true },
+        { "id": 4, "title": "静态分析技术", "correct": true },
+        { "id": 5, "title": "动态分析技术", "correct": true }
+      ]
+    },
+    {
+      "id": 301,
+      "chapter": "形考六",
+      "title": "区块链技术主要有哪些特点：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "去中心化", "correct": true },
+        { "id": 2, "title": "不可篡改", "correct": true },
+        { "id": 3, "title": "共识", "correct": true },
+        { "id": 4, "title": "匿名性" }
+      ]
+    },
+    {
+      "id": 302,
+      "chapter": "形考六",
+      "title": "移动应用安全和传统的Web安全面临的问题是一样的，可以完全借鉴，不需要专门为移动应用单独考虑安全问题。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 303,
+      "chapter": "形考六",
+      "title": "安全大数据分析要以建立科学合理的分析模型作为前提。一般认为安全大数据的分析模型包括但不仅限于：规则模型、关联模型、统计模型、异常检测模型等。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 304,
+      "chapter": "形考六",
+      "title": "威胁情报的目的是利用公开的资源、数据、情报等，发现安全威胁并指导企业行动以改善安全状况，可以帮助企业和组织快速了解到敌对方对自己的威胁信息，从而帮助提前威胁防范、攻击检测与响应、事后攻击溯源等能力。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 305,
+      "chapter": "形考七",
+      "title": "没有网络安全就没有____________，就没有_____________，广大人民群众利益也难以得到保障。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "国家发展、社会进步" },
+        { "id": 2, "title": "国家安全、经济社会稳定运行", "correct": true },
+        { "id": 3, "title": "社会稳定运行、经济繁荣" },
+        { "id": 4, "title": "社会安全、国家稳定运行" }
+      ]
+    },
+    {
+      "id": 306,
+      "chapter": "形考七",
+      "title": "网络安全的基本属性有：可用性、完整性和_____。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "多样性" },
+        { "id": 2, "title": "复杂性" },
+        { "id": 3, "title": "保密性", "correct": true },
+        { "id": 4, "title": "不可否认性" }
+      ]
+    },
+    {
+      "id": 307,
+      "chapter": "形考七",
+      "title": "《中华人民共和国网络安全法》正式施行的时间是________。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "2017年6月1日", "correct": true },
+        { "id": 2, "title": "2016年11月7日" },
+        { "id": 3, "title": "2017年1月1日" },
+        { "id": 4, "title": "2016年12月1日" }
+      ]
+    },
+    {
+      "id": 308,
+      "chapter": "形考七",
+      "title": "下列哪个不是网络攻击的主要目的：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "获取目标的重要信息和数据" },
+        { "id": 2, "title": "对目标系统进行信息篡改和数据资料删除等" },
+        { "id": 3, "title": "让目标无法正常提供服务" },
+        { "id": 4, "title": "造成人员伤亡", "correct": true }
+      ]
+    },
+    {
+      "id": 309,
+      "chapter": "形考七",
+      "title": "以下哪个不是常见的网络攻击手段：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "端口和漏洞扫描" },
+        { "id": 2, "title": "破坏供电系统造成服务器停电", "correct": true },
+        { "id": 3, "title": "网络窃听" },
+        { "id": 4, "title": "使用MS17-010漏洞获取服务器权限" }
+      ]
+    },
+    {
+      "id": 310,
+      "chapter": "形考七",
+      "title": "网络嗅探器 (Network Sniffer) 是一种常用的网络管理工具，也常常被攻击者利用来进行信息获取。以下哪个工具可以进行网络嗅探：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "fscan" },
+        { "id": 2, "title": "hydra" },
+        { "id": 3, "title": "snort", "correct": true },
+        { "id": 4, "title": "metasploit" }
+      ]
+    },
+    {
+      "id": 311,
+      "chapter": "形考七",
+      "title": "以下哪个不是常见的恶意代码：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "病毒" },
+        { "id": 2, "title": "木马" },
+        { "id": 3, "title": "蠕虫" },
+        { "id": 4, "title": "细菌", "correct": true }
+      ]
+    },
+    {
+      "id": 312,
+      "chapter": "形考七",
+      "title": "关于勒索软件，以下哪个说明是错误的：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "勒索软件是一种恶意软件，传播范围广，危害大。" },
+        { "id": 2, "title": "勒索软件通过加密受害者文件并试图通过威胁勒索获利。" },
+        { "id": 3, "title": "解密高手可以破解勒索软件的密钥，从而恢复出被加密的文件。", "correct": true },
+        { "id": 4, "title": "勒索软件通常要求使用数字货币支付赎金，这使得追踪和起诉犯罪者都十分困难" }
+      ]
+    },
+    {
+      "id": 313,
+      "chapter": "形考七",
+      "title": "以下哪个不是计算机病毒的生命周期：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "感染阶段", "correct": true },
+        { "id": 2, "title": "繁殖阶段" },
+        { "id": 3, "title": "触发阶段" },
+        { "id": 4, "title": "执行阶段" }
+      ]
+    },
+    {
+      "id": 314,
+      "chapter": "形考七",
+      "title": "以下哪个不是防火墙的基本功能：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "访问控制功能" },
+        { "id": 2, "title": "内容控制功能" },
+        { "id": 3, "title": "日志功能" },
+        { "id": 4, "title": "防范钓鱼邮件功能", "correct": true }
+      ]
+    },
+    {
+      "id": 315,
+      "chapter": "形考七",
+      "title": "网络防御技术所包含的身份认证基本方法，不包括：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "基于信息秘密的身份认证" },
+        { "id": 2, "title": "基于信任物体的身份认证" },
+        { "id": 3, "title": "基于生物特征的身份认证" },
+        { "id": 4, "title": "基于数字签名的身份认证", "correct": true }
+      ]
+    },
+    {
+      "id": 316,
+      "chapter": "形考七",
+      "title": "根据Endsley模型，可以将态势感知划分为三个层级，不包括______。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "要素感知" },
+        { "id": 2, "title": "态势理解" },
+        { "id": 3, "title": "安全审计", "correct": true },
+        { "id": 4, "title": "态势预测" }
+      ]
+    },
+    {
+      "id": 317,
+      "chapter": "形考七",
+      "title": "加密算法的功能是实现信息的_______。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "不可否认性" },
+        { "id": 2, "title": "保密性", "correct": true },
+        { "id": 3, "title": "完整性" },
+        { "id": 4, "title": "真实性" }
+      ]
+    },
+    {
+      "id": 318,
+      "chapter": "形考七",
+      "title": "数字签名算法可实现信息的_______。",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "不可否认性", "correct": true },
+        { "id": 2, "title": "保密性" },
+        { "id": 3, "title": "可用性" },
+        { "id": 4, "title": "真实性" }
+      ]
+    },
+    {
+      "id": 319,
+      "chapter": "形考七",
+      "title": "在以下古典密码体制中，不属于置换密码的是（）",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "移位密码" },
+        { "id": 2, "title": "倒序密码", "correct": true },
+        { "id": 3, "title": "凯撒密码" },
+        { "id": 4, "title": "转轮密码" }
+      ]
+    },
+    {
+      "id": 320,
+      "chapter": "形考七",
+      "title": "以下哪种认证方式相对最安全？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "口令认证技术" },
+        { "id": 2, "title": "人脸识别认证" },
+        { "id": 3, "title": "短信验证码认证" },
+        { "id": 4, "title": "人脸识别加短信验证码认证", "correct": true }
+      ]
+    },
+    {
+      "id": 321,
+      "chapter": "形考七",
+      "title": "以下哪个口令相对最为安全？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "123456" },
+        { "id": 2, "title": "1qaz2wsx" },
+        { "id": 3, "title": "pAsswOrd", "correct": true },
+        { "id": 4, "title": "p@ssword" }
+      ]
+    },
+    {
+      "id": 322,
+      "chapter": "形考七",
+      "title": "某网站后台密码过于简单，被黑客破解登录了后台，并篡改了后台登录密码导致管理员无法登录，该网站遭受到了什么类型的攻击？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "非授权访问", "correct": true },
+        { "id": 2, "title": "数据泄露" },
+        { "id": 3, "title": "网站仿冒" },
+        { "id": 4, "title": "拒绝服务" }
+      ]
+    },
+    {
+      "id": 323,
+      "chapter": "形考七",
+      "title": "某单位员工收到一封仿冒的邮件，要求其立马通过邮件里的链接更新账号密码，该员工受到的是什么类型的电子邮件攻击？",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "附件病毒" },
+        { "id": 2, "title": "钓鱼邮件", "correct": true },
+        { "id": 3, "title": "勒索病毒" },
+        { "id": 4, "title": "窃听攻击" }
+      ]
+    },
+    {
+      "id": 324,
+      "chapter": "形考七",
+      "title": "以下哪个不属于物联网安全防护层次：",
+      "desc": "单选题",
+      "type": "single",
+      "options": [
+        { "id": 1, "title": "终端安全" },
+        { "id": 2, "title": "通信网络安全" },
+        { "id": 3, "title": "服务端安全" },
+        { "id": 4, "title": "应用层安全", "correct": true }
+      ]
+    },
+    {
+      "id": 325,
+      "chapter": "形考七",
+      "title": "CTF（Capture The Flag）中文一般译作夺旗赛，在网络安全领域中指的是网络安全技术人员之间进行技术竞技的一种比赛形式。常见的CTF竞赛模式有：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "解题模式（Jeopardy）", "correct": true },
+        { "id": 2, "title": "攻防模式（Attack-Defense）", "correct": true },
+        { "id": 3, "title": "渗透模式（Penatration）" },
+        { "id": 4, "title": "混合模式（Mix）", "correct": true }
+      ]
+    },
+    {
+      "id": 326,
+      "chapter": "形考七",
+      "title": "端口扫描工具能获取以下哪些信息：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "端口开放信息", "correct": true },
+        { "id": 2, "title": "端口提供的服务", "correct": true },
+        { "id": 3, "title": "主机的操作系统", "correct": true },
+        { "id": 4, "title": "主机带宽信息" }
+      ]
+    },
+    {
+      "id": 327,
+      "chapter": "形考七",
+      "title": "高级持续威胁（APT）的特征有：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        {
+          "id": 1,
+          "title": "它比传统攻击具有更高的定制程度和复杂程度，需要花费大量时间和资源来研究确定系统内部的漏洞",
+          "correct": true
+        },
+        { "id": 2, "title": "这类攻击持续监控目标，对目标保有长期的访问权", "correct": true },
+        {
+          "id": 3,
+          "title": "攻击目标通常是特定的重要目标，攻击方一旦得手，往往会给被攻击目标造成巨大的经济损失或政治影响，乃至于毁灭性打击",
+          "correct": true
+        },
+        { "id": 4, "title": "APT攻击可以被防病毒软件发现并查杀阻断" }
+      ]
+    },
+    {
+      "id": 328,
+      "chapter": "形考七",
+      "title": "漏洞蠕虫破坏力强、传播速度快，它的传播过程一般可以分为（）步骤",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "扫描", "correct": true },
+        { "id": 2, "title": "攻击", "correct": true },
+        { "id": 3, "title": "复制", "correct": true },
+        { "id": 4, "title": "破坏" }
+      ]
+    },
+    {
+      "id": 329,
+      "chapter": "形考七",
+      "title": "下列哪些步骤属于恶意代码的作用过程：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "入侵系统", "correct": true },
+        { "id": 2, "title": "提升权限", "correct": true },
+        { "id": 3, "title": "实施隐藏", "correct": true },
+        { "id": 4, "title": "潜伏等待", "correct": true },
+        { "id": 5, "title": "执行破坏", "correct": true }
+      ]
+    },
+    {
+      "id": 330,
+      "chapter": "形考七",
+      "title": "按照访问控制方式不同，防火墙可以分为（）",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "包过滤防火墙", "correct": true },
+        { "id": 2, "title": "新一代防火墙" },
+        { "id": 3, "title": "应用代理防火墙", "correct": true },
+        { "id": 4, "title": "状态检测防火墙", "correct": true }
+      ]
+    },
+    {
+      "id": 331,
+      "chapter": "形考七",
+      "title": "使用VPN技术，可以建立安全通道，并能用VPN提供的安全服务，这些安全服务包括：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "保密性服务", "correct": true },
+        { "id": 2, "title": "可用性服务" },
+        { "id": 3, "title": "完整性服务", "correct": true },
+        { "id": 4, "title": "认证服务", "correct": true }
+      ]
+    },
+    {
+      "id": 332,
+      "chapter": "形考七",
+      "title": "一般来说，认证机制由哪几个部分构成：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "验证对象", "correct": true },
+        { "id": 2, "title": "认证协议", "correct": true },
+        { "id": 3, "title": "认证口令" },
+        { "id": 4, "title": "鉴别实体", "correct": true }
+      ]
+    },
+    {
+      "id": 333,
+      "chapter": "形考七",
+      "title": "电子邮件面临的主要安全威胁有哪些：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "钓鱼邮件", "correct": true },
+        { "id": 2, "title": "勒索病毒", "correct": true },
+        { "id": 3, "title": "拒绝服务" },
+        { "id": 4, "title": "恶意链接", "correct": true }
+      ]
+    },
+    {
+      "id": 334,
+      "chapter": "形考七",
+      "title": "区块链技术主要有哪些特点：",
+      "desc": "多选题",
+      "type": "multiple",
+      "options": [
+        { "id": 1, "title": "去中心化", "correct": true },
+        { "id": 2, "title": "不可篡改", "correct": true },
+        { "id": 3, "title": "共识", "correct": true },
+        { "id": 4, "title": "匿名性" }
+      ]
+    },
+    {
+      "id": 335,
+      "chapter": "形考七",
+      "title": "我国网络安全领域的基础性法律《中华人民共和国网络安全法》正式施行，对保护个人信息、治理网络诈骗、保护关键信息基础设施、网络实名制等方面作出明确规定，成为我国网络空间法治化建设的重要里程碑。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 336,
+      "chapter": "形考七",
+      "title": "网络社会的形成与发展为现实社会中的违法犯罪分子提供了一个新的违法犯罪领域，但其社会危害性不及现实社会中的违法犯罪。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 337,
+      "chapter": "形考七",
+      "title": "MITRE公司提出的网络攻击矩阵模型，它是一个站在防守者的视角来描述攻击中各阶段用到的技术的模型。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 338,
+      "chapter": "形考七",
+      "title": "口令是最常用的资源访问控制机制，也是最容易被突破的。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 339,
+      "chapter": "形考七",
+      "title": "受感染机器间是否能够协同工作是区分僵尸网络和其他恶意软件的重要特征。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 340,
+      "chapter": "形考七",
+      "title": "按照网络蠕虫的传播途径和攻击牲，可以分为传统蠕虫、邮件蠕虫和漏洞蠕虫。其中漏洞蠕虫破坏力强、传播速度快。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 341,
+      "chapter": "形考七",
+      "title": "网络隔离技术总体上可以分为物理隔离及逻辑隔离两类方法。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 342,
+      "chapter": "形考七",
+      "title": "网络防御技术所包含的访问控制技术内容认证包括负载均衡、认证、控制策略实现等几部分。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 343,
+      "chapter": "形考七",
+      "title": "迪菲（Diffie）和赫尔曼（Hellman）提出的公钥密码系统是密码学历史上的一次革命。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 344,
+      "chapter": "形考七",
+      "title": "在DES加密过程中，S盒对加密的强度没有影响。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 345,
+      "chapter": "形考七",
+      "title": "单点登录是指用户访问不同系统时，只需要进行一次身份认证，就可以根据这次认证身份访问授权资源。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 346,
+      "chapter": "形考七",
+      "title": "认证是一个实体向另外一个实体证明其所声称的能力的过程。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    },
+    {
+      "id": 347,
+      "chapter": "形考七",
+      "title": "网站仿冒是指攻击者通过网站域名欺骗、网站域名劫持、中间人等技术手段，诱骗网站用户访问以获取敏感信息或提供恶意服务。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 348,
+      "chapter": "形考七",
+      "title": "Web应用防火墙是一种用于保护Web服务器和Web应用的网络安全机制。其技术原理是根据预先定义的过滤规则和安全防护规则，对所有访问Web服务器的HTTP请求和服务器响应，进行HTTP协议和内容过滤，进而对Web服务器和Web应用提供安全防护功能。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确", "correct": true },
+        { "id": 2, "title": "错误" }
+      ]
+    },
+    {
+      "id": 349,
+      "chapter": "形考七",
+      "title": "移动应用安全和传统的Web安全面临的问题是一样的，可以完全借鉴，不需要专门为移动应用单独考虑安全问题。",
+      "desc": "判断题",
+      "type": "judgement",
+      "options": [
+        { "id": 1, "title": "正确" },
+        { "id": 2, "title": "错误", "correct": true }
+      ]
+    }
+  ]
+}
